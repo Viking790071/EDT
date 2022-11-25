@@ -1,0 +1,5251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <title>
+    <key>ru</key>
+    <value>Выгрузка и загрузка данных EnterpriseData</value>
+  </title>
+  <title>
+    <key>en</key>
+    <value>Export and import EnterpriseData data</value>
+  </title>
+  <title>
+    <key>pl</key>
+    <value>Przesyłanie i pobieranie danych EnterpriseData</value>
+  </title>
+  <title>
+    <key>es_ES</key>
+    <value>Subida y descarga de datos EnterpriseData</value>
+  </title>
+  <title>
+    <key>es_CO</key>
+    <value>Subida y descarga de datos EnterpriseData</value>
+  </title>
+  <title>
+    <key>tr</key>
+    <value>EnterpriseData veri içe aktarımı ve dışa aktarımı</value>
+  </title>
+  <title>
+    <key>it</key>
+    <value>Esportazione e importazione dati EnterpriseData</value>
+  </title>
+  <title>
+    <key>de</key>
+    <value>Export und Import von EnterpriseData-Daten</value>
+  </title>
+  <items xsi:type="form:FormGroup">
+    <name>UpperGroup</name>
+    <id>97</id>
+    <items xsi:type="form:FormField">
+      <name>OperationKind</name>
+      <id>227</id>
+      <title>
+        <key>ru</key>
+        <value>Операция</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Operation</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Operacja</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Operación</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Operación</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>İşlem</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Operazione</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Operation</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>OperationKind</segments>
+      </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>OperationKindOnChange</name>
+      </handlers>
+      <extendedTooltip>
+        <name>OperationKindExtendedTooltip</name>
+        <id>229</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>OperationKindContextMenu</name>
+        <id>228</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>RadioButtonField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+        <radioButtonsType>Tumbler</radioButtonsType>
+        <choiceList>
+          <value xsi:type="core:StringValue">
+            <value>Import</value>
+          </value>
+        </choiceList>
+        <choiceList>
+          <value xsi:type="core:StringValue">
+            <value>Export</value>
+          </value>
+        </choiceList>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Верхняя</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Upper</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Górna</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Superior</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Superior</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kayıtta</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Superiore</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>WReg</value>
+    </title>
+    <extendedTooltip>
+      <name>UpperGroupExtendedTooltip</name>
+      <id>98</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ExportImport</name>
+    <id>15</id>
+    <items xsi:type="form:FormGroup">
+      <name>Load</name>
+      <id>19</id>
+      <items xsi:type="form:Decoration">
+        <name>LabelExportWithIntegratedDataProcessor</name>
+        <id>244</id>
+        <title>
+          <key>ru</key>
+          <value>Будет произведена загрузка данных, представленных в формате EnterpriseData.
+Для загрузки необходимо указать предварительно подготовленный файл с данными.</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Data represented as EnterpriseData will be imported.
+To import it, specify the prepared file.</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Nastąpi pobieranie danych przedstawionych w formacie EnterpriseData.
+W celu pobrania należy podać wcześniej przygotowany plik z danymi.</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Los datos en el formato EnterpriseData se descargarán.
+Para descargar es necesario indicar previamente un archivo preparado con los datos.</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Los datos en el formato EnterpriseData se descargarán.
+Para descargar es necesario indicar previamente un archivo preparado con los datos.</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>EnterpriseData biçiminde sunulan veriler içe aktarılacaktır. 
+ İçe aktarma için önceden hazırlanmış veri dosyası belirtilecektir.</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>I dati rappresentati come EnterpriseData saranno importati.
+ Per importare, specificare il file preparato.</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Die im EnterpriseData-Format vorliegenden Daten werden heruntergeladen.
+Zum Herunterladen müssen Sie eine vorbereitete Datendatei angeben.</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>LabelExportWithIntegratedDataProcessorExtendedTooltip</name>
+          <id>246</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>LabelExportWithIntegratedDataProcessorContextMenu</name>
+          <id>245</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxHeight>true</autoMaxHeight>
+        <textColor xsi:type="core:ColorRef">
+          <color>Style.NoteText</color>
+        </textColor>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>ImportSource</name>
+        <id>180</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ImportSource</segments>
+        </dataPath>
+        <handlers>
+          <event>OnChange</event>
+          <name>ImportSourceOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>ImportSourceExtendedTooltip</name>
+          <id>182</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ImportSourceContextMenu</name>
+          <id>181</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>RadioButtonField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+          <radioButtonsType>Tumbler</radioButtonsType>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Файл</value>
+            </presentation>
+            <presentation>
+              <key>en</key>
+              <value>File</value>
+            </presentation>
+            <presentation>
+              <key>pl</key>
+              <value>Plik</value>
+            </presentation>
+            <presentation>
+              <key>es_ES</key>
+              <value>Archivo</value>
+            </presentation>
+            <presentation>
+              <key>es_CO</key>
+              <value>Archivo</value>
+            </presentation>
+            <presentation>
+              <key>tr</key>
+              <value>Dosya</value>
+            </presentation>
+            <presentation>
+              <key>it</key>
+              <value>File</value>
+            </presentation>
+            <presentation>
+              <key>de</key>
+              <value>Datei</value>
+            </presentation>
+            <value xsi:type="core:NumberValue">
+              <value>0</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Текстовое поле</value>
+            </presentation>
+            <presentation>
+              <key>en</key>
+              <value>Text field</value>
+            </presentation>
+            <presentation>
+              <key>pl</key>
+              <value>Pole tekstowe</value>
+            </presentation>
+            <presentation>
+              <key>es_ES</key>
+              <value>Campo de texto</value>
+            </presentation>
+            <presentation>
+              <key>es_CO</key>
+              <value>Campo de texto</value>
+            </presentation>
+            <presentation>
+              <key>tr</key>
+              <value>Metin alanı</value>
+            </presentation>
+            <presentation>
+              <key>it</key>
+              <value>Campo di testo</value>
+            </presentation>
+            <presentation>
+              <key>de</key>
+              <value>Textfeld</value>
+            </presentation>
+            <value xsi:type="core:NumberValue">
+              <value>1</value>
+            </value>
+          </choiceList>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>PathToImportFile</name>
+        <id>186</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>PathToImportFile</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>PathToImportFileExtendedTooltip</name>
+          <id>188</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>PathToImportFileContextMenu</name>
+          <id>187</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <handlers>
+            <event>StartChoice</event>
+            <name>PathToImportFileStartChoice</name>
+          </handlers>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <choiceButton>true</choiceButton>
+          <openButton>false</openButton>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>PathToImportExchangeManager</name>
+        <id>21</id>
+        <title>
+          <key>ru</key>
+          <value>Менеджер загрузки</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Import manager</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Menedżer pobierania</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Gestor de descarga</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Gestor de descarga</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>İçe aktarma yöneticisi</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Manager importazione</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Download-Manager</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Object.PathToImportExchangeManager</segments>
+        </dataPath>
+        <toolTip>
+          <key>ru</key>
+          <value>Для использования внешнего модуля менеджера обмена через универсальный формат.</value>
+        </toolTip>
+        <toolTip>
+          <key>en</key>
+          <value>For use of external module of exchange manager via universal format.</value>
+        </toolTip>
+        <toolTip>
+          <key>pl</key>
+          <value>Do użytku zewnętrznego modułu menedżera wymiany przez uniwersalny format.</value>
+        </toolTip>
+        <toolTip>
+          <key>es_ES</key>
+          <value>Para usar el módulo externo del gestor de intercambio a través del formato universal.</value>
+        </toolTip>
+        <toolTip>
+          <key>es_CO</key>
+          <value>Para usar el módulo externo del gestor de intercambio a través del formato universal.</value>
+        </toolTip>
+        <toolTip>
+          <key>tr</key>
+          <value>Harici alışveriş yöneticisi modülünü üniversal biçim aracılığı ile kullanmak için.</value>
+        </toolTip>
+        <toolTip>
+          <key>it</key>
+          <value>Per l'utilizzo del modulo esterno del manager di scambio attraverso formato universale.</value>
+        </toolTip>
+        <toolTip>
+          <key>de</key>
+          <value>Verwendung des externen Moduls des Exchange-Managers über das Universalformat.</value>
+        </toolTip>
+        <toolTipRepresentation>Button</toolTipRepresentation>
+        <extendedTooltip>
+          <name>PathToImportExchangeManagerExtendedTooltip</name>
+          <id>23</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>PathToImportExchangeManagerContextMenu</name>
+          <id>22</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <handlers>
+            <event>StartChoice</event>
+            <name>PathToImportExchangeManagerStartChoice</name>
+          </handlers>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <choiceButton>true</choiceButton>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+          <inputHint>
+            <key>ru</key>
+            <value>Сейчас используется встроенный менеджер</value>
+          </inputHint>
+          <inputHint>
+            <key>en</key>
+            <value>Default manager is being used now</value>
+          </inputHint>
+          <inputHint>
+            <key>pl</key>
+            <value>Teraz używany jest wbudowany menedżer</value>
+          </inputHint>
+          <inputHint>
+            <key>es_ES</key>
+            <value>Se está usando el gestor integrado</value>
+          </inputHint>
+          <inputHint>
+            <key>es_CO</key>
+            <value>Se está usando el gestor integrado</value>
+          </inputHint>
+          <inputHint>
+            <key>tr</key>
+            <value>Şu anda entegre edilmiş yöneticisi kullanılmaktadır</value>
+          </inputHint>
+          <inputHint>
+            <key>it</key>
+            <value>Il manager di default è utilizzato adesso</value>
+          </inputHint>
+          <inputHint>
+            <key>de</key>
+            <value>Jetzt wird der integrierte Manager verwendet</value>
+          </inputHint>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>StringSupportedFormatVersions</name>
+        <id>239</id>
+        <titleFont xsi:type="core:FontRef">
+          <font>Style.LargeTextFont</font>
+        </titleFont>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>StringSupportedFormatVersions</segments>
+        </dataPath>
+        <titleLocation>None</titleLocation>
+        <extendedTooltip>
+          <name>StringSupportedFormatVersionsExtendedTooltip</name>
+          <id>241</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>StringSupportedFormatVersionsContextMenu</name>
+          <id>240</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>LabelField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:LabelFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>DataForImportGroup</name>
+        <id>151</id>
+        <items xsi:type="form:FormField">
+          <name>DataForXDTOImport</name>
+          <id>148</id>
+          <title>
+            <key>ru</key>
+            <value>Данные для загрузки</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Data for import </value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Dane do pobrania </value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Datos para descargar</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Datos para descargar</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>İçe aktarılacak veriler</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Dati per l'importazione</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Daten herunterladen</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>DataForXDTOImport</segments>
+          </dataPath>
+          <titleLocation>None</titleLocation>
+          <extendedTooltip>
+            <name>DataForXDTOImportExtendedTooltip</name>
+            <id>150</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>DataForXDTOImportContextMenu</name>
+            <id>149</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>TextDocumentField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:TextDocFieldExtInfo">
+            <width>50</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>10</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <horizontalStretch>true</horizontalStretch>
+            <verticalStretch>true</verticalStretch>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ImportCommands</name>
+          <id>157</id>
+          <items xsi:type="form:Button">
+            <name>OpenXML</name>
+            <id>153</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>OpenXMLExtendedTooltip</name>
+              <id>154</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>UsualButton</type>
+            <commandName>Form.Command.OpenXML</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Команды загрузки</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Import commands</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Import polecenia</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Importar comandos</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Importar comandos</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>İçe aktarma komutları</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Comandi di imporazione</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Befehle importieren</value>
+          </title>
+          <extendedTooltip>
+            <name>ImportCommandsExtendedTooltip</name>
+            <id>158</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>Vertical</group>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Данные для загрузки</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Data for import </value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Dane do pobrania </value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Datos para descargar</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Datos para descargar</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>İçe aktarılacak veriler</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Dati per l'importazione</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Daten herunterladen</value>
+        </title>
+        <extendedTooltip>
+          <name>DataForImportGroupExtendedTooltip</name>
+          <id>152</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Загрузка</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Import</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Moc</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Importar</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Importar</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>İçe aktar</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Importazione</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Herunterladen</value>
+      </title>
+      <extendedTooltip>
+        <name>ImportExtendedTooltip</name>
+        <id>20</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>DataExported</name>
+      <id>17</id>
+      <items xsi:type="form:FormField">
+        <name>ExportLocation</name>
+        <id>183</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ExportLocation</segments>
+        </dataPath>
+        <handlers>
+          <event>OnChange</event>
+          <name>ExportPlaceOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>ExportLocationExtendedTooltip</name>
+          <id>185</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ExportLocationContextMenu</name>
+          <id>184</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>RadioButtonField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+          <radioButtonsType>Tumbler</radioButtonsType>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Файл</value>
+            </presentation>
+            <presentation>
+              <key>en</key>
+              <value>File</value>
+            </presentation>
+            <presentation>
+              <key>pl</key>
+              <value>Plik</value>
+            </presentation>
+            <presentation>
+              <key>es_ES</key>
+              <value>Archivo</value>
+            </presentation>
+            <presentation>
+              <key>es_CO</key>
+              <value>Archivo</value>
+            </presentation>
+            <presentation>
+              <key>tr</key>
+              <value>Dosya</value>
+            </presentation>
+            <presentation>
+              <key>it</key>
+              <value>File</value>
+            </presentation>
+            <presentation>
+              <key>de</key>
+              <value>Datei</value>
+            </presentation>
+            <value xsi:type="core:NumberValue">
+              <value>0</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Текстовое поле</value>
+            </presentation>
+            <presentation>
+              <key>en</key>
+              <value>Text field</value>
+            </presentation>
+            <presentation>
+              <key>pl</key>
+              <value>Pole tekstowe</value>
+            </presentation>
+            <presentation>
+              <key>es_ES</key>
+              <value>Campo de texto</value>
+            </presentation>
+            <presentation>
+              <key>es_CO</key>
+              <value>Campo de texto</value>
+            </presentation>
+            <presentation>
+              <key>tr</key>
+              <value>Metin alanı</value>
+            </presentation>
+            <presentation>
+              <key>it</key>
+              <value>Campo di testo</value>
+            </presentation>
+            <presentation>
+              <key>de</key>
+              <value>Textfeld</value>
+            </presentation>
+            <value xsi:type="core:NumberValue">
+              <value>1</value>
+            </value>
+          </choiceList>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>FormatVersionGroup</name>
+        <id>242</id>
+        <items xsi:type="form:FormField">
+          <name>FormatVersion</name>
+          <id>42</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Object.FormatVersion</segments>
+          </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>FormatVersionOnChange</name>
+          </handlers>
+          <extendedTooltip>
+            <name>FormatVersionExtendedTooltip</name>
+            <id>44</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>FormatVersionContextMenu</name>
+            <id>43</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <listChoiceMode>true</listChoiceMode>
+            <autoMarkIncomplete>true</autoMarkIncomplete>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Версия формата группа</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Format version group</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Wersja formatu grupa</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Versión del formato grupo</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Versión del formato grupo</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Format sürümü grup</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Gruppo versioni formati</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Versionsformat Gruppe</value>
+        </title>
+        <extendedTooltip>
+          <name>FormatVersionGroupExtendedTooltip</name>
+          <id>243</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>ExportFilePath</name>
+        <id>189</id>
+        <title>
+          <key>ru</key>
+          <value>Файл выгрузки</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Export file</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Plik do eksportu</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Archivo de subida</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Archivo de subida</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Dışa aktarma dosyası</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>File di esportazione</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Datei hochladen</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ExportFilePath</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>ExportFilePathExtendedTooltip</name>
+          <id>191</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ExportFilePathContextMenu</name>
+          <id>190</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <handlers>
+            <event>StartChoice</event>
+            <name>PathToExportFileStartChoice</name>
+          </handlers>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <choiceButton>true</choiceButton>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ExportDeveloperAdvanced</name>
+        <id>210</id>
+        <items xsi:type="form:FormField">
+          <name>PathToExportExchangeManager</name>
+          <id>1</id>
+          <title>
+            <key>ru</key>
+            <value>Менеджер выгрузки</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Export manager</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Menedżer ładowania</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Gestor de subida</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Gestor de subida</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Dışa aktarma yöneticisi</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Manager esportazione</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Upload-Manager</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Object.PathToExportExchangeManager</segments>
+          </dataPath>
+          <toolTip>
+            <key>ru</key>
+            <value>Для использования внешнего модуля менеджера обмена через универсальный формат.</value>
+          </toolTip>
+          <toolTip>
+            <key>en</key>
+            <value>For use of external module of exchange manager via universal format.</value>
+          </toolTip>
+          <toolTip>
+            <key>pl</key>
+            <value>Do użytku zewnętrznego modułu menedżera wymiany przez uniwersalny format.</value>
+          </toolTip>
+          <toolTip>
+            <key>es_ES</key>
+            <value>Para usar el módulo externo del gestor de intercambio a través del formato universal.</value>
+          </toolTip>
+          <toolTip>
+            <key>es_CO</key>
+            <value>Para usar el módulo externo del gestor de intercambio a través del formato universal.</value>
+          </toolTip>
+          <toolTip>
+            <key>tr</key>
+            <value>Harici alışveriş yöneticisi modülünü üniversal biçim aracılığı ile kullanmak için.</value>
+          </toolTip>
+          <toolTip>
+            <key>it</key>
+            <value>Per l'utilizzo del modulo esterno del manager di scambio attraverso formato universale.</value>
+          </toolTip>
+          <toolTip>
+            <key>de</key>
+            <value>Verwendung des externen Moduls des Exchange-Managers über das Universalformat.</value>
+          </toolTip>
+          <toolTipRepresentation>Button</toolTipRepresentation>
+          <handlers>
+            <event>OnChange</event>
+            <name>PathToExportExchangeManagerOnChange</name>
+          </handlers>
+          <extendedTooltip>
+            <name>PathToExportExchangeManagerExtendedTooltip</name>
+            <id>3</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>PathToExportExchangeManagerContextMenu</name>
+            <id>2</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>EnterOnInput</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <handlers>
+              <event>StartChoice</event>
+              <name>PathToExportExchangeManagerStartChoice</name>
+            </handlers>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <choiceButton>true</choiceButton>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+            <inputHint>
+              <key>ru</key>
+              <value>Сейчас используется встроенный менеджер</value>
+            </inputHint>
+            <inputHint>
+              <key>en</key>
+              <value>Default manager is being used now</value>
+            </inputHint>
+            <inputHint>
+              <key>pl</key>
+              <value>Teraz używany jest wbudowany menedżer</value>
+            </inputHint>
+            <inputHint>
+              <key>es_ES</key>
+              <value>Se está usando el gestor integrado</value>
+            </inputHint>
+            <inputHint>
+              <key>es_CO</key>
+              <value>Se está usando el gestor integrado</value>
+            </inputHint>
+            <inputHint>
+              <key>tr</key>
+              <value>Şu anda entegre edilmiş yöneticisi kullanılmaktadır</value>
+            </inputHint>
+            <inputHint>
+              <key>it</key>
+              <value>Il manager di default è utilizzato adesso</value>
+            </inputHint>
+            <inputHint>
+              <key>de</key>
+              <value>Jetzt wird der integrierte Manager verwendet</value>
+            </inputHint>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>ExportSource</name>
+          <id>236</id>
+          <title>
+            <key>ru</key>
+            <value>Данные для выгрузки</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Export data</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Eksportuj dane</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Exportar datos</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Exportar datos</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Veri dışa aktar</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Esportare i dati</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Daten exportieren</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Object.ExportSource</segments>
+          </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>ExportSourceOnChange</name>
+          </handlers>
+          <extendedTooltip>
+            <name>ExportSourceExtendedTooltip</name>
+            <id>238</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ExportSourceContextMenu</name>
+            <id>237</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>RadioButtonField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+            <radioButtonsType>Tumbler</radioButtonsType>
+            <choiceList>
+              <presentation>
+                <key>ru</key>
+                <value>Произвольный отбор</value>
+              </presentation>
+              <presentation>
+                <key>en</key>
+                <value>Arbitrary filter</value>
+              </presentation>
+              <presentation>
+                <key>pl</key>
+                <value>Wybór dowolny</value>
+              </presentation>
+              <presentation>
+                <key>es_ES</key>
+                <value>Selección libre</value>
+              </presentation>
+              <presentation>
+                <key>es_CO</key>
+                <value>Selección libre</value>
+              </presentation>
+              <presentation>
+                <key>tr</key>
+                <value>Serbest seçim</value>
+              </presentation>
+              <presentation>
+                <key>it</key>
+                <value>Filtro arbitrario</value>
+              </presentation>
+              <presentation>
+                <key>de</key>
+                <value>Zufällige Auswahl</value>
+              </presentation>
+              <value xsi:type="core:StringValue">
+                <value>Filter</value>
+              </value>
+            </choiceList>
+            <choiceList>
+              <presentation>
+                <key>ru</key>
+                <value>Узел плана обмена</value>
+              </presentation>
+              <presentation>
+                <key>en</key>
+                <value>Exchange plan node</value>
+              </presentation>
+              <presentation>
+                <key>pl</key>
+                <value>Węzeł planu wymiany</value>
+              </presentation>
+              <presentation>
+                <key>es_ES</key>
+                <value>Nodo del plan de cambio</value>
+              </presentation>
+              <presentation>
+                <key>es_CO</key>
+                <value>Nodo del plan de cambio</value>
+              </presentation>
+              <presentation>
+                <key>tr</key>
+                <value>Alışveriş planı ünitesi</value>
+              </presentation>
+              <presentation>
+                <key>it</key>
+                <value>Nodo piano di scambio</value>
+              </presentation>
+              <presentation>
+                <key>de</key>
+                <value>Knoten des Austauschplans</value>
+              </presentation>
+              <value xsi:type="core:StringValue">
+                <value>Node</value>
+              </value>
+            </choiceList>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>ExchangeNode</name>
+          <id>49</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Object.ExchangeNode</segments>
+          </dataPath>
+          <toolTip>
+            <key>ru</key>
+            <value>Для выгрузки изменений, зарегистрированных на указанном узле</value>
+          </toolTip>
+          <toolTip>
+            <key>en</key>
+            <value>To export changes registered on the specified node</value>
+          </toolTip>
+          <toolTip>
+            <key>pl</key>
+            <value>Dla ładowania zmian, zarejestrowanych na określonym węźle</value>
+          </toolTip>
+          <toolTip>
+            <key>es_ES</key>
+            <value>Para subir los cambios registrados en el nodo indicado</value>
+          </toolTip>
+          <toolTip>
+            <key>es_CO</key>
+            <value>Para subir los cambios registrados en el nodo indicado</value>
+          </toolTip>
+          <toolTip>
+            <key>tr</key>
+            <value>Belirtilen ünitede kaydedilen değişikliklerin dışa aktarımı için</value>
+          </toolTip>
+          <toolTip>
+            <key>it</key>
+            <value>Per esportare le modifiche registrate nel nodo specifico</value>
+          </toolTip>
+          <toolTip>
+            <key>de</key>
+            <value>Zum Hochladen von am angegebenen Knoten registrierten Änderungen</value>
+          </toolTip>
+          <toolTipRepresentation>Balloon</toolTipRepresentation>
+          <extendedTooltip>
+            <name>ExchangeNodeExtendedTooltip</name>
+            <id>51</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ExchangeNodeContextMenu</name>
+            <id>50</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Выгрузка дополнительно разработчик</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Export additionally developer</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Rozładunek dodatkowo deweloper</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Subida adicionalmente desarrollador</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Subida adicionalmente desarrollador</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Dışa aktarma ek geliştirici</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Esportare sviluppatore aggiuntivo</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Hochladen von zusätzlichem Entwickler</value>
+        </title>
+        <extendedTooltip>
+          <name>ExportDeveloperAdvancedExtendedTooltip</name>
+          <id>211</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ExportMain</name>
+        <id>168</id>
+        <items xsi:type="form:FormGroup">
+          <name>DataToExport</name>
+          <id>170</id>
+          <items xsi:type="form:FormGroup">
+            <name>FiltersSettingsGroup</name>
+            <id>232</id>
+            <items xsi:type="form:Button">
+              <name>SaveSettings</name>
+              <id>174</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>SaveSettingsExtendedTooltip</name>
+                <id>175</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <type>UsualButton</type>
+              <commandName>Form.Command.SaveSettings</commandName>
+              <representation>Auto</representation>
+              <width>3</width>
+              <autoMaxHeight>true</autoMaxHeight>
+              <placementArea>UserCmds</placementArea>
+              <representationInContextMenu>Auto</representationInContextMenu>
+            </items>
+            <items xsi:type="form:Button">
+              <name>RestoreSettings</name>
+              <id>176</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>RestoreSettingsExtendedTooltip</name>
+                <id>177</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <type>UsualButton</type>
+              <commandName>Form.Command.RestoreSettings</commandName>
+              <representation>Auto</representation>
+              <width>3</width>
+              <autoMaxHeight>true</autoMaxHeight>
+              <placementArea>UserCmds</placementArea>
+              <representationInContextMenu>Auto</representationInContextMenu>
+            </items>
+            <items xsi:type="form:FormField">
+              <name>AllDocumentsFilterPeriod</name>
+              <id>140</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Object.AllDocumentsFilterPeriod</segments>
+              </dataPath>
+              <extendedTooltip>
+                <name>AllDocumentsFilterPeriodExtendedTooltip</name>
+                <id>142</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>AllDocumentsFilterPeriodContextMenu</name>
+                <id>141</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>InputField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:InputFieldExtInfo">
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <wrap>true</wrap>
+                <chooseType>true</chooseType>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
+              </extInfo>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Настройки отборов</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Filter settings</value>
+            </title>
+            <title>
+              <key>pl</key>
+              <value>Ustawienia filtru</value>
+            </title>
+            <title>
+              <key>es_ES</key>
+              <value>Configuraciones de filtro</value>
+            </title>
+            <title>
+              <key>es_CO</key>
+              <value>Configuraciones de filtro</value>
+            </title>
+            <title>
+              <key>tr</key>
+              <value>Filtre ayarları</value>
+            </title>
+            <title>
+              <key>it</key>
+              <value>Impostazioni del filtro</value>
+            </title>
+            <title>
+              <key>de</key>
+              <value>Filtereinstellungen</value>
+            </title>
+            <extendedTooltip>
+              <name>FiltersSettingsGroupExtendedTooltip</name>
+              <id>233</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>UsualGroup</type>
+            <extInfo xsi:type="form:UsualGroupExtInfo">
+              <representation>WeakSeparation</representation>
+              <showLeftMargin>true</showLeftMargin>
+              <united>true</united>
+              <throughAlign>Auto</throughAlign>
+              <currentRowUse>Auto</currentRowUse>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Table">
+            <name>ExportRuleTable</name>
+            <id>115</id>
+            <title>
+              <key>ru</key>
+              <value>Таблица правил выгрузки</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Export rule table</value>
+            </title>
+            <title>
+              <key>pl</key>
+              <value>Tabela reguł wyładunku</value>
+            </title>
+            <title>
+              <key>es_ES</key>
+              <value>Exportar la tabla de reglas</value>
+            </title>
+            <title>
+              <key>es_CO</key>
+              <value>Exportar la tabla de reglas</value>
+            </title>
+            <title>
+              <key>tr</key>
+              <value>Dışa aktarma kural tablosu</value>
+            </title>
+            <title>
+              <key>it</key>
+              <value>Tabella delle regole di esportazione</value>
+            </title>
+            <title>
+              <key>de</key>
+              <value>Export Regeltabelle</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Object.ExportRuleTable</segments>
+            </dataPath>
+            <titleLocation>None</titleLocation>
+            <items xsi:type="form:FormField">
+              <name>ExportRulesTableEnable</name>
+              <id>131</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Object.ExportRuleTable.Enable</segments>
+              </dataPath>
+              <titleLocation>None</titleLocation>
+              <handlers>
+                <event>OnChange</event>
+                <name>ExportRuleTableChoiceProcessing</name>
+              </handlers>
+              <extendedTooltip>
+                <name>ExportRulesTableEnableExtendedTooltip</name>
+                <id>133</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ExportRulesTableEnableContextMenu</name>
+                <id>132</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>CheckBoxField</type>
+              <editMode>EnterOnInput</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            </items>
+            <items xsi:type="form:FormField">
+              <name>ExportRulesTableDescription</name>
+              <id>128</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Object.ExportRuleTable.Description</segments>
+              </dataPath>
+              <extendedTooltip>
+                <name>ExportRulesTableDescriptionExtendedTooltip</name>
+                <id>130</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ExportRulesTableDescriptionContextMenu</name>
+                <id>129</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>InputField</type>
+              <readOnly>true</readOnly>
+              <editMode>EnterOnInput</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:InputFieldExtInfo">
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <wrap>true</wrap>
+                <chooseType>true</chooseType>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormField">
+              <name>ExportRulesTableIsGroup</name>
+              <id>134</id>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Object.ExportRuleTable.IsFolder</segments>
+              </dataPath>
+              <extendedTooltip>
+                <name>ExportRulesTableIsGroupExtendedTooltip</name>
+                <id>136</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ExportRulesTableIsGroupContextMenu</name>
+                <id>135</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>CheckBoxField</type>
+              <editMode>EnterOnInput</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            </items>
+            <items xsi:type="form:FormField">
+              <name>ExportRulesTableFilterPresentation</name>
+              <id>143</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Object.ExportRuleTable.FilterPresentation</segments>
+              </dataPath>
+              <extendedTooltip>
+                <name>ExportRulesTableFilterPresentationExtendedTooltip</name>
+                <id>145</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ExportRulesTableFilterPresentationContextMenu</name>
+                <id>144</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>InputField</type>
+              <readOnly>true</readOnly>
+              <editMode>EnterOnInput</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:InputFieldExtInfo">
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <wrap>true</wrap>
+                <chooseType>true</chooseType>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
+              </extInfo>
+            </items>
+            <commandBarLocation>None</commandBarLocation>
+            <autoCommandBar>
+              <name>ExportRulesTableCommandBar</name>
+              <id>117</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <horizontalAlign>Left</horizontalAlign>
+              <autoFill>true</autoFill>
+            </autoCommandBar>
+            <handlers>
+              <event>Selection</event>
+              <name>ExportRuleTableSelect</name>
+            </handlers>
+            <handlers>
+              <event>ChoiceProcessing</event>
+              <name>ExportRuleTableChoice</name>
+            </handlers>
+            <searchStringAddition>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <name>ExportRulesTableSearchString</name>
+              <id>119</id>
+              <extendedTooltip>
+                <name>ExportRulesTableSearchStringExtendedTooltip</name>
+                <id>121</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ExportRulesTableSearchStringContextMenu</name>
+                <id>120</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <source>ExportRulesTableSearchString</source>
+              <extInfo xsi:type="form:SearchStringAdditionExtInfo">
+                <autoMaxWidth>true</autoMaxWidth>
+              </extInfo>
+            </searchStringAddition>
+            <viewStatusAddition>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <name>ExportRulesTableViewStatus</name>
+              <id>122</id>
+              <extendedTooltip>
+                <name>ExportRulesTableViewStatusExtendedTooltip</name>
+                <id>124</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ExportRulesTableViewStatusContextMenu</name>
+                <id>123</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>ViewStatusAddition</type>
+              <source>ExportRulesTableViewStatus</source>
+              <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
+                <autoMaxWidth>true</autoMaxWidth>
+              </extInfo>
+            </viewStatusAddition>
+            <searchControlAddition>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <name>ExportRulesTableSearchControl</name>
+              <id>125</id>
+              <extendedTooltip>
+                <name>ExportRulesTableSearchControlExtendedTooltip</name>
+                <id>127</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ExportRulesTableSearchControlContextMenu</name>
+                <id>126</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>SearchControlAddition</type>
+              <source>ExportRulesTableSearchControl</source>
+              <extInfo xsi:type="form:SearchControlAdditionExtInfo">
+                <autoMaxWidth>true</autoMaxWidth>
+              </extInfo>
+            </searchControlAddition>
+            <extendedTooltip>
+              <name>ExportRulesTableExtendedTooltip</name>
+              <id>118</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ExportRulesTableContextMenu</name>
+              <id>116</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <representation>Tree</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <autoMaxRowsCount>true</autoMaxRowsCount>
+            <selectionMode>MultiRow</selectionMode>
+            <header>true</header>
+            <headerHeight>1</headerHeight>
+            <footerHeight>1</footerHeight>
+            <horizontalScrollBar>AutoUse</horizontalScrollBar>
+            <verticalScrollBar>AutoUse</verticalScrollBar>
+            <horizontalLines>true</horizontalLines>
+            <verticalLines>true</verticalLines>
+            <autoInsertNewRow>true</autoInsertNewRow>
+            <searchOnInput>Auto</searchOnInput>
+            <initialListView>Auto</initialListView>
+            <horizontalStretch>true</horizontalStretch>
+            <verticalStretch>true</verticalStretch>
+            <enableStartDrag>true</enableStartDrag>
+            <enableDrag>true</enableDrag>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Выгружаемые данные</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Data to export</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Dane do wyeksportowania</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Datos exportados</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Datos exportados</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Dışa aktarılan veriler</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Dati da esportare</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Exportierte Daten</value>
+          </title>
+          <extendedTooltip>
+            <name>DataToExportExtendedTooltip</name>
+            <id>171</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Page</type>
+          <extInfo xsi:type="form:PageGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ExportResult</name>
+          <id>172</id>
+          <items xsi:type="form:FormGroup">
+            <name>ExportDataGroup</name>
+            <id>162</id>
+            <items xsi:type="form:FormField">
+              <name>XDTOExportResult</name>
+              <id>10</id>
+              <title>
+                <key>ru</key>
+                <value>Файл данных</value>
+              </title>
+              <title>
+                <key>en</key>
+                <value>Data file</value>
+              </title>
+              <title>
+                <key>pl</key>
+                <value>Plik danych</value>
+              </title>
+              <title>
+                <key>es_ES</key>
+                <value>Archivo de datos</value>
+              </title>
+              <title>
+                <key>es_CO</key>
+                <value>Archivo de datos</value>
+              </title>
+              <title>
+                <key>tr</key>
+                <value>Veri dosyası</value>
+              </title>
+              <title>
+                <key>it</key>
+                <value>File dati</value>
+              </title>
+              <title>
+                <key>de</key>
+                <value>Datendatei</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Object.XDTOExportResult</segments>
+              </dataPath>
+              <titleLocation>None</titleLocation>
+              <extendedTooltip>
+                <name>XDTOExportResultExtendedTooltip</name>
+                <id>12</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>XDTOExportResultContextMenu</name>
+                <id>11</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>TextDocumentField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:TextDocFieldExtInfo">
+                <width>50</width>
+                <autoMaxWidth>true</autoMaxWidth>
+                <height>10</height>
+                <autoMaxHeight>true</autoMaxHeight>
+                <horizontalStretch>true</horizontalStretch>
+                <verticalStretch>true</verticalStretch>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormGroup">
+              <name>XMLCommands</name>
+              <id>89</id>
+              <items xsi:type="form:Button">
+                <name>SaveXML</name>
+                <id>83</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <extendedTooltip>
+                  <name>SaveXMLExtendedTooltip</name>
+                  <id>84</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <type>UsualButton</type>
+                <commandName>Form.Command.SaveXML</commandName>
+                <representation>Auto</representation>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <placementArea>UserCmds</placementArea>
+                <representationInContextMenu>Auto</representationInContextMenu>
+              </items>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <title>
+                <key>ru</key>
+                <value>Команды XML</value>
+              </title>
+              <title>
+                <key>en</key>
+                <value>XML commands</value>
+              </title>
+              <title>
+                <key>pl</key>
+                <value>Polecenia XML</value>
+              </title>
+              <title>
+                <key>es_ES</key>
+                <value>Comandos XML</value>
+              </title>
+              <title>
+                <key>es_CO</key>
+                <value>Comandos XML</value>
+              </title>
+              <title>
+                <key>tr</key>
+                <value>XML komutları</value>
+              </title>
+              <title>
+                <key>it</key>
+                <value>Comandi XML</value>
+              </title>
+              <title>
+                <key>de</key>
+                <value>XML-Befehle</value>
+              </title>
+              <extendedTooltip>
+                <name>XMLCommandsExtendedTooltip</name>
+                <id>90</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <type>UsualGroup</type>
+              <extInfo xsi:type="form:UsualGroupExtInfo">
+                <group>Vertical</group>
+                <verticalAlign>Bottom</verticalAlign>
+                <showLeftMargin>true</showLeftMargin>
+                <united>true</united>
+                <throughAlign>Auto</throughAlign>
+                <currentRowUse>Auto</currentRowUse>
+              </extInfo>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Данные выгрузки</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Export data</value>
+            </title>
+            <title>
+              <key>pl</key>
+              <value>Eksportuj dane</value>
+            </title>
+            <title>
+              <key>es_ES</key>
+              <value>Exportar datos</value>
+            </title>
+            <title>
+              <key>es_CO</key>
+              <value>Exportar datos</value>
+            </title>
+            <title>
+              <key>tr</key>
+              <value>Veri dışa aktar</value>
+            </title>
+            <title>
+              <key>it</key>
+              <value>Esportare i dati</value>
+            </title>
+            <title>
+              <key>de</key>
+              <value>Daten exportieren</value>
+            </title>
+            <extendedTooltip>
+              <name>ExportDataGroupExtendedTooltip</name>
+              <id>163</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>UsualGroup</type>
+            <extInfo xsi:type="form:UsualGroupExtInfo">
+              <showLeftMargin>true</showLeftMargin>
+              <united>true</united>
+              <throughAlign>Auto</throughAlign>
+              <currentRowUse>Auto</currentRowUse>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Результат выгрузки</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Export result</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Rezultat eksportowania</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Resultado de subida</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Resultado de subida</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Dışa aktarma sonucu</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Risultato esportazione</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Ergebnis des Hochladens</value>
+          </title>
+          <extendedTooltip>
+            <name>ExportResultExtendedTooltip</name>
+            <id>173</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Page</type>
+          <extInfo xsi:type="form:PageGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Выгрузка основное</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Export main</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Ładowania podstawowe</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Subida principal</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Subida principal</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Dışa aktarma ana</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Esportazione principale</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Hochladen von Hauptsächlichen</value>
+        </title>
+        <extendedTooltip>
+          <name>ExportMainExtendedTooltip</name>
+          <id>169</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Pages</type>
+        <extInfo xsi:type="form:PagesGroupExtInfo">
+          <pagesRepresentation>TabsOnTop</pagesRepresentation>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>DataExported</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>DataExported</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>DataExported</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>DataExported</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>DataExported</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>DataExported</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>DataExported</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>DataExported</value>
+      </title>
+      <extendedTooltip>
+        <name>ExportExtendedTooltip</name>
+        <id>18</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>Wait</name>
+      <id>249</id>
+      <items xsi:type="form:FormGroup">
+        <name>TimeConsumingOperationPictureAndText</name>
+        <id>251</id>
+        <items xsi:type="form:Decoration">
+          <name>TimeConsumingOperationDecoration</name>
+          <id>253</id>
+          <title>
+            <key>ru</key>
+            <value>Длительная операция</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Time-consuming operation</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Długotrwała operacja</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Acción larga</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Acción larga</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Uzun süreli operasyon</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Operazione Time-Consuming</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Zeitintensive Operation</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>TimeConsumingOperationDecorationExtendedTooltip</name>
+            <id>255</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>TimeConsumingOperationDecorationContextMenu</name>
+            <id>254</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.TimeConsumingOperation48</picture>
+            </picture>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>TimeConsumingOperationNoteTextDecoration</name>
+          <id>256</id>
+          <title>
+            <key>ru</key>
+            <value>Выполняется выгрузка загрузка данных...</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Data export import is in progress...</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Odbywa się ładowanie pobieranie danych...</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Se están descargando los datos...</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Se están descargando los datos...</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Veriler içe aktarılıyor dışa aktarılıyor...</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Esportazione importazione dati in corso...</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Daten werden hochgeladen heruntergeladen...</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>TimeConsumingOperationNoteTextDecorationExtendedTooltip</name>
+            <id>258</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>TimeConsumingOperationNoteTextDecorationContextMenu</name>
+            <id>257</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>Label</type>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+            <verticalAlign>Center</verticalAlign>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Длительная операция картинка и текст</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Time-consuming operation picture and text</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Długa operacja obrazek i tekst</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Operación durada imagen y texto</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Operación durada imagen y texto</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Uzun süreli operasyon resmi ve metni</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Immagine e testo operazione time-consuming</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Zeitintensive Operation Bild und Text</value>
+        </title>
+        <extendedTooltip>
+          <name>TimeConsumingOperationPictureAndTextExtendedTooltip</name>
+          <id>252</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <verticalAlign>Center</verticalAlign>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Ожидание</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Wait</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Czekaj</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Espere</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Espere</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Bekle</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Attesa</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Warten</value>
+      </title>
+      <extendedTooltip>
+        <name>WaitExtendedTooltip</name>
+        <id>250</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Выгрузка загрузка</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Export import</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Eksport, import</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Subida descarga</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Subida descarga</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dışa aktarma içe aktarma</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Esportazione importazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Hochladen herunterladen</value>
+    </title>
+    <extendedTooltip>
+      <name>ExportImportExtendedTooltip</name>
+      <id>16</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>Pages</type>
+    <extInfo xsi:type="form:PagesGroupExtInfo">
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>CommandBarForm</name>
+    <id>-1</id>
+    <items xsi:type="form:Button">
+      <name>FormEnableAdvancedFeatures</name>
+      <id>230</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormEnableAdvancedFeaturesExtendedTooltip</name>
+        <id>231</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.EnableDeveloperMode</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <check>true</check>
+      <representationInContextMenu>Auto</representationInContextMenu>
+      <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
+    </items>
+    <items xsi:type="form:Button">
+      <name>FormExecuteOperation</name>
+      <id>234</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormExecuteOperationExtendedTooltip</name>
+        <id>235</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.ExecuteOperation</commandName>
+      <representation>PictureAndText</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+      <locationInCommandBar>InCommandBarAndInAdditionalSubmenu</locationInCommandBar>
+    </items>
+    <items xsi:type="form:Button">
+      <name>FormAbort</name>
+      <id>247</id>
+      <title>
+        <key>ru</key>
+        <value>Прервать выполнение операции</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Cancel operation</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Przerwać wykonywanie operacji</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Interrumpir ejecución de operación</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Interrumpir ejecución de operación</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Işlemi durdur</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Annulla l'operazione</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Operation abbrechen</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormAbortExtendedTooltip</name>
+        <id>248</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.Abort</commandName>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+  </autoCommandBar>
+  <handlers>
+    <event>OnOpen</event>
+    <name>OnOpen</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <autoSaveDataInSettings>Use</autoSaveDataInSettings>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Object</name>
+    <id>1</id>
+    <valueType>
+      <types>DataProcessorObject.ExportImportEnterpriseData</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>1/0:28497538-35a5-4698-80cb-8935787c3903</segments>
+    </settingsSavedData>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>1/0:2df5390d-4ee8-4716-af67-3dbe7437f4f7</segments>
+    </settingsSavedData>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>1/0:5d07bae6-89d7-4869-99ad-19723153f72c</segments>
+    </settingsSavedData>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>1/0:8ac1a99d-8ca3-4f14-9ddf-9f3aea74f062</segments>
+    </settingsSavedData>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>Object.FormatVersion</segments>
+    </settingsSavedData>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>Object.PathToExportExchangeManager</segments>
+    </settingsSavedData>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>Object.PathToImportExchangeManager</segments>
+    </settingsSavedData>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>Object.XDTOExportResult</segments>
+    </settingsSavedData>
+    <main>true</main>
+    <additionalColumns>
+      <tablePath xsi:type="form:DataPath">
+        <segments>Object.AdditionalRegistration</segments>
+      </tablePath>
+      <columns>
+        <name>FullMetadataName</name>
+        <title>
+          <key>ru</key>
+          <value>Полное имя метаданных</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Full metadata name</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Pełna nazwa metadanych</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Nombre completo de metadatos</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Nombre completo de metadatos</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Meta verinin tam adı</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Nome completo metadati</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Vollständiger Name der Metadaten</value>
+        </title>
+        <id>1</id>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers/>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>Filter</name>
+        <title>
+          <key>ru</key>
+          <value>Отбор</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Filter</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Filtr</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Filtro</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Filtro</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Filtre</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Filtro</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Filter</value>
+        </title>
+        <id>2</id>
+        <valueType>
+          <types>DataCompositionFilter</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>Period</name>
+        <title>
+          <key>ru</key>
+          <value>Период</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Period</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Okres</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Período</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Período</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Dönem</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Periodo</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Zeitraum</value>
+        </title>
+        <id>3</id>
+        <valueType>
+          <types>StandardPeriod</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>SelectPeriod</name>
+        <title>
+          <key>ru</key>
+          <value>Выбор периода</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Period selection</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Wybór okresu</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Selección de período</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Selección de período</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Dönem seçimi</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Periodo selezione</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Zeitraumauswahl</value>
+        </title>
+        <id>4</id>
+        <valueType>
+          <types>Boolean</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>Presentation</name>
+        <title>
+          <key>ru</key>
+          <value>Представление</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Presentation</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Przedstawienie</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Presentación</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Presentación</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Sunum</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Presentazione</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Präsentation</value>
+        </title>
+        <id>5</id>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers/>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>FilterString</name>
+        <title>
+          <key>ru</key>
+          <value>Отбор строкой</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Filter as string</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Filtruj jako wiersz</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Filtro como una línea</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Filtro como una línea</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Dize olarak filtre</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Filtro come una stringa</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Filter als Zeichenfolge</value>
+        </title>
+        <id>6</id>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers/>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>Count</name>
+        <title>
+          <key>ru</key>
+          <value>Количество</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Quantity</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Ilość</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Cantidad</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Cantidad</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Miktar</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Quantità</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Menge</value>
+        </title>
+        <id>7</id>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers/>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+    </additionalColumns>
+    <additionalColumns>
+      <tablePath xsi:type="form:DataPath">
+        <segments>Object.ExportRuleTable</segments>
+      </tablePath>
+      <columns>
+        <name>Description</name>
+        <title>
+          <key>ru</key>
+          <value>Наименование</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Description</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Opis</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Descripción</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Descripción</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Tanım</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Descrizione</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Beschreibung</value>
+        </title>
+        <id>1</id>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers/>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>Enable</name>
+        <title>
+          <key>ru</key>
+          <value>Включить</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Enable</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Włącz</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Activar</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Activar</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Etkinleştir</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Abilitare</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Aktivieren</value>
+        </title>
+        <id>2</id>
+        <valueType>
+          <types>Boolean</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>IsFolder</name>
+        <title>
+          <key>ru</key>
+          <value>Это группа</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>This is a group</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>To jest grupa</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Es la carpeta</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Es la carpeta</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Bu bir gruptur</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Questo è un gruppo</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Ist ein Ordner</value>
+        </title>
+        <id>3</id>
+        <valueType>
+          <types>Boolean</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>FilterPresentation</name>
+        <title>
+          <key>ru</key>
+          <value>Представление отбора</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Filter presentation</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Przedstawienie filtru</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Filtro presentación</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Filtro presentación</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Sunuyu filtrele</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>presentazione Filtro</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Filter Präsentation</value>
+        </title>
+        <id>5</id>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers/>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>FullMetadataName</name>
+        <title>
+          <key>ru</key>
+          <value>Полное имя метаданных</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Full metadata name</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Pełna nazwa metadanych</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Nombre completo de metadatos</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Nombre completo de metadatos</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Meta verinin tam adı</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Nome completo metadati</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Vollständiger Name der Metadaten</value>
+        </title>
+        <id>6</id>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers/>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>Presentation</name>
+        <title>
+          <key>ru</key>
+          <value>Представление</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Presentation</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Przedstawienie</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Presentación</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Presentación</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Sunum</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Presentazione</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Präsentation</value>
+        </title>
+        <id>7</id>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers/>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+    </additionalColumns>
+  </attributes>
+  <attributes>
+    <name>BaseNameForForm</name>
+    <title>
+      <key>ru</key>
+      <value>Базовое имя для формы</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Basic name for form</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Podstawowa nazwa dla formularza</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Nombre básico para el formulario</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Nombre básico para el formulario</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Form için basit ad</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Nome predefito per il modulo</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Basisname für Formular</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>StringSupportedFormatVersions</name>
+    <title>
+      <key>ru</key>
+      <value>Строка поддерживаемые версии формата</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Line supported format versions</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wiersz obsługiwane wersje formatu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Línea versiones del formato admitidas</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Línea versiones del formato admitidas</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Satır destekli format sürümleri</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Versioni formato riga supportata</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Unterstützte Versionen für das Zeichenfolgenformat</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>DataSeparationEnabled</name>
+    <title>
+      <key>ru</key>
+      <value>Разделение включено</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Split is enabled</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Włączono rozdzielenie</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>División está activada</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>División está activada</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Bölme etkinleştirildi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>La separazione è abilitata</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Aufteilung ist aktiviert</value>
+    </title>
+    <id>4</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>DeveloperMode</name>
+    <title>
+      <key>ru</key>
+      <value>Режим разработчика</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Developer mode</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Tryb dewelopera</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Modo de desarrollador</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Modo de desarrollador</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Geliştirici modu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Modalità Configuratore</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Entwickler-Modus</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>DeveloperMode</segments>
+    </settingsSavedData>
+  </attributes>
+  <attributes>
+    <name>ImportFileAddress</name>
+    <title>
+      <key>ru</key>
+      <value>Адрес файла загрузки</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Import file address</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Adres pliku do pobrania</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Dirección del archivo de descarga</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Dirección del archivo de descarga</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>İçe aktarma dosyasının adresi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Indirizzo file importazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Dateiadresse herunterladen</value>
+    </title>
+    <id>6</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ImportSource</name>
+    <title>
+      <key>ru</key>
+      <value>Источник загрузки</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Import source </value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Źródło pobrania </value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Fuente de descarga</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Fuente de descarga</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>İçe aktarma kaynağı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Sorgente importazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Quelle herunterladen</value>
+    </title>
+    <id>7</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>ImportSource</segments>
+    </settingsSavedData>
+  </attributes>
+  <attributes>
+    <name>ExportLocation</name>
+    <title>
+      <key>ru</key>
+      <value>Место выгрузки</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Export location</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Miejsce ładowania</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Lugar de subida</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Lugar de subida</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dışa aktarma yeri</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Località esportazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Ort des Hochladens</value>
+    </title>
+    <id>8</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>ExportLocation</segments>
+    </settingsSavedData>
+  </attributes>
+  <attributes>
+    <name>DataForXDTOImport</name>
+    <title>
+      <key>ru</key>
+      <value>Данные для загрузки XDTO</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Data for XDTO import</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Dane do pobrania XDTO</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Datos para descargar XDTO</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Datos para descargar XDTO</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>XDTO içe aktarma verileri</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Dati per importazione XDTO</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Daten zum herunterladen von XDTO</value>
+    </title>
+    <id>9</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>PathToImportFile</name>
+    <title>
+      <key>ru</key>
+      <value>Путь к файлу загрузки</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Path to import file</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Ścieżka do pliku pobierania</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Ruta al archivo de descarga</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Ruta al archivo de descarga</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>İçe aktarma dosyası yolu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Percorso per importare il file</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Pfad zur Download-Datei</value>
+    </title>
+    <id>10</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ExportFilePath</name>
+    <title>
+      <key>ru</key>
+      <value>Путь к файлу выгрузки</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Path to export file</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Ścieżka do pliku ładowania</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Ruta al archivo de subida</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Ruta al archivo de subida</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dışa aktarma dosyası yolu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Percorso per file esportazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Pfad zur Upload-Datei</value>
+    </title>
+    <id>11</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>OperationKind</name>
+    <title>
+      <key>ru</key>
+      <value>Вид операции</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Operation kind</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Rodzaj operacji</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Tipo de operación</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Tipo de operación</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>İşlem türü</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Tipologia di operazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Operationsart</value>
+    </title>
+    <id>12</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>OperationKind</segments>
+    </settingsSavedData>
+  </attributes>
+  <attributes>
+    <name>FormOpenOption</name>
+    <title>
+      <key>ru</key>
+      <value>Вариант открытия формы</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Form opening option</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Opcja otwierania formy</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Opción de apertura del formulario</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Opción de apertura del formulario</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Biçim açılış seçeneği</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Opzione di apertura modulo</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Optionen zum Öffnen des Formulars</value>
+    </title>
+    <id>13</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ResultStorageAddress</name>
+    <title>
+      <key>ru</key>
+      <value>Адрес хранения результата</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Result storage address</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Adres przechowywania wyników</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Dirección del almacenamiento del resultado</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Dirección del almacenamiento del resultado</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Sonuç depolama adresi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Indirizzo archivio risultato</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Speicheradresse des Ergebnisses</value>
+    </title>
+    <id>15</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>JobID</name>
+    <title>
+      <key>ru</key>
+      <value>Идентификатор задания</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Job ID</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Identyfikator zadania</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Identificador de la tarea</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Identificador de la tarea</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>İş Kimliği</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>ID attività</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Job-ID</value>
+    </title>
+    <id>16</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>DataProcessorName</name>
+    <title>
+      <key>ru</key>
+      <value>Имя обработки</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Data processor name</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Nazwa procesora danych</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Nombre del procesador de datos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Nombre del procesador de datos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Veri işlemcisi adı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Nome della elaborazione dati</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Name des Datenprozessors</value>
+    </title>
+    <id>17</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>MessagesArray</name>
+    <title>
+      <key>ru</key>
+      <value>Массив сообщений</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Message array</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Masyw wiadomości</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Matriz de mensajes</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Matriz de mensajes</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Mesaj masifi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Matrice messaggio</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Nachrichten-Array</value>
+    </title>
+    <id>18</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>SaveXML</name>
+    <title>
+      <key>ru</key>
+      <value>Сохранить XML</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Save XML</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zapisać XML</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Guardar XML</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Guardar XML</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>XML kaydet</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Salva XML</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>XML speichern</value>
+    </title>
+    <id>8</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Сохранить XML</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Save XML</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zapisać XML</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Guardar XML</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Guardar XML</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>XML kaydet</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Salva XML</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>XML speichern</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.SaveFile</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>SaveXML</name>
+      </handler>
+    </action>
+    <representation>Picture</representation>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>OpenXML</name>
+    <title>
+      <key>ru</key>
+      <value>Открыть XML</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Open XML</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Otworzyć XML</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Abrir XML</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Abrir XML</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>XML aç</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Apri XML</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>XML öffnen</value>
+    </title>
+    <id>9</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Открыть XML</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Open XML</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Otworzyć XML</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Abrir XML</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Abrir XML</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>XML aç</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Apri XML</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>XML öffnen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.OpenFile</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>OpenXML</name>
+      </handler>
+    </action>
+    <representation>Picture</representation>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>SaveSettings</name>
+    <title>
+      <key>ru</key>
+      <value>Сохранить настройки</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Save settings</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zapisz ustawienia</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Guardar configuraciones</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Guardar configuraciones</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Ayarları kaydet</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Salvare le impostazioni</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Einstellungen speichern</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Сохранить настройки</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Save settings</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zapisz ustawienia</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Guardar configuraciones</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Guardar configuraciones</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Ayarları kaydet</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Salvare le impostazioni</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Einstellungen speichern</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.SaveValues</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>SaveSettings</name>
+      </handler>
+    </action>
+    <representation>Picture</representation>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>RestoreSettings</name>
+    <title>
+      <key>ru</key>
+      <value>Восстановить настройки</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Restore settings</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Przywróć ustawienia</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Restablecer ajustes</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Restablecer ajustes</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Ayarları geri yükle</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Ripristina impostazioni</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Einstellungen wiederherstellen</value>
+    </title>
+    <id>3</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Восстановить настройки</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Restore settings</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Przywróć ustawienia</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Restablecer ajustes</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Restablecer ajustes</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Ayarları geri yükle</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Ripristina impostazioni</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Einstellungen wiederherstellen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.RestoreValues</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>RestoreSettings</name>
+      </handler>
+    </action>
+    <representation>Picture</representation>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>EnableDeveloperMode</name>
+    <title>
+      <key>ru</key>
+      <value>Режим разработчика</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Developer mode</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Tryb dewelopera</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Modo de desarrollador</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Modo de desarrollador</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Geliştirici modu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Modalità Configuratore</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Entwickler-Modus</value>
+    </title>
+    <id>5</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Включить режим разработчика</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Enable developer mode</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Włączyć tryb dewelopera</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Activar el modo de desarrollador</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Activar el modo de desarrollador</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Geliştirici modunu aç</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Abilità modalità configuratore</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Entwicklermodus aktivieren</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>EnableDeveloperMode</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ExecuteOperation</name>
+    <title>
+      <key>ru</key>
+      <value>Выполнить операцию</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Run operation</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zrealizować operację</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Ejecutar la operación</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Ejecutar la operación</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>İşlemi yürüt</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Avvia l'operazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Operation ausführen</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Выполнить операцию</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Run operation</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zrealizować operację</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Ejecutar la operación</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Ejecutar la operación</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>İşlemi yürüt</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Avvia l'operazione</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Operation ausführen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.GenerateReport</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ExecuteOperation</name>
+      </handler>
+    </action>
+    <representation>TextPicture</representation>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>Abort</name>
+    <title>
+      <key>ru</key>
+      <value>Прервать</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Abort</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Przerwij</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Anular</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Anular</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Durdur</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Interrompi</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Abbrechen</value>
+    </title>
+    <id>4</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Прервать выгрузку / загрузку данных</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Cancel data export / import</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Przerwać ładowanie / pobieranie danych</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Interrumpir subida / descarga de datos</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Interrumpir subida / descarga de datos</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Veri içe / dışa aktarımını iptal et</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Annulla esportazione / importazione dati</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Upload / Download abbrechen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>AbortExportImport</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+  <extInfo xsi:type="form:ObjectFormExtInfo"/>
+</form:Form>

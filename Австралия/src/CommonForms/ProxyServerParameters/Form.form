@@ -1,0 +1,2322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:FormField">
+    <name>ProxyServerUsageOptions</name>
+    <id>20</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>ProxyServerUseCase</segments>
+    </dataPath>
+    <titleLocation>None</titleLocation>
+    <handlers>
+      <event>OnChange</event>
+      <name>ProxyServerUsageOptionsOnChange</name>
+    </handlers>
+    <extendedTooltip>
+      <name>ProxyServerUseCasesExtendedTooltip</name>
+      <id>45</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ProxyServerUseCasesContextMenu</name>
+      <id>21</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>RadioButtonField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+      <columnsCount>1</columnsCount>
+      <choiceList>
+        <presentation>
+          <key>ru</key>
+          <value>Не использовать прокси-сервер</value>
+        </presentation>
+        <presentation>
+          <key>en</key>
+          <value>Do not use proxy server</value>
+        </presentation>
+        <presentation>
+          <key>pl</key>
+          <value>Nie używaj serwera proxy</value>
+        </presentation>
+        <presentation>
+          <key>es_ES</key>
+          <value>No utilizar el servidor proxy</value>
+        </presentation>
+        <presentation>
+          <key>es_CO</key>
+          <value>No utilizar el servidor proxy</value>
+        </presentation>
+        <presentation>
+          <key>tr</key>
+          <value>Proxy sunucusunu kullanma</value>
+        </presentation>
+        <presentation>
+          <key>it</key>
+          <value>Non utilizzare server proxy</value>
+        </presentation>
+        <presentation>
+          <key>de</key>
+          <value>Keinen Proxy-Server benutzen</value>
+        </presentation>
+        <value xsi:type="core:NumberValue">
+          <value>0</value>
+        </value>
+      </choiceList>
+      <choiceList>
+        <presentation>
+          <key>ru</key>
+          <value>Использовать системные настройки прокси-сервера</value>
+        </presentation>
+        <presentation>
+          <key>en</key>
+          <value>Use system proxy settings</value>
+        </presentation>
+        <presentation>
+          <key>pl</key>
+          <value>Używaj ustawień proxy</value>
+        </presentation>
+        <presentation>
+          <key>es_ES</key>
+          <value>Utilizar configuraciones del proxy del sistema</value>
+        </presentation>
+        <presentation>
+          <key>es_CO</key>
+          <value>Utilizar configuraciones del proxy del sistema</value>
+        </presentation>
+        <presentation>
+          <key>tr</key>
+          <value>Sistem proxy sunucusunu kullan</value>
+        </presentation>
+        <presentation>
+          <key>it</key>
+          <value>Utilizzare le impostazioni proxy del sistema</value>
+        </presentation>
+        <presentation>
+          <key>de</key>
+          <value>System-Proxy-Einstellungen benutzen</value>
+        </presentation>
+        <value xsi:type="core:NumberValue">
+          <value>1</value>
+        </value>
+      </choiceList>
+      <choiceList>
+        <presentation>
+          <key>ru</key>
+          <value>Использовать другие настройки прокси-сервера:</value>
+        </presentation>
+        <presentation>
+          <key>en</key>
+          <value>Use other proxy settings:</value>
+        </presentation>
+        <presentation>
+          <key>pl</key>
+          <value>Używaj innych ustawień serwera proxy:</value>
+        </presentation>
+        <presentation>
+          <key>es_ES</key>
+          <value>Utilizar configuraciones de otro proxy:</value>
+        </presentation>
+        <presentation>
+          <key>es_CO</key>
+          <value>Utilizar configuraciones de otro proxy:</value>
+        </presentation>
+        <presentation>
+          <key>tr</key>
+          <value>Diğer proxy ayarlarını kullan:</value>
+        </presentation>
+        <presentation>
+          <key>it</key>
+          <value>Utilizzare le altre impostazioni proxy:</value>
+        </presentation>
+        <presentation>
+          <key>de</key>
+          <value>Andere Proxy-Einstellungen benutzen:</value>
+        </presentation>
+        <value xsi:type="core:NumberValue">
+          <value>2</value>
+        </value>
+      </choiceList>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ProxyParameters</name>
+    <id>18</id>
+    <items xsi:type="form:FormGroup">
+      <name>ServerAddressGroup</name>
+      <id>19</id>
+      <items xsi:type="form:FormField">
+        <name>ProxyServer</name>
+        <id>9</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Server</segments>
+        </dataPath>
+        <toolTip>
+          <key>ru</key>
+          <value>IP адрес или имя прокси сервера</value>
+        </toolTip>
+        <toolTip>
+          <key>en</key>
+          <value>IP address or proxy server name</value>
+        </toolTip>
+        <toolTip>
+          <key>pl</key>
+          <value>Adres IP lub nazwa serwera proxy</value>
+        </toolTip>
+        <toolTip>
+          <key>es_ES</key>
+          <value>Dirección IP o nombre del servidor proxy</value>
+        </toolTip>
+        <toolTip>
+          <key>es_CO</key>
+          <value>Dirección IP o nombre del servidor proxy</value>
+        </toolTip>
+        <toolTip>
+          <key>tr</key>
+          <value>IP adresi veya proxy sunucusu adı</value>
+        </toolTip>
+        <toolTip>
+          <key>it</key>
+          <value>Indirizzo IP o nome del server proxy</value>
+        </toolTip>
+        <toolTip>
+          <key>de</key>
+          <value>IP-Adresse oder Proxy-Server-Name</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>ProxyServerExtendedTooltip</name>
+          <id>48</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ProxyServerContextMenu</name>
+          <id>10</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>Port</name>
+        <id>1</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Port</segments>
+        </dataPath>
+        <toolTip>
+          <key>ru</key>
+          <value>Порт прокси сервера</value>
+        </toolTip>
+        <toolTip>
+          <key>en</key>
+          <value>Proxy server port</value>
+        </toolTip>
+        <toolTip>
+          <key>pl</key>
+          <value>Port serwera proxy</value>
+        </toolTip>
+        <toolTip>
+          <key>es_ES</key>
+          <value>Puerto del servidor proxy</value>
+        </toolTip>
+        <toolTip>
+          <key>es_CO</key>
+          <value>Puerto del servidor proxy</value>
+        </toolTip>
+        <toolTip>
+          <key>tr</key>
+          <value>Proxy sunucu portu</value>
+        </toolTip>
+        <toolTip>
+          <key>it</key>
+          <value>Porta proxy del server</value>
+        </toolTip>
+        <toolTip>
+          <key>de</key>
+          <value>Proxy-Server-Port</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>PortExtendedTooltip</name>
+          <id>49</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>PortContextMenu</name>
+          <id>2</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <editFormat>
+            <key>ru</key>
+            <value>ЧН=; ЧГ=</value>
+          </editFormat>
+          <editFormat>
+            <key>en</key>
+            <value>NZ=; NG=</value>
+          </editFormat>
+          <editFormat>
+            <key>pl</key>
+            <value>ЧН(NZ)=; NG=</value>
+          </editFormat>
+          <editFormat>
+            <key>es_ES</key>
+            <value>ЧН=; ЧГ=</value>
+          </editFormat>
+          <editFormat>
+            <key>es_CO</key>
+            <value>ЧН=; ЧГ=</value>
+          </editFormat>
+          <editFormat>
+            <key>tr</key>
+            <value>ÇN=; ÇG =</value>
+          </editFormat>
+          <editFormat>
+            <key>it</key>
+            <value>NZ=; NG=</value>
+          </editFormat>
+          <editFormat>
+            <key>de</key>
+            <value>NZ=; NG=</value>
+          </editFormat>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+          <minValue xsi:type="core:NumberValue">
+            <value>0</value>
+          </minValue>
+          <maxValue xsi:type="core:NumberValue">
+            <value>65535</value>
+          </maxValue>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Адрес сервера</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Server address</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Adres serwera</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Dirección del servidor</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Dirección del servidor</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Sunucu adresi</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Indirizzo del server</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Server-Adresse</value>
+      </title>
+      <extendedTooltip>
+        <name>ServerAddressGroupExtendedTooltip</name>
+        <id>47</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>HorizontalIfPossible</group>
+        <representation>NormalSeparation</representation>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>AuthenticationGroup</name>
+      <id>74</id>
+      <items xsi:type="form:FormField">
+        <name>UseOSAuthentication</name>
+        <id>63</id>
+        <title>
+          <key>ru</key>
+          <value>Аутентификация</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Authentication</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Autoryzacja</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Autenticación</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Autenticación</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Doğrulama</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Autenticazione</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Authentifizierung</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>UseOSAuthentication</segments>
+        </dataPath>
+        <toolTipRepresentation>Button</toolTipRepresentation>
+        <extendedTooltip>
+          <name>UseOSAuthenticationExtendedTooltip</name>
+          <id>65</id>
+          <title>
+            <key>ru</key>
+            <value>- Базовая (Basic Authentication)
+- Операционная система (NTLM Integrated Windows)
+     в версии 1С:Предприятия под Windows</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>- Basic (Basic Authentication)
+- Operating system (NTLM Integrated Windows)
+     of 1C:Enterprise version for Windows</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>- Podstawowe (Basic Authentication)
+ - System operacyjny (NTLM Integrated Windows)
+ w wersji 1C:Enterprise dla Windows</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>- Básica (Basic Authentication)
+- Sistema operativo (NTLM Integrated Windows)
+     en la versión 1С:Enterprise para Windows</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>- Básica (Basic Authentication)
+- Sistema operativo (NTLM Integrated Windows)
+     en la versión 1С:Enterprise para Windows</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>- Baz (Basic Authentication)
+- İşletim sistemi (NTLM Integrated Windows)
+    1C:Enterprise Windows ile uyumlu sürümü ile</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>- Di base (Autenticazione Base)
+- Sistema operativo (NTLM Windows integrato)
+ della versione 1C:Enterprise per Windows</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>- Basic (Basic Authentication)
+- Betriebssystem (NTLM Integrated Windows)
+     in Version 1C:Enterprise unter Windows</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>UseOSAuthenticationContextMenu</name>
+          <id>64</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <listChoiceMode>true</listChoiceMode>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Базовая</value>
+            </presentation>
+            <presentation>
+              <key>en</key>
+              <value>Basic</value>
+            </presentation>
+            <presentation>
+              <key>pl</key>
+              <value>Podstawowe</value>
+            </presentation>
+            <presentation>
+              <key>es_ES</key>
+              <value>Simple</value>
+            </presentation>
+            <presentation>
+              <key>es_CO</key>
+              <value>Simple</value>
+            </presentation>
+            <presentation>
+              <key>tr</key>
+              <value>Basit</value>
+            </presentation>
+            <presentation>
+              <key>it</key>
+              <value>Di base</value>
+            </presentation>
+            <presentation>
+              <key>de</key>
+              <value>Einfach</value>
+            </presentation>
+            <value xsi:type="core:NumberValue">
+              <value>0</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Операционная система</value>
+            </presentation>
+            <presentation>
+              <key>en</key>
+              <value>Operating system</value>
+            </presentation>
+            <presentation>
+              <key>pl</key>
+              <value>System operacyjny</value>
+            </presentation>
+            <presentation>
+              <key>es_ES</key>
+              <value>Sistema operativo</value>
+            </presentation>
+            <presentation>
+              <key>es_CO</key>
+              <value>Sistema operativo</value>
+            </presentation>
+            <presentation>
+              <key>tr</key>
+              <value>İşletim sistemi</value>
+            </presentation>
+            <presentation>
+              <key>it</key>
+              <value>Sistema operativo</value>
+            </presentation>
+            <presentation>
+              <key>de</key>
+              <value>Betriebssystem</value>
+            </presentation>
+            <value xsi:type="core:NumberValue">
+              <value>1</value>
+            </value>
+          </choiceList>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>User</name>
+        <id>5</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>User</segments>
+        </dataPath>
+        <toolTip>
+          <key>ru</key>
+          <value>Логин для авторизации на прокси сервере</value>
+        </toolTip>
+        <toolTip>
+          <key>en</key>
+          <value>The username for authorization on the proxy server.</value>
+        </toolTip>
+        <toolTip>
+          <key>pl</key>
+          <value>Hasło do autoryzacji na serwerze proxy</value>
+        </toolTip>
+        <toolTip>
+          <key>es_ES</key>
+          <value>Autorización del inicio de sesión del servidor proxy</value>
+        </toolTip>
+        <toolTip>
+          <key>es_CO</key>
+          <value>Autorización del inicio de sesión del servidor proxy</value>
+        </toolTip>
+        <toolTip>
+          <key>tr</key>
+          <value>Proxy sunucu yetkilendirme oturum açması</value>
+        </toolTip>
+        <toolTip>
+          <key>it</key>
+          <value>Login per l'autorizzazione sul server proxy.</value>
+        </toolTip>
+        <toolTip>
+          <key>de</key>
+          <value>Proxy-Server-Autorisierung Anmeldung</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>UserExtendedTooltip</name>
+          <id>51</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>UserContextMenu</name>
+          <id>6</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>Password</name>
+        <id>3</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Password</segments>
+        </dataPath>
+        <toolTip>
+          <key>ru</key>
+          <value>Пароль для авторизации на прокси сервере</value>
+        </toolTip>
+        <toolTip>
+          <key>en</key>
+          <value>The password for authorization on the proxy server.</value>
+        </toolTip>
+        <toolTip>
+          <key>pl</key>
+          <value>Hasło do autoryzacji na serwerze proxy</value>
+        </toolTip>
+        <toolTip>
+          <key>es_ES</key>
+          <value>Contraseña de autorización del servidor proxy</value>
+        </toolTip>
+        <toolTip>
+          <key>es_CO</key>
+          <value>Contraseña de autorización del servidor proxy</value>
+        </toolTip>
+        <toolTip>
+          <key>tr</key>
+          <value>Proxy sunucu yetkilendirme parolası</value>
+        </toolTip>
+        <toolTip>
+          <key>it</key>
+          <value>La password per autorizzazione sul server proxy.</value>
+        </toolTip>
+        <toolTip>
+          <key>de</key>
+          <value>Passwort für Proxy-Server-Autorisierung</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>PasswordExtendedTooltip</name>
+          <id>52</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>PasswordContextMenu</name>
+          <id>4</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <passwordMode>true</passwordMode>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Группа аутентификация</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Group authentication</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Grupa uwierzytelniania</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Grupo autenticación</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Grupo autenticación</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Doğrulama grubu</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Autenticazione gruppo</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Gruppe Authentifizierung</value>
+      </title>
+      <extendedTooltip>
+        <name>AuthenticationGroupExtendedTooltip</name>
+        <id>75</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>Vertical</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>AdditionalParametersGroup</name>
+      <id>25</id>
+      <items xsi:type="form:FormField">
+        <name>BypassProxyOnLocal</name>
+        <id>11</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>BypassProxyOnLocal</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <extendedTooltip>
+          <name>BypassProxyForLocalURLsExtendedTooltip</name>
+          <id>54</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>BypassProxyForLocalURLsContextMenu</name>
+          <id>12</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:Button">
+        <name>AdditionalProxyServerParameters</name>
+        <id>26</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>AdditionalProxyServerParametersExtendedTooltip</name>
+          <id>56</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualButton</type>
+        <commandName>Form.Command.AdditionalProxyServerParameters</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <groupHorizontalAlign>Right</groupHorizontalAlign>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Дополнительные параметры</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Additional parameters</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Dodatkowe parametry</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Parámetros adicionales</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Parámetros adicionales</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Ek parametreler</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Parametri aggiuntivi</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Zusätzliche Parameter</value>
+      </title>
+      <extendedTooltip>
+        <name>AdditionalParametersGroupExtendedTooltip</name>
+        <id>53</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>HorizontalIfPossible</group>
+        <representation>NormalSeparation</representation>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Настройка прокси сервера</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Proxy server settings</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Ustawienia serwera proxy</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Configuraciones del servidor Proxy</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Configuraciones del servidor Proxy</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Proxy sunucusu ayarları</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Impostazioni del server proxy</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Proxy-Server-Einstellungen</value>
+    </title>
+    <extendedTooltip>
+      <name>ProxyParametersExtendedTooltip</name>
+      <id>46</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <representation>NormalSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <commandBarLocation>Bottom</commandBarLocation>
+  <autoCommandBar>
+    <name>CommandBarForm</name>
+    <id>-1</id>
+    <items xsi:type="form:Button">
+      <name>Ok</name>
+      <id>8</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <skipOnInput>false</skipOnInput>
+      <extendedTooltip>
+        <name>OKExtendedTooltip</name>
+        <id>43</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.OKButton</commandName>
+      <representation>Auto</representation>
+      <defaultButton>true</defaultButton>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>CancelButton</name>
+      <id>34</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>CancelButtonExtendedTooltip</name>
+        <id>44</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.CancelButton</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Right</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <handlers>
+    <event>ChoiceProcessing</event>
+    <name>ChoiceProcessing</name>
+  </handlers>
+  <handlers>
+    <event>OnOpen</event>
+    <name>OnOpen</name>
+  </handlers>
+  <handlers>
+    <event>BeforeClose</event>
+    <name>BeforeClose</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <excludedCommands>Abort</excludedCommands>
+  <excludedCommands>Close</excludedCommands>
+  <excludedCommands>CustomizeForm</excludedCommands>
+  <excludedCommands>Ignore</excludedCommands>
+  <excludedCommands>No</excludedCommands>
+  <excludedCommands>OK</excludedCommands>
+  <excludedCommands>RestoreValues</excludedCommands>
+  <excludedCommands>Retry</excludedCommands>
+  <excludedCommands>SaveValues</excludedCommands>
+  <excludedCommands>Yes</excludedCommands>
+  <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>User</name>
+    <title>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>User</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Użytkownik</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Usuario</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Usuario</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kullanıcı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Utente</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Benutzer</value>
+    </title>
+    <id>1</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>Password</name>
+    <title>
+      <key>ru</key>
+      <value>Пароль</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Password</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Hasło</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Contraseña</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Contraseña</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Parola</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Password</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Passwort</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>Port</name>
+    <title>
+      <key>ru</key>
+      <value>Порт</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Port</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Port</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Puerto</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Puerto</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Port</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Porta</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Port</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>Server</name>
+    <title>
+      <key>ru</key>
+      <value>Адрес сервера</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Server address</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Adres serwera</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Dirección del servidor</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Dirección del servidor</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Sunucu adresi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Indirizzo del server</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Server-Adresse</value>
+    </title>
+    <id>4</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>BypassProxyOnLocal</name>
+    <title>
+      <key>ru</key>
+      <value>Не использовать прокси для локальных адресов</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Bypass proxy for local URLs</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Nie używać proxy dla lokalnych adresów</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Proxy de bypass para URLs locales</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Proxy de bypass para URLs locales</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Yerel URL'ler için baypas proxy'si</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Ignora proxy per gli URL locali</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Proxyserver für lokale URLs</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>ProxySettingAtClient</name>
+    <title>
+      <key>ru</key>
+      <value>Настройка прокси на клиенте</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Proxy settings on client</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Ustawienie proxy na kliencie</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Configuraciones proxy en el cliente</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Configuraciones proxy en el cliente</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>İstemci üzerinde proxy ayarları</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Iimpostazioni proxy sul client</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Proxyeinstellungen auf dem Client</value>
+    </title>
+    <id>6</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ProxyServerUseCase</name>
+    <title>
+      <key>ru</key>
+      <value>Вариант использования прокси-сервера</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Proxy server usage variant</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wariant użycia serwera proxy</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Variante de uso del servidor proxy</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Variante de uso del servidor proxy</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Proxy sunucu kullanım değişkeni</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>variante di utilizzo del server proxy</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Verwendungsvariante des Proxy-Servers</value>
+    </title>
+    <id>8</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>UseSystemSettings</name>
+    <title>
+      <key>ru</key>
+      <value>Использовать системные настройки</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Use system settings</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Użyj ustawień systemowych</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Utilizar configuraciones de sistema</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Utilizar configuraciones de sistema</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Sistem ayarlarını kullan</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Utilizzare impostazioni di sistema</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>System-Einstellungen benutzen</value>
+    </title>
+    <id>9</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>UseProxy</name>
+    <title>
+      <key>ru</key>
+      <value>Использовать прокси</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Use proxy</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Użyj proxy</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Utilizar proxy</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Utilizar proxy</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Proxy kullan</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Utilizzare un proxy</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Proxy benutzen</value>
+    </title>
+    <id>7</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ExceptionServers</name>
+    <title>
+      <key>ru</key>
+      <value>Серверы исключений</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Exception servers</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Serwery wyjątków</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Servidores de excepción</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Servidores de excepción</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>İstisna sunucular</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Server di eccezione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Ausnahme-Server</value>
+    </title>
+    <id>10</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType/>
+    </extInfo>
+  </attributes>
+  <attributes>
+    <name>AllProtocolsThroughSingleProxy</name>
+    <title>
+      <key>ru</key>
+      <value>Один прокси для всех протоколов</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>One proxy for all protocols</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Jeden serwer proxy dla wszystkich protokołów</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Un proxy para todos protocolos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Un proxy para todos protocolos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Tüm protokoller için tek proxy</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Un proxy per tutti i protocolli</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Ein Proxy für alle Protokolle</value>
+    </title>
+    <id>11</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>HTTPServer</name>
+    <title>
+      <key>ru</key>
+      <value>Адрес сервера</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Server address</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Adres serwera</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Dirección del servidor</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Dirección del servidor</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Sunucu adresi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Indirizzo del server</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Server-Adresse</value>
+    </title>
+    <id>12</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>HTTPPort</name>
+    <title>
+      <key>ru</key>
+      <value>Порт</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Port</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Port</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Puerto</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Puerto</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Port</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Porta</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Port</value>
+    </title>
+    <id>13</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>HTTPSServer</name>
+    <title>
+      <key>ru</key>
+      <value>Адрес сервера</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Server address</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Adres serwera</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Dirección del servidor</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Dirección del servidor</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Sunucu adresi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Indirizzo del server</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Server-Adresse</value>
+    </title>
+    <id>14</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>FTPServer</name>
+    <title>
+      <key>ru</key>
+      <value>Адрес сервера</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Server address</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Adres serwera</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Dirección del servidor</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Dirección del servidor</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Sunucu adresi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Indirizzo del server</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Server-Adresse</value>
+    </title>
+    <id>15</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>HTTPSPort</name>
+    <title>
+      <key>ru</key>
+      <value>Порт</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Port</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Port</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Puerto</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Puerto</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Port</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Porta</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Port</value>
+    </title>
+    <id>16</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>FTPPort</name>
+    <title>
+      <key>ru</key>
+      <value>Порт</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Port</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Port</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Puerto</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Puerto</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Port</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Porta</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Port</value>
+    </title>
+    <id>17</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>SaveSettingsToFileAttemptMade</name>
+    <title>
+      <key>ru</key>
+      <value>Выполнена попытка сохранения настроек в файл</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Attempted saving settings to file</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Próba zapisania ustawień do pliku</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Se ha intentando guardar las configuraciones al archivo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Se ha intentando guardar las configuraciones al archivo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Ayarları dosyaya kaydetme denendi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>E'  stato eseguito il tentativo di salvare le impostazioni per il file</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Versuchte Speicherung der Einstellungen in eine Datei</value>
+    </title>
+    <id>18</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>UseOSAuthentication</name>
+    <title>
+      <key>ru</key>
+      <value>Использовать аутентификацию ОС</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Use OS authentication</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Użyj uwierzytelnienie Systemu Operacyjnego</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Usar autenticación de OS</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Usar autenticación de OS</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>OS doğrulamasını kullan</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Utilizza autenticazione OS</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Betriebssystem-Authentifizierung verwenden</value>
+    </title>
+    <id>19</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>EditingAvailable</name>
+    <title>
+      <key>ru</key>
+      <value>Доступно редактирование</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Editing is available</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Jest dostępna edycja</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Edición disponible</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Edición disponible</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Düzenlenebilir</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>La modifica è disponibile</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Bearbeitung verfügbar</value>
+    </title>
+    <id>20</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>OKButton</name>
+    <title>
+      <key>ru</key>
+      <value>ОК</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>OK</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>OK</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>OK</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Ok</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Tamam</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>OK</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Ok</value>
+    </title>
+    <id>1</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>OKButton</name>
+      </handler>
+    </action>
+    <representation>TextPicture</representation>
+    <modifiesStoredData>true</modifiesStoredData>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>AdditionalProxyServerParameters</name>
+    <title>
+      <key>ru</key>
+      <value>Дополнительно</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>More</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Więcej</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Más</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Más</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Daha fazla</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Di Più</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Mehr</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Дополнительные параметры прокси сервера</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Additional proxy server parameters</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Dodatkowe ustawienia serwera proxy</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Parámetros adicionales del servidor proxy</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Parámetros adicionales del servidor proxy</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Ek proxy sunucu parametreleri</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Ulteriori parametri del server proxy</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Zusätzliche Proxy-Server-Parameter</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>AdditionalProxyServerParameters</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>CancelButton</name>
+    <title>
+      <key>ru</key>
+      <value>Отмена</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Cancel</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Anuluj</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Cancelar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Cancelar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>İptal et</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Annulla</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Abbrechen</value>
+    </title>
+    <id>3</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Кнопка отмена</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Cancel button</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Przycisk anuluj</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Botón de cancelar</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Botón de cancelar</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>İptal butonu</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Pulsante Annulla</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Taste abbrechen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>CancelButton</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <parameters>
+    <name>ProxySettingAtClient</name>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <keyParameter>true</keyParameter>
+  </parameters>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

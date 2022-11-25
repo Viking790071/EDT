@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rights xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://v8.1c.ru/8.2/roles" xsi:type="Rights">
+	<setForNewObjects>false</setForNewObjects>
+	<setForAttributesByDefault>true</setForAttributesByDefault>
+	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
+	<object>
+		<name>InformationRegister.ReportMailingStates</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.InventoryOwnership.Attribute.Contract</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ReportMailings.Command.MailingEvents</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ReportMailings.Command.ExecuteNow</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ReportMailings</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#If &amp;RecordLevelAccessRestrictionIsUniversal #Then
+#ForObject("")
+#Else
+ReportMailings WHERE (ReportMailings.Author = &amp;CurrentUser
+			OR ReportMailings.Personal = FALSE
+			OR ReportMailings.IsFolder = TRUE)
+#EndIf</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.InventoryOwnership.Attribute.Counterparty</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Configuration.Drive</name>
+		<right>
+			<name>MainWindowModeNormal</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeEmbeddedWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeFullscreenWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeKiosk</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>AnalyticsSystemClient</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Output</name>
+			<value>true</value>
+		</right>
+	</object>
+	<restrictionTemplate>
+		<name>ForObject(ObjectField)</name>
+		<condition>// ForObject(ObjectField = "")
+// The template is used to restrict reference items, documents, and
+// other object lists by the Reference field. Also, it is used to restrict items of dependent lists
+// of objects and register records by the owner object field.
+
+// Parameters:
+//  ObjectField - name of the field that stores reference to the object the list item depends on.
+//                Value "" (by default) is the same as the name of the Reference field.
+
+
+#If &amp;ListsWithReadRestrictionDisabled = "Undefined" #Then
+  // Infobase is locked for update.
+  WHERE FALSE
+
+#ElseIf Not StrContains(&amp;AccessRestrictionTemplatesVersions, ",ForRegister6,") #Then
+  Error: The template needs to be updated to the up-to-date version supplied in role EditAccessGroupsMembers due to: Obsolete version 6 of the access restriction template ForRegister is used. Object: #CurrentTableName, Right: #CurrentAccessRightName.
+
+#ElseIf &amp;ListsWithReadRestrictionDisabled = "All" #Then
+  // All access kinds are disabled for the user or
+  // restriction at the record level is not used.
+  WHERE TRUE
+
+#ElseIf StrContains(&amp;ListsWithReadRestrictionDisabled, #CurrentTableName) #Then
+  // Restriction for the current table is disabled for the user.
+  WHERE TRUE
+
+#ElseIf StrContains(&amp;AccessRestrictionTemplatesVersions, ",SessionRestartRequired,") #Then
+  Error. Application version is updated, restart the session. Object: #CurrentTableName, Right: #CurrentAccessRightName.
+
+#ElseIf #CurrentAccessRightName &lt;&gt; "Read" #Then
+  // Checking rights Insert, Update, and Delete BeforeWrite / OnWrite.
+  WHERE TRUE
+
+#ElseIf Not StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction,  #CurrentTableName + ":#ObjectField;")
+         AND Not StrContains(&amp;ListsWithUsersAccessKeysRestriction, #CurrentTableName + ":#ObjectField;") #Then
+
+  Error: Access restriction update required. Reason: Cannot get the access restriction option for ForObject template from the session parameters. Object: #CurrentTableName. Right: #CurrentAccessRightName.
+#Else
+
+CurrentTable WHERE TRUE IN
+ (
+  SELECT TOP 1 TRUE
+  FROM InformationRegister.AccessKeysForObjects AS AccessKeysForObjects
+  #If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, #CurrentTableName + ":#ObjectField;") #Then
+      LEFT JOIN InformationRegister.AccessGroupSetsAccessKeys AS AccessGroupSetsAccessKeys
+      ON
+      #If &amp;CurrentExternalUser = Value(Catalog.ExternalUsers.EmptyRef) #Then
+          AccessGroupSetsAccessKeys.AccessKey = AccessKeysForObjects.UsersAccessKey
+      #Else
+          AccessGroupSetsAccessKeys.AccessKey = AccessKeysForObjects.ExternalUsersAccessKey
+      #EndIf
+        AND AccessGroupSetsAccessKeys.AccessGroupsSet = &amp;AllowedAccessGroupsSet
+  #EndIf
+  #If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, #CurrentTableName + ":#ObjectField;*") #Then
+      
+      LEFT JOIN InformationRegister.AccessGroupSetsAccessKeys AS AccessKeysOfAllowedAccessGroupSet
+      ON
+      #If &amp;CurrentExternalUser = Value(Catalog.ExternalUsers.EmptyRef) #Then
+          AccessKeysOfAllowedAccessGroupSet.AccessKey = AccessKeysForObjects.UsersAccessKey
+      #Else
+          AccessKeysOfAllowedAccessGroupSet.AccessKey = AccessKeysForObjects.ExternalUsersAccessKey
+      #EndIf
+        AND AccessKeysOfAllowedAccessGroupSet.AccessGroupsSet = &amp;AllowedBlankAccessGroupsSet
+  #EndIf
+  #If StrContains(&amp;ListsWithUsersAccessKeysRestriction, #CurrentTableName + ":#ObjectField;") #Then
+      
+    #If &amp;CurrentExternalUser = Value(Catalog.ExternalUsers.EmptyRef) #Then
+      LEFT JOIN InformationRegister.UsersAccessKeys AS UsersAccessKeys
+      ON
+          UsersAccessKeys.AccessKey = AccessKeysForObjects.UsersAccessKey
+        AND UsersAccessKeys.User = &amp;AllowedUser
+    #Else
+      LEFT JOIN InformationRegister.ExternalUsersAccessKeys AS UsersAccessKeys
+      ON
+          UsersAccessKeys.AccessKey = AccessKeysForObjects.ExternalUsersAccessKey
+        AND UsersAccessKeys.ExternalUser = &amp;AllowedUser
+    #EndIf
+  #EndIf
+  #If StrContains(&amp;ListsWithUsersAccessKeysRestriction, #CurrentTableName + ":#ObjectField;+") #Then
+      
+    #If &amp;CurrentExternalUser = Value(Catalog.ExternalUsers.EmptyRef) #Then
+      LEFT JOIN InformationRegister.UsersAccessKeys AS AccessKeysOfUserGroupSets
+      ON
+          AccessKeysOfUserGroupSets.AccessKey = AccessKeysForObjects.UsersAccessKey
+        AND AccessKeysOfUserGroupSets.User = &amp;AllowedUserGroupsSet
+    #Else
+      LEFT JOIN InformationRegister.ExternalUsersAccessKeys AS AccessKeysOfUserGroupSets
+      ON
+          AccessKeysOfUserGroupSets.AccessKey = AccessKeysForObjects.ExternalUsersAccessKey
+        AND AccessKeysOfUserGroupSets.ExternalUser = &amp;AllowedUserGroupsSet
+    #EndIf
+  #EndIf
+  WHERE
+  #If "#ObjectField"  = "" #Then
+      AccessKeysForObjects.Object = CurrentTable.Ref
+  #Else
+      AccessKeysForObjects.Object = CurrentTable.#ObjectField
+  #EndIf
+    AND (
+  #If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, #CurrentTableName + ":#ObjectField;") #Then
+          Not AccessGroupSetsAccessKeys.AccessKey Is NULL
+  #Else
+          False
+  #EndIf
+  #If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, #CurrentTableName + ":#ObjectField;*") #Then
+      Or Not AccessKeysOfAllowedAccessGroupSet.AccessKey Is NULL
+  #EndIf
+  #If StrContains(&amp;ListsWithUsersAccessKeysRestriction, #CurrentTableName + ":#ObjectField;") #Then
+      Or Not UsersAccessKeys.AccessKey Is NULL
+  #EndIf
+  #If StrContains(&amp;ListsWithUsersAccessKeysRestriction, #CurrentTableName + ":#ObjectField;+") #Then
+      Or Not AccessKeysOfUserGroupSets.AccessKey Is NULL
+  #EndIf
+      )
+ )
+#EndIf
+
+#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";ConsiderRightsSettingsOnBuildQueryExecutionPlan;") #Then
+  #If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction,  #CurrentTableName + ":[#Register]:#Field1:#Field2:#Field3:#Field4:#Field5;") #Then
+  AND TRUE IN (TRUE
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";31;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";30;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";29;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";28;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";27;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";26;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";25;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";24;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";23;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";22;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";21;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";20;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";19;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";18;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";17;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";16;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";15;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";14;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";13;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";12;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";11;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";10;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";09;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";08;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";07;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";06;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";05;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";04;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";03;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";02;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";01;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";00;") #Then ,TRUE #Else ,FALSE #EndIf
+	)
+  #Else
+  AND TRUE IN (TRUE
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";31^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";30^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";29^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";28^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";27^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";26^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";25^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";24^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";23^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";22^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";21^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";20^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";19^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";18^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";17^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";16^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";15^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";14^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";13^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";12^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";11^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";10^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";09^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";08^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";07^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";06^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";05^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";04^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";03^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";02^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";01^;") #Then ,TRUE #Else ,FALSE #EndIf
+	#If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction, ";00^;") #Then ,TRUE #Else ,FALSE #EndIf
+	)
+  #EndIf
+#EndIf
+</condition>
+	</restrictionTemplate>
+</Rights>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="32b74fd3-eee8-4512-97f0-8be3550460f8">
+  <producedTypes>
+    <objectType typeId="4889915a-2be3-42fd-be9e-b87929d36e9a" valueTypeId="3eca3437-7bb4-4aae-8ffe-8b4c2dc153b1"/>
+    <managerType typeId="41d46552-0f6b-41fe-b7c3-e9875d1bd2ad" valueTypeId="49a70213-c3c8-4034-b82c-1c3b289721bb"/>
+  </producedTypes>
+  <name>MappingGLAccountsToIncomeAndExpenseItems</name>
+  <synonym>
+    <key>en</key>
+    <value>Mapping GL accounts to income and expense items</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Сопоставление счетов учета статьям доходов и расходов</value>
+  </synonym>
+  <synonym>
+    <key>pl</key>
+    <value>Mapowanie kont księgowych do pozycji dochodu i rozchodu</value>
+  </synonym>
+  <synonym>
+    <key>es_ES</key>
+    <value>Mapeo de las cuentas del libro mayor a los artículos de ingresos y gastos</value>
+  </synonym>
+  <synonym>
+    <key>es_CO</key>
+    <value>Mapeo de las cuentas del libro mayor a los artículos de ingresos y gastos</value>
+  </synonym>
+  <synonym>
+    <key>tr</key>
+    <value>Muhasebe hesaplarını gelir ve gider kalemlerine eşleştirme</value>
+  </synonym>
+  <synonym>
+    <key>it</key>
+    <value>Mappatura conto mastro per voci di entrata e uscita</value>
+  </synonym>
+  <synonym>
+    <key>de</key>
+    <value>Mapping von Hauptbuch-Konten zu Positionen von Einnahme und Ausgaben</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.MappingGLAccountsToIncomeAndExpenseItems.Form.Form</defaultForm>
+  <attributes uuid="5d1830ca-345f-4211-a9d3-79bf1889191b">
+    <name>UseDefaultTypeOfAccounting</name>
+    <synonym>
+      <key>en</key>
+      <value>Record GL account entries</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Делать бухгалтерские проводки</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Rejestruj wpisy konta księgowego</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Registrar las entradas de la cuenta del libro mayor</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Registrar las entradas de la cuenta del libro mayor</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Muhasebe hesabı girişlerini kaydet</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Registrazione inserimenti conto mastro</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Buchungen von Hauptbuch-Konto speichern</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="43f2fb50-0b48-41ff-87fe-895836baac33">
+    <producedTypes>
+      <objectType typeId="8cadaf65-6ed9-4fa8-9386-20ec2543eaeb" valueTypeId="118072e9-4b64-4aad-ba4d-3d1b1b8b5126"/>
+      <rowType typeId="e170fc99-9e6c-4ce3-aad6-81f4b94c41de" valueTypeId="d1cae5d3-3894-4089-a08d-92df48266530"/>
+    </producedTypes>
+    <name>Mapping</name>
+    <synonym>
+      <key>en</key>
+      <value>Mapping</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Сопоставление</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Mapowanie</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Mapeo</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Mapeo</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Eşleştirme</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Mappatura</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Mapping</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="a19dc187-02ff-4a84-961b-bffa779670c3">
+      <name>GLAccount</name>
+      <synonym>
+        <key>en</key>
+        <value>GL account</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Счет учета</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Konto księgowe</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Cuenta del libro mayor</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Cuenta del libro mayor</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Muhasebe hesabı</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Conto mastro</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Hauptbuch-Konto</value>
+      </synonym>
+      <type>
+        <types>ChartOfAccountsRef.PrimaryChartOfAccounts</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="11155182-60f0-4ba6-80c9-e511b5724352">
+      <name>IncomeAndExpenseItem</name>
+      <synonym>
+        <key>en</key>
+        <value>Income and expense item</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Статья доходов и расходов</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Pozycja dochodów i rozchodów</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Artículo de ingresos y gastos</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Artículo de ingresos y gastos</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Gelir ve gider kalemi</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Voce di entrata e uscita</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Position von Einnahme und Ausgaben</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.IncomeAndExpenseItems</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="82abf8cb-bd04-484b-8dbc-ed9d96eee8d4">
+      <name>ViewDocuments</name>
+      <synonym>
+        <key>en</key>
+        <value>View documents</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Просмотреть документы</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Wyświetl dokumenty</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Visualización de documentos</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Visualización de documentos</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Belgeleri görüntüle</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Visualizzazione documenti</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Dokumenten anzeigen</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <forms uuid="690398c4-e0eb-4185-a498-c4f3b09c2418">
+    <name>Form</name>
+    <synonym>
+      <key>en</key>
+      <value>Form</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Formularz</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Formulario</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Formulario</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Form</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Modulo</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Formular</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

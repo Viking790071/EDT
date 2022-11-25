@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <title>
+    <key>en</key>
+    <value>Edit GL accounts</value>
+  </title>
+  <title>
+    <key>ru</key>
+    <value>Редактирование счетов учета</value>
+  </title>
+  <title>
+    <key>pl</key>
+    <value>Edycja konta ewidencji</value>
+  </title>
+  <title>
+    <key>es_ES</key>
+    <value>Editar cuentas del libro mayor</value>
+  </title>
+  <title>
+    <key>es_CO</key>
+    <value>Editar cuentas del libro mayor</value>
+  </title>
+  <title>
+    <key>tr</key>
+    <value>Muhasebe hesaplarını düzenle</value>
+  </title>
+  <title>
+    <key>it</key>
+    <value>Modifica conti mastro</value>
+  </title>
+  <title>
+    <key>de</key>
+    <value>Hauptbuch-Konten bearbeiten</value>
+  </title>
+  <items xsi:type="form:FormGroup">
+    <name>GLAccountsGroup</name>
+    <id>6</id>
+    <items xsi:type="form:FormField">
+      <name>GLAccount</name>
+      <id>1</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>GLAccount</segments>
+      </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>GLAccountOnChange</name>
+      </handlers>
+      <extendedTooltip>
+        <name>AccountExtendedTooltip</name>
+        <id>11</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>AccountContextMenu</name>
+        <id>2</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>false</horizontalStretch>
+        <wrap>true</wrap>
+        <dropListButton>false</dropListButton>
+        <choiceButton>true</choiceButton>
+        <choiceButtonRepresentation>ShowInInputField</choiceButtonRepresentation>
+        <autoMarkIncomplete>true</autoMarkIncomplete>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+        <choiceParameters>
+          <name>Filter.TypeOfAccount</name>
+          <value xsi:type="form:FormChoiceListDesTimeValue">
+            <value xsi:type="core:ReferenceValue">
+              <value>Enum.GLAccountsTypes.EnumValue.AccountsPayable</value>
+            </value>
+          </value>
+        </choiceParameters>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>GLAccountForReimbursement</name>
+      <id>8</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>GLAccountForReimbursement</segments>
+      </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>GLAccountForReimbursementOnChange</name>
+      </handlers>
+      <extendedTooltip>
+        <name>GLAccountForReimbursementExtendedTooltip</name>
+        <id>12</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>GLAccountForReimbursementContextMenu</name>
+        <id>9</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>false</horizontalStretch>
+        <wrap>true</wrap>
+        <dropListButton>false</dropListButton>
+        <choiceButton>true</choiceButton>
+        <choiceButtonRepresentation>ShowInInputField</choiceButtonRepresentation>
+        <autoMarkIncomplete>true</autoMarkIncomplete>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+        <choiceParameters>
+          <name>Filter.TypeOfAccount</name>
+          <value xsi:type="form:FormChoiceListDesTimeValue">
+            <value xsi:type="core:ReferenceValue">
+              <value>Enum.GLAccountsTypes.EnumValue.AccountsReceivable</value>
+            </value>
+          </value>
+        </choiceParameters>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <toolTipRepresentation>ShowTop</toolTipRepresentation>
+    <horizontalStretch>false</horizontalStretch>
+    <extendedTooltip>
+      <name>GLAccountsGroupExtendedTooltip</name>
+      <id>10</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>FormCommandBar</name>
+    <id>-1</id>
+    <items xsi:type="form:Button">
+      <name>Default</name>
+      <id>5</id>
+      <title>
+        <key>en</key>
+        <value>Restore default</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Восстановить по умолчанию</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Odnowić domyślne</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Restablecer por defecto</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Restablecer por defecto</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Varsayılanı geri yükle</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Ripristinare predefinito</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Standard wiederherstellen</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>DefaultExtendedTooltip</name>
+        <id>14</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.Default</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+  </autoCommandBar>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <verticalScroll>UseIfNecessary</verticalScroll>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>GLAccount</name>
+    <title>
+      <key>en</key>
+      <value>Tax accrual</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Начисление налогов</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Naliczanie podatków</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Acumulación de impuestos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Acumulación de impuestos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Vergi tahakkuku</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Accantonamento fiscale</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Steuerrückstellung</value>
+    </title>
+    <id>1</id>
+    <valueType>
+      <types>ChartOfAccountsRef.PrimaryChartOfAccounts</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes>
+    <name>GLAccountForReimbursement</name>
+    <title>
+      <key>en</key>
+      <value>Tax refund</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Возврат налога</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zwrot podatku</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Devolución de impuestos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Devolución de impuestos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Vergi iadesi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Rimborso fiscale</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Steuererstattung</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>ChartOfAccountsRef.PrimaryChartOfAccounts</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <formCommands>
+    <name>Default</name>
+    <title>
+      <key>en</key>
+      <value>Default</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>По умолчанию</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Domyślnie</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Por defecto</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Por defecto</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Varsayılan</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Predefinito</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Standard</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>en</key>
+      <value>Restore default GL accounts</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Восстановить счета учета по умолчанию</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Przywróć domyślne konta księgowe</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Restablecer cuentas originales del libro mayor</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Restablecer cuentas originales del libro mayor</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Varsayılan muhasebe hesaplarını geri yükle</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Ripristinare i conti mastro predefiniti</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Standard- Hauptbuch-Konten wiederherstellen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Default</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

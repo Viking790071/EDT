@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>DataSource1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>DataSet1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>PostAdvancePaymentsBySourceDocuments</dataPath>
+			<field>PostAdvancePaymentsBySourceDocuments</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>InventoryDispatchingStrategy</dataPath>
+			<field>InventoryDispatchingStrategy</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>UseGoodsReturnFromCustomer</dataPath>
+			<field>UseGoodsReturnFromCustomer</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Period</dataPath>
+			<field>Period</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Company</dataPath>
+			<field>Company</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>DefaultVATRate</dataPath>
+			<field>DefaultVATRate</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>RegisteredForVAT</dataPath>
+			<field>RegisteredForVAT</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>PostVATEntriesBySourceDocuments</dataPath>
+			<field>PostVATEntriesBySourceDocuments</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>VATRoundingRule</dataPath>
+			<field>VATRoundingRule</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>IssueAutomaticallyAgainstSales</dataPath>
+			<field>IssueAutomaticallyAgainstSales</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CashMethodOfAccounting</dataPath>
+			<field>CashMethodOfAccounting</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>RegisterDeliveryDateInInvoices</dataPath>
+			<field>RegisterDeliveryDateInInvoices</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>InventoryValuationMethod</dataPath>
+			<field>InventoryValuationMethod</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>UseGoodsReturnToSupplier</dataPath>
+			<field>UseGoodsReturnToSupplier</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>StockTransactionsMethodology</dataPath>
+			<field>StockTransactionsMethodology</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>PostExpensesByWorkOrder</dataPath>
+			<field>PostExpensesByWorkOrder</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ManufacturingOverheadsAllocationMethod</dataPath>
+			<field>ManufacturingOverheadsAllocationMethod</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>InvoiceTotalDue</dataPath>
+			<field>InvoiceTotalDue</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>AccountBalance</dataPath>
+			<field>AccountBalance</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Overdue</dataPath>
+			<field>Overdue</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>RegisteredForSalesTax</dataPath>
+			<field>RegisteredForSalesTax</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>UnderOverAllocatedOverheadsSetting</dataPath>
+			<field>UnderOverAllocatedOverheadsSetting</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>AccountingPrice</dataPath>
+			<field>AccountingPrice</field>
+		</field>
+		<dataSource>DataSource1</dataSource>
+		<query>SELECT
+	AccountingPolicy.Period AS Period,
+	AccountingPolicy.Company AS Company,
+	AccountingPolicy.RegisteredForVAT AS RegisteredForVAT,
+	AccountingPolicy.PostVATEntriesBySourceDocuments AS PostVATEntriesBySourceDocuments,
+	AccountingPolicy.PostAdvancePaymentsBySourceDocuments AS PostAdvancePaymentsBySourceDocuments,
+	AccountingPolicy.IssueAutomaticallyAgainstSales AS IssueAutomaticallyAgainstSales,
+	AccountingPolicy.DefaultVATRate AS DefaultVATRate,
+	AccountingPolicy.CashMethodOfAccounting AS CashMethodOfAccounting,
+	AccountingPolicy.InventoryValuationMethod AS InventoryValuationMethod,
+	AccountingPolicy.UseGoodsReturnFromCustomer AS UseGoodsReturnFromCustomer,
+	AccountingPolicy.UseGoodsReturnToSupplier AS UseGoodsReturnToSupplier,
+	AccountingPolicy.StockTransactionsMethodology AS StockTransactionsMethodology,
+	AccountingPolicy.PostExpensesByWorkOrder AS PostExpensesByWorkOrder,
+	AccountingPolicy.ManufacturingOverheadsAllocationMethod AS ManufacturingOverheadsAllocationMethod,
+	AccountingPolicy.InvoiceTotalDue AS InvoiceTotalDue,
+	AccountingPolicy.AccountBalance AS AccountBalance,
+	AccountingPolicy.Overdue AS Overdue,
+	AccountingPolicy.VATRoundingRule AS VATRoundingRule,
+	AccountingPolicy.RegisteredForSalesTax AS RegisteredForSalesTax,
+	AccountingPolicy.UnderOverAllocatedOverheadsSetting AS UnderOverAllocatedOverheadsSetting,
+	AccountingPolicy.RegisterDeliveryDateInInvoices AS RegisterDeliveryDateInInvoices,
+	AccountingPolicy.InventoryDispatchingStrategy AS InventoryDispatchingStrategy,
+	AccountingPolicy.AccountingPrice AS AccountingPrice
+FROM
+	InformationRegister.AccountingPolicy AS AccountingPolicy</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>DataSet2</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ref</dataPath>
+			<field>Ref</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Number</dataPath>
+			<field>Number</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Counterparty</dataPath>
+			<field>Counterparty</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>PreferredVariant</dataPath>
+			<field>PreferredVariant</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>DataVersion</dataPath>
+			<field>DataVersion</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Posted</dataPath>
+			<field>Posted</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>DeletionMark</dataPath>
+			<field>DeletionMark</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>DocumentCurrency</dataPath>
+			<field>DocumentCurrency</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Date</dataPath>
+			<field>Date</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Comment</dataPath>
+			<field>Comment</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Company</dataPath>
+			<field>Company</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Contract</dataPath>
+			<field>Contract</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>PaymentMethod</dataPath>
+			<field>PaymentMethod</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>BankAccount</dataPath>
+			<field>BankAccount</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>SalesTaxRate</dataPath>
+			<field>SalesTaxRate</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>AutomaticVATCalculation</dataPath>
+			<field>AutomaticVATCalculation</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Multiplicity</dataPath>
+			<field>Multiplicity</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CompanyVATNumber</dataPath>
+			<field>CompanyVATNumber</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>DiscountCard</dataPath>
+			<field>DiscountCard</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ExchangeRate</dataPath>
+			<field>ExchangeRate</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>DocumentAmount</dataPath>
+			<field>DocumentAmount</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>VATTaxation</dataPath>
+			<field>VATTaxation</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>AmountIncludesVAT</dataPath>
+			<field>AmountIncludesVAT</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>VariantsCount</dataPath>
+			<field>VariantsCount</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>PettyCash</dataPath>
+			<field>PettyCash</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>PriceKind</dataPath>
+			<field>PriceKind</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>DiscountMarkupKind</dataPath>
+			<field>DiscountMarkupKind</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Department</dataPath>
+			<field>Department</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Responsible</dataPath>
+			<field>Responsible</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ContractCurrencyMultiplicity</dataPath>
+			<field>ContractCurrencyMultiplicity</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Event</dataPath>
+			<field>Event</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>DocumentSubtotal</dataPath>
+			<field>DocumentSubtotal</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>SetPaymentTerms</dataPath>
+			<field>SetPaymentTerms</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>SalesRep</dataPath>
+			<field>SalesRep</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Author</dataPath>
+			<field>Author</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>DiscountPercentByDiscountCard</dataPath>
+			<field>DiscountPercentByDiscountCard</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>DiscountsAreCalculated</dataPath>
+			<field>DiscountsAreCalculated</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ValidUntil</dataPath>
+			<field>ValidUntil</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>TermsAndConditions</dataPath>
+			<field>TermsAndConditions</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ContractCurrencyExchangeRate</dataPath>
+			<field>ContractCurrencyExchangeRate</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Status</dataPath>
+			<field>Status</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>DocumentTax</dataPath>
+			<field>DocumentTax</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CashAssetType</dataPath>
+			<field>CashAssetType</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>SalesTaxPercentage</dataPath>
+			<field>SalesTaxPercentage</field>
+		</field>
+		<dataSource>DataSource1</dataSource>
+		<query>SELECT
+	Quote.Ref AS Ref,
+	Quote.DataVersion AS DataVersion,
+	Quote.DeletionMark AS DeletionMark,
+	Quote.Number AS Number,
+	Quote.Date AS Date,
+	Quote.Posted AS Posted,
+	Quote.Company AS Company,
+	Quote.Comment AS Comment,
+	Quote.Counterparty AS Counterparty,
+	Quote.Contract AS Contract,
+	Quote.PaymentMethod AS PaymentMethod,
+	Quote.BankAccount AS BankAccount,
+	Quote.DocumentCurrency AS DocumentCurrency,
+	Quote.Multiplicity AS Multiplicity,
+	Quote.ExchangeRate AS ExchangeRate,
+	Quote.VATTaxation AS VATTaxation,
+	Quote.AmountIncludesVAT AS AmountIncludesVAT,
+	Quote.PriceKind AS PriceKind,
+	Quote.DiscountMarkupKind AS DiscountMarkupKind,
+	Quote.Department AS Department,
+	Quote.PettyCash AS PettyCash,
+	Quote.Responsible AS Responsible,
+	Quote.DocumentAmount AS DocumentAmount,
+	Quote.Event AS Event,
+	Quote.SetPaymentTerms AS SetPaymentTerms,
+	Quote.Author AS Author,
+	Quote.DiscountPercentByDiscountCard AS DiscountPercentByDiscountCard,
+	Quote.DiscountCard AS DiscountCard,
+	Quote.DiscountsAreCalculated AS DiscountsAreCalculated,
+	Quote.ValidUntil AS ValidUntil,
+	Quote.TermsAndConditions AS TermsAndConditions,
+	Quote.VariantsCount AS VariantsCount,
+	Quote.PreferredVariant AS PreferredVariant,
+	Quote.SalesRep AS SalesRep,
+	Quote.ContractCurrencyExchangeRate AS ContractCurrencyExchangeRate,
+	Quote.ContractCurrencyMultiplicity AS ContractCurrencyMultiplicity,
+	Quote.Status AS Status,
+	Quote.DocumentSubtotal AS DocumentSubtotal,
+	Quote.DocumentTax AS DocumentTax,
+	Quote.AutomaticVATCalculation AS AutomaticVATCalculation,
+	Quote.CashAssetType AS CashAssetType,
+	Quote.SalesTaxRate AS SalesTaxRate,
+	Quote.CompanyVATNumber AS CompanyVATNumber,
+	Quote.SalesTaxPercentage AS SalesTaxPercentage
+FROM
+	Document.Quote AS Quote</query>
+	</dataSet>
+	<settingsVariant>
+		<dcsset:name>Default</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Default</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>По умолчанию</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>pl</v8:lang>
+				<v8:content>Domyślnie</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_ES</v8:lang>
+				<v8:content>Por defecto</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_CO</v8:lang>
+				<v8:content>Por defecto</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>tr</v8:lang>
+				<v8:content>Varsayılan</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>it</v8:lang>
+				<v8:content>Predefinito</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>de</v8:lang>
+				<v8:content>Standard</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows"/>
+	</settingsVariant>
+</DataCompositionSchema>

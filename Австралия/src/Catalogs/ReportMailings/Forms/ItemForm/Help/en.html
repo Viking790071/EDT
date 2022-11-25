@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html;charset=utf-8" http-equiv="content-type"></meta><link rel="stylesheet" type="text/css" href="v8help://service_book/service_style"></link><meta name="GENERATOR" content="MSHTML 11.00.10570.1001"></meta></head><body class="">
+<p>Use this window to generate reports automatically and deliver the reports to their recipients.</p>
+<p><a href="Catalog.ReportMailings/Help">Report distribution rule sets</a> automate report distribution. Users get the reports they need by email or from a shared folder, without the need to run the application.</p>
+<h3><a name="Реквизиты">General</a> parameters</h3>
+<ul><li>
+<div><a name="Наименование"><strong>Description</strong></a>. A rule set name as it appears in lists. You can specify it as a template.</div>
+</li>
+<li><strong><a name="Подготовлена">Prepared</a></strong>. Shows whether the rule set is ready to use. When you select this check box, some of the fields become required. </li>
+<li><a name="Отправлять"><strong>Send</strong></a>. A <a name="ВидРассылки"><strong>report distribution type</strong></a>, which depends on the purpose: <ul><li><strong>Reports to the specified recipients</strong>. Send identical reports to all recipients. In addition to sending by email, this report distribution type supports publishing generated reports to an application files folder, a network folder, or an FTP server. <ul><li>In the <strong>Recipients</strong> field, select the recipient type. For example, <a href="Catalog.Users/Help">Users</a>.</li></ul></li>
+<li><strong>Unique report for each recipient</strong>. Personalize a report for each recipient. If you select this distribution type, the report filter settings will include a recipient field, providing the option to customize a report for each recipient. <ul><li>In the <strong>Recipients</strong> field, select the recipient type.</li></ul></li>
+<li><strong>To me only (private bulk email of the author)</strong>. Send reports by email only to the user who created the rule set. Private report distribution rule sets are visible only to their authors. <ul><li>
+<p><a name="ПочтовыйАдрес"><strong>Email</strong></a>. This field is filled automatically with the email address of the current <a href="Catalog.Users.Form.ItemForm/Help">user</a>.</p><strong></strong></li></ul></li></ul></li></ul><h3>Reports</h3>
+<ul><li>To select one or several reports from the <a href="Catalog.ReportsOptions/Help">list</a>, click <strong>Select</strong>. </li>
+<li>To generate a selected report, click <strong>Preview</strong>. </li>
+<li><strong>Report settings</strong>. Opens the report settings. При необходимости можно изменить настройки выбранного отчета. of the selected report. </li>
+<li>Если выбран вид рассылки <strong>Свой отчет для каждого получателя</strong>, то с помощью соответствующей кнопки в настройках каждого отчета можно <strong>Указать получателя рассылки</strong> из списка <strong>Пользователи</strong>, для того чтобы для каждого получателя формировался свой отчет с показателями, доступными только для этого получателя. </li>
+<li>The tab name includes the number of reports included in the rule set.</li></ul><h3>Schedule</h3>
+<ul><li>
+<div>Use this tab to configure automatic report distribution. You can set a report distribution period explicitly or specify days of the week, dat, and time for sending reports. Each report distribution rule set generates "Report distribution" <a href="DataProcessor.ScheduledAndBackgroundJobs/Help">scheduled jobs</a> with names mathching the rule set names.</div>
+</li>
+<li>
+<div>Select the <strong>Execute on schedule</strong> check box. </div>
+</li>
+<li>
+<div>To generate a schedule automatically, click <strong>Fill in from template</strong>. Select a schedule from the list, for example, <strong>On the first day of the month</strong>. Then the schedule will be filled automatically.</div>
+</li>
+<li>
+<div> You can select a <a name="Периодичность"></a>report distribution period (this will change all of the other schedule parameters). The following periods are available:</div>
+<ul><li><a name="Ежедневно"><strong>Daily</strong></a>. Send reports with the period specified in days. <ul><li>Select a <strong>Period</strong>.</li></ul></li>
+<li><a name="Ежедневно"><strong>Weekly</strong></a>. Send reports on specific days of the week. <ul><li>Select days of the week.</li></ul></li>
+<li><a name="Ежедневно"><strong>Monthly</strong></a>. Send reports monthly on the specified day of the month. <ul><li>Select months and specify the number of the day from the beginning or end of the month.</li></ul></li>
+<li><a name="РасширенныеПараметры"><strong>Custom</strong></a>. Set up a detailed schedule. Selecting this option opens the <strong>Schedule</strong> window where you can specify a detailed <a href="v8help://mngbase/jobschedule.lf">schedule</a>. You can edit a custom schedule later. Once you close the window, the <strong>Change</strong> button becomes available. Click it to edit the schedule. In this scenario, specify the <strong>Start time</strong> in the <strong>Schedule</strong> window.</li></ul></li>
+<li> Specify the report distribution <a name="ВремяНачала"><strong>Start time</strong></a>. </li>
+<li>In the <strong>Author</strong> field, select a user. By default, this field contains the user that created the rule set. <ul><li>Scheduled report distributions run on behalf of their authors. </li></ul></li></ul><h3>Distribution</h3>
+<ul dir="ltr"><li>Use this tab to specify report distribution options. The set of fields on this tab depends on the <a href="#ВидРассылки">distribution type</a>. </li>
+<li>For <strong>private bulk email of the author</strong>, reports are sent to the email address specified in the <strong>Email</strong> field. </li>
+<li>For <strong>Unique report for each recipient</strong>, reports are sent by email to multiple recipients. </li>
+<li>For <strong>Reports to the specified recipients</strong>, reports can be sent by email or saved (published). To have reports published, select the <strong><a name="Публиковать">Publish</a></strong><strong></strong> check box. Select one of the following: <ul><li><a name="ВПапку"><strong>To directory</strong></a>. Save reports to the specified <a href="Catalog.FileFolders.Form.ItemForm/Help">directory</a> of the "File operations" subsystem. You can use this option to archive reports to a folder (and turn off sending reports by email). </li>
+<li><a name="ВПапкуНаДиске"><strong>To network directory</strong></a>. Save reports to the specified network directory. Since reports are copied from the server, it is recommended that you specify the network path in UNC format, for example: <a href="file://\\server\folder\">\\server\folder\</a>. Enter the address in the Windows or Linux field (depending on your operating system). <strong>Warning!</strong> This report delivery option is not available in web applications. </li>
+<li><a name="НаFTP"><strong>To FTP resource</strong></a>. Save reports to an FTP server. Fill in the required <a href="Catalog.ReportMailings.Form.FTPParameters/Help">parameters</a>.</li></ul></li>
+<li><a name="Проверить"><strong>Check</strong></a>. Test publishing (save and delete a test file). If no errors occur during the test, publishing is considered successful. </li>
+<li><a name="ОтправлятьПоЭлектроннойПочте"><strong>Send by email</strong></a>. Indicates whether reports or notifications are sent by email. </li>
+<li><a name="ВключитьВРассылку"><strong>Select</strong></a><strong> recipients</strong>. Follow the link to fill in the <a href="Catalog.ReportMailings.Form.BulkEmailRecipients/Help">recipients list</a> and exceptions from the list. You can select recipients or recipient groups. After you fill the list, the link text changes to the first recipient in the list. </li>
+<li>В поле <a name="От"><strong>От </strong></a>из выпадающего списка выберите <a href="Catalog.EmailAccounts.Form.ItemForm/Help">учетную запись</a> для отправки. This field is required. The list contains only available <a href="Catalog.EmailAccounts/Help">accounts</a>. You cannot create a new one here. </li>
+<li><a name="ПроверитьЭлектроннуюПочту"><strong>Check</strong></a>. Test email account (send a test email). If no errors occur during the test, publishing is considered successful. </li>
+<li>If you turn on both publishing and sending by email, you can choose to <strong>Send notifications only</strong>. In this scenario email messages contain only notifications that reports were generated. Reports are not sent as attachments but stored to the publishing directory. Email notifications contain links to report directories. </li>
+<li>If you select the <strong>Send notifications only</strong> check box, the email subject and body fields become available.<a name="ТемаИТекстПисьма"></a><strong></strong> They can include templates of report distribution <a name="Параметр"><strong>parameters</strong></a>. The fields are filled with the default templates. To add parameters to the email, click <strong>Parameter</strong> and select one of the following: <ul><li><strong>[</strong><strong>ExecutionDate]</strong>. A report distribution date. You can add this parameter to an <u><a href="#НаименованиеАрхива">archive name</a></u>. </li>
+<li>
+<div style="MARGIN-RIGHT: 0px"><strong>[Author]</strong>. A user that initiated report distribution. </div>
+</li>
+<li>
+<div style="MARGIN-RIGHT: 0px"><strong>[Recipient]</strong>. A recipient presentation. It is only available for <a href="#ВидРассылки">Unique report for each recipient</a> distribution type. </div>
+</li>
+<li>
+<div style="MARGIN-RIGHT: 0px"><strong>[MailingDescription]</strong>. A name of a report distribution rule set. You can add this parameter to an archive name. </div>
+</li>
+<li>
+<div style="MARGIN-RIGHT: 0px"><strong>[CreatedReports]</strong>. The list of reports and their formats. </div>
+</li>
+<li>
+<div style="MARGIN-RIGHT: 0px"><strong>[SystemTitle]</strong>. The infobase title. You can specify it in section <strong>Administration—General settings</strong>.</div>
+</li>
+<li>
+<div style="MARGIN-RIGHT: 0px"><strong>[TransportMethod]</strong>. The presentation of the report publishing resource.</div></li></ul></li>
+<li>
+<div style="MARGIN-RIGHT: 0px">The default email format is <strong>HTML</strong>. You can change it to <strong>Plain text</strong>. In the HTML format, standard text formatting options are available as buttons or items of the <strong>More actions</strong> menu.</div>
+</li>
+<li>
+<div style="MARGIN-RIGHT: 0px">If you select the <strong>Transliterate file names</strong> check box, The names of report files will contain only Latin letters and digits. This ensures compatibility between different operating systems. For example, file <strong>Отчет.mxl</strong> will be saved as <strong>Otchet.mxl</strong>.</div></li></ul><h3>More</h3>
+<ul><li><a name="Периодичность">The <strong>Default report formats</strong> field stores default report formats. </a><img src="StdPicture.InputFieldSelect"></img> Select the check boxes for formats that are common for all reports. You can select multiple formats. </li>
+<li>In the table below, in the <strong>Formats</strong> column, you can select an individual set of formats for each report. </li>
+<li>In the <a name="ОтправлятьЕслиПустой"><strong>Send blank reports</strong></a> column, select the check boxes for reports that you want sent even if they are blank. By default, the check box is cleared. Reports that contain pictures are never considered blank. </li>
+<li>Select the <a name="АрхивироватьВZIP"><strong>Compress to ZIP archive</strong></a> check box to archive generated reports in <strong>.zip</strong> format. It is recommended that you enable archiving if reports are sent by email to reduce the size of attachments. <ul><li>The <strong><a name="#НаименованиеАрхива">Archive description</a></strong> field becomes available (an archive description is generated automatically from a template specified in the field). </li>
+<li>You can change a description template by right-clicking <strong>Parameter</strong> in the <strong>Archive description</strong> field. The following parameters can be changed: <ul><li><strong>Report distribution date</strong> </li>
+<li><strong>Name of a report distribution rule set</strong>.</li></ul></li>
+<li>If necessary, write an archive <strong>Password</strong>.</li></ul></li>
+<li>In the <a name="АдресОтвета"><strong>Reply to</strong></a> field, specify an email address to which report distribution responses will be sent. </li>
+<li>Select the <strong>Send emails using BCC</strong> check box so that recipients do not know who else gets reports from this bulk email. </li>
+<li><strong>Group</strong>. The report distribution rule sets can be organized by a variety of criteria. To place a report distribution rule set in a <a href="Catalog.ReportMailings.Form.FolderForm/Help">group</a>, select it from the <a href="Catalog.ReportMailings.Form.FolderChoiceForm/Help">list</a>.</li></ul><h3>Distributing reports</h3>
+<ul><li>
+<div>Click <strong>Execute now</strong> to distribute reports as the current user. The rule set will be sent if it has the <strong>Prepared</strong> check box selected.</div></li></ul><h3>Viewing report distribution events</h3>
+<ul><li>
+<div>Нажмите <a name="СобытияРассылки"><strong>События рассылки</strong></a>, для того чтобы открыть журнал регистрации, предварительно отфильтровав его по событиям рассылки со времени последнего запуска.</div></li></ul><h3>Analyzing report distribution results</h3>
+<div>
+<p>To control report distribution results, you can use:</p>
+<ul><li><b>Sent</b> folder control. Sent emails are usually put in this folder on the email server. If it is not so, check the email server settings and fix them.</li>
+<li>Additional addresses for report distribution If emails do not go to the <b>Sent</b> folder or further control is required, you can add your own mailbox to the list of report distribution addresses. You can select the <b>Send email BCC to this address</b> check box in the email account card (other recipients will not see email copies; the check box is available for POP email servers only) and set up a rule for sorting incoming emails to ensure that such emails go to the correct folder.</li></ul></div>
+<p>
+</p><h3>Работа в клиент-серверном режиме</h3>
+<p>
+</p><ul><li>When running in client/server mode, you should note that bulk email is performed on the 1C:Enterprise server. </li>
+<li>A path to one resource may be different for client and server depending on their network location and operating systems. </li>
+<li>If 1C:Enterprise server runs on Windows, you should make sure that the operating system user on whose behalf the 1C:Enterprise server runs has sufficient rights to read and write in the Windows network directory. If the user does not have the sufficient rights, you will need to grant them these rights, or select another user with sufficient rights to read and write in the Windows network directory and run the 1C:Enterprise server on their behalf. The same recommendations apply to FTP and email access. </li>
+<li>The Linux network directory field is for 1C:Enterprise servers running on Linux. In this field, you can specify only a local path, for example, <strong>/home/path</strong>. </li>
+<li>Before you can use UNC path, you need to mount the folder. Sign in as administrator (<strong>root</strong>) and execute the following commands: <ul><li><strong>mkdir folder<br></strong> . Write a directory name instead of <strong>folder</strong>. For example, execute the <strong>mkdir shared</strong> command in the <strong>/home</strong> directory to create the <strong>shared</strong> directory with the <strong>/home/shared</strong> full path. </li>
+<li><strong>mount -t cifs //server/share folder -o //domain/user, password=pwd</strong><br>, where <strong>//server/share</strong> is the UNC path to other computer, <strong>folder</strong> is the directory path on Linux computer, for example <strong>\home\shared</strong>, <strong>//domain/user</strong> is a user/domain name, if needed, and <strong>pwd</strong> is a user password (if <br>needed). </li>
+<li>If user name and password are not required, simply execute <br><strong>mount -t cifs //server/share folder</strong> </li>
+<li>Now you can specify <strong>folder</strong> (example: <strong>/home/shared</strong>) as the path to the volume. </li></ul></li>
+<li>For more information on 1C:Enterprise server administration, see the 1C:Enterprise platform documentation.</li></ul><h3>See also: </h3>
+<ul><li><a href="v8help://frame/form_common">Working with forms</a></li></ul></body></html>

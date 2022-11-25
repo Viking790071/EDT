@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>DataSource1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>MainDataSet</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ref</dataPath>
+			<field>Ref</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Письмо</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Email</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>E-mail</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Correo electrónico</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Correo electrónico</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>E-posta</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Email</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>E-Mail</v8:content>
+				</v8:item>
+			</title>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Subject</dataPath>
+			<field>Subject</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тема</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Mail subject</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Temat wiadomości e-mail</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Tema del correo</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Tema del correo</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>E-posta konusu</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Oggetto della email</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Mail-Betreff</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>SenderEmailAddress</dataPath>
+			<field>SenderEmailAddress</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>SenderContact</dataPath>
+			<field>SenderContact</field>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Topic</dataPath>
+			<field>Topic</field>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>EmailType</dataPath>
+			<field>EmailType</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип письма</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Email type</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Typ wiadomości e-mail</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Tipo de correo electrónico</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Tipo de correo electrónico</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>E-posta türü</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Tipo di email</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>E-Mail-Typ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Reviewed</dataPath>
+			<field>Reviewed</field>
+		</field>
+		<dataSource>DataSource1</dataSource>
+		<query>SELECT ALLOWED
+	NestedQuery.Ref,
+	NestedQuery.Subject,
+	NestedQuery.SenderContact,
+	NestedQuery.SenderEmailAddress,
+	NestedQuery.Topic,
+	NestedQuery.EmailType,
+	NestedQuery.Reviewed
+FROM
+	(SELECT DISTINCT
+		IncomingEmail.Ref AS Ref,
+		CAST(IncomingEmail.Subject AS STRING(1024)) AS Subject,
+		IncomingEmail.SenderContact AS SenderContact,
+		IncomingEmail.SenderAddress AS SenderEmailAddress,
+		InteractionsFolderSubjects.Topic AS Topic,
+		VALUETYPE(IncomingEmail.Ref) AS EmailType,
+		InteractionsFolderSubjects.Reviewed AS Reviewed
+	FROM
+		Document.IncomingEmail AS IncomingEmail
+			{LEFT JOIN InformationRegister.InteractionsFolderSubjects AS InteractionsFolderSubjects
+			ON (InteractionsFolderSubjects.Interaction = IncomingEmail.Ref)}
+	
+	UNION ALL
+	
+	SELECT
+		OutgoingEmail.Ref,
+		CAST(OutgoingEmail.Subject AS STRING(1024)),
+		VALUE(Catalog.Users.EmptyRef),
+		EmailAccounts.EmailAddress,
+		InteractionsFolderSubjects.Topic,
+		VALUETYPE(OutgoingEmail.Ref),
+		InteractionsFolderSubjects.Reviewed
+	FROM
+		Document.OutgoingEmail AS OutgoingEmail
+			{LEFT JOIN Catalog.EmailAccounts AS EmailAccounts
+			ON OutgoingEmail.Account = EmailAccounts.Ref
+			LEFT JOIN InformationRegister.InteractionsFolderSubjects AS InteractionsFolderSubjects
+			ON (InteractionsFolderSubjects.Interaction = OutgoingEmail.Ref)}) AS NestedQuery</query>
+	</dataSet>
+	<settingsVariant>
+		<dcsset:name>Main</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Основной</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Основной</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>pl</v8:lang>
+				<v8:content>Główny</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_ES</v8:lang>
+				<v8:content>Principal</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_CO</v8:lang>
+				<v8:content>Principal</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>tr</v8:lang>
+				<v8:content>Ana</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>it</v8:lang>
+				<v8:content>Principale</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>de</v8:lang>
+				<v8:content>Haupt</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Ref</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Subject</dcsset:left>
+					<dcsset:comparisonType>Contains</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:string"/>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

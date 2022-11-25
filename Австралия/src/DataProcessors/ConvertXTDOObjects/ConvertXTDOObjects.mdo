@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e870a1bd-0c08-4d1e-832a-357922983c19">
+  <producedTypes>
+    <objectType typeId="ca943bb0-8da4-47d9-9894-8b34fa1b30ac" valueTypeId="20249d73-fa66-4305-a525-8f62322fe74a"/>
+    <managerType typeId="5e70040e-d153-44a3-8517-c5546978aafe" valueTypeId="dd9bbde9-e6ec-4651-ba81-b6e932f3eeed"/>
+  </producedTypes>
+  <name>ConvertXTDOObjects</name>
+  <synonym>
+    <key>ru</key>
+    <value>Конвертация объектов XDTO</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>XDTO object conversion</value>
+  </synonym>
+  <synonym>
+    <key>pl</key>
+    <value>Konwersja obiektu XDTO</value>
+  </synonym>
+  <synonym>
+    <key>es_ES</key>
+    <value>Conversión del objeto XDTO</value>
+  </synonym>
+  <synonym>
+    <key>es_CO</key>
+    <value>Conversión del objeto XDTO</value>
+  </synonym>
+  <synonym>
+    <key>tr</key>
+    <value>XDTO nesne dönüşümü</value>
+  </synonym>
+  <synonym>
+    <key>it</key>
+    <value>Conversione oggetto XDTO</value>
+  </synonym>
+  <synonym>
+    <key>de</key>
+    <value>XDTO-Objektkonvertierung</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <attributes uuid="9f71aeac-f889-40dc-91bd-d670da4efd2b">
+    <name>OutputInfoMessagesInMessageWindow</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вывод в окно сообщений информационных сообщений</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Display diagnostic messages in the window</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Wyświetl w oknie komunikaty diagnostyczne</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Visualizar los mensajes diagnósticos en la ventana</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Visualizar los mensajes diagnósticos en la ventana</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Tanılama mesajlarını pencerede göster</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Visualizzare messaggi di diagnostica nella finestra</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Info Nachrichten Output zu Nachrichten Fenster</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="62f8a9b2-9e56-4d5c-a7e2-a85f5b27a5b7">
+    <name>OutputInfoMessagesToProtocol</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вывод в протокол информационных сообщений</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Write diagnostic messages to the information log</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Wniosek do protokołu informacyjnych zawiadomień</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Inscribir los mensajes diagnósticos en el registro de información</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Inscribir los mensajes diagnósticos en el registro de información</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Tanılama mesajlarını bilgi günlüğüne yaz</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Registra messaggi di diagnostica nel registro informazioni</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Info Meldungen, die auf Anmelden</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="614ef0bd-3298-408b-bf71-37df8ee60702">
+    <name>ExportAllowedObjectsOnly</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать только разрешенные</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Export only allowed</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Eksportuj tylko dozwolone</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Solo exportación permitida</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Solo exportación permitida</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Sadece izin verilenleri dışa aktar</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Consentita solo esportazione</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Dump nur festgeschriebene</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="26ff1be6-f72a-456a-9dce-302029752603">
+    <name>AppendDataToExchangeLog</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дописывать данные в протокол обмена</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Append data to the data exchange log</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Dopisywać dane do protokołu wymiany</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Añadir datos al protocolo de intercambio de datos</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Añadir datos al protocolo de intercambio de datos</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Verileri veri değişim protokolüne ekle</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Aggiungi dati al registro scambio dati</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Daten an das Datenaustauschprotokoll anhängen</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="db850a08-0c99-4a57-9b04-38be64bd38fb">
+    <name>ExchangePlanNameSOR</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя плана обмена с выборочной регистраций объектов</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Name of exchange plan with custom object registration</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Nazwa planu wymiany z niestandardową rejestracją obiektów</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Nombre del plan de intercambio con el registro de objetos personalizados</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Nombre del plan de intercambio con el registro de objetos personalizados</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Özel nesne kaydı ile değişim planının adı</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Nome del piano di scambio da registrazioni di oggetti selettivi</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Name des Austauschplans mit benutzerdefinierter Objektregistrierung</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="abeca127-5ae9-46af-a5e8-d6438fd68367">
+    <name>ExchangeFileName</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла обмена</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Exchange file name</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Imię pliku wymiany</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Nombre del archivo de intercambio</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Nombre del archivo de intercambio</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Değişim dosyası adı</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Nome del file di scambio</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Exchange-Dateinamen</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bce81631-9f6d-42b3-b4b6-2199afb08f2f">
+    <name>ExchangeProtocolFileName</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла протокола обмена</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Name of file with exchange log</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Nazwa pliku protokołu wymiany</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Nombre del archivo con el protocolo de intercambio</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Nombre del archivo con el protocolo de intercambio</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Değişim protokollü dosyanın adı</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Nome del file con registro di scambio</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Name der Datei mit Austauschprotokoll</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="67d6878f-3e47-4142-8f98-c5a207f0b8a8">
+    <name>UseTransactions</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать транзакции</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Use transactions</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Używać transakcje</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Utilizar transacciones</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Utilizar transacciones</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İşlemleri kullan</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Utilizzare le transazioni</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Transaktionen verwenden</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7f4b872f-0e50-49dd-984d-f5fc3ac3f2f0">
+    <name>ProcessedObjectsCountToUpdateStatus</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество обработанных объектов для обновления статуса</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Number of processed objects before the status is updated</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Ilość przetworzonych obiektów do aktualizacji statusu</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Cantidad de los objetos procesados para actualizar el estado</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Cantidad de los objetos procesados para actualizar el estado</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Durum güncellenmeden önce işlenen nesnelerin sayısı</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Numero di oggetti processati prima che lo stato fosse aggiornato</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Anzahl der bearbeiteten Objekte vor Statusaktualisierung</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="68636657-4d46-4c2a-9b2f-11521a55dfb4">
+    <name>ObjectCountPerTransaction</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество объектов на транзакцию</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Number of objects in a single transaction</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Ilość obiektów w pojedynczej transakcji</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Número de objetos en una transacción única</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Número de objetos en una transacción única</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Tek bir işlemdeki nesnelerin sayısı</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Numero di oggetti in un'unica transazione</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Anzahl der Objekte in einer einzelnen Transaktion</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="18a83f43-dc84-4f8a-9580-681b19f571c4">
+    <name>CommentOnDataExport</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий при выгрузке данных</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Comment on data export</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Komentarz przy exporcie danych</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Comentario de la exportación de datos</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Comentario de la exportación de datos</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Veri dışa aktarımı hakkında yorum</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Commenta l'esportazione dei dati</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Kommentar zum Datenexport</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="01c588b0-d0ce-4978-b04d-084e6a00fcc7">
+    <name>CommentOnDataImport</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий при загрузке данных</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Comment on data import</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Komentarz przy imporcie danych</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Comentario al descargar los datos</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Comentario al descargar los datos</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Veri içe aktarımı hakkında yorum</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Commento sull'importazione dati</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Kommentar zum Herunterladen von Daten</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a23642d9-8c4f-44a5-8865-bfb286e47c55">
+    <name>Parameters</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Parameters</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Parametry</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Parámetros</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Parámetros</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Parametreler</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Parametri</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Parameter</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7b37e038-dcef-41e1-b6e7-ed73c6958415">
+    <name>ContinueOnError</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продолжить при ошибке</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Continue if error occurs</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Kontynuuj pod czas błędu</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Continuar si ocurre un error</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Continuar si ocurre un error</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Hata oluşursa devam et</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Continua se si registrano errori</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Fortsetzen, wenn ein Fehler auftritt</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="24df2d14-5ebf-4ded-ba14-5daee7a0c536">
+    <name>DataImportMode</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим загрузки данных</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Data import mode</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Reżim ładowania danych</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Modo de Importación de Datos</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Modo de Importación de Datos</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Veri İçe Aktarma Modu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Modalità di importazione dati</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Data Load-Modus</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="13d6e2e9-b268-4c1b-8b8b-30c5296cfe4c">
+    <name>ExchangeMode</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим обмена</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Exchange mode</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Tryb wymiany</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Modo de intercambio</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Modo de intercambio</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Değişim Modu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Modalità di scambio</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Exchange-Modus</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="03bb028a-ee8c-411e-8382-653046f803c6">
+    <name>NodeForExchange</name>
+    <synonym>
+      <key>ru</key>
+      <value>Узел для обмена</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Node for exchange</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Węzeł wymiany</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Nodo de intercambio</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Nodo de intercambio</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Değişim düğümü</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Nodo per lo scambio</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Austauschknoten</value>
+    </synonym>
+    <type>
+      <types>ExchangePlanRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c4fa80ca-32d6-4a44-9fe2-7ffd67e1cb30">
+    <name>ExchangeNodeDataImport</name>
+    <synonym>
+      <key>ru</key>
+      <value>Узел обмена загрузка данных</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Exchange node data import</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Węzeł wymiany ładowanie danych</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Importación de datos del nodo de intercambio</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Importación de datos del nodo de intercambio</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Değişim düğümü veri içe aktarma</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Nodo di scambio importazione dati</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Exchange-Knoten für Daten-Upload</value>
+    </synonym>
+    <type>
+      <types>ExchangePlanRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8aa73dfd-41ac-4f79-bf73-cd2da51b1232">
+    <name>ExchangeComponents</name>
+    <synonym>
+      <key>ru</key>
+      <value>Компоненты обмена</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Exchange components</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Składniki wymiany</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Componentes de intercambio</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Componentes de intercambio</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Değiştirme bileşenleri</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Componenti di scambio</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Komponenten des Austauschs</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="38d5ed93-133b-44fe-827a-69a6cfc0461d">
+    <name>EventLogMessageKey</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ сообщения журнала регистрации</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Event log message key</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Klucz zawiadomienia dziennika wydarzeń</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Clave de Mensaje del Registro de Eventos</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Clave de Mensaje del Registro de Eventos</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Olay günlüğü mesaj tuşu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Chiave messaggio registro eventi</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Ereignisprotokoll Nachrichtenschlüssel</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+</mdclass:DataProcessor>

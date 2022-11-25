@@ -1,0 +1,4397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>DataSource1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetUnion">
+		<name>DataSet2</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CostObject</dataPath>
+			<field>CostObject</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ComponentProduct</dataPath>
+			<field>ComponentProduct</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Component</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сырье и материалы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Komponent</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Componente</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Componente</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Malzeme</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Componente</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Komponente</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>FinishedProductVariant</dataPath>
+			<field>FinishedProductVariant</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Variant</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вариант</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Wariant</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Variante</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Variante</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Varyant</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Variante</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Variante</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>FinishedProduct</dataPath>
+			<field>FinishedProduct</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Product</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Produkt</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Producto</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Producto</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Ürün</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Variante</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Produkt</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Products</v8:Type>
+			</valueType>
+			<inputParameters>
+				<dcscor:item>
+					<dcscor:parameter>ChoiceParameters</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:ChoiceParameters">
+						<dcscor:item>
+							<dcscor:choiceParameter>Filter.ProductsType</dcscor:choiceParameter>
+							<dcscor:value xsi:type="dcscor:DesignTimeValue">Enum.ProductsTypes.InventoryItem</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:choiceParameter>Filter.IsBundle</dcscor:choiceParameter>
+							<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+						</dcscor:item>
+					</dcscor:value>
+				</dcscor:item>
+			</inputParameters>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ComponentCharacteristic</dataPath>
+			<field>ComponentCharacteristic</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Variant</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вариант</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Wariant</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Variante</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Variante</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Varyant</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Articolo</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Variante</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ComponentQuantity</dataPath>
+			<field>ComponentQuantity</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Quantity</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Ilość</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Cantidad</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Cantidad</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Miktar</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Variante</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Menge</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Format</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>NFD=3; NZ=0</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=3; ЧН=0</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>NFD=3; NZ=0</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>NFD=3; NZ=0</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>NFD=3; NZ=0</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>NFD=3; NZ=0</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>NFD=3; NZ=0</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>NFD=3; NZ=0</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ComponentAmount</dataPath>
+			<field>ComponentAmount</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Amount</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Wartość</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Importe</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Importe</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Tutar</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Importo</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Betrag</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Format</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>NFD=2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>NFD=2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>NFD=2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>NFD=2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>NFD=2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>NFD=2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>NFD=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>FinishedQuantity</dataPath>
+			<field>FinishedQuantity</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Quantity</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Ilość</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Cantidad</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Cantidad</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Miktar</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Quantità</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Menge</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Format</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Company</dataPath>
+			<field>Company</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Project</dataPath>
+			<field>Project</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Recorder</dataPath>
+			<field>Recorder</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Recorder</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ движения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Rejestrator</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Registrador</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Registrador</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Kayıt</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Documento di Rif.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Buchungsdokument</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+				<dcscom:ignoreNullValues>true</dcscom:ignoreNullValues>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>PointInTime</dataPath>
+			<field>PointInTime</field>
+			<role>
+				<dcscom:periodNumber>2</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>FinishedProductUnit</dataPath>
+			<field>FinishedProductUnit</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Unit</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ед. изм.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>J.m.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Unidad</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Unidad</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Birim</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Unità</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Einheit</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>OperationAmount</dataPath>
+			<field>OperationAmount</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Amount</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Wartość</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Importe</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Importe</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Tutar</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Importo</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Betrag</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Format</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>NFD=2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>NFD=2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>NFD=2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>NFD=2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>NFD=2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>NFD=2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>NFD=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ComponentUnit</dataPath>
+			<field>ComponentUnit</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Unit</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ед. изм.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>J.m.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Unidad</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Unidad</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Birim</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Unità</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Einheit</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>OperationUnit</dataPath>
+			<field>OperationUnit</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Unit</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ед. изм.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>J.m.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Unidad</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Unidad</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Birim</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Unità</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Einheit</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>OperationQuantity</dataPath>
+			<field>OperationQuantity</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Quantity</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Ilość</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Cantidad</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Cantidad</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Miktar</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Quantità</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Menge</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Format</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>OperationKind</dataPath>
+			<field>OperationKind</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Process type</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип процесса</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Typ procesu</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Tipo de proceso</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Tipo de proceso</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Süreç türü</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Tipo processo</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Prozesstyp</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Manufacturer</dataPath>
+			<field>Manufacturer</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Manufacturer</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изготовитель</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Producent</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Fabricante</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Fabricante</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Üretici</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Produttore</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Hersteller</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.BusinessUnits</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ComponentOwnership</dataPath>
+			<field>ComponentOwnership</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Ownership</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Владение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Własność</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Propiedad</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Propiedad</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Sahiplik</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Proprietà</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Eigentumsverhältnisse</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>FinishedProductOwnership</dataPath>
+			<field>FinishedProductOwnership</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Ownership</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Владение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Własność</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Propiedad</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Propiedad</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Sahiplik</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Proprietà</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Eigentumsverhältnisse</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<item xsi:type="DataSetQuery">
+			<name>DataSetProduction</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>CostObject</dataPath>
+				<field>CostObject</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ComponentProduct</dataPath>
+				<field>ComponentProduct</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Component</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Компонент</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Komponent</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Malzeme</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Komponente</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>FinishedProductVariant</dataPath>
+				<field>FinishedProductVariant</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Variant</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Вариант</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Wariant</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Variante</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Variante</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Varyant</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Variante</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Variante</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>FinishedProduct</dataPath>
+				<field>FinishedProduct</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Product</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Номенклатура</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Produkt</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Producto</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Producto</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Ürün</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Articolo</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Produkt</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.Products</v8:Type>
+				</valueType>
+				<inputParameters>
+					<dcscor:item>
+						<dcscor:parameter>ChoiceParameters</dcscor:parameter>
+						<dcscor:value xsi:type="dcscor:ChoiceParameters">
+							<dcscor:item>
+								<dcscor:choiceParameter>Filter.ProductsType</dcscor:choiceParameter>
+								<dcscor:value xsi:type="dcscor:DesignTimeValue">Enum.ProductsTypes.InventoryItem</dcscor:value>
+							</dcscor:item>
+							<dcscor:item>
+								<dcscor:choiceParameter>Filter.IsBundle</dcscor:choiceParameter>
+								<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+							</dcscor:item>
+						</dcscor:value>
+					</dcscor:item>
+				</inputParameters>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ComponentCharacteristic</dataPath>
+				<field>ComponentCharacteristic</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Variant</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Вариант</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Wariant</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Variante</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Variante</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Varyant</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Variante</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Variante</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ComponentQuantity</dataPath>
+				<field>ComponentQuantity</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Quantity</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Количество</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Ilość</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Cantidad</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Cantidad</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Miktar</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Quantità</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Menge</v8:content>
+					</v8:item>
+				</title>
+				<appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Format</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>NFD=3; NZ=0</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ЧДЦ=3; ЧН=0</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>pl</v8:lang>
+								<v8:content>NFD=3; NZ=0</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>es_ES</v8:lang>
+								<v8:content>NFD=3; NZ=0</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>es_CO</v8:lang>
+								<v8:content>NFD=3; NZ=0</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>tr</v8:lang>
+								<v8:content>NFD=3; NZ=0</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>it</v8:lang>
+								<v8:content>NFD=3; NZ=0</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>de</v8:lang>
+								<v8:content>NFD=3; NZ=0</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ComponentAmount</dataPath>
+				<field>ComponentAmount</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Amount</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сумма</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Wartość</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Importe</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Importe</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Tutar</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Importo</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Betrag</v8:content>
+					</v8:item>
+				</title>
+				<appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Format</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>NFD=2</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ЧДЦ=2</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>pl</v8:lang>
+								<v8:content>NFD=2</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>es_ES</v8:lang>
+								<v8:content>NFD=2</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>es_CO</v8:lang>
+								<v8:content>NFD=2</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>tr</v8:lang>
+								<v8:content>NFD=2</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>it</v8:lang>
+								<v8:content>NFD=2</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>de</v8:lang>
+								<v8:content>NFD=2</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>FinishedQuantity</dataPath>
+				<field>FinishedQuantity</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Quantity</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Количество</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Ilość</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Cantidad</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Cantidad</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Miktar</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Quantità</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Menge</v8:content>
+					</v8:item>
+				</title>
+				<appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Format</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>NFD=3</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ЧДЦ=3</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>pl</v8:lang>
+								<v8:content>NFD=3</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>es_ES</v8:lang>
+								<v8:content>NFD=3</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>es_CO</v8:lang>
+								<v8:content>NFD=3</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>tr</v8:lang>
+								<v8:content>NFD=3</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>it</v8:lang>
+								<v8:content>NFD=3</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>de</v8:lang>
+								<v8:content>NFD=3</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Company</dataPath>
+				<field>Company</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Project</dataPath>
+				<field>Project</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Recorder</dataPath>
+				<field>Recorder</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Recorder</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Документ движения</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Rejestrator</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Registrador</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Registrador</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Kayıt</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Registratore</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Buchungsdokument</v8:content>
+					</v8:item>
+				</title>
+				<role>
+					<dcscom:periodNumber>1</dcscom:periodNumber>
+					<dcscom:periodType>Main</dcscom:periodType>
+					<dcscom:ignoreNullValues>true</dcscom:ignoreNullValues>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>PointInTime</dataPath>
+				<field>PointInTime</field>
+				<role>
+					<dcscom:periodNumber>2</dcscom:periodNumber>
+					<dcscom:periodType>Main</dcscom:periodType>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>FinishedProductUnit</dataPath>
+				<field>FinishedProductUnit</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Unit</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Ед. изм.</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>J.m.</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Unidad</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Unidad</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Birim</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Unità</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Einheit</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>OperationAmount</dataPath>
+				<field>OperationAmount</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Amount</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сумма</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Wartość</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Importe</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Importe</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Tutar</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Importo</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Betrag</v8:content>
+					</v8:item>
+				</title>
+				<appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Format</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>NFD=2</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ЧДЦ=2</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>pl</v8:lang>
+								<v8:content>NFD=2</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>es_ES</v8:lang>
+								<v8:content>NFD=2</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>es_CO</v8:lang>
+								<v8:content>NFD=2</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>tr</v8:lang>
+								<v8:content>NFD=2</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>it</v8:lang>
+								<v8:content>NFD=2</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>de</v8:lang>
+								<v8:content>NFD=2</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ComponentUnit</dataPath>
+				<field>ComponentUnit</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Unit</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Ед. изм.</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>J.m.</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Unidad</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Unidad</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Birim</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Unità</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Einheit</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>OperationUnit</dataPath>
+				<field>OperationUnit</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Unit</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Ед. изм.</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>J.m.</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Unidad</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Unidad</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Birim</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Unità</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Einheit</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>OperationQuantity</dataPath>
+				<field>OperationQuantity</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Quantity</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Количество</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Ilość</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Cantidad</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Cantidad</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Miktar</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Quantità</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Menge</v8:content>
+					</v8:item>
+				</title>
+				<appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Format</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>NFD=3</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ЧДЦ=3</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>pl</v8:lang>
+								<v8:content>NFD=3</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>es_ES</v8:lang>
+								<v8:content>NFD=3</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>es_CO</v8:lang>
+								<v8:content>NFD=3</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>tr</v8:lang>
+								<v8:content>NFD=3</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>it</v8:lang>
+								<v8:content>NFD=3</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>de</v8:lang>
+								<v8:content>NFD=3</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>OperationKind</dataPath>
+				<field>OperationKind</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Manufacturer</dataPath>
+				<field>Manufacturer</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Manufacturer</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Изготовитель</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Producent</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Fabricante</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Fabricante</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Üretici</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Produttore</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Hersteller</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ComponentOwnership</dataPath>
+				<field>ComponentOwnership</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Ownership</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Владение</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Własność</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Propiedad</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Propiedad</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Sahiplik</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Proprietà</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Eigentumsverhältnisse</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>FinishedProductOwnership</dataPath>
+				<field>FinishedProductOwnership</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Ownership</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Владение</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Własność</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Propiedad</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Propiedad</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Sahiplik</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Proprietà</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Eigentumsverhältnisse</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<dataSource>DataSource1</dataSource>
+			<query>SELECT ALLOWED
+	Inventory.ProductsCorr AS FinishedProduct,
+	Inventory.CharacteristicCorr AS FinishedProductVariant,
+	Inventory.OwnershipCorr AS FinishedProductOwnership,
+	Inventory.Products AS ComponentProduct,
+	Inventory.Characteristic AS ComponentCharacteristic,
+	Inventory.Ownership AS ComponentOwnership,
+	CASE
+		WHEN Inventory.RecordType = VALUE(AccumulationRecordType.Expense)
+			THEN Inventory.Quantity
+		ELSE -Inventory.Quantity
+	END AS ComponentQuantity,
+	CASE
+		WHEN Inventory.RecordType = VALUE(AccumulationRecordType.Expense)
+			THEN Inventory.Amount
+		ELSE -Inventory.Amount
+	END AS ComponentAmount,
+	Inventory.Recorder AS Document,
+	Inventory.CostObject AS CostObject,
+	Inventory.Company AS Company,
+	Inventory.PointInTime AS PointInTime,
+	ProductsCatalog.MeasurementUnit AS Unit
+INTO ComponentsTT
+FROM
+	AccumulationRegister.Inventory AS Inventory
+		INNER JOIN Catalog.Products AS ProductsCatalog
+		ON Inventory.Products = ProductsCatalog.Ref
+WHERE
+	Inventory.Period BETWEEN &amp;BeginOfPeriod AND &amp;EndOfPeriod
+	AND Inventory.CostObject &lt;&gt; VALUE(Catalog.CostObjects.EmptyRef)
+	AND Inventory.ProductsCorr &lt;&gt; UNDEFINED
+	AND Inventory.ProductsCorr &lt;&gt; Inventory.Products
+
+UNION ALL
+
+SELECT
+	RegInventory.ProductsCorr,
+	RegInventory.CharacteristicCorr,
+	RegInventory.OwnershipCorr,
+	RegInventory.Products,
+	RegInventory.Characteristic,
+	RegInventory.Ownership,
+	CASE
+		WHEN RegInventory.RecordType = VALUE(AccumulationRecordType.Expense)
+			THEN RegInventory.Quantity
+		ELSE -RegInventory.Quantity
+	END,
+	CASE
+		WHEN RegInventory.RecordType = VALUE(AccumulationRecordType.Expense)
+			THEN RegInventory.Amount
+		ELSE -RegInventory.Amount
+	END,
+	RegInventory.Recorder,
+	DocWIP.CostObject,
+	RegInventory.Company,
+	RegInventory.PointInTime,
+	ProductsCatalog.MeasurementUnit
+FROM
+	AccumulationRegister.Inventory AS RegInventory
+		INNER JOIN Catalog.Products AS ProductsCatalog
+		ON RegInventory.Products = ProductsCatalog.Ref
+		INNER JOIN Document.Manufacturing AS DocManufacturing
+		ON RegInventory.Recorder = DocManufacturing.Ref
+		LEFT JOIN Document.ManufacturingOperation AS DocWIP
+		ON (DocManufacturing.WorkInProgress = DocWIP.Ref)
+WHERE
+	RegInventory.Period BETWEEN &amp;BeginOfPeriod AND &amp;EndOfPeriod
+	AND RegInventory.FixedCost
+	AND RegInventory.ProductsCorr &lt;&gt; UNDEFINED
+	AND RegInventory.ProductsCorr &lt;&gt; RegInventory.Products
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT ALLOWED
+	RegInventory.Products AS FinishedProduct,
+	RegInventory.Characteristic AS FinishedProductVariant,
+	RegInventory.Ownership AS FinishedProductOwnership,
+	RegInventory.ProductsCorr AS ComponentProduct,
+	RegInventory.CharacteristicCorr AS ComponentCharacteristic,
+	RegInventory.OwnershipCorr AS ComponentOwnership,
+	CASE
+		WHEN InventoryForQty.RecordType = VALUE(AccumulationRecordType.Expense)
+			THEN InventoryForQty.Quantity
+		ELSE -InventoryForQty.Quantity
+	END AS ComponentQuantity,
+	CASE
+		WHEN InventoryForQty.RecordType = VALUE(AccumulationRecordType.Expense)
+			THEN InventoryForQty.Amount
+		ELSE -InventoryForQty.Amount
+	END AS ComponentAmount,
+	RegInventory.Recorder AS Document,
+	DocWIP.CostObject AS CostObject,
+	RegInventory.Company AS Company,
+	RegInventory.PointInTime AS PointInTime,
+	ProductsCatalog.MeasurementUnit AS Unit
+INTO ByProductsTT
+FROM
+	AccumulationRegister.Inventory AS RegInventory
+		INNER JOIN Catalog.Products AS ProductsCatalog
+		ON RegInventory.ProductsCorr = ProductsCatalog.Ref
+		LEFT JOIN AccumulationRegister.Inventory AS InventoryForQty
+		ON RegInventory.Recorder = InventoryForQty.Recorder
+			AND RegInventory.ProductsCorr = InventoryForQty.Products
+			AND RegInventory.CharacteristicCorr = InventoryForQty.Characteristic
+		INNER JOIN Document.Manufacturing AS DocManufacturing
+		ON RegInventory.Recorder = DocManufacturing.Ref
+		LEFT JOIN Document.ManufacturingOperation AS DocWIP
+		ON (DocManufacturing.WorkInProgress = DocWIP.Ref)
+WHERE
+	RegInventory.Period BETWEEN &amp;BeginOfPeriod AND &amp;EndOfPeriod
+	AND RegInventory.ProductsCorr &lt;&gt; UNDEFINED
+	AND RegInventory.FixedCost
+	AND RegInventory.ProductsCorr &lt;&gt; RegInventory.Products
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT ALLOWED
+	Inventory.ProductsCorr AS FinishedProduct,
+	Inventory.CharacteristicCorr AS FinishedProductVariant,
+	Inventory.OwnershipCorr AS FinishedProductOwnership,
+	Inventory.Products AS ComponentProduct,
+	Inventory.Characteristic AS ComponentCharacteristic,
+	Inventory.Ownership AS ComponentOwnership,
+	Inventory.Quantity * ManufacturingActivities.StandardTimeInUOM AS ComponentQuantity,
+	CASE
+		WHEN Inventory.RecordType = VALUE(AccumulationRecordType.Expense)
+			THEN Inventory.Amount
+		ELSE -Inventory.Amount
+	END AS ComponentAmount,
+	Inventory.Recorder AS Document,
+	Inventory.CostObject AS CostObject,
+	Inventory.Company AS Company,
+	Inventory.PointInTime AS PointInTime,
+	ManufacturingActivities.TimeUOM AS TimeUOM
+INTO OperationsTT
+FROM
+	AccumulationRegister.Inventory AS Inventory
+		INNER JOIN Catalog.ManufacturingActivities AS ManufacturingActivities
+		ON Inventory.Products = ManufacturingActivities.Ref
+WHERE
+	Inventory.Period BETWEEN &amp;BeginOfPeriod AND &amp;EndOfPeriod
+	AND Inventory.CostObject &lt;&gt; VALUE(Catalog.CostObjects.EmptyRef)
+	AND Inventory.ProductsCorr &lt;&gt; UNDEFINED
+	AND Inventory.ProductsCorr &lt;&gt; Inventory.Products
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT DISTINCT
+	ComponentsTT.FinishedProduct AS FinishedProduct,
+	ComponentsTT.FinishedProductVariant AS FinishedProductVariant,
+	ComponentsTT.FinishedProductOwnership AS FinishedProductOwnership,
+	ComponentsTT.Document AS Document,
+	ComponentsTT.CostObject AS CostObject
+INTO AllConsumptionTT
+FROM
+	ComponentsTT AS ComponentsTT
+
+UNION ALL
+
+SELECT
+	ByProductsTT.FinishedProduct,
+	ByProductsTT.FinishedProductVariant,
+	ByProductsTT.FinishedProductOwnership,
+	ByProductsTT.Document,
+	ByProductsTT.CostObject
+FROM
+	ByProductsTT AS ByProductsTT
+
+UNION ALL
+
+SELECT DISTINCT
+	OperationsTT.FinishedProduct,
+	OperationsTT.FinishedProductVariant,
+	OperationsTT.FinishedProductOwnership,
+	OperationsTT.Document,
+	OperationsTT.CostObject
+FROM
+	OperationsTT AS OperationsTT
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT DISTINCT
+	AllConsumptionTT.FinishedProduct AS FinishedProduct,
+	AllConsumptionTT.FinishedProductVariant AS FinishedProductVariant,
+	AllConsumptionTT.FinishedProductOwnership AS FinishedProductOwnership,
+	AllConsumptionTT.Document AS Document,
+	AllConsumptionTT.CostObject AS CostObject
+INTO AllConsumptionGroupedTT
+FROM
+	AllConsumptionTT AS AllConsumptionTT
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT ALLOWED
+	Inventory.Products AS FinishedProduct,
+	Inventory.Characteristic AS FinishedProductVariant,
+	Inventory.Ownership AS FinishedProductOwnership,
+	SUM(CASE
+			WHEN Inventory.RecordType = VALUE(AccumulationRecordType.Expense)
+				THEN -Inventory.Quantity
+			ELSE Inventory.Quantity
+		END) AS FinishedQuantity,
+	Inventory.Recorder AS Document,
+	AllConsumptionGroupedTT.CostObject AS CostObject,
+	Inventory.Company AS Company,
+	ProductsCatalog.MeasurementUnit AS FinishedProductUnit,
+	Inventory.PointInTime AS PointInTime,
+	Inventory.LineNumber AS LineNumber
+INTO FinishedTT
+FROM
+	AccumulationRegister.Inventory AS Inventory
+		INNER JOIN AllConsumptionGroupedTT AS AllConsumptionGroupedTT
+		ON Inventory.Recorder = AllConsumptionGroupedTT.Document
+			AND Inventory.Products = AllConsumptionGroupedTT.FinishedProduct
+			AND Inventory.Characteristic = AllConsumptionGroupedTT.FinishedProductVariant
+			AND Inventory.Ownership = AllConsumptionGroupedTT.FinishedProductOwnership
+		LEFT JOIN Catalog.Products AS ProductsCatalog
+		ON Inventory.Products = ProductsCatalog.Ref
+
+GROUP BY
+	Inventory.Products,
+	Inventory.Characteristic,
+	Inventory.Recorder,
+	AllConsumptionGroupedTT.CostObject,
+	Inventory.Company,
+	ProductsCatalog.MeasurementUnit,
+	Inventory.PointInTime,
+	Inventory.LineNumber,
+	Inventory.Ownership
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT ALLOWED
+	ProductionOrderDocument.StructuralUnit AS Manufacturer,
+	ComponentsTT.FinishedProduct AS FinishedProduct,
+	ComponentsTT.FinishedProductVariant AS FinishedProductVariant,
+	ComponentsTT.FinishedProductOwnership AS FinishedProductOwnership,
+	NULL AS FinishedProductUnit,
+	NULL AS FinishedQuantity,
+	ComponentsTT.ComponentProduct AS ComponentProduct,
+	ComponentsTT.ComponentCharacteristic AS ComponentCharacteristic,
+	ComponentsTT.ComponentOwnership AS ComponentOwnership,
+	ComponentsTT.ComponentQuantity AS ComponentQuantity,
+	ComponentsTT.ComponentAmount AS ComponentAmount,
+	ComponentsTT.Unit AS ComponentUnit,
+	ComponentsTT.Document AS Recorder,
+	ComponentsTT.CostObject AS CostObject,
+	CostObjects.Project AS Project,
+	ComponentsTT.Company AS Company,
+	ProductionOrderDocument.OperationKind AS OperationKind,
+	ComponentsTT.PointInTime AS PointInTime,
+	NULL AS OperationUnit,
+	NULL AS OperationQuantity,
+	NULL AS OperationAmount
+FROM
+	ComponentsTT AS ComponentsTT
+		LEFT JOIN Catalog.CostObjects AS CostObjects
+			LEFT JOIN Document.ProductionOrder AS ProductionOrderDocument
+			ON CostObjects.ProductionOrder = ProductionOrderDocument.Ref
+		ON ComponentsTT.CostObject = CostObjects.Ref
+
+UNION ALL
+
+SELECT
+	ProductionOrderDocument.StructuralUnit,
+	OperationsTT.FinishedProduct,
+	OperationsTT.FinishedProductVariant,
+	OperationsTT.FinishedProductOwnership,
+	NULL,
+	NULL,
+	OperationsTT.ComponentProduct,
+	NULL,
+	VALUE(Catalog.InventoryOwnership.EmptyRef),
+	NULL,
+	NULL,
+	NULL,
+	OperationsTT.Document,
+	OperationsTT.CostObject,
+	CostObjects.Project,
+	OperationsTT.Company,
+	ProductionOrderDocument.OperationKind,
+	OperationsTT.PointInTime,
+	OperationsTT.TimeUOM,
+	OperationsTT.ComponentQuantity,
+	OperationsTT.ComponentAmount
+FROM
+	OperationsTT AS OperationsTT
+		LEFT JOIN Catalog.CostObjects AS CostObjects
+			LEFT JOIN Document.ProductionOrder AS ProductionOrderDocument
+			ON CostObjects.ProductionOrder = ProductionOrderDocument.Ref
+		ON OperationsTT.CostObject = CostObjects.Ref
+
+UNION ALL
+
+SELECT
+	ProductionOrderDocument.StructuralUnit,
+	FinishedTT.FinishedProduct,
+	FinishedTT.FinishedProductVariant,
+	FinishedTT.FinishedProductOwnership,
+	FinishedTT.FinishedProductUnit,
+	SUM(FinishedTT.FinishedQuantity),
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	FinishedTT.Document,
+	FinishedTT.CostObject,
+	CostObjects.Project,
+	FinishedTT.Company,
+	ProductionOrderDocument.OperationKind,
+	FinishedTT.PointInTime,
+	NULL,
+	NULL,
+	NULL
+FROM
+	FinishedTT AS FinishedTT
+		LEFT JOIN Catalog.CostObjects AS CostObjects
+			LEFT JOIN Document.ProductionOrder AS ProductionOrderDocument
+			ON CostObjects.ProductionOrder = ProductionOrderDocument.Ref
+		ON FinishedTT.CostObject = CostObjects.Ref
+
+GROUP BY
+	ProductionOrderDocument.StructuralUnit,
+	FinishedTT.FinishedProduct,
+	FinishedTT.FinishedProductVariant,
+	FinishedTT.FinishedProductUnit,
+	FinishedTT.Document,
+	FinishedTT.CostObject,
+	CostObjects.Project,
+	FinishedTT.Company,
+	ProductionOrderDocument.OperationKind,
+	FinishedTT.PointInTime,
+	FinishedTT.FinishedProductOwnership
+
+UNION ALL
+
+SELECT
+	ProductionOrderDocument.StructuralUnit,
+	ByProductsTT.FinishedProduct,
+	ByProductsTT.FinishedProductVariant,
+	ByProductsTT.FinishedProductOwnership,
+	NULL,
+	NULL,
+	ByProductsTT.ComponentProduct,
+	ByProductsTT.ComponentCharacteristic,
+	ByProductsTT.ComponentOwnership,
+	ByProductsTT.ComponentQuantity,
+	ByProductsTT.ComponentAmount,
+	ByProductsTT.Unit,
+	ByProductsTT.Document,
+	ByProductsTT.CostObject,
+	CostObjects.Project,
+	ByProductsTT.Company,
+	ProductionOrderDocument.OperationKind,
+	ByProductsTT.PointInTime,
+	NULL,
+	NULL,
+	NULL
+FROM
+	ByProductsTT AS ByProductsTT
+		LEFT JOIN Catalog.CostObjects AS CostObjects
+			LEFT JOIN Document.ProductionOrder AS ProductionOrderDocument
+			ON CostObjects.ProductionOrder = ProductionOrderDocument.Ref
+		ON ByProductsTT.CostObject = CostObjects.Ref</query>
+		</item>
+		<item xsi:type="DataSetQuery">
+			<name>DataSetAssembly</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>OperationKind</dataPath>
+				<field>OperationKind</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Operation kind</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Вид операции</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Rodzaj operacji</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Tipo de operación</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Tipo de operación</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>İşlem türü</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Tipo di operazione</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Operationsart</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Recorder</dataPath>
+				<field>Recorder</field>
+				<role>
+					<dcscom:periodNumber>1</dcscom:periodNumber>
+					<dcscom:periodType>Main</dcscom:periodType>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ComponentProduct</dataPath>
+				<field>ComponentProduct</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Component</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Компонент</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Komponent</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Malzeme</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Komponente</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ComponentCharacteristic</dataPath>
+				<field>ComponentCharacteristic</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Component characteristic</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Характеристика компонента</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Charakterystyka komponentu</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Característica del componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Característica del componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Malzeme özelliği</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Caratteristica componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Eigenschaft von Komponente</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>FinishedProduct</dataPath>
+				<field>FinishedProduct</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Finished product</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Готовая продукция</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Gotowy produkt</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Producto terminado</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Producto terminado</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Nihai ürün</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Articolo finito</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Fertigprodukt</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>FinishedProductVariant</dataPath>
+				<field>FinishedProductVariant</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Finished product variant</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Вариант готовой продукции</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Wariant gotowego produktu</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Variante de producto terminado</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Variante de producto terminado</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Nihai ürün varyantı</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Variante articolo finito</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Fertigproduktvariante</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Company</dataPath>
+				<field>Company</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>FinishedProductUnit</dataPath>
+				<field>FinishedProductUnit</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Finished product unit</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Единица измерения готовой продукции</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>J.m. gotowego produktu</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Unidad del producto terminado</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Unidad del producto terminado</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Nihai ürün birimi</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Unità articolo finito</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Fertigprodukteinheit</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ComponentOwnership</dataPath>
+				<field>ComponentOwnership</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Component ownership</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Владение компонентами</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Własność komponentu</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Propiedad del componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Propiedad del componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Malzeme sahipliği</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Proprietà componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Eigentumsverhältnisse von Komponente</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>FinishedProductOwnership</dataPath>
+				<field>FinishedProductOwnership</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Finished product ownership</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Владение готовой продукцией</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Własność gotowego produktu</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Propiedad del producto terminado</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Propiedad del producto terminado</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Nihai ürün sahipliği</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Proprietà articolo finito</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Eigentumsverhältnisse von Fertigprodukt</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>FinishedQuantity</dataPath>
+				<field>FinishedQuantity</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Finished quantity</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Готовое количество</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Gotowa ilość</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Cantidad terminada</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Cantidad terminada</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Nihai miktar</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Quantità finita</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Gefertigte Menge</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ComponentQuantity</dataPath>
+				<field>ComponentQuantity</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Component quantity</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Количество компонентов</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Ilość komponentów</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Cantidad del componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Cantidad del componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Malzeme miktarı</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Quantità componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Anzahl von Komponenten</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ComponentAmount</dataPath>
+				<field>ComponentAmount</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Component amount</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сумма компонентов</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Wartość komponentów</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Importe del componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Importe del componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Malzeme tutarı</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Importo componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Menge von Komponenten</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ComponentUnit</dataPath>
+				<field>ComponentUnit</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Component unit</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Единица измерения компонента</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>j.m. komponentów</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Unidad de medida del componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Unidad de medida del componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Malzeme ölçü birimi</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Unità componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Komponenteneinheit</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Project</dataPath>
+				<field>Project</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>PointInTime</dataPath>
+				<field>PointInTime</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Manufacturer</dataPath>
+				<field>Manufacturer</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Manufacturer</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Изготовитель</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Producent</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Fabricante</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Fabricante</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Üretici</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Produttore</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Hersteller</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<dataSource>DataSource1</dataSource>
+			<query>SELECT ALLOWED
+	Manufacturing.StructuralUnit AS Manufacturer,
+	InventoryReg.ProductsCorr AS FinishedProduct,
+	InventoryReg.CharacteristicCorr AS FinishedProductVariant,
+	InventoryReg.OwnershipCorr AS FinishedProductOwnership,
+	InventoryReg.ProductsCorr.MeasurementUnit AS FinishedProductUnit,
+	0 AS FinishedQuantity,
+	InventoryReg.Products AS ComponentProduct,
+	InventoryReg.Characteristic AS ComponentCharacteristic,
+	InventoryReg.Ownership AS ComponentOwnership,
+	InventoryReg.Quantity AS ComponentQuantity,
+	InventoryReg.Amount AS ComponentAmount,
+	InventoryReg.Products.MeasurementUnit AS ComponentUnit,
+	InventoryReg.Recorder AS Recorder,
+	Manufacturing.Project AS Project,
+	InventoryReg.Company AS Company,
+	VALUE(Enum.OperationTypesProductionOrder.Assembly) AS OperationKind,
+	Manufacturing.PointInTime AS PointInTime
+FROM
+	AccumulationRegister.Inventory AS InventoryReg
+		INNER JOIN Document.Manufacturing AS Manufacturing
+		ON InventoryReg.Recorder = Manufacturing.Ref
+WHERE
+	InventoryReg.RecordType = VALUE(AccumulationRecordType.Expense)
+	AND CASE
+			WHEN &amp;EndOfPeriod = DATETIME(1, 1, 1)
+				THEN InventoryReg.Period &gt;= &amp;BeginOfPeriod
+			ELSE InventoryReg.Period BETWEEN &amp;BeginOfPeriod AND &amp;EndOfPeriod
+		END
+	AND Manufacturing.OperationKind = VALUE(Enum.OperationTypesProduction.Assembly)</query>
+		</item>
+		<item xsi:type="DataSetQuery">
+			<name>DataSetAssemblyDisassembly</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>OperationKind</dataPath>
+				<field>OperationKind</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Recorder</dataPath>
+				<field>Recorder</field>
+				<role>
+					<dcscom:periodNumber>1</dcscom:periodNumber>
+					<dcscom:periodType>Main</dcscom:periodType>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Manufacturer</dataPath>
+				<field>Manufacturer</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Manufacturer</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Изготовитель</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Producent</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Fabricante</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Fabricante</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Üretici</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Produttore</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Hersteller</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>FinishedProduct</dataPath>
+				<field>FinishedProduct</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Finished product</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Готовая продукция</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Gotowy produkt</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Producto terminado</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Producto terminado</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Nihai ürün</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Articolo finito</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Fertigprodukt</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>FinishedProductUnit</dataPath>
+				<field>FinishedProductUnit</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Finished product unit</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Единица измерения готовой продукции</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>J.m. gotowego produktu</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Unidad del producto terminado</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Unidad del producto terminado</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Nihai ürün birimi</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Unità articolo finito</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Fertigprodukteinheit</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>FinishedProductVariant</dataPath>
+				<field>FinishedProductVariant</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Finished product variant</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Вариант готовой продукции</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Wariant gotowego produktu</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Variante de producto terminado</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Variante de producto terminado</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Nihai ürün varyantı</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Variante articolo finito</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Fertigproduktvariante</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>FinishedProductOwnership</dataPath>
+				<field>FinishedProductOwnership</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Finished product ownership</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Владение готовой продукцией</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Własność gotowego produktu</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Propiedad del producto terminado</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Propiedad del producto terminado</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Nihai ürün sahipliği</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Proprietà articolo finito</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Eigentumsverhältnisse von Fertigprodukt</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>FinishedQuantity</dataPath>
+				<field>FinishedQuantity</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Finished quantity</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Готовое количество</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Gotowa ilość</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Cantidad terminada</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Cantidad terminada</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Nihai miktar</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Quantità finita</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Gefertigte Menge</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Company</dataPath>
+				<field>Company</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>PointInTime</dataPath>
+				<field>PointInTime</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Project</dataPath>
+				<field>Project</field>
+			</field>
+			<dataSource>DataSource1</dataSource>
+			<query>SELECT ALLOWED
+	Manufacturing.StructuralUnit AS Manufacturer,
+	ProductRelease.Products AS FinishedProduct,
+	ProductRelease.Characteristic AS FinishedProductVariant,
+	ProductRelease.Ownership AS FinishedProductOwnership,
+	ProductRelease.Products.MeasurementUnit AS FinishedProductUnit,
+	ProductRelease.Quantity AS FinishedQuantity,
+	ProductRelease.Company AS Company,
+	ProductRelease.Recorder AS Recorder,
+	CASE
+		WHEN Manufacturing.OperationKind = VALUE(Enum.OperationTypesProduction.Assembly)
+			THEN VALUE(Enum.OperationTypesProductionOrder.Assembly)
+		ELSE VALUE(Enum.OperationTypesProductionOrder.Disassembly)
+	END AS OperationKind,
+	ProductRelease.PointInTime AS PointInTime,
+	Manufacturing.Project AS Project
+FROM
+	AccumulationRegister.ProductRelease AS ProductRelease
+		INNER JOIN Document.Manufacturing AS Manufacturing
+		ON ProductRelease.Recorder = Manufacturing.Ref
+WHERE
+	ProductRelease.Quantity &lt;&gt; 0
+	AND CASE
+			WHEN &amp;EndOfPeriod = DATETIME(1, 1, 1)
+				THEN ProductRelease.Period &gt;= &amp;BeginOfPeriod
+			ELSE ProductRelease.Period BETWEEN &amp;BeginOfPeriod AND &amp;EndOfPeriod
+		END
+	AND Manufacturing.OperationKind &lt;&gt; VALUE(Enum.OperationTypesProduction.ConvertFromWIP)</query>
+		</item>
+		<item xsi:type="DataSetQuery">
+			<name>DataSetDisassembly</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Manufacturer</dataPath>
+				<field>Manufacturer</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Manufacturer</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Изготовитель</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Producent</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Fabricante</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Fabricante</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Üretici</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Produttore</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Hersteller</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>FinishedProductUnit</dataPath>
+				<field>FinishedProductUnit</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Finished product unit</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Единица измерения готовой продукции</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>J.m. gotowego produktu</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Unidad del producto terminado</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Unidad del producto terminado</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Nihai ürün birimi</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Unità articolo finito</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Fertigprodukteinheit</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>OperationKind</dataPath>
+				<field>OperationKind</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Operation kind</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Вид операции</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Rodzaj operacji</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Tipo de operación</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Tipo de operación</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>İşlem türü</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Tipo di operazione</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Operationsart</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>FinishedProduct</dataPath>
+				<field>FinishedProduct</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Finished product</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Готовая продукция</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Gotowy produkt</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Producto terminado</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Producto terminado</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Nihai ürün</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Articolo finito</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Fertigprodukt</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ComponentProduct</dataPath>
+				<field>ComponentProduct</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Component</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Компонент</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Komponent</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Malzeme</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Komponente</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>FinishedProductVariant</dataPath>
+				<field>FinishedProductVariant</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Finished product variant</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Вариант готовой продукции</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Wariant gotowego produktu</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Variante de producto terminado</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Variante de producto terminado</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Nihai ürün varyantı</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Variante articolo finito</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Fertigproduktvariante</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ComponentOwnership</dataPath>
+				<field>ComponentOwnership</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Component ownership</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Владение компонентами</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Własność komponentu</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Propiedad del componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Propiedad del componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Malzeme sahipliği</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Proprietà componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Eigentumsverhältnisse von Komponente</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>FinishedProductOwnership</dataPath>
+				<field>FinishedProductOwnership</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Finished product ownership</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Владение готовой продукцией</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Własność gotowego produktu</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Propiedad del producto terminado</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Propiedad del producto terminado</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Nihai ürün sahipliği</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Proprietà articolo finito</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Eigentumsverhältnisse von Fertigprodukt</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>FinishedQuantity</dataPath>
+				<field>FinishedQuantity</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Finished quantity</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Готовое количество</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Gotowa ilość</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Cantidad terminada</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Cantidad terminada</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Nihai miktar</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Quantità finita</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Gefertigte Menge</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ComponentCharacteristic</dataPath>
+				<field>ComponentCharacteristic</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Component characteristic</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Характеристика компонента</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Charakterystyka komponentu</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Característica del componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Característica del componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Malzeme özelliği</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Caratteristica componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Eigenschaft von Komponente</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ComponentQuantity</dataPath>
+				<field>ComponentQuantity</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Component quantity</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Количество компонентов</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Ilość komponentów</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Cantidad del componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Cantidad del componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Malzeme miktarı</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Quantità componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Anzahl von Komponenten</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Company</dataPath>
+				<field>Company</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ComponentAmount</dataPath>
+				<field>ComponentAmount</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Component amount</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сумма компонентов</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>Wartość komponentów</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Importe del componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Importe del componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Malzeme tutarı</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Importo componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Menge von Komponenten</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ComponentUnit</dataPath>
+				<field>ComponentUnit</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Component unit</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Единица измерения компонента</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>j.m. komponentów</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>Unidad de medida del componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>Unidad de medida del componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>Malzeme ölçü birimi</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>Unità componente</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>Komponenteneinheit</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Recorder</dataPath>
+				<field>Recorder</field>
+				<role>
+					<dcscom:periodNumber>1</dcscom:periodNumber>
+					<dcscom:periodType>Main</dcscom:periodType>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Project</dataPath>
+				<field>Project</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>PointInTime</dataPath>
+				<field>PointInTime</field>
+			</field>
+			<dataSource>DataSource1</dataSource>
+			<query>SELECT ALLOWED
+	InventoryReg.Products AS ComponentProduct,
+	InventoryReg.Characteristic AS ComponentCharacteristic,
+	InventoryReg.Ownership AS ComponentOwnership,
+	SUM(InventoryReg.Quantity) AS ComponentQuantity,
+	InventoryReg.Recorder AS Recorder,
+	InventoryReg.GLAccount AS GLAccount,
+	InventoryReg.IncomeAndExpenseItem AS IncomeAndExpenseItem,
+	InventoryReg.InventoryAccountType AS InventoryAccountType
+INTO TT_DisassemblyQuantity
+FROM
+	AccumulationRegister.Inventory AS InventoryReg
+		INNER JOIN Document.Manufacturing AS Manufacturing
+		ON InventoryReg.Recorder = Manufacturing.Ref
+WHERE
+	InventoryReg.RecordType = VALUE(AccumulationRecordType.Expense)
+	AND CASE
+			WHEN &amp;EndOfPeriod = DATETIME(1, 1, 1)
+				THEN InventoryReg.Period &gt;= &amp;BeginOfPeriod
+			ELSE InventoryReg.Period BETWEEN &amp;BeginOfPeriod AND &amp;EndOfPeriod
+		END
+	AND Manufacturing.OperationKind = VALUE(Enum.OperationTypesProduction.Disassembly)
+
+GROUP BY
+	InventoryReg.Products,
+	InventoryReg.Characteristic,
+	InventoryReg.Ownership,
+	InventoryReg.Recorder,
+	InventoryReg.GLAccount,
+	InventoryReg.IncomeAndExpenseItem,
+	InventoryReg.InventoryAccountType
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT ALLOWED
+	Manufacturing.StructuralUnit AS Manufacturer,
+	InventoryReg.ProductsCorr AS FinishedProduct,
+	InventoryReg.CharacteristicCorr AS FinishedProductVariant,
+	InventoryReg.OwnershipCorr AS FinishedProductOwnership,
+	InventoryReg.ProductsCorr.MeasurementUnit AS FinishedProductUnit,
+	0 AS FinishedQuantity,
+	InventoryReg.Products AS ComponentProduct,
+	InventoryReg.Characteristic AS ComponentCharacteristic,
+	InventoryReg.Ownership AS ComponentOwnership,
+	TT_DisassemblyQuantity.ComponentQuantity AS ComponentQuantity,
+	SUM(InventoryReg.Amount) AS ComponentAmount,
+	InventoryReg.Products.MeasurementUnit AS ComponentUnit,
+	InventoryReg.Recorder AS Recorder,
+	Manufacturing.Project AS Project,
+	InventoryReg.Company AS Company,
+	VALUE(Enum.OperationTypesProductionOrder.Disassembly) AS OperationKind,
+	Manufacturing.PointInTime AS PointInTime
+FROM
+	AccumulationRegister.Inventory AS InventoryReg
+		INNER JOIN Document.Manufacturing AS Manufacturing
+		ON InventoryReg.Recorder = Manufacturing.Ref
+		INNER JOIN TT_DisassemblyQuantity AS TT_DisassemblyQuantity
+		ON InventoryReg.Recorder = TT_DisassemblyQuantity.Recorder
+			AND InventoryReg.Products = TT_DisassemblyQuantity.ComponentProduct
+			AND InventoryReg.Characteristic = TT_DisassemblyQuantity.ComponentCharacteristic
+			AND InventoryReg.Ownership = TT_DisassemblyQuantity.ComponentOwnership
+			AND (InventoryReg.InventoryAccountType = TT_DisassemblyQuantity.InventoryAccountType)
+			AND (InventoryReg.GLAccount = TT_DisassemblyQuantity.GLAccount)
+			AND (InventoryReg.IncomeAndExpenseItem = TT_DisassemblyQuantity.IncomeAndExpenseItem)
+WHERE
+	InventoryReg.RecordType = VALUE(AccumulationRecordType.Expense)
+	AND CASE
+			WHEN &amp;EndOfPeriod = DATETIME(1, 1, 1)
+				THEN InventoryReg.Period &gt;= &amp;BeginOfPeriod
+			ELSE InventoryReg.Period BETWEEN &amp;BeginOfPeriod AND &amp;EndOfPeriod
+		END
+	AND Manufacturing.OperationKind = VALUE(Enum.OperationTypesProduction.Disassembly)
+
+GROUP BY
+	Manufacturing.StructuralUnit,
+	InventoryReg.ProductsCorr,
+	InventoryReg.CharacteristicCorr,
+	InventoryReg.OwnershipCorr,
+	InventoryReg.ProductsCorr.MeasurementUnit,
+	InventoryReg.Products,
+	InventoryReg.Characteristic,
+	InventoryReg.Ownership,
+	InventoryReg.Products.MeasurementUnit,
+	InventoryReg.Recorder,
+	Manufacturing.Project,
+	InventoryReg.Company,
+	Manufacturing.PointInTime,
+	TT_DisassemblyQuantity.ComponentQuantity</query>
+		</item>
+	</dataSet>
+	<calculatedField>
+		<dataPath>FinishedProductCost</dataPath>
+		<expression>0</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Unit amount</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сумма на единицу</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>pl</v8:lang>
+				<v8:content>Wartość jednostki</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_ES</v8:lang>
+				<v8:content>Importe unitario</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_CO</v8:lang>
+				<v8:content>Importe unitario</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>tr</v8:lang>
+				<v8:content>Birim tutarı</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>it</v8:lang>
+				<v8:content>Importo unità</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>de</v8:lang>
+				<v8:content>Einheitsbetrag</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Format</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>NFD=2; NZ=0</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧДЦ=2; ЧН=0</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>NFD=2; NZ=0</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>NFD=2; NZ=0</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>NFD=2; NZ=0</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>NFD=2; NZ=0</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>NFD=2; NZ=0</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>NFD=2; NZ=0</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>10</v8:Digits>
+				<v8:FractionDigits>2</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>FinishedAmount</dataPath>
+		<expression>0</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Amount</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сумма</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>pl</v8:lang>
+				<v8:content>Wartość</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_ES</v8:lang>
+				<v8:content>Importe</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_CO</v8:lang>
+				<v8:content>Importe</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>tr</v8:lang>
+				<v8:content>Tutar</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>it</v8:lang>
+				<v8:content>Importo</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>de</v8:lang>
+				<v8:content>Betrag</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Format</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>NFD=2; NZ=0</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧДЦ=2; ЧН=0</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>NFD=2; NZ=0</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>NFD=2; NZ=0</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>NFD=2; NZ=0</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>NFD=2; NZ=0</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>NFD=2; NZ=0</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>NFD=2; NZ=0</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>10</v8:Digits>
+				<v8:FractionDigits>2</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<totalField>
+		<dataPath>ComponentAmount</dataPath>
+		<expression>Sum(ComponentAmount)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ComponentQuantity</dataPath>
+		<expression>Sum(ComponentQuantity)</expression>
+		<group>ComponentProduct</group>
+	</totalField>
+	<totalField>
+		<dataPath>FinishedQuantity</dataPath>
+		<expression>Sum(FinishedQuantity)</expression>
+		<group>FinishedProduct</group>
+	</totalField>
+	<totalField>
+		<dataPath>FinishedProductUnit</dataPath>
+		<expression>Max(FinishedProductUnit)</expression>
+		<group>FinishedProduct</group>
+	</totalField>
+	<totalField>
+		<dataPath>ComponentUnit</dataPath>
+		<expression>Max(ComponentUnit)</expression>
+		<group>ComponentProduct</group>
+	</totalField>
+	<totalField>
+		<dataPath>OperationAmount</dataPath>
+		<expression>Sum(OperationAmount)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>OperationQuantity</dataPath>
+		<expression>Sum(OperationQuantity)</expression>
+		<group>ComponentProduct</group>
+	</totalField>
+	<totalField>
+		<dataPath>OperationUnit</dataPath>
+		<expression>Max(OperationUnit)</expression>
+		<group>ComponentProduct</group>
+	</totalField>
+	<totalField>
+		<dataPath>FinishedProductCost</dataPath>
+		<expression>CASE WHEN Sum(FinishedQuantity) = 0 THEN 0 ELSE (Sum(ISNULL(OperationAmount, 0)) + Sum(ISNULL(ComponentAmount, 0))) / Sum(FinishedQuantity) END</expression>
+		<group>FinishedProduct</group>
+	</totalField>
+	<totalField>
+		<dataPath>FinishedAmount</dataPath>
+		<expression>Sum(ISNULL(OperationAmount, 0)) + Sum(ISNULL(ComponentAmount, 0))</expression>
+	</totalField>
+	<parameter>
+		<name>BeginOfPeriod</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Begin of period</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>pl</v8:lang>
+				<v8:content>Początek okresu</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_ES</v8:lang>
+				<v8:content>Inicio del período</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_CO</v8:lang>
+				<v8:content>Inicio del período</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>tr</v8:lang>
+				<v8:content>Dönem başlangıcı</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>it</v8:lang>
+				<v8:content>Inizio del periodo</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>de</v8:lang>
+				<v8:content>Beginn des Zeitraums</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Period.StartDate</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>EndOfPeriod</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>End of period</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>pl</v8:lang>
+				<v8:content>Koniec okresu</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_ES</v8:lang>
+				<v8:content>Final del período</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_CO</v8:lang>
+				<v8:content>Final del período</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>tr</v8:lang>
+				<v8:content>Dönem sonu</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>it</v8:lang>
+				<v8:content>Fine del periodo</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>de</v8:lang>
+				<v8:content>Ende des Zeitraums</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Period.EndDate</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>Period</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Period</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>pl</v8:lang>
+				<v8:content>Okres</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_ES</v8:lang>
+				<v8:content>Período</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_CO</v8:lang>
+				<v8:content>Período</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>tr</v8:lang>
+				<v8:content>Dönem</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>it</v8:lang>
+				<v8:content>Periodo</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>de</v8:lang>
+				<v8:content>Zeitraum</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Default</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Cost of goods produced</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Себестоимость выпуска</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>pl</v8:lang>
+				<v8:content>Koszty własne produkcji</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_ES</v8:lang>
+				<v8:content>Coste de los mercancías producidas</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_CO</v8:lang>
+				<v8:content>Coste de las mercancías producidas</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>tr</v8:lang>
+				<v8:content>Üretilen malların maliyeti</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>it</v8:lang>
+				<v8:content>Costi di produzione</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>de</v8:lang>
+				<v8:content>Kosten von hergestellten Waren</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Product</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>Produkt</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>Producto</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>Producto</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Ürün</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>Articolo</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Produkt</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>FinishedQuantity</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>FinishedProductUnit</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>FinishedAmount</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>FinishedProductCost</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Horizontally</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Component</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сырье и материалы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>Komponent</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>Componente</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>Componente</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Malzeme</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>Componente</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Komponente</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ComponentQuantity</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ComponentUnit</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ComponentAmount</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Horizontally</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Operation</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Операция</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>Operacja</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>Operación</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>Operación</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Operasyon</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>Operazione</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Operation</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>OperationQuantity</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>OperationUnit</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>OperationAmount</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Horizontally</dcsset:placement>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>63b0a671-a5c6-41ca-86f3-1bedaad3d0e1</dcsset:userSettingID>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Company</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>5913c7b1-0d96-4479-b92a-fa588511d3c5</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Manufacturer</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>ea636a2c-1402-40f7-b96f-26c80cbf1f18</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Project</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>325aaba4-8250-49a0-bdad-d6a86adda51e</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">FinishedProduct</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>172c63ee-86b5-4c2f-aa78-b9e51840928f</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">OperationKind</dcsset:left>
+					<dcsset:comparisonType>InList</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
+					<dcsset:userSettingID>0afd4b22-50e5-492e-a43e-8c6f784a5b7f</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>e1d212a6-8ef3-4299-904e-d57ac2ec4ac0</dcsset:userSettingID>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Period</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">ThisMonth</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>37f41e74-7ce9-4e01-ac74-91d298f6bfca</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>f0e2706b-caef-4fca-af34-7de35b6f20cd</dcsset:userSettingID>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>AppearanceTemplate</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ReportThemeGreen</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>HorizontalOverallPlacement</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>VerticalOverallPlacement</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>DataParametersOutput</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>FilterOutput</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>OperationKind</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Manufacturer</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>FinishedProduct</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>FinishedProductVariant</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>FinishedProductOwnership</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>ComponentProduct</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>ComponentCharacteristic</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>ComponentOwnership</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ComponentProduct</dcsset:left>
+									<dcsset:comparisonType>Filled</dcsset:comparisonType>
+									<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>ComponentProduct</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>ComponentCharacteristic</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>ComponentOwnership</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+									<dcsset:lwsTitle>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Component</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сырье и материалы</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>pl</v8:lang>
+											<v8:content>Komponent</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>es_ES</v8:lang>
+											<v8:content>Componente</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>es_CO</v8:lang>
+											<v8:content>Componente</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>tr</v8:lang>
+											<v8:content>Malzeme</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>it</v8:lang>
+											<v8:content>Componente</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>de</v8:lang>
+											<v8:content>Komponente</v8:content>
+										</v8:item>
+									</dcsset:lwsTitle>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>ComponentQuantity</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>ComponentUnit</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>ComponentAmount</dcsset:field>
+									</dcsset:item>
+									<dcsset:placement>Horizontally</dcsset:placement>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+									<dcsset:lwsTitle>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Operation</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Операция</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>pl</v8:lang>
+											<v8:content>Operacja</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>es_ES</v8:lang>
+											<v8:content>Operación</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>es_CO</v8:lang>
+											<v8:content>Operación</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>tr</v8:lang>
+											<v8:content>İşlem</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>it</v8:lang>
+											<v8:content>Operazione</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>de</v8:lang>
+											<v8:content>Operation</v8:content>
+										</v8:item>
+									</dcsset:lwsTitle>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>OperationQuantity</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>OperationUnit</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>OperationAmount</dcsset:field>
+									</dcsset:item>
+									<dcsset:placement>Horizontally</dcsset:placement>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:outputParameters>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>FilterOutput</dcscor:parameter>
+									<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+								</dcscor:item>
+							</dcsset:outputParameters>
+							<dcsset:viewMode>Normal</dcsset:viewMode>
+							<dcsset:userSettingID>93b77288-dcbb-4f0c-8ae7-9333d277fa34</dcsset:userSettingID>
+							<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b2892a83-8b78-4c47-ac79-f803f0985aad</dcsset:userSettingID>
+						<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					</dcsset:item>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>e43ffcc9-6620-4ba1-9538-7fe904876224</dcsset:userSettingID>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+				</dcsset:item>
+			</dcsset:item>
+			<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+			<dcsset:itemsUserSettingID>279cda72-36b4-46b9-ac5e-bd91ce6c0ef6</dcsset:itemsUserSettingID>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

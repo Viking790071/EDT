@@ -1,0 +1,3218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:FormField">
+    <name>Account</name>
+    <id>76</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Account</segments>
+    </dataPath>
+    <handlers>
+      <event>OnChange</event>
+      <name>SetFormModificationFlag</name>
+    </handlers>
+    <extendedTooltip>
+      <name>AccountExtendedTooltip</name>
+      <id>78</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>AccountContextMenu</name>
+      <id>77</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <handlers>
+        <event>ChoiceProcessing</event>
+        <name>AccountChoiceProcessing</name>
+      </handlers>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+      <choiceParameters>
+        <name>Filter.UseForSending</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:BooleanValue">
+            <value>true</value>
+          </value>
+        </value>
+      </choiceParameters>
+      <choiceParameters>
+        <name>Filter.DeletionMark</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:BooleanValue"/>
+        </value>
+      </choiceParameters>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>EmailBodyMainGroup</name>
+    <id>10</id>
+    <items xsi:type="form:Table">
+      <name>RecipientsMailAddresses</name>
+      <id>87</id>
+      <title>
+        <key>ru</key>
+        <value>Почтовый адреса получателей</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Recipient postal addresses</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Adres korespondencyjny odbiorców</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Correos electrónicos de destinatarios</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Correos electrónicos de destinatarios</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Alıcı posta adresleri</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Indirizzo postale del destinatario</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Empfänger Postanschriften</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>RecipientsMailAddresses</segments>
+      </dataPath>
+      <titleLocation>None</titleLocation>
+      <items xsi:type="form:FormField">
+        <name>RecipientsEmailAddressSendingOption</name>
+        <id>100</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>RecipientsMailAddresses.SendingOption</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>RecipientsEmailAddressSendingOptionExtendedTooltip</name>
+          <id>102</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>RecipientsEmailAddressSendingOptionContextMenu</name>
+          <id>101</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <width>1</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <autoChoiceIncomplete>true</autoChoiceIncomplete>
+          <listChoiceMode>true</listChoiceMode>
+          <incompleteChoiceMode>OnActivate</incompleteChoiceMode>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Кому:</value>
+            </presentation>
+            <presentation>
+              <key>en</key>
+              <value>To:</value>
+            </presentation>
+            <presentation>
+              <key>pl</key>
+              <value>Do</value>
+            </presentation>
+            <presentation>
+              <key>es_ES</key>
+              <value>Para:</value>
+            </presentation>
+            <presentation>
+              <key>es_CO</key>
+              <value>Para:</value>
+            </presentation>
+            <presentation>
+              <key>tr</key>
+              <value>Kime:</value>
+            </presentation>
+            <presentation>
+              <key>it</key>
+              <value>A:</value>
+            </presentation>
+            <presentation>
+              <key>de</key>
+              <value>An:</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>To:</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Копия:</value>
+            </presentation>
+            <presentation>
+              <key>en</key>
+              <value>Cc:</value>
+            </presentation>
+            <presentation>
+              <key>pl</key>
+              <value>Kopia:</value>
+            </presentation>
+            <presentation>
+              <key>es_ES</key>
+              <value>Copia:</value>
+            </presentation>
+            <presentation>
+              <key>es_CO</key>
+              <value>Copia:</value>
+            </presentation>
+            <presentation>
+              <key>tr</key>
+              <value>Cc:</value>
+            </presentation>
+            <presentation>
+              <key>it</key>
+              <value>Cc:</value>
+            </presentation>
+            <presentation>
+              <key>de</key>
+              <value>Kopie:</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>Cc:</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Скрытая копия:</value>
+            </presentation>
+            <presentation>
+              <key>en</key>
+              <value>Bcc:</value>
+            </presentation>
+            <presentation>
+              <key>pl</key>
+              <value>Ukryta kopia</value>
+            </presentation>
+            <presentation>
+              <key>es_ES</key>
+              <value>Copia oculta:</value>
+            </presentation>
+            <presentation>
+              <key>es_CO</key>
+              <value>Copia oculta:</value>
+            </presentation>
+            <presentation>
+              <key>tr</key>
+              <value>Bcc:</value>
+            </presentation>
+            <presentation>
+              <key>it</key>
+              <value>Bcc:</value>
+            </presentation>
+            <presentation>
+              <key>de</key>
+              <value>Eine versteckte Kopie:</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>Bcc:</value>
+            </value>
+          </choiceList>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>RecipientsEmailAddressPresentation</name>
+        <id>110</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>RecipientsMailAddresses.Presentation</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>RecipientsEmailAddressPresentationExtendedTooltip</name>
+          <id>112</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>RecipientsEmailAddressPresentationContextMenu</name>
+          <id>111</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>EnterOnInput</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <handlers>
+            <event>AutoComplete</event>
+            <name>RecipientsPostalAddressPresentationAutoComplete</name>
+          </handlers>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <autoCommandBar>
+        <name>RecipientsEmailAddressesCommandBar</name>
+        <id>89</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <horizontalAlign>Left</horizontalAlign>
+      </autoCommandBar>
+      <handlers>
+        <event>BeforeDeleteRow</event>
+        <name>RecipientPostalAddressesBeforeDelete</name>
+      </handlers>
+      <handlers>
+        <event>BeforeEditEnd</event>
+        <name>RecipientPostalAddressesBeforeEditEnd</name>
+      </handlers>
+      <handlers>
+        <event>OnStartEdit</event>
+        <name>RecipientPostalAddressesOnStartEdit</name>
+      </handlers>
+      <searchStringAddition>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <name>RecipientsEmailAddressesSearchString</name>
+        <id>91</id>
+        <extendedTooltip>
+          <name>RecipientsEmailAddressesSearchStringExtendedTooltip</name>
+          <id>93</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>RecipientsEmailAddressesSearchStringContextMenu</name>
+          <id>92</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <source>RecipientsEmailAddressesSearchString</source>
+        <extInfo xsi:type="form:SearchStringAdditionExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+        </extInfo>
+      </searchStringAddition>
+      <viewStatusAddition>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <name>RecipientsEmailAddressesViewStatus</name>
+        <id>94</id>
+        <extendedTooltip>
+          <name>RecipientsEmailAddressesViewStatusExtendedTooltip</name>
+          <id>96</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>RecipientsEmailAddressesViewStatusContextMenu</name>
+          <id>95</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>ViewStatusAddition</type>
+        <source>RecipientsEmailAddressesViewStatus</source>
+        <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+        </extInfo>
+      </viewStatusAddition>
+      <searchControlAddition>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <name>RecipientsEmailAddressesSearchControl</name>
+        <id>97</id>
+        <extendedTooltip>
+          <name>RecipientsEmailAddressesSearchControlExtendedTooltip</name>
+          <id>99</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>RecipientsEmailAddressesSearchControlContextMenu</name>
+          <id>98</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>SearchControlAddition</type>
+        <source>RecipientsEmailAddressesSearchControl</source>
+        <extInfo xsi:type="form:SearchControlAdditionExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+        </extInfo>
+      </searchControlAddition>
+      <extendedTooltip>
+        <name>RecipientsEmailAddressesExtendedTooltip</name>
+        <id>90</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>RecipientsEmailAddressesContextMenu</name>
+        <id>88</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <changeRowSet>true</changeRowSet>
+      <changeRowOrder>true</changeRowOrder>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <heightInTableRows>3</heightInTableRows>
+      <autoMaxRowsCount>true</autoMaxRowsCount>
+      <selectionMode>MultiRow</selectionMode>
+      <headerHeight>1</headerHeight>
+      <footerHeight>1</footerHeight>
+      <horizontalScrollBar>AutoUse</horizontalScrollBar>
+      <verticalScrollBar>AutoUse</verticalScrollBar>
+      <horizontalLines>true</horizontalLines>
+      <verticalLines>true</verticalLines>
+      <searchOnInput>Auto</searchOnInput>
+      <initialListView>Auto</initialListView>
+      <horizontalStretch>true</horizontalStretch>
+      <verticalStretch>true</verticalStretch>
+      <enableStartDrag>true</enableStartDrag>
+      <enableDrag>true</enableDrag>
+      <rowFilter xsi:type="core:UndefinedValue"/>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>EmailSubject</name>
+      <id>11</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>EmailSubject</segments>
+      </dataPath>
+      <toolTip>
+        <key>ru</key>
+        <value>Тема отправляемого сообщения</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Outgoing message subject</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Temat wiadomości e-mail</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Tema de mensajes salientes</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Tema de mensajes salientes</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Giden mesajı konusu</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Oggetto del messaggio in uscita</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Betreff der ausgehenden Nachricht</value>
+      </toolTip>
+      <handlers>
+        <event>OnChange</event>
+        <name>SetFormModificationFlag</name>
+      </handlers>
+      <extendedTooltip>
+        <name>EmailSubjectExtendedTooltip</name>
+        <id>53</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>EmailSubjectContextMenu</name>
+        <id>12</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <width>60</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>CommandBarFormatting</name>
+      <id>79</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Командная панель форматирование</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Command bar formatting</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Panel poleceń formatowanie</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Panel de comando formateo</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Panel de comando formateo</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Komut çubuğu biçimlendirme</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Formattazione barra di comando</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Bedienfeld-Formatierung</value>
+      </title>
+      <extendedTooltip>
+        <name>CommandBarFormattingExtendedTooltip</name>
+        <id>80</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>CommandBar</type>
+      <extInfo xsi:type="form:CommandBarExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+        <commandSource>Item.EmailBody</commandSource>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>EmailBody</name>
+      <id>22</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>EmailBody</segments>
+      </dataPath>
+      <titleLocation>None</titleLocation>
+      <toolTip>
+        <key>ru</key>
+        <value>Тело сообщения</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Body</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Zawartość wiadomości</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Cuerpo</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Cuerpo</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Gövde</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Corpo del messaggio</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Korpus</value>
+      </toolTip>
+      <handlers>
+        <event>OnChange</event>
+        <name>SetFormModificationFlag</name>
+      </handlers>
+      <extendedTooltip>
+        <name>EmailBodyExtendedTooltip</name>
+        <id>54</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>EmailBodyContextMenu</name>
+        <id>23</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>FormattedDocumentField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:FormattedDocFieldExtInfo">
+        <width>50</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <height>10</height>
+        <horizontalStretch>true</horizontalStretch>
+        <verticalStretch>true</verticalStretch>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>AttachmentsGroup</name>
+      <id>21</id>
+      <items xsi:type="form:Table">
+        <name>Attachments</name>
+        <id>13</id>
+        <title>
+          <key>ru</key>
+          <value>Вложить</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Attach</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Dołącz</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Adjuntar</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Adjuntar</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Ekle</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Allega</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Anhängen</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>AttachmentsPresentation</segments>
+        </dataPath>
+        <skipOnInput>false</skipOnInput>
+        <titleLocation>None</titleLocation>
+        <excludedCommands>Copy</excludedCommands>
+        <excludedCommands>CopyToClipboard</excludedCommands>
+        <excludedCommands>EndEdit</excludedCommands>
+        <excludedCommands>SortListAsc</excludedCommands>
+        <excludedCommands>SortListDesc</excludedCommands>
+        <items xsi:type="form:FormField">
+          <name>Attachment1</name>
+          <id>34</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>AttachmentsPresentation.Attachment1</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>Attachment1ExtendedTooltip</name>
+            <id>62</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>Attachment1ContextMenu</name>
+            <id>35</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+          </contextMenu>
+          <type>InputField</type>
+          <readOnly>true</readOnly>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>Attachment2</name>
+          <id>36</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>AttachmentsPresentation.Attachment2</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>Attachment2ExtendedTooltip</name>
+            <id>63</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>Attachment2ContextMenu</name>
+            <id>37</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+          </contextMenu>
+          <type>InputField</type>
+          <readOnly>true</readOnly>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <autoCommandBar>
+          <name>AttachmentsCommandBar</name>
+          <id>15</id>
+          <items xsi:type="form:Button">
+            <name>AttachFile</name>
+            <id>40</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <skipOnInput>false</skipOnInput>
+            <extendedTooltip>
+              <name>AttachFileExtendedTooltip</name>
+              <id>60</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>Form.Command.AttachFile</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <horizontalAlign>Left</horizontalAlign>
+        </autoCommandBar>
+        <handlers>
+          <event>DragCheck</event>
+          <name>AttachmentsDragCheck</name>
+        </handlers>
+        <handlers>
+          <event>Selection</event>
+          <name>AttachmentsChoice</name>
+        </handlers>
+        <handlers>
+          <event>BeforeAddRow</event>
+          <name>AttachmentsBeforeAddRow</name>
+        </handlers>
+        <handlers>
+          <event>BeforeDeleteRow</event>
+          <name>AttachmentsBeforeDeleteRow</name>
+        </handlers>
+        <handlers>
+          <event>Drag</event>
+          <name>AttachmentsDrag</name>
+        </handlers>
+        <handlers>
+          <event>OnChange</event>
+          <name>SetFormModificationFlag</name>
+        </handlers>
+        <searchStringAddition>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <name>AttachmentsSearchString</name>
+          <id>67</id>
+          <extendedTooltip>
+            <name>AttachmentsSearchStringExtendedTooltip</name>
+            <id>69</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>AttachmentsSearchStringContextMenu</name>
+            <id>68</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <source>AttachmentsSearchString</source>
+          <extInfo xsi:type="form:SearchStringAdditionExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+          </extInfo>
+        </searchStringAddition>
+        <viewStatusAddition>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <name>AttachmentsViewStatus</name>
+          <id>70</id>
+          <extendedTooltip>
+            <name>AttachmentsViewStatusExtendedTooltip</name>
+            <id>72</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>AttachmentsViewStatusContextMenu</name>
+            <id>71</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>ViewStatusAddition</type>
+          <source>AttachmentsViewStatus</source>
+          <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+          </extInfo>
+        </viewStatusAddition>
+        <searchControlAddition>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <name>AttachmentsSearchControl</name>
+          <id>73</id>
+          <extendedTooltip>
+            <name>AttachmentsSearchControlExtendedTooltip</name>
+            <id>75</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>AttachmentsSearchControlContextMenu</name>
+            <id>74</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>SearchControlAddition</type>
+          <source>AttachmentsSearchControl</source>
+          <extInfo xsi:type="form:SearchControlAdditionExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+          </extInfo>
+        </searchControlAddition>
+        <extendedTooltip>
+          <name>AttachmentsExtendedTooltip</name>
+          <id>61</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>AttachmentsContextMenu</name>
+          <id>14</id>
+          <items xsi:type="form:FormGroup">
+            <name>AttachFileGroup</name>
+            <id>45</id>
+            <items xsi:type="form:Button">
+              <name>ContextMenuAttachmentsAttachFile</name>
+              <id>44</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <skipOnInput>false</skipOnInput>
+              <extendedTooltip>
+                <name>ContextMenuAttachmentsAttachFileExtendedTooltip</name>
+                <id>57</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <commandName>Form.Command.AttachFile</commandName>
+              <representation>Auto</representation>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <placementArea>UserCmds</placementArea>
+              <representationInContextMenu>Auto</representationInContextMenu>
+            </items>
+            <items xsi:type="form:Button">
+              <name>ContextMenuAttachmentsDelete</name>
+              <id>43</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <skipOnInput>false</skipOnInput>
+              <extendedTooltip>
+                <name>ContextMenuAttachmentsDeleteExtendedTooltip</name>
+                <id>58</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <commandName>Form.Item.Attachments.StandardCommand.Delete</commandName>
+              <representation>Auto</representation>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <placementArea>UserCmds</placementArea>
+              <representationInContextMenu>Auto</representationInContextMenu>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Приложить файл</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Attach file</value>
+            </title>
+            <title>
+              <key>pl</key>
+              <value>Dołącz plik</value>
+            </title>
+            <title>
+              <key>es_ES</key>
+              <value>Adjuntar archivo</value>
+            </title>
+            <title>
+              <key>es_CO</key>
+              <value>Adjuntar archivo</value>
+            </title>
+            <title>
+              <key>tr</key>
+              <value>Dosya ekle</value>
+            </title>
+            <title>
+              <key>it</key>
+              <value>Allega file</value>
+            </title>
+            <title>
+              <key>de</key>
+              <value>Datei anhängen</value>
+            </title>
+            <extendedTooltip>
+              <name>AttachFileGroupExtendedTooltip</name>
+              <id>56</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <extInfo xsi:type="form:ButtonGroupExtInfo"/>
+          </items>
+          <items xsi:type="form:Button">
+            <name>ContextMenuAttachmentsOpenFile</name>
+            <id>46</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <skipOnInput>false</skipOnInput>
+            <extendedTooltip>
+              <name>ContextMenuAttachmentsOpenFileExtendedTooltip</name>
+              <id>59</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>Form.Command.OpenFile</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+        </contextMenu>
+        <changeRowSet>true</changeRowSet>
+        <changeRowOrder>true</changeRowOrder>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <heightInTableRows>2</heightInTableRows>
+        <autoMaxRowsCount>true</autoMaxRowsCount>
+        <headerHeight>1</headerHeight>
+        <footerHeight>1</footerHeight>
+        <verticalScrollBar>AutoUse</verticalScrollBar>
+        <autoInsertNewRow>true</autoInsertNewRow>
+        <searchOnInput>Auto</searchOnInput>
+        <initialListView>Auto</initialListView>
+        <horizontalStretch>true</horizontalStretch>
+        <verticalStretch>true</verticalStretch>
+        <enableDrag>true</enableDrag>
+        <rowFilter xsi:type="core:UndefinedValue"/>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Вложения</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Attachments</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Załączniki</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Adjuntos</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Adjuntos</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Ekler</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Allegati</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Dateien</value>
+      </title>
+      <extendedTooltip>
+        <name>AttachmentsGroupExtendedTooltip</name>
+        <id>55</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>Vertical</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Основная группа тела письма</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Email body main group</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Główna grupa treści e-mail</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Grupo principal del cuerpo de correo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Grupo principal del cuerpo de correo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>E-posta gövdesi ana grubu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Gruppo principale cropo email</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>E-Mail-Körper Hauptgruppe</value>
+    </title>
+    <extendedTooltip>
+      <name>EmailBodyMainGroupExtendedTooltip</name>
+      <id>51</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>ReplyToAddress</name>
+    <id>47</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>ReplyToAddress</segments>
+    </dataPath>
+    <toolTip>
+      <key>en</key>
+      <value>A reply-to email address.</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Введите адрес электронной почты, на который вы хотите получить ответ на это письмо.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Adres e-mail, na który przyjdzie odpowiedź.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Dirección de correo electrónico para responder.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Dirección de correo electrónico para responder.</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Yanıtın alınacağı e-posta adresi.</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Un indirizzo email di risposta.</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Eine Antworten-E-Mail-Addresse.</value>
+    </toolTip>
+    <handlers>
+      <event>OnChange</event>
+      <name>SetFormModificationFlag</name>
+    </handlers>
+    <extendedTooltip>
+      <name>ReplyToExtendedTooltip</name>
+      <id>66</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ReplyToContextMenu</name>
+      <id>48</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <handlers>
+        <event>Clearing</event>
+        <name>ReplyToClearing</name>
+      </handlers>
+      <handlers>
+        <event>TextEditEnd</event>
+        <name>ReplyToTextEditEnd</name>
+      </handlers>
+      <handlers>
+        <event>ChoiceProcessing</event>
+        <name>ReplyToChoiceProcessing</name>
+      </handlers>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
+  <commandBarLocation>Top</commandBarLocation>
+  <autoCommandBar>
+    <name>CommandBarForm</name>
+    <id>-1</id>
+    <items xsi:type="form:Button">
+      <name>SendEmail</name>
+      <id>1</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <skipOnInput>false</skipOnInput>
+      <extendedTooltip>
+        <name>SendEmailExtendedTooltip</name>
+        <id>49</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.SendEmail</commandName>
+      <representation>Auto</representation>
+      <defaultButton>true</defaultButton>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>FormGenerateFromTemplate</name>
+      <id>106</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormGenerateFromTemplateExtendedTooltip</name>
+        <id>107</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.GenerateFromTemplate</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>Help</name>
+      <id>27</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <skipOnInput>false</skipOnInput>
+      <extendedTooltip>
+        <name>HelpExtendedTooltip</name>
+        <id>50</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.StandardCommand.Help</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>FormSaveAsTemplate</name>
+      <id>108</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormSaveAsTemplateExtendedTooltip</name>
+        <id>109</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.SaveAsTemplate</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+      <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <handlers>
+    <event>OnOpen</event>
+    <name>OnOpen</name>
+  </handlers>
+  <handlers>
+    <event>BeforeClose</event>
+    <name>BeforeClose</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <handlers>
+    <event>OnClose</event>
+    <name>OnClose</name>
+  </handlers>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <verticalScroll>UseIfNecessary</verticalScroll>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>RecipientEmailAddress</name>
+    <title>
+      <key>ru</key>
+      <value>Адрес получателя</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Recipient address</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Adres odbiorcy</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Dirección del destinatario</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Dirección del destinatario</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Alıcı adresi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Indirizzo del destinatario</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Adresse des Empfängers</value>
+    </title>
+    <id>1</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>EmailBody</name>
+    <id>2</id>
+    <valueType>
+      <types>FormattedDocument</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>EmailSubject</name>
+    <title>
+      <key>ru</key>
+      <value>Предмет</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Subject</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Temat</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Objeto</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Objeto</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Konu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Soggetto</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Thema</value>
+    </title>
+    <id>4</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>EmailAttachments</name>
+    <title>
+      <key>ru</key>
+      <value>Вложения в письмо</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Email attachments</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Załączniki wiadomości</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Adjuntos de correo electrónico</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Adjuntos de correo electrónico</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>E-posta ekleri</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Allegati e-mail</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>E-Mail-Anhänge</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType/>
+    </extInfo>
+  </attributes>
+  <attributes>
+    <name>Account</name>
+    <title>
+      <key>ru</key>
+      <value>От</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>From</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Od</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Desde</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Desde</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kimden</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Da</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Von</value>
+    </title>
+    <id>6</id>
+    <valueType>
+      <types>CatalogRef.EmailAccounts</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ReplyToAddress</name>
+    <title>
+      <key>ru</key>
+      <value>Адрес ответа</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Reply to</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Adres odpowiedzi</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Dirección de respuesta</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Dirección de respuesta</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Yanıt adresi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Rispondi a</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Antworten an</value>
+    </title>
+    <id>7</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>FillReplyToAddressAutomatically</name>
+    <title>
+      <key>ru</key>
+      <value>Автоматическая подстановка адреса ответа</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Automatic reply address substitution</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Automatyczne podstawienie adresu odpowiedzi</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Sustitución de la dirección de la respuesta automática</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Sustitución de la dirección de la respuesta automática</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Otomatik yanıt adresi değişikliği</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Sostituzione automatica dell'indirizzo di risposta</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Automatische Antwortsadresse Vertretung</value>
+    </title>
+    <id>8</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>AttachmentsPresentation</name>
+    <title>
+      <key>ru</key>
+      <value>Представление вложений</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Attachment presentation</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Przedstawienie załączników</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Adjunto presentación</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Adjunto presentación</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Ek gösterimi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Presentazione allegato</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Anhang- Präsentation</value>
+    </title>
+    <id>9</id>
+    <valueType>
+      <types>ValueTable</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <columns>
+      <name>Attachment1</name>
+      <title>
+        <key>ru</key>
+        <value>Вложение1</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Attachment1</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Załącznik1</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Adjunto1</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Adjunto1</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Ek1</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Allegato 1</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Anhang1</value>
+      </title>
+      <id>1</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Attachment2</name>
+      <title>
+        <key>ru</key>
+        <value>Вложение2</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Attachment2</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Załącznik2</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Adjunto2</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Adjunto2</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Ek2</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Allegato2</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Anhang2</value>
+      </title>
+      <id>2</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+  </attributes>
+  <attributes>
+    <name>AttachmentsHaveRefs</name>
+    <title>
+      <key>ru</key>
+      <value>Во вложениях присутствуют ссылки</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Attachments have references</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>W załącznikach są obecne powoływania</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Adjuntos tienen referencias</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Adjuntos tienen referencias</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Eklerde referans bulunmaktadır</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Allegati hanno riferimenti</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Anhänge haben Referenzen</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>PasswordSpecified</name>
+    <title>
+      <key>ru</key>
+      <value>Пароль задан</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Password set</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Hasło zadane</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Conjunto de contraseñas</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Conjunto de contraseñas</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Parola ayarı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Password impostata</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Passwort setzen</value>
+    </title>
+    <id>11</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ReplyToAddressesByAccounts</name>
+    <title>
+      <key>ru</key>
+      <value>Адреса ответа по учетным записям</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Reply to by email accounts</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Adresy odpowiedzi z zapisów ewidencyjnych</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Responder a por correo electrónico cuentas</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Responder a por correo electrónico cuentas</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>E-posta hesaplarıyla yanıtla</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Indirizzo di risposta da account di posta elettronica</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Antwort per E-Mail-Konto</value>
+    </title>
+    <id>10</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType>
+        <types>CatalogRef.EmailAccounts</types>
+      </itemValueType>
+    </extInfo>
+  </attributes>
+  <attributes>
+    <name>Attachments</name>
+    <title>
+      <key>ru</key>
+      <value>Вложения</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Attachments</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Załączniki</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Adjuntos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Adjuntos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Ekler</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Allegati</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Dateien</value>
+    </title>
+    <id>13</id>
+    <valueType>
+      <types>ValueTable</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <columns>
+      <name>Presentation</name>
+      <title>
+        <key>ru</key>
+        <value>Представление</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Presentation</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Przedstawienie</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Presentación</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Presentación</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Sunum</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Presentazione</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Präsentation</value>
+      </title>
+      <id>1</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>AddressInTempStorage</name>
+      <title>
+        <key>ru</key>
+        <value>Адрес во временном хранилище</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Address in temp storage</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Adres tymczasowego przechowywania</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Dirección de almacenamiento temporal</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Dirección de almacenamiento temporal</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Geçici depolama adresi</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Indirizzo in archivio temporaneo</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Temporäre Speicheradresse</value>
+      </title>
+      <id>2</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Encoding</name>
+      <title>
+        <key>ru</key>
+        <value>Кодировка</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Encoding</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Kodowanie</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Codificación</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Codificación</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Kodlama</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Codifica</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Kodierung</value>
+      </title>
+      <id>3</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>PathToFile</name>
+      <title>
+        <key>ru</key>
+        <value>Путь к файлу</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Path to file</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Ścieżka do pliku</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Ruta al archivo</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Ruta al archivo</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Dosya yolu</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Percorso al file</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Pfad zur Datei</value>
+      </title>
+      <id>4</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ID</name>
+      <title>
+        <key>ru</key>
+        <value>Идентификатор</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>ID</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Identyfikator</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>ID</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>ID</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Kimlik</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>ID</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>ID</value>
+      </title>
+      <id>5</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+  </attributes>
+  <attributes>
+    <name>FormClosingConfirmationRequired</name>
+    <title>
+      <key>ru</key>
+      <value>Требуется подтверждение закрытия формы</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>You want to confirm form closing</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Potwierdź zamknięcie formularza</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Confirmar el cierre del formulario</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Confirmar el cierre del formulario</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Form kapatmayı onayla</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Volete confermare la chiusura del modulo</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Formularabschluss bestätigen</value>
+    </title>
+    <id>15</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>RecipientsMailAddresses</name>
+    <title>
+      <key>ru</key>
+      <value>Почтовые адреса получателей</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Recipient postal addresses</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Adres korespondencyjny odbiorców</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Correos electrónicos de destinatarios</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Correos electrónicos de destinatarios</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Alıcı posta adresleri</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Indirizzo postale del destinatario</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Empfänger Postanschriften</value>
+    </title>
+    <id>18</id>
+    <valueType>
+      <types>ValueTable</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+    <columns>
+      <name>SendingOption</name>
+      <title>
+        <key>ru</key>
+        <value>Вариант отправки</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Sending option</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Warianty wysyłki</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Opciones de envío</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Opciones de envío</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Gönderim seçeneği</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Opzione di invio</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Sendeoption</value>
+      </title>
+      <id>1</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Presentation</name>
+      <title>
+        <key>ru</key>
+        <value>Представление</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Presentation</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Przedstawienie</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Presentación</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Presentación</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Sunum</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Presentazione</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Präsentation</value>
+      </title>
+      <id>3</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+  </attributes>
+  <attributes>
+    <name>MessageRecipients</name>
+    <title>
+      <key>ru</key>
+      <value>Получатели сообщения</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Message recipients</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Odbiorcy wiadomości</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Destinatarios del mensaje</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Destinatarios del mensaje</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Mesaj alıcıları</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Destinatari messaggio</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Nachrichtenempfänger</value>
+    </title>
+    <id>20</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType/>
+    </extInfo>
+  </attributes>
+  <attributes>
+    <name>SuccessResultColor</name>
+    <title>
+      <key>ru</key>
+      <value>Результат успех цвет</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Successful completion color</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Rezultat pomyślny kolor</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Resultado con éxito color</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Resultado con éxito color</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Başarı sonucu rengi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Colore completamento con successo</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Erfolgsergebnis Farbe</value>
+    </title>
+    <id>21</id>
+    <valueType>
+      <types>Color</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>SendEmail</name>
+    <title>
+      <key>ru</key>
+      <value>Отправить</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Send</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wyślij</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Enviar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Enviar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Gönder</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Inviare</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Senden</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Отправить письмо</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Send email</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Wyślij wiadomość e-mail</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Enviar el correo</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Enviar el correo</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>E-posta gönder</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Invia una email</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>E-Mail senden</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>SendEmail</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>AttachFile</name>
+    <title>
+      <key>ru</key>
+      <value>Приложить файл...</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Attach file...</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Załącz plik...</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Adjuntar archivo...</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Adjuntar archivo...</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dosya ekle...</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Allega file...</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Datei anhängen...</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Приложить файл к письму</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Attach file to the email</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Załącz plik do wiadomości e-mail</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Adjuntar archivo al correo electrónico</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Adjuntar archivo al correo electrónico</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>E-postaya dosya ekle</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Allegare file alla posta elettronica</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Datei an die E-Mail anhängen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.Clip</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>AttachFileExecute</name>
+      </handler>
+    </action>
+    <representation>TextPicture</representation>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>OpenFile</name>
+    <title>
+      <key>ru</key>
+      <value>Открыть файл</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Open file</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Otwórz plik</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Abrir el archivo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Abrir el archivo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dosyayı aç</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Aprire file</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Datei öffnen</value>
+    </title>
+    <id>3</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Открыть файл</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Open file</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Otwórz plik</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Abrir el archivo</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Abrir el archivo</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Dosyayı aç</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Aprire file</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Datei öffnen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.OpenFile</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>OpenFile</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>GenerateFromTemplate</name>
+    <title>
+      <key>ru</key>
+      <value>Создать по шаблону</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Create from template</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Utwórz na podstawie szablonu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Crear desde la plantilla</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Crear desde la plantilla</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Şablondan oluştur</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Creare da modello</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Aus Vorlage erstellen</value>
+    </title>
+    <id>4</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Создать по шаблону</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Create from template</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Utwórz na podstawie szablonu</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Crear desde la plantilla</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Crear desde la plantilla</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Şablondan oluştur</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Creare da modello</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Aus Vorlage erstellen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>GenerateFromTemplate</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>SaveAsTemplate</name>
+    <title>
+      <key>ru</key>
+      <value>Сохранить как шаблон...</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Save as template...</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zapisz jako szablon...</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Guardar como plantilla...</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Guardar como plantilla...</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Şablon olarak kaydet...</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Salva come template...</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Als Vorlage speichern...</value>
+    </title>
+    <id>5</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Сохранить как шаблон</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Save as template</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zapisz jako szablon</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Guardar como plantilla</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Guardar como plantilla</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Şablon olarak kaydet</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Salva come template</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Als Vorlage speichern</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>SaveAsTemplate</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <parameters>
+    <name>Sender</name>
+    <valueType>
+      <types>ValueList</types>
+      <types>CatalogRef.EmailAccounts</types>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>Recipient</name>
+    <valueType/>
+  </parameters>
+  <parameters>
+    <name>Subject</name>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>Text</name>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>Attachments</name>
+    <valueType/>
+  </parameters>
+  <parameters>
+    <name>ReplyToAddress</name>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>DeleteFilesAfterSending</name>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>Cc</name>
+    <valueType/>
+  </parameters>
+  <parameters>
+    <name>BCC</name>
+    <valueType/>
+  </parameters>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

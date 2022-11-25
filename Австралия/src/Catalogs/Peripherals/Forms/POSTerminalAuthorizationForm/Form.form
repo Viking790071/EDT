@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <title>
+    <key>en</key>
+    <value>Operation authorization</value>
+  </title>
+  <title>
+    <key>ru</key>
+    <value>Авторизация операции</value>
+  </title>
+  <title>
+    <key>pl</key>
+    <value>Autoryzacja operacji</value>
+  </title>
+  <title>
+    <key>es_ES</key>
+    <value>Autorización de la operación</value>
+  </title>
+  <title>
+    <key>es_CO</key>
+    <value>Autorización de la operación</value>
+  </title>
+  <title>
+    <key>tr</key>
+    <value>Operasyon yetki</value>
+  </title>
+  <title>
+    <key>it</key>
+    <value>Autorizzazione all'operazione</value>
+  </title>
+  <title>
+    <key>de</key>
+    <value>Operationsgenehmigung</value>
+  </title>
+  <items xsi:type="form:FormField">
+    <name>Amount</name>
+    <id>1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Amount</segments>
+    </dataPath>
+    <defaultItem>true</defaultItem>
+    <extendedTooltip>
+      <name>AmountExtendedTooltip</name>
+      <id>19</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>SumContextMenu</name>
+      <id>2</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <handlers>
+        <event>TextEditEnd</event>
+        <name>AmountTextEditEnd</name>
+      </handlers>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <choiceButton>false</choiceButton>
+      <spinButton>true</spinButton>
+      <autoMarkIncomplete>true</autoMarkIncomplete>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>CardType</name>
+    <id>16</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>CardType</segments>
+    </dataPath>
+    <titleLocation>Left</titleLocation>
+    <extendedTooltip>
+      <name>TypeMapsExtendedTooltip</name>
+      <id>20</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>CardTypeContextMenu</name>
+      <id>17</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>RadioButtonField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+      <columnsCount>1</columnsCount>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>CardNumber</name>
+    <id>14</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>CardNumber</segments>
+    </dataPath>
+    <skipOnInput>true</skipOnInput>
+    <extendedTooltip>
+      <name>CardNumberExtendedTooltip</name>
+      <id>21</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>NumberCardContextMenu</name>
+      <id>15</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <readOnly>true</readOnly>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <mask>9999 9999 9999 9999 9999</mask>
+      <autoMarkIncomplete>true</autoMarkIncomplete>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>SpecifyAdditionalInformation</name>
+    <id>12</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>SpecifyAdditionalInformation</segments>
+    </dataPath>
+    <skipOnInput>true</skipOnInput>
+    <titleLocation>Right</titleLocation>
+    <handlers>
+      <event>OnChange</event>
+      <name>SpecifyAdditionalInformationOnChange</name>
+    </handlers>
+    <extendedTooltip>
+      <name>SpecifyAdditionalInformationExtendedTooltip</name>
+      <id>22</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>SpecifyAdditionalInformationContextMenu</name>
+      <id>13</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>CheckBoxField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>GroupManualDataInput</name>
+    <id>5</id>
+    <items xsi:type="form:FormField">
+      <name>RefNo</name>
+      <id>6</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>RefNo</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ReferenceNumberExtendedTooltip</name>
+        <id>24</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ReferenceNumberContextMenu</name>
+        <id>7</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>ReceiptNumber</name>
+      <id>8</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>ReceiptNumber</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ReceiptNumberExtendedTooltip</name>
+        <id>25</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ReceiptNumberContextMenu</name>
+        <id>9</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>ManualDataInputGroupExtendedTooltip</name>
+      <id>23</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:Decoration">
+    <name>LabelAvailableReadingOnMCR</name>
+    <id>3</id>
+    <title>
+      <key>en</key>
+      <value>Card reading using a magnetic stripe card reader is available...</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Доступно считывание карты на считывателе магнитных карт...</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Jest dostępne przeczytanie karty na czytelniku magnetycznych kart...</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Lectura de tarjeta utilizando el lector de tarjetas de bandas magnéticas está disponible...</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Lectura de tarjeta utilizando el lector de tarjetas de bandas magnéticas está disponible...</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Manyetik şeritli bir kart okuyucu kullanarak kart okuyor ...</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>La lettura della carta tramite barra magnetica è disponibile...</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Kartenlesung mit einem Magnetkartenleser ist möglich...</value>
+    </title>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>LabelAvailableReadingOnMCRExtendedTooltip</name>
+      <id>26</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>LabelAvailableReadingOnMCRContextMenu</name>
+      <id>4</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>Label</type>
+    <autoMaxWidth>true</autoMaxWidth>
+    <height>2</height>
+    <autoMaxHeight>true</autoMaxHeight>
+    <horizontalStretch>true</horizontalStretch>
+    <verticalStretch>true</verticalStretch>
+    <skipOnInput>false</skipOnInput>
+    <font xsi:type="core:FontRef">
+      <font>System.DefaultGUIFont</font>
+      <height>10.0</height>
+      <bold>true</bold>
+      <italic>false</italic>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+    </font>
+    <extInfo xsi:type="form:LabelDecorationExtInfo">
+      <horizontalAlign>Center</horizontalAlign>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>FormCommandBar</name>
+    <id>-1</id>
+    <items xsi:type="form:Button">
+      <name>RunOperation</name>
+      <id>10</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <skipOnInput>false</skipOnInput>
+      <extendedTooltip>
+        <name>ExecuteOperationExtendedTooltip</name>
+        <id>18</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.RunOperation</commandName>
+      <representation>Auto</representation>
+      <defaultButton>true</defaultButton>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+  </autoCommandBar>
+  <handlers>
+    <event>NotificationProcessing</event>
+    <name>NotificationProcessing</name>
+  </handlers>
+  <handlers>
+    <event>OnOpen</event>
+    <name>OnOpen</name>
+  </handlers>
+  <handlers>
+    <event>ExternalEvent</event>
+    <name>ExternalEvent</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <handlers>
+    <event>OnClose</event>
+    <name>OnClose</name>
+  </handlers>
+  <width>45</width>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <verticalScroll>UseIfNecessary</verticalScroll>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Amount</name>
+    <title>
+      <key>en</key>
+      <value>Amount</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Сумма</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Kwota</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Importe</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Importe</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Tutar</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Importo</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Betrag</value>
+    </title>
+    <id>1</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>RefNo</name>
+    <title>
+      <key>en</key>
+      <value>Reference number</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Ссылочный номер</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Numer linku</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Número de referencia</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Número de referencia</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Referans numarası</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Numero di riferimento</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Referenznummer</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ReceiptNumber</name>
+    <title>
+      <key>en</key>
+      <value>Receipt number</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Номер чека</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Numer paragonu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Número de recibo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Número de recibo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Makbuz Numarası</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Numero di ricevuta</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Belegnummer</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>SpecifyAdditionalInformation</name>
+    <title>
+      <key>en</key>
+      <value>Specify additional data</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Указать дополнительные данные</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wybierz dane dodatkowe</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Especificar datos adicionales</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Especificar datos adicionales</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Ek veri belirtin</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Specificare dati aggiuntivi</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Geben Sie zusätzliche Daten an</value>
+    </title>
+    <id>4</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>CardNumber</name>
+    <title>
+      <key>en</key>
+      <value>Card</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Карточка</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Karta</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Tarjeta</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Tarjeta</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kart</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Anagrafica</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Karte</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>CardData</name>
+    <title>
+      <key>en</key>
+      <value>Card data</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Данные карты</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Dane obrazu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Datos de tarjeta</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Datos de tarjeta</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kart verileri</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Dati della carta</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Kartendaten</value>
+    </title>
+    <id>6</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>CardType</name>
+    <title>
+      <key>en</key>
+      <value>Payment card kind</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Вид платежной карты</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Rodzaj karty płatniczej</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Tipo de tarjeta de pago</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Tipo de tarjeta de pago</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Ödeme kartı türü</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Tipologia di Carta di pagamento</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Art der Zahlungskarte</value>
+    </title>
+    <id>7</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ShowCardNumber</name>
+    <title>
+      <key>en</key>
+      <value>Show card number</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Показывать номер карты</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Pokazywać numer karty</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Mostrar el número de la tarjeta</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Mostrar el número de la tarjeta</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kart numarasını göster</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Visualizzare il numero di carta</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Kartenummer zeigen</value>
+    </title>
+    <id>8</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>AvailableReadingOnMCR</name>
+    <title>
+      <key>en</key>
+      <value>Available reading on QMS</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Доступно считывание на СМК</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Dostępne odczyty w systemie zarządzania jakością (QMS)</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Lectura en QMS disponible</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Lectura en QMS disponible</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>QMS'de mevcut okuma</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Disponibile la lettura sul SGQ</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Verfügbares Lesen auf QMS</value>
+    </title>
+    <id>9</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>RunOperation</name>
+    <title>
+      <key>en</key>
+      <value>Execute operation</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Выполнить операцию</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zrealizować operację</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Ejecutar la operación</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Ejecutar la operación</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>İşlemi yürüt</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Eseguire l'operazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Operation ausführen</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>en</key>
+      <value>Execute operation</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Выполнить операцию</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zrealizować operację</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Ejecutar la operación</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Ejecutar la operación</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>İşlemi yürüt</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Eseguire l'operazione</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Operation ausführen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>RunOperation</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <parameters>
+    <name>FormParameters</name>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <keyParameter>true</keyParameter>
+  </parameters>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

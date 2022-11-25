@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html;charset=utf-8" http-equiv="content-type"></meta><link rel="stylesheet" type="text/css" href="v8help://service_book/service_style"></link><meta name="GENERATOR" content="MSHTML 9.00.8112.16421"></meta></head><body>
+<p>Designed to manage performer roles.</p>
+<p>Opened by the <strong>Performer roles</strong> command in the <strong>Business processes and tasks</strong> section.</p>
+<p>Performer roles can be used in <a href="v8help://1cv8/EnterprWorkingWithBusinessProcesses_StandardInterface">business processes</a> for role-based <a href="Task.PerformerTask/Help">task</a> routing purposes. In this case, tasks are initially assigned to roles (example, <strong>Room supervisor</strong>) rather than to a specific performer. Associations between users and roles are defined in the <a href="InformationRegister.TaskPerformers/Help">Roles and task performers</a> list, on which basis the tasks are automatically reassigned to specific users. However, in certain cases, the performer role is not enough to accurately identify the performers. In these cases, you need to specify the main and additional <a href="ChartOfCharacteristicTypes.TaskAddressingObjects/Help">addressing objects</a>. For example, the <strong>Project manager</strong> role can have the main <strong>Department</strong> addressing object and additional <strong>Project</strong> object. Thus, addressing objects help to clarify to which project managers and in which department the <a href="Task.PerformerTask.Form.BusinessProcessTaskForm/Help">task</a> is assigned.</p>
+<p>The map of performers to roles and addressing object is set before starting work with business processes and tasks, and it is used by the application for delivering instructions to specific performers. </p>
+<p>The list of roles is included in the application, but can be expanded if necessary.</p>
+<p>It is not recommended to allow the list to have roles with no performers assigned (marked in red) as this can lead to the emergence of tasks that were not completed on time. The <a href="Report.HungTasks/Help">Hung tasks</a> report is designed to control such tasks. </p>
+<p>The <strong>External role</strong> flag indicates that the record of performers for this role is kept in another infobase. Roles with the <strong>External role</strong> flag are used for infobase integration purposes.</p>
+<p>The <strong>Task control manager</strong> predefined role can be used to get notifications about overdue and hung tasks for all or selected addressing objects. By default, users assigned to the <strong>Task control manager</strong> role get notifications on all such tasks assigned to any performers. If you need to track overdue or hung tasks for specific addressing objects only, you need to have the <strong>Task control manager</strong> role assigned to you for these addressing objects. </p><a name="СтандартныеПодсистемы.Пользователи">
+</a><p><a name="СтандартныеПодсистемы.Пользователи">The application sends notifications to the users with the <strong>Task control manager</strong> role using the email addresses specified in contact information of these </a><a href="Catalog.Users.Form.ItemForm/Help">users</a>.</p>
+<p>The list includes the following columns:</p>
+<ul><li><strong>Description</strong>. Full role description. </li><li><strong>Short presentation</strong>. Short description of a role for your convenience. By default, <strong>Code</strong> is automatically copied into this field. </li><li><strong>Code</strong>. Filled automatically.</li></ul><h3>Role usage example</h3>
+<table border="0" cellpadding="8" width="100%"><tbody><tr><td><strong>Assignee role</strong></td>
+<td><strong>Main addressing object<br>(type, value)</strong></td>
+<td><strong>Additional addressing object<br>(type, value)</strong></td>
+<td><strong>User</strong></td>
+<td><strong>Note</strong></td></tr><tr><td><strong>Task control manager</strong></td>
+<td>-</td>
+<td>-</td>
+<td>J. Johnson</td>
+<td>J. Johnson receives notifications for all overdue and unassigned tasks, with the exception of notifications received by S. Smith and R. Roberts.</td></tr><tr><td><strong>Task control manager</strong></td>
+<td>Department, <br>Accounting department</td>
+<td>-</td>
+<td>S. Smith</td>
+<td>J. Johnson receives notifications for all overdue and hung tasks related to Accounting department, with the exception of notifications received by R. Roberts.*</td></tr><tr><td><strong>Task control manager</strong></td>
+<td>Department, <br>Accounting department</td>
+<td>Project,<br>Accounting system implementation project</td>
+<td>R. Roberts</td>
+<td>R. Roberts receives notifications for all overdue and hung tasks related to Accounting department and Accounting system implementation project.*</td></tr></tbody></table><p> </p>
+<p>* If S. Smith and R. Roberts are excluded from the <strong>Task control manager</strong> role, J. Johnson will start receiving notifications on their addressing objects as well.</p>
+<h3>Peculiarities of interaction with external users</h3>
+<ul><a name="СтандартныеПодсистемы.Пользователи">
+</a><li><a name="СтандартныеПодсистемы.Пользователи"></a><a href="Catalog.ExternalUsers/Help">External users</a> can be performers of business processes (for example, partners or contact persons of partners).</li> 
+<li>As a rule, external users cannot use the names of specific employees of a company, thus, they can only specify the performer roles assigned to them. </li><li>To do that, you need to configure a list of such roles, specifying that they are designed for certain categories of external users.</li></ul><h3>Creating new role</h3>
+<ul><li>Select <strong>Create</strong> and fill in the required <a href="Catalog.PerformerRoles.Form.ItemForm/Help">fields</a>.</li></ul><h3>See also: </h3>
+<ul><li><a href="v8help://frame/form_common">Working with forms</a></li></ul></body></html>

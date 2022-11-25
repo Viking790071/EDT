@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1dab1ed7-0204-4c76-954a-b4ec53d30817">
+  <producedTypes>
+    <objectType typeId="76e1770a-6db3-458c-887a-e88060fd93c0" valueTypeId="b113ed3d-ba61-4318-82d6-18cbe71ab0d3"/>
+    <managerType typeId="66ee85e4-42ec-430b-ba0c-d7919354b7ff" valueTypeId="fb2a8a41-bd99-4a95-be66-db70468e9a59"/>
+  </producedTypes>
+  <name>PrintSimplifiedTaxInvoice</name>
+  <synonym>
+    <key>en</key>
+    <value>Print simplified tax invoice</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Печать упрощенного налогового инвойса</value>
+  </synonym>
+  <synonym>
+    <key>pl</key>
+    <value>Drukowanie uproszczonej faktury VAT</value>
+  </synonym>
+  <synonym>
+    <key>es_ES</key>
+    <value>Imprimir la factura de impuestos simplificada</value>
+  </synonym>
+  <synonym>
+    <key>es_CO</key>
+    <value>Imprimir la factura fiscal simplificada</value>
+  </synonym>
+  <synonym>
+    <key>tr</key>
+    <value>Sadeleştirilmiş vergi faturasını yazdır</value>
+  </synonym>
+  <synonym>
+    <key>it</key>
+    <value>Stampa fattura fiscale semplificata</value>
+  </synonym>
+  <synonym>
+    <key>de</key>
+    <value>Vereinfachte Steuerrechnung drucken</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.PrintSimplifiedTaxInvoice.Form.Form</defaultForm>
+  <attributes uuid="4e93a53e-ee50-4461-b577-3474864e80a0">
+    <name>Date</name>
+    <synonym>
+      <key>en</key>
+      <value>Date</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Data</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Fecha</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Fecha</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Tarih</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Data</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Datum</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="7f2d921d-0c82-43dc-9496-a3c4b432e222">
+    <name>Company</name>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Firma</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Empresa</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Empresa</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İş yeri</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Azienda</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Firma</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Companies</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="f9894b13-5f17-4631-b967-072d60e774f5">
+    <name>CashCR</name>
+    <synonym>
+      <key>en</key>
+      <value>Cash register</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Касса ККМ</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Kasa fiskalna</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Caja registradora</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Caja registradora</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Yazar kasa</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Registratore di cassa</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Kasse</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CashRegisters</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Filter.Owner</name>
+      <field>DataProcessor.PrintSimplifiedTaxInvoice.Attribute.Company</field>
+    </choiceParameterLinks>
+  </attributes>
+  <attributes uuid="84c190d6-10b0-43cd-9e8e-a6e45a1d237e">
+    <name>ReceiptNumber</name>
+    <synonym>
+      <key>en</key>
+      <value>Receipt #</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>№ чека</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Przychód #</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Recibo #</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Recibo #</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Fiş #</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Scontrino No.</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Quittung Nr</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>6</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="9faa4e54-b2ae-4a79-aa79-6c8c6fe575e4">
+    <name>Form</name>
+    <synonym>
+      <key>en</key>
+      <value>Form</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Formularz</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Formulario</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Formulario</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Form</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Modulo</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Formular</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="6dd29482-936c-4981-97eb-fd8a7baa7e99">
+    <name>PF_MXL_SimplifiedTaxInvoice</name>
+    <synonym>
+      <key>en</key>
+      <value>Simplified tax invoice</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Упрощенный налоговый инвойс</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Uproszczona faktura VAT</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Factura de impuestos simplificada</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Factura fiscal simplificada</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Sadeleştirilmiş vergi faturası</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Fattura fiscale semplificata</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Vereinfachte Steuerrechnung</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

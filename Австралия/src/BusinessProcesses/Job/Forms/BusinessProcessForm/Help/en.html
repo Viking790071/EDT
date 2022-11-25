@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html;charset=utf-8" http-equiv="content-type"></meta><link rel="stylesheet" type="text/css" href="v8help://service_book/service_style"></link><meta name="GENERATOR" content="MSHTML 11.00.10570.1001"></meta></head><body>
+<p>Предназначено для постановки и проверки выполнения произвольных <a href="Task.PerformerTask/Help">задач</a>.</p>
+<p>You can start the form from the application document using the <strong>Create on basis</strong> command (you can also start it from the business process; with the appropriate <a href="DataProcessor.SSLAdministrationPanel.Form.Organizer/Help">settings</a> this job will become a subordinate business process). Также можно начать новый <a href="v8help://1cv8/EnterprWorkingWithBusinessProcesses_StandardInterface">бизнес-процесс</a> <strong>Задание</strong> по команде <strong>Создать</strong> в списке <a href="BusinessProcess.Job/Help">Задания</a>.</p>
+<h3>Info on job</h3>
+<ul><li><strong>Main task</strong>. Filled automatically if the business process is subordinate. The reference in this field allows you to view data about the main business process. </li><li><strong>Job</strong>. Write a job title, which will be shown in the lists of business processes. This field is required. </li><li><strong>Importance</strong>. Takes <strong>Normal</strong> (by default), <strong>Low</strong>, <strong>High</strong> values. To select a business process from the list, or to specify that the execution of this business process might be deterred, select the matching value of this field. <ul><a name="СтандартныеПодсистемы.Пользователи"></a></ul></li><li><strong>Performer</strong>. Select a performer from the application <a href="Catalog.Users/Help">users</a> list or from the <a href="CommonForm.SelectBusinessProcessPerformer/Help">performers</a> list. The fields are required. </li><li><strong>Due date</strong>. Specify data and time by which to completed the job. </li><li><strong>Subject</strong>. An application document is automatically entered, on the basis of which the job is created. </li><li>In the text box below you can explain in more detail the essence of the job. Unavailable for subordinate business processes. </li><li>
+<div>Select the <strong>Check execution</strong> check box (enabled by default) in order to:</div>
+<ul><li>
+<div>Assign supervisor from the users list.</div>
+</li><li>
+<div>Enter <strong>Due date</strong>. Date and time by which to complete the execution check. If the due time is not filled, the check is not carried out.</div></li></ul></li><li>
+<div><a name="СтандартныеПодсистемы.Пользователи"><strong>Author</strong>. Application automatically enters the current </a><a href="Catalog.Users.Form.ItemForm/Help">user</a>. Author can be assigned from the <strong>Users</strong> list.</div>
+</li><li>
+<div><strong>Started</strong>. The date of job creation. Filled automatically. The field cannot be edited.</div></li></ul><h3>Business Process Start</h3>
+<ul><li>After the job is filled, click <strong>Start and close</strong> to save <strong>Job</strong>, start the business process, and return to the program. </li><li>To start a business process, you can also use the <strong>Start</strong> command. В этом случае программа сохранит задание, начнет бизнес-процесс, но задание останется открытым. </li><li>The application automatically generates the tasks contained in the <strong>Job </strong>business process: <ul><li><a href="BusinessProcess.Job.Form.ActionExecute/Help">выполнение задания</a>; <ul><li>After completing this task, depending on the settings, the job is either completed, or the task of <a href="BusinessProcess.Job.Form.ActionCheck/Help">execution check</a> is generated. </li></ul></li></ul></li><li>To write a draft of the job without starting it, click <strong>Write</strong>. Such a job can be refilled and started later, at a more suitable time, from the jobs list or by opening the job.</li></ul><h3>Deferred start of business process</h3>
+<ul><li>
+<div>You can start the business process not immediately, but to defer its start for a certain time. For example, you can schedule its start for tomorrow or in a week.</div>
+</li><li>
+<div>To set a deferred start of the job, after filling in all the required fields, click <img src="CommonPicture.ProcessPostponed"></img>.</div>
+<ul><li>
+<div>In the window, select the <strong>Deferred job start</strong> check box.</div>
+</li><li>
+<div>Fill the <strong>Date</strong> and <strong>Time</strong> fields - specify when to start a business process. The bottom of the window, you can see in how many dates and hours the job will be started.</div>
+</li><li>
+<div>Click <strong>Finish</strong>.</div></li></ul></li><li>
+<div>After that, a message with a reference is displayed in the business process card where the date and time of the deferred start is indicated.</div>
+</li><li>
+<div>To start deferred business processes at the right time, configure the <strong>Deferred business processes start</strong> scheduled job.</div>
+</li><li>
+<div>After the job is started, the deferred start button becomes inactive.</div></li></ul><h3>Business process record management</h3>
+<ul><li>To <strong>Stop</strong> or <strong>Continue</strong> the business process, use the matching buttons (one of the buttons is active). In some lists a stopped business process is marked by the <img src="CommonPicture.StopSign"></img> icon.</li></ul><h3>View flowcharts</h3>
+<ul><li>Click <img src="StdPicture.BusinessProcess"></img><strong>Open the business process flowchart</strong> to view the business process in a visual form. </li><li>You can also use the <strong>More</strong> <strong>- Flowchart</strong> command. </li><li>The <a href="DataProcessor.BusinessProcessFlowchart/Help">Flowchart</a> presents internal logic and lifecycle of a business process as a schematic image, a sequence of route points.</li></ul><h3>View tasks</h3>
+<ul><li>To view <a href="Task.PerformerTask.Form.TasksByBusinessProcess/Help">tasks</a> of the business process, execute the <strong>Tasks</strong> command in the navigation panel. If the job is not started, the list will be empty.</li></ul><h3>See also:</h3>
+<ul><li>
+<div><a href="v8help://frame/form_common">Working with forms</a></div></li></ul></body></html>

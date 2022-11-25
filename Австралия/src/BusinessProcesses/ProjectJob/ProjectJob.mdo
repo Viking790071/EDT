@@ -1,0 +1,1258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:BusinessProcess xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a2107753-c632-42db-92d9-c9ab83686393">
+  <producedTypes>
+    <objectType typeId="e86a6081-788e-4ad6-b625-efc2f87878d5" valueTypeId="ed14f6e5-ccd4-4bbc-a8f9-effb2bedc7f1"/>
+    <refType typeId="8c9960c0-cb94-4f2d-9f35-838df1372fea" valueTypeId="1b2c18d4-d041-4e30-9241-7366e51a8fa1"/>
+    <selectionType typeId="24f12070-926f-4103-b5d3-076531874237" valueTypeId="7eadcc2e-a667-4143-adfb-a48b4737b78e"/>
+    <listType typeId="82136843-a8ae-48e7-bd31-ec255582b6d3" valueTypeId="d172afd3-8f7c-4e61-81f1-c39e208e2167"/>
+    <managerType typeId="bd541d04-7a89-4c77-ba28-4e3a8af3d030" valueTypeId="f8d95134-1819-427a-b99d-e398c5ef3bdc"/>
+    <routePointRef typeId="15943e01-fd5d-4b95-b665-543eb6a0e42c" valueTypeId="b6862107-c8b6-4fcc-9e9f-ba40809e6a83"/>
+  </producedTypes>
+  <name>ProjectJob</name>
+  <synonym>
+    <key>en</key>
+    <value>Project job</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Задание проекта</value>
+  </synonym>
+  <synonym>
+    <key>pl</key>
+    <value>Zadanie projektowe</value>
+  </synonym>
+  <synonym>
+    <key>es_ES</key>
+    <value>Tarea del proyecto</value>
+  </synonym>
+  <synonym>
+    <key>es_CO</key>
+    <value>Tarea del proyecto</value>
+  </synonym>
+  <synonym>
+    <key>tr</key>
+    <value>Proje işi</value>
+  </synonym>
+  <synonym>
+    <key>it</key>
+    <value>Lavoro del progetto</value>
+  </synonym>
+  <synonym>
+    <key>de</key>
+    <value>Projektaufgabe</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>BusinessProcess.ProjectJob.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Started</name>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>HeadTask</name>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Task.PerformerTask.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Completed</name>
+    <synonym>
+      <key>en</key>
+      <value>Completed</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Завершено</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Zakończono</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Finalizado</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Finalizado</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Tamamlandı</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Completato</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Abgeschlossen</value>
+    </synonym>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:DateValue">
+      <value>0001-01-01T00:00:00</value>
+    </fillValue>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:StringValue">
+      <value>         </value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <basedOn>Catalog.ProjectPhases</basedOn>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockFields>BusinessProcess.ProjectJob.StandardAttribute.HeadTask</dataLockFields>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>en</key>
+    <value>Project jobs</value>
+  </listPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Задания проекта</value>
+  </listPresentation>
+  <listPresentation>
+    <key>pl</key>
+    <value>Zadanie projektowe</value>
+  </listPresentation>
+  <listPresentation>
+    <key>es_ES</key>
+    <value>Tareas del proyecto</value>
+  </listPresentation>
+  <listPresentation>
+    <key>es_CO</key>
+    <value>Tareas del proyecto</value>
+  </listPresentation>
+  <listPresentation>
+    <key>tr</key>
+    <value>Proje işleri</value>
+  </listPresentation>
+  <listPresentation>
+    <key>it</key>
+    <value>Lavori del progetto</value>
+  </listPresentation>
+  <listPresentation>
+    <key>de</key>
+    <value>Projektaufgabe</value>
+  </listPresentation>
+  <explanation>
+    <key>en</key>
+    <value>A business process that includes tasks created for project phase assignees.</value>
+  </explanation>
+  <explanation>
+    <key>ru</key>
+    <value>A business process that includes tasks created for project phase assignees.</value>
+  </explanation>
+  <explanation>
+    <key>pl</key>
+    <value>A business process that includes tasks created for project phase assignees.</value>
+  </explanation>
+  <explanation>
+    <key>es_ES</key>
+    <value>A business process that includes tasks created for project phase assignees.</value>
+  </explanation>
+  <explanation>
+    <key>es_CO</key>
+    <value>A business process that includes tasks created for project phase assignees.</value>
+  </explanation>
+  <explanation>
+    <key>tr</key>
+    <value>A business process that includes tasks created for project phase assignees.</value>
+  </explanation>
+  <explanation>
+    <key>it</key>
+    <value>A business process that includes tasks created for project phase assignees.</value>
+  </explanation>
+  <explanation>
+    <key>de</key>
+    <value>A business process that includes tasks created for project phase assignees.</value>
+  </explanation>
+  <editType>InDialog</editType>
+  <defaultObjectForm>BusinessProcess.ProjectJob.Form.BusinessProcessForm</defaultObjectForm>
+  <defaultListForm>BusinessProcess.ProjectJob.Form.ListForm</defaultListForm>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <task>Task.PerformerTask</task>
+  <createTaskInPrivilegedMode>true</createTaskInPrivilegedMode>
+  <attributes uuid="055ddaff-b41c-41f5-bdab-395a77053cf4">
+    <name>Author</name>
+    <synonym>
+      <key>en</key>
+      <value>Author</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Autor</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Autor</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Autor</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Yazar</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Autore</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Autor</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ExternalUsers</types>
+      <types>CatalogRef.Users</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <createOnInput>Use</createOnInput>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Users.EmptyRef</value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ea09b70b-f26a-4502-b419-0196fe96719f">
+    <name>Importance</name>
+    <synonym>
+      <key>en</key>
+      <value>Importance</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Важность</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Priorytet</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Importancia</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Importancia</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Önem</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Importanza</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Wichtigkeit</value>
+    </synonym>
+    <type>
+      <types>EnumRef.TaskImportanceOptions</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <quickChoice>Use</quickChoice>
+    <createOnInput>DontUse</createOnInput>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.TaskImportanceOptions.EnumValue.Normal</value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="06aa2a36-cb67-48f0-8128-7a09a44dc68d">
+    <name>JobCompleted</name>
+    <synonym>
+      <key>en</key>
+      <value>Completed</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Завершено</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Zakończono</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Finalizado</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Finalizado</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Tamamlandı</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Completato</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Abgeschlossen</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ba6c7554-dcef-4762-b73b-406f64703891">
+    <name>CompletedOn</name>
+    <synonym>
+      <key>en</key>
+      <value>End date</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Дата завершения</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Data zakończenia</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Fecha final</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Fecha final</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Bitiş tarihi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Data di fine</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Enddatum</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:DateValue">
+      <value>0001-01-01T00:00:00</value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6cb2027a-f651-46c2-b456-48096adb5730">
+    <name>Performer</name>
+    <synonym>
+      <key>en</key>
+      <value>Assignee</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Wykonawca</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Beneficiario</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Beneficiario</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Atanan</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Assegnatario</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Bevollmächtiger</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ExternalUsers</types>
+      <types>CatalogRef.PerformerRoles</types>
+      <types>CatalogRef.Users</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="26f3e62a-598e-4ca5-aff8-05c91263046d">
+    <name>Description</name>
+    <synonym>
+      <key>en</key>
+      <value>Description</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Opis</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Descripción</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Descripción</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Tanım</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Descrizione</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Beschreibung</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="150d2f6c-ba3b-4417-a8d5-905de1517c62">
+    <name>Topic</name>
+    <synonym>
+      <key>en</key>
+      <value>Subject</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Тема</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Temat</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Tema</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Tema</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Konu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Soggetto</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Betreff</value>
+    </synonym>
+    <type>
+      <types>DefinedType.TaskSubject</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e7f22c39-a427-4a7f-b134-5f3515638b34">
+    <name>Content</name>
+    <synonym>
+      <key>en</key>
+      <value>Content</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Содержание</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Zawartość</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Contenido</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Contenido</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İçerik</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Contenuto</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Inhalt</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <extendedEdit>true</extendedEdit>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f98540bd-7a07-4c3c-aa99-51e761cb7db7">
+    <name>State</name>
+    <synonym>
+      <key>en</key>
+      <value>State</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Stan</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Estado</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Estado</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Durum</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Stato</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Zustand</value>
+    </synonym>
+    <type>
+      <types>EnumRef.BusinessProcessStates</types>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Current state of the business process (internal attribute)</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Текущее состояние бизнес-процесса (служебный реквизит)</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Bieżący stan procesu biznesowego (atrybut wewnętrzny)</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Estado actual del proceso de negocio (atributo de servicio)</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Estado actual del proceso de negocio (atributo de servicio)</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>İş sürecinin güncel durumu (dahili öznitelik)</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Stato corrente del processo aziendale (attributo interno)</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Aktueller Status des Geschäftsprozesses (inneres Attribut)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.BusinessProcessStates.EnumValue.Running</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a21d52cc-24fa-4ebe-8e6f-f5d66fe1db09">
+    <name>DueDate</name>
+    <synonym>
+      <key>en</key>
+      <value>Due date</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Срок исполнения</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Termin</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Fecha de vencimiento</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Fecha de vencimiento</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Bitiş tarihi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Data di scadenza</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Fälligkeitsdatum</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:DateValue">
+      <value>0001-01-01T00:00:00</value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ff099c75-057d-4742-af71-442ef46a41db">
+    <name>AuthorString</name>
+    <synonym>
+      <key>en</key>
+      <value>Author as a string</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Автор строкой</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Autor w formie wiersza</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Autor como una línea</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Autor como una línea</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Dize olarak yazar</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Autore come stringa</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Autor als Zeichenfolge</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="95253007-6e5b-4119-8db9-ce53cde4cb18">
+    <name>Project</name>
+    <synonym>
+      <key>en</key>
+      <value>Project</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Projekt</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Proyecto</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Proyecto</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Proje</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Progetto</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Projekt</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Projects</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5009acd1-5661-4986-b07e-a9325ac49d4c">
+    <name>ProjectPhase</name>
+    <synonym>
+      <key>en</key>
+      <value>Project phase</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Этап проекта</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Etap projektu</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Fase del proyecto</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Fase del proyecto</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Proje evresi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Fase progetto</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Projektphase</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ProjectPhases</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Filter.Owner</name>
+      <field>BusinessProcess.ProjectJob.Attribute.Project</field>
+    </choiceParameterLinks>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f5708d2b-835f-4e53-9cf7-fe7c1a9161d6">
+    <name>MainAddressingObject</name>
+    <synonym>
+      <key>en</key>
+      <value>Main addressing object</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Основной объект адресации</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Główny obiekt adresacji</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Objeto principal de direccionamiento</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Objeto principal de direccionamiento</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ana adresleme nesnesi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Oggetto di indirizzamento principale</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Hauptobjekt von Adressierung</value>
+    </synonym>
+    <type>
+      <types>Characteristic.TaskAddressingObjects</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>ChartOfCharacteristicTypes.TaskAddressingObjects.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7ebe7e4a-2bd3-42b3-ac67-3bac75117e90">
+    <name>AdditionalAddressingObject</name>
+    <synonym>
+      <key>en</key>
+      <value>Additional addressing object</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительный объект адресации</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Dodatkowy obiekt adresacji</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Objeto adicional de direccionamiento</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Objeto adicional de direccionamiento</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ek adresleme nesnesi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Oggetti indirizzamento aggiuntivo</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Weiteres Objekt von Adressierung</value>
+    </synonym>
+    <type>
+      <types>Characteristic.TaskAddressingObjects</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>ChartOfCharacteristicTypes.TaskAddressingObjects.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dc4a18d4-feb6-4e95-8488-756235bde3c2">
+    <name>TaskPerformersGroup</name>
+    <synonym>
+      <key>en</key>
+      <value>Task assignees group</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Группа исполнителей задач</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Grupa wykonawców zadania</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Grupo de ejecutores de la tarea</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Grupo de ejecutores de la tarea</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Göreve atanan grubu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Gruppo assegnatari dei compiti</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Gruppe von Bevollmächtigern</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ExternalUsers</types>
+      <types>CatalogRef.Users</types>
+      <types>CatalogRef.TaskPerformersGroups</types>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Data for access rights limitation (internal attribute)</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Сведения для ограничения прав доступа (служебный реквизит)</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Dane dotyczące ograniczenia praw dostępu (atrybut wewnętrzny)</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Datos para limitar los derechos de acceso (atributo de servicio)</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Datos para limitar los derechos de acceso (atributo de servicio)</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Erişim yetkileri kısıtlaması için veri (dahili öznitelik)</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Dati per la limitazione dei diritti di accesso (attributo interno)</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Daten für Beschränkung der Zugriffsrechte (inneres Attribut)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="42ee392e-b030-4be2-92bd-5e4fbeda9749">
+    <name>ActionExecute</name>
+    <synonym>
+      <key>en</key>
+      <value>Action: complete</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Действие: выполнить</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Działanie: zakończ</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Acción: finalizada</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Acción: finalizada</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Eylem: tamamla</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Azione: completato</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Aktion: abgeschlossen</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="102f3da6-66d6-4fa8-b19c-72153b50df6b">
+    <name>BusinessProcessForm</name>
+    <synonym>
+      <key>en</key>
+      <value>Business process form</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Форма бизнес-процесса</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Formularz procesu biznesowego</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Formulario del proceso de negocio</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Formulario del proceso de negocio</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İş süreci formu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Modulo di processo aziendale</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Geschäftsprozess-Formular</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="970afc5f-ae8f-4b32-8a6c-a4aa507ee28a">
+    <name>ListForm</name>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Formularz listy</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Formulario de la lista</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Formulario de lista</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Liste formu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Modulo elenco</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Listenformular</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3773837c-1d71-4d3d-b5d3-7c0f1dea15fa">
+    <name>TasksByProject</name>
+    <synonym>
+      <key>en</key>
+      <value>Tasks by project</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Задачи по проекту</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Zadanie według projektu</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Tareas por proyecto</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Tareas por proyecto</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Projeye göre görevler</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Compiti per progetto</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Aufgaben nach dem Thema</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="4e055712-d189-4aae-94ad-d5f024c6381c">
+    <name>TasksByProject</name>
+    <synonym>
+      <key>en</key>
+      <value>Tasks</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Задачи</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Zadania</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Tareas</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Tareas</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Görevler</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Compiti</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Aufgaben</value>
+    </synonym>
+    <group>FormNavigationPanelImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.Projects</types>
+    </commandParameterType>
+    <modifiesData>true</modifiesData>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="dfc7ff5c-c30d-45f8-9cb4-3c638e90ae2c">
+    <name>TasksByProjectPhase</name>
+    <synonym>
+      <key>en</key>
+      <value>Tasks</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Задачи</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Zadania</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Tareas</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Tareas</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Görevler</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Compiti</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Aufgaben</value>
+    </synonym>
+    <group>FormNavigationPanelImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.ProjectPhases</types>
+    </commandParameterType>
+    <modifiesData>true</modifiesData>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:BusinessProcess>

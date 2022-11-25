@@ -1,0 +1,62 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.1ci.com/ProManage">
+	<valueType name="UUID" base="xs:string" length="36"/>
+	<valueType name="Quantity" base="xs:decimal" totalDigits="15" fractionDigits="3"/>
+	<valueType name="Quantity5" base="xs:decimal" totalDigits="5"/>
+	<valueType name="Quantitiy15" base="xs:decimal" totalDigits="15" fractionDigits="2"/>
+	<valueType name="Code9" base="xs:string" length="9"/>
+	<valueType name="Code11" base="xs:string" length="11"/>
+	<valueType name="Time" base="xs:decimal" totalDigits="10" fractionDigits="2"/>
+	<valueType name="Number" base="xs:string" minLength="11" maxLength="20"/>
+	<objectType name="ProductionOrder">
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="UUID" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="ProductUUID" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="Quantity" type="d3p1:Quantity"/>
+		<property name="DeliveryDate" type="xs:dateTime"/>
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="Number" type="d3p1:Number"/>
+		<property name="Status" type="xs:string"/>
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="ProductCode" type="d3p1:Code11"/>
+	</objectType>
+	<objectType name="ProductionOrderOperations">
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="ProductionOrderUUID" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="OperationUUID" type="d3p1:UUID"/>
+		<property name="Description" type="xs:string"/>
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="StandardTimeInUOM" type="d3p1:Quantitiy15"/>
+		<property name="TimeUOMDescription" type="xs:string"/>
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="TimeUOMFactor" type="d3p1:Time"/>
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="Quantity" type="d3p1:Quantity"/>
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="NumberOfProductPerCycle" type="d3p1:Quantity5" nillable="true"/>
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="WorkCenterCode" type="d3p1:Code9" nillable="true"/>
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="OperationCode" type="d3p1:Code11"/>
+	</objectType>
+	<objectType name="Product">
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="UUID" type="d3p1:UUID"/>
+		<property name="Description" type="xs:string"/>
+		<property name="ProductGroupName" type="xs:string"/>
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="Code" type="d3p1:Code11"/>
+	</objectType>
+	<objectType name="ProductOperation">
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="ProductUUID" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="OperationUUID" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="NumberOfProductPerCycle" type="d3p1:Quantity5"/>
+	</objectType>
+	<objectType name="ProductOperationMachine">
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="ProductUUID" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="OperationUUID" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="MachineUUID" type="d3p1:UUID" nillable="true"/>
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="NetCycleTime" type="d3p1:Quantity"/>
+	</objectType>
+	<objectType name="BillOfMaterials">
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="UUID" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="ProductUUID" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="UnitOfAmount" type="d3p1:Quantity"/>
+	</objectType>
+	<objectType name="BOMMaterials">
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="BOMUUID" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="MaterialUUID" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="Quantity" type="d3p1:Quantity"/>
+	</objectType>
+	<objectType name="BOMOperations">
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="BOMUUID" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://www.1ci.com/ProManage" name="OperationUUID" type="d3p1:UUID"/>
+	</objectType>
+</package>

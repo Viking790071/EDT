@@ -1,0 +1,2490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4a749e8c-cb35-4bc4-9b31-fb5bc0eab474">
+  <producedTypes>
+    <objectType typeId="7148efcf-1c6c-4702-b1aa-47b84b4347e2" valueTypeId="f74a9993-09fa-46f7-b9f3-1fac4bf8ebc3"/>
+    <managerType typeId="0f005862-6a6f-49ca-96d3-f3965a220fcd" valueTypeId="1090945d-2022-46fb-a559-471df72dd1b6"/>
+  </producedTypes>
+  <name>InstallUpdates</name>
+  <synonym>
+    <key>en</key>
+    <value>Search and install updates</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Поиск и установка обновлений</value>
+  </synonym>
+  <synonym>
+    <key>pl</key>
+    <value>Wyszukaj i zainstaluj aktualizacje</value>
+  </synonym>
+  <synonym>
+    <key>es_ES</key>
+    <value>Buscar e instalar actualizaciones</value>
+  </synonym>
+  <synonym>
+    <key>es_CO</key>
+    <value>Buscar e instalar actualizaciones</value>
+  </synonym>
+  <synonym>
+    <key>tr</key>
+    <value>Güncelleme ara ve kur</value>
+  </synonym>
+  <synonym>
+    <key>it</key>
+    <value>Ricercare e installare gli aggiornamenti</value>
+  </synonym>
+  <synonym>
+    <key>de</key>
+    <value>Suchen und Installieren von Aktualisierung</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.InstallUpdates.Form.Form</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>en</lang>
+    </pages>
+  </help>
+  <attributes uuid="da4a0c05-2285-434b-b7f8-83b2a0d7f23d">
+    <name>EmailAddress</name>
+    <synonym>
+      <key>en</key>
+      <value>Email address</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес почты</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Adres pocztowy</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Correo electrónico</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Correo electrónico</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>E-posta adresi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Indirizzo email</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>E-Mail-Addresse</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8afa9a0e-04c1-4cac-82bb-6767cc0594d9">
+    <name>RestoreInfobase</name>
+    <synonym>
+      <key>en</key>
+      <value>Restore Infobase</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Восстанавливать информационную базу</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Ponawiać informacyjną bazę</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Restablecer la Infobase</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Restablecer la Infobase</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Infobase'i geri yükle</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Ripristina il database</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Wiederherstellen Infobase</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ad283b80-82f5-41b1-aeb9-a6f03fbfb16f">
+    <name>SendReportToEMail</name>
+    <synonym>
+      <key>en</key>
+      <value>Send report by email</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Отправить отчет по электронной почте</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Wyślij sprawozdanie pocztą e-mail</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Enviar informe por correo electrónico</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Enviar informe por correo electrónico</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Raporu e-posta ile gönder</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Inviare report tramite posta elettronica</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Bericht über E- Mail senden</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5d4cefac-5dc4-4d73-8b4b-900a8464fbb2">
+    <name>UpdateDateTime</name>
+    <synonym>
+      <key>en</key>
+      <value>Update Date Time</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Дата время обновления</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Data czas aktualizacji</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Actualizar Fecha Hora</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Actualizar Fecha Hora</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Tarih Zamanını Güncelle</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Data orario aggiornamento</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Aktualisieren Datum Uhrzeit</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="84796b00-79db-42ba-94d0-5bf543e09cd6">
+    <name>SaveUpdatesServerPassword</name>
+    <synonym>
+      <key>en</key>
+      <value>Remember update server password</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Запоминать пароль сервера обновлений</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Zapamiętać parol serwera odnów</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Recordar actualización de la contraseña del servidor</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Recordar actualización de la contraseña del servidor</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Sunucu şifresi güncellemeyi hatırla</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Ricordare la password del server di aggiornamento</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Merken Sie sich das Passwort des Update-Servers</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="948b10b3-0d7c-4dca-8816-75eb86e7881b">
+    <name>InfobaseBackupDirectoryName</name>
+    <synonym>
+      <key>en</key>
+      <value>Name of IB backup directory</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Имя каталога резервной копии ИБ</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Imię katalogu rezerwowej kopii bazy informacyjnej</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Nombre del directorio de la copia de respaldo de la IB</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Nombre del directorio de la copia de respaldo de la IB</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Infobase yedekleme dizininin adı</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Nome della directory di backup IB</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Name des IB-Sicherungsverzeichnisses</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="eb7c1dd1-13e5-4b14-ba6d-049ca41d894c">
+    <name>UpdateFileName</name>
+    <synonym>
+      <key>en</key>
+      <value>Update File Name</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла обновления</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Imię pliku aktualizacji</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Actualizar el Nombre del Archivo</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Actualizar el Nombre del Archivo</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Dosya İsmini Güncelle</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Nome del file dell'aggiornamento</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Aktualisieren Dateiname</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="840dc727-288a-4bf2-8b1a-47629d28229c">
+    <name>UseScheduleForUpdateCheck</name>
+    <synonym>
+      <key>en</key>
+      <value>Use schedule to check for update</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать расписание для проверки обновления</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Używaj grafiku dla sprawdzenia aktualizacji</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Utilizar el horario para control para la actualización</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Utilizar el horario para control para la actualización</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Güncelleme kontrol takvimini kullan</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Utilizzare la pianificazione per controllare aggiornamento</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Den Zeitplan verwenden, um nach Aktualisierungen zu suchen</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="314ac8ca-8845-40c2-b844-91beb05fb601">
+    <name>UpdateSource</name>
+    <synonym>
+      <key>en</key>
+      <value>Update Source</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Источник обновления</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Źródło aktualizaji</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Actualizar la Fuente</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Actualizar la Fuente</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Güncelleme Kaynağı</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Fonte degli aggiornamenti</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Aktualisieren Quelle</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3de3948d-40ff-4e0d-8445-9bf49c916161">
+    <name>SchedulerTaskCode</name>
+    <synonym>
+      <key>en</key>
+      <value>Task scheduler code</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Код задачи планировщика</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Kod zadania planisty</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Código del programador de tareas</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Código del programador de tareas</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Planlama kodu görevi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Codice programmatore dell'incarico</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Aufgabenplaner Code</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="37ae1946-9436-47ef-8b8c-17ed0a24971c">
+    <name>UpdateServerUserCode</name>
+    <synonym>
+      <key>en</key>
+      <value>Code of update server user</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Код пользователя сервера обновлений</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Kod użytkownika serwera odnów</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Código de la actualización del usuario del servidor</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Código de la actualización del usuario del servidor</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Sunucu kullanıcı güncelleme kodu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Codice di utente del server di aggiornamento</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Server-Benutzercode aktualisieren</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d844d861-fbe9-4391-89e3-00e505b33b33">
+    <name>NeedUpdateFile</name>
+    <synonym>
+      <key>en</key>
+      <value>Update file is required</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Нужен файл обновления</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Jest potrzebny plik aktualizacji</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Archivo de actualización se requiere</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Archivo de actualización se requiere</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Güncelleme dosyası gerekli</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>E' necessario un file di aggiornamento</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Dateiaktualisierung ist erfordelich</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c0688817-fd73-4ead-b9dd-ec966780a2c2">
+    <name>UpdatesServerPassword</name>
+    <synonym>
+      <key>en</key>
+      <value>Update Server Password</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль сервера обновлений</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Hasło serwera aktualizacji</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Actualizar la Contraseña del Servidor</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Actualizar la Contraseña del Servidor</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Sunucu Kullanıcı Parolası</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Aggiornamento password del server</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Aktualisieren Server Password</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b1fbfbfe-766f-4018-9491-507748193808">
+    <name>SecondStart</name>
+    <synonym>
+      <key>en</key>
+      <value>Rerun</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Повторный запуск</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Uruchom ponownie</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Volver a lanzar</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Volver a lanzar</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Yeniden çalıştır</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Riavvia</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Wiederholen</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e55dfadb-8e12-4808-ad90-e891a4644548">
+    <name>CheckUpdateExistsOnStart</name>
+    <synonym>
+      <key>en</key>
+      <value>Check for update on startup</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Проверять наличие обновления при запуске</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Sprawdzać obecność odnowy przy rozruchu</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Revisar la actualización al iniciar</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Revisar la actualización al iniciar</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Başlangıçta güncellemeleri kontrol et</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Controlla aggiornamenti all'avvio</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Beim Start nach Aktualisierung überprüfen</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a792b3dc-ac80-492b-bd94-83eb0438ba9f">
+    <name>ScheduleOfUpdateExistsCheck</name>
+    <synonym>
+      <key>en</key>
+      <value>Update check schedule</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Расписание проверки обновлений</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Harmonogram aktualizacji</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Horario de control de la actualización</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Horario de control de la actualización</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Kontrol takvimini güncelle</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Pianificazione del controllo degli aggiornamenti</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Prüfzeitplan aktualisieren</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="73a093ea-1927-483b-b6f5-8f0cbd253753">
+    <name>UpdateMode</name>
+    <synonym>
+      <key>en</key>
+      <value>Update Mode</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Режим обновления</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Tryb aktualizacji</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Actualizar el Modo</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Actualizar el Modo</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Güncelleme Modu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Modalità di aggiornamento</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Modus aktualisieren</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="345f04c0-0274-4e79-b523-f1fa3cf0d92a">
+    <name>UpdateResult</name>
+    <synonym>
+      <key>en</key>
+      <value>Update Result</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Результат обновления</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Wyniki aktualizacji</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Actualizar el Resultado</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Actualizar el Resultado</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Güncelleme Sonucu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Risultato aggiornamento</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Ergebnis aktualisieren</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f3a14787-de1b-4b65-8cb1-bc33a785821c">
+    <name>CreateBackup</name>
+    <synonym>
+      <key>en</key>
+      <value>Back up</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнить резервное копирование</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Dodać kopię zapasową.</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Crear una copia de respaldo</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Crear una copia de respaldo</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Yedekleyin</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Eseguire il backup</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Sichern</value>
+    </synonym>
+    <comment>0 - don't create; 1 - temporary; 2 - in the specified directory</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b9ba3ce3-9059-4135-9d31-725f01907431">
+    <name>TechnicalErrorInfo</name>
+    <synonym>
+      <key>en</key>
+      <value>Technical information on the error</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Техническая информация об ошибке</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Techniczna informacja o błędzie</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Información técnica sobre el error</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Información técnica sobre el error</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Hatanın teknik bilgisi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Le informazioni tecniche sull'errore</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Technische Informationen zum Fehler</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="4d2b3767-7c96-44a6-bb1b-ab74b103b90e">
+    <producedTypes>
+      <objectType typeId="bb7bfc5e-bbbb-49ea-9399-f01bcaa35039" valueTypeId="4236c254-5e7c-4ef6-ad6b-b02843a4a2ec"/>
+      <rowType typeId="75e01756-d874-4b32-84ea-5ac8e4a8cc90" valueTypeId="f6d5fea7-0e8d-4887-b24b-3ab8883f952c"/>
+    </producedTypes>
+    <name>AvailableUpdates</name>
+    <synonym>
+      <key>en</key>
+      <value>Available Updates</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Доступные обновления</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Dostępne aktualizacje</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Actualizaciones Disponibles</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Actualizaciones Disponibles</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Mevcut Güncellemeler</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Aggiornamenti disponibili</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Verfügbare Updates</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="fc9fc58f-c888-41f0-9f57-70748b21706e">
+      <name>Configuration</name>
+      <synonym>
+        <key>en</key>
+        <value>Configuration</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Конфигурация</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Konfiguracja</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Configuración</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Configuración</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Yapılandırma</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Configurazione</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Konfiguration</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Configuration name</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Название конфигурации</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Nazwa konfiguracji</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Nombre de configuración</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Nombre de configuración</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Yapılandırma adı</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Nome configurazione</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Konfigurationsname</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="fc761833-aa85-4c6d-a36c-d1ed060e3bb1">
+      <name>Vendor</name>
+      <synonym>
+        <key>en</key>
+        <value>Vendor</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Поставщик</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Dostawca</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Vendedor</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Vendedor</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Sağlayıcı</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Fornitore</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Verkäufer</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Update supplier</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Поставщик обновления</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Zaktualizuj dostawcę</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Actualizar el proveedor</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Actualizar el proveedor</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Tedarikçiyi güncelle</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Aggiornamento fornitore</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Lieferant aktualisieren</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="f0ba2ff2-b353-4f84-8e45-23e47ee6c1b6">
+      <name>Version</name>
+      <synonym>
+        <key>en</key>
+        <value>Version</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Версия</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Wersja</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Versión</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Versión</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Sürüm</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Versione</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Version</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Configuration version number</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Номер версии конфигурации</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Numer wersji konfiguracji</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Número de la versión de la configuración</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Número de la versión de la configuración</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Yapılandırma sürüm numarası</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Numero della versione configurazione</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Konfigurationsversionsnummer</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="bb8bade2-5c1b-49a6-b66f-79a3ebff86f7">
+      <name>Version1Digit</name>
+      <synonym>
+        <key>en</key>
+        <value>Version 1st digit</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Версия 1-й разряд</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Wersja stopień 1</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>1o dígito de la versión</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>1o dígito de la versión</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Sürüm 1. hane</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Versione 1a cifra</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Version 1. Ziffer</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>First digit of configuration version</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Первый разряд версии конфигурации</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Pierwsza cyfra wersji konfiguracji</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Primero dígito de la versión de la configuración</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Primero dígito de la versión de la configuración</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Yapılandırma sürümünün ilk hanesi</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Prima cifra della versione di configurazione</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Erste Ziffer der Konfigurationsversion</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="33596560-3d45-4d3e-b6ec-1c22162110ad">
+      <name>Version2Digit</name>
+      <synonym>
+        <key>en</key>
+        <value>Version 2nd digit</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Версия 2-й разряд</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Wersja stopień 2</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>2o dígito de la versión</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>2o dígito de la versión</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Sürüm 2. hane</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Versione 2a cifra</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Version 2. Ziffer</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Second digit of configuration version</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Второй разряд версии конфигурации</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Druga cyfra wersji konfiguracji</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Segundo dígito de la versión de la configuración</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Segundo dígito de la versión de la configuración</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Yapılandırma sürümünün ikinci hanesi</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Seconda cifra della versione di configurazione</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Zweite Ziffer der Konfigurationsversion</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d3e82a06-daae-4f4d-b3f8-45a406e31664">
+      <name>Version3Digit</name>
+      <synonym>
+        <key>en</key>
+        <value>Version 3rd digit</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Версия 3-й разряд</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Wersja stopień 3</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>3 dígito de la versión</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>3 dígito de la versión</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Sürüm 3. hane</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Versione 3a cifra</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Version 3. Ziffer</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Third digit of the configuration version</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Третий разряд версии конфигурации</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Trzecia cyfra wersji konfiguracji</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Tercer dígito de la versión de la configuración</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Tercer dígito de la versión de la configuración</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Yapılandırma sürümünün üçüncü hanesi</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Terza cifra della versione di configurazione</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Dritte Ziffer der Konfigurationsversion</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="af76c3c9-d8dc-4156-9e10-80ee02fcf4fe">
+      <name>Version4Digit</name>
+      <synonym>
+        <key>en</key>
+        <value>Version 4th digit</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Версия 4-й разряд</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Wersja stopień 4</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>4o dígito de la versión</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>4o dígito de la versión</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Sürüm 4. hane</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Versione 4a cifra</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Version 4. Ziffer</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Fourth configuration version category</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Четвертый разряд версии конфигурации</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Czwarta cyfra wersji konfiguracji</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Cuarto dígito de la versión de la configuración</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Cuarto dígito de la versión de la configuración</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Yapılandırma sürümünün dördüncü hanesi</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Quarta cifra della versione di configurazione</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Vierte Konfigurationsversionskategorie</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ac6a184d-1247-4b54-a023-f0d16daa5fe9">
+      <name>VersionForUpdate</name>
+      <synonym>
+        <key>en</key>
+        <value>Version for Update</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Версия для обновления</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Wersja dla aktualizacji</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Versión para Actualizar</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Versión para Actualizar</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Güncelleme Sürümü</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Versione per l'aggiornamento</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Version für Aktualisierung</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Version available for update</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Доступная для обновления версия</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Wersja dostępna do aktualizacji</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Versión disponible para actualizar</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Versión disponible para actualizar</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Sürümün güncellemesi mevcut</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Versione disponibile per l'aggiornamento</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Version für Aktualisierung verfügbar</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="f9af5fe6-0b4f-4d48-92a4-1f2a29972155">
+      <name>PathToUpdateFile</name>
+      <synonym>
+        <key>en</key>
+        <value>Path to the update file</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Путь к файлу обновления</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Droga do pliku aktualizacji</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Ruta para el archivo de actualización</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Ruta para el archivo de actualización</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Dosya güncelleme yolu</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Percorso per il file di aggiornamento</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Pfad zur Aktualisierungsdatei</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Update file location</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Расположение файла обновления</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Lokalizacja pliku aktualizacji</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Actualizar la ubicación de archivo</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Actualizar la ubicación de archivo</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Dosya yerini güncelle</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Posizione del file di aggiornamento</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Dateispeicherort aktualisieren</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="3ca1682d-5ff5-4b2b-96c2-54d2dd5297a9">
+      <name>UpdateFile</name>
+      <synonym>
+        <key>en</key>
+        <value>Update File</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Файл обновления</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Plik aktualizacji</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Actualizar el Archivo</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Actualizar el Archivo</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Dosyayı güncelle</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Aggiornamento file</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Aktualisieren Datei</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Update File Name</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Имя файла обновления</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Imię pliku aktualizacji</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Actualizar el Nombre del Archivo</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Actualizar el Nombre del Archivo</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Dosya İsmini Güncelle</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Nome del file dell'aggiornamento</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Aktualisieren Dateiname</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="a687d346-73cf-4aea-a4d0-f29824f0f6f1">
+      <name>UpdateFileSize</name>
+      <synonym>
+        <key>en</key>
+        <value>Update File Size</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Размер файла обновления</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Rozmiar pliku aktualizacji</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Actualizar el Tamaño del Archivo</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Actualizar el Tamaño del Archivo</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Dosya Boyutunu Güncelle</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Dimensioni file di aggiornamento</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Update Dateigröße</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>File size for update</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Размер файла для обновления</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Rozmiar pliku do aktualizacji</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Tamaño del archivo para actualizar</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Tamaño del archivo para actualizar</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Güncelleme dosya boyutu</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Dimensione del file per l'aggiornamento</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Dateigröße für Aktualisierung</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="f51fda72-56d9-4b45-a775-a0e1dfbf3a27">
+      <name>PathToLocalFile</name>
+      <synonym>
+        <key>en</key>
+        <value>Path to Local File</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Путь к локальному файлу</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Ścieżka do lokalnego plika</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Ruta para el Archivo Local</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Ruta para el Archivo Local</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Yerel Dosya Yolu</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Percorso per il file locale</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Pfad zur Lokalen Datei</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Path to the local file on hard drive</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Путь к локальному файлу на диске</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Ścieżka do lokalnego pliku na twardym dysku</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Ruta para el archivo local en el disco duro</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Ruta para el archivo local en el disco duro</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Sabit sürücüdeki yerel dosya yolu</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Percorso al file locale sul disco rigido</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Pfad zur lokalen Datei auf der Festplatte</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="8bf73614-81a4-4702-88b9-3c6f2594d204">
+      <name>PathToLocalUpdateFile</name>
+      <synonym>
+        <key>en</key>
+        <value>Path to the update local file</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Путь к локальному файлу обновления</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Droga do lokalnego plika odnowy</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Ruta pata el archivo local de actualización</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Ruta pata el archivo local de actualización</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Yerel dosya güncelleme yolu</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Percorso al file locale di aggiornamento</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Pfad zur lokalen Dateiaktualisierung</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Path to the update local file on hard drive</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Путь к локальному файлу обновления на диске</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Ścieżka do lokalnego pliku aktualizacji na twardym dysku</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Ruta para el archivo local de actualización en el disco duro</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Ruta para el archivo local de actualización en el disco duro</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Sabit sürücüdeki yerel dosya güncelleme yolu</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Percorso al file locale di aggiornamento su disco rigido</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Pfad zur lokalen Dateiaktualisierung</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="b8d4410b-f626-41b8-87c8-67102256bae2">
+      <name>LocalRelativeDirectory</name>
+      <synonym>
+        <key>en</key>
+        <value>Local Relative Directory</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Локальный относительный каталог</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Lokalny względny katalog</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Directorio Relativo Local</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Directorio Relativo Local</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Yerel İlişkili Dizin</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Directory relativa locale</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Lokale Relative Verzeichnis</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Local relative directory on the disk</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Локальный относительный каталог на диске</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Lokalny katalog względny na dysku</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Directorio relativo local en el disco</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Directorio relativo local en el disco</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Sürücüdeki yerel ilişkili dizin</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Directory relativa locale sul disco</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Lokales relatives Verzeichnis auf der Laufwerk</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="484eeb5f-12af-4139-a081-4dcac067a712">
+      <name>ITSDiskNumber</name>
+      <synonym>
+        <key>en</key>
+        <value>ITS disk number</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Номер диска ИТС</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Numer płyty ITC</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Número del disco ITS</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Número del disco ITS</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>ITS sürücü numarası</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Numero del disco ITS</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>ITS Laufwerknummer</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>255</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Number of ITS disk with update</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Номер диска ИТС с обновлением</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Numer płyty Informacyjno-technicznego wsparcia z aktualizacja</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Número del disco ITS con la actualización</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Número del disco ITS con la actualización</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Güncellemesi olan ITS sürücü numarası</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Numero del disco ITS con l'aggiornamento</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Anzahl der ITS-Laufwerke mit Update</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="44d8556f-5abf-4b8a-bbb1-637642e0ab4e">
+      <name>PlatformVersion</name>
+      <synonym>
+        <key>en</key>
+        <value>Platform version</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Версия платформы</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Wersja platformy</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Versión de plataforma</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Versión de plataforma</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Platform sürümü</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Versione piattaforma</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Plattformversion</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Min necessary platform version</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Минимально необходимая версия платформы</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Minimalna wymagana wersja platformy</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Versión mínima necesaria de la plataforma</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Versión mínima necesaria de la plataforma</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Minimum gerekli platform sürümü</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Versione minima necessaria della piattaforma</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Min erforderliche Plattformversion</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <forms uuid="ec61075e-fbcb-494a-b790-81548a212d2b">
+    <name>Form</name>
+    <synonym>
+      <key>en</key>
+      <value>Form</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Formularz</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Formulario</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Formulario</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Form</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Modulo</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Formular</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2f3bdc3c-4c5d-4fcb-85bb-932fe1747d98">
+    <name>ScheduleSetup</name>
+    <synonym>
+      <key>en</key>
+      <value>Configure schedule</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка расписания</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Ustawienia harmonogramu</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Configurar el horario</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Configurar el horario</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Takvimi yapılandır</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Configura pianificazione</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Zeitplan konfigurieren</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>en</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0c444045-302b-4dbd-a9a3-81fd40004948">
+    <name>BackupSetup</name>
+    <synonym>
+      <key>en</key>
+      <value>Backup settings</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка резервной копии</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Konfuguracja rezerwowej kopii</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Configuraciones de la copia de respaldo</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Configuraciones de la copia de respaldo</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Yedekleme ayarları</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Impostazioni di backup</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Backup Einstellungen</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>en</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="16099d54-e84f-47c5-aaf3-f8ced3cba5e0">
+    <name>Browser</name>
+    <synonym>
+      <key>en</key>
+      <value>Browser</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Обозреватель</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Sprawozdawca</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Navegador</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Navegador</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Tarayıcı</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Browser</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Browser</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="95880d5f-cc43-4735-a0fd-45f74ec36187">
+    <name>BackupSettings</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка резервной копии</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Backup settings</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Konfuguracja rezerwowej kopii</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Configuraciones de la copia de respaldo</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Configuraciones de la copia de respaldo</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Yedekleme ayarları</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Impostazioni di backup</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Backup Einstellungen</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="ecb65452-baa2-4d2a-9879-b210efeda201">
+    <name>TemplateOfConfigurationUpdateFile</name>
+    <synonym>
+      <key>en</key>
+      <value>Template of the configuration update file</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Template of the configuration update file</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Template of the configuration update file</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Template of the configuration update file</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Template of the configuration update file</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Template of the configuration update file</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Template of the configuration update file</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Template of the configuration update file</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="0b480554-991e-45b1-ae1d-23fb5100d2e6">
+    <name>AdditFileOfUpdateOfConfiguration</name>
+    <synonym>
+      <key>en</key>
+      <value>Additional file for configuration update</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Additional file for configuration update</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Additional file for configuration update</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Additional file for configuration update</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Additional file for configuration update</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Additional file for configuration update</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Additional file for configuration update</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Additional file for configuration update</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="b75c36a3-a729-42e6-a269-bcb94abfb825">
+    <name>SplashOfConfigurationUpdate</name>
+    <synonym>
+      <key>en</key>
+      <value>Configuration update splash screen</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Configuration update splash screen</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Configuration update splash screen</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Configuration update splash screen</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Configuration update splash screen</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Configuration update splash screen</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Configuration update splash screen</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Configuration update splash screen</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="79faecbb-531f-4cc6-b8fb-15094f09e6cb">
+    <name>OfflineConfigurationUpdate</name>
+    <synonym>
+      <key>en</key>
+      <value>Non-interactive configuration update</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Non-interactive configuration update</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Non-interactive configuration update</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Non-interactive configuration update</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Non-interactive configuration update</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Non-interactive configuration update</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Non-interactive configuration update</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Non-interactive configuration update</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:DataProcessor>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rights xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://v8.1c.ru/8.2/roles" xsi:type="Rights">
+	<setForNewObjects>false</setForNewObjects>
+	<setForAttributesByDefault>true</setForAttributesByDefault>
+	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
+	<object>
+		<name>Catalog.InventoryOwnership.Attribute.Contract</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonCommand.Remind</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.UserReminders</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#If &amp;RecordLevelAccessRestrictionIsUniversal #Then
+#ForRegister("MetadataObjectIDs.InformationRegisterUserReminders", "User", "", "", "", "")
+#Else
+WHERE User = &amp;CurrentUser
+#EndIf</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#If &amp;RecordLevelAccessRestrictionIsUniversal #Then
+#ForRegister("MetadataObjectIDs.InformationRegisterUserReminders", "User", "", "", "", "")
+#Else
+WHERE User = &amp;CurrentUser
+#EndIf</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>TotalsControl</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.InventoryOwnership.Attribute.Counterparty</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Configuration.Drive</name>
+		<right>
+			<name>MainWindowModeNormal</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeEmbeddedWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeFullscreenWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeKiosk</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>AnalyticsSystemClient</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.UserReminders.Command.MyReminders</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<restrictionTemplate>
+		<name>ForRegister(Register, Field1, Field2, Field3, Field4, Field5)</name>
+		<condition>// ForRegister(Register, Field1, Field2 = "", Field3 = "", Field4 = "", Field5 = "")
+// The template is used to restrict register record groups.
+
+// Parameters:
+//  Register - a name of a predefined item of the "Metadata object IDs"
+//            or "Extension object IDs" catalog in the following format: a catalog name with a dot and a full table name
+//            without a dot. For example, MetadataObjectIDs.AccumulationRegisterWarehouseBalance.
+//          - a name of the separate key register in format KeysOfAccessToRegister&lt;CutName&gt;,
+//            For example, KeysOfAccessToRegisterWarehouseBalance.
+//  Field1 - a name of the first field (dimension, resource, attribute) that will be connected with the Field1 field
+//            of the KeysOfAccessToRegister* information register
+//  Field2 - similar to the previous parameter if it is used to restrict access to the register.
+//  ...
+//  Field5 - similar to the previous parameter if it is used to restrict access to the register.
+
+#If &amp;ListsWithReadRestrictionDisabled = "Undefined" #Then
+  // Infobase is locked for update.
+  WHERE FALSE
+
+#ElseIf Not StrContains(&amp;AccessRestrictionTemplatesVersions, ",ForRegister3,") #Then
+         AND Not StrContains(&amp;AccessRestrictionTemplatesVersions, ",SessionRestartRequiredForRegister3,") #Then
+    Error: The template needs to be updated to the up-to-date version supplied in role EditAccessGroupsMembers due to: Obsolete version 1 of the access restriction template ForRegister is used. Object: #CurrentTableName, Right: #CurrentAccessRightName.
+
+#ElseIf &amp;ListsWithReadRestrictionDisabled = "All" #Then
+  // All access kinds are disabled for the user or
+  // restriction at the record level is not used.
+  WHERE TRUE
+
+#ElseIf StrContains(&amp;ListsWithReadRestrictionDisabled, #CurrentTableName) #Then
+  // Restriction for the current table is disabled for the user.
+  WHERE TRUE
+
+#ElseIf StrContains(&amp;AccessRestrictionTemplatesVersions, ",SessionRestartRequiredForRegister3,") #Then
+    Error. Application version is updated, restart the session. Object: #CurrentTableName, Right: #CurrentAccessRightName.
+
+#ElseIf #CurrentAccessRightName &lt;&gt; "Read" #Then
+  // Checking rights Insert, Update, and Delete BeforeWrite / OnWrite.
+  WHERE TRUE
+
+#ElseIf Not StrContains(&amp;ListsWithUsersAccessKeysRestriction, #CurrentTableName + ":[#Register]:#Field1:#Field2:#Field3:#Field4:#Field5;")
+         AND Not StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction,  #CurrentTableName + ":[#Register]:#Field1:#Field2:#Field3:#Field4:#Field5;") #Then
+
+  Error: Update access restriction due to: Cannot define access restriction option in session parameters for the ForRegister template with parameter values #Register, Field1, Field2, "Field3", Field4, and Field5. Object: #CurrentTableName, Right: #CurrentAccessRightName.
+#Else
+
+CurrentTable WHERE TRUE IN
+ (
+  SELECT TOP 1 TRUE
+#If Not StrContains("#Register", "AccessKeysToRegister") #Then
+  FROM InformationRegister.AccessKeysForRegisters AS AccessKeysForRegisters
+#Else
+  FROM InformationRegister.#Register AS AccessKeysForRegisters
+#EndIf
+#If Not StrContains(&amp;ListsWithUsersAccessKeysRestriction, #CurrentTableName + ":[#Register]:#Field1:#Field2:#Field3:#Field4:#Field5;") #Then
+  INNER JOIN InformationRegister.AccessGroupSetsAccessKeys AS AllowedAccessKeys
+  
+#ElseIf &amp;CurrentExternalUser = Value(Catalog.ExternalUsers.EmptyRef) #Then
+  INNER JOIN InformationRegister.UsersAccessKeys AS AllowedAccessKeys
+#Else
+  INNER JOIN InformationRegister.ExternalUsersAccessKeys AS AllowedAccessKeys
+#EndIf
+  ON
+  #If Not StrContains("#Register", "AccessKeysToRegister") #Then
+      AccessKeysForRegisters.Register = Value(Catalog.#Register)
+  #Else
+      TRUE
+  #EndIf
+  
+  #If &amp;CurrentExternalUser = Value(Catalog.ExternalUsers.EmptyRef) #Then
+    AND AccessKeysForRegisters.ForExternalUsers = FALSE
+  #Else
+    AND AccessKeysForRegisters.ForExternalUsers = TRUE
+  #EndIf
+  
+  #If StrContains(&amp;ListsWithRestrictionByFields, #CurrentTableName + ":Field1=Field1;") #Then
+    AND AccessKeysForRegisters.Field1 = CurrentTable.#Field1
+  #ElseIf StrContains(&amp;ListsWithRestrictionByFields, #CurrentTableName + ":Field1=Field2;") #Then
+    AND AccessKeysForRegisters.Field1 = CurrentTable.#Field2
+  #ElseIf StrContains(&amp;ListsWithRestrictionByFields, #CurrentTableName + ":Field1=Field3;") #Then
+    AND AccessKeysForRegisters.Field1 = CurrentTable.#Field3
+  #ElseIf StrContains(&amp;ListsWithRestrictionByFields, #CurrentTableName + ":Field1=Field4;") #Then
+    AND AccessKeysForRegisters.Field1 = CurrentTable.#Field4
+  #ElseIf StrContains(&amp;ListsWithRestrictionByFields, #CurrentTableName + ":Field1=Field5;") #Then
+    AND AccessKeysForRegisters.Field1 = CurrentTable.#Field5
+  #EndIf
+  
+  #If StrContains(&amp;ListsWithRestrictionByFields, #CurrentTableName + ":Field2=Field2;") #Then
+    AND AccessKeysForRegisters.Field2 = CurrentTable.#Field2
+  #ElseIf StrContains(&amp;ListsWithRestrictionByFields, #CurrentTableName + ":Field2=Field3;") #Then
+    AND AccessKeysForRegisters.Field2 = CurrentTable.#Field3
+  #ElseIf StrContains(&amp;ListsWithRestrictionByFields, #CurrentTableName + ":Field2=Field4;") #Then
+    AND AccessKeysForRegisters.Field2 = CurrentTable.#Field4
+  #ElseIf StrContains(&amp;ListsWithRestrictionByFields, #CurrentTableName + ":Field2=Field5;") #Then
+    AND AccessKeysForRegisters.Field2 = CurrentTable.#Field5
+  #ElseIf StrContains(&amp;ListsWithRestrictionByFields, #CurrentTableName + ":Field2=Null;") #Then
+    AND AccessKeysForRegisters.Field2 = Value(Enum.AdditionalAccessValues.Null)
+  #EndIf
+  
+  #If StrContains(&amp;ListsWithRestrictionByFields, #CurrentTableName + ":Field3=Field3;") #Then
+    AND AccessKeysForRegisters.Field3 = CurrentTable.#Field3
+  #ElseIf StrContains(&amp;ListsWithRestrictionByFields, #CurrentTableName + ":Field3=Field4;") #Then
+    AND AccessKeysForRegisters.Field3 = CurrentTable.#Field4
+  #ElseIf StrContains(&amp;ListsWithRestrictionByFields, #CurrentTableName + ":Field3=Field5;") #Then
+    AND AccessKeysForRegisters.Field3 = CurrentTable.#Field5
+  #ElseIf StrContains(&amp;ListsWithRestrictionByFields, #CurrentTableName + ":Field3=Null;") #Then
+    AND AccessKeysForRegisters.Field3 = Value(Enum.AdditionalAccessValues.Null)
+  #EndIf
+  
+  #If StrContains(&amp;ListsWithRestrictionByFields, #CurrentTableName + ":Field4=Field4;") #Then
+    AND AccessKeysForRegisters.Field4 = CurrentTable.#Field4
+  #ElseIf StrContains(&amp;ListsWithRestrictionByFields, #CurrentTableName + ":Field4=Field5;") #Then
+    AND AccessKeysForRegisters.Field4 = CurrentTable.#Field5
+  #ElseIf StrContains(&amp;ListsWithRestrictionByFields, #CurrentTableName + ":Field4=Null;") #Then
+    AND AccessKeysForRegisters.Field4 = Value(Enum.AdditionalAccessValues.Null)
+  #EndIf
+  
+  #If StrContains(&amp;ListsWithRestrictionByFields, #CurrentTableName + ":Field5=Field5;") #Then
+    AND AccessKeysForRegisters.Field5 = CurrentTable.#Field5
+  #ElseIf StrContains(&amp;ListsWithRestrictionByFields, #CurrentTableName + ":Field5=Null;") #Then
+    AND AccessKeysForRegisters.Field5 = Value(Enum.AdditionalAccessValues.Null)
+  #EndIf
+  
+  #If Not StrContains(&amp;ListsWithUsersAccessKeysRestriction, #CurrentTableName + ":[#Register]:#Field1:#Field2:#Field3:#Field4:#Field5;") #Then
+    AND AllowedAccessKeys.AccessKey = AccessKeysForRegisters.AccessKey
+    AND AllowedAccessKeys.AccessGroupsSet IN (&amp;AllowedAccessGroupsSet
+      #If StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction,  #CurrentTableName + ":[#Register]:#Field1:#Field2:#Field3:#Field4:#Field5;*+")
+        Or StrContains(&amp;ListsWithAccessGroupsAccessKeysRestriction,  #CurrentTableName + ":[#Register]:#Field1:#Field2:#Field3:#Field4:#Field5;*") #Then
+        , &amp;AllowedBlankAccessGroupsSet
+      #EndIf
+      )
+  #ElseIf &amp;CurrentExternalUser = Value(Catalog.ExternalUsers.EmptyRef) #Then
+    AND AllowedAccessKeys.AccessKey = AccessKeysForRegisters.AccessKey
+    AND AllowedAccessKeys.User IN (&amp;AllowedUser, &amp;AllowedAccessGroupsSet
+  #Else
+    AND AllowedAccessKeys.AccessKey = AccessKeysForRegisters.AccessKey
+    AND AllowedAccessKeys.ExternalUser IN (&amp;AllowedUser, &amp;AllowedAccessGroupsSet
+  #EndIf
+  #If StrContains(&amp;ListsWithUsersAccessKeysRestriction, #CurrentTableName + ":[#Register]:#Field1:#Field2:#Field3:#Field4:#Field5;") #Then
+      #If StrContains(&amp;ListsWithUsersAccessKeysRestriction, #CurrentTableName + ":[#Register]:#Field1:#Field2:#Field3:#Field4:#Field5;*+")
+        Or StrContains(&amp;ListsWithUsersAccessKeysRestriction, #CurrentTableName + ":[#Register]:#Field1:#Field2:#Field3:#Field4:#Field5;+") #Then
+        , &amp;AllowedUserGroupsSet
+      #EndIf
+      #If StrContains(&amp;ListsWithUsersAccessKeysRestriction, #CurrentTableName + ":[#Register]:#Field1:#Field2:#Field3:#Field4:#Field5;*+")
+        Or StrContains(&amp;ListsWithUsersAccessKeysRestriction, #CurrentTableName + ":[#Register]:#Field1:#Field2:#Field3:#Field4:#Field5;*") #Then
+        , &amp;AllowedBlankAccessGroupsSet
+      #EndIf
+      )
+  #EndIf
+ )
+
+#EndIf
+</condition>
+	</restrictionTemplate>
+</Rights>

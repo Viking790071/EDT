@@ -1,0 +1,2035 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <title>
+    <key>en</key>
+    <value>Payment</value>
+  </title>
+  <title>
+    <key>ru</key>
+    <value>Ввод фактического платежа</value>
+  </title>
+  <title>
+    <key>pl</key>
+    <value>Płatność</value>
+  </title>
+  <title>
+    <key>es_ES</key>
+    <value>Pago</value>
+  </title>
+  <title>
+    <key>es_CO</key>
+    <value>Pago</value>
+  </title>
+  <title>
+    <key>tr</key>
+    <value>Ödeme</value>
+  </title>
+  <title>
+    <key>it</key>
+    <value>Pagamento</value>
+  </title>
+  <title>
+    <key>de</key>
+    <value>Bezahlung</value>
+  </title>
+  <items xsi:type="form:FormField">
+    <name>DocumentAccruals</name>
+    <id>29</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>DocumentAccruals</segments>
+    </dataPath>
+    <titleLocation>None</titleLocation>
+    <extendedTooltip>
+      <name>DocumentAccrualsExtendedTooltip</name>
+      <id>31</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>DocumentAccrualsContextMenu</name>
+      <id>30</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>LabelField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:LabelFieldExtInfo">
+      <autoMaxHeight>true</autoMaxHeight>
+      <font xsi:type="core:FontRef">
+        <font>Style.LargeTextFont</font>
+      </font>
+    </extInfo>
+  </items>
+  <items xsi:type="form:Table">
+    <name>ContractsOfLoan</name>
+    <id>1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>ContractsOfLoan</segments>
+    </dataPath>
+    <titleLocation>None</titleLocation>
+    <excludedCommands>Add</excludedCommands>
+    <excludedCommands>CancelSearch</excludedCommands>
+    <excludedCommands>Change</excludedCommands>
+    <excludedCommands>Copy</excludedCommands>
+    <excludedCommands>CopyToClipboard</excludedCommands>
+    <excludedCommands>Delete</excludedCommands>
+    <excludedCommands>EndEdit</excludedCommands>
+    <excludedCommands>Find</excludedCommands>
+    <excludedCommands>MoveDown</excludedCommands>
+    <excludedCommands>MoveUp</excludedCommands>
+    <excludedCommands>OutputList</excludedCommands>
+    <excludedCommands>SelectAll</excludedCommands>
+    <excludedCommands>ShowMultipleSelection</excludedCommands>
+    <excludedCommands>ShowRowRearrangement</excludedCommands>
+    <excludedCommands>SortListAsc</excludedCommands>
+    <excludedCommands>SortListDesc</excludedCommands>
+    <items xsi:type="form:FormField">
+      <name>LoanContractsMark</name>
+      <id>26</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>ContractsOfLoan.Mark</segments>
+      </dataPath>
+      <titleLocation>None</titleLocation>
+      <extendedTooltip>
+        <name>LoanContractsMarkExtendedTooltip</name>
+        <id>28</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>LoanContractsMarkContextMenu</name>
+        <id>27</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>EnterOnInput</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>GroupCounterpartyAndEmployee</name>
+      <id>38</id>
+      <items xsi:type="form:FormField">
+        <name>LoanContractsCounterparty</name>
+        <id>32</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ContractsOfLoan.Lender</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>LoanContractsCounterpartyExtendedTooltip</name>
+          <id>34</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>LoanContractsCounterpartyContextMenu</name>
+          <id>33</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <readOnly>true</readOnly>
+        <editMode>EnterOnInput</editMode>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <width>20</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>LoanContractsEmployee</name>
+        <id>35</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ContractsOfLoan.Borrower</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>LoanContractsEmployeeExtendedTooltip</name>
+          <id>37</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>LoanContractsEmployeeContextMenu</name>
+          <id>36</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <readOnly>true</readOnly>
+        <editMode>EnterOnInput</editMode>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <width>20</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>en</key>
+        <value>Counterparty / employee</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Контрагент / сотрудник</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Kontrahent / pracownik</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Contraparte / empleado</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Contraparte / empleado</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Cari hesap / çalışan</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Controparte / dipendente</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Geschäftspartner/ Mitarbeiter</value>
+      </title>
+      <toolTip>
+        <key>en</key>
+        <value>Group counterparty and employee</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Группа контрагент и сотрудник</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Grupa kontrahent i pracownik</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Grupo contraparte y empleado</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Grupo contraparte y empleado</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Cari hesap ve çalışan grubu</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Gruppo controparti e dipendenti</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Geschäftspartner und Mitarbeiter gruppieren</value>
+      </toolTip>
+      <width>20</width>
+      <extendedTooltip>
+        <name>GroupCounterpartyAndEmployeeExtendedTooltip</name>
+        <id>39</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>ColumnGroup</type>
+      <extInfo xsi:type="form:ColumnGroupExtInfo">
+        <group>InCell</group>
+        <showTitle>true</showTitle>
+        <showInHeader>true</showInHeader>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>LoanContractsLoanContract</name>
+      <id>14</id>
+      <title>
+        <key>en</key>
+        <value>Loan contract</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Договор кредита (займа)</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Umowa pożyczkI</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Contrato de préstamo</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Contrato de préstamo</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Kredi sözleşmesi</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Contratto di prestito</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Darlehensvertrag</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>ContractsOfLoan.LoanContract</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>LoanContractsLoanContractExtendedTooltip</name>
+        <id>16</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>LoanContractsLoanContractContextMenu</name>
+        <id>15</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <readOnly>true</readOnly>
+      <editMode>EnterOnInput</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <width>45</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <dropListButton>false</dropListButton>
+        <choiceButton>true</choiceButton>
+        <choiceButtonRepresentation>ShowInInputField</choiceButtonRepresentation>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+        <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>LoanContractsSettlementCurrency</name>
+      <id>17</id>
+      <title>
+        <key>en</key>
+        <value>Currency</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Валюта</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Waluta</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Moneda</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Moneda</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Para birimi</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Valuta</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Währung</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>ContractsOfLoan.SettlementsCurrency</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>LoanContractsSettlementCurrencyExtendedTooltip</name>
+        <id>19</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>LoanContractsSettlementCurrencyContextMenu</name>
+        <id>18</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <readOnly>true</readOnly>
+      <editMode>EnterOnInput</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>LoanContractsInterest</name>
+      <id>20</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>ContractsOfLoan.Interest</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>LoanContractsInterestExtendedTooltip</name>
+        <id>22</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>LoanContractsInterestContextMenu</name>
+        <id>21</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <readOnly>true</readOnly>
+      <editMode>EnterOnInput</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>LoanContractsCommission</name>
+      <id>23</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>ContractsOfLoan.Commission</segments>
+      </dataPath>
+      <defaultItem>true</defaultItem>
+      <extendedTooltip>
+        <name>LoanContractsCommissionExtendedTooltip</name>
+        <id>25</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>LoanContractsCommissionContextMenu</name>
+        <id>24</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <readOnly>true</readOnly>
+      <editMode>EnterOnInput</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <autoCommandBar>
+      <name>ContractsOfLoanCommandBar</name>
+      <id>3</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <horizontalAlign>Left</horizontalAlign>
+      <autoFill>true</autoFill>
+    </autoCommandBar>
+    <searchStringAddition>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <name>ContractsOfLoanSearchString</name>
+      <id>5</id>
+      <extendedTooltip>
+        <name>ContractsOfLoanSearchStringExtendedTooltip</name>
+        <id>7</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ContractsOfLoanSearchStringContextMenu</name>
+        <id>6</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <source>ContractsOfLoanSearchString</source>
+      <extInfo xsi:type="form:SearchStringAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+      </extInfo>
+    </searchStringAddition>
+    <viewStatusAddition>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <name>ContractsOfLoanViewStatus</name>
+      <id>8</id>
+      <extendedTooltip>
+        <name>ContractsOfLoanViewStatusExtendedTooltip</name>
+        <id>10</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ContractsOfLoanViewStatusContextMenu</name>
+        <id>9</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>ViewStatusAddition</type>
+      <source>ContractsOfLoanViewStatus</source>
+      <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+      </extInfo>
+    </viewStatusAddition>
+    <searchControlAddition>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <name>ContractsOfLoanSearchControl</name>
+      <id>11</id>
+      <extendedTooltip>
+        <name>ContractsOfLoanSearchControlExtendedTooltip</name>
+        <id>13</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ContractsOfLoanSearchControlContextMenu</name>
+        <id>12</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>SearchControlAddition</type>
+      <source>ContractsOfLoanSearchControl</source>
+      <extInfo xsi:type="form:SearchControlAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+      </extInfo>
+    </searchControlAddition>
+    <extendedTooltip>
+      <name>ContractsOfLoanExtendedTooltip</name>
+      <id>4</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ContractsOfLoanContextMenu</name>
+      <id>2</id>
+      <items xsi:type="form:Button">
+        <name>LoanContractsHelp</name>
+        <id>54</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>LoanContractsHelpExtendedTooltip</name>
+          <id>55</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.StandardCommand.Help</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <items xsi:type="form:Button">
+        <name>LoanContractsChangeForm</name>
+        <id>52</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>LoanContractsChangeFormExtendedTooltip</name>
+          <id>53</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.StandardCommand.CustomizeForm</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <changeRowSet>true</changeRowSet>
+    <changeRowOrder>true</changeRowOrder>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <autoMaxRowsCount>true</autoMaxRowsCount>
+    <selectionMode>MultiRow</selectionMode>
+    <header>true</header>
+    <headerHeight>1</headerHeight>
+    <footerHeight>1</footerHeight>
+    <horizontalScrollBar>AutoUse</horizontalScrollBar>
+    <verticalScrollBar>AutoUse</verticalScrollBar>
+    <horizontalLines>true</horizontalLines>
+    <verticalLines>true</verticalLines>
+    <autoInsertNewRow>true</autoInsertNewRow>
+    <searchOnInput>Auto</searchOnInput>
+    <initialListView>Auto</initialListView>
+    <horizontalStretch>true</horizontalStretch>
+    <verticalStretch>true</verticalStretch>
+    <enableStartDrag>true</enableStartDrag>
+    <enableDrag>true</enableDrag>
+    <rowFilter xsi:type="core:UndefinedValue"/>
+  </items>
+  <commandBarLocation>Bottom</commandBarLocation>
+  <autoCommandBar>
+    <name>FormCommandBar</name>
+    <id>-1</id>
+    <items xsi:type="form:FormGroup">
+      <name>GroupCashExpenseButtons</name>
+      <id>44</id>
+      <items xsi:type="form:Button">
+        <name>EnterCashFundExpenseForm</name>
+        <id>40</id>
+        <title>
+          <key>en</key>
+          <value>Cash payment</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Расходный кассовый ордер</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Płatność gotówkowa</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Pago en efectivo</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Pago en efectivo</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Nakit ödeme</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Pagamento in contanti</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Barzahlung</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>FormEnterCashFundExpenseExtendedTooltip</name>
+          <id>41</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.Command.EnterCashFundExpense</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <items xsi:type="form:Button">
+        <name>FormEnterExpenseFromAccount</name>
+        <id>48</id>
+        <title>
+          <key>en</key>
+          <value>Bank payment</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Списание со счета</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Przelew wychodzący</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Pago bancario</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Pago bancario</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Banka ödemesi</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Bonifico bancario</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Überweisung</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>FormEnterExpenseFromAccountExtendedTooltip</name>
+          <id>49</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.Command.EnterExpenseFromAccount</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>en</key>
+        <value>Group cash expense buttons</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Группа кнопки расхода ДС</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Grupa wydatki gotówkowe przyciski</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Grupo botones de gastos de efectivo</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Grupo botones de gastos de efectivo</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Nakit harcama butonu grubu</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Gruppo pulsandi uscite di cassa</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Baraufwandstasten gruppieren</value>
+      </title>
+      <toolTip>
+        <key>en</key>
+        <value>Group cash expense buttons</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Группа кнопки расхода ДС</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Grupa wydatki gotówkowe przyciski</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Grupo botones de gastos de efectivo</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Grupo botones de gastos de efectivo</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Nakit harcama butonu grubu</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Gruppo pulsandi uscite di cassa</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Baraufwandstasten gruppieren</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>GroupCashExpenseButtonsExtendedTooltip</name>
+        <id>45</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <extInfo xsi:type="form:ButtonGroupExtInfo"/>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>GroupCashReceiptButtons</name>
+      <id>46</id>
+      <items xsi:type="form:Button">
+        <name>FormEnterReceiptToCashFund</name>
+        <id>42</id>
+        <title>
+          <key>en</key>
+          <value>Cash receipt</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Приходный кассовый ордер</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>KP - Dowód wpłaty</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Recibo de efectivo</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Recibo de efectivo</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Nakit tahsilat</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Entrata di cassa</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Zahlungseingang</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>FormEnterReceiptToCashFundExtendedTooltip</name>
+          <id>43</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.Command.EnterReceiptToCashFund</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <items xsi:type="form:Button">
+        <name>FormEnterReceiptToAccount</name>
+        <id>50</id>
+        <title>
+          <key>en</key>
+          <value>Bank receipt</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Поступление на счет</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Potwierdzenie zapłaty</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Recibo bancario</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Recibo bancario</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Banka tahsilatı</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Ricevuta bancaria</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Eingang</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>FormEnterReceiptToAccountExtendedTooltip</name>
+          <id>51</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.Command.EnterReceiptToAccount</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>en</key>
+        <value>Group cash receipt buttons</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Группа кнопки поступления ДС</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Grupa wpływy gotówkowe przyciski</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Grupo botones de recibo de efectivo</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Grupo botones de recibo de efectivo</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Nakit tahsilat fişinin butonlarını grupla</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Gruppo pulsanti entrata di cassa</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Zahlungseingangstasten gruppieren</value>
+      </title>
+      <toolTip>
+        <key>en</key>
+        <value>Group cash receipt buttons</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Группа кнопки поступления ДС</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Grupa wpływy gotówkowe przyciski</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Grupo botones de recibo de efectivo</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Grupo botones de recibo de efectivo</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Nakit tahsilat fişinin butonlarını grupla</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Gruppo pulsanti entrata di cassa</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Zahlungseingangstasten gruppieren</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>GroupButtonsCashReceiptsExtendedTooltip</name>
+        <id>47</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <extInfo xsi:type="form:ButtonGroupExtInfo"/>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Right</horizontalAlign>
+  </autoCommandBar>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>ContractsOfLoan</name>
+    <title>
+      <key>en</key>
+      <value>Credit and loan contracts</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Договоры кредита (займа)</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Umowy kredytowe i pożyczkowe</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Contratos del crédito y el préstamo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Contratos del crédito y el préstamo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Alacak ve kredi sözleşmeleri</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Contratti di prestiti e crediti</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Kredit- und Darlehensverträge</value>
+    </title>
+    <id>1</id>
+    <valueType>
+      <types>ValueTable</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <columns>
+      <name>LoanContract</name>
+      <title>
+        <key>en</key>
+        <value>Credit (loan) contract</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Договор кредита (займа)</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Umowa kredytowa (pożyczkowa)</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Contrato del crédito (préstamo)</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Contrato del crédito (préstamo)</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Kredi (borç) sözleşmesi</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Contratto di prestito / credito</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Kredit- (Darlehens-) Vertrag</value>
+      </title>
+      <id>1</id>
+      <valueType>
+        <types>DocumentRef.LoanContract</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>SettlementsCurrency</name>
+      <title>
+        <key>en</key>
+        <value>Loan currency</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Валюта займа</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Waluta rozliczeniowa</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Moneda de liquidación</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Moneda de liquidación</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Kredinin para birimi</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Valuta del prestito</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Darlehenswährung</value>
+      </title>
+      <id>2</id>
+      <valueType>
+        <types>CatalogRef.Currencies</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Interest</name>
+      <title>
+        <key>en</key>
+        <value>Interest</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>%</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Odsetki</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Interés</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Interés</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Faiz</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Importo %</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Zinssatz</value>
+      </title>
+      <id>3</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Commission</name>
+      <title>
+        <key>en</key>
+        <value>Commission</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Сумма комиссии</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Prowizja</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Comisión</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Comisión</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Komisyon</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Commissione</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Provision</value>
+      </title>
+      <id>4</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Mark</name>
+      <title>
+        <key>en</key>
+        <value>Mark</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Пометка</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Zaznaczenie</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Marca</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Marca</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>İşaretle</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Contrassegno</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Markierung</value>
+      </title>
+      <id>5</id>
+      <valueType>
+        <types>Boolean</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Borrower</name>
+      <title>
+        <key>en</key>
+        <value>Borrower</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Заемщик</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Pożyczkobiorca</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Prestatario</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Prestatario</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Borçlanan</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Mutuatario</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Darlehensnehmer</value>
+      </title>
+      <id>6</id>
+      <valueType>
+        <types>CatalogRef.Counterparties</types>
+        <types>CatalogRef.Employees</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Lender</name>
+      <title>
+        <key>en</key>
+        <value>Lender</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Заимодатель</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Pożyczkodawca</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Prestamista</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Prestador</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Borç veren</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Finanziatore</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Darlehensgeber</value>
+      </title>
+      <id>7</id>
+      <valueType>
+        <types>CatalogRef.Counterparties</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+  </attributes>
+  <attributes>
+    <name>DocumentAccruals</name>
+    <title>
+      <key>en</key>
+      <value>Document accruals</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Документ начисления</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Dokument naliczenia</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Acumulaciones del documento</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Acumulaciones del documento</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Belge tahakkukları</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Documento di competenza</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Dokument Rückstellungen</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>DocumentRef.LoanInterestCommissionAccruals</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>EnterCashFundExpense</name>
+    <title>
+      <key>en</key>
+      <value>Enter cash fund expense</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Ввести расход из кассы</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wprowadzić wydane środki</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Introducir los gastos de fondos de efectivo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Introducir los gastos de fondos de efectivo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Nakit fon harcamayı girin</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Inserire uscite dalla cassa</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Geben Sie den Barmittelaufwand ein</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>en</key>
+      <value>Enter cash fund expense</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Ввести расход из кассы</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Wprowadzić wydane środki</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Introducir los gastos de fondos de efectivo</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Introducir los gastos de fondos de efectivo</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Nakit fon harcamayı girin</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Inserire uscite dalla cassa</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Geben Sie den Barmittelaufwand ein</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>EnterCashFundExpense</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>EnterReceiptToCashFund</name>
+    <title>
+      <key>en</key>
+      <value>Enter receipt to cash fund</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Ввести поступление в кассу</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wprowadzić wpływ środków</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Introducir el recibo a los fondos de efectivo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Introducir el recibo a los fondos de efectivo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Nakit fonuna fiş girin</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Inserite entrate nella cassa</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Geben Sie den Beleg in den Barmitteln ein</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>en</key>
+      <value>Enter receipt to cash fund</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Ввести поступление в кассу</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Wprowadzić wpływ środków</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Introducir el recibo a los fondos de efectivo</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Introducir el recibo a los fondos de efectivo</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Nakit fonuna fiş girin</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Inserite entrate nella cassa</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Geben Sie den Beleg in den Barmitteln ein</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>EnterCashFundReceipt</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>EnterExpenseFromAccount</name>
+    <title>
+      <key>en</key>
+      <value>Enter expense from account</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Ввести расход со счета</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wprowadzić wydanie z konta</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Introducir los gastos desde la cuenta</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Introducir los gastos desde la cuenta</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Hesaptan harcama girin</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Inserite uscite dal conto corrente</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Kosten vom Konto eingeben</value>
+    </title>
+    <id>3</id>
+    <toolTip>
+      <key>en</key>
+      <value>Enter expense from account</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Ввести расход со счета</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Wprowadzić wydanie z konta</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Introducir los gastos desde la cuenta</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Introducir los gastos desde la cuenta</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Hesaptan harcama girin</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Inserite uscite dal conto corrente</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Kosten vom Konto eingeben</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>EnterExpenseFromAccount</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>EnterReceiptToAccount</name>
+    <title>
+      <key>en</key>
+      <value>Enter receipt to account</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Ввести поступление на счет</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wprowadzić wpływ na konto</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Introducir el recibo a la cuenta</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Introducir el recibo a la cuenta</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Hesaba fiş girin</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Inserite entrate nel conto corrente</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Geben Sie die Kosten vom Konto ein</value>
+    </title>
+    <id>4</id>
+    <toolTip>
+      <key>en</key>
+      <value>Enter receipt to account</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Ввести поступление на счет</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Wprowadzić wpływ na konto</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Introducir el recibo a la cuenta</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Introducir el recibo a la cuenta</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Hesaba alındı girin</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Inserite entrate nel conto corrente</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Geben Sie die Kosten vom Konto ein</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>EnterReceiptToAccount</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

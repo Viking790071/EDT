@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bb5ab6b4-1e61-479a-ab20-9bbbe0a51e54">
+  <producedTypes>
+    <objectType typeId="89df02b5-f581-4e1c-976e-75be60364ec8" valueTypeId="844327ce-eabd-4a0a-9768-c513918cfa4c"/>
+    <managerType typeId="2f34ed33-d5b4-491c-933e-2fbc10ab2083" valueTypeId="0a47da1a-c3f5-46ad-bd98-033fe11ffbc3"/>
+  </producedTypes>
+  <name>ClosingInvoiceProcessing</name>
+  <synonym>
+    <key>en</key>
+    <value>Closing invoice processing</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Обработка заключительных инвойсов</value>
+  </synonym>
+  <synonym>
+    <key>pl</key>
+    <value>Przetwarzanie faktury końcowej</value>
+  </synonym>
+  <synonym>
+    <key>es_ES</key>
+    <value>Procesamiento de factura de cierre</value>
+  </synonym>
+  <synonym>
+    <key>es_CO</key>
+    <value>Procesamiento de factura de cierre</value>
+  </synonym>
+  <synonym>
+    <key>tr</key>
+    <value>Kapanış faturası işleme</value>
+  </synonym>
+  <synonym>
+    <key>it</key>
+    <value>Elaborazione fattura di saldo</value>
+  </synonym>
+  <synonym>
+    <key>de</key>
+    <value>Bearbeitung von Abschlussrechnungen</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ClosingInvoiceProcessing.Form.Form</defaultForm>
+  <attributes uuid="e3fe17e0-fac0-40b5-a1c5-4638b6b3553f">
+    <name>StartDate</name>
+    <synonym>
+      <key>en</key>
+      <value>Delivery period from</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Срок доставки от</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Okres dostawy od</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Período de entrega desde</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Período de entrega desde</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Teslimat dönemi başlangıcı</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Periodo di consegna da</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Lieferzeitraum vom</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="36a87ad9-c065-4d54-b32c-f84764e1d644">
+    <name>EndDate</name>
+    <synonym>
+      <key>en</key>
+      <value>to</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>по</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>do</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>hasta</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>hasta</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>bitişi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>a</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>bis</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="7438cb9d-f545-4caa-8650-d3c02793fc5c">
+    <name>Company</name>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Firma</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Empresa</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Empresa</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İş yeri</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Azienda</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Firma</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Companies</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="5e06c39d-83a9-439d-8426-716204f4f6a2">
+    <name>Department</name>
+    <synonym>
+      <key>en</key>
+      <value>Department</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Dział</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Departamento</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Departamento</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Bölüm</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Reparto</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Abteilung</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.BusinessUnits</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Filter.StructuralUnitType</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.BusinessUnitsTypes.EnumValue.Department</value>
+      </value>
+    </choiceParameters>
+  </attributes>
+  <attributes uuid="c300a141-2e2a-4959-b425-d68865e91eed">
+    <name>Date</name>
+    <synonym>
+      <key>en</key>
+      <value>Date</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Data</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Fecha</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Fecha</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Tarih</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Data</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Datum</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="56cb1a4c-1ab1-4472-bee2-d0c6752decac">
+    <name>SetPaymentTerms</name>
+    <synonym>
+      <key>en</key>
+      <value>Set payment terms</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Настроить условия оплаты</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Ustaw warunki płatności</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Establecer los términos de pago</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Establecer los términos de pago</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ödeme şartlarını belirle</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Impostare termini di pagamento</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Zahlungsbedingungen festlegen</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2f512411-d2fb-4450-9d62-a0dd7e80f543">
+    <name>PaymentMethod</name>
+    <synonym>
+      <key>en</key>
+      <value>Payment method</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Способ оплаты</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Forma płatności</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Método de pago</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Método de pago</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ödeme yöntemi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Metodo di pagamento</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Zahlungsmethode</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.PaymentMethods</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="765ad3d6-0349-4bf3-91ca-f8342d6ceed0">
+    <name>CashAssetType</name>
+    <synonym>
+      <key>en</key>
+      <value>Cash asset type</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Тип наличных активов</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Rodzaj aktywów pieniężnych</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Tipo de activo en efectivo</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Tipo de activo en efectivo</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Nakit varlık türü</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Tipo disponibilità liquide</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Barvermögenswerttyp</value>
+    </synonym>
+    <type>
+      <types>EnumRef.CashAssetTypes</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <quickChoice>Use</quickChoice>
+    <createOnInput>DontUse</createOnInput>
+  </attributes>
+  <attributes uuid="3956118e-7ca3-4ed2-a640-d5efaa073a39">
+    <name>BankAccount</name>
+    <synonym>
+      <key>en</key>
+      <value>Bank account</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Банковский счет</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Rachunek bankowy</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Cuenta bancaria</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Cuenta bancaria</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Banka hesabı</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Conto corrente</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Bankkonto</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.BankAccounts</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Filter.Owner</name>
+      <field>DataProcessor.ClosingInvoiceProcessing.Attribute.Company</field>
+    </choiceParameterLinks>
+    <choiceForm>Catalog.BankAccounts.Form.ChoiceForm</choiceForm>
+  </attributes>
+  <attributes uuid="8a497255-93bb-4a5e-8464-d4f11389ec65">
+    <name>PettyCash</name>
+    <synonym>
+      <key>en</key>
+      <value>Cash account</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Кассовый счет</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Kasa</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Cuenta de efectivo</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Cuenta de efectivo</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Kasa hesabı</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Conto di cassa</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Liquiditätskonto</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CashAccounts</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="0e1011a7-ff8e-45a4-8255-04b2619417af">
+    <name>DirectDebitMandate</name>
+    <synonym>
+      <key>en</key>
+      <value>Mandate</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Мандат</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Zlecenie</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Mandato</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Mandato</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Talimat</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Mandato</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Lastschriftmandat</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.DirectDebitMandates</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Filter.Owner</name>
+      <field>0:9e7c556a-c641-448a-b3f3-41b881117741</field>
+    </choiceParameterLinks>
+  </attributes>
+  <tabularSections uuid="32844720-5911-4c01-968f-4741c0317d17">
+    <producedTypes>
+      <objectType typeId="eb30064a-5974-4c3e-91dc-c59ba34797f3" valueTypeId="a8a2a0c7-ed10-4b8a-8e62-5630beffa0e3"/>
+      <rowType typeId="4d91e951-71ca-4524-a054-42dc8f97c8d8" valueTypeId="65afd997-72a2-40fc-afad-37e1b06fc389"/>
+    </producedTypes>
+    <name>PaymentCalendar</name>
+    <synonym>
+      <key>en</key>
+      <value>Payment terms</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Условия оплаты</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Warunki płatności</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Términos de pagos</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Términos de pagos</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ödeme şartları</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Termini di pagamento</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Zahlungsbedingungen</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="c8759c4e-c9ed-4681-87a2-6187b578f699">
+      <name>PaymentDate</name>
+      <synonym>
+        <key>en</key>
+        <value>Due date</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Срок оплаты</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Termin</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Fecha de vencimiento</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Fecha de vencimiento</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Ödeme tarihi</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Data prevista</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Fälligkeitsdatum</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="b7aee9bc-ad23-4b88-ae33-c9b293aafb08">
+      <name>PaymentPercentage</name>
+      <synonym>
+        <key>en</key>
+        <value>% of payment</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>% оплаты</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>% płatności</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>% del pago</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>% del pago</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Ödemenin %'si</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>% di pagamento</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>% der Zahlung</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="e04ae7b2-acc8-4084-8f04-5c0b8b28d97d">
+      <name>PaymentAmount</name>
+      <synonym>
+        <key>en</key>
+        <value>Payment amount</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма платежа</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Kwota płatności</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Importe de pago</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Importe de pago</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Ödeme tutarı</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Importo del pagamento</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Zahlungsbetrag</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a783d6d8-3888-4125-b321-ba360793cdbf">
+      <name>PaymentVATAmount</name>
+      <synonym>
+        <key>en</key>
+        <value>Tax</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Налог</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Stawka VAT</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Impuesto</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Impuesto</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Vergi</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Imposta</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Steuer</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="bf8db69e-1a20-4d7c-ab89-63b9b1e10545">
+    <name>Form</name>
+    <synonym>
+      <key>en</key>
+      <value>Form</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Formularz</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Formulario</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Formulario</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Form</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Modulo</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Formular</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

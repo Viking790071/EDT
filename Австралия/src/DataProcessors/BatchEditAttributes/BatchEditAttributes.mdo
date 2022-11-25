@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e1b94dcf-ec37-4b2d-a7af-120eeee40944">
+  <producedTypes>
+    <objectType typeId="f06540d8-044b-4f8c-99c2-22070273fd43" valueTypeId="e4b23ce6-eec6-4dfb-9dcf-82cb128cee0c"/>
+    <managerType typeId="06559a1a-2dff-4161-9fbf-77334a8e5426" valueTypeId="625e752b-9e2e-4173-9661-94c8bc893610"/>
+  </producedTypes>
+  <name>BatchEditAttributes</name>
+  <synonym>
+    <key>ru</key>
+    <value>Групповое изменение реквизитов</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Bulk attribute editing</value>
+  </synonym>
+  <synonym>
+    <key>pl</key>
+    <value>Zbiorcza edycja atrybutów</value>
+  </synonym>
+  <synonym>
+    <key>es_ES</key>
+    <value>Edición del atributo grueso</value>
+  </synonym>
+  <synonym>
+    <key>es_CO</key>
+    <value>Edición del atributo grueso</value>
+  </synonym>
+  <synonym>
+    <key>tr</key>
+    <value>Toplu özellik düzenleme</value>
+  </synonym>
+  <synonym>
+    <key>it</key>
+    <value>Modifica collettiva degli attributi</value>
+  </synonym>
+  <synonym>
+    <key>de</key>
+    <value>Massenattributbearbeitung</value>
+  </synonym>
+  <defaultForm>DataProcessor.BatchEditAttributes.Form.Form</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="7d2a37b1-a1a0-435a-846a-95e255655044">
+    <name>ChangeInTransaction</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменять в транзакции</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Change in transaction</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Zmieniać w transakcji</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Cambiar en una transacción</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Cambiar en una transacción</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İşlemde değişiklik</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Cambiare nella transazione</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Ändern Sie in der Transaktion</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>При невозможности изменения элементов в транзакции, все изменения будут отменены.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>If items cannot be changed in the transaction, all changes will be canceled.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Jeśli nie można zmienić elementy w transakcji, wszystkie zmiany zostaną anulowane.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Si los artículos no pueden cambiarse en la transacción, todos los cambios se cancelarán.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Si los artículos no pueden cambiarse en la transacción, todos los cambios se cancelarán.</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>İşlemde öğeler değiştirilemezse, tüm değişiklikler iptal edilir.</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Se non è possibile modificare gli elementi in una transazione, tutte le modifiche verranno annullate.</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Wenn Positionen in der Transaktion nicht geändert werden können, werden alle Änderungen storniert.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="109db64c-00dc-490e-99a5-4430d9344e99">
+    <name>InterruptOnError</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прерывать при ошибке</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Abort if an error occurs</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Przerwij kiedy wystąpi błąd</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Cancelar si ocurre un error</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Cancelar si ocurre un error</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Bir hata oluşursa iptal et</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Interrompore in caso di errore</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Abort on Error</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Предупреждать, если во время изменения элементов возникнут ошибки.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Warn if errors occur while changing items.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Ostrzegaj, jeśli wystąpią błędy podczas zmiany elementów.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Avisar si errores ocurren al cambiar los artículos.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Avisar si errores ocurren al cambiar los artículos.</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Öğeleri değiştirirken hata oluşursa uyar.</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Avvisare se si verificano errori durante il cambiamento degli elementi.</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Beim Ändern von Artikeln über Fehler warnen.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="85837a55-fed5-4b7b-a622-30d728b9a677">
+    <name>AdditionalAttributesUsed</name>
+    <synonym>
+      <key>ru</key>
+      <value>Используются доп реквизиты</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Additional attributes are used</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Wykorzystują się dla dodatkowych danych</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Atributos adicionales utilizados</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Atributos adicionales utilizados</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ek özellikler kullanılır</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Ulteriori attributi vengono utilizzati</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Zusätzliche Attribute Gebrauchtwagen</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>У изменяемых объектов есть дополнительные реквизиты</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Objects to change have additional attributes</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Obiekty do zmiany mają dodatkowe atrybuty</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Objetos para cambiar tienen atributos adicionales</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Objetos para cambiar tienen atributos adicionales</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Değiştirilecek nesneler ek özniteliklere sahip</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Gli oggetti da modificare hanno attributi aggiuntivi</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Zu ändernde Objekte haben zusätzliche Attribute</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0fd79cdb-dc7a-40ca-a3bc-2c7a7b4691bb">
+    <name>AdditionalInfoUsed</name>
+    <synonym>
+      <key>ru</key>
+      <value>Используются доп сведения</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Additional information is used</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Wykorzystuje się dodatkowa informacja</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Información adicional utilizada</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Información adicional utilizada</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ek bilgi kullanılır</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Ulteriori informazioni vengono usate</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Zusätzliche Infos Gebrauchte</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>У изменяемых объектов есть дополнительные сведения</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>There is additional information for the objects being changed</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Istnieją dodatkowe informacje dotyczące zmienianych obiektów</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Hay información adicional para los objetos que se han cambiado</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Hay información adicional para los objetos que se han cambiado</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Değiştirilen nesneler için ek bilgi var.</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Ci sono informazioni aggiuntive per gli oggett in fase di modifica</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Es gibt zusätzliche Informationen für die Objekte, die geändert werden</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6ede8b5c-7df0-44a5-9136-8109bbd8b5a9">
+    <name>ShowInternalAttributes</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показывать служебные реквизиты</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Show service attributes</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Pokaż atrybuty serwisowe</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Mostrar los atributos de servicio</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Mostrar los atributos de servicio</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Servis özelliklerini göster</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Mostrare gli attributi di servizio</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Serviceattribute anzeigen</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Отображать служебные реквизиты в общем списке реквизитов.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Show service attributes in the common attribute list.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Wyświetlaj rekwizyty serwisowe w ogólnej liście rekwizytów</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Mostrar los requisitos de servicio en la lista común de requisitos.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Mostrar los requisitos de servicio en la lista común de requisitos.</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Ortak bilgi listesinde iş bilgilerini görüntüle</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Mostra attributi di servizio nell'elenco comune attributi</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Anzeigen von Serviceattributen in der allgemeinen Liste der Details.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="325bacdd-793f-47d8-b987-57e9d5f2782b">
+    <name>DeveloperMode</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим разработчика</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Developer mode</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Tryb dewelopera</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Modo de desarrollador</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Modo de desarrollador</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Geliştirici modu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Modalità Configuratore</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Entwickler-Modus</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выполнять запись объектов в режиме DataExchange.Load = True.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Write objects in mode DataExchange.Load = True.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Wykonać zapis obiektów w trybie DataExchange.Load = True.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Guardar los objetos en el modo DataExchange.Load = True.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Guardar los objetos en el modo DataExchange.Load = True.</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Nesneler DataExchange.Load = True modunda kaydedilsin.</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Scrittura oggetti in modalità DataExchange.Load = True</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Aufnehmen von Objekten im DataExchange.Load = True.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="80395d47-70d7-4d8d-9b18-93283fba80c2">
+    <name>OperationType</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип операции</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Operation type</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Typ operacji</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Tipo de operación</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Tipo de operación</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İşlem türü</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Tipo di operazione</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Operationstyp</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Определяет режим работы ввода новых элементов</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Determines operation mode with via new item input</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Określa tryb pracy z poprzez wprowadzanie nowych</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Determina el modo de uso con introducir los nuevos</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Determina el modo de uso con introducir los nuevos</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Çalışma modunu yenileri girerek belirler</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Determina la modalità operazioni via inserimento nuovo elemento</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Definiert die Betriebsart bei der Vorgabe von neuer Positionseingabe</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8b621ec9-24c9-4166-90ce-29c5ad30f78b">
+    <name>ExecutionMode</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим выполнения</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Run mode</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Tryb pracy</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Modo de ejecución</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Modo de ejecución</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Çalışma modu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Modalità di esecuzione</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Ausführungsmodus</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Определяет вариант изменения реквизитов  замена значений или произвольным алгоритмом.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Determines attribute change option: value replacement or arbitrary algorithm.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Określa opcję zmiany rekwizytów wymiana wartości lub dowolnym algorytmem.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Determina la variante del cambio de requisitos reemplazo de valores o del algoritmo libre.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Determina la variante del cambio de requisitos reemplazo de valores o del algoritmo libre.</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Değerleri veya serbest algoritmayı değiştirmek için ayrıntıları değiştirme seçeneği tanımlar.</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Determina l'opzione di modifica dell'attributo: sostituzione del valore o algoritmo arbitrario.</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Definiert die Variante der Änderung der Attribute der Ersetzung von Werten oder eines anderen Algorithmus.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="cc98670a-7b18-4973-b211-90261c5c8c10">
+    <name>ObjectWriteOption</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант записи объекта</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Object writing option</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Opcja zapisu obiektu</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Variante de guardar el objeto</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Variante de guardar el objeto</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Nesne kaydı seçeneği</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Opzione scrittura oggetto</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Objektaufzeichnungsoption</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект может быть записан автоматически после выполнения алгоритма или необходимость записи определяется в коде.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>An object can be saved automatically after executing the algorithm, or it is determined in the code.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Obiekt może być zapisany automatycznie po wykonaniu algorytmu lub konieczność zapisu określa się w kodzie.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>El objeto puede ser guardado automáticamente al realizar el algoritmo o la necesidad de guardar se determina en el código.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>El objeto puede ser guardado automáticamente al realizar el algoritmo o la necesidad de guardar se determina en el código.</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Nesne bir algoritma çalıştırdıktan sonra otomatik olarak kaydedilebilir veya kayıt ihtiyacı kodda tanımlanır.</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Un oggetto può essere salvato automaticamente dopo l'esecuzione dell'algoritmo, o è determinato nel codice.</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Das Objekt kann automatisch geschrieben werden, nachdem der Algorithmus ausgeführt wurde oder die Notwendigkeit, den Code einzutragen, bestimmt wurde.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="da9821c3-4b16-48b7-9088-d3cf8ac536a6">
+    <name>Form</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Form</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Formularz</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Formulario</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Formulario</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Form</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Modulo</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Formular</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fb36c775-1124-4ba6-8af8-133bf66fcb54">
+    <name>SelectedItems</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбранные элементы</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selected items</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Elementy wybrane</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Artículos seleccionados</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Artículos seleccionados</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Seçilen öğeler</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Elementi selezionati</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Ausgewählte Artikel</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="51f9aff4-71da-4b1b-b48b-04122a17d855">
+    <name>SelectObjectsKind</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор вида объектов</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Select object kind</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Wybierz rodzaj obiektu</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Seleccionar el tipo de objeto</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Seleccionar el tipo de objeto</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Nesne türünü seç</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Selezione della tipologia di oggetti</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Wählen Sie die Objektart aus</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d5142574-a040-4dd0-a482-cdc61c1d86ab">
+    <name>AdditionalParameters</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные параметры</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Additional parameters</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Dodatkowe parametry</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Parámetros adicionales</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Parámetros adicionales</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ek parametreler</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Parametri aggiuntivi</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Zusätzliche Parameter</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="62957889-503f-4923-a372-29776dc3b5e5">
+    <name>FormulaEdit</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактирование формулы</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Edit formula</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Edycja formuł</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Editar la fórmula</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Editar la fórmula</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Formülü düzenle</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Modifica formula</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Formel bearbeiten</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="778e79ee-eb1a-4d52-8a31-58e781c78fe4">
+    <name>AttributeFilter</name>
+    <synonym>
+      <key>ru</key>
+      <value>Attribute filter</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Attribute filter</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Attribute filter</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Attribute filter</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Attribute filter</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Attribute filter</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Attribute filter</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Attribute filter</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <commands uuid="90385850-d37b-4b2e-ac87-95c17f32197c">
+    <name>BatchEditAttributes</name>
+    <synonym>
+      <key>ru</key>
+      <value>Групповое изменение реквизитов</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Bulk attribute editing</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Masowa edycja atrybutów</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Edición del atributo grueso</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Edición del atributo grueso</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Toplu özellik düzenleme</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Modifica collettiva degli attributi</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Massenattributbearbeitung</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Групповое изменение реквизитов и табличных частей произвольных объектов</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Bulk attribute editing and tabular sections of arbitrary objects</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zbiorcza edycja atrybutów i sekcje tabelaryczne dowolnych obiektów</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Edición del atributo grueso y secciones tabulares de los objetos arbitrarios</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Edición del atributo grueso y secciones tabulares de los objetos arbitrarios</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Toplu nitelik düzenleme ve keyfi nesnelerin tablo bölümleri</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Modifica collettiva degli attributi e sezioni tabellari di oggetti arbitrari</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Massenattributbearbeitung und tabellarische Schnitte von beliebigen Objekten</value>
+    </toolTip>
+  </commands>
+</mdclass:DataProcessor>

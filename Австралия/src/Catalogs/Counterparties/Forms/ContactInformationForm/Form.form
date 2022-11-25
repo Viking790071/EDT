@@ -1,0 +1,2573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <title>
+    <key>en</key>
+    <value>Counterparty contact information</value>
+  </title>
+  <title>
+    <key>ru</key>
+    <value>Контактная информация контрагента</value>
+  </title>
+  <title>
+    <key>pl</key>
+    <value>Informacje kontaktowe kontrahenta</value>
+  </title>
+  <title>
+    <key>es_ES</key>
+    <value>Información de contacto de la contraparte</value>
+  </title>
+  <title>
+    <key>es_CO</key>
+    <value>Información de contacto de la contraparte</value>
+  </title>
+  <title>
+    <key>tr</key>
+    <value>Cari hesap iletişim bilgileri</value>
+  </title>
+  <title>
+    <key>it</key>
+    <value>Informazioni di contatto della controparte</value>
+  </title>
+  <title>
+    <key>de</key>
+    <value>Kontaktinformationen des Geschäftspartners</value>
+  </title>
+  <items xsi:type="form:FormField">
+    <name>Spreadsheet</name>
+    <id>1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Spreadsheet</segments>
+    </dataPath>
+    <titleLocation>None</titleLocation>
+    <extendedTooltip>
+      <name>SpreadsheetExtendedTooltip</name>
+      <id>3</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>SpreadsheetContextMenu</name>
+      <id>2</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>SpreadsheetDocumentField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:SpreadSheetDocFieldExtInfo">
+      <width>50</width>
+      <autoMaxWidth>true</autoMaxWidth>
+      <height>10</height>
+      <autoMaxHeight>true</autoMaxHeight>
+      <horizontalStretch>true</horizontalStretch>
+      <verticalStretch>true</verticalStretch>
+      <pointerType>Special</pointerType>
+      <verticalScrollBar>ScrollAlways</verticalScrollBar>
+      <horizontalScrollBar>ScrollAlways</horizontalScrollBar>
+      <selectionShowMode>Always</selectionShowMode>
+      <drawingSelectionShowMode>Auto</drawingSelectionShowMode>
+      <showGroups>true</showGroups>
+      <enableStartDrag>true</enableStartDrag>
+      <enableDrag>true</enableDrag>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>Settings</name>
+    <id>4</id>
+    <items xsi:type="form:FormField">
+      <name>PrintOption</name>
+      <id>8</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>PrintOption</segments>
+      </dataPath>
+      <titleLocation>None</titleLocation>
+      <toolTip>
+        <key>en</key>
+        <value>Print option</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Вариант печати</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Opcja drukowania</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Opción para imprimir</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Opción para imprimir</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Yazdırma seçeneği</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Opzioni di stampa</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Druckoptionen</value>
+      </toolTip>
+      <handlers>
+        <event>OnChange</event>
+        <name>PrintOptionOnChange</name>
+      </handlers>
+      <extendedTooltip>
+        <name>PrintOptionExtendedTooltip</name>
+        <id>10</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>PrintOptionContextMenu</name>
+        <id>9</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>RadioButtonField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+        <radioButtonsType>Tumbler</radioButtonsType>
+        <choiceList>
+          <presentation>
+            <key>en</key>
+            <value>Card</value>
+          </presentation>
+          <presentation>
+            <key>ru</key>
+            <value>Карточка</value>
+          </presentation>
+          <presentation>
+            <key>pl</key>
+            <value>Karta</value>
+          </presentation>
+          <presentation>
+            <key>es_ES</key>
+            <value>Tarjeta</value>
+          </presentation>
+          <presentation>
+            <key>es_CO</key>
+            <value>Tarjeta</value>
+          </presentation>
+          <presentation>
+            <key>tr</key>
+            <value>Kart</value>
+          </presentation>
+          <presentation>
+            <key>it</key>
+            <value>Anagrafica</value>
+          </presentation>
+          <presentation>
+            <key>de</key>
+            <value>Karte</value>
+          </presentation>
+          <value xsi:type="core:StringValue">
+            <value>Card</value>
+          </value>
+        </choiceList>
+        <choiceList>
+          <presentation>
+            <key>en</key>
+            <value>As a list</value>
+          </presentation>
+          <presentation>
+            <key>ru</key>
+            <value>Список</value>
+          </presentation>
+          <presentation>
+            <key>pl</key>
+            <value>Jako lista</value>
+          </presentation>
+          <presentation>
+            <key>es_ES</key>
+            <value>Como una lista</value>
+          </presentation>
+          <presentation>
+            <key>es_CO</key>
+            <value>Como una lista</value>
+          </presentation>
+          <presentation>
+            <key>tr</key>
+            <value>Liste olarak</value>
+          </presentation>
+          <presentation>
+            <key>it</key>
+            <value>Come elenco</value>
+          </presentation>
+          <presentation>
+            <key>de</key>
+            <value>Als Liste</value>
+          </presentation>
+          <value xsi:type="core:StringValue">
+            <value>List</value>
+          </value>
+        </choiceList>
+      </extInfo>
+    </items>
+    <items xsi:type="form:Button">
+      <name>Print</name>
+      <id>6</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>PrintExtendedTooltip</name>
+        <id>7</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualButton</type>
+      <commandName>Form.Item.Spreadsheet.StandardCommand.Print</commandName>
+      <representation>Auto</representation>
+      <width>28</width>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <textColor xsi:type="core:ColorRef">
+        <color>Style.ButtonBackColor</color>
+      </textColor>
+      <backColor xsi:type="core:ColorRef">
+        <color>Web.DarkGreen</color>
+      </backColor>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>GroupSaveSend</name>
+      <id>168</id>
+      <items xsi:type="form:Button">
+        <name>Save</name>
+        <id>115</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>SaveExtendedTooltip</name>
+          <id>116</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualButton</type>
+        <commandName>Form.Command.Save</commandName>
+        <representation>Auto</representation>
+        <width>14</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <textColor xsi:type="core:ColorRef">
+          <color>Style.ButtonBackColor</color>
+        </textColor>
+        <backColor xsi:type="core:ColorRef">
+          <color>Style.MinorInscriptionText</color>
+        </backColor>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <items xsi:type="form:Button">
+        <name>Send</name>
+        <id>127</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>SendExtendedTooltip</name>
+          <id>128</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualButton</type>
+        <commandName>Form.Command.Send</commandName>
+        <representation>Auto</representation>
+        <width>13</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <textColor xsi:type="core:ColorRef">
+          <color>Style.ButtonBackColor</color>
+        </textColor>
+        <backColor xsi:type="core:ColorDef">
+          <red>100</red>
+          <green>100</green>
+          <blue>100</blue>
+        </backColor>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>GroupSaveSendExtendedTooltip</name>
+        <id>169</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:Table">
+      <name>CounterpartiesList</name>
+      <id>129</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>CounterpartiesList</segments>
+      </dataPath>
+      <titleLocation>None</titleLocation>
+      <excludedCommands>Change</excludedCommands>
+      <excludedCommands>Copy</excludedCommands>
+      <excludedCommands>EndEdit</excludedCommands>
+      <items xsi:type="form:FormField">
+        <name>CounterpartiesListCounterparty</name>
+        <id>157</id>
+        <title>
+          <key>en</key>
+          <value>Counterparties</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Контрагенты</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Kontrahenci</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Contrapartes</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Contrapartes</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Cari hesaplar</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Controparti</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Geschäftspartner</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>CounterpartiesList.Value</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>CounterpartiesListCounterpartyExtendedTooltip</name>
+          <id>159</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>CounterpartiesListCounterpartyContextMenu</name>
+          <id>158</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>EnterOnInput</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>CounterpartiesListCheck</name>
+        <id>154</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>CounterpartiesList.Check</segments>
+        </dataPath>
+        <titleLocation>None</titleLocation>
+        <extendedTooltip>
+          <name>CounterpartiesListCheckExtendedTooltip</name>
+          <id>156</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>CounterpartiesListCheckContextMenu</name>
+          <id>155</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>EnterOnInput</editMode>
+        <showInHeader>true</showInHeader>
+        <headerPicture xsi:type="core:PictureRef">
+          <picture>StdPicture.PrintImmediately</picture>
+        </headerPicture>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <commandBarLocation>None</commandBarLocation>
+      <autoCommandBar>
+        <name>CounterpartiesListCommandBar</name>
+        <id>131</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <horizontalAlign>Left</horizontalAlign>
+        <autoFill>true</autoFill>
+      </autoCommandBar>
+      <searchStringAddition>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <name>CounterpartiesListSearchString</name>
+        <id>133</id>
+        <extendedTooltip>
+          <name>CounterpartiesListSearchStringExtendedTooltip</name>
+          <id>137</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>CounterpartiesListSearchStringContextMenu</name>
+          <id>136</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <source>CounterpartiesListSearchString</source>
+        <extInfo xsi:type="form:SearchStringAdditionExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+        </extInfo>
+      </searchStringAddition>
+      <viewStatusAddition>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <name>CounterpartiesListStatusView</name>
+        <id>138</id>
+        <extendedTooltip>
+          <name>CounterpartiesListStatusViewExtendedTooltip</name>
+          <id>142</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>CounterpartiesListStatusViewContextMenu</name>
+          <id>141</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>ViewStatusAddition</type>
+        <source>CounterpartiesListStatusView</source>
+        <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+        </extInfo>
+      </viewStatusAddition>
+      <searchControlAddition>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <name>CounterpartiesListSearchManagement</name>
+        <id>143</id>
+        <extendedTooltip>
+          <name>CounterpartiesListSearchManagementExtendedTooltip</name>
+          <id>147</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>CounterpartiesListSearchManagementContextMenu</name>
+          <id>146</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>SearchControlAddition</type>
+        <source>CounterpartiesListSearchManagement</source>
+        <extInfo xsi:type="form:SearchControlAdditionExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+        </extInfo>
+      </searchControlAddition>
+      <extendedTooltip>
+        <name>CounterpartiesListExtendedTooltip</name>
+        <id>132</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>CounterpartiesListContextMenu</name>
+        <id>130</id>
+        <items xsi:type="form:FormGroup">
+          <name>ContextMenuAddDelete</name>
+          <id>187</id>
+          <items xsi:type="form:Button">
+            <name>CounterpartiesListContextMenuAdd</name>
+            <id>183</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CounterpartiesListContextMenuAddExtendedTooltip</name>
+              <id>184</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>Form.Item.CounterpartiesList.StandardCommand.Add</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>CounterpartiesListContextMenuDelete</name>
+            <id>185</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CounterpartiesListContextMenuDeleteExtendedTooltip</name>
+              <id>186</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>Form.Item.CounterpartiesList.StandardCommand.Delete</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>en</key>
+            <value>Context menu add delete</value>
+          </title>
+          <title>
+            <key>ru</key>
+            <value>Контекстное меню добавить удалить</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Menu kontekstowe dodaj usuń</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Menú contextual agregar borrar</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Menú contextual agregar borrar</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>İçerik menüsü ekle sil</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Menu di contesto aggiungere cancellare</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Kontextmenü hinzufügen löschen</value>
+          </title>
+          <toolTip>
+            <key>en</key>
+            <value>Context menu add delete</value>
+          </toolTip>
+          <toolTip>
+            <key>ru</key>
+            <value>Контекстное меню добавить удалить</value>
+          </toolTip>
+          <toolTip>
+            <key>pl</key>
+            <value>Menu kontekstowe dodaj usuń</value>
+          </toolTip>
+          <toolTip>
+            <key>es_ES</key>
+            <value>Menú contextual agregar borrar</value>
+          </toolTip>
+          <toolTip>
+            <key>es_CO</key>
+            <value>Menú contextual agregar borrar</value>
+          </toolTip>
+          <toolTip>
+            <key>tr</key>
+            <value>İçerik menüsü ekle sil</value>
+          </toolTip>
+          <toolTip>
+            <key>it</key>
+            <value>Menu di contesto aggiungere cancellare</value>
+          </toolTip>
+          <toolTip>
+            <key>de</key>
+            <value>Kontextmenü hinzufügen löschen</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>ContextMenuAddDeleteExtendedTooltip</name>
+            <id>188</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <extInfo xsi:type="form:ButtonGroupExtInfo"/>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ContextMenuPick</name>
+          <id>189</id>
+          <items xsi:type="form:Button">
+            <name>CounterpartiesListContextMenuPick</name>
+            <id>191</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CounterpartiesListContextMenuPickExtendedTooltip</name>
+              <id>192</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>Form.Item.CounterpartiesList.StandardCommand.Pickup</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>en</key>
+            <value>Context menu picking</value>
+          </title>
+          <title>
+            <key>ru</key>
+            <value>Контекстное меню подбор</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Menu kontekstowe wybór</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Menú contextual elegir</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Menú contextual elegir</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>İçerik menüsü toplama</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Menu di contesto scelta</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Auswahlmenü Kommissionierung</value>
+          </title>
+          <toolTip>
+            <key>en</key>
+            <value>Context menu picking</value>
+          </toolTip>
+          <toolTip>
+            <key>ru</key>
+            <value>Контекстное меню подбор</value>
+          </toolTip>
+          <toolTip>
+            <key>pl</key>
+            <value>Menu kontekstowe wybór</value>
+          </toolTip>
+          <toolTip>
+            <key>es_ES</key>
+            <value>Menú contextual elegir</value>
+          </toolTip>
+          <toolTip>
+            <key>es_CO</key>
+            <value>Menú contextual elegir</value>
+          </toolTip>
+          <toolTip>
+            <key>tr</key>
+            <value>İçerik menüsü toplama</value>
+          </toolTip>
+          <toolTip>
+            <key>it</key>
+            <value>Menu di contesto scelta</value>
+          </toolTip>
+          <toolTip>
+            <key>de</key>
+            <value>Auswahlmenü Kommissionierung</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>ContextMenuPickExtendedTooltip</name>
+            <id>190</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <extInfo xsi:type="form:ButtonGroupExtInfo"/>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ContextMenuMove</name>
+          <id>193</id>
+          <items xsi:type="form:Button">
+            <name>CounterpartiesListContextMenuMoveUp</name>
+            <id>195</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CounterpartiesListContextMenuMoveUpExtendedTooltip</name>
+              <id>196</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>Form.Item.CounterpartiesList.StandardCommand.MoveUp</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>CounterpartiesListContextMenuMoveDown</name>
+            <id>197</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CounterpartiesListContextMenuMoveDownExtendedTooltip</name>
+              <id>198</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>Form.Item.CounterpartiesList.StandardCommand.MoveDown</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>en</key>
+            <value>Context menu movement</value>
+          </title>
+          <title>
+            <key>ru</key>
+            <value>Контекстное меню перемещение</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Menu kontekstowe zmiana lokalizacji</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Menú contextual movimiento</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Menú contextual movimiento</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>İçerik menüsü hareketi</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Medu di contesto spostamenti</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Bewegung des Kontextmenüs</value>
+          </title>
+          <toolTip>
+            <key>en</key>
+            <value>Context menu movement</value>
+          </toolTip>
+          <toolTip>
+            <key>ru</key>
+            <value>Контекстное меню перемещение</value>
+          </toolTip>
+          <toolTip>
+            <key>pl</key>
+            <value>Menu kontekstowe zmiana lokalizacji</value>
+          </toolTip>
+          <toolTip>
+            <key>es_ES</key>
+            <value>Menú contextual movimiento</value>
+          </toolTip>
+          <toolTip>
+            <key>es_CO</key>
+            <value>Menú contextual movimiento</value>
+          </toolTip>
+          <toolTip>
+            <key>tr</key>
+            <value>İçerik menüsü hareketi</value>
+          </toolTip>
+          <toolTip>
+            <key>it</key>
+            <value>Medu di contesto spostamenti</value>
+          </toolTip>
+          <toolTip>
+            <key>de</key>
+            <value>Bewegung des Kontextmenüs</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>ContextMenuMoveExtendedTooltip</name>
+            <id>194</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <extInfo xsi:type="form:ButtonGroupExtInfo"/>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ContextMenuSort</name>
+          <id>199</id>
+          <items xsi:type="form:Button">
+            <name>CounterpartiesListContextMenuSortListAscending</name>
+            <id>175</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CounterpartiesListContextMenuSortListAscendingExtendedTooltip</name>
+              <id>176</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>Form.Item.CounterpartiesList.StandardCommand.SortListAsc</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>CounterpartiesListContextMenuSortListDescending</name>
+            <id>177</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CounterpartiesListContextMenuSortListDescendingExtendedTooltip</name>
+              <id>178</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>Form.Item.CounterpartiesList.StandardCommand.SortListDesc</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>en</key>
+            <value>Context menu sorting</value>
+          </title>
+          <title>
+            <key>ru</key>
+            <value>Контекстное меню сортировка</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Menu kontekstowe sortowanie</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Menú contextual clasificar</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Menú contextual clasificar</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>İçerik menüsü sıralama</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Menu di contesto ordinamento</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Sortierung des Kontextmenüs</value>
+          </title>
+          <toolTip>
+            <key>en</key>
+            <value>Context menu sorting</value>
+          </toolTip>
+          <toolTip>
+            <key>ru</key>
+            <value>Контекстное меню сортировка</value>
+          </toolTip>
+          <toolTip>
+            <key>pl</key>
+            <value>Menu kontekstowe sortowanie</value>
+          </toolTip>
+          <toolTip>
+            <key>es_ES</key>
+            <value>Menú contextual clasificar</value>
+          </toolTip>
+          <toolTip>
+            <key>es_CO</key>
+            <value>Menú contextual clasificar</value>
+          </toolTip>
+          <toolTip>
+            <key>tr</key>
+            <value>İçerik menüsü sıralama</value>
+          </toolTip>
+          <toolTip>
+            <key>it</key>
+            <value>Menu di contesto ordinamento</value>
+          </toolTip>
+          <toolTip>
+            <key>de</key>
+            <value>Sortierung des Kontextmenüs</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>ContextMenuSortExtendedTooltip</name>
+            <id>200</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <extInfo xsi:type="form:ButtonGroupExtInfo"/>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ContextMenuCheckBoxes</name>
+          <id>201</id>
+          <items xsi:type="form:Button">
+            <name>CounterpartiesListContextMenuSelectAll</name>
+            <id>179</id>
+            <title>
+              <key>en</key>
+              <value>Select all</value>
+            </title>
+            <title>
+              <key>ru</key>
+              <value>Выделить все</value>
+            </title>
+            <title>
+              <key>pl</key>
+              <value>Wybierz wszystkie</value>
+            </title>
+            <title>
+              <key>es_ES</key>
+              <value>Seleccionar todo</value>
+            </title>
+            <title>
+              <key>es_CO</key>
+              <value>Seleccionar todo</value>
+            </title>
+            <title>
+              <key>tr</key>
+              <value>Tümünü seç</value>
+            </title>
+            <title>
+              <key>it</key>
+              <value>Seleziona tutto</value>
+            </title>
+            <title>
+              <key>de</key>
+              <value>Alles auswählen</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CounterpartiesListContextMenuSelectAllExtendedTooltip</name>
+              <id>180</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>Form.Item.CounterpartiesList.StandardCommand.CheckAll</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>CounterpartiesListContextMenuClearAll</name>
+            <id>181</id>
+            <title>
+              <key>en</key>
+              <value>Clear all</value>
+            </title>
+            <title>
+              <key>ru</key>
+              <value>Очистить все</value>
+            </title>
+            <title>
+              <key>pl</key>
+              <value>Odznacz wszystko</value>
+            </title>
+            <title>
+              <key>es_ES</key>
+              <value>Eliminar todo</value>
+            </title>
+            <title>
+              <key>es_CO</key>
+              <value>Eliminar todo</value>
+            </title>
+            <title>
+              <key>tr</key>
+              <value>Tümünü temizle</value>
+            </title>
+            <title>
+              <key>it</key>
+              <value>Cancella tutto</value>
+            </title>
+            <title>
+              <key>de</key>
+              <value>Alles löschen</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>CounterpartiesListContextMenuClearAllExtendedTooltip</name>
+              <id>182</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>Form.Item.CounterpartiesList.StandardCommand.UncheckAll</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>en</key>
+            <value>Context menu check boxes</value>
+          </title>
+          <title>
+            <key>ru</key>
+            <value>Контекстное меню флажки</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Menu kontekstowe check boxów</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Menú contextual casillas de verificación</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Menú contextual casillas de verificación</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>İçerik menüsü onay kutuları</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Menu di contesto caselle di controllo</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Kontrollkästchen im Kontextmenü</value>
+          </title>
+          <toolTip>
+            <key>en</key>
+            <value>Context menu check boxes</value>
+          </toolTip>
+          <toolTip>
+            <key>ru</key>
+            <value>Контекстное меню флажки</value>
+          </toolTip>
+          <toolTip>
+            <key>pl</key>
+            <value>Menu kontekstowe check boxów</value>
+          </toolTip>
+          <toolTip>
+            <key>es_ES</key>
+            <value>Menú contextual casillas de verificación</value>
+          </toolTip>
+          <toolTip>
+            <key>es_CO</key>
+            <value>Menú contextual casillas de verificación</value>
+          </toolTip>
+          <toolTip>
+            <key>tr</key>
+            <value>İçerik menüsü onay kutuları</value>
+          </toolTip>
+          <toolTip>
+            <key>it</key>
+            <value>Menu di contesto caselle di controllo</value>
+          </toolTip>
+          <toolTip>
+            <key>de</key>
+            <value>Kontrollkästchen im Kontextmenü</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>ContextMenuCheckBoxesExtendedTooltip</name>
+            <id>202</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <extInfo xsi:type="form:ButtonGroupExtInfo"/>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+      </contextMenu>
+      <representation>HierarchicalList</representation>
+      <changeRowSet>true</changeRowSet>
+      <changeRowOrder>true</changeRowOrder>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <autoMaxRowsCount>true</autoMaxRowsCount>
+      <selectionMode>MultiRow</selectionMode>
+      <header>true</header>
+      <headerHeight>1</headerHeight>
+      <footerHeight>1</footerHeight>
+      <horizontalScrollBar>AutoUse</horizontalScrollBar>
+      <verticalScrollBar>AutoUse</verticalScrollBar>
+      <horizontalLines>true</horizontalLines>
+      <verticalLines>true</verticalLines>
+      <searchOnInput>Auto</searchOnInput>
+      <initialListView>Auto</initialListView>
+      <horizontalStretch>true</horizontalStretch>
+      <verticalStretch>true</verticalStretch>
+    </items>
+    <items xsi:type="form:Button">
+      <name>Refresh</name>
+      <id>66</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <defaultItem>true</defaultItem>
+      <extendedTooltip>
+        <name>RefreshExtendedTooltip</name>
+        <id>67</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualButton</type>
+      <commandName>Form.Command.Refresh</commandName>
+      <representation>Auto</representation>
+      <width>28</width>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <textColor xsi:type="core:ColorRef">
+        <color>Style.ButtonBackColor</color>
+      </textColor>
+      <backColor xsi:type="core:ColorDef">
+        <red>100</red>
+        <green>100</green>
+        <blue>100</blue>
+      </backColor>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Decoration">
+      <name>PrintManagement</name>
+      <id>35</id>
+      <title>
+        <key>en</key>
+        <value>Print management</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Управление печатью</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Zarządzanie drukiem</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Gestión de la impresión</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Gestión de la impresión</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Yazdırma yönetimi</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Gestione della stampa</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Druckmanagement</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>PrintManagementExtendedTooltip</name>
+        <id>37</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>PrintManagementContextMenu</name>
+        <id>36</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <horizontalStretch>true</horizontalStretch>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <handlers>
+          <event>Click</event>
+          <name>PrintManagementClick</name>
+        </handlers>
+        <hyperlink>true</hyperlink>
+        <horizontalAlign>Center</horizontalAlign>
+        <titleHeight>2</titleHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>CommandBar</name>
+      <id>125</id>
+      <items xsi:type="form:Button">
+        <name>FormChangeForm</name>
+        <id>170</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>FormChangeFormExtendedTooltip</name>
+          <id>171</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.StandardCommand.CustomizeForm</commandName>
+        <representation>Picture</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <picture xsi:type="core:PictureRef">
+          <picture>StdPicture.CustomizeForm</picture>
+        </picture>
+        <representationInContextMenu>Auto</representationInContextMenu>
+        <locationInCommandBar>InCommandBarAndInAdditionalSubmenu</locationInCommandBar>
+      </items>
+      <items xsi:type="form:Button">
+        <name>FormSettings</name>
+        <id>203</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>FormSettingsExtendedTooltip</name>
+          <id>204</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.Command.Settings</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>en</key>
+        <value>Command bar</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Командная панель</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Pasek poleceń</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Barra de comandos</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Barra de comandos</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Komut çubuğu</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Barra dei comandi</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Befehlsleiste</value>
+      </title>
+      <toolTip>
+        <key>en</key>
+        <value>Command bar</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Командная панель</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Pasek poleceń</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Barra de comandos</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Barra de comandos</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Komut çubuğu</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Barra dei comandi</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Befehlsleiste</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>CommandBarExtendedTooltip</name>
+        <id>126</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>CommandBar</type>
+      <extInfo xsi:type="form:CommandBarExtInfo">
+        <horizontalAlign>Right</horizontalAlign>
+        <commandSource>Form</commandSource>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <width>26</width>
+    <extendedTooltip>
+      <name>SettingsExtendedTooltip</name>
+      <id>5</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <commandBarLocation>None</commandBarLocation>
+  <autoCommandBar>
+    <name>FormCommandBar</name>
+    <id>-1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <handlers>
+    <event>ChoiceProcessing</event>
+    <name>ChoiceProcessing</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <autoUrl>true</autoUrl>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Spreadsheet</name>
+    <title>
+      <key>en</key>
+      <value>Pers doc</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Таб док</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Tab dok</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Documento personal</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Documento personal</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kişisel belge</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Doc pers</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Pers-Dokument</value>
+    </title>
+    <id>1</id>
+    <valueType>
+      <types>SpreadsheetDocument</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:SpreadsheetDocumentExtInfo"/>
+  </attributes>
+  <attributes>
+    <name>PrintOption</name>
+    <title>
+      <key>en</key>
+      <value>Print option</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Вариант печати</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Opcja drukowania</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Opción para imprimir</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Opción para imprimir</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Yazdırma seçeneği</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Opzioni di stampa</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Druckoptionen</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>8</length>
+      </stringQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>SendingParameters</name>
+    <title>
+      <key>en</key>
+      <value>Sending parameters</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Параметры отправки</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Parametry wysyłki</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Enviando parámetros</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Enviando parámetros</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Gönderme parametreleri</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Parametri di invio</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Sendeparameter</value>
+    </title>
+    <id>12</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>CounterpartiesList</name>
+    <title>
+      <key>en</key>
+      <value>Product list</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Список номенклатуры</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Lista produktów</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Lista de productos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Lista de productos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Ürün listesi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Elenco articoli</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Produktliste</value>
+    </title>
+    <id>13</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType>
+        <types>CatalogRef.Counterparties</types>
+      </itemValueType>
+    </extInfo>
+  </attributes>
+  <attributes>
+    <name>CounterpartiesToPrint</name>
+    <title>
+      <key>en</key>
+      <value>Counterparties for printing</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Контрагенты к печати</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Kontrahenci do druku</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Contrapartes para imprimir</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Contrapartes para imprimir</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Çıktı için cari hesaplar</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Controparti per la stampa</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Geschäftspartner für den Druck</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType>
+        <types>CatalogRef.Counterparties</types>
+      </itemValueType>
+    </extInfo>
+  </attributes>
+  <attributes>
+    <name>LanguageCode</name>
+    <title>
+      <key>en</key>
+      <value>Language code</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Код языка</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Kod języka</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Código del idioma</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Código del idioma</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dil kodu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Codice lingua</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Sprachcode</value>
+    </title>
+    <id>4</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ID</name>
+    <id>5</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>PrintManager</name>
+    <title>
+      <key>en</key>
+      <value>Print manager</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Менеджер печати</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Menedżer drukowania</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Gerente de impresión</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Gerente de impresión</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Yazdırma yöneticisi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Manager stampe</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Druckmanager</value>
+    </title>
+    <id>6</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>Refresh</name>
+    <title>
+      <key>en</key>
+      <value>Update calendar</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Обновить</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zaktualizuj kalendarz</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Actualizar el calendario</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Actualizar el calendario</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Takvimi güncelle</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Aggiorna calendario</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Kalender aktualisieren</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>en</key>
+      <value>Update contact information</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Обновить контактную информацию</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Aktualizacja informacji kontaktowych</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Actualizar la información de contacto</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Actualizar la información de contacto</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Kişi bilgilerini güncelle</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Aggiornare le informazioni di contatto</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Kontaktinformationen aktualisieren</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Refresh</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>CIVisibleManagement</name>
+    <title>
+      <key>en</key>
+      <value>Information visibility control</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Управление видимостью информации</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Kierowanie widocznością informacji</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Control de la visibilidad de información</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Control de la visibilidad de información</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Bilgi görünürlüğü kontrolü</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Controllo visibilità delle informazioni</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Kontrolle der Informationstransparenz</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>en</key>
+      <value>CI visibility control</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Управление видимостью КИ</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zarządzanie widocznością CI</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Control de la visibilidad de la integración continua</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Control de la visibilidad de la integración continua</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>CI görüş kontrolü</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Controllo visibilità CI</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>CI-Sichtbarkeitskontrolle</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>Save</name>
+    <title>
+      <key>en</key>
+      <value>Save</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Сохранить</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zapisz</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Guardar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Guardar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Sakla</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Salva</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Speichern</value>
+    </title>
+    <id>4</id>
+    <toolTip>
+      <key>en</key>
+      <value>Save on disk</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Сохранить на диске</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zapisz na dysku</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Guardar en el disco</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Guardar en el disco</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Diske kaydet</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Salvare su disco</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Auf Festplatte speichern</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Save</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>Send</name>
+    <title>
+      <key>en</key>
+      <value>Send</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Отправить</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wyślij</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Enviar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Enviar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Gönder</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Inviare</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Senden</value>
+    </title>
+    <id>3</id>
+    <toolTip>
+      <key>en</key>
+      <value>Send by email</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Отправить по почте</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Wyślij pocztą e-mail</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Enviar por correo electrónico</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Enviar por correo electrónico</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>E-posta ile gönder</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Inviare per email</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Per E-Mail senden</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Send</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>Settings</name>
+    <title>
+      <key>en</key>
+      <value>Settings</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Настройки</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Ustawienia</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Configuraciones</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Configuraciones</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Ayarlar</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Impostazioni</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Einstellungen</value>
+    </title>
+    <id>5</id>
+    <toolTip>
+      <key>en</key>
+      <value>Settings</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Настройки</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Ustawienia</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Configuraciones</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Configuraciones</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Ayarlar</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Impostazioni</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Einstellungen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Settings</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <parameters>
+    <name>CounterpartiesInitialValue</name>
+    <valueType/>
+  </parameters>
+  <parameters>
+    <name>PrintOptionInitialValue</name>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>8</length>
+      </stringQualifiers>
+    </valueType>
+  </parameters>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

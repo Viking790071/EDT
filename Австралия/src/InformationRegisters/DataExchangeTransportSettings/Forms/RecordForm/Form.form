@@ -1,0 +1,4738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:FormField">
+    <name>DefaultExchangeMessagesTransportKind</name>
+    <id>1</id>
+    <title>
+      <key>ru</key>
+      <value>Подключение по умолчанию</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Default connection</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Połączenie domyślne</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Conexión por defecto</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Conexión por defecto</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Varsayılan bağlantı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Collegamento di default</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Standardverbindung</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Record.DefaultExchangeMessagesTransportKind</segments>
+    </dataPath>
+    <extendedTooltip>
+      <name>DefaultExchangeMessagesTransportKindExtendedTooltip</name>
+      <id>121</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>DefaultExchangeMessagesTransportKindContextMenu</name>
+      <id>2</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <width>50</width>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <horizontalStretch>false</horizontalStretch>
+      <wrap>true</wrap>
+      <listChoiceMode>true</listChoiceMode>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>TransportKindsPages</name>
+    <id>47</id>
+    <items xsi:type="form:FormGroup">
+      <name>COMTransportSettings</name>
+      <id>48</id>
+      <items xsi:type="form:FormField">
+        <name>COMInfobaseOperatingMode</name>
+        <id>61</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Record.COMInfobaseOperatingMode</segments>
+        </dataPath>
+        <titleLocation>None</titleLocation>
+        <handlers>
+          <event>OnChange</event>
+          <name>COMInfobaseRunModeOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>COMInfobaseModeExtendedTooltip</name>
+          <id>124</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>COMInfobaseModeContextMenu</name>
+          <id>62</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>RadioButtonField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+          <columnsCount>1</columnsCount>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Файловая база-корреспондент</value>
+            </presentation>
+            <presentation>
+              <key>en</key>
+              <value>Correspondent infobase in file mode</value>
+            </presentation>
+            <presentation>
+              <key>pl</key>
+              <value>Korespondująca baza plików</value>
+            </presentation>
+            <presentation>
+              <key>es_ES</key>
+              <value>Base de archivos corresponsales</value>
+            </presentation>
+            <presentation>
+              <key>es_CO</key>
+              <value>Base de archivos corresponsales</value>
+            </presentation>
+            <presentation>
+              <key>tr</key>
+              <value>Karşılık gelen dosya tabanı</value>
+            </presentation>
+            <presentation>
+              <key>it</key>
+              <value>Infobase corrispondente in modalità file</value>
+            </presentation>
+            <presentation>
+              <key>de</key>
+              <value>Korrespondierende Dateibasis</value>
+            </presentation>
+            <value xsi:type="core:NumberValue">
+              <value>0</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Клиент-серверная база-корреспондент</value>
+            </presentation>
+            <presentation>
+              <key>en</key>
+              <value>Correspondent infobase in client/server mode</value>
+            </presentation>
+            <presentation>
+              <key>pl</key>
+              <value>Klient/serwer bazy korespondującej</value>
+            </presentation>
+            <presentation>
+              <key>es_ES</key>
+              <value>Base corresponsal del cliente/servidor</value>
+            </presentation>
+            <presentation>
+              <key>es_CO</key>
+              <value>Base corresponsal del cliente/servidor</value>
+            </presentation>
+            <presentation>
+              <key>tr</key>
+              <value>Istemci/sunucu karşılık gelen taban</value>
+            </presentation>
+            <presentation>
+              <key>it</key>
+              <value>Infobase corrispondente in modalità client/server</value>
+            </presentation>
+            <presentation>
+              <key>de</key>
+              <value>Client / Server-Korrespondent Basis</value>
+            </presentation>
+            <value xsi:type="core:NumberValue">
+              <value>1</value>
+            </value>
+          </choiceList>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>InfobaseModes</name>
+        <id>63</id>
+        <items xsi:type="form:FormGroup">
+          <name>InfobaseFileModePage</name>
+          <id>64</id>
+          <items xsi:type="form:FormField">
+            <name>COMInfobaseDirectory</name>
+            <id>57</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Record.COMInfobaseDirectory</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>COMInfobaseDirectoryExtendedTooltip</name>
+              <id>127</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>COMInfobaseDirectoryContextMenu</name>
+              <id>58</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <handlers>
+                <event>StartChoice</event>
+                <name>COMInfobaseDirectoryStartChoice</name>
+              </handlers>
+              <handlers>
+                <event>Opening</event>
+                <name>COMInfobaseDirectoryOpen</name>
+              </handlers>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <choiceButton>true</choiceButton>
+              <openButton>true</openButton>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Страница вариант работы файловый</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Operation mode file page</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Strona trubu działania plik</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Página de archivo del modo de operación</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Página de archivo del modo de operación</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Işlem modu dosyası sayfası</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Pagina modalità di lavoro con i file</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Betriebsart Datei Seite</value>
+          </title>
+          <extendedTooltip>
+            <name>InfobaseFileModePageExtendedTooltip</name>
+            <id>126</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Page</type>
+          <extInfo xsi:type="form:PageGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>InfobaseClientServerModePage</name>
+          <id>65</id>
+          <items xsi:type="form:FormField">
+            <name>COM1CEnterpriseServerName</name>
+            <id>55</id>
+            <title>
+              <key>ru</key>
+              <value>Имя сервера</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Server name</value>
+            </title>
+            <title>
+              <key>pl</key>
+              <value>Nazwa serwera</value>
+            </title>
+            <title>
+              <key>es_ES</key>
+              <value>Nombre del servidor</value>
+            </title>
+            <title>
+              <key>es_CO</key>
+              <value>Nombre del servidor</value>
+            </title>
+            <title>
+              <key>tr</key>
+              <value>Sunucu adı</value>
+            </title>
+            <title>
+              <key>it</key>
+              <value>Nome del server</value>
+            </title>
+            <title>
+              <key>de</key>
+              <value>Servername</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Record.COM1CEnterpriseServerName</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>COM1CEnterpriseServerNameExtendedTooltip</name>
+              <id>129</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>COM1CEnterpriseServerNameContextMenu</name>
+              <id>56</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>COM1CEnterpriseServerSideInfobaseName</name>
+            <id>51</id>
+            <title>
+              <key>ru</key>
+              <value>Имя информационной базы на сервере</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Infobase name on server</value>
+            </title>
+            <title>
+              <key>pl</key>
+              <value>Nazwa bazy informacyjnej na serwerze</value>
+            </title>
+            <title>
+              <key>es_ES</key>
+              <value>Nombre de la infobase en el servidor</value>
+            </title>
+            <title>
+              <key>es_CO</key>
+              <value>Nombre de la infobase en el servidor</value>
+            </title>
+            <title>
+              <key>tr</key>
+              <value>Sunucudaki bilgi tabanı ismi</value>
+            </title>
+            <title>
+              <key>it</key>
+              <value>Nome infobase sul server</value>
+            </title>
+            <title>
+              <key>de</key>
+              <value>Name der Infobase auf dem Server</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Record.COM1CEnterpriseServerSideInfobaseName</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>COMInfobaseNameAt1CEnterpriseServerExtendedTooltip</name>
+              <id>130</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>COMInfobaseNameAt1CEnterpriseServerContextMenu</name>
+              <id>52</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Страница вариант работы клиент серверный</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Client/server mode page</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Strona praca w trybie klient-serwer</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Página del servidor del cliente del modo de operación</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Página del servidor del cliente del modo de operación</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Işlem modu istemci sunucu sayfası</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Pagina modalità client/server</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Betriebsmodus Client-Server-Seite</value>
+          </title>
+          <extendedTooltip>
+            <name>InfobaseClientServerModePageExtendedTooltip</name>
+            <id>128</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Page</type>
+          <extInfo xsi:type="form:PageGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Варианты работы информационной базы</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Infobase run modes</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Tryby pracy bazy informacyjnej</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Modo de operación de la infobase</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Modo de operación de la infobase</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Bilgi tabanı işlem modları</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Modalità di utilizzo Infobase</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Infobase-Betriebsmodi</value>
+        </title>
+        <extendedTooltip>
+          <name>InfobaseModesExtendedTooltip</name>
+          <id>125</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Pages</type>
+        <extInfo xsi:type="form:PagesGroupExtInfo">
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>COMOperatingSystemAuthentication</name>
+        <id>49</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Record.COMOperatingSystemAuthentication</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <handlers>
+          <event>OnChange</event>
+          <name>COMOSAuthenticationOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>COMOperatingSystemAuthenticationExtendedTooltip</name>
+          <id>131</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>COMOperatingSystemAuthenticationContextMenu</name>
+          <id>50</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>COMUserPasswordGroup</name>
+        <id>66</id>
+        <items xsi:type="form:FormField">
+          <name>COMUsername</name>
+          <id>53</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Record.COMUsername</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>COMUserNameExtendedTooltip</name>
+            <id>133</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>COMUserNameContextMenu</name>
+            <id>54</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>COMUserPassword</name>
+          <id>59</id>
+          <title>
+            <key>ru</key>
+            <value>Пароль</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Password</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Hasło</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Contraseña</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Contraseña</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Parola</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Password</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Passwort</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>COMUserPassword</segments>
+          </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>COMUserPasswordOnChange</name>
+          </handlers>
+          <extendedTooltip>
+            <name>COMUserPasswordExtendedTooltip</name>
+            <id>134</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>COMUserPasswordContextMenu</name>
+            <id>60</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <passwordMode>true</passwordMode>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>COM группа пользователь пароль</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>COM group user password</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>COM grupa użytkownik hasło</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Grupo COM usuario contraseña</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Grupo COM usuario contraseña</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>COM grup kullanıcı şifre</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Gruppo COM utente password</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>COM-Gruppe Benutzerpasswort</value>
+        </title>
+        <extendedTooltip>
+          <name>COMUserPasswordGroupExtendedTooltip</name>
+          <id>132</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>HorizontalIfPossible</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Button">
+        <name>TestCOMConnection</name>
+        <id>67</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>TestCOMConnectionExtendedTooltip</name>
+          <id>136</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualButton</type>
+        <commandName>Form.Command.TestCOMConnection</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Прямое подключение</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Direct connection</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Połączenie bezpośrednie</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Conexión directa</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Conexión directa</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Doğrudan bağlantı</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Connessione diretta</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Direkte Verbindung</value>
+      </title>
+      <extendedTooltip>
+        <name>COMTransportSettingsExtendedTooltip</name>
+        <id>123</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>TransportSettingsWS</name>
+      <id>89</id>
+      <items xsi:type="form:FormField">
+        <name>WSWebServiceURL</name>
+        <id>90</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Record.WSWebServiceURL</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>WSURLExtendedTooltip</name>
+          <id>139</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>WSURLContextMenu</name>
+          <id>91</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>WSUserAndPassword</name>
+        <id>112</id>
+        <items xsi:type="form:FormField">
+          <name>WSUsername</name>
+          <id>92</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Record.WSUsername</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>WSUsernameExtendedTooltip</name>
+            <id>141</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>WSUsernameContextMenu</name>
+            <id>93</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <width>30</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <horizontalStretch>false</horizontalStretch>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>WSPassword</name>
+          <id>111</id>
+          <items xsi:type="form:FormField">
+            <name>WSPassword</name>
+            <id>94</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>WSPassword</segments>
+            </dataPath>
+            <handlers>
+              <event>OnChange</event>
+              <name>WSPasswordOnChange</name>
+            </handlers>
+            <extendedTooltip>
+              <name>WSPasswordExtendedTooltip</name>
+              <id>143</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>WSPasswordContextMenu</name>
+              <id>95</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <width>30</width>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <horizontalStretch>false</horizontalStretch>
+              <wrap>true</wrap>
+              <passwordMode>true</passwordMode>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>WSRememberPassword</name>
+            <id>109</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Record.WSRememberPassword</segments>
+            </dataPath>
+            <titleLocation>Right</titleLocation>
+            <extendedTooltip>
+              <name>WSRememberPasswordExtendedTooltip</name>
+              <id>144</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>WSRememberPasswordContextMenu</name>
+              <id>110</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Пароль WS</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>WS password</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Hasło WS</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Contraseña WS</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Contraseña WS</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>WS parolası</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>WS password</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>WS Passwort</value>
+          </title>
+          <extendedTooltip>
+            <name>WSPassword1ExtendedTooltip</name>
+            <id>142</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>HorizontalIfPossible</group>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Пользователь и пароль WS</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>WS user and password</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Użytkownik i hasło WS</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Usuario y contraseña WS</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Usuario y contraseña WS</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Kullanıcı ve WS şifresi</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>WS utente e password</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>WS Benutzer und Passwort</value>
+        </title>
+        <extendedTooltip>
+          <name>WSUserAndPasswordExtendedTooltip</name>
+          <id>140</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Button">
+        <name>InternetAccessParameters</name>
+        <id>119</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>InternetAccessParametersExtendedTooltip</name>
+          <id>145</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Hyperlink</type>
+        <commandName>Form.Command.InternetAccessParameters</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <items xsi:type="form:Button">
+        <name>TestWSConnection</name>
+        <id>96</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>TestWSConnectionExtendedTooltip</name>
+          <id>146</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualButton</type>
+        <commandName>Form.Command.TestWSConnection</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Интернет</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Internet</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Internet</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Internet</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Internet</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>İnternet</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Internet</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Internet</value>
+      </title>
+      <extendedTooltip>
+        <name>WSTransportSettingsExtendedTooltip</name>
+        <id>138</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>FILETransportSettings</name>
+      <id>5</id>
+      <items xsi:type="form:FormField">
+        <name>FILEInformationExchangeDirectory</name>
+        <id>8</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Record.FILEInformationExchangeDirectory</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>FILEDataExchangeDirectoryExtendedTooltip</name>
+          <id>149</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>FILEDataExchangeDirectoryContextMenu</name>
+          <id>9</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <handlers>
+            <event>StartChoice</event>
+            <name>FILEDataExchangeDirectoryStartChoice</name>
+          </handlers>
+          <handlers>
+            <event>Opening</event>
+            <name>FILEDataExchangeDirectoryOpen</name>
+          </handlers>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <choiceButton>true</choiceButton>
+          <openButton>true</openButton>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>FileArchive</name>
+        <id>100</id>
+        <items xsi:type="form:FormField">
+          <name>FILECompressOutgoingMessageFile</name>
+          <id>10</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Record.FILECompressOutgoingMessageFile</segments>
+          </dataPath>
+          <titleLocation>Right</titleLocation>
+          <extendedTooltip>
+            <name>FILECompressOutgoingMessageFileExtendedTooltip</name>
+            <id>152</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>FILECompressOutgoingMessageFileContextMenu</name>
+            <id>11</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>ExchangeMessageArchivePassword1</name>
+          <id>101</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>ArchivePasswordExchangeMessages</segments>
+          </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>ArchivePasswordExchange1MessagesOnChange</name>
+          </handlers>
+          <extendedTooltip>
+            <name>ExchangeMessageArchivePassword1ExtendedTooltip</name>
+            <id>153</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ExchangeMessageArchivePassword1ContextMenu</name>
+            <id>102</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <width>20</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <horizontalStretch>false</horizontalStretch>
+            <wrap>true</wrap>
+            <passwordMode>true</passwordMode>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Архив file</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Archive file</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Archiwum file</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Archivo file</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Archivo file</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Arşiv file</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>File di archivio</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Archivdatei</value>
+        </title>
+        <extendedTooltip>
+          <name>FileArchiveExtendedTooltip</name>
+          <id>151</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <representation>NormalSeparation</representation>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>FILETransliterateExchangeMessagesFilesNames</name>
+        <id>190</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Record.FILETransliterateExchangeMessageFileNames</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <toolTipRepresentation>Button</toolTipRepresentation>
+        <extendedTooltip>
+          <name>FILETransliterateExchangeMessagesFilesNamesExtendedTooltip</name>
+          <id>192</id>
+          <title>
+            <key>ru</key>
+            <value>Рекомендуется применять в случае, если при обмене возникают ошибки, связанные с  различными кодировками файлов.
+Настройку не следует использовать, в случае, если такая же настройка не поддерживается на стороне корреспондента.</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>It is recommended that you apply it if errors occur during the exchange due to different file encodings.
+Setting should not be used if the same setting is not supported on the correspondent side.</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Zaleca się używać, jeśli podczas wymiany występują błędy, związane z różnym kodowaniem plików. 
+Ustawień nie należy używać w przypadku, gdy takie same ustawienia nie są obsługiwane po stronie korespondenta.</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Se recomienda aplicar en caso si al intercambiar se producen errores vinculados con varias codificaciones de archivos.
+No hay que usar el ajuste si el mismo ajuste no se admite al lado del corresponsal.</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Se recomienda aplicar en caso si al intercambiar se producen errores vinculados con varias codificaciones de archivos.
+No hay que usar el ajuste si el mismo ajuste no se admite al lado del corresponsal.</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Çeşitli dosya kodlamaları ile ilgili hatalar değiştiğinde kullanılması önerilir.
+Aynı kurulumun muhabir tarafında desteklenmemesi durumunda ayar kullanılmamalıdır.</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Si consiglia di applicarlo se si registrano errori durante lo scambio a causa di differenti codifiche file.
+Le impostazioni non dovrebbero essere usata se le stesse non sono supportate dal lato corrispondente.</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Es wird empfohlen, dies bei Fehlern während des Austauschs aufgrund unterschiedlicher Kodierungen von Dateien zu verwenden.
+Die Einstellung sollte nicht verwendet werden, wenn die gleiche Einstellung nicht von der Seite des Empfänger unterstützt wird.</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>FILETransliterateExchangeMessagesFilesNamesContextMenu</name>
+          <id>191</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:Button">
+        <name>TestFILEConnection</name>
+        <id>42</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <skipOnInput>false</skipOnInput>
+        <extendedTooltip>
+          <name>TestFILEConnectionExtendedTooltip</name>
+          <id>150</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualButton</type>
+        <commandName>Form.Command.TestFILEConnection</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Сетевой каталог</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Network folder</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Katalog sieciowy</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Carpeta de la red</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Carpeta de la red</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Şebeke klasörü</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Cartella di rete</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Netzwerkordner</value>
+      </title>
+      <extendedTooltip>
+        <name>FILETransportSettingsExtendedTooltip</name>
+        <id>148</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>FTPTransportSettings</name>
+      <id>6</id>
+      <items xsi:type="form:FormGroup">
+        <name>ServerPortGroup</name>
+        <id>37</id>
+        <items xsi:type="form:FormField">
+          <name>FTPConnectionPath</name>
+          <id>14</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Record.FTPConnectionPath</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>FTPConnectionPathExtendedTooltip</name>
+            <id>156</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>FTPConnectionPathContextMenu</name>
+            <id>15</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>FTPConnectionPort</name>
+          <id>16</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Record.FTPConnectionPort</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>FTPConnectionPortExtendedTooltip</name>
+            <id>157</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>FTPConnectionPortContextMenu</name>
+            <id>17</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <editFormat>
+              <key>ru</key>
+              <value>ЧГ=0</value>
+            </editFormat>
+            <editFormat>
+              <key>en</key>
+              <value>NG=0</value>
+            </editFormat>
+            <editFormat>
+              <key>pl</key>
+              <value>NG=0</value>
+            </editFormat>
+            <editFormat>
+              <key>es_ES</key>
+              <value>NG=0</value>
+            </editFormat>
+            <editFormat>
+              <key>es_CO</key>
+              <value>NG=0</value>
+            </editFormat>
+            <editFormat>
+              <key>tr</key>
+              <value>NG=0</value>
+            </editFormat>
+            <editFormat>
+              <key>it</key>
+              <value>NG=0</value>
+            </editFormat>
+            <editFormat>
+              <key>de</key>
+              <value>NG=0</value>
+            </editFormat>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Сервер порт</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Server port</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Serwer port</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Servidor puerto</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Servidor puerto</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Sunucu port</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Porta server</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Server-Port</value>
+        </title>
+        <extendedTooltip>
+          <name>ServerPortGroupExtendedTooltip</name>
+          <id>155</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>HorizontalIfPossible</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>UserPasswordGroup</name>
+        <id>38</id>
+        <items xsi:type="form:FormField">
+          <name>FTPConnectionUser</name>
+          <id>18</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Record.FTPConnectionUser</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>FTPConnectionUserExtendedTooltip</name>
+            <id>159</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>FTPConnectionUserContextMenu</name>
+            <id>19</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>FTPConnectionPassword</name>
+          <id>22</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>FTPConnectionPassword</segments>
+          </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>FTPConnectionPasswordOnChange</name>
+          </handlers>
+          <extendedTooltip>
+            <name>FTPConnectionPasswordExtendedTooltip</name>
+            <id>160</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>FTPConnectionPasswordContextMenu</name>
+            <id>23</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <passwordMode>true</passwordMode>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Пользователь пароль</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>User password</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Hasło użytkownika</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Contraseña del usuario</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Contraseña del usuario</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Kullanıcı parolası</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Password utente</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Benutzerpasswort</value>
+        </title>
+        <extendedTooltip>
+          <name>UserPasswordGroupExtendedTooltip</name>
+          <id>158</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>HorizontalIfPossible</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>FTPFileSize</name>
+        <id>113</id>
+        <items xsi:type="form:FormField">
+          <name>FTPConnectionMaxMessageSize</name>
+          <id>39</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Record.FTPConnectionMaxMessageSize</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>FTPConnectionMaxMessageSizeExtendedTooltip</name>
+            <id>162</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>FTPConnectionMaxMessageSizeContextMenu</name>
+            <id>40</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <choiceButton>true</choiceButton>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>Decoration1</name>
+          <id>114</id>
+          <title>
+            <key>ru</key>
+            <value>КБ  (0 – нет ограничений)</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>KB  (0 - no restrictions)</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>KB (0 - bez ograniczeń)</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Kb (0 – no hay restricciones)</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Kb (0 – no hay restricciones)</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>KB (0 - kısıtlama yok)</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>KB  (0 - nessuna restrizione)</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>KB (0 - keine Einschränkungen)</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>Decoration1ExtendedTooltip</name>
+            <id>163</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>Decoration1ContextMenu</name>
+            <id>115</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>Label</type>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>FTP размер файла</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>FTP file size</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>FTP rozmiar pliku</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Tamaño de archivo FTP</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Tamaño de archivo FTP</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>FTP dosya boyutu</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Dimensione file FTP</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>FTP-Dateigröße</value>
+        </title>
+        <extendedTooltip>
+          <name>FTPFileSizeExtendedTooltip</name>
+          <id>161</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>HorizontalIfPossible</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>FTPConnectionPassiveConnection</name>
+        <id>20</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Record.FTPConnectionPassiveConnection</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <extendedTooltip>
+          <name>FTPConnectionPassiveConnectionExtendedTooltip</name>
+          <id>164</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>FTPConnectionPassiveConnectionContextMenu</name>
+          <id>21</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:Button">
+        <name>InternetAccessParameters1</name>
+        <id>120</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>InternetAccessParameters1ExtendedTooltip</name>
+          <id>165</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Hyperlink</type>
+        <commandName>Form.Command.InternetAccessParameters</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>FTPArchive</name>
+        <id>103</id>
+        <items xsi:type="form:FormField">
+          <name>FTPCompressOutgoingMessageFile</name>
+          <id>12</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Record.FTPCompressOutgoingMessageFile</segments>
+          </dataPath>
+          <titleLocation>Right</titleLocation>
+          <extendedTooltip>
+            <name>FTPCompressOutgoingMessageFileExtendedTooltip</name>
+            <id>168</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>FTPCompressOutgoingMessageFileContextMenu</name>
+            <id>13</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>ArchivePasswordExchangeMessages</name>
+          <id>34</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>ArchivePasswordExchangeMessages</segments>
+          </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>ArchivePasswordExchangeMessagesOnChange</name>
+          </handlers>
+          <extendedTooltip>
+            <name>ExchangeMessageArchivePasswordExtendedTooltip</name>
+            <id>169</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ExchangeMessageArchivePasswordContextMenu</name>
+            <id>35</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <width>20</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <horizontalStretch>false</horizontalStretch>
+            <wrap>true</wrap>
+            <passwordMode>true</passwordMode>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>FTP архив</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>FTP archive</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>FTP archiwum</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Archivo FTP</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Archivo FTP</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>FTP arşiv</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Archivio FTP</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>FTP-Archiv</value>
+        </title>
+        <extendedTooltip>
+          <name>FTPArchiveExtendedTooltip</name>
+          <id>167</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <representation>NormalSeparation</representation>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>FTPTransliterateExchangeMessagesFilesNames</name>
+        <id>193</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Record.FTPTransliterateExchangeMessageFileNames</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <toolTipRepresentation>Button</toolTipRepresentation>
+        <extendedTooltip>
+          <name>FTPTransliterateExchangeMessagesFilesNamesExtendedTooltip</name>
+          <id>195</id>
+          <title>
+            <key>ru</key>
+            <value>Рекомендуется применять в случае, если при обмене возникают ошибки, связанные с  различными кодировками файлов.
+Настройку не следует использовать, в случае, если такая же настройка не поддерживается на стороне корреспондента.</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>It is recommended that you apply it if errors occur during the exchange due to different file encodings.
+Setting should not be used if the same setting is not supported on the correspondent side.</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Zaleca się używać, jeśli podczas wymiany występują błędy, związane z różnym kodowaniem plików. 
+Ustawień nie należy używać w przypadku, gdy takie same ustawienia nie są obsługiwane po stronie korespondenta.</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Se recomienda aplicar en caso si al intercambiar se producen errores vinculados con varias codificaciones de archivos.
+No hay que usar el ajuste si el mismo ajuste no se admite al lado del corresponsal.</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Se recomienda aplicar en caso si al intercambiar se producen errores vinculados con varias codificaciones de archivos.
+No hay que usar el ajuste si el mismo ajuste no se admite al lado del corresponsal.</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Çeşitli dosya kodlamaları ile ilgili hatalar değiştiğinde kullanılması önerilir.
+Aynı kurulumun muhabir tarafında desteklenmemesi durumunda ayar kullanılmamalıdır.</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Si consiglia di applicarlo se si registrano errori durante lo scambio a causa di differenti codifiche file.
+Le impostazioni non dovrebbero essere usata se le stesse non sono supportate dal lato corrispondente.</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Es wird empfohlen, dies bei Fehlern während des Austauschs aufgrund unterschiedlicher Kodierungen von Dateien zu verwenden.
+Die Einstellung sollte nicht verwendet werden, wenn die gleiche Einstellung nicht von der Seite des Empfänger unterstützt wird.</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>FTPTransliterateExchangeMessagesFilesNamesContextMenu</name>
+          <id>194</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:Button">
+        <name>TestFTPConnection</name>
+        <id>41</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <skipOnInput>false</skipOnInput>
+        <extendedTooltip>
+          <name>TestFTPConnectionExtendedTooltip</name>
+          <id>166</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualButton</type>
+        <commandName>Form.Command.TestFTPConnection</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <groupVerticalAlign>Bottom</groupVerticalAlign>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>FTP-ресурс</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>FTP resource</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Serwer FTP</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Recurso FTP</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Recurso FTP</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>FTP kaynağı</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Risorsa FTP</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>FTP Ressource</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Настройки транспорта FILE</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>FILE transport settings</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Konfiguracja transportu PLIK</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Configuraciones de transporte ARCHIVO</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Configuraciones de transporte ARCHIVO</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>DOSYA taşıma ayarları</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Impostazioni di trasporto FILE</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>File Transport Einstellungen</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>FTPTransportSettingsExtendedTooltip</name>
+        <id>154</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>EMAILTransportSettings</name>
+      <id>7</id>
+      <items xsi:type="form:FormField">
+        <name>EMAILUserAccount</name>
+        <id>30</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Record.EMAILUserAccount</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>EMAILUserAccountExtendedTooltip</name>
+          <id>171</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>EMAILUserAccountContextMenu</name>
+          <id>31</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>EMAILFileSize</name>
+        <id>116</id>
+        <items xsi:type="form:FormField">
+          <name>EMAILMaxMessageSize</name>
+          <id>26</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Record.EMAILMaxMessageSize</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>EMAILMaxMessageSizeExtendedTooltip</name>
+            <id>173</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>EMAILMaxMessageSizeContextMenu</name>
+            <id>27</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <choiceButton>true</choiceButton>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>Decoration2</name>
+          <id>117</id>
+          <title>
+            <key>ru</key>
+            <value>КБ (0 – нет ограничений)</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>kB (if it is 0, there are no restriction)</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>KB (0 - no restrictions)</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>KB (0 - no hay restricciones)</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>KB (0 - no hay restricciones)</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>KB (0 - kısıtlama yok)</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>kB (se è 0, non ci sono restrizioni)</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>KB (0 - keine Einschränkungen)</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>Decoration2ExtendedTooltip</name>
+            <id>174</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>Decoration2ContextMenu</name>
+            <id>118</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>Label</type>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>EMAIL размер файла</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>EMAIL file size</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>EMAIL rozmiar pliku</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Tamaño de archivo EMAIL</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Tamaño de archivo EMAIL</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>EMAIL dosya boyutu</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Dimensione file EMAIL</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>E-MAIL-Dateigröße</value>
+        </title>
+        <extendedTooltip>
+          <name>EMAILFileSizeExtendedTooltip</name>
+          <id>172</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>HorizontalIfPossible</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>EMAILArchive</name>
+        <id>104</id>
+        <items xsi:type="form:FormField">
+          <name>EMAILCompressOutgoingMessageFile</name>
+          <id>28</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Record.EMAILCompressOutgoingMessageFile</segments>
+          </dataPath>
+          <titleLocation>Right</titleLocation>
+          <extendedTooltip>
+            <name>EMAILCompressOutgoingMessageFileExtendedTooltip</name>
+            <id>177</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>EMAILCompressOutgoingMessageFileContextMenu</name>
+            <id>29</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>ExchangeMessageArchivePassword2</name>
+          <id>105</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>ArchivePasswordExchangeMessages</segments>
+          </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>ArchivePasswordExchange2MessagesOnChange</name>
+          </handlers>
+          <extendedTooltip>
+            <name>ExchangeMessageArchivePassword2ExtendedTooltip</name>
+            <id>178</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ExchangeMessageArchivePassword2ContextMenu</name>
+            <id>106</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <width>20</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <horizontalStretch>false</horizontalStretch>
+            <wrap>true</wrap>
+            <passwordMode>true</passwordMode>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>EMAIL архив</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>EMAIL archive</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>EMAIL archiwum</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Archivo EMAIL</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Archivo EMAIL</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>EMAIL arşiv</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Archivio EMAIL</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>E-MAIL-Archiv</value>
+        </title>
+        <extendedTooltip>
+          <name>EMAILArchiveExtendedTooltip</name>
+          <id>176</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <representation>NormalSeparation</representation>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>EMAILTransliterateExchangeMessagesFilesNames</name>
+        <id>196</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Record.EMAILTransliterateExchangeMessageFileNames</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <toolTipRepresentation>Button</toolTipRepresentation>
+        <extendedTooltip>
+          <name>EMAILTransliterateExchangeMessagesFilesNamesExtendedTooltip</name>
+          <id>198</id>
+          <title>
+            <key>ru</key>
+            <value>Рекомендуется применять в случае, если при обмене возникают ошибки, связанные с  различными кодировками файлов.
+Настройку не следует использовать, в случае, если такая же настройка не поддерживается на стороне корреспондента.</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>It is recommended that you apply it if errors occur during the exchange due to different file encodings.
+Setting should not be used if the same setting is not supported on the correspondent side.</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Zaleca się używać, jeśli podczas wymiany występują błędy, związane z różnym kodowaniem plików. 
+Ustawień nie należy używać w przypadku, gdy takie same ustawienia nie są obsługiwane po stronie korespondenta.</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Se recomienda aplicar en caso si al intercambiar se producen errores vinculados con varias codificaciones de archivos.
+No hay que usar el ajuste si el mismo ajuste no se admite al lado del corresponsal.</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Se recomienda aplicar en caso si al intercambiar se producen errores vinculados con varias codificaciones de archivos.
+No hay que usar el ajuste si el mismo ajuste no se admite al lado del corresponsal.</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Çeşitli dosya kodlamaları ile ilgili hatalar değiştiğinde kullanılması önerilir.
+Aynı kurulumun muhabir tarafında desteklenmemesi durumunda ayar kullanılmamalıdır.</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Si consiglia di applicarlo se si registrano errori durante lo scambio a causa di differenti codifiche file.
+Le impostazioni non dovrebbero essere usata se le stesse non sono supportate dal lato corrispondente.</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Es wird empfohlen, dies bei Fehlern während des Austauschs aufgrund unterschiedlicher Kodierungen von Dateien zu verwenden.
+Die Einstellung sollte nicht verwendet werden, wenn die gleiche Einstellung nicht von der Seite des Empfänger unterstützt wird.</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>EMAILTransliterateExchangeMessagesFilesNamesContextMenu</name>
+          <id>197</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:Button">
+        <name>TestEMAILConnection</name>
+        <id>43</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <skipOnInput>false</skipOnInput>
+        <extendedTooltip>
+          <name>TestEMAILConnectionExtendedTooltip</name>
+          <id>175</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualButton</type>
+        <commandName>Form.Command.TestEMAILConnection</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Почтовые сообщения</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Email messages</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Wiadomości mailowe</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Mensajes de correo electrónico</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Mensajes de correo electrónico</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>E-posta iletileri</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Messaggi e-mail</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>E-Mail Nachrichten</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Настройки транспорта FILE</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>FILE transport settings</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Konfiguracja transportu PLIK</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Configuraciones de transporte ARCHIVO</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Configuraciones de transporte ARCHIVO</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>DOSYA taşıma ayarları</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Impostazioni di trasporto FILE</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>File Transport Einstellungen</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>EMAILTransportSettingsExtendedTooltip</name>
+        <id>170</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>WSTransportSettingsPassiveMode</name>
+      <id>199</id>
+      <items xsi:type="form:Decoration">
+        <name>Decoration3</name>
+        <id>201</id>
+        <title>
+          <key>ru</key>
+          <value>Для данного вида подключения настроек в этой программе не требуется.</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Settings are not required in this application for this connection kind.</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Dla tego typu połączenia ustawień w tym programie nie jest wymagane.</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Para este tipo de conexión los ajustes en este programa no se requieren.</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Para este tipo de conexión los ajustes en este programa no se requieren.</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Bu tür bağlantı için bu programda ayarlar gerekli değildir.</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Le impostazioni non sono richieste in questa applicazione per questo tipo di connessione.</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Für diese Art der Verbindung sind Einstellungen in dieser Anwendung nicht erforderlich.</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>Decoration3ExtendedTooltip</name>
+          <id>203</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>Decoration3ContextMenu</name>
+          <id>202</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Интернет (пассивный режим)</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Internet (passive mode)</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Internet (tryb pasywny)</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Internet (modo pasivo)</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Internet (modo pasivo)</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>İnternet (pasif mod)</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Internet (modo passivo)</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Internet (passiver Modus)</value>
+      </title>
+      <extendedTooltip>
+        <name>WSTransportSettingsPassiveModeExtendedTooltip</name>
+        <id>200</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Страницы видов транспорта</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Transport kind pages</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Strony rodzajów transportu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Páginas de los tipos de vehículos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Páginas de los tipos de vehículos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Araç tipleri sayfaları</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Pagine tipo di trasporto</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Fahrzeugtypen Seiten</value>
+    </title>
+    <extendedTooltip>
+      <name>TransportKindsPagesExtendedTooltip</name>
+      <id>122</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>Pages</type>
+    <extInfo xsi:type="form:PagesGroupExtInfo">
+      <pagesRepresentation>TabsOnLeftHorizontal</pagesRepresentation>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>CommandBarForm</name>
+    <id>-1</id>
+    <items xsi:type="form:Button">
+      <name>FormWriteAndClose</name>
+      <id>184</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormWriteAndCloseExtendedTooltip</name>
+        <id>185</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.WriteAndClose</commandName>
+      <representation>Auto</representation>
+      <defaultButton>true</defaultButton>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>FormWrite</name>
+      <id>186</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormWriteExtendedTooltip</name>
+        <id>187</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.StandardCommand.Write</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>FormRefresh</name>
+      <id>188</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormRereadExtendedTooltip</name>
+        <id>189</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.StandardCommand.Reread</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+      <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <handlers>
+    <event>OnOpen</event>
+    <name>OnOpen</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <excludedCommands>Copy</excludedCommands>
+  <excludedCommands>Delete</excludedCommands>
+  <excludedCommands>WriteAndClose</excludedCommands>
+  <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Record</name>
+    <id>1</id>
+    <valueType>
+      <types>InformationRegisterRecordManager.DataExchangeTransportSettings</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <main>true</main>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>EventLogEventEstablishWebServiceConnection</name>
+    <title>
+      <key>ru</key>
+      <value>Событие журнала регистрации установка подключения к web сервису</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Event log message text of establishing connection to web service</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wydarzenia dziennika nawiązanie połączenia z serwisem internetowym</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Evento del registro de eventos establecer conexión al servidor web</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Evento del registro de eventos establecer conexión al servidor web</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Web servisine bağlantı kurmanın olay günlüğü mesaj metni</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Testo di messaggio del registro degli eventi per stabilire la connessione al servizio web</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Ereignisprotokollereignis stellt Verbindung zum Webservice her</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>COMUserPassword</name>
+    <title>
+      <key>ru</key>
+      <value>Пароль пользователя</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>User password</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Hasło użytkownika</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Contraseña del usuario</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Contraseña del usuario</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kullanıcı parolası</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Password utente</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Benutzerpasswort</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>WSPassword</name>
+    <title>
+      <key>ru</key>
+      <value>Пароль</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Password</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Hasło</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Contraseña</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Contraseña</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Parola</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Password</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Passwort</value>
+    </title>
+    <id>4</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>FTPConnectionPassword</name>
+    <title>
+      <key>ru</key>
+      <value>Пароль</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Password</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Hasło</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Contraseña</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Contraseña</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Parola</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Password</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Passwort</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ArchivePasswordExchangeMessages</name>
+    <title>
+      <key>ru</key>
+      <value>Пароль архива</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Archive password</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Hasło archiwum</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Contraseña del archivo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Contraseña del archivo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Arşiv parolası</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Password archivio</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Passwort archivieren</value>
+    </title>
+    <id>6</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>WSPasswordChanged</name>
+    <title>
+      <key>ru</key>
+      <value>WSПароль изменен</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>WSPassword was changed</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>WSHasło zostało zmienione</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Contraseña WS cambiada</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Contraseña WS cambiada</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>WSŞifre değiştirildi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>WSPassword è stata modificata</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>WSPasswort geändert</value>
+    </title>
+    <id>7</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>FTPConnectionPasswordChanged</name>
+    <title>
+      <key>ru</key>
+      <value>FTPСоединение пароль изменен</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>FTPConnection password was changed</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>FTPPołączenie hasło zmienione</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Contraseña cambiada de Conexión FTP</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Contraseña cambiada de Conexión FTP</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>FTPBağlantısı şifre değiştirildi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Password della connessione FTP modificata</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>FTPVerbindungskennwort geändert</value>
+    </title>
+    <id>8</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>COMUserPasswordChanged</name>
+    <title>
+      <key>ru</key>
+      <value>COMПароль пользователя изменен</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>COMUser password was changed</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>COMHasło użytkownika zmienione</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Contraseña COM de usuario cambiada</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Contraseña COM de usuario cambiada</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>COMKullanıcı şifresi değiştirildi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Password utente COM modificata</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>COMBenutzerkennwort geändert</value>
+    </title>
+    <id>9</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ExchangeMessageArchivePasswordChanged</name>
+    <title>
+      <key>ru</key>
+      <value>Пароль архива сообщения обмена изменен</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Password of exchange message archive is changed</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Hasło archiwum wiadomości wymiany zmienione</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Contraseña de archivo del mensaje de intercambio cambiada</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Contraseña de archivo del mensaje de intercambio cambiada</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Alışveriş mesajı arşivleme şifresi değiştirildi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Password dell'archivio dei messaggi di scambio modificata</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Passwort für Austausch-Nachrichtenarchivierung geändert</value>
+    </title>
+    <id>10</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>TestFTPConnection</name>
+    <title>
+      <key>ru</key>
+      <value>Проверить подключение</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Check connection</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Sprawdź połączenie</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Revisar conexión</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Revisar conexión</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Bağlantıyı kontrol et</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Controllo connessione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Überprüfen Sie die Verbindung</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Проверить подключение через FTP ресурс</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Test connection over FTP source</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Sprawdź połaczanie przez FTP zasób</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Revisar conexión a través del recurso FTP</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Revisar conexión a través del recurso FTP</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Bağlantıyı FTP kaynağı ile kontrol et</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Verifica connessione tramite risorsa FTP</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Überprüfen Sie die Verbindung über die FTP-Ressource</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>TestFTPConnection</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>TestFILEConnection</name>
+    <title>
+      <key>ru</key>
+      <value>Проверить подключение</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Check connection</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Sprawdź połączenie</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Revisar conexión</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Revisar conexión</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Bağlantıyı kontrol et</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Controllo connessione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Überprüfen Sie die Verbindung</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Проверить подключение по сетевому каталогу</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Test connection to the network directory</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Sprawdź połączenie przez katalog sieciowy</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Revisar la conexión por el directorio de la red</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Revisar la conexión por el directorio de la red</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Bağlantıyı ağ dizini ile kontrol et</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Test connessione alla directory di rete</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Überprüfen Sie die Verbindung durch das Netzwerkverzeichnis</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>TestFILEConnection</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>TestEMAILConnection</name>
+    <title>
+      <key>ru</key>
+      <value>Проверить подключение</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Check connection</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Sprawdź połączenie</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Revisar conexión</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Revisar conexión</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Bağlantıyı kontrol et</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Controllo connessione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Überprüfen Sie die Verbindung</value>
+    </title>
+    <id>3</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Проверить подключение по электронной почте</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Test connection over email.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Sprawdź połączenie przez e-mail</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Revisar conexión por correo electrónico</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Revisar conexión por correo electrónico</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Eposta ile bağlantıyı kontrol et</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Test connessione su email</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Überprüfen Sie die Verbindung per E-Mail</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>TestEMAILConnection</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>TestCOMConnection</name>
+    <title>
+      <key>ru</key>
+      <value>Проверить подключение</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Check connection</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Sprawdź połączenie</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Revisar conexión</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Revisar conexión</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Bağlantıyı kontrol et</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Controllo connessione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Überprüfen Sie die Verbindung</value>
+    </title>
+    <id>4</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Проверить подключение к информационной базе-корреспонденту</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Test connection to the correspondent infobase</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Sprawdzić połączenie z korespondującą bazą informacyjną</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Revisar la conexión de la base corresponsal de la información</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Revisar la conexión de la base corresponsal de la información</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Bilgi eş tabanına bağlantıyı kontrol et</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Testa la connessione all'infobase corrispondente</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Überprüfen Sie die Verbindung zur Informationskorrespondenzbasis</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>TestCOMConnection</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>TestWSConnection</name>
+    <title>
+      <key>ru</key>
+      <value>Проверить подключение</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Check connection</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Sprawdź połączenie</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Revisar conexión</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Revisar conexión</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Bağlantıyı kontrol et</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Controllo connessione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Überprüfen Sie die Verbindung</value>
+    </title>
+    <id>6</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Проверить подключение к информационной базе-корреспонденту</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Test connection to the correspondent infobase</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Sprawdzić połączenie z korespondującą bazą informacyjną</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Revisar la conexión de la base corresponsal de la información</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Revisar la conexión de la base corresponsal de la información</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Bilgi eş tabanına bağlantıyı kontrol et</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Testa la connessione all'infobase corrispondente</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Überprüfen Sie die Verbindung zur Informationskorrespondenzbasis</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>TestWSConnection</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>InternetAccessParameters</name>
+    <title>
+      <key>ru</key>
+      <value>Параметры доступа в Интернет</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Internet access parameters</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Parametry dostępu do Internetu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Parámetros de acceso a Internet</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Parámetros de acceso a Internet</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>İnternet erişim parametreleri</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Parametri di accesso a Internet</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Internetzugriffseinstellungen</value>
+    </title>
+    <id>7</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Параметры доступа в Интернет</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Internet access parameters</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Parametry dostępu do Internetu</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Parámetros de acceso a Internet</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Parámetros de acceso a Internet</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>İnternet erişim parametreleri</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Parametri di accesso a Internet</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Internetzugriffseinstellungen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>InternetAccessParameters</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>WriteAndClose</name>
+    <title>
+      <key>ru</key>
+      <value>Записать и закрыть</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Save and close</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zapisz i zamknij</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Guardar y cerrar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Guardar y cerrar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Sakla ve kapat</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Salva e chiudi</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Speichern und schließen</value>
+    </title>
+    <id>8</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Записать и закрыть</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Save and close</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zapisz i zamknij</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Guardar y cerrar</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Guardar y cerrar</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Sakla ve kapat</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Salva e chiudi</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Speichern und schließen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.WriteAndClose</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>WriteAndClose</name>
+      </handler>
+    </action>
+    <representation>Text</representation>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+  <extInfo xsi:type="form:InformationRegisterManagerFormExtInfo">
+    <handlers>
+      <event>AfterWrite</event>
+      <name>AfterWrite</name>
+    </handlers>
+    <handlers>
+      <event>BeforeWrite</event>
+      <name>BeforeWrite</name>
+    </handlers>
+    <handlers>
+      <event>OnWriteAtServer</event>
+      <name>OnWriteAtServer</name>
+    </handlers>
+  </extInfo>
+</form:Form>

@@ -1,0 +1,3491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:FormGroup">
+    <name>CashGroup</name>
+    <id>27</id>
+    <items xsi:type="form:FormField">
+      <name>CashCRFilter</name>
+      <id>10</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>CashCR</segments>
+      </dataPath>
+      <titleLocation>None</titleLocation>
+      <handlers>
+        <event>OnChange</event>
+        <name>CashCRFilterOnChange</name>
+      </handlers>
+      <extendedTooltip>
+        <name>CashCRFilterExtendedTooltip</name>
+        <id>76</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>CashCRFilterContextMenu</name>
+        <id>11</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>false</horizontalStretch>
+        <wrap>true</wrap>
+        <openButton>false</openButton>
+        <createButton>false</createButton>
+        <autoMarkIncomplete>true</autoMarkIncomplete>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+        <choiceParameters>
+          <name>Filter.CashCRType</name>
+          <value xsi:type="form:FormChoiceListDesTimeValue">
+            <value xsi:type="core:ReferenceValue">
+              <value>Enum.CashRegisterTypes.EnumValue.FiscalRegister</value>
+            </value>
+          </value>
+        </choiceParameters>
+        <inputHint>
+          <key>en</key>
+          <value>Cash register</value>
+        </inputHint>
+        <inputHint>
+          <key>ru</key>
+          <value>Касса ККМ</value>
+        </inputHint>
+        <inputHint>
+          <key>pl</key>
+          <value>Kasa fiskalna</value>
+        </inputHint>
+        <inputHint>
+          <key>es_ES</key>
+          <value>Caja registradora</value>
+        </inputHint>
+        <inputHint>
+          <key>es_CO</key>
+          <value>Caja registradora</value>
+        </inputHint>
+        <inputHint>
+          <key>tr</key>
+          <value>Yazar kasa</value>
+        </inputHint>
+        <inputHint>
+          <key>it</key>
+          <value>Registratore di cassa</value>
+        </inputHint>
+        <inputHint>
+          <key>de</key>
+          <value>Kasse</value>
+        </inputHint>
+      </extInfo>
+    </items>
+    <items xsi:type="form:Button">
+      <name>CashCRSessionOpen</name>
+      <id>17</id>
+      <title>
+        <key>en</key>
+        <value>Open shift</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Открыть смену</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Otwórz zmianę</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Abrir el turno</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Abrir el turno</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Vardiyayı aç</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Apertura turno</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Schicht öffnen</value>
+      </title>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <skipOnInput>false</skipOnInput>
+      <extendedTooltip>
+        <name>OpenCashShiftExtendedTooltip</name>
+        <id>77</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualButton</type>
+      <commandName>Form.Command.CashCRSessionOpen</commandName>
+      <representation>PictureAndText</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <picture xsi:type="core:PictureRef">
+        <picture>StdPicture.GenerateReport</picture>
+      </picture>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>DisableZReport</name>
+      <id>18</id>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <skipOnInput>false</skipOnInput>
+      <extendedTooltip>
+        <name>RemoveZReportExtendedTooltip</name>
+        <id>78</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualButton</type>
+      <commandName>Form.Command.CloseCashCRSession</commandName>
+      <representation>PictureAndText</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <picture xsi:type="core:PictureRef">
+        <picture>CommonPicture.PeripheralsReportWithBlanking</picture>
+      </picture>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>PanelEquipmentManagement</name>
+      <id>57</id>
+      <items xsi:type="form:FormGroup">
+        <name>EquipmentManagement</name>
+        <id>131</id>
+        <items xsi:type="form:Button">
+          <name>ReceiptsCROpenFiscalRegisterManagement</name>
+          <id>58</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ReceiptsCROpenManageFiscalRegistrarExtendedTooltip</name>
+            <id>92</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Command.OpenFiscalRegisterManagement</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <items xsi:type="form:Button">
+          <name>ReceiptsCROpenPOSTerminalManagement</name>
+          <id>59</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ReceiptsCROpenManagingPOSTerminalExtendedTooltip</name>
+            <id>93</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Command.OpenPOSTerminalManagement</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <items xsi:type="form:Button">
+          <name>CashDeposition</name>
+          <id>33</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <skipOnInput>false</skipOnInput>
+          <extendedTooltip>
+            <name>DepositionExtendedTooltip</name>
+            <id>79</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Command.CashDeposition</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <items xsi:type="form:Button">
+          <name>Withdrawal</name>
+          <id>32</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <skipOnInput>false</skipOnInput>
+          <extendedTooltip>
+            <name>CashWithdrawalExtendedTooltip</name>
+            <id>80</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Command.Withdrawal</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>en</key>
+          <value>Equipment management</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Управление оборудованием</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Zarządzanie sprzętem</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Gestión de equipamiento</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Gestión de equipamiento</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Ekipman yönetimi</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Gestione delle apparecchiature</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Gerätemanagement</value>
+        </title>
+        <toolTip>
+          <key>en</key>
+          <value>Equipment management</value>
+        </toolTip>
+        <toolTip>
+          <key>ru</key>
+          <value>Управление оборудованием</value>
+        </toolTip>
+        <toolTip>
+          <key>pl</key>
+          <value>Zarządzanie sprzętem</value>
+        </toolTip>
+        <toolTip>
+          <key>es_ES</key>
+          <value>Gestión de equipamiento</value>
+        </toolTip>
+        <toolTip>
+          <key>es_CO</key>
+          <value>Gestión de equipamiento</value>
+        </toolTip>
+        <toolTip>
+          <key>tr</key>
+          <value>Ekipman yönetimi</value>
+        </toolTip>
+        <toolTip>
+          <key>it</key>
+          <value>Gestione delle apparecchiature</value>
+        </toolTip>
+        <toolTip>
+          <key>de</key>
+          <value>Gerätemanagement</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>EquipmentManagementExtendedTooltip</name>
+          <id>132</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Popup</type>
+        <extInfo xsi:type="form:PopupGroupExtInfo">
+          <representation>Auto</representation>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>en</key>
+        <value>Equipment management</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Управление оборудованием</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Zarządzanie sprzętem</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Gestión de equipamiento</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Gestión de equipamiento</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Ekipman yönetimi</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Gestione delle apparecchiature</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Gerätemanagement</value>
+      </title>
+      <toolTip>
+        <key>en</key>
+        <value>Equipment management panel</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Панель управление оборудованием</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Panel zarządzania sprzętem</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Panel de la gestión de equipamiento</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Panel de la gestión de equipamiento</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Ekipman yönetim paneli</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Pannello gestione delle apparecchiature</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Gerätemanagement-Paneel</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>PanelEquipmentManagementExtendedTooltip</name>
+        <id>91</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>CommandBar</type>
+      <extInfo xsi:type="form:CommandBarExtInfo">
+        <horizontalAlign>Right</horizontalAlign>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>GroupCashExtendedTooltip</name>
+      <id>74</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:Table">
+    <name>SalesSlips</name>
+    <id>1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>SalesSlips</segments>
+    </dataPath>
+    <defaultItem>true</defaultItem>
+    <skipOnInput>false</skipOnInput>
+    <titleLocation>None</titleLocation>
+    <excludedCommands>Create</excludedCommands>
+    <excludedCommands>CreateByParameter</excludedCommands>
+    <items xsi:type="form:FormField">
+      <name>Date</name>
+      <id>4</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>SalesSlips.Date</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>DateExtendedTooltip</name>
+        <id>97</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>DateContextMenu</name>
+        <id>5</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <width>10</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>false</horizontalStretch>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Number</name>
+      <id>6</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>SalesSlips.Number</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>NumberExtendedTooltip</name>
+        <id>98</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>NumberContextMenu</name>
+        <id>7</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <width>11</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>false</horizontalStretch>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>AmountExclTax</name>
+      <id>143</id>
+      <title>
+        <key>en</key>
+        <value>Amount excl. tax</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Сумма без учета налогов</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Wartość netto</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Importe sin impuestos</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Importe sin impuestos</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Vergi hariç tutar</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Importo IVA Esclusa</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Betrag abzgl. Steuer</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>SalesSlips.AmountExclTax</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>AmountExclTaxExtendedTooltip</name>
+        <id>145</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>AmountExclTaxContextMenu</name>
+        <id>144</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <format>
+          <key>en</key>
+          <value>NFD=2</value>
+        </format>
+        <format>
+          <key>ru</key>
+          <value>ЧДЦ=2</value>
+        </format>
+        <format>
+          <key>pl</key>
+          <value>NFD=2</value>
+        </format>
+        <format>
+          <key>es_ES</key>
+          <value>NFD=2</value>
+        </format>
+        <format>
+          <key>es_CO</key>
+          <value>NFD=2</value>
+        </format>
+        <format>
+          <key>tr</key>
+          <value>NFD=2</value>
+        </format>
+        <format>
+          <key>it</key>
+          <value>NFD=2</value>
+        </format>
+        <format>
+          <key>de</key>
+          <value>NFD=2</value>
+        </format>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>DocumentTax</name>
+      <id>140</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>SalesSlips.DocumentTax</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>DocumentTaxExtendedTooltip</name>
+        <id>142</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>DocumentTaxContextMenu</name>
+        <id>141</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>AmountCurrency</name>
+      <id>133</id>
+      <items xsi:type="form:FormField">
+        <name>DocumentAmount</name>
+        <id>13</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>SalesSlips.DocumentAmount</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>DocumentAmountExtendedTooltip</name>
+          <id>107</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>DocumentAmountContextMenu</name>
+          <id>14</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>LabelField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:LabelFieldExtInfo">
+          <width>10</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>DocumentCurrency</name>
+        <id>64</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>SalesSlips.DocumentCurrency</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>DocumentCurrencyExtendedTooltip</name>
+          <id>108</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>DocumentCurrencyContextMenu</name>
+          <id>65</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>LabelField</type>
+        <editMode>Enter</editMode>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:LabelFieldExtInfo">
+          <width>1</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>en</key>
+        <value>Amount, currency</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Сумма, валюта</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Kwota, waluta</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Importe, moneda</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Importe, moneda</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Tutar, para birimi</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Importo, valuta</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Betrag, Währung</value>
+      </title>
+      <toolTip>
+        <key>en</key>
+        <value>Amount, currency</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма, валюта</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Kwota, waluta</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Importe, moneda</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Importe, moneda</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Tutar, para birimi</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Importo, valuta</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Betrag, Währung</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>AmountCurrencyExtendedTooltip</name>
+        <id>134</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>ColumnGroup</type>
+      <extInfo xsi:type="form:ColumnGroupExtInfo">
+        <group>InCell</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>ThereIsBillForReturn</name>
+      <id>34</id>
+      <title>
+        <key>en</key>
+        <value>Return</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Возврат</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Zwrot</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Devolución</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Devolución</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>İade</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Restituzione</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Zurück</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>SalesSlips.ThereIsBillForReturn</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>IsCheckForReturnExtendedTooltip</name>
+        <id>102</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>IsCheckForReturnContextMenu</name>
+        <id>35</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Type</name>
+      <id>62</id>
+      <title>
+        <key>en</key>
+        <value>Type</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Тип</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Typ</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Tipo</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Tipo</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Tür</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Tipo</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Typ</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible/>
+      <dataPath xsi:type="form:DataPath">
+        <segments>SalesSlips.Type</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>TypeExtendedTooltip</name>
+        <id>99</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>TypeContextMenu</name>
+        <id>63</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Status</name>
+      <id>53</id>
+      <title>
+        <key>en</key>
+        <value>Status</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Статус</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Status</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Estatus</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Estatus</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Durum</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Stato</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Status</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>SalesSlips.Status</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>StateExtendedTooltip</name>
+        <id>100</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>StateContextMenu</name>
+        <id>54</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>SalesSlipNumber</name>
+      <id>24</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible/>
+      <dataPath xsi:type="form:DataPath">
+        <segments>SalesSlips.SalesSlipNumber</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>SalesSlipNumberExtendedTooltip</name>
+        <id>101</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>SalesSlipNumberContextMenu</name>
+        <id>25</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <width>15</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>false</horizontalStretch>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Company</name>
+      <id>68</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible/>
+      <dataPath xsi:type="form:DataPath">
+        <segments>SalesSlips.Company</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>CounterpartyExtendedTooltip</name>
+        <id>103</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>CounterpartyContextMenu</name>
+        <id>69</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>CashCR</name>
+      <id>8</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible/>
+      <dataPath xsi:type="form:DataPath">
+        <segments>SalesSlips.CashCR</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>CashCRExtendedTooltip</name>
+        <id>104</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>CashCRContextMenu</name>
+        <id>9</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>CashCRSession</name>
+      <id>66</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible/>
+      <dataPath xsi:type="form:DataPath">
+        <segments>SalesSlips.CashCRSession</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>CashCRSessionExtendedTooltip</name>
+        <id>105</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>CashCRSessionContextMenu</name>
+        <id>67</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Warehouse</name>
+      <id>70</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible/>
+      <dataPath xsi:type="form:DataPath">
+        <segments>SalesSlips.Warehouse</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>WarehouseExtendedTooltip</name>
+        <id>106</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>WarehouseContextMenu</name>
+        <id>71</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Archival</name>
+      <id>36</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible/>
+      <dataPath xsi:type="form:DataPath">
+        <segments>SalesSlips.Archival</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ArchivalExtendedTooltip</name>
+        <id>109</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ArchiveContextMenu</name>
+        <id>37</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Comment</name>
+      <id>72</id>
+      <title>
+        <key>en</key>
+        <value>Comment</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Комментарий</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Uwagi</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Comentario</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Comentario</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Yorum</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Commento</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Kommentar</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible/>
+      <dataPath xsi:type="form:DataPath">
+        <segments>SalesSlips.Comment</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>CommentExtendedTooltip</name>
+        <id>110</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>CommentContextMenu</name>
+        <id>73</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Author</name>
+      <id>55</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible/>
+      <dataPath xsi:type="form:DataPath">
+        <segments>SalesSlips.Author</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>AuthorExtendedTooltip</name>
+        <id>111</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>AuthorContextMenu</name>
+        <id>56</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <autoCommandBar>
+      <name>SalesSlipsCommandBar</name>
+      <id>3</id>
+      <items xsi:type="form:Button">
+        <name>ReceiptsCRCreateReceipt</name>
+        <id>116</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ReceiptsCRCreateReceiptExtendedTooltip</name>
+          <id>117</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.Command.CreateReceipt</commandName>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <items xsi:type="form:Button">
+        <name>ReceiptsCRDocumentReturnSalesSlipCreateBasedOn</name>
+        <id>47</id>
+        <title>
+          <key>en</key>
+          <value>Return</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Возврат</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Zwrot</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Devolución</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Devolución</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>İade</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Restituzione</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Zurück</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Items.SalesSlips.CurrentData.Ref</segments>
+        </dataPath>
+        <skipOnInput>false</skipOnInput>
+        <extendedTooltip>
+          <name>ReceiptsCRDocumentReturnSalesSlipCreateBasedOnExtendedTooltip</name>
+          <id>90</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Document.ProductReturn.StandardCommand.CreateBasedOn</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <items xsi:type="form:Button">
+        <name>ReceiptsCRChangeForm</name>
+        <id>135</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ReceiptsCRChangeFormExtendedTooltip</name>
+          <id>136</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.StandardCommand.CustomizeForm</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <items xsi:type="form:Button">
+        <name>FormHelp</name>
+        <id>129</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>FormHelpExtendedTooltip</name>
+          <id>130</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.StandardCommand.Help</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+        <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <horizontalAlign>Left</horizontalAlign>
+      <autoFill>true</autoFill>
+    </autoCommandBar>
+    <handlers>
+      <event>OnActivateRow</event>
+      <name>ReceiptsCROnActivateRow</name>
+    </handlers>
+    <searchStringAddition>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <name>SalesSlipsSearchString</name>
+      <id>118</id>
+      <extendedTooltip>
+        <name>SalesSlipsSearchStringExtendedTooltip</name>
+        <id>120</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>SalesSlipsSearchStringContextMenu</name>
+        <id>119</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <source>SalesSlipsSearchString</source>
+      <extInfo xsi:type="form:SearchStringAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+      </extInfo>
+    </searchStringAddition>
+    <viewStatusAddition>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <name>SalesSlipsViewStatus</name>
+      <id>121</id>
+      <extendedTooltip>
+        <name>SalesSlipsViewStatusExtendedTooltip</name>
+        <id>123</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>SalesSlipsViewStatusContextMenu</name>
+        <id>122</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>ViewStatusAddition</type>
+      <source>SalesSlipsViewStatus</source>
+      <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+      </extInfo>
+    </viewStatusAddition>
+    <searchControlAddition>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <name>SalesSlipsSearchControl</name>
+      <id>124</id>
+      <extendedTooltip>
+        <name>SalesSlipsSearchControlExtendedTooltip</name>
+        <id>126</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>SalesSlipsSearchControlContextMenu</name>
+        <id>125</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>SearchControlAddition</type>
+      <source>SalesSlipsSearchControl</source>
+      <extInfo xsi:type="form:SearchControlAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+      </extInfo>
+    </searchControlAddition>
+    <extendedTooltip>
+      <name>SalesSlipsExtendedTooltip</name>
+      <id>96</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>SalesSlipsContextMenu</name>
+      <id>2</id>
+      <items xsi:type="form:FormGroup">
+        <name>FormCommandContextMenuGroup</name>
+        <id>41</id>
+        <items xsi:type="form:Button">
+          <name>ContextMenuReceiptsCRCreate</name>
+          <id>45</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <skipOnInput>false</skipOnInput>
+          <extendedTooltip>
+            <name>ContextMenuReceiptsCRCreateExtendedTooltipMCC</name>
+            <id>84</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Document.CashReceipt.StandardCommand.Create</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <items xsi:type="form:Button">
+          <name>ContextMenuReceiptsCRCopy</name>
+          <id>46</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <skipOnInput>false</skipOnInput>
+          <extendedTooltip>
+            <name>ContextMenuReceiptsCRopyExtendedTooltip</name>
+            <id>85</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Item.SalesSlips.StandardCommand.Copy</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>FormCommandContextMenu</name>
+          <id>44</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>en</key>
+            <value>Form commands</value>
+          </title>
+          <title>
+            <key>ru</key>
+            <value>Команды формы</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Polecenia formularza</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Comandos de formulario</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Comandos de formulario</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Form komutları</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Comandi del modulo</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Formular-Befehle</value>
+          </title>
+          <toolTip>
+            <key>en</key>
+            <value>Form command group</value>
+          </toolTip>
+          <toolTip>
+            <key>ru</key>
+            <value>Группа команды формы</value>
+          </toolTip>
+          <toolTip>
+            <key>pl</key>
+            <value>Grupa komendy formy/formuły</value>
+          </toolTip>
+          <toolTip>
+            <key>es_ES</key>
+            <value>Formulario grupo de comandos</value>
+          </toolTip>
+          <toolTip>
+            <key>es_CO</key>
+            <value>Formulario grupo de comandos</value>
+          </toolTip>
+          <toolTip>
+            <key>tr</key>
+            <value>Form komut grubu</value>
+          </toolTip>
+          <toolTip>
+            <key>it</key>
+            <value>Gruppo comandi moduli</value>
+          </toolTip>
+          <toolTip>
+            <key>de</key>
+            <value>Befehlsgruppe der Form</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>ContextMenuFormCommandsExtendedTooltip</name>
+            <id>86</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <extInfo xsi:type="form:ButtonGroupExtInfo">
+            <commandSource>Item.SalesSlips</commandSource>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Button">
+          <name>ContextMenuReceiptsCRDocumentProductReturnCreateBasedOn</name>
+          <id>48</id>
+          <title>
+            <key>en</key>
+            <value>Create refund receipt</value>
+          </title>
+          <title>
+            <key>ru</key>
+            <value>Создать чек на возврат</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Utwórz paragon zwrotu</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Crear el recibo de devolución</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Crear el recibo de devolución</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>İade fişi oluştur</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Creare scontrino di rimborso</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Empfangsbestätigung erstellen</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Items.SalesSlips.CurrentData.Ref</segments>
+          </dataPath>
+          <skipOnInput>false</skipOnInput>
+          <extendedTooltip>
+            <name>ContextMenuReceiptsCRDocumentProductReturnCreateBasedOnExtendedTooltip</name>
+            <id>87</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Document.ProductReturn.StandardCommand.CreateBasedOn</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>en</key>
+          <value>Form commands</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Команды формы</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Polecenia formularza</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Comandos de formulario</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Comandos de formulario</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Form komutları</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Comandi del modulo</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Formular-Befehle</value>
+        </title>
+        <toolTip>
+          <key>en</key>
+          <value>Form command group</value>
+        </toolTip>
+        <toolTip>
+          <key>ru</key>
+          <value>Группа команды формы</value>
+        </toolTip>
+        <toolTip>
+          <key>pl</key>
+          <value>Grupa komendy formy/formuły</value>
+        </toolTip>
+        <toolTip>
+          <key>es_ES</key>
+          <value>Formulario grupo de comandos</value>
+        </toolTip>
+        <toolTip>
+          <key>es_CO</key>
+          <value>Formulario grupo de comandos</value>
+        </toolTip>
+        <toolTip>
+          <key>tr</key>
+          <value>Form komut grubu</value>
+        </toolTip>
+        <toolTip>
+          <key>it</key>
+          <value>Gruppo comandi moduli</value>
+        </toolTip>
+        <toolTip>
+          <key>de</key>
+          <value>Befehlsgruppe der Form</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>FolderContextMenuFormCommandsExtendedTooltip</name>
+          <id>83</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <extInfo xsi:type="form:ButtonGroupExtInfo"/>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+    </contextMenu>
+    <changeRowSet>true</changeRowSet>
+    <changeRowOrder>true</changeRowOrder>
+    <width>80</width>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <autoMaxRowsCount>true</autoMaxRowsCount>
+    <selectionMode>MultiRow</selectionMode>
+    <header>true</header>
+    <headerHeight>1</headerHeight>
+    <footerHeight>1</footerHeight>
+    <horizontalScrollBar>AutoUse</horizontalScrollBar>
+    <verticalScrollBar>AutoUse</verticalScrollBar>
+    <horizontalLines>true</horizontalLines>
+    <verticalLines>true</verticalLines>
+    <useAlternationRowColor>true</useAlternationRowColor>
+    <searchOnInput>Auto</searchOnInput>
+    <initialListView>Auto</initialListView>
+    <initialTreeView>ExpandTopLevel</initialTreeView>
+    <horizontalStretch>true</horizontalStretch>
+    <verticalStretch>true</verticalStretch>
+    <enableStartDrag>true</enableStartDrag>
+    <rowPictureDataPath xsi:type="form:DataPath">
+      <segments>SalesSlips.DefaultPicture</segments>
+    </rowPictureDataPath>
+    <searchStringLocation>CommandBar</searchStringLocation>
+    <viewStatusLocation>Top</viewStatusLocation>
+    <searchControlLocation>CommandBar</searchControlLocation>
+    <extInfo xsi:type="form:DynamicListTableExtInfo">
+      <autoRefreshPeriod>60</autoRefreshPeriod>
+      <period>
+        <startDate>0001-01-01T00:00:00</startDate>
+        <endDate>0001-01-01T00:00:00</endDate>
+      </period>
+      <topLevelParent xsi:type="core:UndefinedValue"/>
+      <showRoot>true</showRoot>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>CashCRSessionStatusGroup</name>
+    <id>19</id>
+    <items xsi:type="form:FormField">
+      <name>CurrentSessionOnlyFilter</name>
+      <id>51</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>CurrentSessionOnly</segments>
+      </dataPath>
+      <titleLocation>Right</titleLocation>
+      <handlers>
+        <event>OnChange</event>
+        <name>CurrentSessionOnlyFilterOnChange</name>
+      </handlers>
+      <extendedTooltip>
+        <name>OnlyCurrentSessionFilterExtendedTooltip</name>
+        <id>113</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>OnlyCurrentSessionFilterContextMenu</name>
+        <id>52</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>StatusCashCRSession</name>
+      <id>21</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>StatusCashCRSession</segments>
+      </dataPath>
+      <titleLocation>None</titleLocation>
+      <extendedTooltip>
+        <name>StateCashCRSessionExtendedTooltip</name>
+        <id>114</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>StateCashCRSessionContextMenu</name>
+        <id>22</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <horizontalAlign>Right</horizontalAlign>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>true</horizontalStretch>
+        <font xsi:type="core:FontRef">
+          <font>System.DefaultGUIFont</font>
+          <bold>true</bold>
+          <italic>false</italic>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+        </font>
+      </extInfo>
+    </items>
+    <items xsi:type="form:Button">
+      <name>UpdateCashCRSessionState</name>
+      <id>20</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <skipOnInput>false</skipOnInput>
+      <extendedTooltip>
+        <name>RefreshStateOfCashShiftExtendedTooltip</name>
+        <id>115</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualButton</type>
+      <commandName>Form.Command.UpdateCashCRSessionState</commandName>
+      <representation>Picture</representation>
+      <width>3</width>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>GroupStateCashCRSessionExtendedTooltip</name>
+      <id>112</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <commandBarLocation>None</commandBarLocation>
+  <autoCommandBar>
+    <name>FormCommandBar</name>
+    <id>-1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <handlers>
+    <event>NotificationProcessing</event>
+    <name>NotificationProcessing</name>
+  </handlers>
+  <handlers>
+    <event>BeforeLoadDataFromSettingsAtServer</event>
+    <name>OnLoadDataFromSettingsAtServer</name>
+  </handlers>
+  <excludedCommands>Abort</excludedCommands>
+  <excludedCommands>Cancel</excludedCommands>
+  <excludedCommands>CancelSearch</excludedCommands>
+  <excludedCommands>Change</excludedCommands>
+  <excludedCommands>Close</excludedCommands>
+  <excludedCommands>Copy</excludedCommands>
+  <excludedCommands>Create</excludedCommands>
+  <excludedCommands>CreateByParameter</excludedCommands>
+  <excludedCommands>Delete</excludedCommands>
+  <excludedCommands>Find</excludedCommands>
+  <excludedCommands>Ignore</excludedCommands>
+  <excludedCommands>ListSettings</excludedCommands>
+  <excludedCommands>No</excludedCommands>
+  <excludedCommands>OK</excludedCommands>
+  <excludedCommands>OutputList</excludedCommands>
+  <excludedCommands>Post</excludedCommands>
+  <excludedCommands>Refresh</excludedCommands>
+  <excludedCommands>RestoreValues</excludedCommands>
+  <excludedCommands>Retry</excludedCommands>
+  <excludedCommands>SaveValues</excludedCommands>
+  <excludedCommands>SetDeletionMark</excludedCommands>
+  <excludedCommands>UndoPosting</excludedCommands>
+  <excludedCommands>Yes</excludedCommands>
+  <autoSaveDataInSettings>Use</autoSaveDataInSettings>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <verticalScroll>UseIfNecessary</verticalScroll>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>SalesSlips</name>
+    <title>
+      <key>en</key>
+      <value>Cash receipts</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Приходные кассовые ордеры</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>KP - Dowody wpłaty</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Recibos de efectivo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Recibos de efectivo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Nakit tahsilatlar</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Entrate di cassa</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Zahlungseingänge</value>
+    </title>
+    <id>1</id>
+    <valueType>
+      <types>DynamicList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>SalesSlips.CashCRSession</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>SalesSlips.CashCRUseWithoutEquipmentConnection</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>SalesSlips.Ref</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>SalesSlips.SalesSlipNumber</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>SalesSlips.ThereIsBillForReturn</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>SalesSlips.Type</segments>
+    </notDefaultUseAlwaysAttributes>
+    <main>true</main>
+    <extInfo xsi:type="form:DynamicListExtInfo">
+      <queryText>SELECT
+	DocumentJournalReceiptsCR.Ref,
+	DocumentJournalReceiptsCR.DeletionMark,
+	DocumentJournalReceiptsCR.Archival,
+	CASE
+		WHEN DocumentJournalReceiptsCR.SalesSlipNumber > 0
+			THEN VALUE(Enum.SalesSlipStatus.Issued)
+		ELSE DocumentJournalReceiptsCR.Status
+	END AS Status,
+	DocumentJournalReceiptsCR.Number,
+	DocumentJournalReceiptsCR.Date,
+	DocumentJournalReceiptsCR.Posted,
+	DocumentJournalReceiptsCR.DocumentCurrency,
+	DocumentJournalReceiptsCR.CashCR,
+	DocumentJournalReceiptsCR.CashCRSession,
+	DocumentJournalReceiptsCR.SalesSlipNumber,
+	DocumentJournalReceiptsCR.Company,
+	DocumentJournalReceiptsCR.Warehouse,
+	DocumentJournalReceiptsCR.DocumentAmount,
+	DocumentJournalReceiptsCR.DocumentTax,
+	CASE
+		WHEN VALUETYPE(DocumentJournalReceiptsCR.Ref) = Type(Document.ProductReturn)
+			THEN TRUE
+		ELSE FALSE
+	END AS ThereIsBillForReturn,
+	DocumentJournalReceiptsCR.Type,
+	CAST(DocumentJournalReceiptsCR.Comment AS String(500)) AS Comment,
+	DocumentJournalReceiptsCR.CashCR.UseWithoutEquipmentConnection,
+	DocumentJournalReceiptsCR.Author,
+	DocumentJournalReceiptsCR.DocumentAmount - DocumentJournalReceiptsCR.DocumentTax AS AmountExclTax
+	FROM
+		DocumentJournal.SalesSlips AS DocumentJournalReceiptsCR</queryText>
+      <mainTable>DocumentJournal.SalesSlips</mainTable>
+      <dynamicDataRead>true</dynamicDataRead>
+      <autoFillAvailableFields>true</autoFillAvailableFields>
+      <customQuery>true</customQuery>
+      <autoSaveUserSettings>true</autoSaveUserSettings>
+      <getInvisibleFieldPresentations>true</getInvisibleFieldPresentations>
+    </extInfo>
+  </attributes>
+  <attributes>
+    <name>CashCR</name>
+    <title>
+      <key>en</key>
+      <value>Cash register</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Касса ККМ</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Kasa fiskalna</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Caja registradora</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Caja registradora</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Yazar kasa</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Registratore di cassa</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Kasse</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>CatalogRef.CashRegisters</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>CashCR</segments>
+    </settingsSavedData>
+  </attributes>
+  <attributes>
+    <name>StatusCashCRSession</name>
+    <title>
+      <key>en</key>
+      <value>Register shift state</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Состояние кассовой смены</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Status zmiany kasy</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Estado del turno del registro</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Estado del turno del registro</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Vardiya durumunu kaydet</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Stato del turno di cassa</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Zustand der Kassenschicht</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>CurrentSessionOnly</name>
+    <title>
+      <key>en</key>
+      <value>Only current shift</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Только текущая смена</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Tylko bieżąca zmiana</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Solo el turno actual</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Solo el turno actual</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Sadece geçerli vardiya</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Solo il turno corrente</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Nur aktuelle Schicht</value>
+    </title>
+    <id>4</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>CurrentSessionOnly</segments>
+    </settingsSavedData>
+  </attributes>
+  <attributes>
+    <name>CurrentCashCRSession</name>
+    <title>
+      <key>en</key>
+      <value>Current register shift</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Текущая кассовая смена</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Bieżąca zmiana kasowa</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Turno del registro actual</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Turno del registro actual</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Mevcut kayıt değişimi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Corrente turno di cassa</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Aktuelle Kassenschicht</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>DocumentRef.ShiftClosure</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>SessionIsOpen</name>
+    <title>
+      <key>en</key>
+      <value>Shift is opened</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Смена открыта</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zmiana otwarta</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Turno está abierto</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Turno está abierto</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Vardiya açıldı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Il turno è aperto</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Die Schicht ist geöffnet</value>
+    </title>
+    <id>6</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>StructureStateCashCRSession</name>
+    <title>
+      <key>en</key>
+      <value>Structure register shift state</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Структура состояние кассовой смены</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Struktura status zmiany kasowej</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Estado del turno del registro de estructura</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Estado del turno del registro de estructura</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Vardiya durumu yapısı kaydı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Struttura statale spostamento registro</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Struktur Zustand der Kassenschicht</value>
+    </title>
+    <id>7</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>CashCRSessionOpen</name>
+    <title>
+      <key>en</key>
+      <value>Open shift</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Открыть смену</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Otwórz zmianę</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Abrir el turno</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Abrir el turno</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Vardiyayı aç</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Apertura turno</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Schicht öffnen</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>en</key>
+      <value>Open shift</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Открыть смену</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Otwórz zmianę</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Abrir el turno</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Abrir el turno</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Vardiyayı aç</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Apertura turno</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Schicht öffnen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>CashCRSessionOpen</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>CloseCashCRSession</name>
+    <title>
+      <key>en</key>
+      <value>Close register shift</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Закрыть кассовую смену</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zamknij zmianę</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Cerrar el turno del registro</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Cerrar el turno del registro</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kayıt vardiyasını kapat</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Chiusura turno di cassa</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Schließen Sie die Kassenschicht</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>en</key>
+      <value>Close register shift</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Закрыть кассовую смену</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zamknij zmianę</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Cerrar el turno del registro</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Cerrar el turno del registro</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Kayıt vardiyasını kapat</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Chiusura turno di cassa</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Schließen Sie die Kassenschicht</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>CloseCashCRSession</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>UpdateCashCRSessionState</name>
+    <title>
+      <key>en</key>
+      <value>Update the state of register shift</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Обновить состояние кассовой смены</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Aktualizować status zmiany kasowej</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Actualizar el estado del turno del registro</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Actualizar el estado del turno del registro</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kayıt vardiyasının durumunu güncelle</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Aggiornare lo stato del registro turno</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Aktualisieren Sie den Zustand der Kassenschicht</value>
+    </title>
+    <id>3</id>
+    <toolTip>
+      <key>en</key>
+      <value>Update the state of register shift</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Обновить состояние кассовой смены</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Aktualizować status zmiany kasowej</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Actualizar el estado del turno del registro</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Actualizar el estado del turno del registro</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Kayıt vardiyasının durumunu güncelle</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Aggiornare lo stato del registro turno</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Aktualisieren Sie den Zustand der Kassenschicht</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.Refresh</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>UpdateCashCRSessionState</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>CashDeposition</name>
+    <title>
+      <key>en</key>
+      <value>CashDeposition</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>CashDeposition</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>CashDeposition</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>CashDeposition</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>CashDeposition</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>NakitYatırma</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Deposito contanti</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>CashDeposition</value>
+    </title>
+    <id>4</id>
+    <toolTip>
+      <key>en</key>
+      <value>CashDeposition</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>CashDeposition</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>CashDeposition</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>CashDeposition</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>CashDeposition</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>NakitYatırma</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Deposito contanti</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>CashDeposition</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>CashDeposition</name>
+      </handler>
+    </action>
+    <functionalOptions>FunctionalOption.UsePeripherals</functionalOptions>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>Withdrawal</name>
+    <title>
+      <key>en</key>
+      <value>Cash withdrawal</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Выемка денег</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wypłata gotówki</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Retiro de efectivo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Retiro de efectivo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Nakit çekimi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Prelievo contanti</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Barauszahlung</value>
+    </title>
+    <id>5</id>
+    <toolTip>
+      <key>en</key>
+      <value>Cash withdrawal</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Выемка денег</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Wypłata gotówki</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Retiro de efectivo</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Retiro de efectivo</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Nakit çekimi</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Prelievo contanti</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Barauszahlung</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Withdrawal</name>
+      </handler>
+    </action>
+    <functionalOptions>FunctionalOption.UsePeripherals</functionalOptions>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>OpenFiscalRegisterManagement</name>
+    <title>
+      <key>en</key>
+      <value>Fiscal data recorder</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Фискальный регистратор</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Rejestrator danych fiskalnych</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Registrador de datos fiscales</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Registrador de datos fiscales</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Mali veri kaydedici</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Registratore dati fiscali</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Fiskalischer Datenrekorder</value>
+    </title>
+    <id>6</id>
+    <toolTip>
+      <key>en</key>
+      <value>Open fiscal data recorder management</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Открыть управление фискальным регистратором</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Otwórz sterowanie kasą fiskalną</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Abrir la gestión del registrador de datos fiscales</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Abrir la gestión del registrador de datos fiscales</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Mali veri kaydedici yönetimini aç</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Aprire gestione delle registrazioni fiscali</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Öffnen Sie das Management des fiskalischen Datenrekorders</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>OpenFiscalRegisterManagement</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>OpenPOSTerminalManagement</name>
+    <title>
+      <key>en</key>
+      <value>POS terminal</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Эквайринговый терминал</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Terminal POS</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>TPV terminal</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>TPV terminal</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>POS terminali</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Terminale POS</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>POS-Terminal</value>
+    </title>
+    <id>7</id>
+    <toolTip>
+      <key>en</key>
+      <value>Open Payment terminal functions</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Открыть управление эквайринговым терминалом</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Otwórz funkcje terminala płatniczego</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Abrir funciones del terminal de Pago</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Abrir funciones del terminal de Pago</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Ödeme terminali fonksiyonlarını aç</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Aprire le funzioni del terminale di pagamento</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Funktionen des Zahlungsterminals öffnen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>OpenPOSTerminalManagement</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>CreateReceipt</name>
+    <title>
+      <key>en</key>
+      <value>Generate</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Сформировать</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wygeneruj</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Generar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Generar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Oluştur</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Genera</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Generieren</value>
+    </title>
+    <id>8</id>
+    <toolTip>
+      <key>en</key>
+      <value>Cash receipt</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Приходный кассовый ордер.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>KP - Dowód wpłaty</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Recibo de efectivo</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Recibo de efectivo</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Nakit tahsilat</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Entrata di cassa</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Zahlungseingang</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.CreateListItem</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>CreateReceipt</name>
+      </handler>
+    </action>
+    <representation>TextPicture</representation>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+  <extInfo xsi:type="form:DynamicListFormExtInfo"/>
+</form:Form>

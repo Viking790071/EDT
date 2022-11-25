@@ -1,0 +1,2453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:FormGroup">
+    <name>FiltersGroup</name>
+    <id>46</id>
+    <items xsi:type="form:FormField">
+      <name>SearchString</name>
+      <id>47</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>SearchString</segments>
+      </dataPath>
+      <defaultItem>true</defaultItem>
+      <titleLocation>None</titleLocation>
+      <handlers>
+        <event>OnChange</event>
+        <name>SearchStringOnChange</name>
+      </handlers>
+      <extendedTooltip>
+        <name>SearchStringExtendedTooltip</name>
+        <id>82</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>SearchStringContextMenu</name>
+        <id>48</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <handlers>
+          <event>AutoComplete</event>
+          <name>SearchStringAutoComplete</name>
+        </handlers>
+        <handlers>
+          <event>Clearing</event>
+          <name>SearchStringClearing</name>
+        </handlers>
+        <width>31</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <dropListButton>true</dropListButton>
+        <clearButton>true</clearButton>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+        <editTextUpdate>OnValueChange</editTextUpdate>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>FilterByTemplateUsage</name>
+      <id>52</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>FilterByTemplateUsage</segments>
+      </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>FilterByUsedTemplateKindOnChange</name>
+      </handlers>
+      <extendedTooltip>
+        <name>FilterByTemplateUsageExtendedTooltip</name>
+        <id>83</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>FilterByTemplateUsageContextMenu</name>
+        <id>53</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <handlers>
+          <event>Clearing</event>
+          <name>FilterByTemplateUsageClearing</name>
+        </handlers>
+        <width>37</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <clearButton>true</clearButton>
+        <listChoiceMode>true</listChoiceMode>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <choiceList>
+          <presentation>
+            <key>ru</key>
+            <value>Все макеты</value>
+          </presentation>
+          <presentation>
+            <key>en</key>
+            <value>All templates</value>
+          </presentation>
+          <presentation>
+            <key>pl</key>
+            <value>Wszystkie szablony</value>
+          </presentation>
+          <presentation>
+            <key>es_ES</key>
+            <value>Todos modelos</value>
+          </presentation>
+          <presentation>
+            <key>es_CO</key>
+            <value>Todos modelos</value>
+          </presentation>
+          <presentation>
+            <key>tr</key>
+            <value>Tüm şablonlar</value>
+          </presentation>
+          <presentation>
+            <key>it</key>
+            <value>Tutti i layout</value>
+          </presentation>
+          <presentation>
+            <key>de</key>
+            <value>Alle Vorlagen</value>
+          </presentation>
+          <value xsi:type="core:StringValue">
+            <value>AllTemplates</value>
+          </value>
+        </choiceList>
+        <choiceList>
+          <presentation>
+            <key>ru</key>
+            <value>Стандартные макеты (без изменений)</value>
+          </presentation>
+          <presentation>
+            <key>en</key>
+            <value>Standard templates (without changes)</value>
+          </presentation>
+          <presentation>
+            <key>pl</key>
+            <value>Standardowe szablony (bez zmian)</value>
+          </presentation>
+          <presentation>
+            <key>es_ES</key>
+            <value>Modelos estándar (sin cambiar)</value>
+          </presentation>
+          <presentation>
+            <key>es_CO</key>
+            <value>Modelos estándar (sin cambiar)</value>
+          </presentation>
+          <presentation>
+            <key>tr</key>
+            <value>Standart şablonlar (değiştirilmemiş)</value>
+          </presentation>
+          <presentation>
+            <key>it</key>
+            <value>Templates standard  (senza modifiche)</value>
+          </presentation>
+          <presentation>
+            <key>de</key>
+            <value>Standardvorlagen (unverändert)</value>
+          </presentation>
+          <value xsi:type="core:StringValue">
+            <value>NotModified</value>
+          </value>
+        </choiceList>
+        <choiceList>
+          <presentation>
+            <key>ru</key>
+            <value>Используемые макеты с внесенными изменениями</value>
+          </presentation>
+          <presentation>
+            <key>en</key>
+            <value>Used templates with changes</value>
+          </presentation>
+          <presentation>
+            <key>pl</key>
+            <value>Wykorzystywane szablony z wniesionymi zmianami</value>
+          </presentation>
+          <presentation>
+            <key>es_ES</key>
+            <value>Utilizados modelos con cambios realizados</value>
+          </presentation>
+          <presentation>
+            <key>es_CO</key>
+            <value>Utilizados modelos con cambios realizados</value>
+          </presentation>
+          <presentation>
+            <key>tr</key>
+            <value>Yapılan değişiklikler ile kullanılan şablonlar</value>
+          </presentation>
+          <presentation>
+            <key>it</key>
+            <value>Templates utilizzati con modifiche</value>
+          </presentation>
+          <presentation>
+            <key>de</key>
+            <value>Verwendete Vorlagen mit vorgenommenen Änderungen</value>
+          </presentation>
+          <value xsi:type="core:StringValue">
+            <value>UsedModifiedItems</value>
+          </value>
+        </choiceList>
+        <choiceList>
+          <presentation>
+            <key>ru</key>
+            <value>Неиспользуемые макеты с внесенными изменениями</value>
+          </presentation>
+          <presentation>
+            <key>en</key>
+            <value>Unused templates with changes</value>
+          </presentation>
+          <presentation>
+            <key>pl</key>
+            <value>Niewykorzystywane szablony z wniesionymi zmianami</value>
+          </presentation>
+          <presentation>
+            <key>es_ES</key>
+            <value>Modelos sin utilizar con cambios</value>
+          </presentation>
+          <presentation>
+            <key>es_CO</key>
+            <value>Modelos sin utilizar con cambios</value>
+          </presentation>
+          <presentation>
+            <key>tr</key>
+            <value>Yapılan değişiklikler ile kullanılmayan şablonlar</value>
+          </presentation>
+          <presentation>
+            <key>it</key>
+            <value>Layout non utilizzati con cambiamenti</value>
+          </presentation>
+          <presentation>
+            <key>de</key>
+            <value>Unbenutzte Vorlagen mit Änderungen</value>
+          </presentation>
+          <value xsi:type="core:StringValue">
+            <value>NotUsedModifiedItems</value>
+          </value>
+        </choiceList>
+        <choiceList>
+          <presentation>
+            <key>ru</key>
+            <value>Все макеты с внесенными изменениями</value>
+          </presentation>
+          <presentation>
+            <key>en</key>
+            <value>All templates with changes</value>
+          </presentation>
+          <presentation>
+            <key>pl</key>
+            <value>Wszystkie szablony ze zmianami</value>
+          </presentation>
+          <presentation>
+            <key>es_ES</key>
+            <value>Todos modelos con cambios</value>
+          </presentation>
+          <presentation>
+            <key>es_CO</key>
+            <value>Todos modelos con cambios</value>
+          </presentation>
+          <presentation>
+            <key>tr</key>
+            <value>Değişiklik yapılan tüm şablonlar</value>
+          </presentation>
+          <presentation>
+            <key>it</key>
+            <value>Tutti i layout con modifiche</value>
+          </presentation>
+          <presentation>
+            <key>de</key>
+            <value>Alle Vorlagen mit Änderungen</value>
+          </presentation>
+          <value xsi:type="core:StringValue">
+            <value>Modified</value>
+          </value>
+        </choiceList>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Отборы</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Filters</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Filtry</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Filtros</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Filtros</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Filtreler</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Filtri</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Filter</value>
+    </title>
+    <extendedTooltip>
+      <name>FiltersGroupExtendedTooltip</name>
+      <id>81</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>HorizontalIfPossible</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:Table">
+    <name>PrintFormTemplates</name>
+    <id>54</id>
+    <title>
+      <key>ru</key>
+      <value>Макеты печатных форм</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Print form templates</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Szablony formularza wydruku</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Versión impresa modelos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Versión impresa modelos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Yazdırma formu şablonları</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Layout moduli di stampa</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Formularvorlagen drucken</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>PrintFormTemplates</segments>
+    </dataPath>
+    <titleLocation>None</titleLocation>
+    <excludedCommands>Add</excludedCommands>
+    <excludedCommands>Change</excludedCommands>
+    <excludedCommands>Copy</excludedCommands>
+    <excludedCommands>Delete</excludedCommands>
+    <excludedCommands>EndEdit</excludedCommands>
+    <excludedCommands>MoveDown</excludedCommands>
+    <excludedCommands>MoveUp</excludedCommands>
+    <items xsi:type="form:FormField">
+      <name>PrintFormsTemplatesUsage</name>
+      <id>63</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>PrintFormTemplates.UsagePicture</segments>
+      </dataPath>
+      <titleLocation>None</titleLocation>
+      <extendedTooltip>
+        <name>PrintFormsTemplatesUsageExtendedTooltip</name>
+        <id>96</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>PrintFormsTemplatesUsageContextMenu</name>
+        <id>64</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>PictureField</type>
+      <readOnly>true</readOnly>
+      <editMode>EnterOnInput</editMode>
+      <showInHeader>true</showInHeader>
+      <headerPicture xsi:type="core:PictureRef">
+        <picture>CommonPicture.EditTemplate</picture>
+      </headerPicture>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:ImageFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>true</horizontalStretch>
+        <verticalStretch>true</verticalStretch>
+        <valuesPicture xsi:type="core:PictureRef">
+          <picture>CommonPicture.TemplateUsage</picture>
+        </valuesPicture>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>PrintFormsTemplatesTemplatePresentation</name>
+      <id>59</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>PrintFormTemplates.TemplatePresentation</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>PrintFormsTemplatesTemplatePresentationExtendedTooltip</name>
+        <id>97</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>PrintFormsTemplatesTemplatePresentationContextMenu</name>
+        <id>60</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <readOnly>true</readOnly>
+      <editMode>EnterOnInput</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>PrintFormsTemplatesOwnerPresentation</name>
+      <id>61</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>PrintFormTemplates.OwnerPresentation</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>PrintFormsTemplatesOwnerPresentationExtendedTooltip</name>
+        <id>98</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>PrintFormsTemplatesOwnerPresentationContextMenu</name>
+        <id>62</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <readOnly>true</readOnly>
+      <editMode>EnterOnInput</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <autoCommandBar>
+      <name>PrintFormsTemplatesCommandBar</name>
+      <id>56</id>
+      <items xsi:type="form:FormGroup">
+        <name>PrintFormsTemplatesOpenTemplateGroup</name>
+        <id>76</id>
+        <items xsi:type="form:Button">
+          <name>PrintFormsTemplatesOpenTemplate</name>
+          <id>73</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>PrintFormsTemplatesOpenTemplateExtendedTooltip</name>
+            <id>85</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Command.OpenTemplate</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <items xsi:type="form:Button">
+          <name>PrintFormTemplatesChangeTemplate</name>
+          <id>72</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>PrintFormsTemplatesChangeTemplateExtendedTooltip</name>
+            <id>86</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Command.ChangeTemplate</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Макеты печатных форм группа открытие макета</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Print form templates open template group</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Szablony formularza wydruku grupa otwarcie szablonu</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Versión impresa grupo de modelos abrir el modelo</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Versión impresa grupo de modelos abrir el modelo</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Yazdırma formu şablonları grubu açık şablon</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Modelli delle forme di stampa aprire gruppo modelli</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Formularvorlage drucken Vorlage öffnen</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Открытие макета для просмотра или изменения</value>
+        </toolTip>
+        <toolTip>
+          <key>en</key>
+          <value>Opening a template for reading or editing</value>
+        </toolTip>
+        <toolTip>
+          <key>pl</key>
+          <value>Otwarcie szablonu do wedługlądu lub wprowadzenia zmian</value>
+        </toolTip>
+        <toolTip>
+          <key>es_ES</key>
+          <value>Abrir el modelo para ver o editar</value>
+        </toolTip>
+        <toolTip>
+          <key>es_CO</key>
+          <value>Abrir el modelo para ver o editar</value>
+        </toolTip>
+        <toolTip>
+          <key>tr</key>
+          <value>Görüntülemek veya düzenlemek için şablonu aç</value>
+        </toolTip>
+        <toolTip>
+          <key>it</key>
+          <value>Apertura di un template per lettura e modifica</value>
+        </toolTip>
+        <toolTip>
+          <key>de</key>
+          <value>Öffnen Sie die Vorlage zum Anzeigen oder Bearbeiten</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>PrintFormsTemplatesOpenTemplateGroupExtendedTooltip</name>
+          <id>84</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <extInfo xsi:type="form:ButtonGroupExtInfo"/>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>PrintFormsTemplatesSwitchUsedTemplateGroup</name>
+        <id>77</id>
+        <items xsi:type="form:Button">
+          <name>PrintFormsTemplatesUseModifiedTemplate</name>
+          <id>70</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>PrintFormsTemplatesUseModifiedTemplateExtendedTooltip</name>
+            <id>88</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Command.UseModifiedTemplate</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <items xsi:type="form:Button">
+          <name>PrintFormsTemplatesUseStandardTemplate</name>
+          <id>71</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>PrintFormsTemplatesUseStandardTemplateExtendedTooltip</name>
+            <id>89</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Command.UseStandardTemplate</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Макеты печатных форм группа переключение используемого макета</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Print form templates switching used template group</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Szablony formularza wydruku grupa przełączanie wykorzystywanego szablonu</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Versión impresa grupo de modelos utilizado el cambio del modelo</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Versión impresa grupo de modelos utilizado el cambio del modelo</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Baskı formu şablonları grubu kullanılan şablon değişimi</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Gruppo modelli delle forme di stampa passando a modelli utilizzati</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Druckvorlagengruppe verwendet Vorlagenwechsel</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Переключение используемого макета</value>
+        </toolTip>
+        <toolTip>
+          <key>en</key>
+          <value>Switch used template</value>
+        </toolTip>
+        <toolTip>
+          <key>pl</key>
+          <value>Przełączenie wykorzystywanego szablonu</value>
+        </toolTip>
+        <toolTip>
+          <key>es_ES</key>
+          <value>El cambio del modelo utilizado</value>
+        </toolTip>
+        <toolTip>
+          <key>es_CO</key>
+          <value>El cambio del modelo utilizado</value>
+        </toolTip>
+        <toolTip>
+          <key>tr</key>
+          <value>Kullanılan şablon değişimi</value>
+        </toolTip>
+        <toolTip>
+          <key>it</key>
+          <value>Passaggio a modelli utilizzati</value>
+        </toolTip>
+        <toolTip>
+          <key>de</key>
+          <value>Gebrauchte Vorlagenwechsel</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>PrintFormsTemplatesSwitchUsedTemplateGroupExtendedTooltip</name>
+          <id>87</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <extInfo xsi:type="form:ButtonGroupExtInfo"/>
+      </items>
+      <items xsi:type="form:Button">
+        <name>PrintFormsTemplatesDeleteModifiedTemplate</name>
+        <id>74</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>PrintFormsTemplatesDeleteModifiedTemplateExtendedTooltip</name>
+          <id>90</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.Command.DeleteModifiedTemplate</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>PrintFormsTemplatesAllActionsGroup</name>
+        <id>78</id>
+        <items xsi:type="form:Button">
+          <name>PrintFormsTemplatesSetActionOnChoosePrintFormTemplate</name>
+          <id>75</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>PrintFormsTemplatesSetActionOnChoosePrintFormTemplateExtendedTooltip</name>
+            <id>92</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Command.SetActionOnChoosePrintFormTemplate</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+          <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
+        </items>
+        <items xsi:type="form:Button">
+          <name>PrintFormsTemplatesChangeForm</name>
+          <id>79</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>PrintFormsTemplatesChangeFormExtendedTooltip</name>
+            <id>93</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.StandardCommand.CustomizeForm</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Макеты печатных форм группа все действия</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Print form templates all actions group</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Szablony formularza wydruku grupa wszystkie działania</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Versión impresa grupo de modelos todas acciones</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Versión impresa grupo de modelos todas acciones</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Yazdırma formu şablonları tüm eylemler grubu</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Gruppo modelli forme di stampa tutte le azioni</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Druckformularvorlagen gruppieren alle Aktionen</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Все действия</value>
+        </toolTip>
+        <toolTip>
+          <key>en</key>
+          <value>All actions</value>
+        </toolTip>
+        <toolTip>
+          <key>pl</key>
+          <value>Wszystkie działania</value>
+        </toolTip>
+        <toolTip>
+          <key>es_ES</key>
+          <value>Todas acciones</value>
+        </toolTip>
+        <toolTip>
+          <key>es_CO</key>
+          <value>Todas acciones</value>
+        </toolTip>
+        <toolTip>
+          <key>tr</key>
+          <value>Tüm eylemler</value>
+        </toolTip>
+        <toolTip>
+          <key>it</key>
+          <value>Tutte le azioni</value>
+        </toolTip>
+        <toolTip>
+          <key>de</key>
+          <value>Alle Aktionen</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>PrintFormsTemplatesAllActionsGroupExtendedTooltip</name>
+          <id>91</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <extInfo xsi:type="form:ButtonGroupExtInfo"/>
+      </items>
+      <items xsi:type="form:Button">
+        <name>PrintFormsTemplatesHelp</name>
+        <id>80</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>PrintFormsTemplatesHelpExtendedTooltip</name>
+          <id>94</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.StandardCommand.Help</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <horizontalAlign>Left</horizontalAlign>
+      <autoFill>true</autoFill>
+    </autoCommandBar>
+    <handlers>
+      <event>Selection</event>
+      <name>PrintFormsTemplatesSelection</name>
+    </handlers>
+    <handlers>
+      <event>OnActivateRow</event>
+      <name>PrintFormsTemplatesOnActivateRow</name>
+    </handlers>
+    <searchStringAddition>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <name>PrintFormsTemplatesSearchString</name>
+      <id>99</id>
+      <extendedTooltip>
+        <name>PrintFormsTemplatesSearchStringExtendedTooltip</name>
+        <id>101</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>PrintFormsTemplatesSearchStringContextMenu</name>
+        <id>100</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <source>PrintFormsTemplatesSearchString</source>
+      <extInfo xsi:type="form:SearchStringAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+      </extInfo>
+    </searchStringAddition>
+    <viewStatusAddition>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <name>PrintFormsTemplatesViewStatus</name>
+      <id>102</id>
+      <extendedTooltip>
+        <name>PrintFormsTemplatesViewStatusExtendedTooltip</name>
+        <id>104</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>PrintFormsTemplatesViewStatusContextMenu</name>
+        <id>103</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>ViewStatusAddition</type>
+      <source>PrintFormsTemplatesViewStatus</source>
+      <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+      </extInfo>
+    </viewStatusAddition>
+    <searchControlAddition>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <name>PrintFormsTemplatesSearchControl</name>
+      <id>105</id>
+      <extendedTooltip>
+        <name>PrintFormsTemplatesSearchControlExtendedTooltip</name>
+        <id>107</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>PrintFormsTemplatesSearchControlContextMenu</name>
+        <id>106</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>SearchControlAddition</type>
+      <source>PrintFormsTemplatesSearchControl</source>
+      <extInfo xsi:type="form:SearchControlAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+      </extInfo>
+    </searchControlAddition>
+    <extendedTooltip>
+      <name>PrintFormsTemplatesExtendedTooltip</name>
+      <id>95</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>PrintFormsTemplatesContextMenu</name>
+      <id>55</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <changeRowOrder>true</changeRowOrder>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <autoMaxRowsCount>true</autoMaxRowsCount>
+    <selectionMode>MultiRow</selectionMode>
+    <header>true</header>
+    <headerHeight>1</headerHeight>
+    <footerHeight>1</footerHeight>
+    <horizontalScrollBar>AutoUse</horizontalScrollBar>
+    <verticalScrollBar>AutoUse</verticalScrollBar>
+    <horizontalLines>true</horizontalLines>
+    <verticalLines>true</verticalLines>
+    <useAlternationRowColor>true</useAlternationRowColor>
+    <autoInsertNewRow>true</autoInsertNewRow>
+    <searchOnInput>Auto</searchOnInput>
+    <initialListView>Auto</initialListView>
+    <horizontalStretch>true</horizontalStretch>
+    <verticalStretch>true</verticalStretch>
+    <enableStartDrag>true</enableStartDrag>
+    <enableDrag>true</enableDrag>
+    <rowPictureDataPath xsi:type="form:DataPath">
+      <segments>PrintFormTemplates.Picture</segments>
+    </rowPictureDataPath>
+    <rowsPicture xsi:type="core:PictureRef">
+      <picture>CommonPicture.TemplateTypes</picture>
+    </rowsPicture>
+    <currentRowUse>SelectionPresentation</currentRowUse>
+    <rowFilter xsi:type="core:UndefinedValue"/>
+  </items>
+  <commandBarLocation>None</commandBarLocation>
+  <autoCommandBar>
+    <name>CommandBarForm</name>
+    <id>-1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <handlers>
+    <event>ChoiceProcessing</event>
+    <name>ChoiceProcessing</name>
+  </handlers>
+  <handlers>
+    <event>NotificationProcessing</event>
+    <name>NotificationProcessing</name>
+  </handlers>
+  <handlers>
+    <event>OnOpen</event>
+    <name>OnOpen</name>
+  </handlers>
+  <handlers>
+    <event>BeforeClose</event>
+    <name>BeforeClose</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>PromptForTemplateOpeningMode</name>
+    <title>
+      <key>ru</key>
+      <value>Спрашивать режим открытия макета</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Prompt for template opening mode</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wywołać szablon tryb otwarcia</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Pedir el modelo modo de abrir</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Pedir el modelo modo de abrir</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Açık şablon modu talep et</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Prompt per modalità di apertura modelli</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Stellen Sie den Vorlagenöffnungsmodus ein</value>
+    </title>
+    <id>4</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>TemplateOpeningModeView</name>
+    <title>
+      <key>ru</key>
+      <value>Режим открытия макета просмотр</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Template opening mode view</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Tryb otwarcia szablonu widok</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Modelo ver el modo de abrir</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Modelo ver el modo de abrir</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Şablon açma modu görüntüleme</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Modalità di apertura del layout di visualizzazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Template Öffnung Modus Ansicht</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>SearchString</name>
+    <title>
+      <key>ru</key>
+      <value>Строка поиска</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Search bar</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wiersz wyszukiwania</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Barra de búsqueda</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Barra de búsqueda</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Arama çubuğu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Barra di ricerca</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Suchleiste</value>
+    </title>
+    <id>6</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>FilterByTemplateUsage</name>
+    <title>
+      <key>ru</key>
+      <value>Показывать</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Show</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Pokaż</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Mostrar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Mostrar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Göster</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Mostra</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Anzeigen</value>
+    </title>
+    <id>7</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>PrintFormTemplates</name>
+    <title>
+      <key>ru</key>
+      <value>Макеты печатных форм</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Print form templates</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Szablony formularza wydruku</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Versión impresa modelos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Versión impresa modelos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Yazdırma formu şablonları</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Layout moduli di stampa</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Formularvorlagen drucken</value>
+    </title>
+    <id>8</id>
+    <valueType>
+      <types>ValueTable</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <columns>
+      <name>TemplateMetadataObjectName</name>
+      <title>
+        <key>ru</key>
+        <value>Имя объекта метаданных макета</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Template metadata object name</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Nazwa szablonu obiektu metadanych</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Nombre del objeto de metadatos del modelo</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Nombre del objeto de metadatos del modelo</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Şablon meta veri nesnesi ismi</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Nome oggetto template metadata</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Name des Vorlagen-Metadatenobjekts</value>
+      </title>
+      <id>1</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>TemplatePresentation</name>
+      <title>
+        <key>ru</key>
+        <value>Макет печатной формы</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Print form template</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Szablon formularza wydruku</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Versión impresa modelo</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Versión impresa modelo</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Yazdırma formu şablonu</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Layout modulo di stampa</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Formularvorlage drucken</value>
+      </title>
+      <id>2</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>OwnerPresentation</name>
+      <title>
+        <key>ru</key>
+        <value>Владелец макета</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Template owner</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Właściciel szablonu</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Propietario del modelo</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Propietario del modelo</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Şablon sahibi</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Proprietario del layout</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Vorlage Besitzer</value>
+      </title>
+      <id>3</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Changed</name>
+      <title>
+        <key>ru</key>
+        <value>Изменен</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Changed</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Zmienione</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Cambiado</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Cambiado</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Değiştirilmiş</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Modificato</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Geändert</value>
+      </title>
+      <id>4</id>
+      <valueType>
+        <types>Boolean</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ChangedTemplateUsed</name>
+      <title>
+        <key>ru</key>
+        <value>Используется измененный</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Changed template used</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Wykorzystuje się zmieniony</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Cambiado uno utilizado</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Cambiado uno utilizado</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Değiştirilmiş şablon kullanılıyor</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Template modificato utilizzato</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Geändert wird verwendet</value>
+      </title>
+      <id>5</id>
+      <valueType>
+        <types>Boolean</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Picture</name>
+      <title>
+        <key>ru</key>
+        <value>Картинка</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Picture</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Obrazek</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Imagen</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Imagen</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Resim</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Immagine</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Bild</value>
+      </title>
+      <id>8</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>TemplateType</name>
+      <title>
+        <key>ru</key>
+        <value>Тип макета</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Template type</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Rodzaj szablonu</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Tipo de modelo</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Tipo de modelo</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Şablon türü</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Tipo di layout</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Vorlagen-Typ</value>
+      </title>
+      <id>9</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>SearchString</name>
+      <title>
+        <key>ru</key>
+        <value>Строка поиска</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Search bar</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Wiersz wyszukiwania</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Barra de búsqueda</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Barra de búsqueda</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Arama çubuğu</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Barra di ricerca</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Suchleiste</value>
+      </title>
+      <id>10</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>UsagePicture</name>
+      <title>
+        <key>ru</key>
+        <value>Картинка использования</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Usage picture</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Użycie grafiki</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Utilizar la imagen</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Utilizar la imagen</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Resim kullanımı</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Immagine dell'uso</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Verwenden Sie Bild</value>
+      </title>
+      <id>6</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+  </attributes>
+  <formCommands>
+    <name>UseModifiedTemplate</name>
+    <title>
+      <key>ru</key>
+      <value>Использовать измененный макет</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Use changed template</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Użycie zmodyfikowanego szablonu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Utilizar el modelo modificado</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Utilizar el modelo modificado</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Değiştirilmiş şablon kullan</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Utilizzare template modificato</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Verwenden Sie die geänderte Vorlage</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Использовать измененный макет</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Use changed template</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Użycie zmodyfikowanego szablonu</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Utilizar el modelo modificado</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Utilizar el modelo modificado</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Değiştirilmiş şablon kullan</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Utilizzare template modificato</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Verwenden Sie die geänderte Vorlage</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.UseUserTemplate</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>UseModifiedTemplate</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>UseStandardTemplate</name>
+    <title>
+      <key>ru</key>
+      <value>Использовать стандартный макет</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Use standard template</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Użycie standardowego szablonu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Utilizar el modelo estándar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Utilizar el modelo estándar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Standart şablon kullan</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Utilizzare layout standard</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Verwenden Sie die Standard-Vorlage</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Использовать стандартный макет</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Use standard template</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Użycie standardowego szablonu</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Utilizar el modelo estándar</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Utilizar el modelo estándar</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Standart şablon kullan</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Utilizzare layout standard</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Verwenden Sie die Standard-Vorlage</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.UseSuppliedTemplate</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>UseStandardTemplate</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>SetActionOnChoosePrintFormTemplate</name>
+    <title>
+      <key>ru</key>
+      <value>Задать действие при выборе макета печатной формы...</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Set action upon selection of a print form template...</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Określić działanie przy wyborze szablonu formularza wydruku...</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Establecer acción cuando se seleccionar el modelo de la versión impresa...</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Establecer acción cuando se seleccionar el modelo de la versión impresa...</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Yazdırma formu şablonu seçimindeki eylemi ayarla...</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Impostare l'azione quando si seleziona il modello di modulo di stampa...</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Aktion beim Auswählen der Druckformularvorlage festlegen...</value>
+    </title>
+    <id>3</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Задать действие при выборе макета печатной формы</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Set action upon selection of a print form template</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Podajić działanie przy wyborze szablonu formularza wydruku</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Establecer la acción al seleccionar el modelo de la versión impresa</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Establecer la acción al seleccionar el modelo de la versión impresa</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Yazdırma formu şablonu seçimindeki eylemi ayarla</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Impostare l'azione quando si seleziona il modello di modulo di stampa</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Set Aktion auf Druck Formularvorlage wählen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>SetActionOnChoosePrintFormTemplate</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ChangeTemplate</name>
+    <title>
+      <key>ru</key>
+      <value>Изменить</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Change</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zmień</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Cambiar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Cambiar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Değiştir</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Modifica</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Ändern</value>
+    </title>
+    <id>4</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Изменить макет</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Change template</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zmień szablon</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Cambiar el modelo</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Cambiar el modelo</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Şablon değiştir</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Cambiare template</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Vorlage ändern</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.EditTemplate</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ChangeTemplate</name>
+      </handler>
+    </action>
+    <representation>TextPicture</representation>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>OpenTemplate</name>
+    <title>
+      <key>ru</key>
+      <value>Открыть</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Open</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Otwórz</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Abrir</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Abrir</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Aç</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Apri</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Öffnen</value>
+    </title>
+    <id>5</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Открыть макет</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Open template</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Otwórz szablon</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Abrir el modelo</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Abrir el modelo</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Şablon aç</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Aprire layout</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Vorlage öffnen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.OpenTemplate</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>OpenTemplate</name>
+      </handler>
+    </action>
+    <representation>TextPicture</representation>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>DeleteModifiedTemplate</name>
+    <title>
+      <key>ru</key>
+      <value>Удалить измененный макет</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Delete changed template</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Usuń zmieniony szablon</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Borrar el modelo cambiado</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Borrar el modelo cambiado</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Değiştirilmiş şablonu sil</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Eliminare layout cambiato</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Löschen Sie die geänderte Vorlage</value>
+    </title>
+    <id>6</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Удалить измененный макет</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Delete changed template</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Usuń zmieniony szablon</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Borrar el modelo cambiado</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Borrar el modelo cambiado</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Değiştirilmiş şablonu sil</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Eliminare layout cambiato</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Löschen Sie die geänderte Vorlage</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.UserTemplateDelete</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>DeleteSelectedModifiedTemplates</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

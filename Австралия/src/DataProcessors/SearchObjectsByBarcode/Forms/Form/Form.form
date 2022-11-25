@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:FormField">
+    <name>Barcode</name>
+    <id>1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Barcode</segments>
+    </dataPath>
+    <titleLocation>None</titleLocation>
+    <toolTip>
+      <key>en</key>
+      <value>Use a barcode scanner to read the document barcode. After the scanning, the system will perform an action, defined in the &quot;Barcode scanning actions&quot; catalog.</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Отсканируйте штрихкод документа с помощью сканера. После этого система выполнит действие, установленное в справочнике &quot;Действия при сканировании штрихкодов&quot;.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Użyj skanera kodów kreskowych, aby odczytać kod kreskowy dokumentu. Po zakończeniu skanowania system wykona działanie, określone w katalogu &quot;Działania podczas skanowania kodów kreskowych&quot;.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Use el escáner de códigos de barra para leer el código de barra del documento. Al escanear el sistema realizará una acción definida en el catálogo &quot;Acciones d escanear los códigos de barras&quot;.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Use el escáner de códigos de barra para leer el código de barra del documento. Al escanear el sistema realizará una acción definida en el catálogo &quot;Acciones d escanear los códigos de barras&quot;.</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Belge barkodunu okumak için bir barkod tarayıcı kullanın. Tarama işleminden sonra, sistem &quot;Barkod tarama eylemleri&quot; kataloğunda tanımlanan bir eylem gerçekleştirecektir.</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Utilizzare uno scanner di codici a barre per leggere il codice a barre del documento. Dopo la scansione, il sistema eseguirà un'azione, definita nella anagrafica &quot;Azioni da scansione dei codici a barre&quot;.</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Verwenden Sie einen Barcodescanner, um den Dokumenten-Barcode zu lesen. Nach dem Scannen führt das System eine Aktion aus, die im Katalog &quot;Barcode-Scan-Aktionen&quot; definiert ist.</value>
+    </toolTip>
+    <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+    <handlers>
+      <event>OnChange</event>
+      <name>BarcodeOnChange</name>
+    </handlers>
+    <extendedTooltip>
+      <name>BarcodeExtendedTooltip</name>
+      <id>3</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>BarcodeContextMenu</name>
+      <id>2</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+      <inputHint>
+        <key>en</key>
+        <value>Scan a barcode</value>
+      </inputHint>
+      <inputHint>
+        <key>ru</key>
+        <value>Сканировать штрихкод</value>
+      </inputHint>
+      <inputHint>
+        <key>pl</key>
+        <value>Zeskanuj kod kreskowy</value>
+      </inputHint>
+      <inputHint>
+        <key>es_ES</key>
+        <value>Escanear el código de barras</value>
+      </inputHint>
+      <inputHint>
+        <key>es_CO</key>
+        <value>Escanear el código de barras</value>
+      </inputHint>
+      <inputHint>
+        <key>tr</key>
+        <value>Barkod tara</value>
+      </inputHint>
+      <inputHint>
+        <key>it</key>
+        <value>Scansiona un codice a barre</value>
+      </inputHint>
+      <inputHint>
+        <key>de</key>
+        <value>Barcode scannen</value>
+      </inputHint>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>FormCommandBar</name>
+    <id>-1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+  </autoCommandBar>
+  <handlers>
+    <event>NotificationProcessing</event>
+    <name>NotificationProcessing</name>
+  </handlers>
+  <handlers>
+    <event>OnOpen</event>
+    <name>OnOpen</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <handlers>
+    <event>OnClose</event>
+    <name>OnClose</name>
+  </handlers>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Object</name>
+    <id>1</id>
+    <valueType>
+      <types>DataProcessorObject.SearchObjectsByBarcode</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <main>true</main>
+  </attributes>
+  <attributes>
+    <name>Barcode</name>
+    <title>
+      <key>en</key>
+      <value>Barcode</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Штрихкод</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Kod kreskowy</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Código de barras</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Código de barras</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Barkod</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Codice a barre</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Barcode</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>SupportedPeripheralTypes</name>
+    <title>
+      <key>en</key>
+      <value>Supported peripheral types</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Поддерживаемые типы подключаемого оборудования</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Obsługiwane typy urządzeń peryferyjnych</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Tipos periféricos apoyados</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Tipos periféricos apoyados</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Desteklenen çevre birimi türleri</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Tipi di periferiche supportate</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Unterstützte Peripherietypen</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>UsePeripherals</name>
+    <title>
+      <key>en</key>
+      <value>Use peripherals</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Использование подключаемого оборудования</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Użyj podłączone urządzenia</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Utilizar periféricos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Utilizar periféricos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Çevre birimlerini kullan</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Utilizzare le periferiche</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Peripheriegeräte verwenden</value>
+    </title>
+    <id>4</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+  <extInfo xsi:type="form:ObjectFormExtInfo"/>
+</form:Form>

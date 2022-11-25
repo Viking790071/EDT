@@ -1,0 +1,1422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <title>
+    <key>ru</key>
+    <value>Обновление доступа (ручное управление)</value>
+  </title>
+  <title>
+    <key>en</key>
+    <value>Access update (manual control)</value>
+  </title>
+  <title>
+    <key>pl</key>
+    <value>Aktualizacja dostępu (sterowanie ręczne)</value>
+  </title>
+  <title>
+    <key>es_ES</key>
+    <value>Actualización de acceso (gestión manual)</value>
+  </title>
+  <title>
+    <key>es_CO</key>
+    <value>Actualización de acceso (gestión manual)</value>
+  </title>
+  <title>
+    <key>tr</key>
+    <value>Erişim güncellemesi (manuel kontrol)</value>
+  </title>
+  <title>
+    <key>it</key>
+    <value>Aggiornamento accesso (controllo manuale)</value>
+  </title>
+  <title>
+    <key>de</key>
+    <value>Aktualisierung des Zugriffs (manuelle Steuerung)</value>
+  </title>
+  <items xsi:type="form:FormGroup">
+    <name>UpdateAccessToObjectGroup</name>
+    <id>4</id>
+    <items xsi:type="form:FormField">
+      <name>AccessUpdateObject</name>
+      <id>43</id>
+      <title>
+        <key>ru</key>
+        <value>Объект</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Object</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Obiekt</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Objeto</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Objeto</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Nesne</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Oggetto</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Objekt</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>AccessUpdateObject</segments>
+      </dataPath>
+      <titleLocation>None</titleLocation>
+      <extendedTooltip>
+        <name>AccessUpdateObjectExtendedTooltip</name>
+        <id>45</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>AccessUpdateObjectContextMenu</name>
+        <id>44</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <handlers>
+          <event>StartChoice</event>
+          <name>AccessUpdateObjectStartChoice</name>
+        </handlers>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+        <typeLink>
+          <linkItem>1</linkItem>
+          <datapath xsi:type="form:DataPath">
+            <segments>Items.ListsForUpdate.CurrentData.Value</segments>
+          </datapath>
+        </typeLink>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>HorizontalGroup</name>
+      <id>48</id>
+      <items xsi:type="form:Button">
+        <name>UpdateAccessToObject</name>
+        <id>9</id>
+        <title>
+          <key>ru</key>
+          <value>Обновить доступ</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Update access</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Zaktualizuj dostęp</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Actualizar el acceso</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Actualizar el acceso</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Erişimi güncelle</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Aggiornamento accesso</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Zugang aktualisieren</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>UpdateAccessToObjectExtendedTooltip</name>
+          <id>10</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualButton</type>
+        <commandName>Form.Command.UpdateAccessToObject</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <items xsi:type="form:Decoration">
+        <name>HorizontalIndent</name>
+        <id>50</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>HorizontalIndentExtendedTooltip</name>
+          <id>52</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>HorizontalIndentContextMenu</name>
+          <id>51</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <width>2</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Button">
+        <name>ShowAccessToObject</name>
+        <id>46</id>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ShowAccessToObjectExtendedTooltip</name>
+          <id>47</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Hyperlink</type>
+        <commandName>Form.Command.ShowAccessToObject</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Горизонтальная группа</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Horizontal group</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Pozioma grupa</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Grupo horizontal</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Grupo horizontal</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Yatay grup</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Gruppo orizzontale</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Horizontale Gruppe</value>
+      </title>
+      <extendedTooltip>
+        <name>HorizontalGroupExtendedTooltip</name>
+        <id>49</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>HorizontalIfPossible</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>1. Обновление доступа к объекту</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>1. Object access update</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>1. Aktualizacja dostępu do obiektu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>1. Actualización del acceso al objeto</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>1. Actualización del acceso al objeto</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>1. Nesneye erişim güncellemesi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>1. Aggiornamento accesso oggetto</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>1. Aktualisieren des Zugriffs auf ein Objekt</value>
+    </title>
+    <extendedTooltip>
+      <name>UpdateAccessToObjectGroupExtendedTooltip</name>
+      <id>5</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <representation>NormalSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>UpdateAccessToAllListsItemsGroup</name>
+    <id>11</id>
+    <items xsi:type="form:Table">
+      <name>ListsForUpdate</name>
+      <id>18</id>
+      <title>
+        <key>ru</key>
+        <value>Списки для обновления</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Lists for update</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Listy do aktualizacji</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Listas para actualizar</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Listas para actualizar</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Güncellenecek listeler</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Elenchi per gli aggiornamenti</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Zu aktualisierende Listen</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>ListsForUpdate</segments>
+      </dataPath>
+      <titleLocation>None</titleLocation>
+      <items xsi:type="form:FormGroup">
+        <name>ListsForUpdateGroup</name>
+        <id>53</id>
+        <items xsi:type="form:FormField">
+          <name>ListsForUpdateCheck</name>
+          <id>34</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>ListsForUpdate.Check</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>ListsForUpdateCheckExtendedTooltip</name>
+            <id>36</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ListsForUpdateCheckContextMenu</name>
+            <id>35</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>EnterOnInput</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>ListsForUpdateValue</name>
+          <id>31</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>ListsForUpdate.Value</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>ListsForUpdateValueExtendedTooltip</name>
+            <id>33</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ListsForUpdateValueContextMenu</name>
+            <id>32</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <readOnly>true</readOnly>
+          <editMode>EnterOnInput</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Списки для обновления группа</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Lists for update group</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Listy do aktualizacji grupa</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Listas para actualizar grupo</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Listas para actualizar grupo</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Güncellenecek listeler grup</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Elenchi per aggiornamento gruppo</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Listen zum Aktualisieren der Gruppe</value>
+        </title>
+        <extendedTooltip>
+          <name>ListsForUpdateGroupExtendedTooltip</name>
+          <id>54</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>ColumnGroup</type>
+        <extInfo xsi:type="form:ColumnGroupExtInfo">
+          <group>InCell</group>
+          <showTitle>true</showTitle>
+        </extInfo>
+      </items>
+      <autoCommandBar>
+        <name>ListsForUpdateCommandBar</name>
+        <id>20</id>
+        <items xsi:type="form:Button">
+          <name>ListsForUpdateSelectAll</name>
+          <id>39</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ListsForUpdateSelectAllExtendedTooltip</name>
+            <id>40</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Item.ListsForUpdate.StandardCommand.CheckAll</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+          <locationInCommandBar>InCommandBarAndInAdditionalSubmenu</locationInCommandBar>
+        </items>
+        <items xsi:type="form:Button">
+          <name>ListsForUpdateClearAll</name>
+          <id>41</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ListsForUpdateClearAllExtendedTooltip</name>
+            <id>42</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Item.ListsForUpdate.StandardCommand.UncheckAll</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+          <locationInCommandBar>InCommandBarAndInAdditionalSubmenu</locationInCommandBar>
+        </items>
+        <items xsi:type="form:Button">
+          <name>ListsScheduleUpdateOfAccessToAllSelectedListsItems</name>
+          <id>37</id>
+          <title>
+            <key>ru</key>
+            <value>Запланировать обновление</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Schedule update</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Zaplanuj aktualizację</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Planificar la actualización</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Planificar la actualización</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Güncellemeyi planla</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Aggiornamento pianificazione</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Eine Aktualisierung planen</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ListsScheduleUpdateOfAccessToAllSelectedListsItemsExtendedTooltip</name>
+            <id>38</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Command.ScheduleUpdateOfAccessToAllSelectedListsItems</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <horizontalAlign>Left</horizontalAlign>
+      </autoCommandBar>
+      <searchStringAddition>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <name>ListsForUpdateSearchString</name>
+        <id>22</id>
+        <extendedTooltip>
+          <name>ListsForUpdateSearchStringExtendedTooltip</name>
+          <id>24</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ListsForUpdateSearchStringContextMenu</name>
+          <id>23</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <source>ListsForUpdateSearchString</source>
+        <extInfo xsi:type="form:SearchStringAdditionExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+        </extInfo>
+      </searchStringAddition>
+      <viewStatusAddition>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <name>ListsForUpdateViewStatus</name>
+        <id>25</id>
+        <extendedTooltip>
+          <name>ListsForUpdateViewStatusExtendedTooltip</name>
+          <id>27</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ListsForUpdateViewStatusContextMenu</name>
+          <id>26</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>ViewStatusAddition</type>
+        <source>ListsForUpdateViewStatus</source>
+        <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+        </extInfo>
+      </viewStatusAddition>
+      <searchControlAddition>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <name>ListsForUpdateSearchControl</name>
+        <id>28</id>
+        <extendedTooltip>
+          <name>ListsForUpdateSearchControlExtendedTooltip</name>
+          <id>30</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ListsForUpdateSearchControlContextMenu</name>
+          <id>29</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>SearchControlAddition</type>
+        <source>ListsForUpdateSearchControl</source>
+        <extInfo xsi:type="form:SearchControlAdditionExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+        </extInfo>
+      </searchControlAddition>
+      <extendedTooltip>
+        <name>ListsForUpdateExtendedTooltip</name>
+        <id>21</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ListsForUpdateContextMenu</name>
+        <id>19</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <autoMaxRowsCount>true</autoMaxRowsCount>
+      <selectionMode>MultiRow</selectionMode>
+      <headerHeight>1</headerHeight>
+      <footerHeight>1</footerHeight>
+      <horizontalScrollBar>AutoUse</horizontalScrollBar>
+      <verticalScrollBar>AutoUse</verticalScrollBar>
+      <autoInsertNewRow>true</autoInsertNewRow>
+      <searchOnInput>Auto</searchOnInput>
+      <initialListView>Auto</initialListView>
+      <horizontalStretch>true</horizontalStretch>
+      <verticalStretch>true</verticalStretch>
+      <rowPictureDataPath xsi:type="form:DataPath">
+        <segments>ListsForUpdate.Picture</segments>
+      </rowPictureDataPath>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>2. Обновление доступа ко всем элементам списков</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>2. Update access to all list items</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>2. Aktualizowanie dostępu do wszystkich elementów listów</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>2. Actualizar el acceso a todos los elementos de listas</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>2. Actualizar el acceso a todos los elementos de listas</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>2. Listelerin tüm öğelerine olan erişimi güncelleme</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>2. Aggiornamento accesso a tutti gli elenchi elementi</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>2. Aktualisieren des Zugriffs auf alle Listenelemente</value>
+    </title>
+    <extendedTooltip>
+      <name>UpdateAccessToAllListsItemsGroupExtendedTooltip</name>
+      <id>12</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>HorizontalIfPossible</group>
+      <representation>NormalSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>CommandBarForm</name>
+    <id>-1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+  </autoCommandBar>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>ListsForUpdate</name>
+    <title>
+      <key>ru</key>
+      <value>Списки для обновления</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Lists for update</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Listy do aktualizacji</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Listas para actualizar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Listas para actualizar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Güncellenecek listeler</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Elenchi per gli aggiornamenti</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Zu aktualisierende Listen</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType/>
+    </extInfo>
+  </attributes>
+  <attributes>
+    <name>AccessUpdateObject</name>
+    <title>
+      <key>ru</key>
+      <value>Объект обновления доступа</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Access update object</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Obiekt aktualizacji dostępu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Objeto de actualización de acceso</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Objeto de actualización de acceso</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Erişim güncelleme nesnesi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>L'oggetto di aggiornamento dell'accesso</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Objekt der Zugriffsaktualisierung</value>
+    </title>
+    <id>1</id>
+    <valueType>
+      <types>ExchangePlanRef</types>
+      <types>BusinessProcessRef</types>
+      <types>DocumentRef</types>
+      <types>ChartOfCalculationTypesRef</types>
+      <types>TaskRef</types>
+      <types>ChartOfCharacteristicTypesRef</types>
+      <types>ChartOfAccountsRef</types>
+      <types>CatalogRef</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>AccessUpdateObjectsTypes</name>
+    <title>
+      <key>ru</key>
+      <value>Типы объектов обновления доступа</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Access update object types</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Rodzaje obiektów aktualizacji dostępu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Tipos de objetos de actualización de acceso</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Tipos de objetos de actualización de acceso</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Erişim güncelleme nesnelerin türleri</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Tipi di oggetto aggiornamento accesso</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Objekttypen der Zugriffsaktualisierung</value>
+    </title>
+    <id>4</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType/>
+    </extInfo>
+  </attributes>
+  <attributes>
+    <name>AccessUpdateObjectsTypesTablesNames</name>
+    <title>
+      <key>ru</key>
+      <value>Имена таблиц типов объектов обновления доступа</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Table names of access update object types</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Nazwy typów tabel obiektowych aktualizacji dostępu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Nombres de tablas de tipos de objetos de actualización de acceso</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Nombres de tablas de tipos de objetos de actualización de acceso</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Erişim güncelleme nesne türleri tabloların adları</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Nomi tabella dei tipi di oggetto aggiornamento accesso</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Tabellennamen der Objekttypen der Zugriffsaktualisierung</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>ValueList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:ValueListExtInfo">
+      <itemValueType/>
+    </extInfo>
+  </attributes>
+  <attributes>
+    <name>SelectedAccessUpdateObjectType</name>
+    <title>
+      <key>ru</key>
+      <value>Выбранный тип объекта обновления доступа</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Selected type of access update object</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wybrany typ obiektu aktualizacji dostępu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Tipo seleccionado del objeto de actualización de acceso</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Tipo seleccionado del objeto de actualización de acceso</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Seçilmiş erişim güncelleme nesnesinin türü</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Tipo selezionato di oggetto aggiornamento accesso</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Ausgewählter Objekttyp der Zugriffsaktualisierung</value>
+    </title>
+    <id>6</id>
+    <valueType>
+      <types>AnyRef</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>UpdateAccessToObject</name>
+    <title>
+      <key>ru</key>
+      <value>Обновить доступ к объекту</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Update access to object</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zaktualizuj dostęp do obiektu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Actualizar acceso al objeto</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Actualizar acceso al objeto</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Nesneye erişimi güncelle</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Aggiorna l'accesso all'oggetto</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Objektzugriff aktualisieren</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Обновить доступ к выбранному объекту прямо сейчас.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Update access to the selected object now.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zaktualizuj teraz dostęp do wybranego obiektu.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Actualizar el acceso al objeto seleccionado ahora mismo.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Actualizar el acceso al objeto seleccionado ahora mismo.</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Seçilmiş nesneye erişimi şimdi güncelle.</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Aggiorna ora l'accesso all'oggetto selezionato.</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Aktualisieren Sie jetzt den Zugriff auf das ausgewählte Objekt.</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>UpdateAccessToObject</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ScheduleUpdateOfAccessToAllSelectedListsItems</name>
+    <title>
+      <key>ru</key>
+      <value>Запланировать обновление доступа ко всем элементам отмеченных списков</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Schedule update of access to all selected list items</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zaplanuj aktualizację dostępu do wszystkich elementów zaznaczonych list</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Planificar la actualización del acceso a todos los elementos de las listas marcadas</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Planificar la actualización del acceso a todos los elementos de las listas marcadas</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>İşaretlenen listelerin tüm öğelerine olan erişimi güncellemesini planla</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Pianificare aggiornamento dell'accesso a tutti gli elementi dell'elenco</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Planen, den Zugriff auf alle Elemente der markierten Listen zu aktualisieren</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Запланировать обновление доступа ко всем элементам отмеченных списков.
+Обновление будет выполняться регламентным заданием &quot;Обновление доступа&quot;.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Schedule update of access to all selected list items. 
+Update will be performed by the Access update scheduled job.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zaplanuj aktualizację dostępu do wszystkich elementów wybranych list.
+Aktualizacja zostanie wykonana przez zadanie reglamentowane &quot;Aktualizacja dostępu&quot;.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Planificar la actualización de acceso a todos los elementos de listas marcadas.
+La actualización se ejecutará por la tarea programada &quot;Actualización de acceso&quot;.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Planificar la actualización de acceso a todos los elementos de listas marcadas.
+La actualización se ejecutará por la tarea programada &quot;Actualización de acceso&quot;.</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>İşaretlenen listelerin tüm öğelerine olan erişimi güncellemesini planla. 
+ Güncelleme, &quot;Erişim güncellemesi&quot; zamanlanmış iş aracılığı ile yapılacaktır.</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Pianificare aggiornamento dell'accesso a tutti gli elementi dell'elenco. 
+L'aggiornamento sarà eseguito dall'incarico pianificato Aggiornamento accesso.</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Planen Sie eine Aktualisierung des Zugriffs auf alle Elemente der markierten Listen.
+Die Aktualisierung wird von der Routineaufgabe &quot; Update-Zugriff&quot; ausgeführt.</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ScheduleUpdateOfAccessToAllSelectedListsItems</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ShowAccessToObject</name>
+    <title>
+      <key>ru</key>
+      <value>Показать доступ ...</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Show access ...</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Pokaż dostęp...</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Mostrar acceso ...</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Mostrar acceso ...</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Erişimi göster...</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Mostra accesso ...</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Zugriff anzeigen...</value>
+    </title>
+    <id>3</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ShowAccessToObject</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

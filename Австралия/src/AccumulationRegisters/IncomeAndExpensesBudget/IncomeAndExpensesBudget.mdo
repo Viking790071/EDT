@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5e2dc139-41e8-47ca-982e-c9fa621d3600">
+  <producedTypes>
+    <selectionType typeId="cb3af4bc-43e7-4b76-a3d6-3415a2d6f052" valueTypeId="5439e890-a8d5-479d-b853-4bc7fbe6b344"/>
+    <listType typeId="6982d7e3-15fc-4daf-b2f0-f246d46d389e" valueTypeId="e1362abf-20f2-490e-8bd6-ba4712a2591e"/>
+    <managerType typeId="37c3e530-d297-4ff4-b5f5-c587ff86e9e7" valueTypeId="f36cb4d1-2f54-4006-b140-15765ecb70b1"/>
+    <recordSetType typeId="ac20a317-ba64-449e-a866-99c18ad3b33c" valueTypeId="9b07d586-d4a8-48d4-92fa-0947b610fafb"/>
+    <recordKeyType typeId="10c969f4-6ba0-4867-81a9-f1f15d9e7ea8" valueTypeId="7d1731e4-659c-4528-9bf4-53897ad32fc2"/>
+    <recordType typeId="6e18045b-ea1e-4429-8804-c0caf5fd445f" valueTypeId="a8a5e504-e45e-4d6b-a292-af3a3f6597d9"/>
+  </producedTypes>
+  <name>IncomeAndExpensesBudget</name>
+  <synonym>
+    <key>en</key>
+    <value>Income and expenses (forecast)</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Доходы и расходы (прогноз)</value>
+  </synonym>
+  <synonym>
+    <key>pl</key>
+    <value>Dochody i rozchody (prognoza)</value>
+  </synonym>
+  <synonym>
+    <key>es_ES</key>
+    <value>Ingresos y gastos (pronóstico)</value>
+  </synonym>
+  <synonym>
+    <key>es_CO</key>
+    <value>Ingresos y gastos (pronóstico)</value>
+  </synonym>
+  <synonym>
+    <key>tr</key>
+    <value>Gelir ve giderler (tahmini)</value>
+  </synonym>
+  <synonym>
+    <key>it</key>
+    <value>Entrate e uscite (previsione)</value>
+  </synonym>
+  <synonym>
+    <key>de</key>
+    <value>Einnahmen und Ausgaben (Prognose)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>en</key>
+      <value>Period</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Okres</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Período</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Período</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Dönem</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Periodo</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Zeitraum</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>en</key>
+    <value>Stores records for forecasting income and expenses.</value>
+  </explanation>
+  <explanation>
+    <key>ru</key>
+    <value>Stores records for forecasting income and expenses.</value>
+  </explanation>
+  <explanation>
+    <key>pl</key>
+    <value>Stores records for forecasting income and expenses.</value>
+  </explanation>
+  <explanation>
+    <key>es_ES</key>
+    <value>Stores records for forecasting income and expenses.</value>
+  </explanation>
+  <explanation>
+    <key>es_CO</key>
+    <value>Stores records for forecasting income and expenses.</value>
+  </explanation>
+  <explanation>
+    <key>tr</key>
+    <value>Stores records for forecasting income and expenses.</value>
+  </explanation>
+  <explanation>
+    <key>it</key>
+    <value>Stores records for forecasting income and expenses.</value>
+  </explanation>
+  <explanation>
+    <key>de</key>
+    <value>Stores records for forecasting income and expenses.</value>
+  </explanation>
+  <resources uuid="9bbf5aaf-6de0-4a06-a12f-2cf26492ea9c">
+    <name>AmountIncome</name>
+    <synonym>
+      <key>en</key>
+      <value>Income amount</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма доходов</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Suma przychodów</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Importe de ingresos</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Importe de ingresos</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Gelir tutarı</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Importo del fatturato</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Einnahmebetrag</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="0ade55b7-89fd-43f7-8d33-7cb4bd28d6f8">
+    <name>AmountExpense</name>
+    <synonym>
+      <key>en</key>
+      <value>Expense amount</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма расходов</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Kwota wydatków</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Importe de gastos</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Importe de gastos</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Masraf tutarı</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Importo spese</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Ausgabebetrag</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="e8ff79af-f46e-480f-87bf-5b3817ffaaff">
+    <name>ContentOfAccountingRecord</name>
+    <synonym>
+      <key>en</key>
+      <value>Posting content</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Содержание проводки</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Opis księgowania</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Envío de contenido</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Envío de contenido</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Kayıt içeriği</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Contenuto della pubblicazione</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Buchung Inhalt</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="88075dcb-a2cc-4ce5-9fc0-9e0293f9c8e4">
+    <name>GLAccount</name>
+    <synonym>
+      <key>en</key>
+      <value>GL account</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Счет учета</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Konto księgowe</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Cuenta del libro mayor</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Cuenta del libro mayor</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Muhasebe hesabı</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Conto mastro</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Hauptbuch-Konto</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.PrimaryChartOfAccounts</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="2d918f9f-af64-44a2-a741-82514bd6e86d">
+    <name>Company</name>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Firma</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Empresa</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Empresa</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İş yeri</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Azienda</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Firma</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Companies</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="07abebe9-5a19-4758-930c-28c29879b273">
+    <name>PlanningPeriod</name>
+    <synonym>
+      <key>en</key>
+      <value>Planning period</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Период планирования</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Okres planowania</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Período de planificación</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Período de planificación</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Planlama dönemi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Periodo di pianificazione</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Planungszeitraum</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.PlanningPeriods</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="2529379d-9315-430e-83a3-226ce38ac634">
+    <name>StructuralUnit</name>
+    <synonym>
+      <key>en</key>
+      <value>Business unit</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Jednostka biznesowa</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Unidad empresarial</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Unidad de negocio</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Departman</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Business unit</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Abteilung</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.BusinessUnits</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="74e46372-d6f0-42fb-853d-81cc2274e964">
+    <name>BusinessLine</name>
+    <synonym>
+      <key>en</key>
+      <value>Line of business</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Направление деятельности</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Rodzaj działalności</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Dirección de negocio</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Dirección de negocio</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İş kolu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Linea di business</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Geschäftsbereich</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.LinesOfBusiness</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="1efd1fee-a8d9-4fd6-b6b1-48e1a9f2a7c5">
+    <name>SalesOrder</name>
+    <synonym>
+      <key>en</key>
+      <value>Sales order</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ покупателя</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Zamówienie sprzedaży</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Orden de ventas</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Orden de ventas</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Satış siparişi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Ordine cliente</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Kundenauftrag</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.SalesOrder</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="53767dd2-ec9b-49c3-8a01-1f893c56be81">
+    <name>IncomeAndExpenseItem</name>
+    <synonym>
+      <key>en</key>
+      <value>Income and expense item</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Статья доходов и расходов</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Pozycja dochodów i rozchodów</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Artículo de ingresos y gastos</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Artículo de ingresos y gastos</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Gelir ve gider kalemi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Voce di entrata e uscita</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Position von Einnahme und Ausgaben</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.IncomeAndExpenseItems</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

@@ -1,0 +1,2557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:FormGroup">
+    <name>PasswordComplexityGroup</name>
+    <id>33</id>
+    <items xsi:type="form:FormField">
+      <name>PasswordMustMeetComplexityRequirements</name>
+      <id>4</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>PasswordMustMeetComplexityRequirements</segments>
+      </dataPath>
+      <titleLocation>Right</titleLocation>
+      <toolTip>
+        <key>ru</key>
+        <value>Проверять, чтобы новый пароль:
+- имел не менее 7 символов; 
+-содержал любые 3 из 4-х типов символов: заглавные буквы,
+ строчные буквы, цифры, специальные символы;
+- не совпадал с логином.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>The new password must:
+- contain at least 7 characters
+- contain any 3 out of 4 character types: uppercase letters, 
+lowercase letters, numbers, and special characters
+- differ from the username</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Nowe hasło musi:
+- zawierać co najmniej 7 znaków
+- zawierać dowolne 3 z 4 typów znaków: wielkie litery, 
+małe litery, cyfry i znaki specjalne
+- różniące się od nazwy użytkownika</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Comprobar que la nueva contraseña:
+- tenga no menos que 7 símbolos;
+- contenga cualesquiera de 3 o 4 tipos de símbolos: letras mayúsculas,
+ letras minúsculas, cifras, símbolos especiales;
+- no sea igual al nombre (para entrar).</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Comprobar que la nueva contraseña:
+- tenga no menos que 7 símbolos;
+- contenga cualesquiera de 3 o 4 tipos de símbolos: letras mayúsculas,
+ letras minúsculas, cifras, símbolos especiales;
+- no sea igual al nombre (para entrar).</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Yeni parola gereksinimleri: 
+- en az 7 karakterden oluşmalı
+- 4 karakter türünden herhangi 3'ünü içermeli: büyük harf, 
+küçük harf, rakam, özel karakterler
+- kullanıcı adından farklı olmalı</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>La nuova password deve:
+ contenere almeno 7 caratteri
+- avere almeno 3 delle 4 tipologie di carattere: lettere maiuscole, 
+lettere minuscole, numeri, e caratteri speciali
+- differire dal nome utente</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Vergewissern Sie sich, dass das neue Passwort:
+- mindestens 7 Zeichen lang ist;
+- 3 beliebige der 4 Zeichentypen enthält: Großbuchstaben,
+Kleinbuchstaben, Zahlen, Sonderzeichen;
+- nicht mit dem Namen übereinstimmt (für die Anmeldung).</value>
+      </toolTip>
+      <toolTipRepresentation>Button</toolTipRepresentation>
+      <handlers>
+        <event>OnChange</event>
+        <name>PasswordMustMeetComplexityRequirementsOnChange</name>
+      </handlers>
+      <extendedTooltip>
+        <name>PasswordMustComplyWithComplexityRequirementsExtendedTooltip</name>
+        <id>6</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>PasswordMustComplyWithComplexityRequirements</name>
+        <id>5</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>MinPasswordLengthGroup</name>
+      <id>43</id>
+      <items xsi:type="form:FormField">
+        <name>MinPasswordLengthEnable</name>
+        <id>86</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>MinPasswordLengthEnable</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <handlers>
+          <event>OnChange</event>
+          <name>SettingEnableOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>MinPasswordLengthEnableExtendedTooltip</name>
+          <id>88</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>MinPasswordLengthEnableContextMenu</name>
+          <id>87</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>MinPasswordLength</name>
+        <id>1</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>MinPasswordLength</segments>
+        </dataPath>
+        <titleLocation>None</titleLocation>
+        <handlers>
+          <event>OnChange</event>
+          <name>MinPasswordLengthOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>MinPasswordLengthExtendedTooltip</name>
+          <id>3</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>MinPasswordLengthContextMenu</name>
+          <id>2</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+          <minValue xsi:type="core:NumberValue">
+            <value>1</value>
+          </minValue>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Decoration">
+        <name>MinPasswordLengthNote</name>
+        <id>45</id>
+        <title>
+          <key>ru</key>
+          <value>знак.</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>chars</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>charakterystyka/parametry</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>símbolo.</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>símbolo.</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>karakter.</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>caratteri</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Zeichen.</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>MinPasswordLengthNoteExtendedTooltip</name>
+          <id>47</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>MinPasswordLengthNoteContextMenu</name>
+          <id>46</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Минимальная длина пароля</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Minimum password length</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Minimalna długość hasła</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Longitud mínima de la contraseña</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Longitud mínima de la contraseña</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Minimum parola uzunluğu</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Lunghezza minima password</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Minimale Passwortlänge</value>
+      </title>
+      <extendedTooltip>
+        <name>MinPasswordLengthGroupExtendedTooltip</name>
+        <id>44</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>HorizontalIfPossible</group>
+        <showLeftMargin>true</showLeftMargin>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Сложность пароля</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Password complexity</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Złożoność hasła</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Dificultad de la contraseña</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Dificultad de la contraseña</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Parola zorluğu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Complessità della password</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Komplexität des Passworts</value>
+    </title>
+    <extendedTooltip>
+      <name>PasswordComplexityGroupExtendedTooltip</name>
+      <id>34</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <representation>NormalSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <backColor xsi:type="core:ColorRef">
+        <color>Style.FormBackColor</color>
+      </backColor>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ChangePasswordGroup</name>
+    <id>108</id>
+    <items xsi:type="form:FormGroup">
+      <name>MaxPasswordLifetimeGroup</name>
+      <id>53</id>
+      <items xsi:type="form:FormField">
+        <name>MaxPasswordLifetimeEnable</name>
+        <id>92</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>MaxPasswordLifetimeEnable</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <handlers>
+          <event>OnChange</event>
+          <name>SettingEnableOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>MaxPasswordLifetimeEnableExtendedTooltip</name>
+          <id>94</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>MaxPasswordLifetimeEnableContextMenu</name>
+          <id>93</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>MaxPasswordLifetime</name>
+        <id>12</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>MaxPasswordLifetime</segments>
+        </dataPath>
+        <titleLocation>None</titleLocation>
+        <toolTip>
+          <key>ru</key>
+          <value>Срок после первого входа с новым паролем,
+после которого пользователю потребуется сменить пароль.</value>
+        </toolTip>
+        <toolTip>
+          <key>en</key>
+          <value>The period from the first use of the password
+to the moment the password expires.</value>
+        </toolTip>
+        <toolTip>
+          <key>pl</key>
+          <value>Okres od pierwszego użycia hasła
+do momentu wygaśnięcia hasła.</value>
+        </toolTip>
+        <toolTip>
+          <key>es_ES</key>
+          <value>Período después de la primera entrada con la contraseña nueva,
+después del que el usuario debe cambiar la contraseña.</value>
+        </toolTip>
+        <toolTip>
+          <key>es_CO</key>
+          <value>Período después de la primera entrada con la contraseña nueva,
+después del que el usuario debe cambiar la contraseña.</value>
+        </toolTip>
+        <toolTip>
+          <key>tr</key>
+          <value>Kullanıcının şifreyi değiştirmesi gereken 
+yeni parola ile ilk girişten sonraki süre.</value>
+        </toolTip>
+        <toolTip>
+          <key>it</key>
+          <value>Il periodo dal primo uso della password
+fino al momento in cui la password scade.</value>
+        </toolTip>
+        <toolTip>
+          <key>de</key>
+          <value>Zeit nach der ersten Anmeldung mit einem neuen Passwort,
+nachdem der Benutzer das Passwort ändern muss.</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>MaxPasswordLifetimeExtendedTooltip</name>
+          <id>14</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>MaxPasswordLifetimeContextMenu</name>
+          <id>13</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+          <minValue xsi:type="core:NumberValue">
+            <value>1</value>
+          </minValue>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Decoration">
+        <name>MaxPasswordLifetimeNote</name>
+        <id>55</id>
+        <title>
+          <key>ru</key>
+          <value>дней</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>days</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>dni</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>días</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>días</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>günler</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>giorni</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Tage</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>MaxPasswordLifetimeNoteExtendedTooltip</name>
+          <id>57</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>MaxPasswordLifetimeNoteContextMenu</name>
+          <id>56</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Максимальный срок действия пароля</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Maximum password validity period</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Maksymalny termin ważności hasła</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Período de validez máximo de la contraseña</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Período de validez máximo de la contraseña</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Parolanın maksimum geçerlilik süresi</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Massimo periodo di validità della password</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Maximale Gültigkeitsdauer des Passworts</value>
+      </title>
+      <extendedTooltip>
+        <name>MaxPasswordLifetimeGroupExtendedTooltip</name>
+        <id>54</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>HorizontalIfPossible</group>
+        <showLeftMargin>true</showLeftMargin>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>MinPasswordValidityPeriodGroup</name>
+      <id>48</id>
+      <items xsi:type="form:FormField">
+        <name>MinPasswordLifetimeEnable</name>
+        <id>89</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>MinPasswordLifetimeEnable</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <handlers>
+          <event>OnChange</event>
+          <name>SettingEnableOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>MinPasswordValidityPeriodEnableExtendedTooltip</name>
+          <id>91</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>MinPasswordValidityPeriodEnableContextMenu</name>
+          <id>90</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>MinPasswordLifetime</name>
+        <id>25</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>MinPasswordLifetime</segments>
+        </dataPath>
+        <titleLocation>None</titleLocation>
+        <toolTip>
+          <key>ru</key>
+          <value>Срок после первого входа с новым паролем,
+в течение которого пользователь не сможет сменить пароль.</value>
+        </toolTip>
+        <toolTip>
+          <key>en</key>
+          <value>The period from the first use of the password
+when the user cannot change the password.</value>
+        </toolTip>
+        <toolTip>
+          <key>pl</key>
+          <value>Okres od pierwszego użycia hasła
+do momentu wygaśnięcia hasła.</value>
+        </toolTip>
+        <toolTip>
+          <key>es_ES</key>
+          <value>Período después de la primera entrada con la contraseña nueva,
+durante el que el usuario no puede cambiar la contraseña.</value>
+        </toolTip>
+        <toolTip>
+          <key>es_CO</key>
+          <value>Período después de la primera entrada con la contraseña nueva,
+durante el que el usuario no puede cambiar la contraseña.</value>
+        </toolTip>
+        <toolTip>
+          <key>tr</key>
+          <value>Kullanıcının şifreyi değiştiremeyeceği 
+yeni parola ile ilk girişten sonraki süre.</value>
+        </toolTip>
+        <toolTip>
+          <key>it</key>
+          <value>Il periodo dal primo uso della passwrod
+fino a quando l'utente non può modificare la password.</value>
+        </toolTip>
+        <toolTip>
+          <key>de</key>
+          <value>Der Zeitraum nach der ersten Anmeldung mit einem neuen Passwort,
+in dem der Benutzer das Passwort nicht ändern kann.</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>MinPasswordValidityPeriodExtendedTooltip</name>
+          <id>27</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>MinPasswordValidityPeriodContextMenu</name>
+          <id>26</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+          <minValue xsi:type="core:NumberValue">
+            <value>1</value>
+          </minValue>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Decoration">
+        <name>MinPasswordValidityPeriodNote</name>
+        <id>50</id>
+        <title>
+          <key>ru</key>
+          <value>дней</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>days</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>dni</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>días</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>días</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>günler</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>giorni</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Tage</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>MinPasswordValidityPeriodNoteExtendedTooltip</name>
+          <id>52</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>MinPasswordValidityPeriodNoteContextMenu</name>
+          <id>51</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Минимальный срок действия пароля</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Minimum password validity period</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Minimalny termin ważności hasła</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Período de validez mínimo de la contraseña</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Período de validez mínimo de la contraseña</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Parolanın minimum geçerlilik süresi</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Minimo periodo di validità della password</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Minimale Gültigkeitsdauer des Passworts</value>
+      </title>
+      <extendedTooltip>
+        <name>MinPasswordValidityPeriodGroupExtendedTooltip</name>
+        <id>49</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>HorizontalIfPossible</group>
+        <showLeftMargin>true</showLeftMargin>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>DenyReusingRecentPasswordsGroup</name>
+      <id>38</id>
+      <items xsi:type="form:FormField">
+        <name>DenyReusingRecentPasswordsEnable</name>
+        <id>83</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>DenyReusingRecentPasswordsEnable</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <handlers>
+          <event>OnChange</event>
+          <name>SettingEnableOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>DenyReusingRecentPasswordsenableExtendedTooltip</name>
+          <id>85</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>DenyReusingRecentPasswordsEnableContextMenu</name>
+          <id>84</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>DenyReusingRecentPasswords</name>
+        <id>7</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>DenyReusingRecentPasswords</segments>
+        </dataPath>
+        <titleLocation>None</titleLocation>
+        <extendedTooltip>
+          <name>DenyReusingRecentPasswordsExtendedTooltip</name>
+          <id>9</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>DenyReusingRecentPasswordsContextMenu</name>
+          <id>8</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+          <minValue xsi:type="core:NumberValue">
+            <value>1</value>
+          </minValue>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Decoration">
+        <name>DenyReusingRecentPasswordsNote</name>
+        <id>40</id>
+        <title>
+          <key>ru</key>
+          <value>знач.</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>times</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>wart.</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>valor.</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>valor.</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>değ.</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>volte</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Bed.</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>DenyReusingRecentPasswordsNoteExtendedTooltip</name>
+          <id>42</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>DenyReusingRecentPasswordsNoteContextMenu</name>
+          <id>41</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Запретить повторение пароля среди последних</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Prohibit to reuse the same password before changed</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Zakaz na powtórzenie hasła wśród ostatnich</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Prohibir la repetición de la contraseña entre últimas</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Prohibir la repetición de la contraseña entre últimas</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Son şifrelerden biri kullanılamaz</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>E' vietato riutilizzare la stessa password di prima della modifica</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Die Wiederholung des Passworts aus den letzten Passwörtern ist verboten</value>
+      </title>
+      <extendedTooltip>
+        <name>DenyReusingRecentPasswordsGroupExtendedTooltip</name>
+        <id>39</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>HorizontalIfPossible</group>
+        <showLeftMargin>true</showLeftMargin>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Смена пароля</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Change password</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zmień hasło...</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Cambio de la contraseña</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Cambio de la contraseña</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Şifreyi değiştir</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Modifica password</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Passwortänderung</value>
+    </title>
+    <extendedTooltip>
+      <name>ChangePasswordGroupExtendedTooltip</name>
+      <id>109</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <representation>NormalSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <backColor xsi:type="core:ColorRef">
+        <color>Style.FormBackColor</color>
+      </backColor>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>InactivityPeriodBeforeDenyingAuthorizationGroup</name>
+    <id>75</id>
+    <items xsi:type="form:FormField">
+      <name>InactivityPeriodBeforeDenyingAuthorizationEnable</name>
+      <id>95</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>InactivityPeriodBeforeDenyingAuthorizationEnable</segments>
+      </dataPath>
+      <titleLocation>Right</titleLocation>
+      <titleHeight>2</titleHeight>
+      <handlers>
+        <event>OnChange</event>
+        <name>SettingEnableOnChange</name>
+      </handlers>
+      <extendedTooltip>
+        <name>InactivityPeriodBeforeDenyingAuthorizationEnableExtendedTooltip</name>
+        <id>97</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>InactivityPeriodBeforeDenyingAuthorizationEnableContextMenu</name>
+        <id>96</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <verticalAlign>Top</verticalAlign>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>InactivityPeriodBeforeDenyingAuthorization</name>
+      <id>77</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>InactivityPeriodBeforeDenyingAuthorization</segments>
+      </dataPath>
+      <titleLocation>None</titleLocation>
+      <toolTip>
+        <key>ru</key>
+        <value>Срок относительно последней активности пользователя,
+после которого вход в программу будет запрещен.
+
+Не влияет на администраторов.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Inactivity period before the user is blocked
+from signing in to the application.
+
+The setting does not affect administrators.</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Okres nieaktywności przed zablokowaniem
+użytkownika do zalogowania się do aplikacji.
+
+Ustawienie nie wpływa na administratorów.</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>El período de la última actividad relativa del usuario,
+después del que estará prohibido entrar en el programa.
+
+No influye en los administradores.</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>El período de la última actividad relativa del usuario,
+después del que estará prohibido entrar en el programa.
+
+No influye en los administradores.</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Programa girişin engelleneceği 
+son kullanıcı etkinliğine göre süre. 
+
+Yöneticiler etkilemez.</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Periodo di inattività dopo il quale l'utente è bloccato
+dall'accesso all'applicazione.
+
+Le impostazioni non toccano gli amministratori.</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Frist für die letzte Benutzeraktivität,
+nach der der Zugriff auf die Anwendung verweigert wird.
+
+Betrifft nicht die Administratoren.</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>InactivityPeriodBeforeDenyingAuthorizationExtendedTooltip</name>
+        <id>79</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>InactivityPeriodBeforeDenyingAuthorizationContextMenu</name>
+        <id>78</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+        <minValue xsi:type="core:NumberValue">
+          <value>1</value>
+        </minValue>
+      </extInfo>
+    </items>
+    <items xsi:type="form:Decoration">
+      <name>InactivityPeriodBeforeDenyingAuthorizationNote</name>
+      <id>80</id>
+      <title>
+        <key>ru</key>
+        <value>дней</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>days</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>dni</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>días</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>días</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>günler</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>giorni</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Tage</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>InactivityPeriodBeforeDenyingAuthorizationNoteExtendedTooltip</name>
+        <id>82</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>InactivityPeriodBeforeDenyingAuthorizationNoteContextMenu</name>
+        <id>81</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>Label</type>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Просрочка работы в программе до запрещения входа</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Inactivity period before denying authorization</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Okres bezczynności przed odmową autoryzacji</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Caducidad del uso del programa antes de prohibir la entrada</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Caducidad del uso del programa antes de prohibir la entrada</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Giriş yasaklamadan önce programda gecikme</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Periodo di inattività prima di negare l'autorizzazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Verzögerte Arbeit im Programm, bevor der Zugang verweigert wird</value>
+    </title>
+    <extendedTooltip>
+      <name>InactivityPeriodBeforeDenyingAuthorizationGroupExtendedTooltip</name>
+      <id>76</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>HorizontalIfPossible</group>
+      <representation>NormalSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>CommandBarForm</name>
+    <id>-1</id>
+    <items xsi:type="form:Button">
+      <name>FormWriteAndClose</name>
+      <id>10</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormWriteAndCloseExtendedTooltip</name>
+        <id>11</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.WriteAndClose</commandName>
+      <representation>Auto</representation>
+      <defaultButton>true</defaultButton>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>FormHelp</name>
+      <id>110</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormHelpExtendedTooltip</name>
+        <id>111</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.StandardCommand.Help</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+  </autoCommandBar>
+  <handlers>
+    <event>OnOpen</event>
+    <name>OnOpen</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>MinPasswordLength</name>
+    <title>
+      <key>ru</key>
+      <value>Минимальная длина пароля</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Minimum password length</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Minimalna długość hasła</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Longitud mínima de la contraseña</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Longitud mínima de la contraseña</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Minimum parola uzunluğu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Lunghezza minima password</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Minimale Passwortlänge</value>
+    </title>
+    <id>1</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>PasswordMustMeetComplexityRequirements</name>
+    <title>
+      <key>ru</key>
+      <value>Пароль должен отвечать требованиям сложности</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Apply password complexity requirements</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zastosuj wymagania dotyczące złożoności hasła</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>La contraseña debe coincidir a las exigencias de dificultad</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>La contraseña debe coincidir a las exigencias de dificultad</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Parola karmaşıklık gereksinimlerini uygula</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Applica le richieste di complessità della password</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Das Passwort muss den Komplexitätsanforderungen entsprechen.</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>DenyReusingRecentPasswords</name>
+    <title>
+      <key>ru</key>
+      <value>Запретить повторение пароля среди последних</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Prohibit to reuse the same password before changed</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zakaz na powtórzenie hasła wśród ostatnich</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Prohibir la repetición de la contraseña entre últimas</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Prohibir la repetición de la contraseña entre últimas</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Son şifrelerden biri kullanılamaz</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>E' vietato riutilizzare la stessa password di prima della modifica</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Die Wiederholung des Passworts aus den letzten Passwörtern ist verboten</value>
+    </title>
+    <id>4</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>MaxPasswordLifetime</name>
+    <title>
+      <key>ru</key>
+      <value>Максимальный срок действия пароля</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Maximum password validity period</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Maksymalny termin ważności hasła</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Período de validez máximo de la contraseña</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Período de validez máximo de la contraseña</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Parolanın maksimum geçerlilik süresi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Massimo periodo di validità della password</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Maximale Gültigkeitsdauer des Passworts</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>MinPasswordLifetime</name>
+    <title>
+      <key>ru</key>
+      <value>Минимальный срок действия пароля</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Minimum password validity period</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Minimalny termin ważności hasła</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Período de validez mínimo de la contraseña</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Período de validez mínimo de la contraseña</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Parolanın minimum geçerlilik süresi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Minimo periodo di validità della password</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Minimale Gültigkeitsdauer des Passworts</value>
+    </title>
+    <id>8</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ShowExternalUsersSettings</name>
+    <title>
+      <key>ru</key>
+      <value>Показать настройки внешних пользователей</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Show external user settings</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Pokaż ustawienia użytkownika zewnętrznego</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Mostrar los ajustes de los usuarios externos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Mostrar los ajustes de los usuarios externos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Harici kullanıcı ayarlarını göster</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Mostra impostazioni utente esterno</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Externe Benutzereinstellungen anzeigen</value>
+    </title>
+    <id>9</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>InactivityPeriodBeforeDenyingAuthorization</name>
+    <title>
+      <key>ru</key>
+      <value>Просрочка работы в программе до запрещения входа</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Inactivity period before denying authorization</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Okres bezczynności przed odmową autoryzacji</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Caducidad del uso del programa antes de prohibir la entrada</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Caducidad del uso del programa antes de prohibir la entrada</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Giriş yasaklamadan önce programda gecikme</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Periodo di inattività prima di negare l'autorizzazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Verzögerte Arbeit im Programm, bevor der Zugang verweigert wird</value>
+    </title>
+    <id>15</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>DenyReusingRecentPasswordsEnable</name>
+    <title>
+      <key>ru</key>
+      <value>Запретить повторение пароля среди последних:</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Prohibit to reuse the same password before changed:</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zakaz na powtórzenie hasła wśród ostatnich:</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Prohibir la repetición de la contraseña entre últimas:</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Prohibir la repetición de la contraseña entre últimas:</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Son şifrelerden biri kullanılamaz:</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Vieta di riutilizzare la stessa password prima della modifica:</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Die Wiederholung des Passworts unter den letzten verbieten:</value>
+    </title>
+    <id>16</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>MinPasswordLengthEnable</name>
+    <title>
+      <key>ru</key>
+      <value>Минимальная длина пароля:</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Minimum password length:</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Minimalna długość hasła:</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Longitud mínima de la contraseña:</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Longitud mínima de la contraseña:</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Minimum parola uzunluğu:</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Lunghezza minima della password:</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Minimale Passwortlänge:</value>
+    </title>
+    <id>17</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>MinPasswordLifetimeEnable</name>
+    <title>
+      <key>ru</key>
+      <value>Минимальный срок действия пароля:</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Minimum password validity period:</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Minimalny termin ważności hasła:</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Período de validez mínimo de la contraseña:</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Período de validez mínimo de la contraseña:</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Parolanın minimum geçerlilik süresi:</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Minimo periodo di validità della password:</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Minimale Gültigkeitsdauer des Passworts:</value>
+    </title>
+    <id>18</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>MaxPasswordLifetimeEnable</name>
+    <title>
+      <key>ru</key>
+      <value>Максимальный срок действия пароля:</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Maximum password validity period:</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Maksymalny termin ważności hasła:</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Período de validez máximo de la contraseña:</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Período de validez máximo de la contraseña:</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Parolanın maksimum geçerlilik süresi:</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Massimo periodo di validità della password:</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Maximale Gültigkeitsdauer des Passworts:</value>
+    </title>
+    <id>19</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>InactivityPeriodBeforeDenyingAuthorizationEnable</name>
+    <title>
+      <key>ru</key>
+      <value>Запрещать вход в программу пользователям, которые не работали в программе более:</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Inactivity period before the user is blocked from signing in to the application:</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Okres nieaktywności po którym wejście użytkownika do aplikacji będzie zablokowane:</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Prohibir entrar en el programa a los usuarios que no han trabajado en el programa más de:</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Prohibir entrar en el programa a los usuarios que no han trabajado en el programa más de:</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Uygulamada ... 'dan fazla çalışmayan kullanıcıların uygulamaya girişi engelle</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Periodo di inattività dopo il quale l'utente è bloccato dall'accesso all'applicazione:</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Verbieten Sie Benutzern, die nicht mehr in der Anwendung gearbeitet haben, den Zugriff auf die Anwendung:</value>
+    </title>
+    <id>20</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>RecommendedSettings</name>
+    <title>
+      <key>ru</key>
+      <value>Предлагаемые значения настроек</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Recommended settings</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Proponowane wartości ustawień</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Valores de ajustes ofrecidos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Valores de ajustes ofrecidos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Önerilen ayarlar</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Impostazioni consigliate</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Empfohlene Einstellwerte</value>
+    </title>
+    <id>21</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ClearDesignerSettingsQuestionText</name>
+    <title>
+      <key>ru</key>
+      <value>Текст вопроса об очистке настроек конфигуратора</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Clear Designer settings question text</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Tekst pytania o wyczyszczeniu ustawień Designera</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Texto de la pregunta de limpiar los ajustes del configurador</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Texto de la pregunta de limpiar los ajustes del configurador</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Yapılandırma ayarlarını temizleme sorusunun metni</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Testo di domanda Cancellare impostazioni Designer</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Fragetext zu Konfigurator-Einstellungen löschen</value>
+    </title>
+    <id>22</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>WriteAndClose</name>
+    <title>
+      <key>ru</key>
+      <value>Записать и закрыть</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Save and close</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zapisz i zamknij</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Guardar y cerrar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Guardar y cerrar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Sakla ve kapat</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Salva e chiudi</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Speichern und schließen</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Записать и закрыть</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Save and close</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zapisz i zamknij</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Guardar y cerrar</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Guardar y cerrar</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Sakla ve kapat</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Salva e chiudi</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Speichern und schließen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>WriteAndClose</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>CheckConfirmationCodeSent</name>
+    <title>
+      <key>ru</key>
+      <value>Проверить</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Check</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Sprawdzić</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Revisar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Revisar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kontrol</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Contrassegno</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Prüfen</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Проверить отправку кода подтверждения
+(на почтовый ящик текущего пользователя)</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Check whether the confirmation code
+was sent to the current user's email.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Sprawdź, czy kod potwierdzenia
+został wysłany pod adres e-mail bieżącego użytkownika.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Comprobar el envío del código de confirmación
+ (al correo electrónico del usuario actual)</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Comprobar el envío del código de confirmación
+ (al correo electrónico del usuario actual)</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Onay kodunun gönderilip gönderilmediğini kontrol et
+(geçerli kullanıcının posta kutusuna)</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Controllare se il codice di conferma
+è stato inviato all'email dell'utente corrente.</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Überprüfen Sie das Senden des Bestätigungscodes
+(an den Posteingang des aktuellen Benutzers)</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>CheckAuthorizationInvitationSent</name>
+    <title>
+      <key>ru</key>
+      <value>Проверить</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Check</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Sprawdzić</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Revisar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Revisar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kontrol</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Contrassegno</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Prüfen</value>
+    </title>
+    <id>3</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Проверить отправку приглашения на вход
+(на почтовый ящик текущего пользователя)</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Check whether the invitation to sign in
+was sent to the current user's email.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Sprawdź, czy zaproszenie do podpisania i zostało wysłane
+pod adres e-mail bieżącego użytkownika.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Comprobar el envío de la invitación de entrar
+ (al correo electrónico del usuario actual)</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Comprobar el envío de la invitación de entrar
+ (al correo electrónico del usuario actual)</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Giriş isteminin gönderilip gönderilmediğini kontrol et 
+(geçerli kullanıcının posta kutusuna)</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Controllare se l'invito a connettersi
+è stato inviato all'email dell'utente corrente.</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Überprüfen Sie das Senden der Login-Anfrage
+(an den Posteingang des aktuellen Benutzers)</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <parameters>
+    <name>ShowExternalUsersSettings</name>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+  </parameters>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

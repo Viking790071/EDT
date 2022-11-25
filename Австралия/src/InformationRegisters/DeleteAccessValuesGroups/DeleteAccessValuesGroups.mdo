@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d5012e69-89bc-40af-8e4f-377a042854ee">
+  <producedTypes>
+    <selectionType typeId="8cf268bf-f3d2-4dbf-ba9b-8091d7132f41" valueTypeId="39632b04-e96e-4fbc-b2a0-13daca7d5a1a"/>
+    <listType typeId="743a313b-b07a-42f3-9fc9-8ad81f26d457" valueTypeId="f32c4814-f74f-4391-bca7-0d5be679124f"/>
+    <managerType typeId="53c2c390-a637-4cc3-9b4e-0162ba373526" valueTypeId="5a296870-6da3-4aa7-a2a4-b0441e275e94"/>
+    <recordSetType typeId="0942c247-b30c-4eea-9bd0-dd9a4f7b7e26" valueTypeId="46c4bde7-4e49-4dfc-87c4-43153ea6eb87"/>
+    <recordKeyType typeId="9a4ca35f-ad3c-4160-8ebc-e6476abb10be" valueTypeId="52e9f210-c83f-4be3-95bf-3619611bb3d2"/>
+    <recordType typeId="fb253622-df1f-4a8e-9d73-4ea82a1d8a5b" valueTypeId="94c0d1ff-85b8-4d97-8bf0-43f8867c2fb2"/>
+    <recordManagerType typeId="45913249-a55a-4bd8-8ec2-10fa8051bca2" valueTypeId="c95c7b9d-1276-4eb2-afa4-f608000abb7a"/>
+  </producedTypes>
+  <name>DeleteAccessValuesGroups</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Группы значений доступа</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>(not used) Access value groups</value>
+  </synonym>
+  <synonym>
+    <key>pl</key>
+    <value>(nieużywane) Grupy wartości dostępu</value>
+  </synonym>
+  <synonym>
+    <key>es_ES</key>
+    <value>(no se usa) Grupos de valores de acceso</value>
+  </synonym>
+  <synonym>
+    <key>es_CO</key>
+    <value>(no se usa) Grupos de valores de acceso</value>
+  </synonym>
+  <synonym>
+    <key>tr</key>
+    <value>(kullanılmayan) Erişim değerleri grubu</value>
+  </synonym>
+  <synonym>
+    <key>it</key>
+    <value>(not used) Access value groups</value>
+  </synonym>
+  <synonym>
+    <key>de</key>
+    <value>(nicht verwendet) Zugriffswertegruppen</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:DateValue">
+      <value>0001-01-01T00:00:00</value>
+    </fillValue>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="02f79fd8-5315-4c90-b520-db67dcb6e371">
+    <name>InheritParentRights</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наследовать права родителей</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Inherit parent rights</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Dziedzicz uprawnienia nadrzędne</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Heredar derechos principales</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Heredar derechos principales</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Üst öğe haklarını miras al</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Eredita permessi del genitore</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Übernommene übergeordnete Rechte</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Флажок используется для случая установки прав по значениям доступа в иерархических справочниках. Например, по папкам файлов. Когда True, наследуются права всех родителей для папки в полях &quot;Значение доступа&quot; и &quot;Группа доступа&quot;</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>The check box is used to set access rights by access values in hierarchical catalogs. For example, by file folders. If True, all parent rights for the folder in fields &quot;Access value&quot; and &quot;Access group&quot; are inherited</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Pole wyboru służy do ustawiania praw dostępu według wartości dostępu w katalogach hierarchicznych. Na przykład według folderów plików. Jeśli True, wszystkie prawa nadrzędne dla folderu w polach „Wartość dostępu” i „Grupa dostępu” są dziedziczone</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>La casilla se usa para el caso de especificación de derechos por valores de acceso en los catálogos jerárquicos. Por ejemplo, por carpetas de archivos. Si True se heredan los derechos de todos los padres para la carpeta en los campos &quot;Valores de acceso&quot; y &quot;Grupo de acceso&quot;</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>La casilla se usa para el caso de especificación de derechos por valores de acceso en los catálogos jerárquicos. Por ejemplo, por carpetas de archivos. Si True se heredan los derechos de todos los padres para la carpeta en los campos &quot;Valores de acceso&quot; y &quot;Grupo de acceso&quot;</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Onay kutusu, hiyerarşik kılavuzlarda erişim değerlerine göre yetki belirleme durumu için kullanılır. Örneğin, dosya klasörlerine göre. &quot;True&quot; seçilmesi halinde, &quot;Erişim değeri&quot; ve &quot;Erişim grubu&quot; alanlarındaki klasör için tüm üst öğelerin hakları devralınır</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>La casella di controllo è utilizzata per impostare i diritti di accesso per valori di accesso in cataloghi gerarchici. Per esempio, per cartelle di file. Se True, tutti i diritti madre per le cartelle nei campi &quot;Valore accesso&quot; e &quot;Gruppo accesso&quot; sono ereditati</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Das Kontrollkästchen wird für den Fall verwendet, dass Berechtigungen für Zugriffswerte in hierarchischen Katalogen festgelegt werden. Zum Beispiel nach Dateiordnern. Wenn True die übergeordneten Rechte für den Ordner in den Feldern &quot;Zugriffswert&quot; und &quot;Zugriffsgruppe&quot; erbt</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="9bb52788-4a3a-48b5-a551-5ca753b6c059">
+    <name>AccessKind</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид доступа</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Access kind</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Rodzaj dostępu</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Tipo de acceso</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Tipo de acceso</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Erişim türü</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Tipologia di accesso</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Zugriffsart</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.DeleteAccessKinds</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид доступа, используемый для значения доступа (обычно один на тип значения доступа).</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Access kind used for access value (usually one for an access value type).</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Rodzaj dostępu dla wartości dostępu (zwykle jeden typ wartości dostępu).</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Tipo de acceso que se usa para el valor de acceso (suele ser uno para el valor de acceso).</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Tipo de acceso que se usa para el valor de acceso (suele ser uno para el valor de acceso).</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Erişim değeri için kullanılan erişim türü (genelde bir tür erişim değeri için).</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Tipo di accesso utilizzato come valore di accesso (solitamente uno per tipo di valore di accesso).</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Die Art des Zugriffs, die für den Zugriffswert verwendet wird (normalerweise einer pro Zugriffswerttyp).</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>ChartOfCharacteristicTypes.DeleteAccessKinds.EmptyRef</value>
+    </fillValue>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="4fb5004f-3cd9-44c4-a44b-d235cccf9e9c">
+    <name>AccessValue</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение доступа</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Access value</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Znaczenia dostępu</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Valor de acceso</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Valor de acceso</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Erişim değeri</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Valore di accesso</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Zugriffswert</value>
+    </synonym>
+    <type>
+      <types>AnyRef</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Элемент справочника или другого объекта метаданных, для которого используются группы значений доступа (контрагент, номенклатура)</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Item of a catalog or another metadata object, for which access value groups are used (a counterparty, products)</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Element katalogu lub innego obiektu metadanych, dla którego są używane grupy wartości dostępu (kontrahent, produkty)</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Elemento de catálogo u otro objeto de metadatos para el que se usan los grupos de valor de acceso (contraparte, nomenclatura)</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Elemento de catálogo u otro objeto de metadatos para el que se usan los grupos de valor de acceso (contraparte, nomenclatura)</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Erişim değeri gruplarının kullanıldığı kılavuz veya diğer metaveri nesnenin öğesi (cari hesap, ürünler)</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Elemento di una anagrafica o altro oggetto metadati, per il quale i gruppi di accesso sono utilizzati (una controparte, articolo)</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Verzeichniselement oder anderes Metadatenobjekt, für das Gruppen von Zugriffswerten (Geschäftspartner, Nomenklatur) verwendet werden.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="872a0c47-fab5-4a54-8ab9-23940bbdefbb">
+    <name>AccessKindOnly</name>
+    <synonym>
+      <key>ru</key>
+      <value>Только вид доступа</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Access kind only</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Tylko rodzaj dostępu</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Solo tipo de acceso</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Solo tipo de acceso</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Yalnızca erişim türü</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Solo tipo di accesso</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Nur die Zugriffsart</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Флажок показывает, что в строке задана не группа значений указанного значения доступа, а использование вида доступа для значения доступа (используется для случая нескольких видов доступа для одного типа значения доступа)</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Indicates that not a group of specified access values is set in the row but an access kind for an access value (it is used when several access kinds are available for one access value type)</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zaznaczenie pokazuje, że w wierszu jest zadana nie grupa wartości wskazanej wartości, a używanie rodzaju dostępu dla wartości dostępu (jest używane w przypadku kilku rodzajów dostępu dla jednego typu wartości dostępu)</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>La casilla muestra que en la línea está establecida no el grupo de valores del valor de acceso indicado sino el uso del tipo de acceso para el valor de acceso (se usa en el caso de unos tipos de acceso para un tipo de valor de acceso)</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>La casilla muestra que en la línea está establecida no el grupo de valores del valor de acceso indicado sino el uso del tipo de acceso para el valor de acceso (se usa en el caso de unos tipos de acceso para un tipo de valor de acceso)</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Onay kutusu, dizenin belirtilen erişim değeri için bir değer grubu değil, erişim değeri için erişim türünü (aynı erişim değeri türü için birden çok erişim türü durumunda kullanılır) kullandığını gösterir</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Indica che non un è gruppo di valori di accesso indicati ad essere impostato nella riga, ma un tipo di valore per un valore di accesso (utilizzato quando sono disponibili diversi tipi di acceso per un tipo di valore di accesso)</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Das Kontrollkästchen zeigt, dass die Zeichenkette keine Gruppe von Werten des angegebenen Zugriffswertes enthält, sondern die Verwendung der Zugriffsart für den Zugriffswert (wird für mehrere Zugriffsarten für eine Art von Zugriffswert verwendet)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7428a626-3fbc-4f2c-a3dd-f14e8d90c00b">
+    <name>AccessValuesGroup</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа значений доступа</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Access value group</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Grupa znaczenia dostępu</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Grupo del valor de acceso</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Grupo del valor de acceso</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Erişim değeri grubu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Gruppo valori di accesso</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Gruppe Zugangswert</value>
+    </synonym>
+    <type>
+      <types>AnyRef</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Обычно элемент справочника, который используется для группировки значений доступа (например, элемент справочника Группы доступа номенклатуры).</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Usually a catalog item used to group access values (for example, &quot;Product access groups&quot; catalog item).</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zwykle element katalogu, który jest używany dla grupowania wartości dostępu (na przykład, element katalogu Grupy dostępu nomenklatury).</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Normalmente el elemento de catálogo que se usa para agrupar los valores de acceso (por ejemplo, elemento de catálogo del Grupo de acceso de nomenclatura).</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Normalmente el elemento de catálogo que se usa para agrupar los valores de acceso (por ejemplo, elemento de catálogo del Grupo de acceso de nomenclatura).</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Genellikle, erişim değerlerini gruplandırmak için kullanılan kılavuz öğesi (örneğin, Nomenklatür erişim grubu kılavuz öğesi).</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Solitamente un elemento di catalogo utilizzato per raggruppare i valori di accesso (per esempio, l'oggetto di catalogo &quot;Gruppo di accesso articolo&quot;).</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>In der Regel ein Element des Verzeichnisses, das zur Gruppierung von Zugriffswerten verwendet wird (z.B. ein Element des Verzeichnisses der Zugriffsgruppen der Nomenklatur).</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2f20bff4-9201-4f36-9e74-eba4d9b3c59a">
+    <name>GroupOfDataToUpdate</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа обновляемых данных</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Group of data being updated</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Grupa aktualizowanych danych</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Grupo de datos actualizados</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Grupo de datos actualizados</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Güncellenen veriler grubu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Gruppo di dati in aggiornamento</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Gruppe aktualisierter Daten</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вспомогательная характеристика используемая только при обновлении данных.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Additional characteristic used only upon data update.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Pomocnicza charakterystyka używana tylko przy aktualizacji danych.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Características auxiliar utilizada solo al actualizar los datos.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Características auxiliar utilizada solo al actualizar los datos.</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Sadece veri güncellenirken kullanılan yan özellik</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Caratteristiche addizionali utilizzate solo quando si aggiornano i dati.</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Hilfsmerkmal, das nur bei der Aktualisierung von Daten verwendet wird.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+</mdclass:InformationRegister>

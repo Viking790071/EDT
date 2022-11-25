@@ -1,0 +1,2118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:FormGroup">
+    <name>Step_1_Group</name>
+    <id>1</id>
+    <items xsi:type="form:FormGroup">
+      <name>AlgorithmsDebugGroup</name>
+      <id>7</id>
+      <items xsi:type="form:FormField">
+        <name>AlgorithmsDebug</name>
+        <id>5</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Object.AlgorithmDebugMode</segments>
+        </dataPath>
+        <handlers>
+          <event>OnChange</event>
+          <name>AlgorithmDebugOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>AlgorithmsDebugExtendedTooltip</name>
+          <id>31</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>AlgorithmsDebugContextMenu</name>
+          <id>6</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>RadioButtonField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+          <columnsCount>1</columnsCount>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Без отладки алгоритмов</value>
+            </presentation>
+            <presentation>
+              <key>en</key>
+              <value>Without algorithm debug;</value>
+            </presentation>
+            <presentation>
+              <key>pl</key>
+              <value>Bez debugowania algorytmów</value>
+            </presentation>
+            <presentation>
+              <key>es_ES</key>
+              <value>Sin depurar algoritmos</value>
+            </presentation>
+            <presentation>
+              <key>es_CO</key>
+              <value>Sin depurar algoritmos</value>
+            </presentation>
+            <presentation>
+              <key>tr</key>
+              <value>Algoritma hata ayıklaması olmadan</value>
+            </presentation>
+            <presentation>
+              <key>it</key>
+              <value>Senza algoritmo di debug;</value>
+            </presentation>
+            <presentation>
+              <key>de</key>
+              <value>Ohne Debugging-Algorithmen</value>
+            </presentation>
+            <value xsi:type="core:NumberValue">
+              <value>0</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Вызывать алгоритмы как процедуры</value>
+            </presentation>
+            <presentation>
+              <key>en</key>
+              <value>Call algorithms as procedures</value>
+            </presentation>
+            <presentation>
+              <key>pl</key>
+              <value>wywoływać algorytmy jak procedury</value>
+            </presentation>
+            <presentation>
+              <key>es_ES</key>
+              <value>Llamar los algoritmos como procedimientos</value>
+            </presentation>
+            <presentation>
+              <key>es_CO</key>
+              <value>Llamar los algoritmos como procedimientos</value>
+            </presentation>
+            <presentation>
+              <key>tr</key>
+              <value>Proses olarak çağrı algoritmaları</value>
+            </presentation>
+            <presentation>
+              <key>it</key>
+              <value>Chiamata algoritmi come procedure</value>
+            </presentation>
+            <presentation>
+              <key>de</key>
+              <value>Nennen Sie Algorithmen als Prozeduren</value>
+            </presentation>
+            <value xsi:type="core:NumberValue">
+              <value>1</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Подставлять код алгоритмов по месту вызова</value>
+            </presentation>
+            <presentation>
+              <key>en</key>
+              <value>Substitute algorithm script to the place where it is called</value>
+            </presentation>
+            <presentation>
+              <key>pl</key>
+              <value>Wstawiaj kod algorytmów według miejsca wywołania</value>
+            </presentation>
+            <presentation>
+              <key>es_ES</key>
+              <value>Sustituir código de algoritmos en la ubicación de llamada</value>
+            </presentation>
+            <presentation>
+              <key>es_CO</key>
+              <value>Sustituir código de algoritmos en la ubicación de llamada</value>
+            </presentation>
+            <presentation>
+              <key>tr</key>
+              <value>Algılama kodunu çağrı konumuna değiştirin</value>
+            </presentation>
+            <presentation>
+              <key>it</key>
+              <value>Sostituire script algoritmo al posto dove chiamato</value>
+            </presentation>
+            <presentation>
+              <key>de</key>
+              <value>Ersetzen Sie den Code der Algorithmen anstelle des Aufrufs</value>
+            </presentation>
+            <value xsi:type="core:NumberValue">
+              <value>2</value>
+            </value>
+          </choiceList>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>AlgorithmsDebugTooltip</name>
+        <id>20</id>
+        <items xsi:type="form:FormGroup">
+          <name>Group_0</name>
+          <id>21</id>
+          <items xsi:type="form:Decoration">
+            <name>NoDebugDecoration</name>
+            <id>8</id>
+            <title>
+              <key>ru</key>
+              <value>Алгоритмы не выгружаются. Режим удобно использовать, когда производить отладку алгоритмов не требуется. Алгоритмы будут выполняться, но их код недоступен для отладки.</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Algorithms cannot be exported. The mode is used when algorithm debugging is not required. Algorithms will be runnable but their code will be unavailable for debugging.</value>
+            </title>
+            <title>
+              <key>pl</key>
+              <value>Algorytmy nie mogą być eksportowane. Tryb jest wygodny w użyciu, gdy debugowanie algorytmów nie jest potrzebne. Algorytmy będą działać, ale ich kod będzie niedostępny do debugowania.</value>
+            </title>
+            <title>
+              <key>es_ES</key>
+              <value>Algoritmos no pueden exportarse. El modo es conveniente para el uso cuando no se necesita la depuración del algoritmo. Algoritmos serán lanzables pero su código estará indisponible para depuración.</value>
+            </title>
+            <title>
+              <key>es_CO</key>
+              <value>Algoritmos no pueden exportarse. El modo es conveniente para el uso cuando no se necesita la depuración del algoritmo. Algoritmos serán lanzables pero su código estará indisponible para depuración.</value>
+            </title>
+            <title>
+              <key>tr</key>
+              <value>Algoritmalar dışa aktarılamaz. Mod, algoritma hata ayıklaması gerekmediğinde kullanılır. Algoritmalar çalıştırılabilecek, ancak kodları hata ayıklamak için kullanılamayacak.</value>
+            </title>
+            <title>
+              <key>it</key>
+              <value>Gli algoritmo non possono essere esportati. La modalità è utilizzata quando il debug degli algoritmi non è richiesto. Gli algoritmo saranno eseguibili ma il loro codice non sarà disponibile per il debug.</value>
+            </title>
+            <title>
+              <key>de</key>
+              <value>Algorithmen können nicht exportiert werden. Der Modus ist praktisch für den Einsatz, wenn das Debugging von Algorithmen nicht benötigt wird. Algorithmen können zwar ausgeführt werden, ihr Code ist jedoch zum Debuggen nicht verfügbar.</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>NoDebugDecorationExtendedTooltip</name>
+              <id>34</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>NoDebugDecorationContextMenu</name>
+              <id>9</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>Label</type>
+            <width>34</width>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>0</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>0</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>0</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>0</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>0</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>0</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>0</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>0</value>
+          </title>
+          <extendedTooltip>
+            <name>Group_0ExtendedTooltip</name>
+            <id>33</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Page</type>
+          <extInfo xsi:type="form:PageGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>Group_1</name>
+          <id>22</id>
+          <items xsi:type="form:Decoration">
+            <name>AsProcedureDecoration</name>
+            <id>24</id>
+            <title>
+              <key>ru</key>
+              <value>Алгоритмы выгружаются как отдельные процедуры. При вызове алгоритма происходит обращение к соответствующей процедуре обработки. Ограничения использования режима см. справку.</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>The algorithms are exported as separate procedures. On algorithm call, the corresponding processor procedure is invoked. See the restrictions of mode use in help.</value>
+            </title>
+            <title>
+              <key>pl</key>
+              <value>Algorytmy są przesyłane jako osobne procedury. Przy wywołaniu algorytmu ma miejsce odwołanie do odpowiedniej procedury przetwarzania. Ograniczenia używania trybu zob. pomoc.</value>
+            </title>
+            <title>
+              <key>es_ES</key>
+              <value>Los algoritmos se suben como procedimientos separados. Al llamar el algoritmo se realiza llamada al procedimiento de procesamiento correspondiente. Restricciones del uso del modo véase la ayuda.</value>
+            </title>
+            <title>
+              <key>es_CO</key>
+              <value>Los algoritmos se suben como procedimientos separados. Al llamar el algoritmo se realiza llamada al procedimiento de procesamiento correspondiente. Restricciones del uso del modo véase la ayuda.</value>
+            </title>
+            <title>
+              <key>tr</key>
+              <value>Algoritmalar ayrı prosedürler olarak dışa aktarılır. Bir algoritma çağrıldığında, uygun işlem yordamına başvurulur. Mod kullanım kısıtlamaları için Yardım'a bakın.</value>
+            </title>
+            <title>
+              <key>it</key>
+              <value>Gli algoritmi sono esportati come procedure separate. Alla chiamata dell'algoritmo viene attivata la procedura di elaborazione corrispondente. Visualizzare restrizioni di utilizzo della modalità nella sezione assistenza.</value>
+            </title>
+            <title>
+              <key>de</key>
+              <value>Algorithmen werden als separate Prozeduren hochgeladen. Beim Aufruf des Algorithmus wird das entsprechende Verarbeitungsverfahren aufgerufen. Einschränkungen bei der Verwendung des Modus, siehe Hilfe.</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>AsProcedureDecorationExtendedTooltip</name>
+              <id>36</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>AsProcedureDecorationContextMenu</name>
+              <id>25</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>Label</type>
+            <width>34</width>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>1</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>1</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>1</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>1</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>1</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>1</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>1</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>1</value>
+          </title>
+          <extendedTooltip>
+            <name>Group_1ExtendedTooltip</name>
+            <id>35</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Page</type>
+          <extInfo xsi:type="form:PageGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>Group_2</name>
+          <id>23</id>
+          <items xsi:type="form:Decoration">
+            <name>ByCodeCallSiteDecoration</name>
+            <id>26</id>
+            <title>
+              <key>ru</key>
+              <value>Алгоритмы выгружаются как интегрированный код в обработчиках, т.е. взамен строки вызова алгоритма вставляется полный код алгоритма с учетом вложенных алгоритмов. Ограничения использования режима см. справку.</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>The algorithms are exported as an integrated code in the processors, i.e. instead of algorithm call line a full algorithm code is inserted with nested algorithms taken into account. See use restrictions in Help.</value>
+            </title>
+            <title>
+              <key>pl</key>
+              <value>Algorytmy są eksportowane jako zintegrowany kod w procesorach, tj. zamiast linii wywołania algorytmu wstawiany jest pełny kod algorytmu z uwzględnieniem algorytmów zagnieżdżonych. Zobacz ograniczenia użytkowania w dziele Pomoc.</value>
+            </title>
+            <title>
+              <key>es_ES</key>
+              <value>Los algoritmos se han exportado como un código integrado en los procesadores, por ejemplo, en vez de la línea de llamada de algoritmo un código del algoritmo completo está insertado con los algoritmos anidados incluidos a la cuenta. Ver las restricciones de uso en Ayuda.</value>
+            </title>
+            <title>
+              <key>es_CO</key>
+              <value>Los algoritmos se han exportado como un código integrado en los procesadores, por ejemplo, en vez de la línea de llamada de algoritmo un código del algoritmo completo está insertado con los algoritmos anidados incluidos a la cuenta. Ver las restricciones de uso en Ayuda.</value>
+            </title>
+            <title>
+              <key>tr</key>
+              <value>Algoritmalar ihraç edilemez. Algoritma hata ayıklaması gerekmediğinde mod kullanım için uygundur. Algoritmalar çalıştırılabilir olacak ancak kodları hata ayıklamak için kullanılamayacak....</value>
+            </title>
+            <title>
+              <key>it</key>
+              <value>Gli algoritmi vengono scaricati come codice integrato nei gestori, ad es. invece della linea del richiamo dell'algoritmo, viene inserito il codice dell'algoritmo completo, tenendo conto degli algoritmi annidati. Per le restrizioni sull'uso della modalità, consultare la guida.</value>
+            </title>
+            <title>
+              <key>de</key>
+              <value>Die Algorithmen werden als ein integrierter Code in den Prozessoren exportiert, d. H. Anstelle der Aufruflinie des Algorithmus wird ein vollständiger Algorithmuscode eingefügt, wobei verschachtelte Algorithmen berücksichtigt werden. Siehe Nutzungsbeschränkungen in der Hilfe.</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>ByCodeCallSiteDecorationExtendedTooltip</name>
+              <id>38</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ByCodeCallSiteDecorationContextMenu</name>
+              <id>27</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>Label</type>
+            <width>34</width>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>2</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>2</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>2</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>2</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>2</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>2</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>2</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>2</value>
+          </title>
+          <extendedTooltip>
+            <name>Group_2ExtendedTooltip</name>
+            <id>37</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Page</type>
+          <extInfo xsi:type="form:PageGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Подсказка отладка алгоритмов</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Algorithm debugging tooltip</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Podpowiedź debugowanie algorytmów</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Información de herramienta depuración del algoritmo</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Información de herramienta depuración del algoritmo</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Araç ipucu algoritması hata ayıklama</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Consiglio algoritmo di debug</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Tooltip-Algorithmus-Debugging</value>
+        </title>
+        <extendedTooltip>
+          <name>AlgorithmsDebugTooltipExtendedTooltip</name>
+          <id>32</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Pages</type>
+        <extInfo xsi:type="form:PagesGroupExtInfo">
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Отладки алгоритмов</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Algorithm debug</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Debugowania algorytmów</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Depuraciones de algoritmos</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Depuraciones de algoritmos</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Algoritma hata ayıklama</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Algoritmo di debug</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Debugging-Algorithmen</value>
+      </title>
+      <extendedTooltip>
+        <name>AlgorithmsDebugGroupExtendedTooltip</name>
+        <id>30</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>HorizontalIfPossible</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>1. Выберите режим отладки кода алгоритмов</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>1. Select debug mode of algorithm code</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>1. Wybierz tryb debugowania kodu algorytmu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>1. Seleccionar el modo de depuración del código del algoritmo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>1. Seleccionar el modo de depuración del código del algoritmo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>1. Algoritma kodu hata ayıklama modunu seçin</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>1. Selezionare la modalità di debug del codice dell'algoritmo</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>1. Wählen Sie den Debug-Modus des Algorithmus-Codes</value>
+    </title>
+    <extendedTooltip>
+      <name>Step_1_GroupExtendedTooltip</name>
+      <id>29</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <representation>WeakSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>Group_Step_2</name>
+    <id>2</id>
+    <items xsi:type="form:FormGroup">
+      <name>HandlersExportGroup</name>
+      <id>11</id>
+      <items xsi:type="form:Button">
+        <name>ExportHandlersCode</name>
+        <id>10</id>
+        <title>
+          <key>ru</key>
+          <value>Сформировать модуль отладки выгрузки</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Generate export debug module</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Wygeneruj mechanizm debugowania eksportu</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Generar el motor de depuración de exportación</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Generar el motor de depuración de exportación</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Dışa aktarma hata ayıklama motoru oluştur</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Genera modulo di debug esportazione</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Generiere Export-Debug-Engine</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ExportHandlersCodeExtendedTooltip</name>
+          <id>41</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualButton</type>
+        <commandName>Form.Command.ExportHandlersCode</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <items xsi:type="form:Button">
+        <name>OpenFile</name>
+        <id>12</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>OpenFileExtendedTooltip</name>
+          <id>42</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualButton</type>
+        <commandName>Form.Command.OpenFile</commandName>
+        <representation>Auto</representation>
+        <width>3</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Выгрузки обработчиков</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Export handlers</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Przesyłanie procedur przetwarzania</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Subidas de procesadores</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Subidas de procesadores</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Işleyicileri çağır</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Gestori esportazione</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Hochladen von Handlern</value>
+      </title>
+      <extendedTooltip>
+        <name>HandlersExportGroupExtendedTooltip</name>
+        <id>40</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>HorizontalIfPossible</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>2. Выгрузите код обработчиков</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>2. Export handler code</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>2. Wyląduj kod obsługi eksportu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>2. Exportar el código del manipulador</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>2. Exportar el código del manipulador</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>2. İşleyici kodunu dışa aktar</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>2. Esporta codice gestore</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>2. Handlercode exportieren</value>
+    </title>
+    <extendedTooltip>
+      <name>Group_Step_2ExtendedTooltip</name>
+      <id>39</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <representation>WeakSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>Group_Step_3</name>
+    <id>3</id>
+    <items xsi:type="form:Decoration">
+      <name>NoteDecoration</name>
+      <id>13</id>
+      <title>
+        <key>ru</key>
+        <value>1. После формирования модуля отладки необходимо скопировать в буфер обмена полученный код обработчиков.
+2. Открыть конфигуратор и создать новую внешнюю обработку. В модуль обработки вставить содержимое буфера обмена. Сохранить обработку.
+3. На завершающем четвертом шаге указать вновь созданную обработку как обработку с экспортными процедурами обработчиков.
+</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>1. After generating the debug engine, copy the resulting handler code to the clipboard.
+2. Open Designer and create a new external data processor. Insert the clipboard content to the data processor module. Save the data processor.
+3. On the finishing fourth step, specify a newly created data processor as a data processor with export procedures of handlers.
+</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>1. Po debugowaniu modułu należy skopiować do schowka otrzymany kod obsługi.
+2. Otwórz kreator i utwórz nowe zewnętrzne przetwarzanie. Wklej ze schowka do modułu procesora danych. Zapisz przetwarzanie.
+3. W ostatnim czwartym kroku określ nowo utworzone przetwarzanie jako procesor z procedurami eksportu procedur obsługi.
+</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>1. Después de la depuración del módulo, es necesario copiar el código recibido de los manipuladores en el portapapeles.
+2. Abrir el diseñador y crear un nuevo procesador de datos externo. Pegar desde el portapapeles en el módulo del procesador de datos. Guardar el procesador de datos.
+3. En el cuarto paso final, especificar el procesador de datos recién creado como un procesador con los procedimientos de exportación de los manipuladores.
+</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>1. Después de la depuración del módulo, es necesario copiar el código recibido de los manipuladores en el portapapeles.
+2. Abrir el diseñador y crear un nuevo procesador de datos externo. Pegar desde el portapapeles en el módulo del procesador de datos. Guardar el procesador de datos.
+3. En el cuarto paso final, especificar el procesador de datos recién creado como un procesador con los procedimientos de exportación de los manipuladores.
+</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>1. Modül hata ayıklandıktan sonra, işleyicilerin alınan kodunun panoya kopyalanması gerekir. 
+2. Tasarımcıyı açın ve yeni harici veri işlemcisini oluşturun. Panodan veri işlemci modülüne yapıştırın. Veri işlemcisini kaydet. 
+3. Son dördüncü adımda, yeni oluşturulan veri işlemcisini, işleyicilerin dışa aktarma prosedürlerine sahip bir işlemci olarak belirtin.
+</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>1. Dopo aver creato il motore di debug, copiare il codice gestore risultante negli appunti.
+2. Aprire Designer e creare un nuovo elaboratore dati esterno. Inserire il contenuto degli appunti al modulo dell'elaboratore dati. Salvare l'elaboratore dati.
+3. Al quarto step conclusivo, indicare un elaboratore dati appena creato come elaboratore dati con procedure di esportazione dei gestori.
+</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>1. Nach dem Debuggen des Moduls muss der empfangene Code der Handler in die Zwischenablage kopiert werden.
+ 2. Öffnen Sie den Designer und erstellen Sie den neuen externen Datenprozessor. Einfügen aus der Zwischenablage in das Datenprozessormodul. Speichern Sie den Datenprozessor.
+3. Geben Sie im letzten vierten Schritt den neu erstellten Datenprozessor als Prozessor mit den Exportprozeduren der Handler an.
+</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>NoteDecorationExtendedTooltip</name>
+        <id>44</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>NoteDecorationContextMenu</name>
+        <id>14</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>Label</type>
+      <width>67</width>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+        <titleHeight>6</titleHeight>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>3. Пояснения к созданию файла внешней обработки</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>3. How to create an external data processor file</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>3. Jak utworzyć zewnętrzny plik przetwarzania danych</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>3. Cómo crear un archivo del procesador de datos externo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>3. Cómo crear un archivo del procesador de datos externo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>3. Harici veri işlemcisi dosyası nasıl oluşturulur</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>3. Come creare un file processore dati esterno</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>3. Wie kann man eine externe Datenverarbeitungsdatei erstellen</value>
+    </title>
+    <extendedTooltip>
+      <name>Group_Step_3ExtendedTooltip</name>
+      <id>43</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <representation>WeakSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>Group_Step_4</name>
+    <id>4</id>
+    <items xsi:type="form:FormGroup">
+      <name>Step4Pages</name>
+      <id>50</id>
+      <items xsi:type="form:FormGroup">
+        <name>GreenPage</name>
+        <id>52</id>
+        <items xsi:type="form:Decoration">
+          <name>Decoration1</name>
+          <id>56</id>
+          <title>
+            <key>ru</key>
+            <value>Имя файла внешней обработки с модулем отладки на сервере</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>File name of the external data processor with debug mode on the server</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Nazwa zewnętrznego pliku przetwarzania danych z modułem debugowania na serwerze</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Nombre del archivo del procesador de datos externo con el motor de depuración en el servidor</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Nombre del archivo del procesador de datos externo con el motor de depuración en el servidor</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Sunucudaki hata ayıklama motoruna sahip harici veri işlemcisi dosyasının adı</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Nome del file dell'elaboratore dati esterno con modalità di debug sul server</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Name der externen Datenprozessordatei mit Debug-Engine auf dem Server</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>Decoration1ExtendedTooltip</name>
+            <id>58</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>Decoration1ContextMenu</name>
+            <id>57</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Страница зеленый</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Page green</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Strona zielony</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Página verde</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Página verde</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Sayfa yeşil</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Pagina verde</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Seite grün</value>
+        </title>
+        <extendedTooltip>
+          <name>GreenPageExtendedTooltip</name>
+          <id>53</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Page</type>
+        <extInfo xsi:type="form:PageGroupExtInfo">
+          <group>Vertical</group>
+          <showTitle>true</showTitle>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>RedPage</name>
+        <id>54</id>
+        <items xsi:type="form:Decoration">
+          <name>Decoration2</name>
+          <id>59</id>
+          <title>
+            <key>ru</key>
+            <value>Имя файла внешней обработки с модулем отладки на сервере</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>File name of the external data processor with debug mode on the server</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Nazwa zewnętrznego pliku przetwarzania danych z modułem debugowania na serwerze</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Nombre del archivo del procesador de datos externo con el motor de depuración en el servidor</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Nombre del archivo del procesador de datos externo con el motor de depuración en el servidor</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Sunucudaki hata ayıklama motoruna sahip harici veri işlemcisi dosyasının adı</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Nome del file dell'elaboratore dati esterno con modalità di debug sul server</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Name der externen Datenprozessordatei mit Debug-Engine auf dem Server</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>Decoration2ExtendedTooltip</name>
+            <id>61</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>Decoration2ContextMenu</name>
+            <id>60</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <textColor xsi:type="core:ColorRef">
+            <color>Style.SpecialTextColor</color>
+          </textColor>
+          <font xsi:type="core:FontRef">
+            <font>Style.NormalTextFont</font>
+          </font>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Страница красный</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Page red</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Strona czerwony</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Página rojo</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Página rojo</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Sayfa kırmızı</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Pagina rosso</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Seite rot</value>
+        </title>
+        <extendedTooltip>
+          <name>RedPageExtendedTooltip</name>
+          <id>55</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Page</type>
+        <extInfo xsi:type="form:PageGroupExtInfo">
+          <group>Vertical</group>
+          <showTitle>true</showTitle>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Страницы шаг 4</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Pages step 4</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Strony krok 4</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Páginas paso 4</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Páginas paso 4</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Sayfalar adım 4</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Pagine passaggio 4</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Seiten Schritt 4</value>
+      </title>
+      <extendedTooltip>
+        <name>Step4PagesExtendedTooltip</name>
+        <id>51</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Pages</type>
+      <extInfo xsi:type="form:PagesGroupExtInfo">
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>EventHandlerExternalDataProcessorFileName</name>
+      <id>15</id>
+      <title>
+        <key>ru</key>
+        <value>Имя файла внешней обработки с модулем отладки на сервере</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>File name of the external data processor with debug mode on the server</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Nazwa zewnętrznego pliku przetwarzania danych z modułem debugowania na serwerze</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Nombre del archivo del procesador de datos externo con el motor de depuración en el servidor</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Nombre del archivo del procesador de datos externo con el motor de depuración en el servidor</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Sunucudaki hata ayıklama motoruna sahip harici veri işlemcisi dosyasının adı</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Nome del file dell'elaboratore dati esterno con modalità di debug sul server</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Name der externen Datenprozessordatei mit Debug-Engine auf dem Server</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Object.EventHandlerExternalDataProcessorFileName</segments>
+      </dataPath>
+      <titleLocation>None</titleLocation>
+      <handlers>
+        <event>OnChange</event>
+        <name>EventHandlerExternalDataProcessorFileNameOnChange</name>
+      </handlers>
+      <extendedTooltip>
+        <name>EventHandlersExternalDataProcessorFileNameExtendedTooltip</name>
+        <id>46</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>EventHandlersExternalDataProcessorFileNameContextMenu</name>
+        <id>16</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <handlers>
+          <event>StartChoice</event>
+          <name>EventHandlerExternalDataProcessorFileNameStartChoice</name>
+        </handlers>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <choiceButton>true</choiceButton>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>4. Создайте (обновите) файл внешней обработки</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>4. Create (update) an external data processor file</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>4. Dodaj (zaktualizuj) zewnętrzny plik przetwarzania danych</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>4. Crear (actualizar) un archivo del procesador de datos externo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>4. Crear (actualizar) un archivo del procesador de datos externo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>4. Harici bir veri işlemci dosyası oluşturun (güncelleyin)</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>4. Crea (aggiorna) un file di dati esterno processore</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>4. Erstellen (aktualisieren) Sie eine externe Datenprozessordatei</value>
+    </title>
+    <extendedTooltip>
+      <name>Group_Step_4ExtendedTooltip</name>
+      <id>45</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <representation>WeakSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>BottomCommandBar</name>
+    <id>17</id>
+    <items xsi:type="form:Button">
+      <name>Finish</name>
+      <id>18</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FinishExtendedTooltip</name>
+        <id>48</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.Finish</commandName>
+      <representation>Auto</representation>
+      <defaultButton>true</defaultButton>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>Cancel</name>
+      <id>28</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>CancelExtendedTooltip</name>
+        <id>49</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.StandardCommand.Close</commandName>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Нижняя командная панель</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Lower command bar</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Dolny pasek poleceń</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Botón barra de comandos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Botón barra de comandos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Alt komut çubuğu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Barra di comando in basso</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Befehlsleiste unten</value>
+    </title>
+    <extendedTooltip>
+      <name>BottomCommandBarExtendedTooltip</name>
+      <id>47</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>CommandBar</type>
+    <extInfo xsi:type="form:CommandBarExtInfo">
+      <horizontalAlign>Center</horizontalAlign>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>CommandBarForm</name>
+    <id>-1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+  </autoCommandBar>
+  <handlers>
+    <event>OnOpen</event>
+    <name>OnOpen</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <verticalScroll>UseIfNecessary</verticalScroll>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Object</name>
+    <id>1</id>
+    <valueType>
+      <types>DataProcessorObject.UniversalDataExchangeXML</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <main>true</main>
+  </attributes>
+  <attributes>
+    <name>SpecialTextColor</name>
+    <title>
+      <key>ru</key>
+      <value>Цвет особого текста</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Special text color</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Kolor szczególnego tekstu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Color del texto especial</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Color del texto especial</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Özel metnin rengi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Colore di testo speciale</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Farbe des Sondertextes</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>Color</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>ExportHandlersCode</name>
+    <title>
+      <key>ru</key>
+      <value>Выгрузить код обработчиков</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Export processor code</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Eksportuj kod procesora</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Código del procesador externo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Código del procesador externo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>İhracat işlemci kodu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Esportare codice processore</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Prozessorcode exportieren</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Выгрузить код обработчиков</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Export processor code</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Eksportuj kod procesora</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Código del procesador externo</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Código del procesador externo</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>İhracat işlemci kodu</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Esportare codice processore</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Prozessorcode exportieren</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ExportHandlersCode</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>OpenFile</name>
+    <title>
+      <key>ru</key>
+      <value>Открыть файл</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Open file</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Otwórz plik</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Abrir el archivo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Abrir el archivo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dosyayı aç</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Aprire file</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Datei öffnen</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Открыть файл</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Open file</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Otwórz plik</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Abrir el archivo</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Abrir el archivo</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Dosyayı aç</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Aprire file</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Datei öffnen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.ShowData</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>OpenFile</name>
+      </handler>
+    </action>
+    <representation>Picture</representation>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>Finish</name>
+    <title>
+      <key>ru</key>
+      <value>Готово</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Finish</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Gotowe</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Finalizar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Finalizar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Bitiş</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Termina</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Abschluss</value>
+    </title>
+    <id>3</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Готово</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Finish</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Gotowe</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Finalizar</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Finalizar</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Bitiş</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Termina</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Abschluss</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Finish</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <parameters>
+    <name>DataProcessorName</name>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>EventHandlerExternalDataProcessorFileName</name>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>AlgorithmDebugMode</name>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>ExchangeRuleFileName</name>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>ExchangeFileName</name>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>ReadEventHandlersFromExchangeRulesFile</name>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+  </parameters>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+  <extInfo xsi:type="form:ObjectFormExtInfo"/>
+</form:Form>

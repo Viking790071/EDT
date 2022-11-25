@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="60e3bdc7-d871-4034-be1b-e49ee368f0a6">
+  <producedTypes>
+    <selectionType typeId="7f50f83f-cfbe-4b2a-b433-03134f444e84" valueTypeId="3f9df9a6-abdc-4afd-8492-c951c5ced3ed"/>
+    <listType typeId="6c2759bf-4827-48d7-94b0-0d4cf6ded286" valueTypeId="081c4d72-3fe6-442a-8a34-8639d45b8f8f"/>
+    <managerType typeId="51c851fd-825e-4d72-bab5-5c4b1a98b422" valueTypeId="275c9f56-e1fc-4786-9f8d-0ec988211f9d"/>
+    <recordSetType typeId="fa38e3e6-89fc-48d6-a14d-35acb0c22390" valueTypeId="8010ac79-bb14-4e64-88d0-db6cc5ef1d4d"/>
+    <recordKeyType typeId="a78a67e1-fd05-4c8e-8d20-8d9c3c820f7b" valueTypeId="fc6ba505-2b12-4ecf-ae23-f8dc57e590d3"/>
+    <recordType typeId="6fbe7eae-e2a7-473a-b6e3-68663bf8df62" valueTypeId="daea602b-5956-4784-9df0-6af6dc522c65"/>
+    <recordManagerType typeId="059703ef-3c5a-47f8-9f72-59d29a30521d" valueTypeId="48680792-e9e4-45a0-8ce8-478911b781b3"/>
+  </producedTypes>
+  <name>VIESVATNumberValidation</name>
+  <synonym>
+    <key>en</key>
+    <value>VIES VAT ID validation</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Проверка номера плательщика НДС по VIES</value>
+  </synonym>
+  <synonym>
+    <key>pl</key>
+    <value>Walidacja numeru VIES VAT</value>
+  </synonym>
+  <synonym>
+    <key>es_ES</key>
+    <value>Validación del identificador del IVA VIES</value>
+  </synonym>
+  <synonym>
+    <key>es_CO</key>
+    <value>Validación del identificador del IVA VIES</value>
+  </synonym>
+  <synonym>
+    <key>tr</key>
+    <value>VIES KDV numarası doğrulaması</value>
+  </synonym>
+  <synonym>
+    <key>it</key>
+    <value>Validazione P.IVA tramite VIES</value>
+  </synonym>
+  <synonym>
+    <key>de</key>
+    <value>MIAS USt.-IdNr.-Validierung</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>en</key>
+    <value>Stores records on the results of the VAT ID validity check.</value>
+  </explanation>
+  <explanation>
+    <key>ru</key>
+    <value>Stores records on the results of the VAT ID validity check.</value>
+  </explanation>
+  <explanation>
+    <key>pl</key>
+    <value>Stores records on the results of the VAT ID validity check.</value>
+  </explanation>
+  <explanation>
+    <key>es_ES</key>
+    <value>Stores records on the results of the VAT ID validity check.</value>
+  </explanation>
+  <explanation>
+    <key>es_CO</key>
+    <value>Stores records on the results of the VAT ID validity check.</value>
+  </explanation>
+  <explanation>
+    <key>tr</key>
+    <value>Stores records on the results of the VAT ID validity check.</value>
+  </explanation>
+  <explanation>
+    <key>it</key>
+    <value>Stores records on the results of the VAT ID validity check.</value>
+  </explanation>
+  <explanation>
+    <key>de</key>
+    <value>Stores records on the results of the VAT ID validity check.</value>
+  </explanation>
+  <resources uuid="e608a57f-8c88-4aa2-8f15-4c1d077bdb00">
+    <name>VIESValidationState</name>
+    <synonym>
+      <key>en</key>
+      <value>VIES state</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние VIES</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Status VIES</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Estado del VIES</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Estado del VIES</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>VIES durumu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Stato VIES</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>VIES Status</value>
+    </synonym>
+    <type>
+      <types>EnumRef.VIESValidationStates</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="55a0a927-f09a-407f-a9cd-a57fd8dfb60b">
+    <name>VIESQueryDate</name>
+    <synonym>
+      <key>en</key>
+      <value>VIES inspection date</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Дата проверки VIES</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Data inspekcji VIES</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Fecha de inspección VIES</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Fecha de inspección VIES</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>VIES inceleme tarihi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Data ispezione VIES</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>VIES Inspektionsdatum</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9b4e553d-04ec-451a-9b29-e26fc66e14a0">
+    <name>VIESClientName</name>
+    <synonym>
+      <key>en</key>
+      <value>Client name (VIES)</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Название покупателя (VIES)</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Nazwa klienta (VIES)</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Nombre del cliente (VIES)</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Nombre del cliente (VIES)</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Müşteri adı (VIES)</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Nome cliente (VIES)</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Kundenname (VIES)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="7bfd9e73-a6e7-4b9f-9ca4-ab5eddac00ec">
+    <name>VIESClientAddress</name>
+    <synonym>
+      <key>en</key>
+      <value>Address (VIES)</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес (VIES)</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Adres (VIES)</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Dirección (VIES)</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Dirección (VIES)</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Adres (VIES)</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Indirizzo (VIES)</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Adresse (VIES)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="64054113-48ba-4df4-aa38-0d7d55ad5ef1">
+    <name>Counterparty</name>
+    <synonym>
+      <key>en</key>
+      <value>Counterparty</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Kontrahent</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Contraparte</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Contraparte</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Cari hesap</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Controparte</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Geschäftspartner</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Counterparties</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

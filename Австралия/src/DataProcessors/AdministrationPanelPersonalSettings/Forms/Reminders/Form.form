@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <title>
+    <key>en</key>
+    <value>Reminders</value>
+  </title>
+  <title>
+    <key>ru</key>
+    <value>Напоминания</value>
+  </title>
+  <title>
+    <key>pl</key>
+    <value>Przypomnienia</value>
+  </title>
+  <title>
+    <key>es_ES</key>
+    <value>Recordatorios</value>
+  </title>
+  <title>
+    <key>es_CO</key>
+    <value>Recordatorios</value>
+  </title>
+  <title>
+    <key>tr</key>
+    <value>Hatırlatıcılar</value>
+  </title>
+  <title>
+    <key>it</key>
+    <value>Promemoria</value>
+  </title>
+  <title>
+    <key>de</key>
+    <value>Erinnerungen</value>
+  </title>
+  <items xsi:type="form:FormGroup">
+    <name>GroupTitle</name>
+    <id>92</id>
+    <items xsi:type="form:Decoration">
+      <name>SectionDescription</name>
+      <id>93</id>
+      <title>
+        <key>en</key>
+        <value>Use this section to customize the Reminders subsystem. The subsystem is enabled in the Personal organizer menu.</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>В разделе выполняется настройка работы с подсистемой &quot;Напоминания&quot;. Включение подсистемы происходит в меню &quot;Органайзер&quot;.</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Używaj tej sekcji do dostosowania podsystemu &quot;Przypomnienia&quot;. Podsystem można włączyć w menu &quot;Organizer osobisty&quot;.</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Utilizar esta sección para personalizar el subsistema de Recordatorios. El subsistema está activado en el menú del organizador Personal.</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Utilizar esta sección para personalizar el subsistema de Recordatorios. El subsistema está activado en el menú del organizador Personal.</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Hatırlatıcılar alt sistemini özelleştirmek için bu bölümü kullanın. Alt sistem Düzenleyici menüsünde etkinleştirilir.</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Utilizzare questa sezione per personalizzare il sottosistema Promemoria. Il sottosistema è abilitato nel menu Organizer.</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Verwenden Sie diesen Abschnitt, um das Erinnerungs-Untersystem anzupassen. Das Subsystem ist im Organizer-Menü aktiviert.</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>SectionDescriptionExtendedTooltip</name>
+        <id>114</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>SectionDescriptionContextMenu</name>
+        <id>94</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>Label</type>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+        <verticalAlign>Top</verticalAlign>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>GroupHeaderExtendedTooltip</name>
+      <id>113</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>RemindersSettings</name>
+    <id>5</id>
+    <items xsi:type="form:FormGroup">
+      <name>CheckInterval</name>
+      <id>107</id>
+      <items xsi:type="form:FormField">
+        <name>CheckRemindersInterval</name>
+        <id>108</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>CheckRemindersInterval</segments>
+        </dataPath>
+        <titleLocation>None</titleLocation>
+        <toolTipRepresentation>ShowRight</toolTipRepresentation>
+        <handlers>
+          <event>OnChange</event>
+          <name>CheckIntervalRemindersOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>CheckRemindersIntervalExtendedTooltip</name>
+          <id>121</id>
+          <title>
+            <key>en</key>
+            <value>min.</value>
+          </title>
+          <title>
+            <key>ru</key>
+            <value>мин.</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>min.</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>min.</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>min.</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>dak.</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>min.</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>min.</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>CheckRemindersIntervalContextMenu</name>
+          <id>109</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <width>9</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <spinButton>true</spinButton>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+      <extendedTooltip>
+        <name>IntervalChecksExtendedTooltip</name>
+        <id>120</id>
+        <title>
+          <key>en</key>
+          <value>Interval of the data update for the Reminder subsystem. Specified in minutes.
+</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Интервал обновления данных для подсистемы Напоминания. Указывается в минутах.
+</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Interwał aktualizacji danych dla podsystemu Przypomnienia. Podaje się w minutach.
+</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Intervalo de la actualización de datos para el subsistema de Recordatorio. Especificar en minutos.
+</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Intervalo de la actualización de datos para el subsistema de Recordatorio. Especificar en minutos.
+</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Hatırlatıcı alt sistemi için veri güncelleme aralığı. Dakika cinsinden verilir.
+</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Intervallo di aggiornamento dei dati per il sottosistema Promemoria. È indicato in minuti.
+</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Intervall der Datenaktualisierung für das Reminder-Subsystem In Minuten angegeben.
+</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:Decoration">
+      <name>Decoration1</name>
+      <id>122</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>Decoration1ExtendedTooltip</name>
+        <id>124</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>Decoration1ContextMenu</name>
+        <id>123</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>en</key>
+      <value>Other</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Прочее</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Inne</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Otro</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Otro</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Diğer</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Altro</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Sonstige</value>
+    </title>
+    <titleTextColor xsi:type="core:ColorRef">
+      <color>Style.TitleColorSettingsGroup</color>
+    </titleTextColor>
+    <toolTip>
+      <key>en</key>
+      <value>Reminders</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Напоминания</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Przypomnienia</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Recordatorios</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Recordatorios</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Hatırlatıcılar</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Promemoria</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Erinnerungen</value>
+    </toolTip>
+    <width>82</width>
+    <horizontalStretch>false</horizontalStretch>
+    <extendedTooltip>
+      <name>SettingsRemindersExtendedTooltip</name>
+      <id>118</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <representation>NormalSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <slaveItemsWidth>Equal</slaveItemsWidth>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>FormCommandBar</name>
+    <id>-1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+  </autoCommandBar>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <handlers>
+    <event>OnClose</event>
+    <name>OnClose</name>
+  </handlers>
+  <width>84</width>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <enabled>true</enabled>
+  <verticalScroll>UseIfNecessary</verticalScroll>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>RunMode</name>
+    <title>
+      <key>en</key>
+      <value>Run mode</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Режим выполнения</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Tryb pracy</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Modo de ejecución</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Modo de ejecución</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Çalışma modu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Modalità di lavoro</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Ausführungsmodus</value>
+    </title>
+    <id>1</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>CheckRemindersInterval</name>
+    <title>
+      <key>en</key>
+      <value>Reminder check interval</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Интервал проверки напоминаний</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Przedział sprawdzania przypomnień</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Recordatorio revisar intervalo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Recordatorio revisar intervalo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Hatırlatıcı kontrol aralığı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Intervallo di controllo promemoria</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Erinnerungs-Prüfintervall</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

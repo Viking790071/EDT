@@ -1,0 +1,4270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <title>
+    <key>en</key>
+    <value>Demand forecasting</value>
+  </title>
+  <title>
+    <key>ru</key>
+    <value>Прогнозирование спроса</value>
+  </title>
+  <title>
+    <key>pl</key>
+    <value>Prognozowanie zapotrzebowania</value>
+  </title>
+  <title>
+    <key>es_ES</key>
+    <value>Pronóstico de demanda</value>
+  </title>
+  <title>
+    <key>es_CO</key>
+    <value>Pronóstico de demanda</value>
+  </title>
+  <title>
+    <key>tr</key>
+    <value>Talep tahmini</value>
+  </title>
+  <title>
+    <key>it</key>
+    <value>Previsione del fabbisogno</value>
+  </title>
+  <title>
+    <key>de</key>
+    <value>Wareneinkauf</value>
+  </title>
+  <items xsi:type="form:FormGroup">
+    <name>GroupFilters</name>
+    <id>153</id>
+    <items xsi:type="form:FormGroup">
+      <name>GroupFiltersColumn1</name>
+      <id>182</id>
+      <items xsi:type="form:FormGroup">
+        <name>Group3</name>
+        <id>197</id>
+        <items xsi:type="form:FormField">
+          <name>DaysNumber</name>
+          <id>198</id>
+          <title>
+            <key>en</key>
+            <value>Forecasting horizon (days)</value>
+          </title>
+          <title>
+            <key>ru</key>
+            <value>Горизонт прогноза (дни)</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Horyzont prognozowania (dni)</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Horizonte de pronóstico (días)</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Horizonte de pronóstico (días)</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Tahmin zamanı (gün)</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Orizzonte di pianificazione (giorni)</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Vorhersagehorizont (Tage)</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>DaysNumber</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>CountDaysExtendedTooltip</name>
+            <id>214</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>CountDaysContextMenu</name>
+            <id>199</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <width>8</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <spinButton>true</spinButton>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+            <minValue xsi:type="core:NumberValue">
+              <value>1</value>
+            </minValue>
+            <maxValue xsi:type="core:NumberValue">
+              <value>100</value>
+            </maxValue>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>Group3ExtendedTooltip</name>
+          <id>213</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>ProductsPurchaseMode</name>
+        <id>174</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ProductsPurchaseMode</segments>
+        </dataPath>
+        <handlers>
+          <event>OnChange</event>
+          <name>ProductsPurchaseModeOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>ProductsPurchaseModeExtendedTooltip</name>
+          <id>216</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ProductsPurchaseModeContextMenu</name>
+          <id>175</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <width>12</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>false</horizontalStretch>
+          <wrap>true</wrap>
+          <choiceListButton>true</choiceListButton>
+          <dropListButton>true</dropListButton>
+          <listChoiceMode>true</listChoiceMode>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <choiceList>
+            <presentation>
+              <key>en</key>
+              <value>Supplier</value>
+            </presentation>
+            <presentation>
+              <key>ru</key>
+              <value>Контрагент</value>
+            </presentation>
+            <presentation>
+              <key>pl</key>
+              <value>Dostawca</value>
+            </presentation>
+            <presentation>
+              <key>es_ES</key>
+              <value>Proveedor</value>
+            </presentation>
+            <presentation>
+              <key>es_CO</key>
+              <value>Proveedor</value>
+            </presentation>
+            <presentation>
+              <key>tr</key>
+              <value>Tedarikçi</value>
+            </presentation>
+            <presentation>
+              <key>it</key>
+              <value>Fornitore</value>
+            </presentation>
+            <presentation>
+              <key>de</key>
+              <value>Lieferant</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>FromSupplier</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>en</key>
+              <value>Product group</value>
+            </presentation>
+            <presentation>
+              <key>ru</key>
+              <value>Группа номенклатуры</value>
+            </presentation>
+            <presentation>
+              <key>pl</key>
+              <value>Grupa produktów</value>
+            </presentation>
+            <presentation>
+              <key>es_ES</key>
+              <value>Grupo de producto</value>
+            </presentation>
+            <presentation>
+              <key>es_CO</key>
+              <value>Grupo de producto</value>
+            </presentation>
+            <presentation>
+              <key>tr</key>
+              <value>Ürün grubu</value>
+            </presentation>
+            <presentation>
+              <key>it</key>
+              <value>Gruppo articolo</value>
+            </presentation>
+            <presentation>
+              <key>de</key>
+              <value>Produktgruppe</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ProductsGroup</value>
+            </value>
+          </choiceList>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>GroupFiltersColumn1ExtendedTooltip</name>
+        <id>212</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>Vertical</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:Decoration">
+      <name>Decoration1</name>
+      <id>185</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>Decoration1ExtendedTooltip</name>
+        <id>217</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>Decoration1ContextMenu</name>
+        <id>186</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <width>1</width>
+      <autoMaxWidth>true</autoMaxWidth>
+      <height>2</height>
+      <autoMaxHeight>true</autoMaxHeight>
+      <horizontalStretch>false</horizontalStretch>
+      <extInfo xsi:type="form:PictureDecorationExtInfo"/>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>GroupFiltersColumn2</name>
+      <id>183</id>
+      <items xsi:type="form:FormField">
+        <name>MiddleSalesCalculationPeriod</name>
+        <id>171</id>
+        <title>
+          <key>en</key>
+          <value>Base period (days)</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Базовый период (дней)</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Okres podstawowy (dni)</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Período base (días)</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Período base (días)</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Baz süre (gün)</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Periodo base (giorni)</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Basiszeitraum (Tage)</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>MiddleSalesCalculationPeriod</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>MiddleSalesCalculationPeriodExtendedTooltip</name>
+          <id>219</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>MiddleSalesCalculationPeriodContextMenu</name>
+          <id>172</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <width>14</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>false</horizontalStretch>
+          <wrap>true</wrap>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>SubgroupProductsPurchaseMode</name>
+        <id>173</id>
+        <items xsi:type="form:FormField">
+          <name>Vendor</name>
+          <id>3</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Vendor</segments>
+          </dataPath>
+          <titleLocation>None</titleLocation>
+          <extendedTooltip>
+            <name>VendorExtendedTooltip</name>
+            <id>221</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>VendorContextMenu</name>
+            <id>4</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <width>25</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <horizontalStretch>false</horizontalStretch>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+            <choiceParameters>
+              <name>Filter.Supplier</name>
+              <value xsi:type="form:FormChoiceListDesTimeValue">
+                <value xsi:type="core:BooleanValue">
+                  <value>true</value>
+                </value>
+              </value>
+            </choiceParameters>
+            <inputHint>
+              <key>en</key>
+              <value>Select supplier</value>
+            </inputHint>
+            <inputHint>
+              <key>ru</key>
+              <value>Выберите поставщика</value>
+            </inputHint>
+            <inputHint>
+              <key>pl</key>
+              <value>Wybierz dostawcę</value>
+            </inputHint>
+            <inputHint>
+              <key>es_ES</key>
+              <value>Seleccionar el proveedor</value>
+            </inputHint>
+            <inputHint>
+              <key>es_CO</key>
+              <value>Seleccionar el proveedor</value>
+            </inputHint>
+            <inputHint>
+              <key>tr</key>
+              <value>Tedarikçi seç</value>
+            </inputHint>
+            <inputHint>
+              <key>it</key>
+              <value>Seleziona fornitore</value>
+            </inputHint>
+            <inputHint>
+              <key>de</key>
+              <value>Wählen sie den Lieferanten</value>
+            </inputHint>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>ProductsGroup</name>
+          <id>1</id>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>ProductsGroup</segments>
+          </dataPath>
+          <titleLocation>None</titleLocation>
+          <extendedTooltip>
+            <name>ProductsGroupExtendedTooltip</name>
+            <id>222</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>GroupOfProductsContextMenu</name>
+            <id>2</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <width>25</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <horizontalStretch>false</horizontalStretch>
+            <wrap>true</wrap>
+            <choiceFoldersAndItems>Folders</choiceFoldersAndItems>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+            <inputHint>
+              <key>en</key>
+              <value>Select group</value>
+            </inputHint>
+            <inputHint>
+              <key>ru</key>
+              <value>Выбрать группу</value>
+            </inputHint>
+            <inputHint>
+              <key>pl</key>
+              <value>Wybrać grupę</value>
+            </inputHint>
+            <inputHint>
+              <key>es_ES</key>
+              <value>Seleccionar un grupo</value>
+            </inputHint>
+            <inputHint>
+              <key>es_CO</key>
+              <value>Seleccionar un grupo</value>
+            </inputHint>
+            <inputHint>
+              <key>tr</key>
+              <value>Grup Seç</value>
+            </inputHint>
+            <inputHint>
+              <key>it</key>
+              <value>Seleziona gruppo</value>
+            </inputHint>
+            <inputHint>
+              <key>de</key>
+              <value>Gruppe wählen</value>
+            </inputHint>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>SubgroupGoodsPurchaseModeExtendedTooltip</name>
+          <id>220</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <representation>WeakSeparation</representation>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>GroupFiltersColumn2ExtendedTooltip</name>
+        <id>218</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>Vertical</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>GroupFiltersColumn3</name>
+      <id>184</id>
+      <items xsi:type="form:Button">
+        <name>FillAndCalculate</name>
+        <id>179</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>FillAndCalculateExtendedTooltip</name>
+          <id>225</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualButton</type>
+        <commandName>Form.Command.FillAndCalculate</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <font xsi:type="core:AutoFont">
+          <bold>true</bold>
+        </font>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>GroupFiltersColumn3ExtendedTooltip</name>
+        <id>224</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>Vertical</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>Group2</name>
+      <id>287</id>
+      <items xsi:type="form:Button">
+        <name>Help</name>
+        <id>210</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>HelpExtendedTooltip</name>
+          <id>227</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.StandardCommand.Help</commandName>
+        <representation>Picture</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>Group2ExtendedTooltip</name>
+        <id>288</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>CommandBar</type>
+      <extInfo xsi:type="form:CommandBarExtInfo">
+        <horizontalAlign>Right</horizontalAlign>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>GroupFiltersExtendedTooltip</name>
+      <id>211</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <representation>NormalSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>PagesProducts</name>
+    <id>144</id>
+    <items xsi:type="form:FormGroup">
+      <name>PageProducts</name>
+      <id>145</id>
+      <items xsi:type="form:FormGroup">
+        <name>Group1</name>
+        <id>192</id>
+        <items xsi:type="form:FormGroup">
+          <name>CommandBarProducts</name>
+          <id>28</id>
+          <items xsi:type="form:Button">
+            <name>CheckAll</name>
+            <id>29</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>SetFlagsExtendedTooltip</name>
+              <id>232</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>Form.Command.CheckAll</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>UncheckAll</name>
+            <id>30</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>UncheckFlagsExtendedTooltip</name>
+              <id>233</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>Form.Command.UncheckAll</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>ResultGenerateOrders</name>
+            <id>119</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>ResultGenerateOrdersExtendedTooltip</name>
+              <id>234</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>Form.Command.GenerateOrders</commandName>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>CommandBarProductsExtendedTooltip</name>
+            <id>231</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>CommandBar</type>
+          <extInfo xsi:type="form:CommandBarExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>CommandBarProductsAdditionally</name>
+          <id>191</id>
+          <items xsi:type="form:Button">
+            <name>ShowZeroSales</name>
+            <id>176</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>ShowZeroSalesExtendedTooltip</name>
+              <id>236</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>Form.Command.ShowZeroSales</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>CommandBarProductsAdvancedExtendedTooltip</name>
+            <id>235</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>CommandBar</type>
+          <extInfo xsi:type="form:CommandBarExtInfo">
+            <horizontalAlign>Right</horizontalAlign>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>Group1ExtendedTooltip</name>
+          <id>230</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Table">
+        <name>Demand</name>
+        <id>120</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Demand</segments>
+        </dataPath>
+        <titleLocation>None</titleLocation>
+        <excludedCommands>Add</excludedCommands>
+        <excludedCommands>Change</excludedCommands>
+        <excludedCommands>Copy</excludedCommands>
+        <excludedCommands>Delete</excludedCommands>
+        <excludedCommands>MoveDown</excludedCommands>
+        <excludedCommands>MoveUp</excludedCommands>
+        <items xsi:type="form:FormField">
+          <name>DemandCheck</name>
+          <id>123</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Demand.Check</segments>
+          </dataPath>
+          <titleLocation>None</titleLocation>
+          <handlers>
+            <event>OnChange</event>
+            <name>NeedToCheckOnChange</name>
+          </handlers>
+          <extendedTooltip>
+            <name>DemandCheckExtendedTooltip</name>
+            <id>238</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>DemandCheckContextMenu</name>
+            <id>124</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>EnterOnInput</editMode>
+          <fixingInTable>Left</fixingInTable>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>DemandVendor</name>
+          <id>125</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Demand.Vendor</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>DemandVendorExtendedTooltip</name>
+            <id>239</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>DemandVendorContextMenu</name>
+            <id>126</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <readOnly>true</readOnly>
+          <editMode>EnterOnInput</editMode>
+          <fixingInTable>Left</fixingInTable>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <width>15</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <horizontalStretch>false</horizontalStretch>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>DemandProducts</name>
+          <id>127</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Demand.Products</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>DemandProductsExtendedTooltip</name>
+            <id>240</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>DemandProductsContextMenu</name>
+            <id>128</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <readOnly>true</readOnly>
+          <editMode>EnterOnInput</editMode>
+          <fixingInTable>Left</fixingInTable>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <width>15</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <horizontalStretch>false</horizontalStretch>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>DemandCharacteristic</name>
+          <id>129</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Demand.Characteristic</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>DemandCharacteristicExtendedTooltip</name>
+            <id>241</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>DemandCharacteristicContextMenu</name>
+            <id>130</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <readOnly>true</readOnly>
+          <editMode>EnterOnInput</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <width>20</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>DemandCurrentBalance</name>
+          <id>131</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Demand.CurrentBalance</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>NeedForCurrentBalanceExtendedTooltip</name>
+            <id>242</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>NeedForCurrentBalanceContextMenu</name>
+            <id>132</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <readOnly>true</readOnly>
+          <editMode>EnterOnInput</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <width>13</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>DemandSalesStatisticsQuantity</name>
+          <id>133</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Demand.SalesStatisticsQuantity</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>DemandSalesStatisticsQuantityExtendedTooltip</name>
+            <id>243</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>DemandSalesStatisticsQuantityContextMenu</name>
+            <id>134</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <readOnly>true</readOnly>
+          <editMode>EnterOnInput</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <width>13</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>DemandSalesStatisticsQuantityDays</name>
+          <id>260</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Demand.SalesStatisticsQuantityDays</segments>
+          </dataPath>
+          <toolTip>
+            <key>en</key>
+            <value>A reference period is the time period for which statistical results are collected or calculated and to which, as a result, these values refer.</value>
+          </toolTip>
+          <toolTip>
+            <key>ru</key>
+            <value>Расчетный период - это временной отрезок, в течение которого данные были собраны или рассчитаны, и к которому, в результате, относятся полученные значения.</value>
+          </toolTip>
+          <toolTip>
+            <key>pl</key>
+            <value>Okres referencyjny to jest okres, w którym są zbierane lub obliczane wyniki statystyczne, do których w rezultacie odnoszą się te wartości.</value>
+          </toolTip>
+          <toolTip>
+            <key>es_ES</key>
+            <value>Un período de referencia es el período de tiempo para el cual los resultados de estadística se han recopilado o calculado, y al cual, como resultado, estos valores refieren.</value>
+          </toolTip>
+          <toolTip>
+            <key>es_CO</key>
+            <value>Un período de referencia es el período de tiempo para el cual los resultados de estadística se han recopilado o calculado, y al cual, como resultado, estos valores refieren.</value>
+          </toolTip>
+          <toolTip>
+            <key>tr</key>
+            <value>Bir referans süresi, istatistiksel sonuçların toplandığı veya hesaplandığı ve sonuç olarak bu değerlerin atıfta bulunduğu zaman dönemidir.</value>
+          </toolTip>
+          <toolTip>
+            <key>it</key>
+            <value>Un periodo di riferimento è il periodo di tempo per il quale i risultati statistici sono raccolti o calcolati e al quale, di conseguenza, tali valori si riferiscono.</value>
+          </toolTip>
+          <toolTip>
+            <key>de</key>
+            <value>Ein Bezugszeitraum ist der Zeitraum, für den statistische Ergebnisse erfasst oder berechnet werden und auf den sich diese Werte beziehen.</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>DemandSalesStatisticsQuantityDaysExtendedTooltip</name>
+            <id>262</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>DemandSalesStatisticsQuantityDaysContextMenu</name>
+            <id>261</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <readOnly>true</readOnly>
+          <editMode>EnterOnInput</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <width>15</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>DemandSalesStatisticsAverageSale</name>
+          <id>137</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Demand.SalesStatisticsAverageSale</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>DemandSalesStatisticsAverageSaleExtendedTooltip</name>
+            <id>244</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>DemandSalesStatisticsAverageSaleContextMenu</name>
+            <id>138</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <readOnly>true</readOnly>
+          <editMode>EnterOnInput</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <width>14</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>DemandQuantityForPurchase</name>
+          <id>141</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Demand.QuantityForPurchase</segments>
+          </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>DemandQuantityForPurchaseOnChange</name>
+          </handlers>
+          <extendedTooltip>
+            <name>DemandQuantityForPurchaseExtendedTooltip</name>
+            <id>245</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>DemandQuantityForPurchaseContextMenu</name>
+            <id>142</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>EnterOnInput</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <width>17</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <commandBarLocation>None</commandBarLocation>
+        <autoCommandBar>
+          <name>NeedForCommandPanel</name>
+          <id>122</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <horizontalAlign>Left</horizontalAlign>
+          <autoFill>true</autoFill>
+        </autoCommandBar>
+        <handlers>
+          <event>Selection</event>
+          <name>RequirmentSelect</name>
+        </handlers>
+        <searchStringAddition>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <name>RequirementSearchString</name>
+          <id>269</id>
+          <extendedTooltip>
+            <name>RequirementSearchStringExtendedTooltip</name>
+            <id>271</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>RequirementSearchStringContextMenu</name>
+            <id>270</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <source>RequirementSearchString</source>
+          <extInfo xsi:type="form:SearchStringAdditionExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+          </extInfo>
+        </searchStringAddition>
+        <viewStatusAddition>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <name>RequirementViewStatus</name>
+          <id>272</id>
+          <extendedTooltip>
+            <name>RequirementViewStatusExtendedTooltip</name>
+            <id>274</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>RequirementViewStatusContextMenu</name>
+            <id>273</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>ViewStatusAddition</type>
+          <source>RequirementViewStatus</source>
+          <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+          </extInfo>
+        </viewStatusAddition>
+        <searchControlAddition>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <name>RequirementSearchManagement</name>
+          <id>275</id>
+          <extendedTooltip>
+            <name>RequirementSearchManagementExtendedTooltip</name>
+            <id>277</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>RequirementSearchManagementContextMenu</name>
+            <id>276</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>SearchControlAddition</type>
+          <source>RequirementSearchManagement</source>
+          <extInfo xsi:type="form:SearchControlAdditionExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+          </extInfo>
+        </searchControlAddition>
+        <extendedTooltip>
+          <name>DemandExtendedTooltip</name>
+          <id>237</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>NeedForContextMenu</name>
+          <id>121</id>
+          <items xsi:type="form:Button">
+            <name>DemandContextMenuButton1</name>
+            <id>263</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>DemandContextMenuButton1ExtendedTooltip</name>
+              <id>264</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>Form.Item.Demand.StandardCommand.SortListAsc</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>DemandContextMenuButton2</name>
+            <id>265</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>DemandContextMenuButton2ExtendedTooltip</name>
+              <id>266</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>Form.Item.Demand.StandardCommand.SortListDesc</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>DemandContextMenuButton3</name>
+            <id>267</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>DemandContextMenuButton3ExtendedTooltip</name>
+              <id>268</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>Form.Item.Demand.StandardCommand.OutputList</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+        </contextMenu>
+        <representation>Tree</representation>
+        <changeRowOrder>true</changeRowOrder>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <autoMaxRowsCount>true</autoMaxRowsCount>
+        <selectionMode>MultiRow</selectionMode>
+        <header>true</header>
+        <headerHeight>1</headerHeight>
+        <footerHeight>1</footerHeight>
+        <horizontalScrollBar>AutoUse</horizontalScrollBar>
+        <verticalScrollBar>AutoUse</verticalScrollBar>
+        <horizontalLines>true</horizontalLines>
+        <verticalLines>true</verticalLines>
+        <useAlternationRowColor>true</useAlternationRowColor>
+        <autoInsertNewRow>true</autoInsertNewRow>
+        <searchOnInput>Auto</searchOnInput>
+        <initialListView>Auto</initialListView>
+        <horizontalStretch>true</horizontalStretch>
+        <verticalStretch>true</verticalStretch>
+        <enableStartDrag>true</enableStartDrag>
+        <enableDrag>true</enableDrag>
+        <searchStringLocation>None</searchStringLocation>
+        <viewStatusLocation>None</viewStatusLocation>
+        <searchControlLocation>None</searchControlLocation>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>en</key>
+        <value>Products</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Produkty</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Productos</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Productos</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Ürünler</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Articoli</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Produkte</value>
+      </title>
+      <extendedTooltip>
+        <name>PageProductsExtendedTooltip</name>
+        <id>229</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>OrdersPage</name>
+      <id>146</id>
+      <items xsi:type="form:FormGroup">
+        <name>CommandBarOrders</name>
+        <id>157</id>
+        <items xsi:type="form:Button">
+          <name>OrderFlagsSet</name>
+          <id>158</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>OrderFlagsSetExtendedTooltip</name>
+            <id>248</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Command.OrderFlagsSet</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <items xsi:type="form:Button">
+          <name>RemoveOrdersFlags</name>
+          <id>159</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>UncheckFlagsOrdersExtendedTooltip</name>
+            <id>249</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Command.RemoveOrdersFlags</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <items xsi:type="form:Button">
+          <name>PostOrders</name>
+          <id>160</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>PostOrdersExtendedTooltip</name>
+            <id>250</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Command.PostOrders</commandName>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <items xsi:type="form:Button">
+          <name>OrdersDeleteOrder</name>
+          <id>204</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>OrdersDeleteOrderExtendedTooltip</name>
+            <id>251</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Command.DeleteOrder</commandName>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <items xsi:type="form:Button">
+          <name>OrdersEditOrder</name>
+          <id>203</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>OrdersEditOrderExtendedTooltip</name>
+            <id>252</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Command.OrderEdit</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <items xsi:type="form:Button">
+          <name>Button3</name>
+          <id>163</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>Button3ExtendedTooltip</name>
+            <id>253</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Item.Orders.StandardCommand.MoveUp</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <items xsi:type="form:Button">
+          <name>Button4</name>
+          <id>164</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>Button4ExtendedTooltip</name>
+            <id>254</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Item.Orders.StandardCommand.MoveDown</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>CommandBarOrdersExtendedTooltip</name>
+          <id>247</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>CommandBar</type>
+        <extInfo xsi:type="form:CommandBarExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+          <commandSource>Item.Orders</commandSource>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Table">
+        <name>Orders</name>
+        <id>147</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Orders</segments>
+        </dataPath>
+        <titleLocation>None</titleLocation>
+        <excludedCommands>Add</excludedCommands>
+        <excludedCommands>Change</excludedCommands>
+        <excludedCommands>Copy</excludedCommands>
+        <excludedCommands>CopyToClipboard</excludedCommands>
+        <excludedCommands>Delete</excludedCommands>
+        <excludedCommands>EndEdit</excludedCommands>
+        <excludedCommands>SelectAll</excludedCommands>
+        <items xsi:type="form:FormField">
+          <name>OrdersCheck</name>
+          <id>155</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Orders.Check</segments>
+          </dataPath>
+          <titleLocation>None</titleLocation>
+          <extendedTooltip>
+            <name>OrdersCheckExtendedTooltip</name>
+            <id>256</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>OrdersCheckContextMenu</name>
+            <id>156</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>EnterOnInput</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>OrdersDocument</name>
+          <id>150</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Orders.Document</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>OrdersDocumentExtendedTooltip</name>
+            <id>257</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>OrdersDocumentContextMenu</name>
+            <id>151</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <readOnly>true</readOnly>
+          <editMode>EnterOnInput</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>OrdersSupplier</name>
+          <id>193</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Orders.Vendor</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>OrdersSupplierExtendedTooltip</name>
+            <id>258</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>OrdersVendorContextMenu</name>
+            <id>194</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <readOnly>true</readOnly>
+          <editMode>EnterOnInput</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <width>12</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>OrdersDocumentAmount</name>
+          <id>195</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Orders.DocumentAmount</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>OrdersDocumentSumExtendedTooltip</name>
+            <id>259</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>OrdersDocumentSumContextMenu</name>
+            <id>196</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <readOnly>true</readOnly>
+          <editMode>EnterOnInput</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <width>14</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <autoCommandBar>
+          <name>OrdersCommandBar</name>
+          <id>149</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <horizontalAlign>Left</horizontalAlign>
+        </autoCommandBar>
+        <handlers>
+          <event>Selection</event>
+          <name>OrdersSelection</name>
+        </handlers>
+        <searchStringAddition>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <name>OrdersSearchString</name>
+          <id>278</id>
+          <extendedTooltip>
+            <name>OrdersSearchStringExtendedTooltip</name>
+            <id>280</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>OrdersSearchStringContextMenu</name>
+            <id>279</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <source>OrdersSearchString</source>
+          <extInfo xsi:type="form:SearchStringAdditionExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+          </extInfo>
+        </searchStringAddition>
+        <viewStatusAddition>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <name>OrdersViewStatus</name>
+          <id>281</id>
+          <extendedTooltip>
+            <name>OrdersViewStatusExtendedTooltip</name>
+            <id>283</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>OrdersViewStatusContextMenu</name>
+            <id>282</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>ViewStatusAddition</type>
+          <source>OrdersViewStatus</source>
+          <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+          </extInfo>
+        </viewStatusAddition>
+        <searchControlAddition>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <name>OrdersSearchManagement</name>
+          <id>284</id>
+          <extendedTooltip>
+            <name>OrdersSearchManagementExtendedTooltip</name>
+            <id>286</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>OrdersSearchManagementContextMenu</name>
+            <id>285</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>SearchControlAddition</type>
+          <source>OrdersSearchManagement</source>
+          <extInfo xsi:type="form:SearchControlAdditionExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+          </extInfo>
+        </searchControlAddition>
+        <extendedTooltip>
+          <name>OrdersExtendedTooltip</name>
+          <id>255</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>OrdersContextMenu</name>
+          <id>148</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <changeRowOrder>true</changeRowOrder>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <autoMaxRowsCount>true</autoMaxRowsCount>
+        <selectionMode>MultiRow</selectionMode>
+        <header>true</header>
+        <headerHeight>1</headerHeight>
+        <footerHeight>1</footerHeight>
+        <horizontalScrollBar>AutoUse</horizontalScrollBar>
+        <verticalScrollBar>AutoUse</verticalScrollBar>
+        <horizontalLines>true</horizontalLines>
+        <verticalLines>true</verticalLines>
+        <autoInsertNewRow>true</autoInsertNewRow>
+        <searchOnInput>Auto</searchOnInput>
+        <initialListView>Auto</initialListView>
+        <horizontalStretch>true</horizontalStretch>
+        <verticalStretch>true</verticalStretch>
+        <enableStartDrag>true</enableStartDrag>
+        <enableDrag>true</enableDrag>
+        <rowPictureDataPath xsi:type="form:DataPath">
+          <segments>Orders.PictureIndex</segments>
+        </rowPictureDataPath>
+        <rowsPicture xsi:type="core:PictureRef">
+          <picture>CommonPicture.DocumentStatuses</picture>
+        </rowsPicture>
+        <searchStringLocation>None</searchStringLocation>
+        <viewStatusLocation>None</viewStatusLocation>
+        <searchControlLocation>None</searchControlLocation>
+        <rowFilter xsi:type="core:UndefinedValue"/>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>en</key>
+        <value>Purchase orders</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Заказы поставщикам</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Zamówienia zakupu</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Órdenes de compra</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Órdenes de compra</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Satın alma siparişleri</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Ordini di acquisto</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Bestellungen an Lieferanten</value>
+      </title>
+      <extendedTooltip>
+        <name>OrdersPageExtendedTooltip</name>
+        <id>246</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>PagesProductsExtendedTooltip</name>
+      <id>228</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>Pages</type>
+    <extInfo xsi:type="form:PagesGroupExtInfo">
+      <pagesRepresentation>TabsOnTop</pagesRepresentation>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>FormCommandBar</name>
+    <id>-1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Right</horizontalAlign>
+  </autoCommandBar>
+  <handlers>
+    <event>NotificationProcessing</event>
+    <name>NotificationProcessing</name>
+  </handlers>
+  <handlers>
+    <event>OnOpen</event>
+    <name>OnOpen</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <autoSaveDataInSettings>Use</autoSaveDataInSettings>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <verticalScroll>UseIfNecessary</verticalScroll>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Object</name>
+    <id>1</id>
+    <valueType>
+      <types>DataProcessorObject.ProductsPurchase</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <main>true</main>
+  </attributes>
+  <attributes>
+    <name>ProductsGroup</name>
+    <title>
+      <key>en</key>
+      <value>select group</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>выберите группу</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wybierz grupę</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>seleccionar un grupo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>seleccionar un grupo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>grup seç</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>seleziona gruppo</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>gruppe wählen</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>CatalogRef.Products</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>ProductsGroup</segments>
+    </settingsSavedData>
+  </attributes>
+  <attributes>
+    <name>Vendor</name>
+    <title>
+      <key>en</key>
+      <value>select supplier</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>выберите поставщика</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>wybierz dostawcę</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>seleccionar el proveedor</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>seleccionar el proveedor</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Tedarikçi seç</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>seleziona fornitore</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>wählen sie den Lieferanten</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>CatalogRef.Counterparties</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>Vendor</segments>
+    </settingsSavedData>
+  </attributes>
+  <attributes>
+    <name>ModeFilterForWarehouses</name>
+    <title>
+      <key>en</key>
+      <value>Mode of filter by warehouses</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Режим отбора по складам</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Tryb filtrowania według magazynów</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Modo del filtro por almacenes</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Modo del filtro por almacenes</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Ambarlara göre filtre modu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Modalità di filtro per magazzini</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Lager Filtermodus</value>
+    </title>
+    <id>4</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>Demand</name>
+    <title>
+      <key>en</key>
+      <value>Token expiration date</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Срок годности токена</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Data ważności tokena</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Fecha de vencimiento de token</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Fecha de vencimiento de token</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Jetonun son kullanma tarihi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Data di scadenza del marcatore</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Token-Ablaufdatum</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>ValueTree</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <columns>
+      <name>Check</name>
+      <id>1</id>
+      <valueType>
+        <types>Boolean</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Vendor</name>
+      <title>
+        <key>en</key>
+        <value>Supplier</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Поставщик</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Dostawca</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Proveedor</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Proveedor</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Tedarikçi</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Fornitore</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Lieferant</value>
+      </title>
+      <id>2</id>
+      <valueType>
+        <types>CatalogRef.Counterparties</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Products</name>
+      <title>
+        <key>en</key>
+        <value>Product</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Produkt</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Producto</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Producto</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Ürün</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Articolo</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Produkt</value>
+      </title>
+      <id>17</id>
+      <valueType>
+        <types>CatalogRef.Products</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Characteristic</name>
+      <title>
+        <key>en</key>
+        <value>Variant</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Вариант</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Wariant</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Variante</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Variante</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Varyant</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Variante</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Variante</value>
+      </title>
+      <id>18</id>
+      <valueType>
+        <types>CatalogRef.ProductsCharacteristics</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+      <functionalOptions>FunctionalOption.UseCharacteristics</functionalOptions>
+    </columns>
+    <columns>
+      <name>CurrentBalance</name>
+      <title>
+        <key>en</key>
+        <value>On hand</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Остаток</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Na stanie</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>En mano</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>En mano</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Elde</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>In mano</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Aktuelle Balance</value>
+      </title>
+      <id>3</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>SalesStatisticsQuantity</name>
+      <title>
+        <key>en</key>
+        <value>Consumed</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Продано (кол-во)</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Zużyto</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Consumido</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Consumido</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Tüketilen</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Consumato</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Verkauft (Menge)</value>
+      </title>
+      <id>4</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>SalesStatisticsAverageSale</name>
+      <title>
+        <key>en</key>
+        <value>Average consumption a day</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>В среднем за день</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Średnie zużycie dziennie</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Consumición media por día</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Consumición media por día</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Günlük ortalama tüketim</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Consumo medio al giorno</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Täglicher Durchschnitt</value>
+      </title>
+      <id>6</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>QuantityForPurchase</name>
+      <title>
+        <key>en</key>
+        <value>Demand</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Потребность</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Zapotrzebowanie</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Demanda</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Demanda</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Talep</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Fabbisogno</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Bedarf</value>
+      </title>
+      <id>8</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>SalesStatisticsQuantityDays</name>
+      <title>
+        <key>en</key>
+        <value>Reference period (days)</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Расчетный период (дней)</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Okres odniesienia (dni)</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Período de referencia (días)</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Período de referencia (días)</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Referans süresi (gün)</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Periodo di riferimento (giorni)</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Verkauft (Tage)</value>
+      </title>
+      <id>5</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+  </attributes>
+  <attributes>
+    <name>Orders</name>
+    <title>
+      <key>en</key>
+      <value>Orders</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>заказы</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zamówienia</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Por orden</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Por orden</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Siparişler</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Ordini</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Aufträge</value>
+    </title>
+    <id>6</id>
+    <valueType>
+      <types>ValueTable</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <columns>
+      <name>Document</name>
+      <title>
+        <key>en</key>
+        <value>Document</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Документ</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Dokument</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Documento</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Documento</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Belge</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Documento</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Dokument</value>
+      </title>
+      <id>1</id>
+      <valueType>
+        <types>DocumentRef.PurchaseOrder</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Check</name>
+      <id>2</id>
+      <valueType>
+        <types>Boolean</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Vendor</name>
+      <title>
+        <key>en</key>
+        <value>Supplier</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Контрагент</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Dostawca</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Proveedor</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Proveedor</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Tedarikçi</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Fornitore</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Lieferant</value>
+      </title>
+      <id>3</id>
+      <valueType>
+        <types>CatalogRef.Counterparties</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>DocumentAmount</name>
+      <title>
+        <key>en</key>
+        <value>Document amount</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Сумма документа</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Kwota dokumentu</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Importe del documento</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Importe del documento</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Belge tutarı</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Importo del documento</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Belegbetrag</value>
+      </title>
+      <id>4</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>PictureIndex</name>
+      <title>
+        <key>en</key>
+        <value>Image index</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Индекс картинки</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Indeks obrazów</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Índice de imagen</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Índice de imagen</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Görüntü endeksi</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Immagine indice</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Bildverzeichnis</value>
+      </title>
+      <id>5</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+  </attributes>
+  <attributes>
+    <name>ExcludedWarehouses</name>
+    <title>
+      <key>en</key>
+      <value>Excluded warehouses</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Исключаемые склады</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wyłączone magazyny</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Almacenes excluidos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Almacenes excluidos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Hariç tutulan ambarlar</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Magazzini esclusi</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Ausgeschlossene Lagerhäuser</value>
+    </title>
+    <id>7</id>
+    <valueType>
+      <types>ValueTable</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <columns>
+      <name>Warehouse</name>
+      <title>
+        <key>en</key>
+        <value>Warehouse</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Склад</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Magazyn</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Almacén</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Almacén</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Ambar</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Magazzino</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Lager</value>
+      </title>
+      <id>1</id>
+      <valueType>
+        <types>CatalogRef.BusinessUnits</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+  </attributes>
+  <attributes>
+    <name>MethodDefinitionVendor</name>
+    <title>
+      <key>en</key>
+      <value>Supplier determination method</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Способ определения поставщика</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Metoda określenia dostawcy</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Método de determinación del proveedor</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Método de determinación del proveedor</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Tedarikçi belirleme yöntemi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Metodo di determinazione del fornitore</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Lieferantenermittlungsmethode</value>
+    </title>
+    <id>8</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>MiddleSalesCalculationPeriod</name>
+    <title>
+      <key>en</key>
+      <value>according to the sales statistics for</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>по статистике продаж за</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>według statystyk sprzedaży za</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>según las estadísticas de ventas para</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>según las estadísticas de ventas para</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>satış istatistiklerine göre</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>secondo le statistiche di vendita per</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>laut der Verkaufsstatistik für</value>
+    </title>
+    <id>10</id>
+    <valueType>
+      <types>StandardPeriod</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>MiddleSalesCalculationPeriod</segments>
+    </settingsSavedData>
+  </attributes>
+  <attributes>
+    <name>ProductsPurchaseMode</name>
+    <title>
+      <key>en</key>
+      <value>Filter by</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Отбор</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Filtruj według</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Filtrar por</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Filtrar por</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Filtre ölçütü</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Filtra per</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Filter</value>
+    </title>
+    <id>11</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>ProductsPurchaseMode</segments>
+    </settingsSavedData>
+  </attributes>
+  <attributes>
+    <name>DaysNumber</name>
+    <title>
+      <key>en</key>
+      <value>Number of days</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Количество дней</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Ilość dni</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Número de días</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Número de días</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Gün sayısı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Numero di giornate</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Anzahl der Tage</value>
+    </title>
+    <id>12</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>DaysNumber</segments>
+    </settingsSavedData>
+  </attributes>
+  <formCommands>
+    <name>CheckAll</name>
+    <title>
+      <key>en</key>
+      <value>Select all</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Выделить все</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wybierz wszystkie</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Seleccionar todo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Seleccionar todo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Tümünü seç</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Seleziona tutto</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Alles auswählen</value>
+    </title>
+    <id>7</id>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.CheckAll</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>CheckAll</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>UncheckAll</name>
+    <title>
+      <key>en</key>
+      <value>Clear all</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Очистить все</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Odznacz wszystko</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Eliminar todo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Eliminar todo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Tümünü temizle</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Cancella tutto</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Alles löschen</value>
+    </title>
+    <id>8</id>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.UncheckAll</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>UncheckAll</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>GenerateOrders</name>
+    <title>
+      <key>en</key>
+      <value>Generate purchase orders</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Сформировать заказы поставщикам</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Generuj zamówienia zakupu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Generar pedidos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Generar pedidos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Satın alma siparişleri oluştur</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Genera ordini di acquisto</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Bestellungen an Lieferanten generieren</value>
+    </title>
+    <id>9</id>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.Document</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>GenerateOrders</name>
+      </handler>
+    </action>
+    <representation>TextPicture</representation>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>FillAndCalculate</name>
+    <title>
+      <key>en</key>
+      <value>Calculate demand</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Рассчитать потребность</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Oblicz zapotrzebowanie</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Calcular demanda</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Calcular demanda</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Talebi hesapla</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Calcola fabbisogno</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Nachfrage berechnen</value>
+    </title>
+    <id>10</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>FillAndCalculate</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>OrderFlagsSet</name>
+    <title>
+      <key>en</key>
+      <value>Check all</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Отметить все</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Sprawdź wszystko</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Marcar todo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Marcar todo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Tümünü işaretle</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Seleziona tutto</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Alle wählen</value>
+    </title>
+    <id>11</id>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.CheckAll</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>OrderFlagsSet</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>RemoveOrdersFlags</name>
+    <title>
+      <key>en</key>
+      <value>Clear check boxes</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Снять флажки</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Usuń zaznaczenie z pól wyboru</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Desmarcar todas casillas de verificación</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Desmarcar todas casillas de verificación</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Onay kutularını temizle</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Deseleziona caselle di controllo</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Alle abwählen</value>
+    </title>
+    <id>12</id>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.UncheckAll</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>RemoveOrdersFlags</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>PostOrders</name>
+    <title>
+      <key>en</key>
+      <value>Post</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Провести</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zatwierdź</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Publicar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Publicar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kaydet</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Pubblica</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Buchen</value>
+    </title>
+    <id>13</id>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.Post</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>PostOrders</name>
+      </handler>
+    </action>
+    <representation>TextPicture</representation>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ShowZeroSales</name>
+    <title>
+      <key>en</key>
+      <value>Show zero sales</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Показать нулевые продажи</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Pokaż zerowe sprzedaży</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Mostrar ventas cero</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Mostrar ventas cero</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Sıfır satışları göster</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Mostra vendite nulle</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Null Verkäufe anzeigen</value>
+    </title>
+    <id>14</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ShowZeroSales</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>OrderEdit</name>
+    <title>
+      <key>en</key>
+      <value>Change</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Изменить</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zmień</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Cambiar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Cambiar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Değiştir</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Modifica</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Ändern</value>
+    </title>
+    <id>15</id>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.Change</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>OrderEdit</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>DeleteOrder</name>
+    <title>
+      <key>en</key>
+      <value>Delete</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Удалить</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Usuń</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Borrar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Borrar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Sil</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Elimina</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Löschen</value>
+    </title>
+    <id>16</id>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.Delete</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>DeleteOrder</name>
+      </handler>
+    </action>
+    <representation>TextPicture</representation>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+  <extInfo xsi:type="form:ObjectFormExtInfo"/>
+</form:Form>

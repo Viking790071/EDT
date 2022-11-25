@@ -1,0 +1,1874 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="91112615-1767-47d9-8493-56f4f6155586">
+  <producedTypes>
+    <selectionType typeId="33db9e73-cf9c-498e-a4e8-0c161f04698e" valueTypeId="19a04750-077e-4586-9441-05a4d33b6911"/>
+    <listType typeId="06b5a0e4-c5bd-4607-98b1-3d0c3fab528d" valueTypeId="6852bb01-d49f-475e-be63-9d1a1b711f9b"/>
+    <managerType typeId="a053e942-3128-44d2-b86e-4aa522fc8fd9" valueTypeId="f96902c3-874a-4ce4-b661-12dea8f85b9f"/>
+    <recordSetType typeId="77354b26-6700-4cfa-bef6-a7a9786a591c" valueTypeId="ed7c5654-ffee-4cec-b8b8-cd32d02c2f94"/>
+    <recordKeyType typeId="d5263227-a6fd-4da7-8abc-3620efee966f" valueTypeId="ed386adb-f135-4b9f-bc41-6cb18b83c059"/>
+    <recordType typeId="63047ebe-7c41-474b-b75d-3c7f499107fc" valueTypeId="17524100-0b9d-47db-8142-9c92704dbd62"/>
+  </producedTypes>
+  <name>Inventory</name>
+  <synonym>
+    <key>en</key>
+    <value>Inventory and expenses</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Запасы и затраты</value>
+  </synonym>
+  <synonym>
+    <key>pl</key>
+    <value>Zapasy i rozchody</value>
+  </synonym>
+  <synonym>
+    <key>es_ES</key>
+    <value>Inventario y gastos</value>
+  </synonym>
+  <synonym>
+    <key>es_CO</key>
+    <value>Inventario y gastos</value>
+  </synonym>
+  <synonym>
+    <key>tr</key>
+    <value>Stok ve giderler</value>
+  </synonym>
+  <synonym>
+    <key>it</key>
+    <value>Scorte e spese</value>
+  </synonym>
+  <synonym>
+    <key>de</key>
+    <value>Bestand und Ausgaben</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>RecordType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>en</key>
+      <value>Period</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Okres</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Período</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Período</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Dönem</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Periodo</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Zeitraum</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>en</key>
+    <value>Stores records on the cost of goods sold (COGS) and landed costs. If the inventory valuation method is Weighted average, the records are added when documents are posted. The &quot;Month-end closing&quot; document is for adjustments only. For example, an adjustment is required when the quantity of goods is 0 and COGS is not equal to 0. If the inventory valuation method is FIFO, the records are added only when the &quot;Month-end closing&quot; document is posted. In this case, the records are based on the data from FIFO registers.</value>
+  </explanation>
+  <explanation>
+    <key>ru</key>
+    <value>Stores records on the cost of goods sold (COGS) and landed costs. If the inventory valuation method is Weighted average, the records are added when documents are posted. The &quot;Month-end closing&quot; document is for adjustments only. For example, an adjustment is required when the quantity of goods is 0 and COGS is not equal to 0. If the inventory valuation method is FIFO, the records are added only when the &quot;Month-end closing&quot; document is posted. In this case, the records are based on the data from FIFO registers.</value>
+  </explanation>
+  <explanation>
+    <key>pl</key>
+    <value>Stores records on the cost of goods sold (COGS) and landed costs. If the inventory valuation method is Weighted average, the records are added when documents are posted. The &quot;Month-end closing&quot; document is for adjustments only. For example, an adjustment is required when the quantity of goods is 0 and COGS is not equal to 0. If the inventory valuation method is FIFO, the records are added only when the &quot;Month-end closing&quot; document is posted. In this case, the records are based on the data from FIFO registers.</value>
+  </explanation>
+  <explanation>
+    <key>es_ES</key>
+    <value>Stores records on the cost of goods sold (COGS) and landed costs. If the inventory valuation method is Weighted average, the records are added when documents are posted. The &quot;Month-end closing&quot; document is for adjustments only. For example, an adjustment is required when the quantity of goods is 0 and COGS is not equal to 0. If the inventory valuation method is FIFO, the records are added only when the &quot;Month-end closing&quot; document is posted. In this case, the records are based on the data from FIFO registers.</value>
+  </explanation>
+  <explanation>
+    <key>es_CO</key>
+    <value>Stores records on the cost of goods sold (COGS) and landed costs. If the inventory valuation method is Weighted average, the records are added when documents are posted. The &quot;Month-end closing&quot; document is for adjustments only. For example, an adjustment is required when the quantity of goods is 0 and COGS is not equal to 0. If the inventory valuation method is FIFO, the records are added only when the &quot;Month-end closing&quot; document is posted. In this case, the records are based on the data from FIFO registers.</value>
+  </explanation>
+  <explanation>
+    <key>tr</key>
+    <value>Stores records on the cost of goods sold (COGS) and landed costs. If the inventory valuation method is Weighted average, the records are added when documents are posted. The &quot;Month-end closing&quot; document is for adjustments only. For example, an adjustment is required when the quantity of goods is 0 and COGS is not equal to 0. If the inventory valuation method is FIFO, the records are added only when the &quot;Month-end closing&quot; document is posted. In this case, the records are based on the data from FIFO registers.</value>
+  </explanation>
+  <explanation>
+    <key>it</key>
+    <value>Stores records on the cost of goods sold (COGS) and landed costs. If the inventory valuation method is Weighted average, the records are added when documents are posted. The &quot;Month-end closing&quot; document is for adjustments only. For example, an adjustment is required when the quantity of goods is 0 and COGS is not equal to 0. If the inventory valuation method is FIFO, the records are added only when the &quot;Month-end closing&quot; document is posted. In this case, the records are based on the data from FIFO registers.</value>
+  </explanation>
+  <explanation>
+    <key>de</key>
+    <value>Stores records on the cost of goods sold (COGS) and landed costs. If the inventory valuation method is Weighted average, the records are added when documents are posted. The &quot;Month-end closing&quot; document is for adjustments only. For example, an adjustment is required when the quantity of goods is 0 and COGS is not equal to 0. If the inventory valuation method is FIFO, the records are added only when the &quot;Month-end closing&quot; document is posted. In this case, the records are based on the data from FIFO registers.</value>
+  </explanation>
+  <resources uuid="f72e33d3-324f-4f94-a330-a919e0f98615">
+    <name>Quantity</name>
+    <synonym>
+      <key>en</key>
+      <value>Quantity</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Ilość</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Cantidad</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Cantidad</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Miktar</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Quantità</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Menge</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="c7062576-207c-44e8-825d-004e5809e5ae">
+    <name>Amount</name>
+    <synonym>
+      <key>en</key>
+      <value>Amount</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Kwota</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Importe</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Importe</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Tutar</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Importo</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Betrag</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="723c51a2-950d-47b3-a310-eccf86ddb493">
+    <name>StructuralUnitCorr</name>
+    <synonym>
+      <key>en</key>
+      <value>Corr. business unit</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Корр. структурная единица</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Kor. oddział</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Correspondiente unidad empresarial</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Correspondiente unidad de negocio</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Karşı departman</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Business Unit attuale</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Korr. Abteilung</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.BusinessUnits</types>
+      <types>CatalogRef.Counterparties</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="510fb9e7-6076-421d-812e-04ce2c0865b6">
+    <name>CorrInventoryAccountType</name>
+    <synonym>
+      <key>en</key>
+      <value>Corr. inventory account type</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Корр. тип счета запасов</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Typ konta zapasów kor</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Tipo de cuenta de inventario correspondiente</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Tipo de cuenta de inventario correspondiente</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İlgili stok hesabı türü</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Scorte corr. tipo di conto</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Korr. Typ von Bestandskonto</value>
+    </synonym>
+    <type>
+      <types>EnumRef.InventoryAccountTypes</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="b352d062-13ff-481c-bcaa-7fde2845ff9e">
+    <name>ProductsCorr</name>
+    <synonym>
+      <key>en</key>
+      <value>Corr. products</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Корр. номенклатура</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Kor. produkty</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Correspondiente productos</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Correspondiente productos</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Karşı ürünler</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Corr. articoli</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Korr. Produkte</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Products</types>
+      <types>CatalogRef.ManufacturingActivities</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="ccbc5e97-ae5e-4a05-9086-f040d546122f">
+    <name>CharacteristicCorr</name>
+    <synonym>
+      <key>en</key>
+      <value>Corr. variant</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Корр. вариант</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Kor. wariant</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Correspondiente variante</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Correspondiente variante</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Karşı değişken</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Variante corr.</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Korr. Variante</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ProductsCharacteristics</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="31e30684-2af2-4456-a4e9-6da295ecc6bf">
+    <name>BatchCorr</name>
+    <synonym>
+      <key>en</key>
+      <value>Corr. batch</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Корр. партия</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Kor. partia</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Correspondiente lote</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Correspondiente lote</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Karşı parti</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Lotto attuale</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Korr. Charge</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ProductsBatches</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="51f5b16c-72e0-4be1-83fb-4f5593dcb75f">
+    <name>OwnershipCorr</name>
+    <synonym>
+      <key>en</key>
+      <value>Corr. ownership</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Корр. владение</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Korr posiadanie</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Corr. propiedad</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Corr. propiedad</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İlgili sahiplik</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Proprietà corr</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Eigentümerschaft anpassen</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.InventoryOwnership</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="e886253b-01d6-40a5-868b-2c4c036d32a0">
+    <name>CustomerCorrOrder</name>
+    <synonym>
+      <key>en</key>
+      <value>Corr. order</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Корр. заказ</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Kor. zamówienie</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Correspondiente orden</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Correspondiente orden</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Karşı sipariş</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Ordine attuale</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Korr. Auftrag</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.SalesOrder</types>
+      <types>DocumentRef.WorkOrder</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="2c531774-a033-4019-99b0-e850354968ce">
+    <name>Specification</name>
+    <synonym>
+      <key>en</key>
+      <value>Bill of materials</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Спецификация</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Specyfikacja materiałowa</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Lista de materiales</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Lista de materiales</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ürün reçetesi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Distinta base</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Stückliste</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.BillsOfMaterials</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="e0727b89-9978-4d83-b189-614117957282">
+    <name>SpecificationCorr</name>
+    <synonym>
+      <key>en</key>
+      <value>Corr. BOM</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Корр. Спецификация</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Kor. specyfikacji</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Correspondiente BOM</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Correspondiente BOM (marca de orden de bytes)</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Karşı ürün reçetesi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Distinta base attuale</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Korr. Stückliste</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.BillsOfMaterials</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="573c3f3b-ea7d-4ff0-acf5-7302cc83893d">
+    <name>CorrSalesOrder</name>
+    <synonym>
+      <key>en</key>
+      <value>Corr. sales order</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Корр. заказ покупателя</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Zamówienie sprzedaży</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Orden de venta correspondiente</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Orden de venta correspondiente</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İlgili satış siparişi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Ordine cliente corrispondente</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Korr. Kundenauftrag</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.SalesOrder</types>
+      <types>DocumentRef.WorkOrder</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="8417ae30-cf7c-491c-bc4f-924782ed7636">
+    <name>SourceDocument</name>
+    <synonym>
+      <key>en</key>
+      <value>Corr. document</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Корр. документ</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Kor. dokument</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Correspondiente documento</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Correspondiente documento</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Karşı evrak</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Documento corrispondente</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Korr. Dokument</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.InventoryWriteOff</types>
+      <types>DocumentRef.SalesInvoice</types>
+      <types>DocumentRef.AccountSalesFromConsignee</types>
+      <types>DocumentRef.InventoryTransfer</types>
+      <types>DocumentRef.SupplierInvoice</types>
+      <types>DocumentRef.SubcontractorOrderIssued</types>
+      <types>DocumentRef.SalesOrder</types>
+      <types>DocumentRef.GoodsReceipt</types>
+      <types>DocumentRef.SubcontractorInvoiceIssued</types>
+      <types>DocumentRef.ShiftClosure</types>
+      <types>DocumentRef.GoodsIssue</types>
+      <types>DocumentRef.WorkOrder</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="99a16a7a-f240-40b7-a73b-ed84a8d83a51">
+    <name>Department</name>
+    <synonym>
+      <key>en</key>
+      <value>Sales department</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение продажи</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Oddział sprzedaży</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Departamento de ventas</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Departamento de ventas</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Satış bölümü</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Reparto vendite</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Verkaufs-Abteilung</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.BusinessUnits</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="c8dff90e-6970-4d60-912a-1cf204b4d650">
+    <name>Responsible</name>
+    <synonym>
+      <key>en</key>
+      <value>Responsible person</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственное лицо</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Osoba odpowiedzialna</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Persona responsable</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Persona responsable</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Sorumlu kişi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Persona responsabile</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Verantwortlicher</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Employees</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="405163c6-de27-45be-b45f-6a76084c09c0">
+    <name>VATRate</name>
+    <synonym>
+      <key>en</key>
+      <value>Tax</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Налог</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Stawka VAT</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Impuesto</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Impuesto</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Vergi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Imposta</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Steuer</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.VATRates</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="54a36129-b64c-4888-9a5f-81ee508770b0">
+    <name>FixedCost</name>
+    <synonym>
+      <key>en</key>
+      <value>Fixed cost</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Фиксированная стоимость</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Ustalona wartość</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Coste fijo</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Coste fijo</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Sabit maliyet</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Costo fisso</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Kosten festgelegt</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="4cf1bffb-8734-4938-b833-35a82c433517">
+    <name>ProductionExpenses</name>
+    <synonym>
+      <key>en</key>
+      <value>Release costs</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Затраты на выпуск</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Koszty produkowania</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Costes de lanzamiento</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Costes de lanzamiento</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Üretim maliyetleri</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Costi di rilascio</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Kosten freigeben</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="b809be2c-c426-4423-8204-09e6d4e68470">
+    <name>Return</name>
+    <synonym>
+      <key>en</key>
+      <value>Return</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Возврат</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Zwrot</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Devolución</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Devolución</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İade</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Restituzione</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Rückgabe</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="5dcd9e7b-6a4a-4979-a654-66ed3db37712">
+    <name>ContentOfAccountingRecord</name>
+    <synonym>
+      <key>en</key>
+      <value>Posting content</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Содержание проводки</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Zatwierdzanie treści</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Envío de contenido</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Envío de contenido</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Kayıt içeriği</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Contenuto della pubblicazione</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Buchung Inhalt</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="38b9c6eb-431c-4a97-8df5-7ef7346de57b">
+    <name>RetailTransferEarningAccounting</name>
+    <synonym>
+      <key>en</key>
+      <value>Transfer to POS (RIM)</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Перемещение в розницу (суммовой учет)</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Przemieszczenie do zamówienia zakupu (rachunkowość sumowa)</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Traslado para TPV (RIM)</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Traslado para TPV (RIM)</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Perakende değeri muhasebesine transfer</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Trasferimento al Punto Vendita (RIM)</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Übergabe an Verkaufsort (RIM)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="4a4d1449-1742-4fd9-baa4-5ec47216e7cf">
+    <name>OfflineRecord</name>
+    <synonym>
+      <key>en</key>
+      <value>Offline record</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Офлайн запись</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Zapis offline</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Registro fuera de línea</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Registro fuera de línea</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Çevrimdışı kayıt</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Registrazione offline</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Offline-Buchung</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="759782b4-60b4-4d63-bb98-e4eb45369983">
+    <name>SalesRep</name>
+    <synonym>
+      <key>en</key>
+      <value>Sales rep</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Торговый представитель</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Przedstawiciel handlowy</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Agente de ventas</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Agente de ventas</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Satış temsilcisi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Agente di vendita</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Vertriebsmitarbeiter</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Employees</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="de5010fa-9164-423e-b7b2-9d16ee4c8148">
+    <name>Counterparty</name>
+    <synonym>
+      <key>en</key>
+      <value>Counterparty</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Kontrahent</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Contraparte</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Contraparte</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Cari hesap</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Controparte</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Geschäftspartner</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Counterparties</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="56a66f7a-ddbd-46b0-8786-bfb03eb776f5">
+    <name>Currency</name>
+    <synonym>
+      <key>en</key>
+      <value>Transaction currency</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта операции</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Waluta transakcji</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Moneda de transacción</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Moneda de transacción</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İşlem para birimi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Valuta della transazione</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Transaktionswährung</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Currencies</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="9a24384a-6d98-4dff-8d7a-8084d05908e9">
+    <name>SalesOrder</name>
+    <synonym>
+      <key>en</key>
+      <value>Sales order</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ покупателя</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Zamówienie sprzedaży</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Orden de ventas</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Orden de ventas</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Satış siparişi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Ordine cliente</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Kundenauftrag</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.SalesOrder</types>
+      <types>DocumentRef.WorkOrder</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="233aa8a4-298d-475e-91e3-dd95ff98c7d8">
+    <name>CostObjectCorr</name>
+    <synonym>
+      <key>en</key>
+      <value>Corr. cost object</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Корр. объект затрат</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Kor. obiekt kosztów</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Objeto de coste correspondiente</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Objeto de coste correspondiente</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İlgili maliyet nesnesi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Costo corrispondente oggetto</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Korr. Kostenträger</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CostObjects</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="b7bffdb6-c8dc-441d-b21a-e8e8f78616f7">
+    <name>DeleteCostObject</name>
+    <synonym>
+      <key>en</key>
+      <value>(not used) Cost object</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Объект затрат</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>(not used) Cost object</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>(not used) Cost object</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>(not used) Cost object</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>(not used) Cost object</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>(not used) Cost object</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>(not used) Cost object</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CostObjects</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="5b9a6b79-7dd0-4a6a-97ec-e9386da37ecf">
+    <name>GLAccount</name>
+    <synonym>
+      <key>en</key>
+      <value>GL account</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Счет учета</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Konto księgowe</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Cuenta del libro mayor</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Cuenta del libro mayor</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Muhasebe hesabı</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Conto mastro</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Hauptbuch-Konto</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.PrimaryChartOfAccounts</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="3e575ffa-f19b-4a88-849b-0e0ffc8c69ca">
+    <name>CorrGLAccount</name>
+    <synonym>
+      <key>en</key>
+      <value>Corr. GL account</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Корр. счет учета</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Kor. konto księgowe</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Correspondiente cuenta del libro mayor</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Correspondiente cuenta del libro mayor</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Karşı muhasebe hesabı</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Conto mastro corrispondente</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Korr. Hauptbuch-Konto</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.PrimaryChartOfAccounts</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="6337a780-8143-4985-af7d-a9e5c490e6bc">
+    <name>IncomeAndExpenseItem</name>
+    <synonym>
+      <key>en</key>
+      <value>Income and expense item</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Статья доходов и расходов</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Pozycja dochodów i rozchodów</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Artículo de ingresos y gastos</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Artículo de ingresos y gastos</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Gelir ve gider kalemi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Voce di entrata e uscita</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Position von Einnahme und Ausgaben</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.IncomeAndExpenseItems</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="191c4528-4425-446f-b531-d044824f39bf">
+    <name>CorrIncomeAndExpenseItem</name>
+    <synonym>
+      <key>en</key>
+      <value>Corr. income and expense item</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Корр. статья доходов и расходов</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Kor. pozycja dochodów i rozchodów</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Artículo de ingresos y gastos correspondiente</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Artículo de ingresos y gastos correspondiente</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İlgili gelir ve gider kalemi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Voce di entrata e uscita corr.</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Korr. Position von Einnahme und Ausgaben</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.IncomeAndExpenseItems</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="74a630ed-a0e3-4e20-874c-32e15365b300">
+    <name>Company</name>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Firma</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Empresa</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Empresa</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İş yeri</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Azienda</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Firma</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Companies</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="1a7ca2b8-ac0e-4185-b0cb-7b196c70ef1e">
+    <name>PresentationCurrency</name>
+    <synonym>
+      <key>en</key>
+      <value>Presentation currency</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта представления отчетности</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Waluta prezentacji</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Moneda de presentación</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Moneda de presentación</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Finansal tablo para birimi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Valuta di presentazione</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Währung für die Berichtserstattung</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Currencies</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="7f9237f1-027e-4670-9ba7-4167ac725dfb">
+    <name>Products</name>
+    <synonym>
+      <key>en</key>
+      <value>Product</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Produkt</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Producto</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Producto</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ürün</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Articolo</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Produkt</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Products</types>
+      <types>CatalogRef.ManufacturingActivities</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="935b3699-2154-4396-beb4-9d3089189c2c">
+    <name>Characteristic</name>
+    <synonym>
+      <key>en</key>
+      <value>Variant</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Wariant</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Variante</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Variante</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Varyant</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Variante</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Variante</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ProductsCharacteristics</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="a9ae35d9-b88e-4668-9df3-9764605093f6">
+    <name>Batch</name>
+    <synonym>
+      <key>en</key>
+      <value>Batch</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Партия</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Partia</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Lote</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Lote</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Parti</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Lotto</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Charge</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ProductsBatches</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="d3b1d782-2f20-4391-8b88-fd21e1e104da">
+    <name>Ownership</name>
+    <synonym>
+      <key>en</key>
+      <value>Ownership</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Владение</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Własność</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Propiedad</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Propiedad</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Sahiplik</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Proprietà</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Eigentumsverhältnisse</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.InventoryOwnership</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="3400ef97-0dfb-4ed4-8038-011261a9ace3">
+    <name>StructuralUnit</name>
+    <synonym>
+      <key>en</key>
+      <value>Business unit</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Jednostka biznesowa</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Unidad empresarial</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Unidad de negocio</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Departman</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Business unit</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Abteilung</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.BusinessUnits</types>
+      <types>CatalogRef.Counterparties</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="04758210-b223-422d-b887-ca301a8affda">
+    <name>CostObject</name>
+    <synonym>
+      <key>en</key>
+      <value>Cost object</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Объект затрат</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Obiekt kosztów</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Objeto de coste</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Objeto de coste</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Maliyet nesnesi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Oggetto di costo</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Kostenträger</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CostObjects</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="c31969be-0502-4a88-aa62-09df4a41fec7">
+    <name>InventoryAccountType</name>
+    <synonym>
+      <key>en</key>
+      <value>Inventory account type</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Тип счета запасов</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Typ konta zapasów</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Tipo de cuenta de inventario</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Tipo de cuenta de inventario</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Stok hesabı türü</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Tipo di conto scorte</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Typ von Bestandskonto</value>
+    </synonym>
+    <type>
+      <types>EnumRef.InventoryAccountTypes</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

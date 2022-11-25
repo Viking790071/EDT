@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f06cb713-43f0-4c77-adf2-f393a18687d3">
+  <producedTypes>
+    <objectType typeId="a6def2fa-48bd-4cef-ab49-a59aa439013c" valueTypeId="e6179628-778d-4f7c-9315-509da95971d8"/>
+    <managerType typeId="fe50e7fc-5cb5-4aa3-b21e-9347a55d63fe" valueTypeId="26f45963-82a6-48d2-a465-11eed9e501cb"/>
+  </producedTypes>
+  <name>GenerateDirectDebits</name>
+  <synonym>
+    <key>en</key>
+    <value>Generate direct debits</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Создать прямые дебетования</value>
+  </synonym>
+  <synonym>
+    <key>pl</key>
+    <value>Wygeneruj polecenia zapłaty</value>
+  </synonym>
+  <synonym>
+    <key>es_ES</key>
+    <value>Generar débito directo</value>
+  </synonym>
+  <synonym>
+    <key>es_CO</key>
+    <value>Generar débito directo</value>
+  </synonym>
+  <synonym>
+    <key>tr</key>
+    <value>Düzenli ödeme oluştur</value>
+  </synonym>
+  <synonym>
+    <key>it</key>
+    <value>Generare debiti diretti</value>
+  </synonym>
+  <synonym>
+    <key>de</key>
+    <value>Lastschriften generieren</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.GenerateDirectDebits.Form.GenerateDirectDebitsForm</defaultForm>
+  <tabularSections uuid="a33f7c11-ddae-485f-9ae3-555c20da5e40">
+    <producedTypes>
+      <objectType typeId="40344b8e-b9a4-4066-acd2-15b92c0b9544" valueTypeId="996e3508-cdb2-48cf-95e8-2e121e0e8168"/>
+      <rowType typeId="d269367a-1fa1-4024-96c6-655722f3b9e1" valueTypeId="94dc2606-ea0b-4027-aafb-ea218305f34a"/>
+    </producedTypes>
+    <name>Invoices</name>
+    <synonym>
+      <key>en</key>
+      <value>Invoices</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Инвойсы</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Faktura sprzedaży</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Facturas</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Facturas</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Faturalar</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Fatture</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Rechnungen</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="5b0fa2df-5ae4-4e34-aea8-0c98640efdc9">
+      <name>Checked</name>
+      <synonym>
+        <key>en</key>
+        <value>Checked</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Проверено</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Sprawdzone</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Revisado</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Revisado</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Kontrol edilmiş</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Verificato</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Überprüft</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="7c37700b-5f03-4296-8a29-2dfc9f6f30ee">
+      <name>Invoice</name>
+      <synonym>
+        <key>en</key>
+        <value>Invoice</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Инвойс</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Faktura</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Factura</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Factura</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Fatura</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Fattura</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Rechnung</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.SalesInvoice</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="5f55d618-b5dc-4ff7-9f47-657ed1b2c037">
+      <name>DirectDebit</name>
+      <synonym>
+        <key>en</key>
+        <value>Direct debit</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Прямое дебетование</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Polecenie zapłaty</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Débito directo</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Débito directo</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Düzenli ödeme</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Debito diretto</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Lastschrift</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.DirectDebit</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="6433ee3f-a097-482b-960a-e76dc6cb6599">
+      <name>Attention</name>
+      <synonym>
+        <key>en</key>
+        <value>Attention</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Внимание</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Uwagi</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Atención</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Atención</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Dikkat</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Attenzione</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Wichtig</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="b2cbd827-da6d-4149-9c32-22f95333c20b">
+      <name>Balance</name>
+      <synonym>
+        <key>en</key>
+        <value>Balance</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Остатки</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Saldo</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Saldo</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Saldo</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Bakiye</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Saldo</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Saldo</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="c927385d-683b-414e-88e4-807bba465ebd">
+    <name>GenerateDirectDebitsForm</name>
+    <synonym>
+      <key>en</key>
+      <value>Generate direct debits form</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Форма создания прямых дебетований</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Wygeneruj formularz polecenia zapłaty</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Generar formulario de débito directo</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Generar formulario de débito directo</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Düzenli ödeme oluşturma formu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Generare modulo debiti diretti</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Lastschriftform generieren</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

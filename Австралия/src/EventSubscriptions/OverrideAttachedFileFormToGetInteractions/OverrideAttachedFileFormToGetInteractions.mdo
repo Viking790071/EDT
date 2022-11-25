@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="37ea0c64-2fec-4c2e-922b-d3a2f01f3e22">
+  <name>OverrideAttachedFileFormToGetInteractions</name>
+  <synonym>
+    <key>ru</key>
+    <value>Override attached file form to receive (Interactions)</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Override attached file form to receive (Interactions)</value>
+  </synonym>
+  <synonym>
+    <key>pl</key>
+    <value>Override attached file form to receive (Interactions)</value>
+  </synonym>
+  <synonym>
+    <key>es_ES</key>
+    <value>Override attached file form to receive (Interactions)</value>
+  </synonym>
+  <synonym>
+    <key>es_CO</key>
+    <value>Override attached file form to receive (Interactions)</value>
+  </synonym>
+  <synonym>
+    <key>tr</key>
+    <value>Override attached file form to receive (Interactions)</value>
+  </synonym>
+  <synonym>
+    <key>it</key>
+    <value>Override attached file form to receive (Interactions)</value>
+  </synonym>
+  <synonym>
+    <key>de</key>
+    <value>Override attached file form to receive (Interactions)</value>
+  </synonym>
+  <comment>ACC:256 Handler in the server module.</comment>
+  <source>
+    <types>CatalogManager.OutgoingEmailAttachedFiles</types>
+    <types>CatalogManager.MeetingAttachedFiles</types>
+    <types>CatalogManager.SMSMessageAttachedFiles</types>
+    <types>CatalogManager.PlannedInteractionAttachedFiles</types>
+    <types>CatalogManager.IncomingEmailAttachedFiles</types>
+    <types>CatalogManager.PhoneCallAttachedFiles</types>
+  </source>
+  <event>FormGetProcessing</event>
+  <handler>CommonModule.FilesOperationsClientServer.DetermineAttachedFileForm</handler>
+</mdclass:EventSubscription>

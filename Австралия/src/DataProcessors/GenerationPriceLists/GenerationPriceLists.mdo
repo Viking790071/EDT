@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f0a83b7c-b290-423c-8ac8-98b0503f8d1b">
+  <producedTypes>
+    <objectType typeId="eaefdf62-0037-4b36-92fb-c0a22cc3ee56" valueTypeId="cd4230fe-c5d1-460b-b46b-cefd3a23ef2c"/>
+    <managerType typeId="7e5c7923-48c8-4f53-b2fa-24b843147386" valueTypeId="ebae498f-7498-4afc-8d48-652fd2b0298c"/>
+  </producedTypes>
+  <name>GenerationPriceLists</name>
+  <synonym>
+    <key>en</key>
+    <value>Print price list</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Печать прайс-листа</value>
+  </synonym>
+  <synonym>
+    <key>pl</key>
+    <value>Wydrukuj cennik</value>
+  </synonym>
+  <synonym>
+    <key>es_ES</key>
+    <value>Imprimir la lista de precio</value>
+  </synonym>
+  <synonym>
+    <key>es_CO</key>
+    <value>Imprimir la lista de precio</value>
+  </synonym>
+  <synonym>
+    <key>tr</key>
+    <value>Fiyat listesini yazdır</value>
+  </synonym>
+  <synonym>
+    <key>it</key>
+    <value>Stampa listino prezzi</value>
+  </synonym>
+  <synonym>
+    <key>de</key>
+    <value>Preisliste drucken</value>
+  </synonym>
+  <defaultForm>DataProcessor.GenerationPriceLists.Form.Form</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <tabularSections uuid="ca396f5a-5542-452b-abed-a9c7596a4a9c">
+    <producedTypes>
+      <objectType typeId="c6f408cc-f3c6-43ce-a875-b5c3082a8580" valueTypeId="73896877-75cb-4c98-9989-c0c9fbd48964"/>
+      <rowType typeId="1d6b869a-3d4b-4392-b131-379db6930275" valueTypeId="390bb10f-f864-4613-9543-4bc69e1a7ab7"/>
+    </producedTypes>
+    <name>PriceTypes</name>
+    <synonym>
+      <key>en</key>
+      <value>Price types</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Типы цен</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Rodzaje cen</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Tipos de precios</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Tipos de precios</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Fiyat türleri</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Tipologie di prezzo</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Preistypen</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="b1fee30d-6768-4084-8445-76814c46914b">
+      <name>Ref</name>
+      <synonym>
+        <key>en</key>
+        <value>Ref</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Ссылка</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Odnośnik</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Referencia</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Referencia</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Ref</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Rif</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Referenz</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.PriceTypes</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="8fa1c014-f390-4125-a606-7fee0a78165f">
+    <producedTypes>
+      <objectType typeId="2a1a20bc-d922-4f8e-a9df-d1e4a4d22bfd" valueTypeId="54661b83-2c4f-4f9a-88d0-12e09dcb9f19"/>
+      <rowType typeId="9d7d60e0-fb5f-4e5e-bd85-0bb6eaf2811e" valueTypeId="0c964add-7419-4afc-ad5c-2489e62fdefe"/>
+    </producedTypes>
+    <name>PriceGroups</name>
+    <synonym>
+      <key>en</key>
+      <value>Price groups</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Ценовые группы</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Grupy cenowe</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Grupos de precios</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Grupos de precios</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Fiyat grupları</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Gruppi di prezzo</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Preisgruppen</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="6dd55a5b-1948-4200-98bd-f896eaa9ee59">
+      <name>Ref</name>
+      <synonym>
+        <key>en</key>
+        <value>Ref</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Ссылка</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Odnośnik</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Referencia</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Referencia</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Ref</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Rif</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Referenz</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.PriceGroups</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceForm>Catalog.PriceGroups.Form.ChoiceForm</choiceForm>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="061c4dc4-e6f9-450e-ab62-447feec30355">
+    <producedTypes>
+      <objectType typeId="c7944142-da3b-409e-8408-ad2c6ac1b13c" valueTypeId="fcc2ecc1-ac7d-4724-9d37-c7454e6e0adb"/>
+      <rowType typeId="db11d8ee-6f44-4ef5-9238-af178650261f" valueTypeId="0fed6993-c131-42a9-a757-c57884608602"/>
+    </producedTypes>
+    <name>Products</name>
+    <synonym>
+      <key>en</key>
+      <value>Products</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Produkty</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Productos</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Productos</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ürünler</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Articoli</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Produkte</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="afcc4962-0374-40c5-a52f-0ebf3cb240f2">
+      <name>Ref</name>
+      <synonym>
+        <key>en</key>
+        <value>Ref</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Ссылка</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Odnośnik</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Referencia</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Referencia</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Ref</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Rif</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Referenz</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Products</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceFoldersAndItems>FoldersAndItems</choiceFoldersAndItems>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="8d9b54fd-d284-4264-bff2-98a4e76b664b">
+    <name>Form</name>
+    <synonym>
+      <key>en</key>
+      <value>Print price list</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Печать прайс-листа</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Wydrukuj cennik</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Imprimir la lista de precio</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Imprimir la lista de precio</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Fiyat listesini yazdır</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Stampa listino prezzi</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Preisliste drucken</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2f45e478-a1d2-462a-b1f6-e10f623ae789">
+    <name>FormMessageBox</name>
+    <synonym>
+      <key>en</key>
+      <value>Form message box</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Окно сообщения формы</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Formularz okna komunikatu</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Formulario de caja de mensajes</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Formulario de caja de mensajes</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Form mesaj kutusu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Modulo box messaggio</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Formular-Nachrichtenfeld</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="f1e42194-0c29-4043-89c9-2ddd825009c5">
+    <name>PF_MXL_List</name>
+    <synonym>
+      <key>en</key>
+      <value>Price list as a list</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Прайс-лист списком</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Cennik jako lista</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Lista de precios como lista</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Lista de precios como lista</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Liste olarak fiyat listesi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Listino prezzo come un elenco</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Preisliste als Liste</value>
+    </synonym>
+  </templates>
+  <templates uuid="ff205677-b256-4c84-9a12-8dab6e61fa1e">
+    <name>PF_MXL_TwoColumns</name>
+    <synonym>
+      <key>en</key>
+      <value>Price list as a columns</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Прайс-лист колонкой</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Cennik jako kolumny</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Lista de precios como columnas</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Lista de precios como columnas</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Sütun bazında fiyat listesi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Listino prezzi come una colonna</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Preisliste als Spalten</value>
+    </synonym>
+  </templates>
+  <templates uuid="4185ae28-e5a3-4b46-8817-17062bb44d46">
+    <name>PF_MXL_Tiles</name>
+    <synonym>
+      <key>en</key>
+      <value>Price list as a tiles</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Прайс-лист плиткой</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Cennik jako siatka</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Lista de precios como iconos</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Lista de precios como iconos</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Karo olarak fiyat listesi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Listino prezzi come una tessera</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Preisliste als Kacheln</value>
+    </synonym>
+  </templates>
+  <templates uuid="b0b06fe2-8d40-4390-94cb-6a83823d96ab">
+    <name>ProductsHierarchy</name>
+    <synonym>
+      <key>en</key>
+      <value>Products hierarchy</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Иерархия номенклатуры</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Hierarchia produktów</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Jerarquía de productos</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Jerarquía de productos</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ürünler hiyerarşisi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Gerarchia articoli</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Produkthierarchie</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="a41c6188-657b-4d6b-94e0-15e4b33f34ab">
+    <name>ProductsAndCharacteristicsHierarchy</name>
+    <synonym>
+      <key>en</key>
+      <value>Products and variants hierarchy</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Структура подчиненности номенклатуры и вариантов</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Hierarchia produktów i wariantów</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Jerarquía de productos y variantes</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Jerarquía de productos y variantes</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ürünler ve varyantlar hiyerarşisi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Gerarchia articoli e varianti</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Hierarchie von Produkten und Varianten</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="55923783-7133-4ba1-85a6-0de4cec4ee8b">
+    <name>PriceGroupHierarchy</name>
+    <synonym>
+      <key>en</key>
+      <value>Price group hierarchy</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Иерархия ценовой группы</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Grupa cenowa hierarchia</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Jerarquía de grupo de precios</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Jerarquía de grupo de precios</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Fiyat grubu hiyerarşisi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Gerarchia gruppo prezzo</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Hierarchie der Preisgruppe</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="c52c050c-cc37-4f77-8fae-69d4eaf90c40">
+    <name>PriceGroupHierarchyProductsAndCharacteristics</name>
+    <synonym>
+      <key>en</key>
+      <value>Price group hierarchy products and variants</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Структура подчиненности ценовой группы номенклатура и варианты</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Hierarchia grup cenowych produktów i wariantów </value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Productos y variantes de la jerarquía del grupo de precios</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Productos y variantes de la jerarquía del grupo de precios</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Fiyat grubu hiyerarşi ürünleri ve varyantlar</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Gerarchia gruppo prezzo articoli e varianti</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Preisgruppe Hierarchie von Produkten und Varianten</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="b58185a2-0298-429b-9b21-bf042f9461c0">
+    <name>ProductsCategoriesHierarchy</name>
+    <synonym>
+      <key>en</key>
+      <value>Products categories hierarchy</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Иерархия категорий номенклатуры</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Hierarchia kategorii produktów</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Jerarquía de categorías de productos</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Jerarquía de categorías de productos</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ürün kategorileri hiyerarşisi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Gerarchia categorie articolo</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Hierarchie der Produktkategorien</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="c3ccf437-329d-49ad-a598-e6810b81cf63">
+    <name>ProductsCategoriesHierarchyAndCharacteristics</name>
+    <synonym>
+      <key>en</key>
+      <value>Products categories hierarchy and variants</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Структура подчиненности номенклатурных групп и вариантов</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Hierarchia i warianty kategorii produktów</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Jerarquía y variantes de las categorías de productos</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Jerarquía y variantes de las categorías de productos</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ürün kategorileri hiyerarşisi ve varyantlar</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Gerarchia e varianti categorie articoli</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Hierarchie und Varianten von Produktkategorien</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:DataProcessor>

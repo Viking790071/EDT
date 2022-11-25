@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="57069b56-f732-41c0-9a75-cbdb1e88556c">
+  <name>FillAccessValuesSetsForTabularSectionsInteractionDocuments</name>
+  <synonym>
+    <key>ru</key>
+    <value>Fill in access value sets of tabular sections of interaction documents</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Fill in access value sets of tabular sections of interaction documents</value>
+  </synonym>
+  <synonym>
+    <key>pl</key>
+    <value>Fill in access value sets of tabular sections of interaction documents</value>
+  </synonym>
+  <synonym>
+    <key>es_ES</key>
+    <value>Fill in access value sets of tabular sections of interaction documents</value>
+  </synonym>
+  <synonym>
+    <key>es_CO</key>
+    <value>Fill in access value sets of tabular sections of interaction documents</value>
+  </synonym>
+  <synonym>
+    <key>tr</key>
+    <value>Fill in access value sets of tabular sections of interaction documents</value>
+  </synonym>
+  <synonym>
+    <key>it</key>
+    <value>Fill in access value sets of tabular sections of interaction documents</value>
+  </synonym>
+  <synonym>
+    <key>de</key>
+    <value>Fill in access value sets of tabular sections of interaction documents</value>
+  </synonym>
+  <comment>The subscription is created while deploying the Access management subsystem to fill in the AccessValuesSets tabular section of the metadata objects where it was created for the #ByValuesSets template</comment>
+  <source>
+    <types>DocumentObject.Meeting</types>
+    <types>DocumentObject.IncomingEmail</types>
+    <types>DocumentObject.PlannedInteraction</types>
+    <types>DocumentObject.SMSMessage</types>
+    <types>DocumentObject.PhoneCall</types>
+    <types>DocumentObject.OutgoingEmail</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.InteractionsEvents.FillAccessValuesSetsForTabularSections</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,3362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>DataSource1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>DataSet1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>SalesOrder</dataPath>
+			<field>SalesOrder</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Sales order</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказ покупателя</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Zamówienie sprzedaży</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Orden de ventas</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Orden de ventas</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Satış siparişi</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Ordine cliente</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Kundenauftrag</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.SalesOrder</v8:Type>
+			</valueType>
+			<inputParameters>
+				<dcscor:item>
+					<dcscor:parameter>ChoiceParameterLinks</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:ChoiceParameterLinks">
+						<dcscor:item>
+							<dcscor:choiceParameter>Filter.Company</dcscor:choiceParameter>
+							<dcscor:value>Company</dcscor:value>
+							<dcscor:mode xmlns:d8p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d8p1:LinkedValueChangeMode">Clear</dcscor:mode>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:choiceParameter>Filter.Counterparty</dcscor:choiceParameter>
+							<dcscor:value>Counterparty</dcscor:value>
+							<dcscor:mode xmlns:d8p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d8p1:LinkedValueChangeMode">Clear</dcscor:mode>
+						</dcscor:item>
+					</dcscor:value>
+				</dcscor:item>
+			</inputParameters>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Products</dataPath>
+			<field>Products</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Product</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Produkt</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Producto</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Producto</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Ürün</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Articolo</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Produkt</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Company</dataPath>
+			<field>Company</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Company</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Firma</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Empresa</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Empresa</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>İş yeri</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Azienda</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Firma</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Characteristic</dataPath>
+			<field>Characteristic</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Variant</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вариант</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Wariant</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Variante</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Variante</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Varyant</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Variante</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Variante</v8:content>
+				</v8:item>
+			</title>
+			<inputParameters>
+				<dcscor:item>
+					<dcscor:parameter>ChoiceParameterLinks</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:ChoiceParameterLinks">
+						<dcscor:item>
+							<dcscor:choiceParameter>Products</dcscor:choiceParameter>
+							<dcscor:value>Products</dcscor:value>
+							<dcscor:mode xmlns:d8p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d8p1:LinkedValueChangeMode">Clear</dcscor:mode>
+						</dcscor:item>
+					</dcscor:value>
+				</dcscor:item>
+			</inputParameters>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>SupplySource</dataPath>
+			<field>SupplySource</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Supply source</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Источник обеспечения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Źródło zaopatrzenia</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Fuente de suministro</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Fuente de suministro</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Tedarik kaynağı</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Fonte di approvvigionamento</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Bezugsquelle</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ShipmentDate</dataPath>
+			<field>ShipmentDate</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Shipment date</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата отгрузки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Data wysyłki</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Fecha de envío</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Fecha de envío</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Sevkiyat tarihi</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Data di spedizione</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Versanddatum</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>StructuralUnit</dataPath>
+			<field>StructuralUnit</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Business unit</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подразделение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Jednostka biznesowa</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Unidad empresarial</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Unidad de Negocio</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Departman</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Business unit</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Abteilung</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Batch</dataPath>
+			<field>Batch</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Batch</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Партия</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Partia</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Lote</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Lote</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Parti</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Lotto</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Charge</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ordered</dataPath>
+			<field>Ordered</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Ordered</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В заказе</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Zamówiono</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Pedido</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Pedido</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Sipariş edilmiş</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Ordinati</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Bestellt</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Format</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Counterparty</dataPath>
+			<field>Counterparty</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Customer</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Покупатель</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Nabywca</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Cliente</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Cliente</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Müşteri</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Cliente</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Kunde</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Remaining</dataPath>
+			<field>Remaining</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Remaining</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Осталось отгрузить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Pozostało</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Restante</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Restante</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Kalan</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Rimanente</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Zum Versenden</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Format</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Shipped</dataPath>
+			<field>Shipped</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Shipped</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отгружено</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Wysłano</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Enviado</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Enviado</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Sevk edilen</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Spedito</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Versendet</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Format</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Reserved</dataPath>
+			<field>Reserved</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Reserved</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зарезервировано</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Zarezerwowano</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Reservado</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Reservado</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Rezerve</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Riservato</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Reserviert</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Format</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ReceiptDate</dataPath>
+			<field>ReceiptDate</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Receipt date</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата поступления</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Data przyjęcia</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Fecha de entrega</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Fecha de entrega</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Teslim alma tarihi</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Data di ricevimento</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Eingangsdatum</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ProductionOrders</dataPath>
+			<field>ProductionOrders</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Production orders</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказы на производство</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Zlecenia produkcyjne</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Órdenes de producción</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Órdenes de producción</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Üretim emirleri</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Ordini di produzione</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Produktionsaufträge</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Format</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>KitOrders</dataPath>
+			<field>KitOrders</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Kit orders</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказы на комплектацию</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Zamówienia zestawów</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Pedidos del Kit</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Pedidos del Kit</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Set siparişleri</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Ordini kit</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Kit-Aufträge</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Format</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>PurchaseOrders</dataPath>
+			<field>PurchaseOrders</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Purchase orders</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказы поставщикам</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Zamówienie zakupu</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Órdenes de compra</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Órdenes de compra</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Satın alma siparişleri</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Ordini di acquisto</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Bestellungen an Lieferanten</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Format</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ReceiptDateGroupField</dataPath>
+			<field>ReceiptDateGroupField</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Receipt date</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата поступления</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Data przyjęcia</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Fecha de entrega</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Fecha de entrega</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Teslim alma tarihi</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Data di ricevimento</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Eingangsdatum</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ReportShipped</dataPath>
+			<field>ReportShipped</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Shipped (Rep. unit)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отгружено (единицы отчета)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Wysłane (j.m. raportu)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Enviado (Unidad de medida del informe)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Enviado (Unidad de medida del informe)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Sevk edilen (Rapor birimi)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Spediti (Unità di report)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Versendet (Ber. Maßeinheit)</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Format</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ReportOrdered</dataPath>
+			<field>ReportOrdered</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Ordered (Rep. unit)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказано (единицы отчета)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Zamówiono (j.m. raportu)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Pedido (Unidad de medida del informe)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Pedido (Unidad de medida del informe)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Sipariş edilen (Rapor birimi)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Ordinati (Unit report)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Bestellt (Ber. Maßeinheit)</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Format</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ReportProductionOrders</dataPath>
+			<field>ReportProductionOrders</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Production orders (Rep. unit)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказы на производство (единицы отчета)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Zlecenia produkcyjne (j.m. raportu)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Órdenes de producción (Unidad de medida del informe)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Órdenes de producción (Unidad de medida del informe)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Üretim emirleri (Rapor birimi)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Ordini di produzione (Unità di report)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Produktionsaufträge (Ber. Maßeinheit)</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Format</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ReportRemaining</dataPath>
+			<field>ReportRemaining</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Remaining (Rep. unit)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток (единицы отчета)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Pozostaje (j.m. raportu)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Restante (Unidad de medida del informe)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Restante (Unidad de medida del informe)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Kalan (Rapor birimi)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Rimanente (Unità di report)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Verbleibend (Ber. Maßeinheit)</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Format</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ReportReserved</dataPath>
+			<field>ReportReserved</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Reserved (Rep. unit)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зарезервировано (единицы отчета)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Zarezerwowane (j.m. raportu)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Reservado (Unidad de medida del informe)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Reservado (Unidad de medida del informe)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Rezerve (Rapor birimi)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Riservato (Unità di report)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Reserviert (Ber. Maßeinheit)</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Format</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ReportKitOrders</dataPath>
+			<field>ReportKitOrders</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Kit orders (Rep. unit)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказы на комплектацию (единицы отчета)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Zamówienia zestawu (j.m. raportu)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Pedidos del Kit (Unidad de medida del informe)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Pedidos del Kit (Unidad de medida del informe)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Set siparişleri (Rapor birimi)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Ordini di kit (unità di report)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Kit-Bestellungen (Ber. Maßeinheit)</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Format</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ReportPurchaseOrders</dataPath>
+			<field>ReportPurchaseOrders</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Purchase orders (Rep. unit)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказы поставщику (единицы отчета)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Zamówienia zakupu (j.m. raportu)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Órdenes de compra (Unidad de medida del informe)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Órdenes de compra (Unidad de medida del informe)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Satın alma siparişleri (Rapor birimi)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Ordini di acquisto (Unità di report)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Bestellungen an Lieferanten (Ber. Maßeinheit)</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Format</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>NFD=3</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ConversionRate</dataPath>
+			<field>ConversionRate</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Rep. unit conversion rate</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коэффициент преобразования единицы отчета</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>pl</v8:lang>
+					<v8:content>Współczynnik j.m. raportu</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_ES</v8:lang>
+					<v8:content>Tasa de conversión de la unidad de medida del informe</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es_CO</v8:lang>
+					<v8:content>Tasa de conversión de la unidad de medida del informe</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Rapor birimi dönüştürme oranı</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>it</v8:lang>
+					<v8:content>Tasso di conversione dell'unità di report</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>de</v8:lang>
+					<v8:content>Ber. Maßeinheit Konversionsrate</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Department</dataPath>
+			<field>Department</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>SalesInvoice</dataPath>
+			<field>SalesInvoice</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>PresentationCurrency</dataPath>
+			<field>PresentationCurrency</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Contract</dataPath>
+			<field>Contract</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>VATRate</dataPath>
+			<field>VATRate</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Responsible</dataPath>
+			<field>Responsible</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<dataSource>DataSource1</dataSource>
+		<query>SELECT ALLOWED
+	SalesOrders.Company AS Company,
+	SalesOrders.SalesOrder AS SalesOrder,
+	SalesOrders.Products AS Products,
+	CASE
+		WHEN CatalogProducts.ConversionRate = 0
+			THEN 1
+		ELSE CatalogProducts.ConversionRate
+	END AS ConversionRate,
+	SalesOrders.Characteristic AS Characteristic,
+	SUM(SalesOrders.Quantity) AS Quantity,
+	SalesOrders.ShipmentDate AS ShipmentDate,
+	DocSalesOrder.Counterparty AS Counterparty
+INTO TT_SalesOrders
+FROM
+	AccumulationRegister.SalesOrders AS SalesOrders
+		INNER JOIN Document.SalesOrder AS DocSalesOrder
+		ON SalesOrders.Recorder = DocSalesOrder.Ref
+		LEFT JOIN Catalog.Products AS CatalogProducts
+		ON SalesOrders.Products = CatalogProducts.Ref
+WHERE
+	SalesOrders.Active
+	AND SalesOrders.RecordType = VALUE(AccumulationRecordType.Receipt)
+	AND SalesOrders.Quantity &gt; 0
+	AND NOT DocSalesOrder.Closed
+
+GROUP BY
+	SalesOrders.Company,
+	SalesOrders.SalesOrder,
+	SalesOrders.Products,
+	CASE
+		WHEN CatalogProducts.ConversionRate = 0
+			THEN 1
+		ELSE CatalogProducts.ConversionRate
+	END,
+	SalesOrders.Characteristic,
+	SalesOrders.ShipmentDate,
+	DocSalesOrder.Counterparty
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT
+	TT_SalesOrders.Company AS Company,
+	TT_SalesOrders.SalesOrder AS SalesOrder,
+	TT_SalesOrders.Counterparty AS Counterparty,
+	TT_SalesOrders.Products AS Products,
+	TT_SalesOrders.ConversionRate AS ConversionRate,
+	TT_SalesOrders.Characteristic AS Characteristic,
+	MAX(TT_SalesOrders.ShipmentDate) AS ShipmentDate
+INTO TT_SalesOrdersMaxShipmentDates
+FROM
+	TT_SalesOrders AS TT_SalesOrders
+
+GROUP BY
+	TT_SalesOrders.Products,
+	TT_SalesOrders.ConversionRate,
+	TT_SalesOrders.SalesOrder,
+	TT_SalesOrders.Company,
+	TT_SalesOrders.Characteristic,
+	TT_SalesOrders.Counterparty
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT ALLOWED
+	SalesOrdersBalance.Company AS Company,
+	SalesOrdersBalance.SalesOrder AS SalesOrder,
+	SalesOrdersBalance.Products AS Products,
+	SalesOrdersBalance.Characteristic AS Characteristic,
+	SalesOrdersBalance.QuantityBalance AS Quantity
+INTO TT_SalesOrdersBalances
+FROM
+	AccumulationRegister.SalesOrders.Balance(
+			,
+			(Company, SalesOrder, Products, Characteristic) IN
+				(SELECT
+					TT_SalesOrders.Company AS Company,
+					TT_SalesOrders.SalesOrder AS SalesOrder,
+					TT_SalesOrders.Products AS Products,
+					TT_SalesOrders.Characteristic AS Characteristic
+				FROM
+					TT_SalesOrders AS TT_SalesOrders)) AS SalesOrdersBalance
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT
+	TT_SalesOrders.Company AS Company,
+	TT_SalesOrders.SalesOrder AS SalesOrder,
+	TT_SalesOrders.Products AS Products,
+	TT_SalesOrders.ConversionRate AS ConversionRate,
+	TT_SalesOrders.Characteristic AS Characteristic,
+	TT_SalesOrders.Quantity AS Quantity,
+	TT_SalesOrders.ShipmentDate AS ShipmentDate,
+	TT_SalesOrders.Counterparty AS Counterparty,
+	SUM(TT_SalesOrdersCumulative.Quantity) AS QuantityCumulative
+INTO TT_SalesOrdersCumulative
+FROM
+	TT_SalesOrders AS TT_SalesOrders
+		INNER JOIN TT_SalesOrders AS TT_SalesOrdersCumulative
+		ON TT_SalesOrders.Company = TT_SalesOrdersCumulative.Company
+			AND TT_SalesOrders.SalesOrder = TT_SalesOrdersCumulative.SalesOrder
+			AND TT_SalesOrders.Products = TT_SalesOrdersCumulative.Products
+			AND TT_SalesOrders.Characteristic = TT_SalesOrdersCumulative.Characteristic
+			AND TT_SalesOrders.ShipmentDate &lt;= TT_SalesOrdersCumulative.ShipmentDate
+
+GROUP BY
+	TT_SalesOrders.SalesOrder,
+	TT_SalesOrders.ShipmentDate,
+	TT_SalesOrders.Counterparty,
+	TT_SalesOrders.Characteristic,
+	TT_SalesOrders.Company,
+	TT_SalesOrders.Products,
+	TT_SalesOrders.ConversionRate,
+	TT_SalesOrders.Quantity
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT
+	TT_SalesOrdersCumulative.Company AS Company,
+	TT_SalesOrdersCumulative.SalesOrder AS SalesOrder,
+	TT_SalesOrdersCumulative.Products AS Products,
+	TT_SalesOrdersCumulative.ConversionRate AS ConversionRate,
+	TT_SalesOrdersCumulative.Characteristic AS Characteristic,
+	TT_SalesOrdersCumulative.Quantity AS Quantity,
+	TT_SalesOrdersCumulative.ShipmentDate AS ShipmentDate,
+	TT_SalesOrdersCumulative.ShipmentDate = TT_SalesOrdersMaxShipmentDates.ShipmentDate AS IsMaxShipmentDate,
+	TT_SalesOrdersCumulative.Counterparty AS Counterparty,
+	CASE
+		WHEN TT_SalesOrdersBalances.Quantity IS NULL
+			THEN 0
+		WHEN TT_SalesOrdersBalances.Quantity &gt; TT_SalesOrdersCumulative.QuantityCumulative
+			THEN TT_SalesOrdersCumulative.Quantity
+		ELSE TT_SalesOrdersBalances.Quantity - (TT_SalesOrdersCumulative.QuantityCumulative - TT_SalesOrdersCumulative.Quantity)
+	END AS QuantityBalance
+INTO TT_SalesOrdersWithBalances
+FROM
+	TT_SalesOrdersCumulative AS TT_SalesOrdersCumulative
+		LEFT JOIN TT_SalesOrdersBalances AS TT_SalesOrdersBalances
+		ON TT_SalesOrdersCumulative.Company = TT_SalesOrdersBalances.Company
+			AND TT_SalesOrdersCumulative.SalesOrder = TT_SalesOrdersBalances.SalesOrder
+			AND TT_SalesOrdersCumulative.Products = TT_SalesOrdersBalances.Products
+			AND TT_SalesOrdersCumulative.Characteristic = TT_SalesOrdersBalances.Characteristic
+			AND (TT_SalesOrdersBalances.Quantity &gt; TT_SalesOrdersCumulative.QuantityCumulative - TT_SalesOrdersCumulative.Quantity)
+		LEFT JOIN TT_SalesOrdersMaxShipmentDates AS TT_SalesOrdersMaxShipmentDates
+		ON TT_SalesOrdersCumulative.Company = TT_SalesOrdersMaxShipmentDates.Company
+			AND TT_SalesOrdersCumulative.SalesOrder = TT_SalesOrdersMaxShipmentDates.SalesOrder
+			AND TT_SalesOrdersCumulative.Products = TT_SalesOrdersMaxShipmentDates.Products
+			AND TT_SalesOrdersCumulative.Characteristic = TT_SalesOrdersMaxShipmentDates.Characteristic
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT ALLOWED
+	ReservedProductsBalance.Company AS Company,
+	ReservedProductsBalance.SalesOrder AS SalesOrder,
+	ReservedProductsBalance.Products AS Products,
+	ReservedProductsBalance.Characteristic AS Characteristic,
+	ReservedProductsBalance.QuantityBalance AS Quantity
+INTO TT_ReservesBalances
+FROM
+	AccumulationRegister.ReservedProducts.Balance(
+			,
+			(Company, SalesOrder, Products, Characteristic) IN
+				(SELECT
+					TT_SalesOrders.Company AS Company,
+					TT_SalesOrders.SalesOrder AS SalesOrder,
+					TT_SalesOrders.Products AS Products,
+					TT_SalesOrders.Characteristic AS Characteristic
+				FROM
+					TT_SalesOrders AS TT_SalesOrders)) AS ReservedProductsBalance
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT ALLOWED
+	GoodsInvoicedNotShippedBalance.Company AS Company,
+	GoodsInvoicedNotShippedBalance.SalesOrder AS SalesOrder,
+	GoodsInvoicedNotShippedBalance.Products AS Products,
+	GoodsInvoicedNotShippedBalance.Characteristic AS Characteristic,
+	GoodsInvoicedNotShippedBalance.QuantityBalance AS Quantity
+INTO TT_GoodsInvoicedNotShippedBalances
+FROM
+	AccumulationRegister.GoodsInvoicedNotShipped.Balance(
+			,
+			(Company, SalesOrder, Products, Characteristic) IN
+				(SELECT
+					TT_SalesOrders.Company AS Company,
+					TT_SalesOrders.SalesOrder AS SalesOrder,
+					TT_SalesOrders.Products AS Products,
+					TT_SalesOrders.Characteristic AS Characteristic
+				FROM
+					TT_SalesOrders AS TT_SalesOrders)) AS GoodsInvoicedNotShippedBalance
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT
+	TT_SalesOrders.Company AS Company,
+	TT_SalesOrders.SalesOrder AS SalesOrder,
+	TT_SalesOrders.Products AS Products,
+	TT_SalesOrders.ConversionRate AS ConversionRate,
+	TT_SalesOrders.Characteristic AS Characteristic,
+	TT_SalesOrders.ShipmentDate AS ShipmentDate,
+	TT_SalesOrders.IsMaxShipmentDate AS IsMaxShipmentDate,
+	TT_SalesOrders.Counterparty AS Counterparty,
+	TT_SalesOrders.Quantity AS Quantity,
+	TT_SalesOrders.QuantityBalance AS QuantityBalance,
+	SUM(TT_SalesOrdersCumulative.QuantityBalance) AS QuantityBalanceCumulative
+INTO TT_SalesOrdersWithBalancesCumulative
+FROM
+	TT_SalesOrdersWithBalances AS TT_SalesOrders
+		INNER JOIN TT_SalesOrdersWithBalances AS TT_SalesOrdersCumulative
+		ON TT_SalesOrders.Company = TT_SalesOrdersCumulative.Company
+			AND TT_SalesOrders.SalesOrder = TT_SalesOrdersCumulative.SalesOrder
+			AND TT_SalesOrders.Products = TT_SalesOrdersCumulative.Products
+			AND TT_SalesOrders.Characteristic = TT_SalesOrdersCumulative.Characteristic
+			AND TT_SalesOrders.ShipmentDate &gt;= TT_SalesOrdersCumulative.ShipmentDate
+
+GROUP BY
+	TT_SalesOrders.SalesOrder,
+	TT_SalesOrders.ShipmentDate,
+	TT_SalesOrders.IsMaxShipmentDate,
+	TT_SalesOrders.Counterparty,
+	TT_SalesOrders.Characteristic,
+	TT_SalesOrders.Company,
+	TT_SalesOrders.Products,
+	TT_SalesOrders.ConversionRate,
+	TT_SalesOrders.Quantity,
+	TT_SalesOrders.QuantityBalance
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT
+	TT_SalesOrdersCumulative.Company AS Company,
+	TT_SalesOrdersCumulative.SalesOrder AS SalesOrder,
+	TT_SalesOrdersCumulative.Products AS Products,
+	TT_SalesOrdersCumulative.ConversionRate AS ConversionRate,
+	TT_SalesOrdersCumulative.Characteristic AS Characteristic,
+	TT_SalesOrdersCumulative.Quantity AS Quantity,
+	TT_SalesOrdersCumulative.QuantityBalance AS QuantityBalance,
+	TT_SalesOrdersCumulative.ShipmentDate AS ShipmentDate,
+	TT_SalesOrdersCumulative.Counterparty AS Counterparty,
+	CASE
+		WHEN TT_ReservesBalances.Quantity IS NULL
+			THEN 0
+		WHEN TT_ReservesBalances.Quantity &gt; TT_SalesOrdersCumulative.QuantityBalanceCumulative
+				AND NOT TT_SalesOrdersCumulative.IsMaxShipmentDate
+			THEN TT_SalesOrdersCumulative.QuantityBalance
+		ELSE TT_ReservesBalances.Quantity - (TT_SalesOrdersCumulative.QuantityBalanceCumulative - TT_SalesOrdersCumulative.QuantityBalance)
+	END AS QuantityReserve,
+	ISNULL(TT_GoodsInvoicedNotShippedBalances.Quantity, 0) AS NotShippedQuantityBalance
+INTO TT_SalesOrdersWithBalancesAndReserves
+FROM
+	TT_SalesOrdersWithBalancesCumulative AS TT_SalesOrdersCumulative
+		LEFT JOIN TT_ReservesBalances AS TT_ReservesBalances
+		ON TT_SalesOrdersCumulative.Company = TT_ReservesBalances.Company
+			AND TT_SalesOrdersCumulative.SalesOrder = TT_ReservesBalances.SalesOrder
+			AND TT_SalesOrdersCumulative.Products = TT_ReservesBalances.Products
+			AND TT_SalesOrdersCumulative.Characteristic = TT_ReservesBalances.Characteristic
+			AND (TT_ReservesBalances.Quantity &gt; TT_SalesOrdersCumulative.QuantityBalanceCumulative - TT_SalesOrdersCumulative.QuantityBalance)
+		LEFT JOIN TT_GoodsInvoicedNotShippedBalances AS TT_GoodsInvoicedNotShippedBalances
+		ON TT_SalesOrdersCumulative.Company = TT_GoodsInvoicedNotShippedBalances.Company
+			AND TT_SalesOrdersCumulative.SalesOrder = TT_GoodsInvoicedNotShippedBalances.SalesOrder
+			AND TT_SalesOrdersCumulative.Products = TT_GoodsInvoicedNotShippedBalances.Products
+			AND TT_SalesOrdersCumulative.Characteristic = TT_GoodsInvoicedNotShippedBalances.Characteristic
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT ALLOWED
+	BackordersBalance.Company AS Company,
+	BackordersBalance.SalesOrder AS SalesOrder,
+	BackordersBalance.Products AS Products,
+	BackordersBalance.Characteristic AS Characteristic,
+	BackordersBalance.SupplySource AS SupplySource,
+	BackordersBalance.QuantityBalance AS Quantity
+INTO TT_BackordersBalances
+FROM
+	AccumulationRegister.Backorders.Balance(
+			,
+			(Company, SalesOrder, Products, Characteristic) IN
+				(SELECT
+					TT_SalesOrders.Company AS Company,
+					TT_SalesOrders.SalesOrder AS SalesOrder,
+					TT_SalesOrders.Products AS Products,
+					TT_SalesOrders.Characteristic AS Characteristic
+				FROM
+					TT_SalesOrders AS TT_SalesOrders)) AS BackordersBalance
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT ALLOWED
+	TT_BackordersBalancesPurchase.Company AS Company,
+	TT_BackordersBalancesPurchase.SalesOrder AS SalesOrder,
+	TT_BackordersBalancesPurchase.Products AS Products,
+	TT_BackordersBalancesPurchase.Characteristic AS Characteristic,
+	PurchaseOrder.ReceiptDate AS ReceiptDate,
+	TT_BackordersBalancesPurchase.Quantity AS PurchaseOrders,
+	0 AS ProductionOrders,
+	0 AS KitOrders
+INTO TT_ReplenishmentUngrouped
+FROM
+	TT_BackordersBalances AS TT_BackordersBalancesPurchase
+		INNER JOIN Document.PurchaseOrder AS PurchaseOrder
+		ON TT_BackordersBalancesPurchase.SupplySource = PurchaseOrder.Ref
+
+// begin Drive.FullVersion
+UNION ALL
+
+SELECT
+	TT_BackordersBalancesPurchase.Company,
+	TT_BackordersBalancesPurchase.SalesOrder,
+	TT_BackordersBalancesPurchase.Products,
+	TT_BackordersBalancesPurchase.Characteristic,
+	ProductionOrder.Finish,
+	0,
+	TT_BackordersBalancesPurchase.Quantity,
+	0
+FROM
+	TT_BackordersBalances AS TT_BackordersBalancesPurchase
+		INNER JOIN Document.ProductionOrder AS ProductionOrder
+		ON TT_BackordersBalancesPurchase.SupplySource = ProductionOrder.Ref
+// end Drive.FullVersion
+
+UNION ALL
+
+SELECT
+	TT_BackordersBalancesPurchase.Company,
+	TT_BackordersBalancesPurchase.SalesOrder,
+	TT_BackordersBalancesPurchase.Products,
+	TT_BackordersBalancesPurchase.Characteristic,
+	KitOrder.Finish,
+	0,
+	0,
+	TT_BackordersBalancesPurchase.Quantity
+FROM
+	TT_BackordersBalances AS TT_BackordersBalancesPurchase
+		INNER JOIN Document.KitOrder AS KitOrder
+		ON TT_BackordersBalancesPurchase.SupplySource = KitOrder.Ref
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT
+	TT_ReplenishmentUngrouped.Company AS Company,
+	TT_ReplenishmentUngrouped.SalesOrder AS SalesOrder,
+	TT_ReplenishmentUngrouped.Products AS Products,
+	TT_ReplenishmentUngrouped.Characteristic AS Characteristic,
+	TT_ReplenishmentUngrouped.ReceiptDate AS ReceiptDate,
+	SUM(TT_ReplenishmentUngrouped.PurchaseOrders) AS PurchaseOrders,
+	SUM(TT_ReplenishmentUngrouped.ProductionOrders) AS ProductionOrders,
+	SUM(TT_ReplenishmentUngrouped.KitOrders) AS KitOrders
+INTO TT_Replenishment
+FROM
+	TT_ReplenishmentUngrouped AS TT_ReplenishmentUngrouped
+
+GROUP BY
+	TT_ReplenishmentUngrouped.Company,
+	TT_ReplenishmentUngrouped.Characteristic,
+	TT_ReplenishmentUngrouped.Products,
+	TT_ReplenishmentUngrouped.ReceiptDate,
+	TT_ReplenishmentUngrouped.SalesOrder
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT
+	TT_SalesOrders.Company AS Company,
+	TT_SalesOrders.SalesOrder AS SalesOrder,
+	TT_SalesOrders.Products AS Products,
+	TT_SalesOrders.ConversionRate AS ConversionRate,
+	TT_SalesOrders.Characteristic AS Characteristic,
+	TT_SalesOrders.ShipmentDate AS ShipmentDate,
+	TT_SalesOrders.Counterparty AS Counterparty,
+	TT_SalesOrders.QuantityBalance - TT_SalesOrders.QuantityReserve AS QuantityReplenish,
+	SUM(TT_SalesOrdersCumulative.QuantityBalance - TT_SalesOrdersCumulative.QuantityReserve) AS QuantityReplenishCumulative
+INTO TT_SalesOrdersReplenishCumulative
+FROM
+	TT_SalesOrdersWithBalancesAndReserves AS TT_SalesOrders
+		INNER JOIN TT_SalesOrdersWithBalancesAndReserves AS TT_SalesOrdersCumulative
+		ON TT_SalesOrders.Company = TT_SalesOrdersCumulative.Company
+			AND TT_SalesOrders.SalesOrder = TT_SalesOrdersCumulative.SalesOrder
+			AND TT_SalesOrders.Products = TT_SalesOrdersCumulative.Products
+			AND TT_SalesOrders.Characteristic = TT_SalesOrdersCumulative.Characteristic
+			AND TT_SalesOrders.ShipmentDate &gt;= TT_SalesOrdersCumulative.ShipmentDate
+
+GROUP BY
+	TT_SalesOrders.SalesOrder,
+	TT_SalesOrders.ShipmentDate,
+	TT_SalesOrders.Counterparty,
+	TT_SalesOrders.Characteristic,
+	TT_SalesOrders.Company,
+	TT_SalesOrders.Products,
+	TT_SalesOrders.ConversionRate,
+	TT_SalesOrders.Quantity,
+	TT_SalesOrders.QuantityBalance,
+	TT_SalesOrders.QuantityReserve,
+	TT_SalesOrders.QuantityBalance - TT_SalesOrders.QuantityReserve
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT
+	TT_Replenishment.Company AS Company,
+	TT_Replenishment.SalesOrder AS SalesOrder,
+	TT_Replenishment.Products AS Products,
+	TT_Replenishment.Characteristic AS Characteristic,
+	TT_Replenishment.ReceiptDate AS ReceiptDate,
+	TT_Replenishment.PurchaseOrders AS PurchaseOrders,
+	TT_Replenishment.ProductionOrders AS ProductionOrders,
+	TT_Replenishment.KitOrders AS KitOrders,
+	TT_Replenishment.PurchaseOrders + TT_Replenishment.ProductionOrders + TT_Replenishment.KitOrders AS QuantityReplenishment,
+	SUM(TT_ReplenishmentCumulative.PurchaseOrders + TT_ReplenishmentCumulative.ProductionOrders + TT_ReplenishmentCumulative.KitOrders) AS QuantityReplenishmentCumulative
+INTO TT_ReplenishmentCumulative
+FROM
+	TT_Replenishment AS TT_Replenishment
+		INNER JOIN TT_Replenishment AS TT_ReplenishmentCumulative
+		ON TT_Replenishment.Company = TT_ReplenishmentCumulative.Company
+			AND TT_Replenishment.SalesOrder = TT_ReplenishmentCumulative.SalesOrder
+			AND TT_Replenishment.Products = TT_ReplenishmentCumulative.Products
+			AND TT_Replenishment.Characteristic = TT_ReplenishmentCumulative.Characteristic
+			AND TT_Replenishment.ReceiptDate &gt;= TT_ReplenishmentCumulative.ReceiptDate
+
+GROUP BY
+	TT_Replenishment.Company,
+	TT_Replenishment.SalesOrder,
+	TT_Replenishment.Characteristic,
+	TT_Replenishment.Products,
+	TT_Replenishment.ReceiptDate,
+	TT_Replenishment.PurchaseOrders,
+	TT_Replenishment.ProductionOrders,
+	TT_Replenishment.KitOrders,
+	TT_Replenishment.PurchaseOrders + TT_Replenishment.ProductionOrders + TT_Replenishment.KitOrders
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT
+	TT_SalesOrdersReplenishCumulative.Company AS Company,
+	TT_SalesOrdersReplenishCumulative.SalesOrder AS SalesOrder,
+	TT_SalesOrdersReplenishCumulative.Counterparty AS Counterparty,
+	TT_SalesOrdersReplenishCumulative.Products AS Products,
+	TT_SalesOrdersReplenishCumulative.ConversionRate AS ConversionRate,
+	TT_SalesOrdersReplenishCumulative.Characteristic AS Characteristic,
+	TT_SalesOrdersReplenishCumulative.ShipmentDate AS ShipmentDate,
+	TT_ReplenishmentCumulative.ReceiptDate AS ReceiptDate,
+	CASE
+		WHEN TT_ReplenishmentCumulative.QuantityReplenishmentCumulative - TT_ReplenishmentCumulative.QuantityReplenishment + TT_ReplenishmentCumulative.KitOrders &gt; TT_SalesOrdersReplenishCumulative.QuantityReplenishCumulative - TT_SalesOrdersReplenishCumulative.QuantityReplenish
+			THEN CASE
+					WHEN TT_SalesOrdersReplenishCumulative.QuantityReplenishCumulative &gt; TT_ReplenishmentCumulative.QuantityReplenishmentCumulative - TT_ReplenishmentCumulative.QuantityReplenishment + TT_ReplenishmentCumulative.KitOrders
+						THEN TT_ReplenishmentCumulative.QuantityReplenishmentCumulative - TT_ReplenishmentCumulative.QuantityReplenishment + TT_ReplenishmentCumulative.KitOrders
+					ELSE TT_SalesOrdersReplenishCumulative.QuantityReplenishCumulative
+				END - CASE
+					WHEN TT_SalesOrdersReplenishCumulative.QuantityReplenishCumulative - TT_SalesOrdersReplenishCumulative.QuantityReplenish &gt; TT_ReplenishmentCumulative.QuantityReplenishmentCumulative - TT_ReplenishmentCumulative.QuantityReplenishment
+						THEN TT_SalesOrdersReplenishCumulative.QuantityReplenishCumulative - TT_SalesOrdersReplenishCumulative.QuantityReplenish
+					ELSE TT_ReplenishmentCumulative.QuantityReplenishmentCumulative - TT_ReplenishmentCumulative.QuantityReplenishment
+				END
+		ELSE 0
+	END AS KitOrders,
+	CASE
+		WHEN TT_ReplenishmentCumulative.QuantityReplenishmentCumulative - TT_ReplenishmentCumulative.QuantityReplenishment + TT_ReplenishmentCumulative.KitOrders + TT_ReplenishmentCumulative.ProductionOrders &gt; TT_SalesOrdersReplenishCumulative.QuantityReplenishCumulative - TT_SalesOrdersReplenishCumulative.QuantityReplenish
+				AND TT_ReplenishmentCumulative.QuantityReplenishmentCumulative - TT_ReplenishmentCumulative.QuantityReplenishment + TT_ReplenishmentCumulative.KitOrders &lt; TT_SalesOrdersReplenishCumulative.QuantityReplenishCumulative
+			THEN CASE
+					WHEN TT_SalesOrdersReplenishCumulative.QuantityReplenishCumulative &gt; TT_ReplenishmentCumulative.QuantityReplenishmentCumulative - TT_ReplenishmentCumulative.QuantityReplenishment + TT_ReplenishmentCumulative.KitOrders + TT_ReplenishmentCumulative.ProductionOrders
+						THEN TT_ReplenishmentCumulative.QuantityReplenishmentCumulative - TT_ReplenishmentCumulative.QuantityReplenishment + TT_ReplenishmentCumulative.KitOrders + TT_ReplenishmentCumulative.ProductionOrders
+					ELSE TT_SalesOrdersReplenishCumulative.QuantityReplenishCumulative
+				END - CASE
+					WHEN TT_SalesOrdersReplenishCumulative.QuantityReplenishCumulative - TT_SalesOrdersReplenishCumulative.QuantityReplenish &gt; TT_ReplenishmentCumulative.QuantityReplenishmentCumulative - TT_ReplenishmentCumulative.QuantityReplenishment + TT_ReplenishmentCumulative.KitOrders
+						THEN TT_SalesOrdersReplenishCumulative.QuantityReplenishCumulative - TT_SalesOrdersReplenishCumulative.QuantityReplenish
+					ELSE TT_ReplenishmentCumulative.QuantityReplenishmentCumulative - TT_ReplenishmentCumulative.QuantityReplenishment + TT_ReplenishmentCumulative.KitOrders
+				END
+		ELSE 0
+	END AS ProductionOrders,
+	CASE
+		WHEN TT_ReplenishmentCumulative.QuantityReplenishmentCumulative - TT_ReplenishmentCumulative.QuantityReplenishment + TT_ReplenishmentCumulative.KitOrders + TT_ReplenishmentCumulative.ProductionOrders &lt; TT_SalesOrdersReplenishCumulative.QuantityReplenishCumulative
+			THEN CASE
+					WHEN TT_SalesOrdersReplenishCumulative.QuantityReplenishCumulative &gt; TT_ReplenishmentCumulative.QuantityReplenishmentCumulative
+						THEN TT_ReplenishmentCumulative.QuantityReplenishmentCumulative
+					ELSE TT_SalesOrdersReplenishCumulative.QuantityReplenishCumulative
+				END - CASE
+					WHEN TT_SalesOrdersReplenishCumulative.QuantityReplenishCumulative - TT_SalesOrdersReplenishCumulative.QuantityReplenish &gt; TT_ReplenishmentCumulative.QuantityReplenishmentCumulative - TT_ReplenishmentCumulative.QuantityReplenishment + TT_ReplenishmentCumulative.KitOrders + TT_ReplenishmentCumulative.ProductionOrders
+						THEN TT_SalesOrdersReplenishCumulative.QuantityReplenishCumulative - TT_SalesOrdersReplenishCumulative.QuantityReplenish
+					ELSE TT_ReplenishmentCumulative.QuantityReplenishmentCumulative - TT_ReplenishmentCumulative.QuantityReplenishment + TT_ReplenishmentCumulative.KitOrders + TT_ReplenishmentCumulative.ProductionOrders
+				END
+		ELSE 0
+	END AS PurchaseOrders
+INTO TT_AllocatedReplenishment
+FROM
+	TT_SalesOrdersReplenishCumulative AS TT_SalesOrdersReplenishCumulative
+		INNER JOIN TT_ReplenishmentCumulative AS TT_ReplenishmentCumulative
+		ON TT_SalesOrdersReplenishCumulative.Company = TT_ReplenishmentCumulative.Company
+			AND TT_SalesOrdersReplenishCumulative.SalesOrder = TT_ReplenishmentCumulative.SalesOrder
+			AND TT_SalesOrdersReplenishCumulative.Products = TT_ReplenishmentCumulative.Products
+			AND TT_SalesOrdersReplenishCumulative.Characteristic = TT_ReplenishmentCumulative.Characteristic
+			AND (TT_SalesOrdersReplenishCumulative.QuantityReplenishCumulative - TT_SalesOrdersReplenishCumulative.QuantityReplenish &lt; TT_ReplenishmentCumulative.QuantityReplenishmentCumulative)
+			AND (TT_SalesOrdersReplenishCumulative.QuantityReplenishCumulative &gt; TT_ReplenishmentCumulative.QuantityReplenishmentCumulative - TT_ReplenishmentCumulative.QuantityReplenishment)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT
+	TT_AllocatedReplenishment.Company AS Company,
+	TT_AllocatedReplenishment.SalesOrder AS SalesOrder,
+	TT_AllocatedReplenishment.Products AS Products,
+	TT_AllocatedReplenishment.Characteristic AS Characteristic,
+	TT_AllocatedReplenishment.ReceiptDate AS ReceiptDate,
+	SUM(TT_AllocatedReplenishment.KitOrders) AS KitOrders,
+	SUM(TT_AllocatedReplenishment.ProductionOrders) AS ProductionOrders,
+	SUM(TT_AllocatedReplenishment.PurchaseOrders) AS PurchaseOrders
+INTO TT_AllocatedReplenishmentGrouped
+FROM
+	TT_AllocatedReplenishment AS TT_AllocatedReplenishment
+
+GROUP BY
+	TT_AllocatedReplenishment.SalesOrder,
+	TT_AllocatedReplenishment.Products,
+	TT_AllocatedReplenishment.ConversionRate,
+	TT_AllocatedReplenishment.Characteristic,
+	TT_AllocatedReplenishment.ReceiptDate,
+	TT_AllocatedReplenishment.Company
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT
+	TT_Replenishment.Company AS Company,
+	TT_Replenishment.SalesOrder AS SalesOrder,
+	TT_Replenishment.Products AS Products,
+	TT_Replenishment.Characteristic AS Characteristic,
+	TT_Replenishment.ReceiptDate AS ReceiptDate,
+	TT_Replenishment.PurchaseOrders - ISNULL(TT_AllocatedReplenishmentGrouped.PurchaseOrders, 0) AS PurchaseOrders,
+	TT_Replenishment.ProductionOrders - ISNULL(TT_AllocatedReplenishmentGrouped.ProductionOrders, 0) AS ProductionOrders,
+	TT_Replenishment.KitOrders - ISNULL(TT_AllocatedReplenishmentGrouped.KitOrders, 0) AS KitOrders
+INTO TT_UnallocatedReplenishment
+FROM
+	TT_Replenishment AS TT_Replenishment
+		LEFT JOIN TT_AllocatedReplenishmentGrouped AS TT_AllocatedReplenishmentGrouped
+		ON TT_Replenishment.Company = TT_AllocatedReplenishmentGrouped.Company
+			AND TT_Replenishment.SalesOrder = TT_AllocatedReplenishmentGrouped.SalesOrder
+			AND TT_Replenishment.Products = TT_AllocatedReplenishmentGrouped.Products
+			AND TT_Replenishment.Characteristic = TT_AllocatedReplenishmentGrouped.Characteristic
+			AND TT_Replenishment.ReceiptDate = TT_AllocatedReplenishmentGrouped.ReceiptDate
+WHERE
+	(TT_Replenishment.PurchaseOrders - ISNULL(TT_AllocatedReplenishmentGrouped.PurchaseOrders, 0) &gt; 0
+			OR TT_Replenishment.ProductionOrders - ISNULL(TT_AllocatedReplenishmentGrouped.ProductionOrders, 0) &gt; 0
+			OR TT_Replenishment.KitOrders - ISNULL(TT_AllocatedReplenishmentGrouped.KitOrders, 0) &gt; 0)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT
+	TT_SalesOrders.Company AS Company,
+	TT_SalesOrders.SalesOrder AS SalesOrder,
+	TT_SalesOrders.Counterparty AS Counterparty,
+	TT_SalesOrders.Products AS Products,
+	TT_SalesOrders.ConversionRate AS ConversionRate,
+	TT_SalesOrders.Characteristic AS Characteristic,
+	TT_SalesOrders.ShipmentDate AS ShipmentDate,
+	NULL AS ReceiptDate,
+	NULL AS ReceiptDateGroupField,
+	TT_SalesOrders.Quantity AS Ordered,
+	TT_SalesOrders.Quantity / TT_SalesOrders.ConversionRate AS ReportOrdered,
+	TT_SalesOrders.QuantityBalance + TT_SalesOrders.NotShippedQuantityBalance AS Remaining,
+	(TT_SalesOrders.QuantityBalance + TT_SalesOrders.NotShippedQuantityBalance) / TT_SalesOrders.ConversionRate AS ReportRemaining,
+	TT_SalesOrders.Quantity - TT_SalesOrders.QuantityBalance - TT_SalesOrders.NotShippedQuantityBalance AS Shipped,
+	(TT_SalesOrders.Quantity - TT_SalesOrders.QuantityBalance - TT_SalesOrders.NotShippedQuantityBalance) / TT_SalesOrders.ConversionRate AS ReportShipped,
+	TT_SalesOrders.QuantityReserve AS Reserved,
+	TT_SalesOrders.QuantityReserve / TT_SalesOrders.ConversionRate AS ReportReserved,
+	0 AS KitOrders,
+	0 AS ReportKitOrders,
+	0 AS ProductionOrders,
+	0 AS ReportProductionOrders,
+	0 AS PurchaseOrders,
+	0 AS ReportPurchaseOrders
+FROM
+	TT_SalesOrdersWithBalancesAndReserves AS TT_SalesOrders
+
+UNION ALL
+
+SELECT
+	TT_AllocatedReplenishment.Company,
+	TT_AllocatedReplenishment.SalesOrder,
+	TT_AllocatedReplenishment.Counterparty,
+	TT_AllocatedReplenishment.Products,
+	TT_AllocatedReplenishment.ConversionRate,
+	TT_AllocatedReplenishment.Characteristic,
+	TT_AllocatedReplenishment.ShipmentDate,
+	TT_AllocatedReplenishment.ReceiptDate,
+	TT_AllocatedReplenishment.ReceiptDate,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	TT_AllocatedReplenishment.KitOrders,
+	TT_AllocatedReplenishment.KitOrders / TT_AllocatedReplenishment.ConversionRate,
+	TT_AllocatedReplenishment.ProductionOrders,
+	TT_AllocatedReplenishment.ProductionOrders / TT_AllocatedReplenishment.ConversionRate,
+	TT_AllocatedReplenishment.PurchaseOrders,
+	TT_AllocatedReplenishment.PurchaseOrders / TT_AllocatedReplenishment.ConversionRate
+FROM
+	TT_AllocatedReplenishment AS TT_AllocatedReplenishment
+
+UNION ALL
+
+SELECT
+	TT_SalesOrdersMaxShipmentDates.Company,
+	TT_SalesOrdersMaxShipmentDates.SalesOrder,
+	TT_SalesOrdersMaxShipmentDates.Counterparty,
+	TT_SalesOrdersMaxShipmentDates.Products,
+	TT_SalesOrdersMaxShipmentDates.ConversionRate,
+	TT_SalesOrdersMaxShipmentDates.Characteristic,
+	TT_SalesOrdersMaxShipmentDates.ShipmentDate,
+	TT_UnallocatedReplenishment.ReceiptDate,
+	TT_UnallocatedReplenishment.ReceiptDate,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	TT_UnallocatedReplenishment.KitOrders,
+	TT_UnallocatedReplenishment.KitOrders / TT_SalesOrdersMaxShipmentDates.ConversionRate,
+	TT_UnallocatedReplenishment.ProductionOrders,
+	TT_UnallocatedReplenishment.ProductionOrders / TT_SalesOrdersMaxShipmentDates.ConversionRate,
+	TT_UnallocatedReplenishment.PurchaseOrders,
+	TT_UnallocatedReplenishment.PurchaseOrders / TT_SalesOrdersMaxShipmentDates.ConversionRate
+FROM
+	TT_SalesOrdersMaxShipmentDates AS TT_SalesOrdersMaxShipmentDates
+		INNER JOIN TT_UnallocatedReplenishment AS TT_UnallocatedReplenishment
+		ON TT_SalesOrdersMaxShipmentDates.Company = TT_UnallocatedReplenishment.Company
+			AND TT_SalesOrdersMaxShipmentDates.SalesOrder = TT_UnallocatedReplenishment.SalesOrder
+			AND TT_SalesOrdersMaxShipmentDates.Products = TT_UnallocatedReplenishment.Products
+			AND TT_SalesOrdersMaxShipmentDates.Characteristic = TT_UnallocatedReplenishment.Characteristic</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>DemandBalance</dataPath>
+		<expression>0</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Demand balance</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Требуемый остаток</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>pl</v8:lang>
+				<v8:content>Saldo zapotrzebowania</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_ES</v8:lang>
+				<v8:content>Saldo de la demanda</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_CO</v8:lang>
+				<v8:content>Saldo de la demanda</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>tr</v8:lang>
+				<v8:content>Talep bakiyesi</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>it</v8:lang>
+				<v8:content>Saldo del fabbisogno</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>de</v8:lang>
+				<v8:content>Bedarfsbilanz</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Format</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>NFD=3</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>NFD=3</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>NFD=3</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>NFD=3</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>NFD=3</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>NFD=3</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>NFD=3</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>NFD=3</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ReportDemandBalance</dataPath>
+		<expression>0</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Demand balance (Rep. unit)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Требуемый остаток (единицы отчета)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>pl</v8:lang>
+				<v8:content>Saldo zapotrzebowania (j.m. raportu)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_ES</v8:lang>
+				<v8:content>Saldo de la demanda (Unidad de medida del informe)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_CO</v8:lang>
+				<v8:content>Saldo de la demanda (Unidad de medida del informe)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>tr</v8:lang>
+				<v8:content>Talep bakiyesi (Rapor birimi)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>it</v8:lang>
+				<v8:content>Saldo del fabbisogno (Unità di report)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>de</v8:lang>
+				<v8:content>Bedarfsbilanz (Ber. Maßeinheit)</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Format</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>NFD=3</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>NFD=3</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>pl</v8:lang>
+						<v8:content>NFD=3</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_ES</v8:lang>
+						<v8:content>NFD=3</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>es_CO</v8:lang>
+						<v8:content>NFD=3</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>tr</v8:lang>
+						<v8:content>NFD=3</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>it</v8:lang>
+						<v8:content>NFD=3</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>de</v8:lang>
+						<v8:content>NFD=3</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<totalField>
+		<dataPath>KitOrders</dataPath>
+		<expression>Sum(KitOrders)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Ordered</dataPath>
+		<expression>Sum(Ordered)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ProductionOrders</dataPath>
+		<expression>Sum(ProductionOrders)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>PurchaseOrders</dataPath>
+		<expression>Sum(PurchaseOrders)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ReceiptDate</dataPath>
+		<expression>Max(ReceiptDate)</expression>
+		<group>Characteristic</group>
+		<group>Products</group>
+		<group>Products Hierarchy</group>
+		<group>ReceiptDateGroupField</group>
+		<group>ShipmentDate</group>
+	</totalField>
+	<totalField>
+		<dataPath>Remaining</dataPath>
+		<expression>Sum(Remaining)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Reserved</dataPath>
+		<expression>Sum(Reserved)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Shipped</dataPath>
+		<expression>Sum(Shipped)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>DemandBalance</dataPath>
+		<expression>Sum(Remaining) - Sum(Reserved) - Sum(PurchaseOrders) - Sum(ProductionOrders) - Sum(KitOrders)</expression>
+		<group>Characteristic</group>
+		<group>Company</group>
+		<group>ConversionRate</group>
+		<group>Counterparty</group>
+		<group>Counterparty Hierarchy</group>
+		<group>Products</group>
+		<group>Products Hierarchy</group>
+		<group>SalesOrder</group>
+		<group>ShipmentDate</group>
+		<group>Overall</group>
+	</totalField>
+	<totalField>
+		<dataPath>DemandBalance</dataPath>
+		<expression>0</expression>
+		<group>ReceiptDateGroupField</group>
+	</totalField>
+	<totalField>
+		<dataPath>ReportKitOrders</dataPath>
+		<expression>Sum(ReportKitOrders)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ReportOrdered</dataPath>
+		<expression>Sum(ReportOrdered)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ReportProductionOrders</dataPath>
+		<expression>Sum(ReportProductionOrders)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ReportPurchaseOrders</dataPath>
+		<expression>Sum(ReportPurchaseOrders)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ReportRemaining</dataPath>
+		<expression>Sum(ReportRemaining)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ReportReserved</dataPath>
+		<expression>Sum(ReportReserved)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ReportShipped</dataPath>
+		<expression>Sum(ReportShipped)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ReportDemandBalance</dataPath>
+		<expression>(Sum(Remaining) - Sum(Reserved) - Sum(PurchaseOrders) - Sum(ProductionOrders) - Sum(KitOrders)) / ConversionRate</expression>
+		<group>Characteristic</group>
+		<group>Company</group>
+		<group>ConversionRate</group>
+		<group>Counterparty</group>
+		<group>Counterparty Hierarchy</group>
+		<group>Products</group>
+		<group>Products Hierarchy</group>
+		<group>SalesOrder</group>
+		<group>ShipmentDate</group>
+		<group>Overall</group>
+	</totalField>
+	<totalField>
+		<dataPath>ReportDemandBalance</dataPath>
+		<expression>0</expression>
+		<group>ReceiptDateGroupField</group>
+	</totalField>
+	<totalField>
+		<dataPath>ReceiptDate</dataPath>
+		<expression>DateTime(1, 1, 1)</expression>
+		<group>Company</group>
+		<group>Counterparty</group>
+		<group>Counterparty Hierarchy</group>
+		<group>SalesOrder</group>
+		<group>Overall</group>
+	</totalField>
+	<parameter>
+		<name>TitleOutput</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Display title</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Выводить заголовок</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>pl</v8:lang>
+				<v8:content>Pokazywać nagłówek</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_ES</v8:lang>
+				<v8:content>Visualizar el título</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_CO</v8:lang>
+				<v8:content>Visualizar el título</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>tr</v8:lang>
+				<v8:content>Başlığı göster</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>it</v8:lang>
+				<v8:content>Visualizzare titolo</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>de</v8:lang>
+				<v8:content>Titel anzeigen</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>false</useRestriction>
+		<availableAsField>false</availableAsField>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>Period</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Period</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>pl</v8:lang>
+				<v8:content>Okres</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_ES</v8:lang>
+				<v8:content>Período</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_CO</v8:lang>
+				<v8:content>Período</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>tr</v8:lang>
+				<v8:content>Dönem</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>it</v8:lang>
+				<v8:content>Periodo</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>de</v8:lang>
+				<v8:content>Zeitraum</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Default</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Sales orders analysis</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Анализ заказов покупателей</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>pl</v8:lang>
+				<v8:content>Analiza zamówień sprzedaży</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_ES</v8:lang>
+				<v8:content>Análisis de órdenes de ventas</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_CO</v8:lang>
+				<v8:content>Análisis de órdenes de ventas</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>tr</v8:lang>
+				<v8:content>Satış siparişleri analizi</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>it</v8:lang>
+				<v8:content>Analisi del completamento degli ordini cliente</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>de</v8:lang>
+				<v8:content>Analyse der Kundenaufträge</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Sales</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Продажи</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>Sprzedaż</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>Ventas</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>Ventas</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Satış</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>Vendite</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Verkäufe</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Ordered</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ReportOrdered</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Shipped</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ReportShipped</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Remaining</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ReportRemaining</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Reserved</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>ReportReserved</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Replenishment</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пополнение</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>Uzupełnianie</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>Reposición</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>Reposición</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Stok yenileme</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>Rifornimento</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Auffüllung</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ReceiptDate</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>PurchaseOrders</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ReportPurchaseOrders</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ProductionOrders</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ReportProductionOrders</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>KitOrders</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ReportKitOrders</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>DemandBalance</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>ReportDemandBalance</dcsset:field>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>28c314bc-c705-44a5-9fab-61135e09a0c3</dcsset:userSettingID>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Company</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Catalog.Companies.EmptyRef</dcsset:right>
+					<dcsset:userSettingID>c91f34db-3cc9-4519-892c-67a4dcb8f45b</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Counterparty</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Catalog.Counterparties.EmptyRef</dcsset:right>
+					<dcsset:userSettingID>049b19ce-bc28-4cc3-a594-0cfce2939733</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">SalesOrder</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Document.SalesOrder.EmptyRef</dcsset:right>
+					<dcsset:userSettingID>b37a2ed7-9893-4074-a098-1bbf022667cb</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Products</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>03623d55-8b2b-45ff-8be6-4c92d7f8a83f</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>079138fd-b51f-4095-b4d3-0c2b18b016bc</dcsset:userSettingID>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>TitleOutput</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>0aca91a0-1d57-4272-a1e9-0daf5a7dd770</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>SalesOrder</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Products</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ShipmentDate</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>a0eff7a5-29cb-47cb-a088-95c706714e42</dcsset:userSettingID>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection/>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ShipmentDate</dcsset:left>
+							<dcsset:comparisonType>Less</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">ReceiptDate</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>TextColor</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>TitleOutput</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Title</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Sales orders analysis</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Анализ заказов покупателей</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>Analiza realizacji zamówień sprzedaży</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>Análisis de órdenes de ventas</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>Análisis de órdenes de ventas</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Satış siparişleri analizi</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>Analisi del completamento degli ordini cliente</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Analyse der Kundenaufträge</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>DataParametersOutput</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>FilterOutput</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>SalesOrder</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Products</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Products.MeasurementUnit</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ShipmentDate</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ReceiptDateGroupField</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ReceiptDateGroupField</dcsset:left>
+								<dcsset:comparisonType>Filled</dcsset:comparisonType>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:outputParameters>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>FilterOutput</dcscor:parameter>
+								<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+							</dcscor:item>
+						</dcsset:outputParameters>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+			<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+			<dcsset:itemsUserSettingID>73e61b59-3ae4-44fe-8c2e-5b172d452a2e</dcsset:itemsUserSettingID>
+		</dcsset:settings>
+	</settingsVariant>
+	<settingsVariant>
+		<dcsset:name>DefaultNoDates</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Sales orders analysis (without dates)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Анализ заказов покупателей (без дат)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>pl</v8:lang>
+				<v8:content>Analiza zamówień sprzedaży (bez dat)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_ES</v8:lang>
+				<v8:content>Análisis de la orden de ventas (sin fechas)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>es_CO</v8:lang>
+				<v8:content>Análisis de la orden de ventas (sin fechas)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>tr</v8:lang>
+				<v8:content>Satış siparişi analizi (tarihsiz)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>it</v8:lang>
+				<v8:content>Analisi degli ordini cliente (senza date)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>de</v8:lang>
+				<v8:content>Kundenauftragsanalyse (ohne Daten)</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Sales</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Продажи</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>Sprzedaż</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>Ventas</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>Ventas</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Satış</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>Vendite</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Verkäufe</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Ordered</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ReportOrdered</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Shipped</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ReportShipped</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Remaining</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ReportRemaining</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Reserved</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>ReportReserved</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Replenishment</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пополнение</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>Uzupełnianie</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>Reposición</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>Reposición</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Stok yenileme</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>Rifornimento</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Auffüllung</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>PurchaseOrders</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ReportPurchaseOrders</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ProductionOrders</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ReportProductionOrders</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>KitOrders</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ReportKitOrders</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>DemandBalance</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>ReportDemandBalance</dcsset:field>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>28c314bc-c705-44a5-9fab-61135e09a0c3</dcsset:userSettingID>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Company</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Catalog.Companies.EmptyRef</dcsset:right>
+					<dcsset:userSettingID>c91f34db-3cc9-4519-892c-67a4dcb8f45b</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Counterparty</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Catalog.Counterparties.EmptyRef</dcsset:right>
+					<dcsset:userSettingID>049b19ce-bc28-4cc3-a594-0cfce2939733</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">SalesOrder</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Document.SalesOrder.EmptyRef</dcsset:right>
+					<dcsset:userSettingID>b37a2ed7-9893-4074-a098-1bbf022667cb</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Products</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>3bbf9add-9b36-4317-9e06-724bc13e4c30</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>079138fd-b51f-4095-b4d3-0c2b18b016bc</dcsset:userSettingID>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>TitleOutput</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>0aca91a0-1d57-4272-a1e9-0daf5a7dd770</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>SalesOrder</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Products</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ShipmentDate</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>a0eff7a5-29cb-47cb-a088-95c706714e42</dcsset:userSettingID>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection/>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ShipmentDate</dcsset:left>
+							<dcsset:comparisonType>Less</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:Field">ReceiptDate</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>TextColor</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>TitleOutput</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Title</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Sales orders analysis</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Анализ заказов покупателей</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>pl</v8:lang>
+							<v8:content>Realizacja zamówień</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_ES</v8:lang>
+							<v8:content>Análisis de órdenes de ventas</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es_CO</v8:lang>
+							<v8:content>Análisis de órdenes de ventas</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Satış siparişleri analizi</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>it</v8:lang>
+							<v8:content>Analisi del completamento degli ordini cliente</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>de</v8:lang>
+							<v8:content>Kundenauftragsanalyse</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>DataParametersOutput</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>FilterOutput</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>SalesOrder</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Products</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Products.MeasurementUnit</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+			<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+			<dcsset:itemsUserSettingID>73e61b59-3ae4-44fe-8c2e-5b172d452a2e</dcsset:itemsUserSettingID>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

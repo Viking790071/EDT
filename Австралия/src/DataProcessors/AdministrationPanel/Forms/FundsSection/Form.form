@@ -1,0 +1,2597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <title>
+    <key>en</key>
+    <value>Cash management</value>
+  </title>
+  <title>
+    <key>ru</key>
+    <value>Казначейство</value>
+  </title>
+  <title>
+    <key>pl</key>
+    <value>Środki pieniężne</value>
+  </title>
+  <title>
+    <key>es_ES</key>
+    <value>Gestión de efectivo</value>
+  </title>
+  <title>
+    <key>es_CO</key>
+    <value>Gestión de efectivo</value>
+  </title>
+  <title>
+    <key>tr</key>
+    <value>Finans</value>
+  </title>
+  <title>
+    <key>it</key>
+    <value>Tesoreria</value>
+  </title>
+  <title>
+    <key>de</key>
+    <value>Barmittelverwaltung</value>
+  </title>
+  <items xsi:type="form:FormGroup">
+    <name>WEBApplication</name>
+    <id>253</id>
+    <items xsi:type="form:Button">
+      <name>UpdateSystemParameters</name>
+      <id>268</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>UpdateSystemParametersExtendedTooltip</name>
+        <id>269</id>
+        <title>
+          <key>en</key>
+          <value>Restart the application to apply new settings.</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Чтобы изменения вступили в силу, необходимо обновить параметры системы или перезапустить приложение.</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Ponownie uruchom aplikację aby nowe ustawienia zostały zastosowane.</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Reiniciar la aplicación para aplicar nuevas configuraciones.</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Reiniciar la aplicación para aplicar nuevas configuraciones.</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Yeni ayarları uygulamak için uygulamayı yeniden başlatın.</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Riavviare il programma per attivare le nuove impostazioni.</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Starten Sie die Anwendung neu, um neue Einstellungen anzuwenden.</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualButton</type>
+      <commandName>Form.Command.UpdateSystemParameters</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <font xsi:type="core:FontRef">
+        <font>System.DefaultGUIFont</font>
+      </font>
+      <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <titleTextColor xsi:type="core:ColorRef">
+      <color>Style.FormTextColor</color>
+    </titleTextColor>
+    <titleFont xsi:type="core:FontRef">
+      <font>System.DefaultGUIFont</font>
+      <height>10.0</height>
+      <bold>true</bold>
+      <italic>false</italic>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+    </titleFont>
+    <extendedTooltip>
+      <name>WEBApplicationExtendedTooltip</name>
+      <id>254</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <slaveItemsWidth>Equal</slaveItemsWidth>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>SettingsCurrency</name>
+    <id>5</id>
+    <items xsi:type="form:FormGroup">
+      <name>ForeignExchangeAccountingGroup</name>
+      <id>280</id>
+      <items xsi:type="form:FormField">
+        <name>ForeignExchangeAccounting</name>
+        <id>107</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ConstantsSet.ForeignExchangeAccounting</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+        <handlers>
+          <event>OnChange</event>
+          <name>FunctionalCurrencyTransactionsAccountingOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>ForeignExchangeAccountingExtendedTooltip</name>
+          <id>213</id>
+          <title>
+            <key>en</key>
+            <value>Enable if your business is engaged with transactions in foreign currency</value>
+          </title>
+          <title>
+            <key>ru</key>
+            <value>Включите эту опцию, если необходимо вести учет операций в нескольких валютах. Параметр влияет на отображение валюты, курсов и кратности валюты в соответствующих объектах, например, в форме выбора цен и валюты, вызываемой из документов.</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Włącz, jeśli twoja firma przeprowadza transakcje w walucie obcej</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Active si su negocio está comprometido con transacciones en divisas extranjeras</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Activar si su negocio está comprometido con transacciones en divisas extranjeras</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>İşletmeniz dövizle işlem yapıyorsa etkinleştirin</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Attivare se la vostra azienda è impegnata con transazioni in valuta estera</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Aktivieren, wenn Ihr Unternehmen mit Transaktionen in Fremdwährung beschäftigt ist.</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ForeignExchangeAccountingContextMenu</name>
+          <id>108</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ForeignExchangeAccountingGroupExtendedTooltip</name>
+        <id>281</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>HorizontalIfPossible</group>
+        <representation>WeakSeparation</representation>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ExchangeRateDifferencesCalculationFrequencyFO</name>
+      <id>131</id>
+      <items xsi:type="form:FormField">
+        <name>ForeignCurrencyRevaluationPeriodicity</name>
+        <id>123</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ConstantsSet.ForeignCurrencyRevaluationPeriodicity</segments>
+        </dataPath>
+        <titleLocation>Top</titleLocation>
+        <toolTipRepresentation>Button</toolTipRepresentation>
+        <handlers>
+          <event>OnChange</event>
+          <name>ExchangeRateDifferencesCalculationFrequencyOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>ForeignCurrencyRevaluationPeriodicityExtendedTooltip</name>
+          <id>227</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ForeignCurrencyRevaluationPeriodicityContextMenu</name>
+          <id>124</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>RadioButtonField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+          <choiceList>
+            <presentation>
+              <key>en</key>
+              <value>Each transaction</value>
+            </presentation>
+            <presentation>
+              <key>ru</key>
+              <value>По каждой операции</value>
+            </presentation>
+            <presentation>
+              <key>pl</key>
+              <value>Każda transakcja</value>
+            </presentation>
+            <presentation>
+              <key>es_ES</key>
+              <value>Cada transacción</value>
+            </presentation>
+            <presentation>
+              <key>es_CO</key>
+              <value>Cada transacción</value>
+            </presentation>
+            <presentation>
+              <key>tr</key>
+              <value>Her işlem</value>
+            </presentation>
+            <presentation>
+              <key>it</key>
+              <value>Ogni transazione</value>
+            </presentation>
+            <presentation>
+              <key>de</key>
+              <value>Jede Transaktion</value>
+            </presentation>
+            <value xsi:type="core:ReferenceValue">
+              <value>Enum.ForeignCurrencyRevaluationPeriodicity.EnumValue.DuringOpertionExecution</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>en</key>
+              <value>On month-end closing</value>
+            </presentation>
+            <presentation>
+              <key>ru</key>
+              <value>При закрытии месяца</value>
+            </presentation>
+            <presentation>
+              <key>pl</key>
+              <value>Podczas zamknięcia miesiąca</value>
+            </presentation>
+            <presentation>
+              <key>es_ES</key>
+              <value>Cerrando el fin de mes</value>
+            </presentation>
+            <presentation>
+              <key>es_CO</key>
+              <value>Cerrando el fin de mes</value>
+            </presentation>
+            <presentation>
+              <key>tr</key>
+              <value>Ay sonu kapanışında</value>
+            </presentation>
+            <presentation>
+              <key>it</key>
+              <value>Alla chiusura del mese</value>
+            </presentation>
+            <presentation>
+              <key>de</key>
+              <value>Zum Monatsabschluss</value>
+            </presentation>
+            <value xsi:type="core:ReferenceValue">
+              <value>Enum.ForeignCurrencyRevaluationPeriodicity.EnumValue.OnlyOnPeriodClosure</value>
+            </value>
+          </choiceList>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+      <horizontalStretch>false</horizontalStretch>
+      <extendedTooltip>
+        <name>ExchangeRateDifferencesCalculationFrequencyFOExtendedTooltip</name>
+        <id>226</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>Vertical</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>FunctionalCurrencyTransactionsAccountingSettings</name>
+      <id>111</id>
+      <items xsi:type="form:FormField">
+        <name>FunctionalCurrency</name>
+        <id>113</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ConstantsSet.FunctionalCurrency</segments>
+        </dataPath>
+        <titleLocation>Top</titleLocation>
+        <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+        <handlers>
+          <event>OnChange</event>
+          <name>NationalCurrencyOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>FunctionalCurrencyExtendedTooltip</name>
+          <id>217</id>
+          <title>
+            <key>en</key>
+            <value>The currency of the primary economic environment in which the entity operates; normally, that is, the currency of the environment in which an entity primarily generates and expends cash. The functional currency is used by default when you create a new counterparty or a contract.</value>
+          </title>
+          <title>
+            <key>ru</key>
+            <value>Валюта основной экономической среды, в которой ведет деятельность лицо; обычно это валюта среды, в которой лицо получает основные доходы и осуществляет основные расходы. При создании нового контрагента или договора по умолчанию используется функциональная валюта.</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Waluta podstawowego środowiska gospodarczego w którym działa firma; zwykle, to jest waluta środowiska gospodarczego w której jednostka generuje i wydaje gotówkę. Funkcjonalna waluta jest używana domyślnie, kiedy stwarzasz nowego kontrahenta lub kontrakt.</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>La moneda del ambiente económico principal en que la entidad funciona; normalmente es la moneda del ambiente en el que una entidad generalmente genera y gasta el efectivo.</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>La moneda del ambiente económico principal en que la entidad funciona; normalmente es la moneda del ambiente en el que una entidad generalmente genera y gasta el efectivo.</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>İşletmenin faaliyette bulunduğu temel ekonomik ortamın para birimi; normal olarak, yani, bir işletmenin esas olarak nakit topladığı ve harcadığı ortamın para birimi.</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>La valuta dell'ambiente economico primario in cui opera l'entità; di solito è la valuta in cui una entità genera entrate ed uscite. La valuta funzionale è usata come predefinita quando create una nuova controparte o un contratto.</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Die Währung des primären wirtschaftlichen Umfelds, in dem die Firma tätig ist; normalerweise, das heißt, die Währung des Umfelds, in dem eine Firma hauptsächlich Liquidität generiert und ausgibt. Die funktionale Währung wird standardmäßig verwendet, wenn Sie einen neuen Geschäftspartner oder einen Vertrag erstellen.</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>FunctionalCurrencyContextMenu</name>
+          <id>114</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>false</horizontalStretch>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <width>43</width>
+      <horizontalStretch>false</horizontalStretch>
+      <extendedTooltip>
+        <name>FunctionalCurrencyTransactionsAccountingSettingsExtendedTooltip</name>
+        <id>215</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>Vertical</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>en</key>
+      <value>Currencies</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Валюты</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Waluty</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Monedas</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Monedas</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Para birimleri</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Valute</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Währungen</value>
+    </title>
+    <titleTextColor xsi:type="core:ColorRef">
+      <color>Style.TitleColorSettingsGroup</color>
+    </titleTextColor>
+    <toolTip>
+      <key>en</key>
+      <value>Currency</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Валюта</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Waluta</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Moneda</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Moneda</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Para birimi</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Valuta</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Währung</value>
+    </toolTip>
+    <extendedTooltip>
+      <name>SettingsCurrencyExtendedTooltip</name>
+      <id>211</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <representation>NormalSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>SettingsAdvances</name>
+    <id>132</id>
+    <items xsi:type="form:FormGroup">
+      <name>SettingsAdvancesFD</name>
+      <id>142</id>
+      <items xsi:type="form:FormField">
+        <name>SetOffAdvancePaymentsAutomatically</name>
+        <id>143</id>
+        <title>
+          <key>en</key>
+          <value>Set off advance payments automatically</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Зачитывать авансы автоматически</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Kompensuj zaliczki automatycznie</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Compense los pagos adelantados automáticamente</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Configurar pagos anticipados automáticamente</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Avans ödemeleri otomatik olarak mahsup et</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Bilanciamento automatico dei pagamenti anticipati</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Vorauszahlungen automatisch verrechnen</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ConstantsSet.SetOffAdvancePaymentsAutomatically</segments>
+        </dataPath>
+        <toolTipRepresentation>Button</toolTipRepresentation>
+        <handlers>
+          <event>OnChange</event>
+          <name>RegistrateDebtsAdvancesAutomaticallyOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>SetOffAdvancePaymentsAutomaticallyExtendedTooltip</name>
+          <id>234</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>SetOffAdvancePaymentsAutomaticallyContextMenu</name>
+          <id>144</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>RadioButtonField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+          <itemHeight>1</itemHeight>
+          <choiceList>
+            <presentation>
+              <key>en</key>
+              <value>Yes</value>
+            </presentation>
+            <presentation>
+              <key>ru</key>
+              <value>Да</value>
+            </presentation>
+            <presentation>
+              <key>pl</key>
+              <value>Tak</value>
+            </presentation>
+            <presentation>
+              <key>es_ES</key>
+              <value>Sí</value>
+            </presentation>
+            <presentation>
+              <key>es_CO</key>
+              <value>Sí</value>
+            </presentation>
+            <presentation>
+              <key>tr</key>
+              <value>Evet</value>
+            </presentation>
+            <presentation>
+              <key>it</key>
+              <value>Sì</value>
+            </presentation>
+            <presentation>
+              <key>de</key>
+              <value>Ja</value>
+            </presentation>
+            <value xsi:type="core:ReferenceValue">
+              <value>Enum.YesNo.EnumValue.Yes</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>en</key>
+              <value>No</value>
+            </presentation>
+            <presentation>
+              <key>ru</key>
+              <value>Нет</value>
+            </presentation>
+            <presentation>
+              <key>pl</key>
+              <value>Nie</value>
+            </presentation>
+            <presentation>
+              <key>es_ES</key>
+              <value>No</value>
+            </presentation>
+            <presentation>
+              <key>es_CO</key>
+              <value>No</value>
+            </presentation>
+            <presentation>
+              <key>tr</key>
+              <value>Hayır</value>
+            </presentation>
+            <presentation>
+              <key>it</key>
+              <value>No</value>
+            </presentation>
+            <presentation>
+              <key>de</key>
+              <value>Nein</value>
+            </presentation>
+            <value xsi:type="core:ReferenceValue">
+              <value>Enum.YesNo.EnumValue.No</value>
+            </value>
+          </choiceList>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+      <width>43</width>
+      <horizontalStretch>false</horizontalStretch>
+      <extendedTooltip>
+        <name>SettingsOfdvancesFOExtendedTooltip</name>
+        <id>232</id>
+        <title>
+          <key>en</key>
+          <value>The option determines whether advances and debts are automatically set off during document posting.</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Определяет необходимость автоматического зачета авансов и долгов при проведении документов.</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Opcja określa potrzebę automatycznego rozliczenia zaliczek i zobowiązań podczas zatwierdzenia dokumentów.</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>La variante determina si los anticipos y las deudas se compensan automáticamente durante el envío del documento</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>La opción determina si los anticipos y las deudas se configuran automáticamente durante la publicación de documentos.</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Seçenek ile gelir ve giderlerin belge gönderimi sırasında otomatik olarak mahsup edilip edilmeyeceği belirlenir.</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>L'opzione determina la necessità di una compensazione automatica degli anticipi e dei debiti durante la pubblicazione dei documenti</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Die Option legt fest, ob Vorschüsse und Schulden bei der Buchung automatisch ausgeglichen sind.</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>en</key>
+      <value>Advance payments</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Авансовые платежи</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zaliczki</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Pagos adelantados</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Anticipos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Avans ödemeler</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Pagamenti di anticipo</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Vorauszahlungen</value>
+    </title>
+    <titleTextColor xsi:type="core:ColorRef">
+      <color>Style.TitleColorSettingsGroup</color>
+    </titleTextColor>
+    <toolTip>
+      <key>en</key>
+      <value>Advances and debts</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Авансы и долги</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zaliczki i zadłużenia</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Anticipos y deudas</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Anticipos y deudas</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Avanslar ve borçlar</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Anticipi e debiti</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Vorschüsse und Schulden</value>
+    </toolTip>
+    <extendedTooltip>
+      <name>SettingsAdvancesExtendedTooltip</name>
+      <id>230</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <representation>NormalSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <slaveItemsWidth>Equal</slaveItemsWidth>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>SettingsPaymentCalendar</name>
+    <id>171</id>
+    <items xsi:type="form:FormGroup">
+      <name>PaymentCalendarSettingsFO</name>
+      <id>182</id>
+      <items xsi:type="form:FormField">
+        <name>UsePaymentCalendar</name>
+        <id>183</id>
+        <title>
+          <key>en</key>
+          <value>Cash flow projection</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Планирование ДДС</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Preliminarz płatności</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Calendario de pagos</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Calendario de pagos</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Nakit akışı projeksiyonu</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Scadenzario</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Cashflow-Projektion</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ConstantsSet.UsePaymentCalendar</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <toolTipRepresentation>Button</toolTipRepresentation>
+        <handlers>
+          <event>OnChange</event>
+          <name>FunctionalOptionPaymentCalendarOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>UsePaymentCalendarExtendedTooltip</name>
+          <id>248</id>
+          <title>
+            <key>en</key>
+            <value>Enable this option to keep cash flow projection which is a tool for real-time planning of cash expense, receipt, and movement.</value>
+          </title>
+          <title>
+            <key>ru</key>
+            <value>Опция определяет возможность ведения платежного календаря – инструмента для оперативного планирования расхода, поступления и перемещения денежных средств.</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Włącz tę opcję, aby prowadzić preliminarz płatności, który jest narzędziem do planowania w czasie rzeczywistym wydatków gotówkowych, wpływów i przepływów pieniężnych.</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Active esta opción para mantener la proyección de flujo de efectivo, que es una herramienta para una planificación en tiempo real de gastos de efectivo, su recibo y el movimiento.</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Activar esta opción para mantener la proyección de flujo de efectivo, que es una herramienta para una planificación en tiempo real de gastos de efectivo, su recibo y el movimiento.</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Nakit gideri, fişi ve hareketinin gerçek zamanlı planlaması için bir araç olan nakit akışı projeksiyonu için bu seçeneği etkinleştirin.</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Abilitare questa opzione per gestire lo scadenzario che è uno strumento per la pianificazione in tempo reale delle spese di cassa, ricevute e movimenti.</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Aktivieren Sie diese Option, um die Cashflow-Projektion beizubehalten, der ein Werkzeug für die Echtzeitplanung von LiquiditätsAusgabebetragnd, -eingang und -bewegungen ist.</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>UsePaymentCalendarContextMenu</name>
+          <id>184</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+      <width>43</width>
+      <horizontalStretch>false</horizontalStretch>
+      <extendedTooltip>
+        <name>PaymentCalendarSettingsFOExtendedTooltip</name>
+        <id>247</id>
+        <title>
+          <key>en</key>
+          <value>With the cash flow projection, you can forecast cash inflow, plan cash expenditures, as well as control cash shortage.</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Планирование ДДС позволит планировать поступление, расход или перемещение денежных средств, а также позволит отслеживать появление кассовых разрывов.</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Za pomocą preliminarza płatności można prognozować przychód środków pieniężnych - gotówki, planować wydatki gotówkowe, a także kontrolować niedobór gotówki.</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Con la proyección del flujo de efectivo, usted puede pronosticar la entrada de efectivo, planificar los gastos de efectivo, así como controlar la falta de efectivo.</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Con la proyección del flujo de efectivo, usted puede pronosticar la entrada de efectivo, planificar los gastos de efectivo, así como controlar la falta de efectivo.</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Nakit akışı projeksiyonunu kullanarak nakit girişini tahmin edebilir, nakit harcamaları planlayabilir ve nakit açığını kontrol edebilirsiniz.</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Con lo scadenzario potete prevedere i flussi di cassa in entrata, pianificare le spese, controllare le disponibilità di cassa.</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Mit der Cashflow-Projektion können Sie den Cashflow prognostizieren, den Liquiditätseinsatz planen sowie den Liquiditätsengpass kontrollieren.</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>en</key>
+      <value>Cash flow projection</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Планирование ДДС</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Preliminarz płatności</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Calendario de pagos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Calendario de pagos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Nakit akışı projeksiyonu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Scadenzario</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Cashflow-Projektion</value>
+    </title>
+    <titleTextColor xsi:type="core:ColorRef">
+      <color>Style.TitleColorSettingsGroup</color>
+    </titleTextColor>
+    <toolTip>
+      <key>en</key>
+      <value>Cash flow projection</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Планирование ДДС</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Preliminarz płatności</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Calendario de pagos</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Calendario de pagos</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Nakit akışı projeksiyonu</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Scadenzario</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Cashflow-Projektion</value>
+    </toolTip>
+    <extendedTooltip>
+      <name>PaymentCalendarSettingsExtendedTooltip</name>
+      <id>245</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <representation>NormalSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <slaveItemsWidth>Equal</slaveItemsWidth>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>SettingsAdditionally</name>
+    <id>263</id>
+    <items xsi:type="form:FormGroup">
+      <name>Group5</name>
+      <id>274</id>
+      <items xsi:type="form:FormField">
+        <name>UseBankCharges</name>
+        <id>265</id>
+        <title>
+          <key>en</key>
+          <value>Accrue bank charges simultaneously with bank transactions</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Начислять банковскую комиссию одновременно с платежными документами</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Naliczenie opłat bankowych jednocześnie z transakcjami bankowymi</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Acumule los cargos bancarios simultáneamente con las transacciones bancarias</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Acumular cargos bancarios simultáneamente con transacciones bancarias</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Banka işlemleri ile eş zamanlı olarak banka masraflarını tahakkuk ettir</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Accumulare le commissioni bancarie in contemporanea con le transazioni con la banca</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Erhöht die Bankgebühren gleichzeitig mit den Bankgeschäften</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ConstantsSet.UseBankCharges</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <handlers>
+          <event>OnChange</event>
+          <name>FunctionalOptionUseBankChargesOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>UseBankChargesExtendedTooltip</name>
+          <id>267</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>UseBankChargesContextMenu</name>
+          <id>266</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <width>43</width>
+      <horizontalStretch>false</horizontalStretch>
+      <extendedTooltip>
+        <name>Group5ExtendedTooltip</name>
+        <id>275</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>en</key>
+      <value>Bank charges</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Банковская комиссия</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Opłaty bankowe</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Gastos bancarios</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Gastos bancarios</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Banka masrafları</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Commissioni bancarie</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Bankgebühren</value>
+    </title>
+    <titleTextColor xsi:type="core:ColorRef">
+      <color>Style.TitleColorSettingsGroup</color>
+    </titleTextColor>
+    <toolTip>
+      <key>en</key>
+      <value>Additional Information</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Дополнительная информация</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Informacje dodatkowe</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Información adicional</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Información adicional</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Ek bilgi</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>informazioni aggiuntive</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Zusätzliche Informationen</value>
+    </toolTip>
+    <extendedTooltip>
+      <name>SettingsAdditionallyExtendedTooltip</name>
+      <id>264</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <representation>NormalSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>SettingsBankReconciliation</name>
+    <id>282</id>
+    <items xsi:type="form:FormGroup">
+      <name>BankReconciliationSettingsFO</name>
+      <id>284</id>
+      <items xsi:type="form:FormField">
+        <name>UseBankReconciliation</name>
+        <id>286</id>
+        <title>
+          <key>en</key>
+          <value>Use Bank reconciliation documents to match accounting data with actual bank statements</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Использовать документы &quot;Взаиморасчеты с банком&quot; для сопоставления данных учета с фактическими банковскими выписками</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Używaj dokumentów uzgodnienia bankowego do porównania danych rachunkowości z bieżącymi wyciągami bankowymi</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Use los documentos de conciliación bancaria para hacer coincidir los datos contables con los extractos bancarios reales</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Utilizar documentos de conciliación bancaria para hacer coincidir los datos contables con los extractos bancarios reales</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Muhasebe verilerini gerçek banka ekstreleriyle eşleştirmek için banka mutabakatı belgelerini kullan</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Utilizzare riconciliazione bancaria per mappare i dati contabili con gli estratti conto della banca</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Verwenden Sie Bankabstimmungsbelege, um Buchhaltungsdaten mit tatsächlichen Kontoauszügen abzugleichen</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ConstantsSet.UseBankReconciliation</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <handlers>
+          <event>OnChange</event>
+          <name>FunctionalOptionUseBankReconciliationOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>UseBankReconciliationExtendedTooltip</name>
+          <id>288</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>UseBankReconciliationContextMenu</name>
+          <id>287</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <warningOnEditRepresentation>Show</warningOnEditRepresentation>
+        <warningOnEdit>
+          <key>en</key>
+          <value>Changing this setting will result in Bank reconciliation register entries generation (or deletion), which may take long time, depending on the number of banking documents in the system.</value>
+        </warningOnEdit>
+        <warningOnEdit>
+          <key>ru</key>
+          <value>Изменение этого параметра приведет к созданию (или удалению) записей регистра &quot;Взаиморасчеты с банком&quot;, что может занять много времени в зависимости от количества банковских документов в системе.</value>
+        </warningOnEdit>
+        <warningOnEdit>
+          <key>pl</key>
+          <value>Zmiana tego ustawienia spowoduje generowanie wpisów w rejestrze uzgodnienia bankowego (lub usunięcie), które może potrwać przez długi czas, w zależności od ilości dokumentów bankowych w systemie.</value>
+        </warningOnEdit>
+        <warningOnEdit>
+          <key>es_ES</key>
+          <value>Si se cambia esta configuración, se generarán (o borrarán) las entradas del registro de conciliación bancaria, lo que puede llevar mucho tiempo, dependiendo del número de documentos bancarios en el sistema.</value>
+        </warningOnEdit>
+        <warningOnEdit>
+          <key>es_CO</key>
+          <value>Si se cambia esta configuración, se generarán (o borrarán) las entradas del registro de conciliación bancaria, lo que puede llevar mucho tiempo, dependiendo del número de documentos bancarios en el sistema.</value>
+        </warningOnEdit>
+        <warningOnEdit>
+          <key>tr</key>
+          <value>Bu ayarın değiştirilmesi, sistemdeki bankacılık belgelerinin sayısına bağlı olarak uzun zaman alabilen Banka mutabakatı sicil kayıtlarının oluşturulmasına (veya silinmesine) neden olacaktır.</value>
+        </warningOnEdit>
+        <warningOnEdit>
+          <key>it</key>
+          <value>Modificando questa impostazione avrete la generazione (o eliminazione) delle scritture di riconciliazione Bancaria, questo potrebbe richiedere molto tempo a seconda del numero di documenti bancari nel sistema.</value>
+        </warningOnEdit>
+        <warningOnEdit>
+          <key>de</key>
+          <value>Die Änderung dieser Einstellung führt zur Generierung (oder Löschung) von Bankabstimmregistereinträgen, was je nach Anzahl der Bankbelege im System lange dauern kann.</value>
+        </warningOnEdit>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <width>43</width>
+      <horizontalStretch>false</horizontalStretch>
+      <extendedTooltip>
+        <name>BankReconciliationSettingsFOExtendedTooltip</name>
+        <id>285</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>en</key>
+      <value>Bank reconciliation</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Взаиморасчеты с банком</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Uzgodnienie bankowe</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Conciliación bancaria</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Conciliación bancaria</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Banka mutabakatı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Riconciliazione bancaria</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Bankabstimmung</value>
+    </title>
+    <titleTextColor xsi:type="core:ColorRef">
+      <color>Style.TitleColorSettingsGroup</color>
+    </titleTextColor>
+    <extendedTooltip>
+      <name>SettingsBankReconciliationExtendedTooltip</name>
+      <id>283</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <representation>NormalSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>SettingsThirdPartyPayment</name>
+    <id>289</id>
+    <items xsi:type="form:FormGroup">
+      <name>ThirdPartyPaymentSettingsFO</name>
+      <id>291</id>
+      <items xsi:type="form:FormField">
+        <name>UseThirdPartyPayment</name>
+        <id>293</id>
+        <title>
+          <key>en</key>
+          <value>Receive third-party payments</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Получать сторонние платежи</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Otrzymuj płatności od strony trzeciej</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Recibir pagos de terceros</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Recibir pagos de terceros</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Üçüncü taraf ödemeleri al</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Ricevi pagamenti da terzi</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Zahlung der Dritten erhalten</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ConstantsSet.UseThirdPartyPayment</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+        <handlers>
+          <event>OnChange</event>
+          <name>UseThirdPartyPaymentOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>UseThirdPartyPaymentExtendedTooltip</name>
+          <id>295</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>UseThirdPartyPaymentContextMenu</name>
+          <id>294</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <warningOnEditRepresentation>DontShow</warningOnEditRepresentation>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <toolTip>
+        <key>en</key>
+        <value>Third party payment settings FO</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Настройки стороннего платежа ФО</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Ustawienia płatności strony trzeciej FO</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Ajustes de pago de terceros FO</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Ajustes de pago de terceros FO</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Üçüncü taraf ödeme ayarları FO</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Pagamenti terze parti impostazioni FO</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>FO-Einstellungen der Zahlungen der Dritten</value>
+      </toolTip>
+      <width>43</width>
+      <horizontalStretch>false</horizontalStretch>
+      <extendedTooltip>
+        <name>ThirdPartyPaymentSettingsFOExtendedTooltip</name>
+        <id>292</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>en</key>
+      <value>Third-party payments</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Сторонние платежи</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Płatności strony trzeciej</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Pagos de terceros</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Pagos de terceros</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Üçüncü taraf ödemeleri</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Pagamenti terze parti</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Zahlungen der Dritten</value>
+    </title>
+    <titleTextColor xsi:type="core:ColorRef">
+      <color>Style.TitleColorSettingsGroup</color>
+    </titleTextColor>
+    <extendedTooltip>
+      <name>SettingsThirdPartyPaymentExtendedTooltip</name>
+      <id>290</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <representation>NormalSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>SettingsUsePaymentProcessors</name>
+    <id>296</id>
+    <items xsi:type="form:FormGroup">
+      <name>UsePaymentProcessorsSettingsFO</name>
+      <id>298</id>
+      <items xsi:type="form:FormField">
+        <name>UsePaymentProcessors</name>
+        <id>300</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ConstantsSet.UsePaymentProcessors</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+        <handlers>
+          <event>OnChange</event>
+          <name>UsePaymentProcessorsOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>UsePaymentProcessorsExtendedTooltip</name>
+          <id>302</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>UsePaymentProcessorsContextMenu</name>
+          <id>301</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <warningOnEditRepresentation>DontShow</warningOnEditRepresentation>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <width>43</width>
+      <horizontalStretch>false</horizontalStretch>
+      <extendedTooltip>
+        <name>UsePaymentProcessorsSettingsFOExtendedTooltip</name>
+        <id>299</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>en</key>
+      <value>Payment processors</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Платежные системы</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Systemy płatnicze</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Procesadores de pagos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Procesadores de pagos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Ödeme işlemcileri</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Elaboratori di pagamenti</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Zahlungsanbieter</value>
+    </title>
+    <titleTextColor xsi:type="core:ColorRef">
+      <color>Style.TitleColorSettingsGroup</color>
+    </titleTextColor>
+    <extendedTooltip>
+      <name>SettingsUsePaymentProcessorsExtendedTooltip</name>
+      <id>297</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <representation>NormalSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>SettingsAllowNegativeBalance</name>
+    <id>303</id>
+    <items xsi:type="form:FormGroup">
+      <name>AllowNegativeBalanceSettingsFO</name>
+      <id>305</id>
+      <items xsi:type="form:FormField">
+        <name>AllowNegativeBalance</name>
+        <id>307</id>
+        <title>
+          <key>en</key>
+          <value>Allow negative balance</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Разрешить отрицательный остаток</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Zezwalaj saldo ujemne</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Permitir un saldo negativo</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Permitir un saldo negativo</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Eksi bakiyeye izin ver</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Permettere saldo negativo</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Negativen Saldo gestatten</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ConstantsSet.AllowNegativeBalance</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+        <handlers>
+          <event>OnChange</event>
+          <name>AllowNegativeBalanceOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>AllowNegativeBalanceExtendedTooltip</name>
+          <id>309</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>AllowNegativeBalanceContextMenu</name>
+          <id>308</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <warningOnEditRepresentation>DontShow</warningOnEditRepresentation>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <width>43</width>
+      <horizontalStretch>false</horizontalStretch>
+      <extendedTooltip>
+        <name>AllowNegativeBalanceSettingsFOExtendedTooltip</name>
+        <id>306</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>Vertical</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>en</key>
+      <value>Negative balance</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Отрицательный остаток</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Saldo ujemne</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Saldo negativo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Saldo negativo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Eksi bakiye</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Saldo negativo</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Negativer Saldo</value>
+    </title>
+    <titleTextColor xsi:type="core:ColorRef">
+      <color>Style.TitleColorSettingsGroup</color>
+    </titleTextColor>
+    <extendedTooltip>
+      <name>SettingsAllowNegativeBalanceExtendedTooltip</name>
+      <id>304</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <representation>NormalSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>SettingsUseOverdraft</name>
+    <id>310</id>
+    <items xsi:type="form:FormGroup">
+      <name>UseOverdraftSettingsFO</name>
+      <id>312</id>
+      <items xsi:type="form:FormField">
+        <name>UseOverdraft</name>
+        <id>314</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ConstantsSet.UseOverdraft</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+        <handlers>
+          <event>OnChange</event>
+          <name>UseOverdraftOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>UseOverdraftExtendedTooltip</name>
+          <id>316</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>UseOverdraftContextMenu</name>
+          <id>315</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <warningOnEditRepresentation>DontShow</warningOnEditRepresentation>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <width>43</width>
+      <horizontalStretch>false</horizontalStretch>
+      <extendedTooltip>
+        <name>UseOverdraftSettingsFOExtendedTooltip</name>
+        <id>313</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>Vertical</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>en</key>
+      <value>Use overdraft</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Использовать овердрафт</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Używaj przekroczenia stanu rachunku</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Utilizar el sobregiro</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Utilizar el sobregiro</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Fazla para çekme kullan</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Utilizzare scoperto</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Kontoüberziehung verwenden</value>
+    </title>
+    <titleTextColor xsi:type="core:ColorRef">
+      <color>Style.TitleColorSettingsGroup</color>
+    </titleTextColor>
+    <extendedTooltip>
+      <name>SettingsUseOverdraftExtendedTooltip</name>
+      <id>311</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <representation>NormalSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>FormCommandBar</name>
+    <id>-1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+  </autoCommandBar>
+  <handlers>
+    <event>NotificationProcessing</event>
+    <name>NotificationProcessing</name>
+  </handlers>
+  <handlers>
+    <event>OnOpen</event>
+    <name>OnOpen</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <handlers>
+    <event>OnClose</event>
+    <name>OnClose</name>
+  </handlers>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <enabled>true</enabled>
+  <verticalScroll>UseIfNecessary</verticalScroll>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>RunMode</name>
+    <title>
+      <key>en</key>
+      <value>Run mode</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Режим выполнения</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Tryb pracy</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Modo de ejecución</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Modo de ejecución</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Çalışma modu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Modalità di esecuzione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Ausführungsmodus</value>
+    </title>
+    <id>1</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ConstantsSet</name>
+    <title>
+      <key>en</key>
+      <value>Constant set</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Набор констант</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zestaw stałych</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Conjunto constante</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Conjunto constante</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Sabit kümesi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Insieme di costanti</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Satz von Konstanten</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>ConstantsSet</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>ConstantsSet.ForeignCurrencyRevaluationPeriodicity</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>ConstantsSet.ForeignExchangeAccounting</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>ConstantsSet.FunctionalCurrency</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>ConstantsSet.UseBankCharges</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>ConstantsSet.UseBankReconciliation</segments>
+    </notDefaultUseAlwaysAttributes>
+    <main>true</main>
+  </attributes>
+  <formCommands>
+    <name>UpdateSystemParameters</name>
+    <title>
+      <key>en</key>
+      <value>Update system parameters</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Обновить параметры системы</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zaktualizuj parametry systemu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Actualizar el sistema parámetros</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Actualizar el sistema parámetros</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Sistem parametrelerini güncelle</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Aggiornare i parametri di sistema</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Systemparameter aktualisieren</value>
+    </title>
+    <id>3</id>
+    <toolTip>
+      <key>en</key>
+      <value>Update system parameters</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Обновить параметры системы</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zaktualizuj parametry systemu</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Actualizar el sistema parámetros</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Actualizar el sistema parámetros</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Sistem parametrelerini güncelle</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Aggiornare i parametri di sistema</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Systemparameter aktualisieren</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>UpdateSystemParameters</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+  <extInfo xsi:type="form:ConstantsFormExtInfo"/>
+</form:Form>

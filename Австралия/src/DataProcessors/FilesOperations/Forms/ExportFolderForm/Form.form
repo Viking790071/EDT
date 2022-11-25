@@ -1,0 +1,1208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <title>
+    <key>ru</key>
+    <value>Сохранение папки</value>
+  </title>
+  <title>
+    <key>en</key>
+    <value>Saving folders</value>
+  </title>
+  <title>
+    <key>pl</key>
+    <value>Zapisz folder</value>
+  </title>
+  <title>
+    <key>es_ES</key>
+    <value>Guardar carpeta</value>
+  </title>
+  <title>
+    <key>es_CO</key>
+    <value>Guardar carpeta</value>
+  </title>
+  <title>
+    <key>tr</key>
+    <value>Klasörler kaydediliyor</value>
+  </title>
+  <title>
+    <key>it</key>
+    <value>Salvataggio cartelle</value>
+  </title>
+  <title>
+    <key>de</key>
+    <value>Ordner speichern</value>
+  </title>
+  <items xsi:type="form:FormField">
+    <name>FolderForExport</name>
+    <id>2</id>
+    <title>
+      <key>ru</key>
+      <value>Укажите папку, в которую будет производиться сохранение</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Specify a folder for saving</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wskaż folder, do którego będzie wykonywany zapis</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Indique la carpeta en la que se guardará</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Indique la carpeta en la que se guardará</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kaydedileceği klasörü belirt</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Specifica una cartella per il salvataggio</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Geben Sie den Ordner an, in dem Sie speichern möchten</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>FolderForExport</segments>
+    </dataPath>
+    <titleLocation>Top</titleLocation>
+    <extendedTooltip>
+      <name>FolderForExportExtendedTooltip</name>
+      <id>36</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>FolderForExportContextMenu</name>
+      <id>3</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <footerHorizontalAlign>Left</footerHorizontalAlign>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <handlers>
+        <event>StartChoice</event>
+        <name>FolderForExportStartChoice</name>
+      </handlers>
+      <handlers>
+        <event>Opening</event>
+        <name>FolderForExportOpen</name>
+      </handlers>
+      <maxWidth>50</maxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <choiceButton>true</choiceButton>
+      <openButton>true</openButton>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+      <borderColor xsi:type="core:ColorRef">
+        <color>Style.BorderColor</color>
+      </borderColor>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>TransliterateFileAndFolderNames</name>
+    <id>41</id>
+    <title>
+      <key>ru</key>
+      <value>Транслитерировать имена папок и файлов</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Transliterate names of files and folders</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Transliteruj nazwy folderów i plików</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Transliterar los nombres de las carpetas y archivos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Transliterar los nombres de las carpetas y archivos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Klasör ve dosyaların isimlerini Latin harflerle yaz</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Traslittera nomi di file e cartelle</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Transliterieren von Ordnern und Dateinamen</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>TransliterateFileAndFolderNames</segments>
+    </dataPath>
+    <titleLocation>Right</titleLocation>
+    <toolTip>
+      <key>ru</key>
+      <value>Сохраненные файлы и папки будут иметь имена, содержащие только латинские буквы и цифры, для возможности переноса между различными операционными системами. Например, файл &quot;Документ.txt&quot; будет сохранен с именем &quot;Dokument.txt&quot;.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Saved files and folders will have names containing only Latin letters and numbers to transfer between different OS. For example, the &quot;Документ.txt&quot; file will be saved as &quot;Dokument.txt&quot;.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zapisane pliki i foldery będą mieć nazwy zawierające wyłącznie łacińskie litery i numery, w celu możliwości przenoszenia pomiędzy różnymi systemami operacyjnymi. Na przykład, plik &quot;Документ.txt&quot; zostanie zapisany pod nazwą &quot;Dokument.txt&quot;.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Los archivos y carpetas guardados tendrán los nombres que contienen solo letras latinas y cifras para poder trasladar datos entre OS diferentes. Por ejemplo, el archivo &quot;Документ.txt&quot; será guardado con el nombre &quot;Dokument.txt&quot;.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Los archivos y carpetas guardados tendrán los nombres que contienen solo letras latinas y cifras para poder trasladar datos entre OS diferentes. Por ejemplo, el archivo &quot;Документ.txt&quot; será guardado con el nombre &quot;Dokument.txt&quot;.</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Kaydedilen dosyalar, farklı işletim sistemleri arasında geçiş yapmak için yalnızca Latin harfleri ve sayıları içeren adlara sahip olacaktır. Örneğin, &quot;Документ.txt&quot; adlı belge &quot;Document.txt&quot; adıyla kaydedilecektir.</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>I file e le cartelle salvate avranno nomi contenenti solo caratteri latini e numeri per il trasferimento tra diversi sistemi operativi. Per esempio, il file &quot;Документ.txt&quot; sarà salvato come &quot;Dokument.txt&quot;.</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Gespeicherte Dateien und Ordner haben Namen, die nur lateinische Buchstaben und Zahlen enthalten, die zwischen verschiedenen Betriebssystemen übertragen werden sollen. Beispielsweise wird die Datei &quot;Документ.txt&quot; unter dem Namen &quot;Dokument.txt&quot; gespeichert.</value>
+    </toolTip>
+    <toolTipRepresentation>Button</toolTipRepresentation>
+    <extendedTooltip>
+      <name>TransliterateFileAndFolderNamesExtendedTooltip</name>
+      <id>43</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>TransliterateFileAndFolderNamesContextMenu</name>
+      <id>42</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>CheckBoxField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>CommandBar</name>
+    <id>30</id>
+    <items xsi:type="form:Button">
+      <name>SaveFolder</name>
+      <id>33</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <skipOnInput>false</skipOnInput>
+      <extendedTooltip>
+        <name>SaveFolderExtendedTooltip</name>
+        <id>38</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.SaveFolder</commandName>
+      <representation>Auto</representation>
+      <defaultButton>true</defaultButton>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>Cancel</name>
+      <id>32</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <skipOnInput>false</skipOnInput>
+      <extendedTooltip>
+        <name>CancelExtendedTooltip</name>
+        <id>39</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.StandardCommand.Cancel</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>Help</name>
+      <id>31</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <skipOnInput>false</skipOnInput>
+      <extendedTooltip>
+        <name>HelpExtendedTooltip</name>
+        <id>40</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.StandardCommand.Help</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Командная панель</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Command bar</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Pasek poleceń</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Barra de comandos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Barra de comandos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Komut çubuğu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Barra dei comandi</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Befehlsleiste</value>
+    </title>
+    <extendedTooltip>
+      <name>CommandBarExtendedTooltip</name>
+      <id>37</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>CommandBar</type>
+    <extInfo xsi:type="form:CommandBarExtInfo">
+      <horizontalAlign>Right</horizontalAlign>
+    </extInfo>
+  </items>
+  <commandBarLocation>None</commandBarLocation>
+  <autoCommandBar>
+    <name>CommandBarForm</name>
+    <id>-1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <handlers>
+    <event>OnOpen</event>
+    <name>OnOpen</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>FilesTree</name>
+    <title>
+      <key>ru</key>
+      <value>Дерево файлов</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Files tree</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Drzewo plików</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Árbol de archivos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Árbol de archivos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dosyalar ağacı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Albero dei file</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Datei- Baum</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>ValueTree</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <columns>
+      <name>FolderDescription</name>
+      <title>
+        <key>ru</key>
+        <value>Наименование папки</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Folder description</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Nazwa folderu</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Descripción de la carpeta</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Descripción de la carpeta</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Klasör açıklaması</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Descrizione cartella</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Ordnerbeschreibung</value>
+      </title>
+      <id>1</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>CurrentVersion</name>
+      <title>
+        <key>ru</key>
+        <value>Текущая версия</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Current version</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Wersja bieżąca</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Versión actual</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Versión actual</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Mevcut sürüm</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Versione attuale</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Aktive Version</value>
+      </title>
+      <id>2</id>
+      <valueType>
+        <types>CatalogRef</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>FullDescr</name>
+      <title>
+        <key>ru</key>
+        <value>Полное наименование</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Full description</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Nazwa pełna</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Descripción completa</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Descripción completa</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Tam açıklama</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Descrizione completa</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Ausführliche Beschreibung</value>
+      </title>
+      <id>3</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Extension</name>
+      <title>
+        <key>ru</key>
+        <value>Расширение файла</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>File extension</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Rozszerzenie pliku</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Extensión del archivo</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Extensión del archivo</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Dosya uzantısı</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Estensione del file</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Dateierweiterung</value>
+      </title>
+      <id>4</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Size</name>
+      <title>
+        <key>ru</key>
+        <value>Размер файла</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>File size</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Rozmiar pliku</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Tamaño del archivo</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Tamaño del archivo</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Dosya boyutu</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Dimensione del file</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Dateigröße</value>
+      </title>
+      <id>5</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>UniversalModificationDate</name>
+      <title>
+        <key>ru</key>
+        <value>Дата модификации универсальная</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Universal modification date</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Uniwersalna data modyfikacji</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Fecha de modificación universal</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Fecha de modificación universal</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Evrensel değişiklik tarihi</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Data di modifica universale</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Universelles Änderungsdatum</value>
+      </title>
+      <id>7</id>
+      <valueType>
+        <types>Date</types>
+        <dateQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Folder</name>
+      <title>
+        <key>ru</key>
+        <value>Папка</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Folder</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Folder</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Carpeta</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Carpeta</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Klasör</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Gruppo (Cartella)</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Ordner</value>
+      </title>
+      <id>6</id>
+      <valueType>
+        <types>CatalogRef</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Encrypted</name>
+      <title>
+        <key>ru</key>
+        <value>Зашифрован</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Encrypted</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Zaszyfrowany</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Cifrado</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Cifrado</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Şifrelenmiş</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Codificato</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Verschlüsselt</value>
+      </title>
+      <id>8</id>
+      <valueType>
+        <types>Boolean</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+  </attributes>
+  <attributes>
+    <name>FolderForExport</name>
+    <title>
+      <key>ru</key>
+      <value>Папка для экспорта</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Export directory</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Katalog eksportu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Directorio de exportación</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Directorio de exportación</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dışa aktarım dizini</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Directory di esportazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Verzeichnis exportieren</value>
+    </title>
+    <id>4</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>WhatToSave</name>
+    <title>
+      <key>ru</key>
+      <value>Что сохраняем</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Saving subject</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Co przechowujemy/zapisujemy</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Qué guardar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Qué guardar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kaydedilecek öğe</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Salvataggio soggetto</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Was zu speichern ist</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>CatalogRef</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>EncryptedFilesExtension</name>
+    <title>
+      <key>ru</key>
+      <value>Расширение для зашифрованных файлов</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Encrypted file extension</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Rozszerzenie zaszyfrowanych plików</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Extensión del archivo codificado</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Extensión del archivo codificado</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Şifrelenmiş dosya uzantısı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Estensione del file codificato</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Verschlüsselte Dateierweiterung</value>
+    </title>
+    <id>6</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>FilesStorageCatalogName</name>
+    <title>
+      <key>ru</key>
+      <value>Имя справочника хранилища файлов</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>File storage catalog name</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Nazwa katalogu przechowywania plików</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Nombre del catálogo del almacenamiento de archivos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Nombre del catálogo del almacenamiento de archivos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dosya depolama dizini adı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Nome catalogo archiviazione file</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Name des Dateiablageverzeichnisses</value>
+    </title>
+    <id>1</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>TransliterateFileAndFolderNames</name>
+    <title>
+      <key>ru</key>
+      <value>Транслитерировать имена папок и файлов</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Transliterate names of files and folders</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Transliteruj nazwy folderów i plików</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Transliterar los nombres de las carpetas y archivos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Transliterar los nombres de las carpetas y archivos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Klasör ve dosyaların isimlerini Latin harflerle yaz</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Traslittera nomi di file e cartelle</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Transliterieren von Ordnern und Dateinamen</value>
+    </title>
+    <id>7</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>FileVersionsStorageCatalogName</name>
+    <title>
+      <key>ru</key>
+      <value>Имя справочника хранилища версий файлов</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Name of the file version storage catalog</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Nazwa katalogu przechowywania wersji plików</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Nombre del catálogo del almacenamiento de las versiones de archivos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Nombre del catálogo del almacenamiento de las versiones de archivos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dosya depolama dizini adı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Nome del catalogo di archiviazione della versione del file</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Referenzname des Dateiversionsverzeichnisses</value>
+    </title>
+    <id>8</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>SaveFolder</name>
+    <title>
+      <key>ru</key>
+      <value>Сохранить папку</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Save folder</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zapisz folder</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Guardar carpeta</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Guardar carpeta</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Klasörü kaydet</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Salvare cartella</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Ordner speichern</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Сохранить папку</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Save folder</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zapisz folder</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Guardar carpeta</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Guardar carpeta</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Klasörü kaydet</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Salvare cartella</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Ordner speichern</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>SaveFolder</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <parameters>
+    <name>ExportFolder</name>
+    <valueType>
+      <types>CatalogRef</types>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>FilesStorageCatalogName</name>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>FileVersionsStorageCatalogName</name>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+  </parameters>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

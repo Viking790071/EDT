@@ -1,0 +1,64 @@
+SELECT
+	ProductsTable.Products AS Products,
+	ProductsTable.Characteristic AS Characteristic
+INTO ProductsTable
+FROM
+	&ProductsTable AS ProductsTable
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT
+	MAX(ExchangeRate.Period) AS Period,
+	ExchangeRate.Rate AS ExchangeRate,
+	ExchangeRate.Repetition AS Multiplicity
+INTO PriceKindExchangeRateource
+FROM
+	InformationRegister.ExchangeRate.SliceLast(&ToDate, Currency = &CurrencySource AND Company = &Company) AS ExchangeRate
+
+GROUP BY
+	ExchangeRate.Rate,
+	ExchangeRate.Repetition
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT
+	MAX(ExchangeRate.Period) AS Period,
+	ExchangeRate.Rate AS ExchangeRate,
+	ExchangeRate.Repetition AS Multiplicity
+INTO PriceKindCurrencyRateReceiver
+FROM
+	InformationRegister.ExchangeRate.SliceLast(&ToDate, Currency = &CurrencyOfReceiver AND Company = &Company) AS ExchangeRate
+
+GROUP BY
+	ExchangeRate.Rate,
+	ExchangeRate.Repetition
+;
+
+////////////////////////////////////////////////////////////////////////////////
+SELECT
+	TRUE AS Check,
+	PricesSliceLast.Products AS Products,
+	PricesSliceLast.Characteristic AS Characteristic,
+	PricesSliceLast.MeasurementUnit AS MeasurementUnit,
+	CASE
+		WHEN &CurrencyOfReceiver <> &CurrencySource
+			THEN PricesSliceLast.Price * PriceKindExchangeRateource.ExchangeRate * PriceKindCurrencyRateReceiver.Multiplicity / PriceKindCurrencyRateReceiver.ExchangeRate * PriceKindExchangeRateource.Multiplicity
+		ELSE PricesSliceLast.Price
+	END AS Price
+FROM
+	InformationRegister.Prices.SliceLast(
+			&ToDate,
+			PriceKind = &PriceKind
+				AND NOT (Products, Characteristic) IN
+						(SELECT
+							ProductsTable.Products,
+							ProductsTable.Characteristic
+						FROM
+							ProductsTable AS ProductsTable)) AS PricesSliceLast,
+	PriceKindExchangeRateource AS PriceKindExchangeRateource,
+	PriceKindCurrencyRateReceiver AS PriceKindCurrencyRateReceiver
+WHERE
+	&CharacteristicCondition
+
+ORDER BY
+	Products

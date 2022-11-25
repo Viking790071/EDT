@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <title>
+    <key>en</key>
+    <value>Scheduling settings</value>
+  </title>
+  <title>
+    <key>ru</key>
+    <value>Настройки графика</value>
+  </title>
+  <title>
+    <key>pl</key>
+    <value>Ustawienia planowania</value>
+  </title>
+  <title>
+    <key>es_ES</key>
+    <value>Ajustes del horario</value>
+  </title>
+  <title>
+    <key>es_CO</key>
+    <value>Ajustes del horario</value>
+  </title>
+  <title>
+    <key>tr</key>
+    <value>Planlama ayarları</value>
+  </title>
+  <title>
+    <key>it</key>
+    <value>Impostazioni di pianificazione</value>
+  </title>
+  <title>
+    <key>de</key>
+    <value>Einstellungen des Zeitplans</value>
+  </title>
+  <items xsi:type="form:FormField">
+    <name>ScheduleOperations</name>
+    <id>14</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>ScheduleOperations</segments>
+    </dataPath>
+    <titleLocation>Right</titleLocation>
+    <extendedTooltip>
+      <name>ScheduleOperationsExtendedTooltip</name>
+      <id>16</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ScheduleOperationsContextMenu</name>
+      <id>15</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>CheckBoxField</type>
+    <readOnly>true</readOnly>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>GroupAdditionalParameters</name>
+    <id>17</id>
+    <items xsi:type="form:FormField">
+      <name>FullReplanning</name>
+      <id>1</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>FullReplanning</segments>
+      </dataPath>
+      <titleLocation>Right</titleLocation>
+      <toolTip>
+        <key>en</key>
+        <value>Select this check box if you want to reschedule all operations of the selected orders.</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Установите этот флажок для перепланирования всех операций для выбранных заказов.</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Zaznacz to pole wyboru, jeśli chcesz ponownie zaplanować wszystkie operacje wybranych zleceń.</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Marque esta casilla de verificación si desea reprogramar todas las operaciones de las órdenes seleccionadas.</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Marque esta casilla de verificación si desea reprogramar todas las operaciones de las órdenes seleccionadas.</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Seçilen siparişlerin tüm işlemlerini yeniden planlamak için bu onay kutusunu işaretleyin.</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Selezionare questa casella di controllo per ripianificare tutte le operazioni degli ordini selezionati.</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Aktivieren Sie dieses Kontrollkästchen wenn Sie alle Operationen des ausgewählten Auftrags neu planen möchten.</value>
+      </toolTip>
+      <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+      <handlers>
+        <event>OnChange</event>
+        <name>FullReplanningOnChange</name>
+      </handlers>
+      <extendedTooltip>
+        <name>FullReplanningExtendedTooltip</name>
+        <id>3</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>FullReplanningContextMenu</name>
+        <id>2</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>PlanTheQueueByTheCurrentOne</name>
+      <id>4</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>PlanTheQueueByTheCurrentOne</segments>
+      </dataPath>
+      <titleLocation>Right</titleLocation>
+      <toolTip>
+        <key>en</key>
+        <value>Select this check box if you want to schedule the selected production orders and schedule or reschedule the production orders that have higher position in the queue and require scheduling or rescheduling.
+This will update the production schedule so that the production orders keep their positions in this schedule according to their priority.</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Установите этот флажок для планирования выбранных заказов на производство, а также планирования или перепланирования заказов на производство, которые имеют более высокую позицию в очереди и требуют планирования или перепланирования.
+Это приведет к обновлению производственного графика так, что заказы на производство сохранят свои позиции в этом графике в соответствии с их приоритетом.</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Zaznacz to pole wyboru, jeśli chcesz zaplanować wybrane zlecenia produkcyjne i zaplanuj lub ponownie zaplanuj zlecenia produkcyjne, które mają bardziej wysoką pozycję w kolejce i wymagają planowania lub ponownego planowania.
+To zaktualizuje harmonogram produkcji w taki sposób, że zlecenia produkcyjne zachowają swoje pozycje w tym harmonogramie zgodnie z ich priorytetem.</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Marque esta casilla de verificación si desea programar las órdenes de producción seleccionadas y programar o reprogramar las órdenes de producción que tienen una posición más alta en la fila y que requieren ser programadas o reprogramadas.
+ Esto actualizará el programa de producción para que las órdenes de producción mantengan sus posiciones en este programa de acuerdo con su prioridad.</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Marque esta casilla de verificación si desea programar las órdenes de producción seleccionadas y programar o reprogramar las órdenes de producción que tienen una posición más alta en la fila y que requieren ser programadas o reprogramadas.
+ Esto actualizará el programa de producción para que las órdenes de fabricación mantengan sus posiciones en este programa de acuerdo con su prioridad.</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Seçilen üretim emirlerini planlamak ve sıradaki pozisyonu daha yüksek olan ve planlamaya ve yeniden planlamaya ihtiyacı olan üretim emirlerini planlamak ve yeniden planlamak için bu onay kutusunu işaretleyin.
+Bu, üretim takvimini üretim emirlerinin bu takvimde önceliklerine göre pozisyonlarını korumaları için güncelleyecektir.</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Selezionare questa casella di controllo se si desidera programmare gli ordini di produzione selezionati e programmare o riprogrammare gli ordini di produzione che hanno una posizione più alta nella coda e richiedono una pianificazione o una riprogrammazione.
+Questo aggiornerà il programma di produzione in modo che gli ordini di produzione mantengano le loro posizioni in questo pianificare in base alla loro priorità.</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Aktivieren Sie dieses Kontrollkästchen wenn Sie die ausgewählten Produktionsaufträge planen und die Produktionsaufträge planen oder neu planen, die höhere Positionen in der Warteschlange haben und Planen oder Neuplanen benötigen.
+Dadurch wird der Produktionsplan aktualisiert also halten die Produktionsaufträge ihre Positionen im Plan in Übereinstimmung mit ihrer Priorität ein.</value>
+      </toolTip>
+      <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+      <extendedTooltip>
+        <name>PlanTheQueueByTheCurrentOneExtendedTooltip</name>
+        <id>6</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>PlanTheQueueByTheCurrentOneContextMenu</name>
+        <id>5</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>en</key>
+      <value>Additional options</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Дополнительные опции</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Opcje dodatkowe</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Opciones adicionales</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Opciones adicionales</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Ek seçenekler</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Varianti aggiuntive</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Weitere Optionen</value>
+    </title>
+    <extendedTooltip>
+      <name>GroupAdditionalParametersExtendedTooltip</name>
+      <id>18</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <verticalSpacing>Single</verticalSpacing>
+      <representation>WeakSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>FormCommandBar</name>
+    <id>-1</id>
+    <items xsi:type="form:Button">
+      <name>FormPlan</name>
+      <id>12</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormPlanExtendedTooltip</name>
+        <id>13</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.Plan</commandName>
+      <representation>Auto</representation>
+      <defaultButton>true</defaultButton>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <handlers>
+    <event>OnOpen</event>
+    <name>OnOpen</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Object</name>
+    <id>1</id>
+    <valueType>
+      <types>DataProcessorObject.ProductionSchedulePlanning</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <main>true</main>
+  </attributes>
+  <attributes>
+    <name>FullReplanning</name>
+    <title>
+      <key>en</key>
+      <value>Reschedule all operations</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Перепланировать все операции</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Ponownie zaplanuj wszystkie operacje</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Reprogramar todas las operaciones</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Reprogramar todas las operaciones</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Tüm işlemleri yeniden planla</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Ripianifica tutte le operazioni</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Alle Operationen neu planen</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>PlanTheQueueByTheCurrentOne</name>
+    <title>
+      <key>en</key>
+      <value>Include production orders with higher position in the queue</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Включить заказы на производство с более высокой позицией в очереди</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Uwzględnij zlecenia produkcyjne z bardziej wysoką pozycją w kolejce</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Incluir las órdenes de producción con una posición más alta en la fila</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Incluir las órdenes de producción con una posición más alta en la fila</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Sıradaki pozisyonu daha yüksek üretim emirlerini dahil et</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Includi ordini di produzione con posizione più alta nella coda</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Produktionsaufträge mit höheren Positionen in der Warteschlange einschließen</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ScheduleOperations</name>
+    <title>
+      <key>en</key>
+      <value>Schedule operations</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Запланировать операции</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Operacje harmonogramu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Planificar las operaciones</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Planificar las operaciones</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>İşlemleri planla</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Pianifica operazioni</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Operationen planen</value>
+    </title>
+    <id>4</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>Plan</name>
+    <title>
+      <key>en</key>
+      <value>Continue</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Продолжить</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Kontynuuj</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Continuar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Continuar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Devam</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Continua</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Weiter</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>en</key>
+      <value>Plan</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Запланировать</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Planowane</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Plan</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Plan</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Planla</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Piano</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Plan</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Plan</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+  <extInfo xsi:type="form:ObjectFormExtInfo"/>
+</form:Form>

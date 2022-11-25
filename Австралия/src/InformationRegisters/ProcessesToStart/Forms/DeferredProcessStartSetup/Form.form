@@ -1,0 +1,2223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <title>
+    <key>ru</key>
+    <value>Настройка отложенного старта задания</value>
+  </title>
+  <title>
+    <key>en</key>
+    <value>Set up deferred start of a job</value>
+  </title>
+  <title>
+    <key>pl</key>
+    <value>Ustaw odroczone rozpoczęcie pracy</value>
+  </title>
+  <title>
+    <key>es_ES</key>
+    <value>Establecer el inicio diferido de la tarea</value>
+  </title>
+  <title>
+    <key>es_CO</key>
+    <value>Establecer el inicio diferido de la tarea</value>
+  </title>
+  <title>
+    <key>tr</key>
+    <value>İşin ertelenmiş başlangıcını ayarla</value>
+  </title>
+  <title>
+    <key>it</key>
+    <value>Impostazione di avvio ritardato dell'attività</value>
+  </title>
+  <title>
+    <key>de</key>
+    <value>Verzögerten Beginn für die Arbeit eingeben</value>
+  </title>
+  <items xsi:type="form:FormField">
+    <name>PostponedProcessStart</name>
+    <id>18</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>PostponedProcessStart</segments>
+    </dataPath>
+    <titleLocation>Right</titleLocation>
+    <handlers>
+      <event>OnChange</event>
+      <name>DeferredProcessStartOnChange</name>
+    </handlers>
+    <extendedTooltip>
+      <name>ProcessDeferredStartExtendedTooltip</name>
+      <id>20</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ProcessDeferredStartContextMenu</name>
+      <id>19</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>CheckBoxField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>DeferredStartDateGroup</name>
+    <id>16</id>
+    <items xsi:type="form:FormField">
+      <name>DeferredStartDate</name>
+      <id>1</id>
+      <title>
+        <key>ru</key>
+        <value>Дата</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Date</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Data</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Fecha</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Fecha</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Tarih</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Data</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Datum</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>DeferredStartDate</segments>
+      </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>DeferredStartDateOnChange</name>
+      </handlers>
+      <extendedTooltip>
+        <name>DeferredStartDateExtendedTooltip</name>
+        <id>3</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>DeferredStartDateContextMenu</name>
+        <id>2</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <width>9</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>false</horizontalStretch>
+        <wrap>true</wrap>
+        <editFormat>
+          <key>ru</key>
+          <value>ДФ=дд.ММ.гггг</value>
+        </editFormat>
+        <editFormat>
+          <key>en</key>
+          <value>DF=MM/dd/yyyy</value>
+        </editFormat>
+        <editFormat>
+          <key>pl</key>
+          <value>DF=dd.MM.yyyy</value>
+        </editFormat>
+        <editFormat>
+          <key>es_ES</key>
+          <value>DF=dd/MM/yyyy</value>
+        </editFormat>
+        <editFormat>
+          <key>es_CO</key>
+          <value>DF=dd/MM/yyyy</value>
+        </editFormat>
+        <editFormat>
+          <key>tr</key>
+          <value>DF=dd.MM.yyyy</value>
+        </editFormat>
+        <editFormat>
+          <key>it</key>
+          <value>DF=dd/MM/yyyy</value>
+        </editFormat>
+        <editFormat>
+          <key>de</key>
+          <value>DF=dd.MM.yyyy</value>
+        </editFormat>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>DeferredStartDateTime</name>
+      <id>4</id>
+      <title>
+        <key>ru</key>
+        <value>Время</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Time</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Czas</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Hora</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Hora</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Zaman</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Tempo</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Zeit</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>DeferredStartDate</segments>
+      </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>DeferredStartDateTimeOnChange</name>
+      </handlers>
+      <extendedTooltip>
+        <name>DeferredStartDateTimeExtendedTooltip</name>
+        <id>6</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>DeferredStartDateTimeContextMenu</name>
+        <id>5</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <width>14</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>false</horizontalStretch>
+        <wrap>true</wrap>
+        <dropListButton>true</dropListButton>
+        <choiceButton>false</choiceButton>
+        <editFormat>
+          <key>ru</key>
+          <value>ДФ=ЧЧ:мм</value>
+        </editFormat>
+        <editFormat>
+          <key>en</key>
+          <value>DF=hh:mm tt</value>
+        </editFormat>
+        <editFormat>
+          <key>pl</key>
+          <value>DF=hh:mm tt</value>
+        </editFormat>
+        <editFormat>
+          <key>es_ES</key>
+          <value>DF=hh:mm tt</value>
+        </editFormat>
+        <editFormat>
+          <key>es_CO</key>
+          <value>DF=hh:mm tt</value>
+        </editFormat>
+        <editFormat>
+          <key>tr</key>
+          <value>DF=hh:mm tt</value>
+        </editFormat>
+        <editFormat>
+          <key>it</key>
+          <value>DF=hh.mm tt</value>
+        </editFormat>
+        <editFormat>
+          <key>de</key>
+          <value>DF=hh:mm tt</value>
+        </editFormat>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Дата отложенного старта</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Deferred start date</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Odroczony termin rozpoczęcia</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Fecha de inicio diferido</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Fecha de inicio diferido</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Ertelenmiş başlangıç tarihi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Data di avvio posticipato</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Verzögertes Startdatum</value>
+    </title>
+    <extendedTooltip>
+      <name>DeferredStartDateGroupExtendedTooltip</name>
+      <id>17</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>HorizontalIfPossible</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>FooterPages</name>
+    <id>61</id>
+    <items xsi:type="form:FormGroup">
+      <name>CancelStartPage</name>
+      <id>67</id>
+      <items xsi:type="form:FormGroup">
+        <name>CancelStartGroup</name>
+        <id>69</id>
+        <items xsi:type="form:Decoration">
+          <name>DecorationPictureCancelStart</name>
+          <id>71</id>
+          <title>
+            <key>ru</key>
+            <value>Декорация картинка отмена старта</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Decoration picture cancel start</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Dekoracja obrazej anuluj rozpoczęcie</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Imagen de decoración cancelar inicio</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Imagen de decoración cancelar inicio</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Dekorasyon resmi iptali başlangıcı</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Decorazione immagine annulla avvio</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Dekorationsbild Start abbrechen</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>DecorationPictureCancelStartExtendedTooltip</name>
+            <id>73</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>DecorationPictureCancelStartContextMenu</name>
+            <id>72</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>2</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Warning</picture>
+            </picture>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>DecorationCancelStart</name>
+          <id>74</id>
+          <title>
+            <key>ru</key>
+            <value>Во время отложенного старта этого процесса произошла ошибка.</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>An error occurred during the deferred start of this process.</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Zaistniał błąd podczas odroczonego rozpoczęcia tego procesu.</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Se produjo un error durante el inicio diferido de este proceso.</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Se produjo un error durante el inicio diferido de este proceso.</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Ertelenmiş iş başlangıcı sırasında bir hata yaşandı.</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Durante l'avvio ritardato di questo processo è stato riscontrato un errore.</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Ein Fehler erschien beim verzögerten Start dieses Prozesses</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>DecorationCancelStartExtendedTooltip</name>
+            <id>76</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>DecorationCancelStartContextMenu</name>
+            <id>75</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <textColor xsi:type="core:ColorRef">
+            <color>Style.NoteText</color>
+          </textColor>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Отмена старта</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Cancel start</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Anuluj rozpoczęcie</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Cancelar inicio</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Cancelar inicio</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Başlangıcı iptal et</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Annulla avvio</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Start abbrechen</value>
+        </title>
+        <extendedTooltip>
+          <name>CancelStartGroupExtendedTooltip</name>
+          <id>70</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>HorizontalIfPossible</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Страница отмена старта</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Page cancel start</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Strona anuluj rozpoczęcie</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Página cancelar inicio</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Página cancelar inicio</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Sayfa iptali başlangıcı</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Pagina annulla avvio</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Seite Start abbrechen</value>
+      </title>
+      <extendedTooltip>
+        <name>CancelStartPageExtendedTooltip</name>
+        <id>68</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>JobStartedPage</name>
+      <id>63</id>
+      <items xsi:type="form:FormGroup">
+        <name>JobStartedGroup</name>
+        <id>59</id>
+        <items xsi:type="form:Decoration">
+          <name>DecorationPictureJobStarted</name>
+          <id>53</id>
+          <title>
+            <key>ru</key>
+            <value>Декорация картинка задание запущено</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Decoration picture job started</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Dekoracja obrazek rozpoczęto pracę</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Imagen de decoración del inicio de la tarea</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Imagen de decoración del inicio de la tarea</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Dekorasyon resmi işi başladı</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Decorazione immagine attività avviata</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Dekorationsbild Arbeit gestartet</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>DecorationPictureJobStartedExtendedTooltip</name>
+            <id>55</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>DecorationPictureJobStartedContextMenu</name>
+            <id>54</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>2</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Information</picture>
+            </picture>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>DecorationJobIsStarted</name>
+          <id>56</id>
+          <title>
+            <key>ru</key>
+            <value>Задание уже запущено</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Job already started</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Zadanie jest już zaczęte</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>La tarea ya ha comenzado</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>La tarea ya ha comenzado</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>İş zaten başladı</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Processo già avviato</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Arbeit bereits gestartet</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>DecorationJobIsStartedExtendedTooltip</name>
+            <id>58</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>DecorationJobIsStartedContextMenu</name>
+            <id>57</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <textColor xsi:type="core:ColorRef">
+            <color>Style.NoteText</color>
+          </textColor>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Задание запущено</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Job started</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Rozpoczęto zadanie</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Inicio de la tarea</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Inicio de la tarea</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>İş başladı</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Di avvii</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Arbeit gestartet</value>
+        </title>
+        <extendedTooltip>
+          <name>JobStartedGroupExtendedTooltip</name>
+          <id>60</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>HorizontalIfPossible</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Страница задание запущено</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Page job started</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Strona rozpoczęto zadanie</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Página de inicio la tarea</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Página de inicio la tarea</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>İşin başladığı sayfa</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Pagina processo avviato</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Seite Arbeit gestartet</value>
+      </title>
+      <extendedTooltip>
+        <name>JobStartedPageExtendedTooltip</name>
+        <id>64</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>EmptyPage</name>
+      <id>65</id>
+      <items xsi:type="form:Decoration">
+        <name>IntervalDecoration</name>
+        <id>30</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>DecorationIntervalExtendedTooltip</name>
+          <id>32</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>DecorationIntervalContextMenu</name>
+          <id>31</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>true</horizontalStretch>
+        <textColor xsi:type="core:ColorRef">
+          <color>Style.NoteText</color>
+        </textColor>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Страница пусто</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Page empty</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Strona pusta</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Página en blanco</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Página en blanco</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Sayfa boş</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Pagina vuota</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Seite leer</value>
+      </title>
+      <extendedTooltip>
+        <name>EmptyPageExtendedTooltip</name>
+        <id>66</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>JobIsCompletedPage</name>
+      <id>77</id>
+      <items xsi:type="form:FormGroup">
+        <name>JobIsCompletedGroup</name>
+        <id>79</id>
+        <items xsi:type="form:Decoration">
+          <name>DecorationPictureJobIsCompleted</name>
+          <id>81</id>
+          <title>
+            <key>ru</key>
+            <value>Декорация картинка задание завершено</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Decoration picture job completed</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Dekoracja obrazek zakończono zadanie</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>La imagen de decoración de tarea se ha completado</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>La imagen de decoración de tarea se ha completado</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Dekorasyon resmi işi tamamlandı</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Decorazione immagine attività completata</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Dekorationsbild Arbeit erfüllt</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>DecorationPictureJobIsCompletedExtendedTooltip</name>
+            <id>83</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>DecorationPictureJobIsCompletedContextMenu</name>
+            <id>82</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>2</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Information</picture>
+            </picture>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>DecorationJobIsCompleted</name>
+          <id>84</id>
+          <title>
+            <key>ru</key>
+            <value>Задание завершено</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>The job is completed</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Zadanie jest zakończone</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>La tarea está completada</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>La tarea está completada</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>İş tamamlandı</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Il processo è stato completato</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Die Arbeit war erfolgreich</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>DecorationJobIsCompletedExtendedTooltip</name>
+            <id>86</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>DecorationJobIsCompletedContextMenu</name>
+            <id>85</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <textColor xsi:type="core:ColorRef">
+            <color>Style.NoteText</color>
+          </textColor>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Задание завершено</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>The job is completed</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Zadanie jest zakończone</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>La tarea está completada</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>La tarea está completada</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>İş tamamlandı</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Il processo è stato completato</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Die Arbeit war erfolgreich</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Группа задание запущено</value>
+        </toolTip>
+        <toolTip>
+          <key>en</key>
+          <value>Group job started</value>
+        </toolTip>
+        <toolTip>
+          <key>pl</key>
+          <value>Grupa zadanie rozpoczęte</value>
+        </toolTip>
+        <toolTip>
+          <key>es_ES</key>
+          <value>Grupo de inicio la tarea</value>
+        </toolTip>
+        <toolTip>
+          <key>es_CO</key>
+          <value>Grupo de inicio la tarea</value>
+        </toolTip>
+        <toolTip>
+          <key>tr</key>
+          <value>Grup işi başladı</value>
+        </toolTip>
+        <toolTip>
+          <key>it</key>
+          <value>Gruppo lavoro avviato</value>
+        </toolTip>
+        <toolTip>
+          <key>de</key>
+          <value>Gruppenarbeit gestartet</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>JobIsCompletedGroupExtendedTooltip</name>
+          <id>80</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>HorizontalIfPossible</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Страница задание завершено</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Page the job is completed</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Strona zadanie zakończono</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>La página de la tarea se ha completado</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>La página de la tarea se ha completado</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>İşin tamamlandığı sayfa</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Pagina attività completata</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Seite Die Arbeit war erfolgreich</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Страница задание запущено</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Page job started</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Strona rozpoczęto zadanie</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Página de inicio la tarea</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Página de inicio la tarea</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>İşin başladığı sayfa</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Pagina processo avviato</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Seite Arbeit gestartet</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>JobIsCompletedPageExtendedTooltip</name>
+        <id>78</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Страницы подвала</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Footer pages</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Stopka strony</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Pie de páginas</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Pie de páginas</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Alt bilgi sayfaları</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Pagine del footer</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Fußzeile Seiten</value>
+    </title>
+    <extendedTooltip>
+      <name>FooterPagesExtendedTooltip</name>
+      <id>62</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>Pages</type>
+    <extInfo xsi:type="form:PagesGroupExtInfo">
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ButtonsGroup</name>
+    <id>24</id>
+    <items xsi:type="form:FormGroup">
+      <name>CommandsPages</name>
+      <id>87</id>
+      <items xsi:type="form:FormGroup">
+        <name>ProcessIsNotStartedPage</name>
+        <id>91</id>
+        <items xsi:type="form:Button">
+          <name>Finish</name>
+          <id>28</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>DoneExtendedTooltip</name>
+            <id>29</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualButton</type>
+          <commandName>Form.Command.Finish</commandName>
+          <representation>Auto</representation>
+          <defaultButton>true</defaultButton>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <items xsi:type="form:Button">
+          <name>Cancel</name>
+          <id>26</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>CancelExtendedTooltip</name>
+            <id>27</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualButton</type>
+          <commandName>Form.Command.Cancel</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Страница процесс не стартован</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Page process is not started</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Proces strony nie jest rozpoczęty</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>La página del proceso no se ha iniciado</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>La página del proceso no se ha iniciado</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Sayfa süreci başlamadı</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Pagina processo non è stato avviato</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Seite Prozess nicht gestartet</value>
+        </title>
+        <extendedTooltip>
+          <name>ProcessIsNotStartedPageExtendedTooltip</name>
+          <id>92</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Page</type>
+        <extInfo xsi:type="form:PageGroupExtInfo">
+          <group>HorizontalIfPossible</group>
+          <showTitle>true</showTitle>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ProcessIsStartedPage</name>
+        <id>89</id>
+        <items xsi:type="form:Button">
+          <name>Close</name>
+          <id>95</id>
+          <title>
+            <key>ru</key>
+            <value>Закрыть</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Close</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Zamknij</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Cerrar</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Cerrar</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Kapat</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Chiudi</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Schließen</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>CloseExtendedTooltip</name>
+            <id>96</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualButton</type>
+          <commandName>Form.Command.Cancel</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Страница процесс стартован</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Page process is started</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Proces strony jest rozpoczęty</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>La página del proceso se ha iniciado</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>La página del proceso se ha iniciado</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Sayfa süreci başladı</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Pagina processo è stato avviato</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Seite Prozess gestartet</value>
+        </title>
+        <extendedTooltip>
+          <name>ProcessIsStartedPageExtendedTooltip</name>
+          <id>90</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Page</type>
+        <extInfo xsi:type="form:PageGroupExtInfo">
+          <group>HorizontalIfPossible</group>
+          <showTitle>true</showTitle>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Страницы команд</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Command pages</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Strony polecenia</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Páginas de comando</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Páginas de comando</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Komut sayfaları</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Pagine dei comandi</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Befehlsseiten</value>
+      </title>
+      <extendedTooltip>
+        <name>CommandsPagesExtendedTooltip</name>
+        <id>88</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Pages</type>
+      <extInfo xsi:type="form:PagesGroupExtInfo">
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Кнопки</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Buttons</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Przyciski</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Botones</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Botones</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Butonlar</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Pulsanti</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Tasten</value>
+    </title>
+    <extendedTooltip>
+      <name>ButtonsGroupExtendedTooltip</name>
+      <id>25</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>HorizontalIfPossible</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <commandBarLocation>Bottom</commandBarLocation>
+  <autoCommandBar>
+    <name>FormCommandBar</name>
+    <id>-1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Right</horizontalAlign>
+  </autoCommandBar>
+  <handlers>
+    <event>OnOpen</event>
+    <name>OnOpen</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>DeferredStartDate</name>
+    <title>
+      <key>ru</key>
+      <value>Дата отложенного старта</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Deferred start date</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Odroczony termin rozpoczęcia</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Fecha de inicio diferido</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Fecha de inicio diferido</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Ertelenmiş başlangıç tarihi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Data di avvio posticipato</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Verzögertes Startdatum</value>
+    </title>
+    <id>1</id>
+    <valueType>
+      <types>Date</types>
+      <dateQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>BusinessProcess</name>
+    <id>2</id>
+    <valueType>
+      <types>DefinedType.DeferredBusinessProcess</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>State</name>
+    <id>3</id>
+    <valueType>
+      <types>EnumRef.ProcessesStatesForStart</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>PostponedProcessStart</name>
+    <title>
+      <key>ru</key>
+      <value>Отложенный старт задания</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Deferred job start</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Odroczone rozpoczęcie pracy</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Inicio de tarea diferido</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Inicio de tarea diferido</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Ertelenmiş iş başlangıcı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Avvio lavoro rimandato</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Verzögerter Arbeitsbeginn</value>
+    </title>
+    <id>4</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>DeferredProcessStartOnOpen</name>
+    <id>5</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ProcessIsStarted</name>
+    <id>6</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>UseDateAndTimeInTaskDeadlines</name>
+    <id>10</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>DeferredStartSetupViewOnly</name>
+    <id>11</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>DueDate</name>
+    <id>12</id>
+    <valueType>
+      <types>Date</types>
+      <dateQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ProcessCompleted</name>
+    <id>13</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>CurrentServerDate</name>
+    <id>14</id>
+    <valueType>
+      <types>Date</types>
+      <dateQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>Finish</name>
+    <title>
+      <key>ru</key>
+      <value>Готово</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Finish</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Gotowe</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Finalizar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Finalizar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Bitiş</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Termina</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Abschluss</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Готово</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Finish</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Gotowe</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Finalizar</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Finalizar</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Bitiş</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Termina</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Abschluss</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Finish</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>Cancel</name>
+    <title>
+      <key>ru</key>
+      <value>Отмена</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Cancel</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Anuluj</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Cancelar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Cancelar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>İptal et</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Annullare</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Abbrechen</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Отмена</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Cancel</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Anuluj</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Cancelar</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Cancelar</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>İptal et</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Annullare</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Abbrechen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Cancel</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <parameters>
+    <name>BusinessProcess</name>
+    <valueType>
+      <types>BusinessProcessRef</types>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>DueDate</name>
+    <valueType>
+      <types>Date</types>
+      <dateQualifiers/>
+    </valueType>
+  </parameters>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

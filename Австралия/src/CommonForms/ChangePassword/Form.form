@@ -1,0 +1,1762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:Decoration">
+    <name>AuthorizationNote</name>
+    <id>1</id>
+    <title>
+      <key>ru</key>
+      <value>Для входа в программу необходимо сменить пароль на новый.</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Password change is required before sign in.</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Aby wejść do programu, musisz zmienić hasło na nowe.</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Para entrar en el programa es necesario cambiar la contraseña por una nueva.</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Para entrar en el programa es necesario cambiar la contraseña por una nueva.</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Girişten önce şifre değişikliği gerekiyor.</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>La modifica della password è richiesta prima dell'accesso.</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Um in das Programm zu gelangen, müssen Sie das Passwort durch ein neues ersetzen.</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>AuthorizationNoteExtendedTooltip</name>
+      <id>3</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>AuthorizationNoteContextMenu</name>
+      <id>2</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>Label</type>
+    <autoMaxHeight>true</autoMaxHeight>
+    <extInfo xsi:type="form:LabelDecorationExtInfo">
+      <horizontalAlign>Left</horizontalAlign>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>PasswordGroup</name>
+    <id>18</id>
+    <items xsi:type="form:FormField">
+      <name>OldPassword</name>
+      <id>66</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>OldPassword</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>PreviousPasswordExtendedTooltip</name>
+        <id>68</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>PreviousPasswordContextMenu</name>
+        <id>67</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <width>14</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>false</horizontalStretch>
+        <wrap>true</wrap>
+        <passwordMode>true</passwordMode>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>NewPasswordGroup</name>
+      <id>72</id>
+      <items xsi:type="form:FormField">
+        <name>NewPassword</name>
+        <id>8</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>NewPassword</segments>
+        </dataPath>
+        <toolTipRepresentation>Button</toolTipRepresentation>
+        <handlers>
+          <event>OnChange</event>
+          <name>PasswordOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>NewPasswordExtendedTooltip</name>
+          <id>10</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>NewPasswordContextMenu</name>
+          <id>9</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <handlers>
+            <event>EditTextChange</event>
+            <name>PasswordChangeEditedText</name>
+          </handlers>
+          <width>14</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>false</horizontalStretch>
+          <wrap>true</wrap>
+          <passwordMode>true</passwordMode>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>NewPassword2</name>
+        <id>96</id>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>NewPassword</segments>
+        </dataPath>
+        <toolTipRepresentation>Button</toolTipRepresentation>
+        <handlers>
+          <event>OnChange</event>
+          <name>PasswordOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>NewPassword2ExtendedTooltip</name>
+          <id>98</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>NewPassword2ContextMenu</name>
+          <id>97</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <handlers>
+            <event>EditTextChange</event>
+            <name>PasswordChangeEditedText</name>
+          </handlers>
+          <width>14</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>false</horizontalStretch>
+          <wrap>true</wrap>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Button">
+        <name>CreatePassword</name>
+        <id>29</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <skipOnInput>true</skipOnInput>
+        <extendedTooltip>
+          <name>CreatePasswordExtendedTooltip</name>
+          <id>30</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualButton</type>
+        <commandName>Form.Command.CreatePassword</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Новый пароль</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>New password</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Nowe hasło</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Contraseña nueva</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Contraseña nueva</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Yeni parola</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Nuova password</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Neues Passwort</value>
+      </title>
+      <extendedTooltip>
+        <name>NewPasswordGroupExtendedTooltip</name>
+        <id>73</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>HorizontalIfPossible</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ConfirmPasswordGroup</name>
+      <id>74</id>
+      <items xsi:type="form:FormField">
+        <name>ConfirmPassword</name>
+        <id>11</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ConfirmPassword</segments>
+        </dataPath>
+        <handlers>
+          <event>OnChange</event>
+          <name>PasswordOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>ConfirmPasswordExtendedTooltip</name>
+          <id>13</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ConfirmPasswordContextMenu</name>
+          <id>12</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <handlers>
+            <event>EditTextChange</event>
+            <name>PasswordChangeEditedText</name>
+          </handlers>
+          <width>14</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>false</horizontalStretch>
+          <wrap>true</wrap>
+          <passwordMode>true</passwordMode>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ErrorsGroup</name>
+        <id>81</id>
+        <items xsi:type="form:FormGroup">
+          <name>ErrorPage</name>
+          <id>83</id>
+          <items xsi:type="form:Decoration">
+            <name>PasswordMismatchLabel</name>
+            <id>76</id>
+            <title>
+              <key>ru</key>
+              <value>(не совпадает)</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>(password mismatch)</value>
+            </title>
+            <title>
+              <key>pl</key>
+              <value>(nie są zgodne)</value>
+            </title>
+            <title>
+              <key>es_ES</key>
+              <value>(no coincide)</value>
+            </title>
+            <title>
+              <key>es_CO</key>
+              <value>(no coincide)</value>
+            </title>
+            <title>
+              <key>tr</key>
+              <value>(parola uyumsuz)</value>
+            </title>
+            <title>
+              <key>it</key>
+              <value>(password non corrispondenti)</value>
+            </title>
+            <title>
+              <key>de</key>
+              <value>(stimmt nicht überein)</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>PasswordMismatchLabelExtendedTooltip</name>
+              <id>78</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>PasswordMismatchLabelContextMenu</name>
+              <id>77</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>Label</type>
+            <autoMaxHeight>true</autoMaxHeight>
+            <verticalStretch>true</verticalStretch>
+            <textColor xsi:type="core:ColorRef">
+              <color>Style.ErrorNoteText</color>
+            </textColor>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Страница ошибка</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Error page</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Strona błąd</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Error de página</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Error de página</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Sayfa hata</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Pagina errore</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Seitenfehler</value>
+          </title>
+          <extendedTooltip>
+            <name>ErrorPageExtendedTooltip</name>
+            <id>84</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Page</type>
+          <extInfo xsi:type="form:PageGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>BlankPage</name>
+          <id>85</id>
+          <items xsi:type="form:Decoration">
+            <name>BlankLabel</name>
+            <id>87</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>BlankLabelExtendedTooltip</name>
+              <id>89</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>BlankLabelContextMenu</name>
+              <id>88</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Пустая страница</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Blank page</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Strona pusta</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Página vacía</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Página vacía</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Boş sayfa</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Pagina bianca</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Seite ist leer</value>
+          </title>
+          <extendedTooltip>
+            <name>BlankPageExtendedTooltip</name>
+            <id>86</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Page</type>
+          <extInfo xsi:type="form:PageGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Ошибок</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Errors</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Błędy</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Errores</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Errores</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Hatalar</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Errori</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Fehler</value>
+        </title>
+        <extendedTooltip>
+          <name>ErrorsGroupExtendedTooltip</name>
+          <id>82</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Pages</type>
+        <extInfo xsi:type="form:PagesGroupExtInfo">
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Подтверждение</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Confirm password</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Potwierdź hasło</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Confirmación</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Confirmación</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Parolayı doğrula</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Conferma password</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Bestätigung</value>
+      </title>
+      <verticalStretch>false</verticalStretch>
+      <extendedTooltip>
+        <name>ConfirmPasswordGroupExtendedTooltip</name>
+        <id>75</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>HorizontalIfPossible</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ShowNewPasswordGroup</name>
+      <id>31</id>
+      <items xsi:type="form:FormField">
+        <name>ShowNewPassword</name>
+        <id>26</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ShowNewPassword</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <handlers>
+          <event>OnChange</event>
+          <name>ShowNewPasswordOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>ShowNewPasswordExtendedTooltip</name>
+          <id>28</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ShowNewPasswordContextMenu</name>
+          <id>27</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Показывать новый пароль</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Show new password</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Pokaż nowe hasło</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Mostrar la contraseña nueva</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Mostrar la contraseña nueva</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Yeni parolayı göster</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Mostra nuova password</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Neues Passwort anzeigen</value>
+      </title>
+      <extendedTooltip>
+        <name>ShowNewPasswordGroupExtendedTooltip</name>
+        <id>32</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>HorizontalIfPossible</group>
+        <representation>NormalSeparation</representation>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Пароль</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Password</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Hasło</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Contraseña</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Contraseña</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Parola</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Password</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Passwort</value>
+    </title>
+    <extendedTooltip>
+      <name>PasswordGroupExtendedTooltip</name>
+      <id>19</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <representation>NormalSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <commandBarLocation>Bottom</commandBarLocation>
+  <autoCommandBar>
+    <name>CommandBarForm</name>
+    <id>-1</id>
+    <items xsi:type="form:Button">
+      <name>FormSetPassword</name>
+      <id>4</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormSetPasswordExtendedTooltip</name>
+        <id>5</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.SetPassword</commandName>
+      <representation>Auto</representation>
+      <defaultButton>true</defaultButton>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>FormCloseForm</name>
+      <id>79</id>
+      <title>
+        <key>ru</key>
+        <value>Завершить работу</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Exit</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Zakończ</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Salir</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Salir</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Çıkış</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Uscita</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Ausgang</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormCloseFormExtendedTooltip</name>
+        <id>80</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.CloseForm</commandName>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+      <locationInCommandBar>InCommandBarAndInAdditionalSubmenu</locationInCommandBar>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <handlers>
+    <event>OnOpen</event>
+    <name>OnOpen</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <excludedCommands>CustomizeForm</excludedCommands>
+  <windowOpeningMode>LockWholeInterface</windowOpeningMode>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>NewPassword</name>
+    <title>
+      <key>ru</key>
+      <value>Новый пароль</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>New password</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Nowe hasło</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Contraseña nueva</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Contraseña nueva</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Yeni parola</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Nuova password</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Neues Passwort</value>
+    </title>
+    <id>1</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ConfirmPassword</name>
+    <title>
+      <key>ru</key>
+      <value>Подтверждение</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Confirm password</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Potwierdź hasło</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Confirmación</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Confirmación</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Parolayı doğrula</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Conferma password</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Bestätigung</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ShowNewPassword</name>
+    <title>
+      <key>ru</key>
+      <value>Показывать новый пароль</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Show new password</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Pokaż nowe hasło</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Mostrar la contraseña nueva</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Mostrar la contraseña nueva</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Yeni parolayı göster</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Mostra nuova password</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Neues Passwort anzeigen</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>OldPassword</name>
+    <title>
+      <key>ru</key>
+      <value>Старый пароль</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Current password</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Stare hasło</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Contraseña antigua</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Contraseña antigua</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Mevcut parola</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Password attuale</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Altes Passwort</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>OnAuthorization</name>
+    <title>
+      <key>ru</key>
+      <value>При входе в программу</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>At sign-in</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Przy logowaniu do programu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Al entrar en el programa</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Al entrar en el programa</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Programa girişinde</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>All'accesso</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Bei der Anmeldung am Programm</value>
+    </title>
+    <id>6</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>User</name>
+    <title>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>User</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Użytkownik</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Usuario</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Usuario</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kullanıcı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Utente</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Benutzer</value>
+    </title>
+    <id>7</id>
+    <valueType>
+      <types>CatalogRef.ExternalUsers</types>
+      <types>CatalogRef.Users</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ErrorText</name>
+    <title>
+      <key>ru</key>
+      <value>Текст ошибки</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Error text</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Tekst błędu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Error texto</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Error texto</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Hata metni</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Testo errore</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Fehlertext</value>
+    </title>
+    <id>8</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ServiceUserPassword</name>
+    <title>
+      <key>ru</key>
+      <value>Пароль пользователя сервиса</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Service user password</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Hasło użytkownika serwisu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Contraseña del usuario de servicio</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Contraseña del usuario de servicio</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Hizmet kullanıcısı parolası</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Password dell'utente del servizio</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Service-Benutzer-Passwort</value>
+    </title>
+    <id>9</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>LastConfirmed</name>
+    <title>
+      <key>ru</key>
+      <value>Последнее подтверждение</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Last confirmed</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Ostatnie potwierdzenie</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Última confirmación</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Última confirmación</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Son teyit</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Ultima confermata</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Letzte Bestätigung</value>
+    </title>
+    <id>12</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>IsCurrentIBUser</name>
+    <title>
+      <key>ru</key>
+      <value>Это текущий пользователь ИБ</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Is current infobase user</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Jest aktualnym użytkownikiem bazy informacyjnej</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Es usuario actual de la BI</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Es usuario actual de la BI</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Mevcut Infobase kullanıcısıdır</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>E' l'utente corrente dell'infobase</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Dies ist der aktuelle Benutzer der IB</value>
+    </title>
+    <id>13</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ReturnPasswordAndDoNotSet</name>
+    <title>
+      <key>ru</key>
+      <value>Вернуть пароль без установки</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Restore password without resetting</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zwróć hasło bez ustawienia</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Devolver la contraseña sin especificar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Devolver la contraseña sin especificar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Şifreyi kurulmadan iade et</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Ripristina password senza reimpostare</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Passwort-Rückgabe ohne Einstellung</value>
+    </title>
+    <id>14</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>SetPassword</name>
+    <title>
+      <key>ru</key>
+      <value>Установить пароль</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Set password</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Ustaw hasło...</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Especificar la contraseña</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Especificar la contraseña</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Şifre belirle</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Imposta password</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Passwort einstellen</value>
+    </title>
+    <id>1</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>SetPassword</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>CreatePassword</name>
+    <title>
+      <key>ru</key>
+      <value>Создать пароль</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Generate password</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Utwórz hasło</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Crear la contraseña</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Crear la contraseña</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Şifre oluştur</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Genera password</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Passwort generieren</value>
+    </title>
+    <id>3</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Создать новый надежный пароль</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Generate a strong password.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Utwórz nowe silne hasło</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Crear una contraseña nueva y segura</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Crear una contraseña nueva y segura</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Yeni güvenilir şifreyi oluştur</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Genera una password sicura.</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Ein neues sicheres Passwort generieren.</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>CreatePassword</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>CloseForm</name>
+    <title>
+      <key>ru</key>
+      <value>Закрыть форму</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Close form</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zamknij formularz</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Cerrar el formulario</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Cerrar el formulario</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Formu kapat</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Chiudi modulo</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Formular schließen</value>
+    </title>
+    <id>4</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>CloseForm</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <parameters>
+    <name>User</name>
+    <valueType>
+      <types>CatalogRef.ExternalUsers</types>
+      <types>CatalogRef.Users</types>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>OnAuthorization</name>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>ReturnPasswordAndDoNotSet</name>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>OldPassword</name>
+    <valueType/>
+  </parameters>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

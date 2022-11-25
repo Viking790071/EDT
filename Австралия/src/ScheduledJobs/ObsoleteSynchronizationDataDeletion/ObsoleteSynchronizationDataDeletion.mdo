@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6a5f7521-270e-476e-88ec-a8cf79ea61a6">
+  <name>ObsoleteSynchronizationDataDeletion</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удаление неактуальной информации синхронизации</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Deleting of obsolete synchronization data</value>
+  </synonym>
+  <synonym>
+    <key>pl</key>
+    <value>Usunąć nieaktualne dane synchronizacji</value>
+  </synonym>
+  <synonym>
+    <key>es_ES</key>
+    <value>Borrar la información de la sincronización antigua</value>
+  </synonym>
+  <synonym>
+    <key>es_CO</key>
+    <value>Borrar la información de la sincronización antigua</value>
+  </synonym>
+  <synonym>
+    <key>tr</key>
+    <value>Eski senkronizasyon verilerinin silinmesi</value>
+  </synonym>
+  <synonym>
+    <key>it</key>
+    <value>Eliminazione dei dati di sincronizzazione obsoleti</value>
+  </synonym>
+  <synonym>
+    <key>de</key>
+    <value>Löschen Sie veraltete Synchronisierungsinformationen</value>
+  </synonym>
+  <comment>The job deletes sync information that was not deleted due to application faults. It deletes files that have been stored for more than 24 hours.</comment>
+  <methodName>CommonModule.DataExchangeServer.DeleteObsoleteExchangeMessage</methodName>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

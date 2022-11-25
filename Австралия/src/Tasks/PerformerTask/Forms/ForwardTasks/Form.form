@@ -1,0 +1,1845 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <title>
+    <key>ru</key>
+    <value>Выбор исполнителя</value>
+  </title>
+  <title>
+    <key>en</key>
+    <value>Select assignee</value>
+  </title>
+  <title>
+    <key>pl</key>
+    <value>Wybierz wykonawcę</value>
+  </title>
+  <title>
+    <key>es_ES</key>
+    <value>Seleccionar el ejecutor</value>
+  </title>
+  <title>
+    <key>es_CO</key>
+    <value>Seleccionar el ejecutor</value>
+  </title>
+  <title>
+    <key>tr</key>
+    <value>Atanan seç</value>
+  </title>
+  <title>
+    <key>it</key>
+    <value>Seleziona assegnatario</value>
+  </title>
+  <title>
+    <key>de</key>
+    <value>Einen Bevollmächtiger auswählen</value>
+  </title>
+  <items xsi:type="form:Decoration">
+    <name>TitleDecoration</name>
+    <id>5</id>
+    <title>
+      <key>ru</key>
+      <value>Выбранная задача</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Selected task</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wybrane zadanie</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Seleccionar la tarea</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Seleccionar la tarea</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Seçilmiş görev</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Incarico selezionato</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Ausgewählte Aufgabe</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>DecorationTitleExtendedTooltip</name>
+      <id>47</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>TitleDecorationContextMenu</name>
+      <id>6</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>Label</type>
+    <maxWidth>50</maxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <skipOnInput>false</skipOnInput>
+    <extInfo xsi:type="form:LabelDecorationExtInfo">
+      <horizontalAlign>Left</horizontalAlign>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>Document</name>
+    <id>72</id>
+    <items xsi:type="form:FormGroup">
+      <name>AddressingGroup</name>
+      <id>11</id>
+      <items xsi:type="form:FormGroup">
+        <name>AdressingPerformerGroup</name>
+        <id>12</id>
+        <items xsi:type="form:FormField">
+          <name>AdressingTypePerformer</name>
+          <id>9</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>AddressingType</segments>
+          </dataPath>
+          <titleLocation>None</titleLocation>
+          <handlers>
+            <event>OnChange</event>
+            <name>AddressingTypeOnChange</name>
+          </handlers>
+          <extendedTooltip>
+            <name>AdressingTypePerformerExtendedTooltip</name>
+            <id>49</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>AdressingTypePerformerContextMenu</name>
+            <id>10</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>RadioButtonField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+            <columnsCount>1</columnsCount>
+            <choiceList>
+              <presentation>
+                <key>ru</key>
+                <value>Исполнителю:</value>
+              </presentation>
+              <presentation>
+                <key>en</key>
+                <value>To assignee:</value>
+              </presentation>
+              <presentation>
+                <key>pl</key>
+                <value>Do wykonawcy:</value>
+              </presentation>
+              <presentation>
+                <key>es_ES</key>
+                <value>Para el ejecutador:</value>
+              </presentation>
+              <presentation>
+                <key>es_CO</key>
+                <value>Para el ejecutador:</value>
+              </presentation>
+              <presentation>
+                <key>tr</key>
+                <value>Atanana:</value>
+              </presentation>
+              <presentation>
+                <key>it</key>
+                <value>All'incaricato:</value>
+              </presentation>
+              <presentation>
+                <key>de</key>
+                <value>An den Bevollmächtiger:</value>
+              </presentation>
+              <value xsi:type="core:NumberValue">
+                <value>0</value>
+              </value>
+            </choiceList>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>Performer</name>
+          <id>1</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Performer</segments>
+          </dataPath>
+          <defaultItem>true</defaultItem>
+          <titleLocation>None</titleLocation>
+          <handlers>
+            <event>OnChange</event>
+            <name>PerformerOnChange</name>
+          </handlers>
+          <extendedTooltip>
+            <name>PerformerExtendedTooltip</name>
+            <id>51</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>PerformerContextMenu</name>
+            <id>2</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <width>35</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <openButton>false</openButton>
+            <choiceFoldersAndItems>Items</choiceFoldersAndItems>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Адресация исполнитель</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Addressing assignee</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Adresowanie do wykonawcy</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Direccionamiento del ejecutador</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Direccionamiento del ejecutador</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Atanan adresleme</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Indirizzamento incaricato</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Adressierungs-Bevollmächtiger</value>
+        </title>
+        <extendedTooltip>
+          <name>AdressingPerformerGroupExtendedTooltip</name>
+          <id>50</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>HorizontalIfPossible</group>
+          <showLeftMargin>true</showLeftMargin>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>AddressingRoleGroup</name>
+        <id>67</id>
+        <items xsi:type="form:FormField">
+          <name>AddressingTypeRole</name>
+          <id>69</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>AddressingType</segments>
+          </dataPath>
+          <titleLocation>None</titleLocation>
+          <handlers>
+            <event>OnChange</event>
+            <name>AddressingTypeOnChange</name>
+          </handlers>
+          <extendedTooltip>
+            <name>AddressingTypeRoleExtendedTooltip</name>
+            <id>71</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>AddressingTypeRoleContextMenu</name>
+            <id>70</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>RadioButtonField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+            <choiceList>
+              <presentation>
+                <key>ru</key>
+                <value>Исполнителям роли:</value>
+              </presentation>
+              <presentation>
+                <key>en</key>
+                <value>To role assignees:</value>
+              </presentation>
+              <presentation>
+                <key>pl</key>
+                <value>Do wykonawców roli:</value>
+              </presentation>
+              <presentation>
+                <key>es_ES</key>
+                <value>Para los ejecutores del rol:</value>
+              </presentation>
+              <presentation>
+                <key>es_CO</key>
+                <value>Para los ejecutores del rol:</value>
+              </presentation>
+              <presentation>
+                <key>tr</key>
+                <value>Role atananlara:</value>
+              </presentation>
+              <presentation>
+                <key>it</key>
+                <value>Al ruolo degli incaricati:</value>
+              </presentation>
+              <presentation>
+                <key>de</key>
+                <value>An Aufgabeempfänger der Rolle:</value>
+              </presentation>
+              <value xsi:type="core:NumberValue">
+                <value>1</value>
+              </value>
+            </choiceList>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>Role</name>
+          <id>13</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Role</segments>
+          </dataPath>
+          <titleLocation>None</titleLocation>
+          <handlers>
+            <event>OnChange</event>
+            <name>RoleOnChange</name>
+          </handlers>
+          <extendedTooltip>
+            <name>RoleExtendedTooltip</name>
+            <id>52</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>RoleContextMenu</name>
+            <id>14</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <dropListButton>false</dropListButton>
+            <choiceButton>true</choiceButton>
+            <choiceButtonRepresentation>ShowInInputField</choiceButtonRepresentation>
+            <openButton>false</openButton>
+            <choiceFoldersAndItems>Items</choiceFoldersAndItems>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Адресация роль</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Addressing role</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Rola adresowania</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Direccionamiento del rol</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Direccionamiento del rol</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Adresleme rolü</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Ruolo di indirizzamento</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Rolle von Adressierung</value>
+        </title>
+        <extendedTooltip>
+          <name>AddressingRoleGroupExtendedTooltip</name>
+          <id>68</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>HorizontalIfPossible</group>
+          <showLeftMargin>true</showLeftMargin>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Адресация</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Addressing</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Adresowanie</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Direccionamiento</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Direccionamiento</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Adresleme</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Indirizzamento</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Adressierung</value>
+      </title>
+      <extendedTooltip>
+        <name>AddressingGroupExtendedTooltip</name>
+        <id>48</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>Vertical</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>AddressingObjectsGroup</name>
+      <id>60</id>
+      <items xsi:type="form:Decoration">
+        <name>Indent</name>
+        <id>62</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>IndentExtendedTooltip</name>
+          <id>64</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>IndentContextMenu</name>
+          <id>63</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>AddressingObjects</name>
+        <id>65</id>
+        <items xsi:type="form:FormGroup">
+          <name>OneAddressingObjectGroup</name>
+          <id>33</id>
+          <items xsi:type="form:FormField">
+            <name>OneMainAddressingObject</name>
+            <id>34</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>MainAddressingObject</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>OneMainAddressingObjectExtendedTooltip</name>
+              <id>54</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>OneMainAddressingObjectContextMenu</name>
+              <id>35</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Один объект адресации</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>One addressing object</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Jeden obiekt adresacji</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Un objeto de direccionamiento</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Un objeto de direccionamiento</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Bir adresleme nesnesi</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Unico oggetto dell'indirizzamento</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Objekt von Adressierung</value>
+          </title>
+          <extendedTooltip>
+            <name>OneAddressingObjectGroupExtendedTooltip</name>
+            <id>53</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>Vertical</group>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>TwoAddressingObjectsGroup</name>
+          <id>36</id>
+          <items xsi:type="form:FormField">
+            <name>MainAddressingObject</name>
+            <id>37</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>MainAddressingObject</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>MainAddressingObjectExtendedTooltip</name>
+              <id>56</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>MainAddressingObjectContextMenu</name>
+              <id>38</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>AdditionalAddressingObject</name>
+            <id>39</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>AdditionalAddressingObject</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>AdditionalAddressingObjectExtendedTooltip</name>
+              <id>57</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>AdditionalAddressingObjectContextMenu</name>
+              <id>40</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Два объекта адресации</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Two addressing objects</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Dwa obiekty adresacji</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Dos objetos de direccionamiento</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Dos objetos de direccionamiento</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>İki adresleme nesnesi</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Due oggetti dell'indirizzamento</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Zwei Objekte von Adressierung</value>
+          </title>
+          <extendedTooltip>
+            <name>TwoAddressingObjectsGroupExtendedTooltip</name>
+            <id>55</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>Vertical</group>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Объекты адресации</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Addressing objects</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Obiekty adresacji</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Direccionamiento de objetos</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Direccionamiento de objetos</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Adresleme nesneleri</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Indirizzamento oggetti</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Objekte von Adressierung</value>
+        </title>
+        <extendedTooltip>
+          <name>AddressingObjectsExtendedTooltip</name>
+          <id>66</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Объекты адресации</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Addressing objects</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Obiekty adresacji</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Direccionamiento de objetos</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Direccionamiento de objetos</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Adresleme nesneleri</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Indirizzamento oggetti</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Objekte von Adressierung</value>
+      </title>
+      <extendedTooltip>
+        <name>AddressingObjectsGroupExtendedTooltip</name>
+        <id>61</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>HorizontalIfPossible</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Comment</name>
+      <id>7</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Comment</segments>
+      </dataPath>
+      <titleLocation>Left</titleLocation>
+      <extendedTooltip>
+        <name>CommentExtendedTooltip</name>
+        <id>58</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>CommentContextMenu</name>
+        <id>8</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <height>2</height>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <multiLine>true</multiLine>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>IgnoreWarnings</name>
+      <id>41</id>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>IgnoreWarnings</segments>
+      </dataPath>
+      <titleLocation>Right</titleLocation>
+      <extendedTooltip>
+        <name>IgnoreWarningsExtendedTooltip</name>
+        <id>59</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>IgnoreWarningsContextMenu</name>
+        <id>42</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Документ</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Document</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Dokument</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Documento</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Documento</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Belge</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Documento</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Dokument</value>
+    </title>
+    <horizontalStretch>false</horizontalStretch>
+    <extendedTooltip>
+      <name>DocumentExtendedTooltip</name>
+      <id>73</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <commandBarLocation>Bottom</commandBarLocation>
+  <autoCommandBar>
+    <name>FormCommandBar</name>
+    <id>-1</id>
+    <items xsi:type="form:Button">
+      <name>Forward</name>
+      <id>3</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <skipOnInput>false</skipOnInput>
+      <extendedTooltip>
+        <name>ForwardExtendedTooltip</name>
+        <id>43</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.Forward</commandName>
+      <representation>Auto</representation>
+      <defaultButton>true</defaultButton>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>Cancel</name>
+      <id>4</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <skipOnInput>false</skipOnInput>
+      <extendedTooltip>
+        <name>CancelExtendedTooltip</name>
+        <id>44</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.StandardCommand.Cancel</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>HelpGroup</name>
+      <id>28</id>
+      <items xsi:type="form:Button">
+        <name>Help</name>
+        <id>27</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <skipOnInput>false</skipOnInput>
+        <extendedTooltip>
+          <name>HelpExtendedTooltip</name>
+          <id>46</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.StandardCommand.Help</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Справка</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Help</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Pomoc</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Ayuda</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Ayuda</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Yardım</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Aiuto</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Hilfe</value>
+      </title>
+      <extendedTooltip>
+        <name>HelpGroupExtendedTooltip</name>
+        <id>45</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <extInfo xsi:type="form:ButtonGroupExtInfo"/>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Right</horizontalAlign>
+  </autoCommandBar>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <handlers>
+    <event>FillCheckProcessingAtServer</event>
+    <name>FillCheckProcessingAtServer</name>
+  </handlers>
+  <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Performer</name>
+    <title>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Assignee</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wykonawca</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Beneficiario</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Beneficiario</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Atanan</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Assegnatario</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Bevollmächtiger</value>
+    </title>
+    <id>1</id>
+    <valueType>
+      <types>CatalogRef.Users</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>Comment</name>
+    <title>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Comment</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Uwagi</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Comentario</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Comentario</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Yorum</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Commento</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Kommentar</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>AddressingType</name>
+    <title>
+      <key>ru</key>
+      <value>Тип адресации</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Addressing type</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Rodzaj adresowania</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Tipo de direccionamiento</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Tipo de direccionamiento</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Adresleme türü</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Tipo di indirizzamento</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Art von Adressierung</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>Role</name>
+    <title>
+      <key>ru</key>
+      <value>Роль</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Role</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Rola</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Rol</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Rol</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Rol</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Ruolo</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Rolle</value>
+    </title>
+    <id>4</id>
+    <valueType>
+      <types>CatalogRef.PerformerRoles</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>UsedWithoutAddressingObjects</name>
+    <id>5</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>UsedByAddressingObjects</name>
+    <id>6</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>MainAddressingObject</name>
+    <title>
+      <key>ru</key>
+      <value>Основной объект адресации</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Main addressing object</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Główny obiekt adresacji</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Objeto principal de direccionamiento</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Objeto principal de direccionamiento</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Ana adresleme nesnesi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Principale indirizzamento oggetto</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Hauptobjekt von Adressierung</value>
+    </title>
+    <id>7</id>
+    <valueType>
+      <types>Characteristic.TaskAddressingObjects</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>AdditionalAddressingObjectTypes</name>
+    <id>8</id>
+    <valueType>
+      <types>TypeDescription</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>MainAddressingObjectTypes</name>
+    <id>9</id>
+    <valueType>
+      <types>TypeDescription</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>AdditionalAddressingObject</name>
+    <title>
+      <key>ru</key>
+      <value>Доп. объект адресации</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Additional addressing object</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Dodatkowy obiekt adresacji</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Objeto adicional de direccionamiento</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Objeto adicional de direccionamiento</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Ek adresleme nesnesi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Oggetti indirizzamento aggiuntivo</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Weiteres Objekt von Adressierung</value>
+    </title>
+    <id>10</id>
+    <valueType>
+      <types>Characteristic.TaskAddressingObjects</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>IgnoreWarnings</name>
+    <title>
+      <key>ru</key>
+      <value>Игнорировать предупреждения</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Ignore warnings</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Ignoruj ostrzeżenia</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Ignorar las advertencias</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Ignorar las advertencias</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Uyarıları görmezden gel</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Ignora avvisi</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Warnungen ignorieren</value>
+    </title>
+    <id>11</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>Forward</name>
+    <title>
+      <key>ru</key>
+      <value>Перенаправить</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Forward</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Dalej</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Adelante</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Adelante</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>İleri</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Avanti</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Vorwärts</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Перенаправить задачу новому исполнителю</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Forward task to a new assignee</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Prześlij zadanie do nowego wykonawcy</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Reenviar la tarea a un nuevo ejecutor</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Reenviar la tarea a un nuevo ejecutor</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Görevi yeni bir atanana ilet</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Inoltra incarico a un nuovo incaricato</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Aufgabe an einen neuen Bevollmächtiger senden</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>OK</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <parameters>
+    <name>Task</name>
+    <valueType>
+      <types>TaskRef.PerformerTask</types>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>TaskCount</name>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>FormCaption</name>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <keyParameter>true</keyParameter>
+  </parameters>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

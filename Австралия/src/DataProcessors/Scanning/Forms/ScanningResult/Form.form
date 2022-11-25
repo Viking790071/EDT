@@ -1,0 +1,3549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <title>
+    <key>ru</key>
+    <value>Сканирование изображений</value>
+  </title>
+  <title>
+    <key>en</key>
+    <value>Image scanning</value>
+  </title>
+  <title>
+    <key>pl</key>
+    <value>Skanowanie obrazów</value>
+  </title>
+  <title>
+    <key>es_ES</key>
+    <value>Escanear las imágenes</value>
+  </title>
+  <title>
+    <key>es_CO</key>
+    <value>Escanear las imágenes</value>
+  </title>
+  <title>
+    <key>tr</key>
+    <value>Görsel tarama</value>
+  </title>
+  <title>
+    <key>it</key>
+    <value>Immagine scansione</value>
+  </title>
+  <title>
+    <key>de</key>
+    <value>Bilder scannen</value>
+  </title>
+  <items xsi:type="form:FormGroup">
+    <name>ImageGroup</name>
+    <id>8</id>
+    <items xsi:type="form:Table">
+      <name>FilesTable</name>
+      <id>9</id>
+      <title>
+        <key>ru</key>
+        <value>Таблица файлов</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>File table</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Tabela plików</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Tabla del archivo</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Tabla del archivo</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Dosya tablosu</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Tabella file</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Dateitabelle</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>FilesTable</segments>
+      </dataPath>
+      <titleLocation>None</titleLocation>
+      <excludedCommands>Add</excludedCommands>
+      <excludedCommands>CancelSearch</excludedCommands>
+      <excludedCommands>Change</excludedCommands>
+      <excludedCommands>Copy</excludedCommands>
+      <excludedCommands>EndEdit</excludedCommands>
+      <excludedCommands>Find</excludedCommands>
+      <excludedCommands>MoveDown</excludedCommands>
+      <excludedCommands>MoveUp</excludedCommands>
+      <excludedCommands>OutputList</excludedCommands>
+      <excludedCommands>SortListAsc</excludedCommands>
+      <excludedCommands>SortListDesc</excludedCommands>
+      <items xsi:type="form:FormField">
+        <name>FilesTablePresentation</name>
+        <id>12</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>FilesTable.Presentation</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>FilesTablePresentationExtendedTooltip</name>
+          <id>34</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>FilesTablePresentationContextMenu</name>
+          <id>13</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <readOnly>true</readOnly>
+        <editMode>EnterOnInput</editMode>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+        </extInfo>
+      </items>
+      <autoCommandBar>
+        <name>FilesTableCommandBar</name>
+        <id>11</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <horizontalAlign>Left</horizontalAlign>
+      </autoCommandBar>
+      <handlers>
+        <event>BeforeDeleteRow</event>
+        <name>FilesTableBeforeDelete</name>
+      </handlers>
+      <handlers>
+        <event>OnActivateRow</event>
+        <name>FilesTableOnActivateRow</name>
+      </handlers>
+      <searchStringAddition>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <name>FilesTableSearchString</name>
+        <id>39</id>
+        <extendedTooltip>
+          <name>FilesTableSearchStringExtendedTooltip</name>
+          <id>41</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>FilesTableSearchStringContextMenu</name>
+          <id>40</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <source>FilesTableSearchString</source>
+        <extInfo xsi:type="form:SearchStringAdditionExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+        </extInfo>
+      </searchStringAddition>
+      <viewStatusAddition>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <name>FilesTableViewStatus</name>
+        <id>42</id>
+        <extendedTooltip>
+          <name>FilesTableViewStatusExtendedTooltip</name>
+          <id>44</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>FilesTableViewStatusContextMenu</name>
+          <id>43</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>ViewStatusAddition</type>
+        <source>FilesTableViewStatus</source>
+        <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+        </extInfo>
+      </viewStatusAddition>
+      <searchControlAddition>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <name>FilesTableSearchControl</name>
+        <id>45</id>
+        <extendedTooltip>
+          <name>FilesTableSearchControlExtendedTooltip</name>
+          <id>47</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>FilesTableSearchControlContextMenu</name>
+          <id>46</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>SearchControlAddition</type>
+        <source>FilesTableSearchControl</source>
+        <extInfo xsi:type="form:SearchControlAdditionExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+        </extInfo>
+      </searchControlAddition>
+      <extendedTooltip>
+        <name>FilesTableExtendedTooltip</name>
+        <id>33</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>FilesTableContextMenu</name>
+        <id>10</id>
+        <items xsi:type="form:Button">
+          <name>FilesTableContextMenuDelete</name>
+          <id>23</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>FilesTableContextMenuDeleteExtendedTooltip</name>
+            <id>32</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Item.FilesTable.StandardCommand.Delete</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+      </contextMenu>
+      <changeRowSet>true</changeRowSet>
+      <changeRowOrder>true</changeRowOrder>
+      <width>10</width>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <autoMaxRowsCount>true</autoMaxRowsCount>
+      <headerHeight>1</headerHeight>
+      <footerHeight>1</footerHeight>
+      <horizontalScrollBar>AutoUse</horizontalScrollBar>
+      <verticalScrollBar>AutoUse</verticalScrollBar>
+      <horizontalLines>true</horizontalLines>
+      <verticalLines>true</verticalLines>
+      <autoInsertNewRow>true</autoInsertNewRow>
+      <searchOnInput>Auto</searchOnInput>
+      <initialListView>Auto</initialListView>
+      <horizontalStretch>true</horizontalStretch>
+      <verticalStretch>true</verticalStretch>
+      <enableStartDrag>true</enableStartDrag>
+      <enableDrag>true</enableDrag>
+      <searchStringLocation>None</searchStringLocation>
+      <viewStatusLocation>None</viewStatusLocation>
+      <searchControlLocation>None</searchControlLocation>
+      <rowFilter xsi:type="core:UndefinedValue"/>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Picture</name>
+      <id>6</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>PictureAddress</segments>
+      </dataPath>
+      <titleLocation>None</titleLocation>
+      <extendedTooltip>
+        <name>PictureExtendedTooltip</name>
+        <id>35</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>PictureContextMenu</name>
+        <id>7</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>PictureField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:ImageFieldExtInfo">
+        <width>50</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <height>10</height>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>true</horizontalStretch>
+        <verticalStretch>true</verticalStretch>
+        <pictureSize>AutoSize</pictureSize>
+        <nonselectedPictureText>
+          <key>ru</key>
+          <value>Подождите. Идет сканирование...</value>
+        </nonselectedPictureText>
+        <nonselectedPictureText>
+          <key>en</key>
+          <value>Wait. Scanning...</value>
+        </nonselectedPictureText>
+        <nonselectedPictureText>
+          <key>pl</key>
+          <value>Proszę czekać. Trwa skanowanie...</value>
+        </nonselectedPictureText>
+        <nonselectedPictureText>
+          <key>es_ES</key>
+          <value>Esperar. Escaneando...</value>
+        </nonselectedPictureText>
+        <nonselectedPictureText>
+          <key>es_CO</key>
+          <value>Esperar. Escaneando...</value>
+        </nonselectedPictureText>
+        <nonselectedPictureText>
+          <key>tr</key>
+          <value>Bekleyin. Tarama...</value>
+        </nonselectedPictureText>
+        <nonselectedPictureText>
+          <key>it</key>
+          <value>Aspettate. Scannerizzazione ...</value>
+        </nonselectedPictureText>
+        <nonselectedPictureText>
+          <key>de</key>
+          <value>Bitte warte. Scannen läuft ...</value>
+        </nonselectedPictureText>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Изображения</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Images</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Rysunek</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Imágenes</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Imágenes</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Görseller</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Immagini</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Bilder</value>
+    </title>
+    <extendedTooltip>
+      <name>ImageGroupExtendedTooltip</name>
+      <id>31</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>HorizontalIfPossible</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>MessageGroup</name>
+    <id>20</id>
+    <items xsi:type="form:Decoration">
+      <name>IconDecoration</name>
+      <id>21</id>
+      <title>
+        <key>ru</key>
+        <value>Декорация иконка</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Icon decoration</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Dekoracja ikonka</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Icono decoración</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Icono decoración</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Simge dekorasyon</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Decorazione icona</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Symbol Dekoration</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>IconDecorationExtendedTooltip</name>
+        <id>37</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>IconDecorationContextMenu</name>
+        <id>22</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <skipOnInput>false</skipOnInput>
+      <extInfo xsi:type="form:PictureDecorationExtInfo">
+        <picture xsi:type="core:PictureRef">
+          <picture>CommonPicture.Information</picture>
+        </picture>
+      </extInfo>
+    </items>
+    <items xsi:type="form:Button">
+      <name>SettingsTextChange1</name>
+      <id>64</id>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>SettingsTextChange1ExtendedTooltip</name>
+        <id>65</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualButton</type>
+      <commandName>Form.Command.SettingsTextChange</commandName>
+      <representation>Picture</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <picture xsi:type="core:PictureRef">
+        <picture>CommonPicture.OtherUserSettings</picture>
+      </picture>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>SettingsTextGroup</name>
+      <id>53</id>
+      <items xsi:type="form:FormField">
+        <name>SettingsText</name>
+        <id>17</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>SettingsText</segments>
+        </dataPath>
+        <titleLocation>None</titleLocation>
+        <extendedTooltip>
+          <name>SettingsTextExtendedTooltip</name>
+          <id>38</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>SettingsTextContextMenu</name>
+          <id>18</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>LabelField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:LabelFieldExtInfo">
+          <width>75</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>2</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <verticalStretch>false</verticalStretch>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Button">
+        <name>SettingsTextChange</name>
+        <id>60</id>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>SettingsTextChangeExtendedTooltip</name>
+          <id>61</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Hyperlink</type>
+        <commandName>Form.Command.SettingsTextChange</commandName>
+        <representation>Auto</representation>
+        <width>75</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <height>2</height>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Текст настроек</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Settings text</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Tekst ustawień</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Configuraciones texto</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Configuraciones texto</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Ayarlar metni</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Testo impostazioni</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Einstellung Text</value>
+      </title>
+      <extendedTooltip>
+        <name>SettingsTextGroupExtendedTooltip</name>
+        <id>54</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>Vertical</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Сообщение</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Message</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wiadomość</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Mensaje</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Mensaje</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Mesaj</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Messaggio</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Nachricht</value>
+    </title>
+    <height>2</height>
+    <extendedTooltip>
+      <name>MessageGroupExtendedTooltip</name>
+      <id>36</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>HorizontalIfPossible</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <commandBarLocation>Top</commandBarLocation>
+  <autoCommandBar>
+    <name>CommandBarForm</name>
+    <id>-1</id>
+    <items xsi:type="form:Button">
+      <name>Save</name>
+      <id>3</id>
+      <title>
+        <key>ru</key>
+        <value>Записать</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Save</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Zapisz</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Guardar</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Guardar</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Sakla</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Salva</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Speichern</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <skipOnInput>false</skipOnInput>
+      <extendedTooltip>
+        <name>SaveExtendedTooltip</name>
+        <id>28</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.Save</commandName>
+      <representation>Auto</representation>
+      <defaultButton>true</defaultButton>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>FormAcceptAllAsSingleFile</name>
+      <id>15</id>
+      <title>
+        <key>ru</key>
+        <value>Сохранить как один файл</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Save as one file</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Zapisz jako jeden plik</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Guardar como un archivo</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Guardar como un archivo</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Tek dosya olarak kaydet</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Salva come un file unico</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Als eine Datei speichern</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormAcceptAllAsSingleFileExtendedTooltip</name>
+        <id>26</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.SaveAllAsSingleFile</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>FormAcceptAllAsSeparateFiles</name>
+      <id>16</id>
+      <title>
+        <key>ru</key>
+        <value>Сохранить как отдельные файлы</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Save as separate files</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Zapisz jako oddzielne pliki</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Guardar como archivos separados</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Guardar como archivos separados</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Ayrı dosyalar olarak kaydet</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Salva come file separati</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Speichern als separate Dateien</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormAcceptAllAsSeparateFilesExtendedTooltip</name>
+        <id>27</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.SaveAllAsSeparateFiles</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>FormScanAgain</name>
+      <id>14</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormScanAgainExtendedTooltip</name>
+        <id>24</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.Scan</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>Rescan</name>
+      <id>5</id>
+      <title>
+        <key>ru</key>
+        <value>Пересканировать</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Rescan</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Zeskanować raz jeszcze</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Escanear de nuevo</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Escanear de nuevo</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Tekrar tara</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Scansiona di nuovo</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Erneut scannen</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <skipOnInput>false</skipOnInput>
+      <extendedTooltip>
+        <name>RescanExtendedTooltip</name>
+        <id>25</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.Rescan</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>FormSettings</name>
+      <id>19</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormSettingsExtendedTooltip</name>
+        <id>30</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.Settings</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+      <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <handlers>
+    <event>ChoiceProcessing</event>
+    <name>ChoiceProcessing</name>
+  </handlers>
+  <handlers>
+    <event>OnOpen</event>
+    <name>OnOpen</name>
+  </handlers>
+  <handlers>
+    <event>ExternalEvent</event>
+    <name>ExternalEvent</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <handlers>
+    <event>OnClose</event>
+    <name>OnClose</name>
+  </handlers>
+  <excludedCommands>Cancel</excludedCommands>
+  <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>PictureAddress</name>
+    <title>
+      <key>ru</key>
+      <value>Адрес картинки</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Picture URL</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Adres rysunka</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>URL de la imagen</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>URL de la imagen</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Resim URL'si</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>URL immagine</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Bild URL</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>FileOwner</name>
+    <title>
+      <key>ru</key>
+      <value>Владелец файла</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>File owner</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Właściciel pliku</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Propietario del archivo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Propietario del archivo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dosya sahibi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Proprietario del file</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Dateiinhaber</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>AnyRef</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>FileName</name>
+    <title>
+      <key>ru</key>
+      <value>Имя файла</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>File name</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Nazwa pliku</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Nombre del archivo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Nombre del archivo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dosya adı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Nome del file</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Dateiname</value>
+    </title>
+    <id>4</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>DontOpenCardAfterCreateFromFIle</name>
+    <title>
+      <key>ru</key>
+      <value>Не открывать карточку после создания из файла</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Do not open card after creating from file</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Nie otwierać karty po utworzeniu z pliku</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>No abrir la tarjeta después de crearla desde el archivo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>No abrir la tarjeta después de crearla desde el archivo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dosyayı dosyadan oluşturduktan sonra açmayın</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Non aprire la carta dopo la creazione dal file</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Karte nach Erstellung aus Datei nicht öffnen</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>PictureFormat</name>
+    <title>
+      <key>ru</key>
+      <value>Формат картинки</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Picture format</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Format obrazka</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Formato de imagen</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Formato de imagen</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Resim formatı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Formato immagine</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Bildformat</value>
+    </title>
+    <id>6</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>Permission</name>
+    <title>
+      <key>ru</key>
+      <value>Разрешение</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Permission</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Pozwolenie</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Permiso</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Permiso</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>İzin</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Autorizzazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Genehmigung</value>
+    </title>
+    <id>7</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>Chromaticity</name>
+    <title>
+      <key>ru</key>
+      <value>Цветность</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Chromaticity</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Kolorystyka</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Colores</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Colores</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Renkler</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Cromaticità</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Farben</value>
+    </title>
+    <id>8</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>Rotation</name>
+    <title>
+      <key>ru</key>
+      <value>Поворот</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Rotation</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Obrót</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Rotación</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Rotación</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dönme</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Rotazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Rotation</value>
+    </title>
+    <id>9</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>PaperSize</name>
+    <title>
+      <key>ru</key>
+      <value>Размер бумаги</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Paper size</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Rozmiar papieru</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Tamaño de papel</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Tamaño de papel</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kağıt boyutu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Misura del foglio</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Papiergröße</value>
+    </title>
+    <id>10</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ShowScannerDialog</name>
+    <title>
+      <key>ru</key>
+      <value>Показывать диалог сканера</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Show scanner dialog box</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Pokazywać dialog skanera</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Mostrar la casilla de diálogo del escáner</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Mostrar la casilla de diálogo del escáner</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Tarayıcı iletişim kutusunu göster</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Visualizza finestra di dialogo scanner</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Scanner-Dialogfeld anzeigen</value>
+    </title>
+    <id>11</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ScannerName</name>
+    <title>
+      <key>ru</key>
+      <value>Имя устройства сканирования</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Scanner name</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Nazwa urządzenia do skanowania</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Nombre del escáner</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Nombre del escáner</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Tarayıcı adı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Nome dello scanner</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Scanner-Name</value>
+    </title>
+    <id>12</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>FilesTable</name>
+    <title>
+      <key>ru</key>
+      <value>Таблица файлов</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>File table</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Tabela plików</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Tabla del archivo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Tabla del archivo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dosya tablosu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Tabella file</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Dateitabelle</value>
+    </title>
+    <id>13</id>
+    <valueType>
+      <types>ValueTable</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <columns>
+      <name>Presentation</name>
+      <title>
+        <key>ru</key>
+        <value>Представление</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Presentation</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Przedstawienie</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Presentación</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Presentación</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Sunum</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Presentazione</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Präsentation</value>
+      </title>
+      <id>1</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>PathToFile</name>
+      <title>
+        <key>ru</key>
+        <value>Путь к файлу</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Path to file</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Ścieżka do pliku</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Ruta al archivo</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Ruta al archivo</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Dosya yolu</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Percorso al file</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Pfad zur Datei</value>
+      </title>
+      <id>2</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>PictureAddress</name>
+      <title>
+        <key>ru</key>
+        <value>Адрес картинки</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Picture URL</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Adres rysunka</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>URL de la imagen</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>URL de la imagen</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Resim URL'si</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>URL immagine</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Bild URL</value>
+      </title>
+      <id>3</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+  </attributes>
+  <attributes>
+    <name>PathToSelectedFile</name>
+    <title>
+      <key>ru</key>
+      <value>Путь к выбранному файлу</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Path to the selected file</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Ścieżka dostępu do wybranego pliku</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Ruta para el archivo seleccionado</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Ruta para el archivo seleccionado</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Seçilen dosyaya giden yol</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Percorso per il file selezionato</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Pfad zur ausgewählten Datei</value>
+    </title>
+    <id>1</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>FileNumber</name>
+    <title>
+      <key>ru</key>
+      <value>Номер файла</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>File number</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Numer pliku</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Número del archivo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Número del archivo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dosya numarası</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Numero file</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Dateinummer</value>
+    </title>
+    <id>14</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>SettingsText</name>
+    <title>
+      <key>ru</key>
+      <value>Текст настроек</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Settings text</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Tekst ustawień</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Configuraciones texto</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Configuraciones texto</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Ayarlar metni</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Testo impostazioni</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Einstellung Text</value>
+    </title>
+    <id>15</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>DuplexScanning</name>
+    <title>
+      <key>ru</key>
+      <value>Двустороннее сканирование</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Scan both sides</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Skanowanie dwustronne</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Escanear a doble cara</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Escanear a doble cara</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Çift taraflı tarama</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Acquisire entrambi i lati</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Beide Seiten scannen</value>
+    </title>
+    <id>16</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>JPGQuality</name>
+    <title>
+      <key>ru</key>
+      <value>Качество</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Quality</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Jakość</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Calidad</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Calidad</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kalite</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Qualità</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Qualität</value>
+    </title>
+    <id>17</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>PathToConverterApplication</name>
+    <title>
+      <key>ru</key>
+      <value>Путь к программе конвертации</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Path to the conversion application</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Ścieżka dostępu do programu konwerującego</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Ruta para la aplicación de conversión</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Ruta para la aplicación de conversión</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dönüşüm uygulamasının yolu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Percorso per la richiesta di conversione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Pfad zur Konvertierungsanwendung</value>
+    </title>
+    <id>18</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>TIFFDeflation</name>
+    <title>
+      <key>ru</key>
+      <value>Сжатие</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Deflate</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Korekta:</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Deflación</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Deflación</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Deflasyon</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Sgonfia</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Deflation</value>
+    </title>
+    <id>19</id>
+    <valueType>
+      <types>EnumRef.TIFFCompressionTypes</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>UseImageMagickToConvertToPDF</name>
+    <title>
+      <key>ru</key>
+      <value>Использовать ImageMagick для преобразования в PDF</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Use ImageMagick to convert to PDF</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Użycie ImageMagick do zmiany w PDF</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Utilizar ImageMagick para convertir a PDF</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Utilizar ImageMagick para convertir a PDF</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>PDF'ye dönüştürmek için ImageMagick'i kullanın</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Utilizzare ImageMagick per convertire in PDF</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Mit ImageMagick in PDF konvertieren</value>
+    </title>
+    <id>20</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>TIFFCompressionNumber</name>
+    <title>
+      <key>ru</key>
+      <value>Сжатие TIFFЧисло</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>TIFF Deflation Number</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Kompresja TIFFLiczba</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Número de Deflación TIFF</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Número de Deflación TIFF</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>TIFF Deflation Numarası</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>TIFF deflazione Numero</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>TIFF-Deflationsnummer</value>
+    </title>
+    <id>21</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ResolutionEnum</name>
+    <title>
+      <key>ru</key>
+      <value>Разрешение перечисление</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Permission enumeration</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Pozwolenie przeliczenia</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Enumeración de permisos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Enumeración de permisos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>İzin numarası</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Permesso di enumerazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Berechtigungsaufzählung</value>
+    </title>
+    <id>22</id>
+    <valueType>
+      <types>EnumRef.ScannedImageResolutions</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ColorDepthEnum</name>
+    <title>
+      <key>ru</key>
+      <value>Цветность перечисление</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Chromaticity enum</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Kolorystyka wyliczenie</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Enumeración de colores</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Enumeración de colores</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Renk numaralandırma</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Cromaticità enum</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Farben Aufzählung</value>
+    </title>
+    <id>23</id>
+    <valueType>
+      <types>EnumRef.ImageColorDepths</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>RotationAvailable</name>
+    <title>
+      <key>ru</key>
+      <value>Доступность поворот</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Rotation accessible</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Dostępność obrót</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Rotación accesible</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Rotación accesible</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Döndürme erişilebilir</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Rotazione accessibile</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Rotation ist zugänglich</value>
+    </title>
+    <id>24</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>PaperSizeAvailable</name>
+    <title>
+      <key>ru</key>
+      <value>Доступность размер бумаги</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Availability paper size</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Dostępność rozmiar papieru</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Disponibilidad tamaño de papel</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Disponibilidad tamaño de papel</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kullanılabilirlik kağıt boyutu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Formato carta disponibile</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Verfügbarkeit Papierformat</value>
+    </title>
+    <id>25</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>DuplexScanningAvailable</name>
+    <title>
+      <key>ru</key>
+      <value>Доступность двустороннее сканирование</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Availability scan both sides</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Dostępność dwustronne skanowanie</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Disponibilidad escanear a doble cara</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Disponibilidad escanear a doble cara</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kullanılabilirlik her iki tarafı da tarar</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Disponibilità acquisire entrambi i lati</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Verfügbarkeit Scannen beider Seiten</value>
+    </title>
+    <id>26</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>RotationEnum</name>
+    <title>
+      <key>ru</key>
+      <value>Поворот перечисление</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Rotation enum</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zwrot przelew</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Enumeración de la rotación</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Enumeración de la rotación</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Döndürme sayımı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Rotazione enum</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Rotationsaufzählung</value>
+    </title>
+    <id>27</id>
+    <valueType>
+      <types>EnumRef.PictureRotationOptions</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>PaperSizeEnum</name>
+    <title>
+      <key>ru</key>
+      <value>Размер бумаги перечисление</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Paper size enumeration</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wyliczenie rozmiaru papieru</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Enumeración del tamaño de papel</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Enumeración del tamaño de papel</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kağıt boyutu numaralandırma</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Formato carta enumerazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Papierformat Aufzählung</value>
+    </title>
+    <id>28</id>
+    <valueType>
+      <types>EnumRef.PaperSizes</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ScannedImageFormat</name>
+    <title>
+      <key>ru</key>
+      <value>Формат сканированного изображения</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Scanned image format</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Format skanowania obrazu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Formato de la imagen escaneada</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Formato de la imagen escaneada</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Taranan görüntü formatı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Formato immagine scannerizzata</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Gescannte Bildformate</value>
+    </title>
+    <id>29</id>
+    <valueType>
+      <types>EnumRef.ScannedImageFormats</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>JPGFormat</name>
+    <title>
+      <key>ru</key>
+      <value>Формат JPG</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>JPG format</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Format JPG</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Formato JPG</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Formato JPG</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>JPG formatı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Formato JPG</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Format JPG</value>
+    </title>
+    <id>30</id>
+    <valueType>
+      <types>EnumRef.ScannedImageFormats</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>TIFFormat</name>
+    <title>
+      <key>ru</key>
+      <value>Формат TIF</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>TIF format</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Format TIF</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Formato TIF</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Formato TIF</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>TIF formatı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>formato TIF</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>TIF Format</value>
+    </title>
+    <id>31</id>
+    <valueType>
+      <types>EnumRef.ScannedImageFormats</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>MultipageStorageFormat</name>
+    <title>
+      <key>ru</key>
+      <value>Формат</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Format</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Format</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Formato</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Formato</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Format</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Formato</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Format</value>
+    </title>
+    <id>32</id>
+    <valueType>
+      <types>EnumRef.MultipageFileStorageFormats</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>SinglePageStorageFormat</name>
+    <title>
+      <key>ru</key>
+      <value>Формат</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Format</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Format</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Formato</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Formato</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Format</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Formato</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Format</value>
+    </title>
+    <id>33</id>
+    <valueType>
+      <types>EnumRef.SinglePageFileStorageFormats</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>InfobasePrefix</name>
+    <title>
+      <key>ru</key>
+      <value>Префикс информационной базы</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Infobase prefix</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Prefiks bazy informacyjnej</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Prefijo de la infobase</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Prefijo de la infobase</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Infobase ön eki</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Prefisso Infobase</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Präfix der Infobase</value>
+    </title>
+    <id>34</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ChecksOnOpenExecuted</name>
+    <title>
+      <key>ru</key>
+      <value>Проверки при открытии выполнены</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Checks on opening are executed</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Kontrole w czasie otwarcia są wykonane</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Controles al abrir se han ejecutado</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Controles al abrir se han ejecutado</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Açılıştaki kontroller yürütülür</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Controlli apertura vengono eseguiti</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Prüfungen beim Öffnen wurden durchgeführt</value>
+    </title>
+    <id>35</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>IsFile</name>
+    <title>
+      <key>ru</key>
+      <value>Это файл</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>This is a file</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>To jest plik</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Es un archivo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Es un archivo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Bu bir dosyadır</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Questo è un file</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Diese Datei</value>
+    </title>
+    <id>36</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>OneFileOnly</name>
+    <title>
+      <key>ru</key>
+      <value>Только один файл</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Only one file</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Tylko jeden plik</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Solo un archivo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Solo un archivo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Sadece bir dosya</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Solo un file</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Nur eine Datei</value>
+    </title>
+    <id>37</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>Save</name>
+    <title>
+      <key>ru</key>
+      <value>Записать</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Save</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zapisz</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Guardar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Guardar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Sakla</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Salva</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Speichern</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Записать</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Save</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zapisz</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Guardar</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Guardar</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Sakla</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Salva</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Speichern</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Save</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>Rescan</name>
+    <title>
+      <key>ru</key>
+      <value>Пересканировать</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Rescan</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zeskanować raz jeszcze</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Escanear de nuevo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Escanear de nuevo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Tekrar tara</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Scansiona di nuovo</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Erneut scannen</value>
+    </title>
+    <id>3</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Пересканировать</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Rescan</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zeskanować raz jeszcze</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Escanear de nuevo</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Escanear de nuevo</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Tekrar tara</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Scansiona di nuovo</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Erneut scannen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Rescan</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>Scan</name>
+    <title>
+      <key>ru</key>
+      <value>Сканировать</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Scan</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Skaner</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Escanear</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Escanear</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Tara</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Scansione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Scannen</value>
+    </title>
+    <id>4</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Сканировать</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Scan</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Skaner</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Escanear</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Escanear</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Tara</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Scansione</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Scannen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Scan</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>SaveAllAsSingleFile</name>
+    <title>
+      <key>ru</key>
+      <value>Сохранить все как один файл</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Save all as one file</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zapisz wszystko jako jeden plik</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Guardar todo como un archivo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Guardar todo como un archivo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Tümünü tek dosya olarak kaydet</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Salva tutto come un unico file</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Alle als eine Datei speichern</value>
+    </title>
+    <id>5</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Сохранить все как один файл</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Save all as one file</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zapisz wszystko jako jeden plik</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Guardar todo como un archivo</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Guardar todo como un archivo</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Tümünü tek dosya olarak kaydet</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Salva tutto come un unico file</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Alle als eine Datei speichern</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>SaveAllAsSingleFile</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>SaveAllAsSeparateFiles</name>
+    <title>
+      <key>ru</key>
+      <value>Сохранить все как отдельные файлы</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Save all as separate files</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zapisz wszystko jako oddzielne pliki</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Guardar todo como archivos separados</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Guardar todo como archivos separados</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Tümünü ayrı dosyalar olarak kaydet</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Salva tutto come file separati</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Alle als separate Dateien speichern</value>
+    </title>
+    <id>6</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Сохранить все как отдельные файлы</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Save all as separate files</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zapisz wszystko jako oddzielne pliki</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Guardar todo como archivos separados</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Guardar todo como archivos separados</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Tümünü ayrı dosyalar olarak kaydet</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Salva tutto come file separati</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Alle als separate Dateien speichern</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>SaveAllAsSeparateFiles</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>Settings</name>
+    <title>
+      <key>ru</key>
+      <value>Настройка</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Setting</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Ustawienia</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Configuración</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Configuración</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Ayarlar</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Impostazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Einstellung</value>
+    </title>
+    <id>7</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Настройка</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Setting</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Ustawienia</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Configuración</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Configuración</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Ayarlar</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Impostazione</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Einstellung</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Setting</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>SettingsTextChange</name>
+    <title>
+      <key>ru</key>
+      <value>Текст настроек изменить</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Settings text change</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Tekst ustawień zmień</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Texto de ajustes cambiar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Texto de ajustes cambiar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Ayar metnini değiştir</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Impostazioni modifica testo</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Ändern des Einstellungstextes</value>
+    </title>
+    <id>8</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Текст настроек изменить</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Settings text change</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Tekst ustawień zmień</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Texto de ajustes cambiar</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Texto de ajustes cambiar</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Ayar metnini değiştir</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Impostazioni modifica testo</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Ändern des Einstellungstextes</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <parameters>
+    <name>OneFileOnly</name>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>ClientID</name>
+    <valueType/>
+  </parameters>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

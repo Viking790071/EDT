@@ -1,0 +1,149 @@
+#If Server Or ThickClientOrdinaryApplication Or ExternalConnection Then
+
+#Region Private
+
+Function CurrentClearSettings() Export
+	
+	SetPrivilegedMode(True);
+	
+	RefreshClearSettings();
+	
+	Query = New Query;
+	Query.Text = 
+		"SELECT
+		|	FilesClearingSettings.FileOwner,
+		|	MetadataObjectIDs.Ref AS OwnerID,
+		|	CASE
+		|		WHEN VALUETYPE(MetadataObjectIDs.Ref) <> VALUETYPE(FilesClearingSettings.FileOwner)
+		|			THEN TRUE
+		|		ELSE FALSE
+		|	END AS IsCatalogItemSetup,
+		|	FilesClearingSettings.FileOwnerType,
+		|	FilesClearingSettings.FilterRule,
+		|	FilesClearingSettings.Action,
+		|	FilesClearingSettings.ClearingPeriod,
+		|	FilesClearingSettings.IsFile
+		|FROM
+		|	InformationRegister.FilesClearingSettings AS FilesClearingSettings
+		|		LEFT JOIN Catalog.MetadataObjectIDs AS MetadataObjectIDs
+		|		ON (VALUETYPE(FilesClearingSettings.FileOwner) = VALUETYPE(MetadataObjectIDs.EmptyRefValue))";
+		
+	Return Query.Execute().Unload();
+	
+EndFunction
+
+Procedure RefreshClearSettings()
+	
+	MetadataCatalogs = Metadata.Catalogs;
+	
+	FilesOwnersTable = New ValueTable;
+	FilesOwnersTable.Columns.Add("FileOwner",     New TypeDescription("CatalogRef.MetadataObjectIDs"));
+	FilesOwnersTable.Columns.Add("FileOwnerType", New TypeDescription("CatalogRef.MetadataObjectIDs"));
+	FilesOwnersTable.Columns.Add("IsFile",           New TypeDescription("Boolean"));
+	
+	ExceptionsArray = FilesOperationsInternal.ExceptionItemsOnClearFiles();
+	
+	For Each Catalog In MetadataCatalogs Do
+		If Catalog.Attributes.Find("FileOwner") <> Undefined Then
+			If ExceptionsArray.Find(Catalog) <> Undefined Then
+				Continue;
+			EndIf;
+			
+			FilesOwnersTypes = Catalog.Attributes.FileOwner.Type.Types();
+			For Each OwnerType In FilesOwnersTypes Do
+				NewRow = FilesOwnersTable.Add();
+				NewRow.FileOwner = Common.MetadataObjectID(OwnerType);
+				NewRowOwnerBlankRefValue = NewRow.FileOwner.EmptyRefValue;
+				NewRow.FileOwnerType = Common.MetadataObjectID(Catalog);
+				If Not StrEndsWith(Catalog.Name, "AttachedFiles") Then
+					NewRow.IsFile = True;
+				EndIf;
+			EndDo;
+		EndIf;
+	EndDo;
+	
+	RecordSelection = Select();
+	
+	Query = New Query;
+	Query.Text =
+		"SELECT
+		|	FilesOwnersTable.FileOwner AS FileOwner,
+		|	FilesOwnersTable.FileOwnerType AS FileOwnerType,
+		|	FilesOwnersTable.IsFile AS IsFile
+		|INTO FilesOwnersTable
+		|FROM
+		|	&FilesOwnersTable AS FilesOwnersTable
+		|
+		|INDEX BY
+		|	FileOwner,
+		|	IsFile
+		|;
+		|
+		|////////////////////////////////////////////////////////////////////////////////
+		|SELECT
+		|	FilesClearingSettings.FileOwner,
+		|	FilesClearingSettings.FileOwnerType AS FileOwnerType,
+		|	FilesClearingSettings.IsFile AS IsFile,
+		|	MetadataObjectIDs.Ref AS ObjectID
+		|INTO SubordinateSettings
+		|FROM
+		|	InformationRegister.FilesClearingSettings AS FilesClearingSettings
+		|		LEFT JOIN Catalog.MetadataObjectIDs AS MetadataObjectIDs
+		|		ON (VALUETYPE(FilesClearingSettings.FileOwner) = VALUETYPE(MetadataObjectIDs.EmptyRefValue))
+		|WHERE
+		|	VALUETYPE(FilesClearingSettings.FileOwner) <> TYPE(Catalog.MetadataObjectIDs)
+		|
+		|INDEX BY
+		|	ObjectID,
+		|	IsFile,
+		|	FileOwnerType
+		|;
+		|
+		|////////////////////////////////////////////////////////////////////////////////
+		|SELECT
+		|	FilesClearingSettings.FileOwner,
+		|	FilesClearingSettings.FileOwnerType AS FileOwnerType,
+		|	FilesClearingSettings.IsFile,
+		|	FALSE AS NewSetting
+		|FROM
+		|	InformationRegister.FilesClearingSettings AS FilesClearingSettings
+		|		LEFT JOIN FilesOwnersTable AS FilesOwnersTable
+		|		ON FilesClearingSettings.FileOwner = FilesOwnersTable.FileOwner
+		|			AND FilesClearingSettings.IsFile = FilesOwnersTable.IsFile
+		|			AND FilesClearingSettings.FileOwnerType = FilesOwnersTable.FileOwnerType
+		|WHERE
+		|	FilesOwnersTable.FileOwner IS NULL 
+		|	AND VALUETYPE(FilesClearingSettings.FileOwner) = TYPE(Catalog.MetadataObjectIDs)
+		|
+		|UNION ALL
+		|
+		|SELECT
+		|	SubordinateSettings.FileOwner,
+		|	SubordinateSettings.FileOwnerType,
+		|	SubordinateSettings.IsFile,
+		|	FALSE
+		|FROM
+		|	SubordinateSettings AS SubordinateSettings
+		|		LEFT JOIN FilesOwnersTable AS FilesOwnersTable
+		|		ON SubordinateSettings.FileOwnerType = FilesOwnersTable.FileOwnerType
+		|			AND SubordinateSettings.IsFile = FilesOwnersTable.IsFile
+		|			AND SubordinateSettings.ObjectID = FilesOwnersTable.FileOwner
+		|WHERE
+		|	FilesOwnersTable.FileOwner IS NULL ";
+	
+	Query.Parameters.Insert("FilesOwnersTable", FilesOwnersTable);
+	CommonSettingsTable = Query.Execute().Unload();
+	
+	SettingsForDelete = CommonSettingsTable.FindRows(New Structure("NewSetting", False));
+	For Each Setting In SettingsForDelete Do
+		RecordManager = CreateRecordManager();
+		RecordManager.FileOwner = Setting.FileOwner;
+		RecordManager.FileOwnerType = Setting.FileOwnerType;
+		RecordManager.Delete();
+	EndDo;
+	
+EndProcedure
+
+#EndRegion
+
+#EndIf

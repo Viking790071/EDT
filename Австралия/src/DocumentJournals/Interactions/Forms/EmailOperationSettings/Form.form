@@ -1,0 +1,2954 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <title>
+    <key>ru</key>
+    <value>Настройки работы с почтой</value>
+  </title>
+  <title>
+    <key>en</key>
+    <value>Account settings</value>
+  </title>
+  <title>
+    <key>pl</key>
+    <value>Ustawienia konta</value>
+  </title>
+  <title>
+    <key>es_ES</key>
+    <value>Configuraciones de la cuenta</value>
+  </title>
+  <title>
+    <key>es_CO</key>
+    <value>Configuraciones de la cuenta</value>
+  </title>
+  <title>
+    <key>tr</key>
+    <value>Hesap ayarları</value>
+  </title>
+  <title>
+    <key>it</key>
+    <value>Impostazioni account</value>
+  </title>
+  <title>
+    <key>de</key>
+    <value>Kontoeinstellungen</value>
+  </title>
+  <items xsi:type="form:FormField">
+    <name>EmailAccount</name>
+    <id>32</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>EmailAccounExtendedTooltip</name>
+      <id>56</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>EmailAccountContextMenu</name>
+      <id>33</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <readOnly>true</readOnly>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>SettingsPages</name>
+    <id>16</id>
+    <items xsi:type="form:FormGroup">
+      <name>SignatureForNewMessage</name>
+      <id>42</id>
+      <items xsi:type="form:FormGroup">
+        <name>ForNewMessagesGroup</name>
+        <id>17</id>
+        <items xsi:type="form:FormField">
+          <name>AddSignatureForNewMessages</name>
+          <id>1</id>
+          <title>
+            <key>ru</key>
+            <value>Включать подпись для новых сообщений</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Include signature on new messages</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Włącz podpis dla nowych wiadomości</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Incluir la firma para mensajes nuevos</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Incluir la firma para mensajes nuevos</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Yeni iletilere imza ekle</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Includere firma nei nuovi messaggi</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Signatur zu neuen Nachrichten hinzufügen</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>AddSignatureForNewMessages</segments>
+          </dataPath>
+          <titleLocation>Right</titleLocation>
+          <handlers>
+            <event>OnChange</event>
+            <name>EnableSignatureForNewMessagesOnChange</name>
+          </handlers>
+          <extendedTooltip>
+            <name>EnableSignatureForNewMessagesExtendedTooltip</name>
+            <id>60</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>EnableSignatureForNewMessagesContextMenu</name>
+            <id>2</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>NewMessageSignatureFormat</name>
+          <id>3</id>
+          <title>
+            <key>ru</key>
+            <value>Формат подписи</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Signature format</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Format podpisu</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Formato de firma</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Formato de firma</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>İmza formatı</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Formato firma</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Signatur-Format</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>NewMessageSignatureFormat</segments>
+          </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>SignatureFormatForNewMessagesOnChange</name>
+          </handlers>
+          <extendedTooltip>
+            <name>NewMessagesSignatureFormatExtendedTooltip</name>
+            <id>61</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>NewMessagesSignatureFormatContextMenu</name>
+            <id>4</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <horizontalStretch>false</horizontalStretch>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>IncludeFormatNewGroup</name>
+          <id>7</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Для новых сообщений</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>For new messages</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Dla nowych wiadomości</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Para mensajes nuevos</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Para mensajes nuevos</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Yeni iletiler için</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Per i nuovi messaggi</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Für neue Nachrichten</value>
+          </title>
+          <extendedTooltip>
+            <name>IncludeFormatNewGroupExtendedTooltip</name>
+            <id>62</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>HorizontalIfPossible</group>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>PagesSignatureForNewMessages</name>
+          <id>8</id>
+          <items xsi:type="form:FormGroup">
+            <name>NewMessagePlainTextPage</name>
+            <id>9</id>
+            <items xsi:type="form:FormField">
+              <name>SignatureForNewMessagesPlainText</name>
+              <id>5</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>SignatureForNewMessagesPlainText</segments>
+              </dataPath>
+              <titleLocation>None</titleLocation>
+              <extendedTooltip>
+                <name>SignatureForNewMessagesPlainTextExtendedTooltip</name>
+                <id>65</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>SignatureForNewMessagesPlainTextContextMenu</name>
+                <id>6</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>InputField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:InputFieldExtInfo">
+                <autoMaxHeight>true</autoMaxHeight>
+                <wrap>true</wrap>
+                <multiLine>true</multiLine>
+                <chooseType>true</chooseType>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
+              </extInfo>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Страница новое сообщение простой текст</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>New plain text message page</value>
+            </title>
+            <title>
+              <key>pl</key>
+              <value>Nowa strona wiadomości zwykły tekst</value>
+            </title>
+            <title>
+              <key>es_ES</key>
+              <value>Nueva página de mensajes de texto sin formato</value>
+            </title>
+            <title>
+              <key>es_CO</key>
+              <value>Nueva página de mensajes de texto sin formato</value>
+            </title>
+            <title>
+              <key>tr</key>
+              <value>Yeni düz metin iletisi sayfası</value>
+            </title>
+            <title>
+              <key>it</key>
+              <value>Nuova pagina di messaggio di testo libero</value>
+            </title>
+            <title>
+              <key>de</key>
+              <value>Seite neue reine Textnachricht</value>
+            </title>
+            <extendedTooltip>
+              <name>NewMessagePlainTextPageExtendedTooltip</name>
+              <id>64</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>Page</type>
+            <extInfo xsi:type="form:PageGroupExtInfo">
+              <group>Vertical</group>
+              <showTitle>true</showTitle>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormGroup">
+            <name>NewMessageFormattedTextPage</name>
+            <id>10</id>
+            <items xsi:type="form:FormGroup">
+              <name>CommandsFormattedDocumentGroup</name>
+              <id>15</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <title>
+                <key>ru</key>
+                <value>Команды форматированный документ</value>
+              </title>
+              <title>
+                <key>en</key>
+                <value>HTML mail commands</value>
+              </title>
+              <title>
+                <key>pl</key>
+                <value>Wiadomość HTML polecenia</value>
+              </title>
+              <title>
+                <key>es_ES</key>
+                <value>Comandos de correo HTML</value>
+              </title>
+              <title>
+                <key>es_CO</key>
+                <value>Comandos de correo HTML</value>
+              </title>
+              <title>
+                <key>tr</key>
+                <value>HTML posta komutları</value>
+              </title>
+              <title>
+                <key>it</key>
+                <value>Comandi mail HTML</value>
+              </title>
+              <title>
+                <key>de</key>
+                <value>HTML-Mail-Befehle</value>
+              </title>
+              <extendedTooltip>
+                <name>CommandsFormattedDocumentGroupExtendedTooltip</name>
+                <id>67</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <type>CommandBar</type>
+              <extInfo xsi:type="form:CommandBarExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+                <commandSource>Item.NewMessageFormattedDocument</commandSource>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormField">
+              <name>NewMessageFormattedDocument</name>
+              <id>11</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>NewMessageFormattedDocument</segments>
+              </dataPath>
+              <titleLocation>None</titleLocation>
+              <extendedTooltip>
+                <name>NewMessageFormattedDocumentExtendedTooltip</name>
+                <id>68</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>NewMessageFormattedDocumentContextMenu</name>
+                <id>12</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>FormattedDocumentField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:FormattedDocFieldExtInfo">
+                <width>50</width>
+                <autoMaxWidth>true</autoMaxWidth>
+                <height>10</height>
+                <horizontalStretch>true</horizontalStretch>
+                <verticalStretch>true</verticalStretch>
+              </extInfo>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Страница новое сообщение форматированный текст</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>New HTML mail page</value>
+            </title>
+            <title>
+              <key>pl</key>
+              <value>Nowa strona wiadomości w formacie HTML</value>
+            </title>
+            <title>
+              <key>es_ES</key>
+              <value>Nueva página de correo HTML</value>
+            </title>
+            <title>
+              <key>es_CO</key>
+              <value>Nueva página de correo HTML</value>
+            </title>
+            <title>
+              <key>tr</key>
+              <value>Yeni HTML postası sayfası</value>
+            </title>
+            <title>
+              <key>it</key>
+              <value>Nuova pagina mail HTML</value>
+            </title>
+            <title>
+              <key>de</key>
+              <value>Seite neuer HTML-Mail</value>
+            </title>
+            <extendedTooltip>
+              <name>NewMessageFormattedTextPageExtendedTooltip</name>
+              <id>66</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>Page</type>
+            <extInfo xsi:type="form:PageGroupExtInfo">
+              <group>Vertical</group>
+              <showTitle>true</showTitle>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Страницы подпись для новых сообщений</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Pages signature on new messages</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Strony podpis dla nowych wiadomości</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Páginas de firma para mensajes nuevos</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Páginas de firma para mensajes nuevos</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Yeni iletilerde imza sayfaları</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Firma pagine sui nuovi messaggi</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Seiten Signatur für neue Nachrichten</value>
+          </title>
+          <extendedTooltip>
+            <name>PagesSignatureForNewMessagesExtendedTooltip</name>
+            <id>63</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Pages</type>
+          <extInfo xsi:type="form:PagesGroupExtInfo">
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Подпись для новых сообщений</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>New message signature</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Podpis nowej wiadomości</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Nueva firma del mensaje</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Nueva firma del mensaje</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Yeni ileti imzası</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Nuova firma messaggio</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Signatur von neuer Nachricht</value>
+        </title>
+        <width>40</width>
+        <extendedTooltip>
+          <name>ForNewMessagesGroupExtendedTooltip</name>
+          <id>59</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Подпись для нового</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>New mail signature</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Podpis nowej poczty</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Nueva firma del correo</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Nueva firma del correo</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Yeni posta imzası</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Nuova firma email</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Signatur von neuer Mail</value>
+      </title>
+      <extendedTooltip>
+        <name>SignatureForNewMessageExtendedTooltip</name>
+        <id>58</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>HorizontalIfPossible</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>SignatureOnReply</name>
+      <id>87</id>
+      <items xsi:type="form:FormGroup">
+        <name>OnReplyForwardGroup</name>
+        <id>18</id>
+        <items xsi:type="form:FormField">
+          <name>AddSignatureOnReplyForward</name>
+          <id>20</id>
+          <title>
+            <key>ru</key>
+            <value>Включать подпись при ответе или пересылке</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Include signature on replies and forwards</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Włącz podpis przy odpowiedziach i przekazaniach dalej</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Incluir la firma al responder y reenviar</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Incluir la firma al responder y reenviar</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Yanıtlara ve yönlendirmelere imza ekle</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Includere firma su risposte e inoltrate</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Signatur in Antworten und Weiterleitungen hinzufügen</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>AddSignatureOnReplyForward</segments>
+          </dataPath>
+          <titleLocation>Right</titleLocation>
+          <handlers>
+            <event>OnChange</event>
+            <name>EnableSignatureOnReplyForwardOnChange</name>
+          </handlers>
+          <extendedTooltip>
+            <name>EnableSignatureOnReplyForwardExtendedTooltip</name>
+            <id>70</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>EnableSignatureOnReplyForwardContextMenu</name>
+            <id>21</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>ReplyForwardSignatureFormat</name>
+          <id>22</id>
+          <title>
+            <key>ru</key>
+            <value>Формат подписи</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Signature format</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Format podpisu</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Formato de firma</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Formato de firma</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>İmza formatı</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Formato firma</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Signatur-Format</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>ReplyForwardSignatureFormat</segments>
+          </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>SignatureFormatOnReplyForwardOnChange</name>
+          </handlers>
+          <extendedTooltip>
+            <name>SignatureFormatOnReplyForwardExtendedTooltip</name>
+            <id>71</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>SignatureFormatOnReplyForwardContextMenu</name>
+            <id>23</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <horizontalStretch>false</horizontalStretch>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>PagesSignatureOnReplyForward</name>
+          <id>24</id>
+          <items xsi:type="form:FormGroup">
+            <name>PageOnReplyForwardPlainText</name>
+            <id>25</id>
+            <items xsi:type="form:FormField">
+              <name>ReplyForwardSignaturePlainText</name>
+              <id>27</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>ReplyForwardSignaturePlainText</segments>
+              </dataPath>
+              <titleLocation>None</titleLocation>
+              <extendedTooltip>
+                <name>SignatureOnReplyForwardPlainTextExtendedTooltip</name>
+                <id>74</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>SignatureOnReplyForwardPlainTextContextMenu</name>
+                <id>28</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>InputField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:InputFieldExtInfo">
+                <autoMaxHeight>true</autoMaxHeight>
+                <wrap>true</wrap>
+                <multiLine>true</multiLine>
+                <chooseType>true</chooseType>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
+              </extInfo>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Страница при ответе пересылке простой текст</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Page forward reply plain text</value>
+            </title>
+            <title>
+              <key>pl</key>
+              <value>Strona przekaż dalej odpowiedź zwykły tekst</value>
+            </title>
+            <title>
+              <key>es_ES</key>
+              <value>Página de reenvío de respuesta de texto sin formato</value>
+            </title>
+            <title>
+              <key>es_CO</key>
+              <value>Página de reenvío de respuesta de texto sin formato</value>
+            </title>
+            <title>
+              <key>tr</key>
+              <value>Yönlendir yanıtla düz metin sayfası</value>
+            </title>
+            <title>
+              <key>it</key>
+              <value>Pagina inoltrare rispondere testo libero</value>
+            </title>
+            <title>
+              <key>de</key>
+              <value>Seite Weiterleiten reiner Text antworten</value>
+            </title>
+            <extendedTooltip>
+              <name>PageOnReplyForwardPlainTextExtendedTooltip</name>
+              <id>73</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>Page</type>
+            <extInfo xsi:type="form:PageGroupExtInfo">
+              <group>Vertical</group>
+              <showTitle>true</showTitle>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormGroup">
+            <name>PageOnReplyForwardFormattedDocument</name>
+            <id>26</id>
+            <items xsi:type="form:FormGroup">
+              <name>CommandsOnReplyForwardFormattedDocumentGroup</name>
+              <id>31</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <title>
+                <key>ru</key>
+                <value>Команды при ответе пересылке форматированный документ</value>
+              </title>
+              <title>
+                <key>en</key>
+                <value>HTML forwards and replies: commands</value>
+              </title>
+              <title>
+                <key>pl</key>
+                <value>Przekazanie dalej i odpowiedzi w formacie HTML: polecenia</value>
+              </title>
+              <title>
+                <key>es_ES</key>
+                <value>Reenvíos y respuestas HTML: comandos</value>
+              </title>
+              <title>
+                <key>es_CO</key>
+                <value>Reenvíos y respuestas HTML: comandos</value>
+              </title>
+              <title>
+                <key>tr</key>
+                <value>HTML yönlendirmeler ve yanıtlar: komutlar</value>
+              </title>
+              <title>
+                <key>it</key>
+                <value>Inoltrate e risposte HTML: comandi</value>
+              </title>
+              <title>
+                <key>de</key>
+                <value>HTML-Weiterleitungen und -antworten: Befehle</value>
+              </title>
+              <extendedTooltip>
+                <name>CommandsOnReplyForwardFormattedDocumentGroupExtendedTooltip</name>
+                <id>76</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <type>CommandBar</type>
+              <extInfo xsi:type="form:CommandBarExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+                <commandSource>Item.OnReplyForwardFormattedDocument</commandSource>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormField">
+              <name>OnReplyForwardFormattedDocument</name>
+              <id>29</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>OnReplyForwardFormattedDocument</segments>
+              </dataPath>
+              <titleLocation>None</titleLocation>
+              <extendedTooltip>
+                <name>OnReplyForwardFormattedDocumentExtendedTooltip</name>
+                <id>77</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>OnReplyForwardFormattedDocumentContextMenu</name>
+                <id>30</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>FormattedDocumentField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:FormattedDocFieldExtInfo">
+                <width>50</width>
+                <autoMaxWidth>true</autoMaxWidth>
+                <height>10</height>
+                <horizontalStretch>true</horizontalStretch>
+                <verticalStretch>true</verticalStretch>
+              </extInfo>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Страница при ответе пересылке простой текст</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Page forward reply plain text</value>
+            </title>
+            <title>
+              <key>pl</key>
+              <value>Strona przekaż dalej odpowiedź zwykły tekst</value>
+            </title>
+            <title>
+              <key>es_ES</key>
+              <value>Página de reenvío de respuesta de texto sin formato</value>
+            </title>
+            <title>
+              <key>es_CO</key>
+              <value>Página de reenvío de respuesta de texto sin formato</value>
+            </title>
+            <title>
+              <key>tr</key>
+              <value>Yönlendir yanıtla düz metin sayfası</value>
+            </title>
+            <title>
+              <key>it</key>
+              <value>Pagina inoltrare rispondere testo libero</value>
+            </title>
+            <title>
+              <key>de</key>
+              <value>Seite Weiterleiten reiner Text antworten</value>
+            </title>
+            <extendedTooltip>
+              <name>PageOnReplyForwardFormattedDocumentExtendedTooltip</name>
+              <id>75</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>Page</type>
+            <extInfo xsi:type="form:PageGroupExtInfo">
+              <group>Vertical</group>
+              <showTitle>true</showTitle>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Страницы подпись при ответе пересылке</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Pages signature on replies and forwards</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Strony podpis przy odpowiedziach i przekazaniach dalej</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Páginas de firma al responder y reenviar</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Páginas de firma al responder y reenviar</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Yanıtlarda ve yönlendirmelerde imza sayfaları</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Pagine firma su risposte e inoltrate</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Seiten Signatur in Antworten und Weiterleitungen</value>
+          </title>
+          <extendedTooltip>
+            <name>PagesSignatureOnReplyForwardExtendedTooltip</name>
+            <id>72</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Pages</type>
+          <extInfo xsi:type="form:PagesGroupExtInfo">
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Подпись при ответе или пересылке</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Forwards and replies signature</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Podpis przy przekazaniu dalej i odpowiedziach</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Firmar reenvíos y respuestas</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Firmar reenvíos y respuestas</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Yönlendirme ve yanıt imzası</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Firma inoltrate e risposte</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Signatur in Weiterleitungen und Antworten</value>
+        </title>
+        <width>40</width>
+        <extendedTooltip>
+          <name>OnReplyForwardGroupExtendedTooltip</name>
+          <id>69</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Подпись при ответе</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Reply signature</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Podpis odpowiedzi</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Firmar la respuesta</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Firmar la respuesta</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Yanıt imzası</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Firma risposta</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>An Signatur antworten</value>
+      </title>
+      <extendedTooltip>
+        <name>SignatureOnReplyExtendedTooltip</name>
+        <id>88</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>TrackEmails</name>
+      <id>34</id>
+      <items xsi:type="form:FormGroup">
+        <name>ForMessagesToSentGroup</name>
+        <id>39</id>
+        <items xsi:type="form:FormField">
+          <name>AlwaysRequestReadReceipt</name>
+          <id>37</id>
+          <title>
+            <key>ru</key>
+            <value>Уведомление о прочтении</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Read receipt</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Potwierdzenie przeczytania</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Un recibo de lectura</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Un recibo de lectura</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Okundu bilgisi</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Ricevuta di lettura</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Lesebestätigung</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>AlwaysRequestReadReceipt</segments>
+          </dataPath>
+          <titleLocation>Right</titleLocation>
+          <extendedTooltip>
+            <name>AlwaysRequestReadReceiptExtendedTooltip</name>
+            <id>80</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>AlwaysRequestReadReceiptContextMenu</name>
+            <id>38</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>AlwaysRequestDeliveryReceipt</name>
+          <id>35</id>
+          <title>
+            <key>ru</key>
+            <value>Уведомление о доставке</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Delivery receipt</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Potwierdzenie dostawy</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Un recibo de entrega</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Un recibo de entrega</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Teslim bilgisi</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Ricevuta di consegna</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Empfangsbestätigung</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>AlwaysRequestDeliveryReceipt</segments>
+          </dataPath>
+          <titleLocation>Right</titleLocation>
+          <extendedTooltip>
+            <name>AlwaysRequestDeliveryReceiptsExtendedTooltip</name>
+            <id>81</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>AlwaysRequestDeliveryReceiptsContextMenu</name>
+            <id>36</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>ReplyToReadReceiptPolicies</name>
+          <id>40</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>ReplyToReadReceiptPolicies</segments>
+          </dataPath>
+          <titleLocation>Top</titleLocation>
+          <extendedTooltip>
+            <name>HowToRespondToReadReceiptsRequestsExtendedTooltip</name>
+            <id>82</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>HowToRespondToReadReceiptsRequestsContextMenu</name>
+            <id>41</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>RadioButtonField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+            <columnsCount>1</columnsCount>
+            <choiceList>
+              <presentation>
+                <key>ru</key>
+                <value>Всегда отправлять уведомление</value>
+              </presentation>
+              <presentation>
+                <key>en</key>
+                <value>Always send a read receipt</value>
+              </presentation>
+              <presentation>
+                <key>pl</key>
+                <value>Zawsze wysyłać potwierdzenie przeczytania</value>
+              </presentation>
+              <presentation>
+                <key>es_ES</key>
+                <value>Enviar siempre un recibo de lectura</value>
+              </presentation>
+              <presentation>
+                <key>es_CO</key>
+                <value>Enviar siempre un recibo de lectura</value>
+              </presentation>
+              <presentation>
+                <key>tr</key>
+                <value>Daima okundu bilgisi gönder</value>
+              </presentation>
+              <presentation>
+                <key>it</key>
+                <value>Inviare sempre ricevuta di lettura</value>
+              </presentation>
+              <presentation>
+                <key>de</key>
+                <value>Immer eine Lesebestätigung senden</value>
+              </presentation>
+              <value xsi:type="core:ReferenceValue">
+                <value>Enum.ReplyToReadReceiptPolicies.EnumValue.AlwaysSendReadReceipt</value>
+              </value>
+            </choiceList>
+            <choiceList>
+              <presentation>
+                <key>ru</key>
+                <value>Никогда не отправлять уведомление</value>
+              </presentation>
+              <presentation>
+                <key>en</key>
+                <value>Never send a read receipt</value>
+              </presentation>
+              <presentation>
+                <key>pl</key>
+                <value>Nigdy nie wysyłać potwierdzenia przeczytania</value>
+              </presentation>
+              <presentation>
+                <key>es_ES</key>
+                <value>No enviar nunca un recibo de lectura</value>
+              </presentation>
+              <presentation>
+                <key>es_CO</key>
+                <value>No enviar nunca un recibo de lectura</value>
+              </presentation>
+              <presentation>
+                <key>tr</key>
+                <value>Asla okundu bilgisi gönderme</value>
+              </presentation>
+              <presentation>
+                <key>it</key>
+                <value>Non inviare mai ricevute di lettura</value>
+              </presentation>
+              <presentation>
+                <key>de</key>
+                <value>Niemals eine Lesebestätigung senden</value>
+              </presentation>
+              <value xsi:type="core:ReferenceValue">
+                <value>Enum.ReplyToReadReceiptPolicies.EnumValue.NeverSendReadReceipt</value>
+              </value>
+            </choiceList>
+            <choiceList>
+              <presentation>
+                <key>ru</key>
+                <value>Запрашивать перед тем, как отправить уведомление</value>
+              </presentation>
+              <presentation>
+                <key>en</key>
+                <value>Ask each time</value>
+              </presentation>
+              <presentation>
+                <key>pl</key>
+                <value>Pytaj za każdym razem</value>
+              </presentation>
+              <presentation>
+                <key>es_ES</key>
+                <value>Preguntar cada vez</value>
+              </presentation>
+              <presentation>
+                <key>es_CO</key>
+                <value>Preguntar cada vez</value>
+              </presentation>
+              <presentation>
+                <key>tr</key>
+                <value>Her seferinde sor</value>
+              </presentation>
+              <presentation>
+                <key>it</key>
+                <value>Chiedi ogni volta</value>
+              </presentation>
+              <presentation>
+                <key>de</key>
+                <value>Jedes Mal fragen</value>
+              </presentation>
+              <value xsi:type="core:ReferenceValue">
+                <value>Enum.ReplyToReadReceiptPolicies.EnumValue.AskBeforeSendReadReceipt</value>
+              </value>
+            </choiceList>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Для отправляемых сообщений запрашивать:</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>When you send a message, request a:</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Kiedy wysyłasz wiadomość, zapytuj o:</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Al enviar un mensaje, solicite:</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Al enviar un mensaje, solicite:</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>İleti gönderildiğinde talep edilecek:</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Nell'invio di un messaggio, richiedere:</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Wenn Sie eine Nachricht senden, folgendes fordern:</value>
+        </title>
+        <extendedTooltip>
+          <name>ForMessagesToSentGroupExtendedTooltip</name>
+          <id>79</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <showTitle>true</showTitle>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Отслеживание писем</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Tracking</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Śledzenie</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Rastrear</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Rastrear</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>İzleme</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Tracciamento</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Tracking</value>
+      </title>
+      <extendedTooltip>
+        <name>TrackEmailsExtendedTooltip</name>
+        <id>78</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>Other</name>
+      <id>47</id>
+      <items xsi:type="form:FormField">
+        <name>DisplaySourceEmailBody</name>
+        <id>50</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>DisplaySourceEmailBody</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <extendedTooltip>
+          <name>DisplaySourceEmailBodyExtendedTooltip</name>
+          <id>84</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>DisplaySourceEmailBodyContextMenu</name>
+          <id>51</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>IncludeOriginalEmailBody</name>
+        <id>52</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>IncludeOriginalEmailBody</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <extendedTooltip>
+          <name>IncludeSourceEmailBodyExtendedTooltip</name>
+          <id>85</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>IncludeSourceEmailBodyContextMenu</name>
+          <id>53</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>SendMessagesImmediately</name>
+        <id>45</id>
+        <title>
+          <key>ru</key>
+          <value>Отправлять сообщения сразу </value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Send mail at once </value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Wysyłaj wiadomość od razu </value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Enviar el correo de inmediato </value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Enviar el correo de inmediato </value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>E-postayı hemen gönder</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Inviare mail subito </value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Mail sofort senden </value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>SendMessagesImmediately</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <toolTip>
+          <key>ru</key>
+          <value>Данная  настройка имеет смысл только при файловом варианте хранения ИБ. В клиент- серверном варианте отправки и получение писем выполняется регламентным заданием. </value>
+        </toolTip>
+        <toolTip>
+          <key>en</key>
+          <value>Applicable only to file infobases. In server infobases, email exchange is handled by a scheduled job.</value>
+        </toolTip>
+        <toolTip>
+          <key>pl</key>
+          <value>Ma zastosowanie tylko do plikowych ba informacyjnych. W serwerowym bazach informacyjnych, wymiana wiadomościami e-mail jest wykonywana za pomocą zaplanowanych zadań.</value>
+        </toolTip>
+        <toolTip>
+          <key>es_ES</key>
+          <value>Aplicable sólo a las bases de información de archivos. En las bases de información del servidor, el intercambio de correo electrónico se gestiona por medio de una tarea programada.</value>
+        </toolTip>
+        <toolTip>
+          <key>es_CO</key>
+          <value>Aplicable sólo a las bases de información de archivos. En las bases de información del servidor, el intercambio de correo electrónico se gestiona por medio de una tarea programada.</value>
+        </toolTip>
+        <toolTip>
+          <key>tr</key>
+          <value>Sadece dosya Infobase'lerine uygulanabilir. Sunucu Infobase'lerinde e-posta değişimi planlı işle yürütülür.</value>
+        </toolTip>
+        <toolTip>
+          <key>it</key>
+          <value>Applicabile soltanto al file delle infobase. Nelle infobase server, il traffico email è gestito da un lavoro programmato.</value>
+        </toolTip>
+        <toolTip>
+          <key>de</key>
+          <value>Nur für Datei-Infobasen anwendbar. In Server-Infobasen, ist E-Mail-Austausch von einer geplanten Arbeit bearbeitet.</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>SendEmailsAtOnceExtendedTooltip</name>
+          <id>86</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>SendEmailsAtOnceContextMenu</name>
+          <id>46</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Прочее</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Other</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Inne</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Otro</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Otro</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Diğer</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Altro</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Sonstige</value>
+      </title>
+      <extendedTooltip>
+        <name>OtherExtendedTooltip</name>
+        <id>83</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Страницы настроек</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Settings pages</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Strony ustawień</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Páginas de configuraciones</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Páginas de configuraciones</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Ayarlar sayfaları</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Pagine delle impostazioni</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Einstellungen Seiten</value>
+    </title>
+    <extendedTooltip>
+      <name>SettingPagesExtendedTooltip</name>
+      <id>57</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>Pages</type>
+    <extInfo xsi:type="form:PagesGroupExtInfo">
+      <pagesRepresentation>TabsOnTop</pagesRepresentation>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>FormCommandBar</name>
+    <id>-1</id>
+    <items xsi:type="form:Button">
+      <name>WriteAndClose</name>
+      <id>48</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <defaultItem>true</defaultItem>
+      <extendedTooltip>
+        <name>WriteAndCloseExtendedTooltip</name>
+        <id>54</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.WriteAndClose</commandName>
+      <representation>Auto</representation>
+      <defaultButton>true</defaultButton>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>FormHelp</name>
+      <id>49</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormHelpExtendedTooltip</name>
+        <id>55</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.StandardCommand.Help</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+  </autoCommandBar>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <verticalScroll>UseIfNecessary</verticalScroll>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>NewMessageFormattedDocument</name>
+    <title>
+      <key>ru</key>
+      <value>Новое сообщение форматированный документ</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>New HTML message</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Nowa wiadomość w formacie HTML</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Nuevo mensaje HTML</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Nuevo mensaje HTML</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Yeni HTML iletisi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Nuovo messaggio HTML</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Neue HTML-Nachricht</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>FormattedDocument</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>OnReplyForwardFormattedDocument</name>
+    <id>3</id>
+    <valueType>
+      <types>FormattedDocument</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>SettingsStorage</name>
+    <id>1</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>NewMessageSignatureFormat</name>
+    <title>
+      <key>ru</key>
+      <value>Формат подписи для новых сообщений</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>New message signature format</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Format podpisu nowej wiadomości</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Nuevo formato de firma del mensaje</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Nuevo formato de firma del mensaje</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Yeni ileti imza formatı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Nuovo formato firma del messaggio</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Signatur-Format von neuer Nachricht</value>
+    </title>
+    <id>4</id>
+    <valueType>
+      <types>EnumRef.EmailEditingMethods</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <functionalOptions>FunctionalOption.SendEmailsInHTMLFormat</functionalOptions>
+  </attributes>
+  <attributes>
+    <name>SignatureForNewMessagesPlainText</name>
+    <title>
+      <key>ru</key>
+      <value>Подпись для новых сообщений простой текст</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Plain text signature on new messages</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Podpis jako zwykły tekst w nowych wiadomościach</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Firma de texto sin formato para mensajes nuevos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Firma de texto sin formato para mensajes nuevos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Yeni iletilerde düz metin imzası</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Firma testo libero sui nuovi messaggi</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Signatur in reinem Text für neue Nachrichten</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>AddSignatureOnReplyForward</name>
+    <title>
+      <key>ru</key>
+      <value>Включать подпись при ответе или пересылке</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Include signature on replies and forwards</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Włącz podpis przy odpowiedziach i przekazaniach dalej</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Incluir la firma al responder y reenviar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Incluir la firma al responder y reenviar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Yanıtlara ve yönlendirmelere imza ekle</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Includere firma su risposte e inoltrate</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Signatur in Antworten und Weiterleitungen hinzufügen</value>
+    </title>
+    <id>6</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>AddSignatureForNewMessages</name>
+    <title>
+      <key>ru</key>
+      <value>Включать подпись для новых сообщений</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Include signature on new messages</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Włącz podpis dla nowych wiadomości</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Incluir la firma para mensajes nuevos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Incluir la firma para mensajes nuevos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Yeni iletilere imza ekle</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Includere firma nei nuovi messaggi</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Signatur zu neuen Nachrichten hinzufügen</value>
+    </title>
+    <id>7</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ReplyForwardSignatureFormat</name>
+    <title>
+      <key>ru</key>
+      <value>Формат подписи при ответе пересылке</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Forwards and replies signature format</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Podpis przy przekazaniu dalej i odpowiedziach</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Formato de firma de reenvíos y respuestas</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Formato de firma de reenvíos y respuestas</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Yönlendirme ve yanıt imzası formatı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Formato firma inoltrate e risposte</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Signatur-Format in Weiterleitungen und Antworten</value>
+    </title>
+    <id>8</id>
+    <valueType>
+      <types>EnumRef.EmailEditingMethods</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <functionalOptions>FunctionalOption.SendEmailsInHTMLFormat</functionalOptions>
+  </attributes>
+  <attributes>
+    <name>ReplyForwardSignaturePlainText</name>
+    <title>
+      <key>ru</key>
+      <value>Подпись при ответе пересылке простой текст</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Plain text signature on replies and forwards</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Podpis w odpowiedziach i przekazaniach dalej zwykły tekst</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Firma de texto sin formato al responder y reenviar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Firma de texto sin formato al responder y reenviar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Yanıtlarda ve yönlendirmelerde düz metin imzası</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Testo libero firma su risposte e inoltrate</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Signatur in reinem Text in Antworten und Weiterleitungen</value>
+    </title>
+    <id>9</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>AlwaysRequestReadReceipt</name>
+    <title>
+      <key>ru</key>
+      <value>Всегда запрашивать уведомление о прочтении</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Always request read receipt</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zawsze zapytuj o potwierdzenie przeczytania</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Solicitar siempre un recibo de lectura</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Solicitar siempre un recibo de lectura</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Daima okundu bilgisi iste</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Richiedere sempre ricevuta di lettura</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Immer Lesebestätigung anfordern</value>
+    </title>
+    <id>10</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>AlwaysRequestDeliveryReceipt</name>
+    <title>
+      <key>ru</key>
+      <value>Всегда запрашивать уведомления о доставке</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Always request delivery receipts</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zawsze zapytuj o potwierdzenie dostawy</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Solicitar siempre los recibos de entrega</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Solicitar siempre los recibos de entrega</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Daima teslim bilgisi iste</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Richiedere sempre ricevuta di consegna</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Immer Empfangsbestätigungen anfordern</value>
+    </title>
+    <id>11</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ReplyToReadReceiptPolicies</name>
+    <title>
+      <key>ru</key>
+      <value>Порядок ответов на запросы уведомлений о прочтении</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>When a sender requests a read receipt, your email client should</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Kiedy nadawca zapytuje o potwierdzenie przeczytania, twój klient pocztowy powinien</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Cuando un remitente solicita un recibo de lectura, su cliente de correo electrónico debe</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Cuando un remitente solicita un recibo de lectura, su cliente de correo electrónico debe</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Gönderen, okundu bilgisi talep ettiğinde e-posta istemciniz ne yapsın</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Quando un mittente richiede una ricevuta di lettare, il Vostro client email dovrebbe</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Wenn ein Absender eine Lesebestätigung anfordert, muss Ihr E-Mail-Client</value>
+    </title>
+    <id>12</id>
+    <valueType>
+      <types>EnumRef.ReplyToReadReceiptPolicies</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>SendMessagesImmediately</name>
+    <title>
+      <key>ru</key>
+      <value>Отправлять сообщения сразу</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Send mail at once</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wysyłaj wiadomość od razu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Enviar el correo de inmediato</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Enviar el correo de inmediato</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>E-postayı hemen gönder</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Inviare mail subito</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Mail sofort senden</value>
+    </title>
+    <id>13</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>DisplaySourceEmailBody</name>
+    <title>
+      <key>ru</key>
+      <value>Отображать тело исходного письма  при ответе или пересылке</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Show the original message on replies and forwards</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Pokazuj oryginalną wiadomość przy odpowiedzi i przekazaniach dalej</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Mostrar el mensaje original al responder y reenviar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Mostrar el mensaje original al responder y reenviar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Yanıtlarda ve yönlendirmelerde orijinal iletiyi göster</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Mostrare messaggio originale su risposte e inoltrate</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Die Originalnachricht in Antworten und Weiterleitungen anzeigen</value>
+    </title>
+    <id>14</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>IncludeOriginalEmailBody</name>
+    <title>
+      <key>ru</key>
+      <value>Включать тело исходного письма при ответе пересылке</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Include the original message on replies and forwards</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Włączaj oryginalną wiadomość przy odpowiedzi i przekazaniach dalej</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Incluir el mensaje original al responder y reenviar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Incluir el mensaje original al responder y reenviar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Yanıtlara ve yönlendirmelere orijinal iletiyi ekle</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Includere il messaggio originale su risposte e inoltrate</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Die Originalnachricht zu Antworten und Weiterleitungen hinzufügen</value>
+    </title>
+    <id>15</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>WriteAndClose</name>
+    <title>
+      <key>ru</key>
+      <value>Записать и закрыть</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Save and close</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zapisz i zamknij</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Guardar y cerrar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Guardar y cerrar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Sakla ve kapat</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Scrivi e chiudi</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Speichern und schließen</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Записать и закрыть</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Save the changes and close the form.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zapisz zmiany i zamknij formularz.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Guarde los cambios y cierre el formulario.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Guarde los cambios y cierre el formulario.</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Değişiklikleri kaydet ve formu kapat.</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Salvare le modifiche e chiudere il modulo.</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Die Änderungen speichern und das Formular schließen.</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>WriteAndClose</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

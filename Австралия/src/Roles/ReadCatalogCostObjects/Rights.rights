@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rights xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://v8.1c.ru/8.2/roles" xsi:type="Rights">
+	<setForNewObjects>false</setForNewObjects>
+	<setForAttributesByDefault>true</setForAttributesByDefault>
+	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
+	<object>
+		<name>CommonCommand.OpenCostObjects</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.CostObjects</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Configuration.Drive</name>
+		<right>
+			<name>MainWindowModeNormal</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeEmbeddedWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeFullscreenWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeKiosk</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>AnalyticsSystemClient</name>
+			<value>true</value>
+		</right>
+	</object>
+	<restrictionTemplate>
+		<name>ByValuesAdvanced</name>
+		<condition>// ByValuesExtended(Table, -, Modifier, JoinedTables, B, A1,F1,B1, A2,F2,B2,..., A(n), F(n), B(n)).
+// Parameter No.:                 1, 2,           3,                     4, 5,  6, 7, 8,  9,10,11,...,3+n*3,4+n*3,5+n*3.
+// Read as: "access restriction by values advanced".
+// Parameters:
+//     Table - a name of the current table, for example, Document.GoodsAndServicesReceipt.
+//     Modifier - changes the template.
+//                 1st modifier - string DontLimitAccessToGroups specifies
+//                  unconditionally select hierarchical catalog groups.
+//                 No other modifiers are available in this template version.
+//     JoinedTables - a query text for joining additional tables, for example
+...</condition>
+	</restrictionTemplate>
+	<restrictionTemplate>
+		<name>ForObject(ObjectField)</name>
+		<condition>// ForObject(ObjectField = "")
+// The template is used to restrict reference items, documents, and
+// other object lists by the Reference field. Also, it is used to restrict items of dependent lists
+// of objects and register records by the owner object field.
+
+// Parameters:
+//  ObjectField - name of the field that stores reference to the object the list item depends on.
+//                Value "" (by default) is the same as the name of the Reference field.
+
+...</condition>
+	</restrictionTemplate>
+</Rights>

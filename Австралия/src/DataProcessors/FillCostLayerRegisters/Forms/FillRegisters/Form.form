@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:FormGroup">
+    <name>Pages</name>
+    <id>1</id>
+    <items xsi:type="form:FormGroup">
+      <name>PageDescription</name>
+      <id>3</id>
+      <items xsi:type="form:Decoration">
+        <name>Description</name>
+        <id>5</id>
+        <title>
+          <key>en</key>
+          <value>You are about to run the data consistency check. It is required when the FIFO method is applied.
+The data consistency check can take time and slow down the application operations.
+It is recommended to run the check when the number of active users is minimum.</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Вы собираетесь выполнить проверку целостности данных. Это необходимо при применении метода FIFO.
+Проверка целостности данных может занять некоторое время и замедлить работу приложения.
+Рекомендуется запускать проверку, когда число активных пользователей минимально.</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Masz zamiar uruchomić sprawdzenie spójności danych. Jest to wymagane, gdy jest stosowana metoda FIFO.
+Sprawdzenie spójności danych może zająć trochę czasu i spowolnić działanie aplikacji.
+Zaleca się uruchomienie sprawdzenia, gdy liczba aktywnych użytkowników jest minimalna.</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Está a punto de ejecutar la comprobación de consistencia de datos. Es necesario cuando se aplica el método FIFO. 
+La comprobación de la coherencia de datos puede llevar tiempo y ralentizar las operaciones de la aplicación. 
+Se recomienda ejecutar la comprobación cuando el número de usuarios activos es mínimo.</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Está a punto de ejecutar la comprobación de consistencia de datos. Es necesario cuando se aplica el método FIFO. 
+La comprobación de la coherencia de datos puede llevar tiempo y ralentizar las operaciones de la aplicación. 
+Se recomienda ejecutar la comprobación cuando el número de usuarios activos es mínimo.</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Veri tutarlılığı kontrolü yürütmek üzeresiniz. FIFO yöntemi kullanıldığında bu gereklidir.
+Veri tutarlılığı kontrolü uzun sürebilir ve uygulamanın çalışmasını yavaşlatabilir.
+Kontrolün, aktif kullanıcı sayısı az olduğunda yapılması tavsiye edilir.</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Il controllo della coerenza dei dati sta per essere avviato. Esso è richiesto quando viene applicato il metodo FIFO.
+ Il controllo della coerenza dei dati può richiedere un po' di tempo e rallentare le operazioni del programma. 
+Si consiglia di avviare il controllo quando il numero di utenti attivi è ridotto al minimo.</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Sie sind dabei, die Datenkonsistenzprüfung durchzuführen. Sie wird benötigt, wenn die FIFO-Methode angewendet wird.
+Die Datenkonsistenzprüfung kann Zeit in Anspruch nehmen und die Anwendungsoperationen verlangsamen.
+Es wird empfohlen, die Prüfung auszuführen, wenn die Anzahl der aktiven Benutzer minimal ist.</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>DescriptionExtendedTooltip</name>
+          <id>7</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>DescriptionContextMenu</name>
+          <id>6</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <textColor xsi:type="core:ColorRef">
+          <color>Style.InformationText</color>
+        </textColor>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>OnlyProduction</name>
+        <id>28</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>OnlyProduction</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <toolTip>
+          <key>en</key>
+          <value>Select the checkbox to apply the FIFO method only to Work-in-progress, Production, and Kit processed. This is recommended if the FIFO method has been applied before the 1C:Drive update. Clear the checkbox to apply the FIFO method to all documents that register inventory increase (for example, Goods receipt or Production). This will repost such documents for companies where the FIFO method has been applied before the 1C:Drive update. Product cost might be recalculated.</value>
+        </toolTip>
+        <toolTip>
+          <key>ru</key>
+          <value>Установите флажок, чтобы применить метод FIFO только к документам &quot;Незавершенное производство&quot;, &quot;Производство&quot; и &quot;Результат комплектации&quot;. Рекомендуется сделать это, если метод FIFO был применен до обновления 1C:Drive. Снимите флажок, чтобы применить метод FIFO ко всем документам, которые регистрируют увеличение запасов (например, &quot;Поступление товаров&quot; или &quot;Производство&quot;). Это позволит перепровести такие документы для организаций, в которых метод FIFO применялся до обновления 1C:Drive. Себестоимость товара может быть пересчитана.</value>
+        </toolTip>
+        <toolTip>
+          <key>pl</key>
+          <value>Zaznacz pole wyboru aby zastosować metodę FIFO tylko do pracy w toku, Produkcji i przetwarzania zestawu. To jest zalecane, jeśli metoda FIFO została zastosowana przed aktualizacją 1C:Drive. Odznacz to pole wyboru aby zastosować metodę FIFO dla wszystkich dokumentów, które rejestrują zwiększenie zapasów (na przykład, Przyjęcie zewnętrzne lub Produkcja). To pozwoli ponownie zatwierdzić takie dokumenty dla firm, gdzie metoda FIFO była zastosowana przed aktualizacją 1C:Drive. Koszt produktu może być przeliczony.</value>
+        </toolTip>
+        <toolTip>
+          <key>es_ES</key>
+          <value>Seleccione la casilla de verificación para aplicar el método FIFO sólo a los trabajos en progreso, la producción y los kits procesados. Esto se recomienda si el método FIFO se ha aplicado antes de la actualización de 1C:Drive. Desmarque la casilla de verificación para aplicar el método FIFO a todos los documentos que registren un aumento del inventario (por ejemplo, Entrada de mercancías o Producción). Esto volverá a contabilizar dichos documentos para las empresas en las que se haya aplicado el método FIFO antes de la actualización de 1C:Drive. El coste del producto podría recalcularse.</value>
+        </toolTip>
+        <toolTip>
+          <key>es_CO</key>
+          <value>Seleccione la casilla de verificación para aplicar el método PEPS sólo a los trabajos en progreso, la producción y los kits procesados. Esto se recomienda si el método PEPS se ha aplicado antes de la actualización de 1C:Drive. Desmarque la casilla de verificación para aplicar el método PEPS a todos los documentos que registren un aumento del inventario (por ejemplo, Entrada de mercancías o Producción). Esto volverá a contabilizar dichos documentos para las empresas en las que se haya aplicado el método PEPS antes de la actualización de 1C:Drive. El coste del producto podría recalcularse.</value>
+        </toolTip>
+        <toolTip>
+          <key>tr</key>
+          <value>FIFO yöntemini sadece İşlem bitişi, Üretim ve İşlenen set'e uygulamak için onay kutusunu işaretleyin. FIFO yöntemi 1C:Drive güncellemesinden önce uygulandıysa bunu yapmanız önerilir. FIFO yöntemini stok artırma kaydeden tüm belgelere (örneğin, Ambar girişi veya Üretim) uygulamak için onay kutusunu temizleyin. Bu tür belgeler FIFO yönteminin 1C:Drive güncellemesinden önce uygulandığı iş yerleri için yeniden kaydedilir. Ürün maliyeti yeniden hesaplanabilir.</value>
+        </toolTip>
+        <toolTip>
+          <key>it</key>
+          <value>Selezionare la casella di controllo per applicare il metodo FIFO solo a Lavori in corso, Produzione e Kit elaborati. Questo è consigliato nel caso in cui il metodo FIFO sia stato applicato prima dell'aggiornamento di 1C:Drive. Deselezionare la casella di controllo per applicare il metodo FIFO a tutti i documenti che registrano in incremento nelle scorte (per esempio Ricezione merci o Produzione). Così saranno ripubblicati tali documenti per le aziende in cui il metodo FIFO era applicato prima dell'aggiornamento di 1C:Drive. Il costo della merce potrebbe essere ricalcolato.</value>
+        </toolTip>
+        <toolTip>
+          <key>de</key>
+          <value>Aktivieren Sie dieses Kontrollkästchen um die FIFO-Methode nur bei Arbeit in Bearbeitung, Produktion und Kit bearbeitet zu verwenden. Es ist empfehlenswert wenn die FIFO-Methode vor dem Update von 1C:Drive verwendet worden ist. Deaktivieren Sie dieses Kontrollkästchen um die FIFO-Methode bei allen Dokumenten die Erhöhung von Bestand registrieren (z.B., Wareneingang oder Produktion) zu verwenden. Dadurch werden solche Dokumente für die Firmen die die FIFO-Methode vor dem Update von 1C:Drive verwendet haben neu gebucht. Produktkosten werden neu berechnet.</value>
+        </toolTip>
+        <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+        <extendedTooltip>
+          <name>OnlyProductionExtendedTooltip</name>
+          <id>30</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>OnlyProductionContextMenu</name>
+          <id>29</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>PageDescriptionExtendedTooltip</name>
+        <id>4</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>PageFilling</name>
+      <id>10</id>
+      <items xsi:type="form:Decoration">
+        <name>PictureLongOperation</name>
+        <id>14</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>PictureLongOperationExtendedTooltip</name>
+          <id>16</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>PictureLongOperationContextMenu</name>
+          <id>15</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:PictureDecorationExtInfo">
+          <picture xsi:type="core:PictureRef">
+            <picture>CommonPicture.TimeConsumingOperation48</picture>
+          </picture>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Decoration">
+        <name>DecorationPosting</name>
+        <id>17</id>
+        <title>
+          <key>en</key>
+          <value>Preparation for FIFO is in progress...</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Выполняется проведение документов...</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Trwa przygotowanie do FIFO...</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Preparación para FIFO en progreso...</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Preparación para FIFO en progreso...</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>FİFO için hazırlık devam ediyor...</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>La preparazione per la FIFO è in corso...</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>FIFO wird vorbereitet ...</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>DecorationPostingExtendedTooltip</name>
+          <id>19</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>DecorationPostingContextMenu</name>
+          <id>18</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <height>3</height>
+        <autoMaxHeight>true</autoMaxHeight>
+        <textColor xsi:type="core:ColorRef">
+          <color>Style.InformationText</color>
+        </textColor>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+          <verticalAlign>Center</verticalAlign>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>PageFillingExtendedTooltip</name>
+        <id>11</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>AlwaysHorizontal</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>PageResult</name>
+      <id>12</id>
+      <items xsi:type="form:Decoration">
+        <name>InformationText</name>
+        <id>25</id>
+        <title>
+          <key>en</key>
+          <value>Now your system is FIFO ready. We recommend you to&lt;link SetupTask> set up the schedule for FIFO calculation periodicity&lt;/> or &lt;link ExecuteTask>execute it now&lt;/>.
+As you finish, consider reposting the &quot;Month-end closing&quot; documents manually. Otherwise, production cost will be missing in reports such as Stock statement (FIFO).</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Теперь система готова к применению метода FIFO. Мы рекомендуем &lt;link SetupTask> настроить расписание для расчета FIFO&lt;/> или &lt;link ExecuteTask>выполнить его сейчас&lt;/>.
+Далее рекомендуется вручную перепровести документы, созданные обработкой &quot;Закрытие месяца&quot;. В противном случае себестоимость производства будет отсутствовать в таких отчетах, как &quot;Остатки запасов (FIFO)&quot;.</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Teraz system jest gotowy do zastosowania FIFO. Zalecamy &lt;link SetupTask> ustawić harmonogram okresowości obliczenia FIFO&lt;/> lub &lt;link ExecuteTask>wykonać to teraz&lt;/>.
+Po zakończeniu zalecamy ponownie zatwierdzić dokumenty &quot;Zamknięcie miesiąca&quot; ręcznie. W przeciwnym przypadku w takich raportach, jak zestawienie Zapasy (FIFO) nie będzie kosztów produkcji.</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Su sistema está ahora listo para el FIFO. Se recomienda &lt;link SetupTask> configurar el gráfico para la periodicidad del cálculo FIFO&lt;/> o &lt;link ExecuteTask> ejecutarlo ahora&lt;/>.
+Cuando termine, considere la posibilidad de volver a envir manualmente el documento &quot;Cierre del mes&quot;. De lo contrario, el coste de producción faltará en informes como la Declaración del stock (FIFO).</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Su sistema está ahora listo para el FIFO. Se recomienda &lt;enlazar SetupTask> configurar el gráfico para la periodicidad del cálculo FIFO&lt;/> o &lt;enlazar ExecuteTask> ejecutarlo ahora&lt;/>.
+Cuando termine, considere la posibilidad de volver a envir manualmente el documento &quot;Cierre del mes&quot;. De lo contrario, el coste de producción faltará en informes como la Declaración del stock (FIFO).</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Sisteminizde FIFO kullanılabilir. &lt;link SetupTask>FIFO hesaplama sıklığını ayarlamanız&lt;/> veya &lt;link ExecuteTask>bunu şimdi yapmanız&lt;/> önerilir.
+Bunun ardından, &quot;Ay sonu kapanışı&quot; belgelerini yeniden kaydedin. Aksi takdirde, Stok durumu (FIFO) gibi raporlarda üretim maliyeti eksik olur.</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Adesso il tuo sistema è pronto per il FIFO. Si consiglia di &lt;link SetupTask> impostare il grafico per la periodicità di calcolo del FIFO&lt;/> o &lt;link ExecuteTask> eseguirlo adesso&lt;/>.
+Al termine, considerare la ripubblicazione del documento &quot;Chiusura di fine mese&quot; manualmente. Altrimenti, il costo di produzione sarà mancante in report come il Resoconto delle scorte (FIFO).</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Jetzt ist Ihr System FIFO bereit. Wir empfehlen dass Sie &lt;link SetupTask> einen Zeitplan für Periodizität der FIFO-Berechnung festlegen&lt;/> oder &lt;link ExecuteTask>dies gerade vornehmen&lt;/>.
+Nach Beenden berücksichtigen Sie manuelle Neubuchung der Dokumente &quot;Monatsabschluss&quot;. Sonst fehlen die Produktionskosten in Berichten wie Inventar (FIFO).</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>InformationTextExtendedTooltip</name>
+          <id>27</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>InformationTextContextMenu</name>
+          <id>26</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <formatted>true</formatted>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <handlers>
+            <event>URLProcessing</event>
+            <name>InformationTextURLProcessing</name>
+          </handlers>
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>PageResultExtendedTooltip</name>
+        <id>13</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>PagesExtendedTooltip</name>
+      <id>2</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>Pages</type>
+    <extInfo xsi:type="form:PagesGroupExtInfo">
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <commandBarLocation>Bottom</commandBarLocation>
+  <autoCommandBar>
+    <name>FormCommandBar</name>
+    <id>-1</id>
+    <displayImportance>Usual</displayImportance>
+    <items xsi:type="form:Button">
+      <name>FormNext</name>
+      <id>8</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormNextExtendedTooltip</name>
+        <id>9</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.Next</commandName>
+      <representation>Auto</representation>
+      <defaultButton>true</defaultButton>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>FormCancel</name>
+      <id>20</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormCancelExtendedTooltip</name>
+        <id>21</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.Cancel</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Right</horizontalAlign>
+  </autoCommandBar>
+  <handlers>
+    <event>OnOpen</event>
+    <name>OnOpen</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <windowOpeningMode>LockWholeInterface</windowOpeningMode>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <enabled>true</enabled>
+  <verticalScroll>UseIfNecessary</verticalScroll>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Object</name>
+    <id>1</id>
+    <valueType>
+      <types>DataProcessorObject.FillCostLayerRegisters</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <main>true</main>
+  </attributes>
+  <attributes>
+    <name>OpenSettings</name>
+    <id>2</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>BackgroundJobID</name>
+    <id>3</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>StorageAddress</name>
+    <id>4</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>OnlyProduction</name>
+    <title>
+      <key>en</key>
+      <value>Only production</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Только производство</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Tylko produkcja</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Sólo producción</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Sólo producción</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Sadece üretim</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Solo produzione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Nur Produktion</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <functionalOptions>FunctionalOption.UseProductionSubsystem</functionalOptions>
+  </attributes>
+  <attributes>
+    <name>CalculateFIFOJobID</name>
+    <id>6</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>Next</name>
+    <title>
+      <key>en</key>
+      <value>Next >></value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Далее >></value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Dalej >></value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Siguiente >></value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Siguiente >></value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Sonraki >></value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Avanti >></value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Weiter >></value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>en</key>
+      <value>Next</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Следующие</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Dalej</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Siguiente</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Siguiente</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>İleri</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Avanti</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Weiter</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Next</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>Cancel</name>
+    <title>
+      <key>en</key>
+      <value>Cancel</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Отмена</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Anuluj</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Cancelar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Cancelar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>İptal</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Annulla</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Abbrechen</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>en</key>
+      <value>Cancel</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Отмена</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Anuluj</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Cancelar</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Cancelar</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>İptal</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Annulla</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Abbrechen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Cancel</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+  <extInfo xsi:type="form:ObjectFormExtInfo"/>
+</form:Form>

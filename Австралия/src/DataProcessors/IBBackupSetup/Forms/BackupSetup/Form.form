@@ -1,0 +1,3808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:FormGroup">
+    <name>WizardPages</name>
+    <id>3</id>
+    <items xsi:type="form:FormGroup">
+      <name>BackupParametersSetupPage</name>
+      <id>6</id>
+      <items xsi:type="form:FormGroup">
+        <name>Modes</name>
+        <id>434</id>
+        <items xsi:type="form:FormGroup">
+          <name>Normal</name>
+          <id>436</id>
+          <items xsi:type="form:FormField">
+            <name>RunAutomaticBackup</name>
+            <id>405</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Object.RunAutomaticBackup</segments>
+            </dataPath>
+            <titleLocation>Right</titleLocation>
+            <toolTipRepresentation>Button</toolTipRepresentation>
+            <handlers>
+              <event>OnChange</event>
+              <name>RunAutomaticBackupOnChange</name>
+            </handlers>
+            <extendedTooltip>
+              <name>CreateBackupAutomaticallyExtendedTooltip</name>
+              <id>407</id>
+              <title>
+                <key>ru</key>
+                <value>Рекомендуется отключать выполнение резервного копирования только
+в том случае, если оно выполняется сторонними средствами.</value>
+              </title>
+              <title>
+                <key>en</key>
+                <value>It is recommended that you disable backup only if it is performed 
+by external tools.</value>
+              </title>
+              <title>
+                <key>pl</key>
+                <value>Zalecane jest wyłączanie wykonania kopii zapasowej tylko
+w tym przypadku, jeśli jest ono wykonywane z pomocą narzędzi zewnętrznych.</value>
+              </title>
+              <title>
+                <key>es_ES</key>
+                <value>Usted necesita desactivar la ejecución de la copia de respaldo solo
+si se ha realizado con otras herramientas.</value>
+              </title>
+              <title>
+                <key>es_CO</key>
+                <value>Usted necesita desactivar la ejecución de la copia de respaldo solo
+si se ha realizado con otras herramientas.</value>
+              </title>
+              <title>
+                <key>tr</key>
+                <value>Sadece başka araçlar tarafından gerçekleştiriliyorsa 
+ yedeklemesini devre dışı bırakılması önerilir.</value>
+              </title>
+              <title>
+                <key>it</key>
+                <value>E' raccomandato di disabilitare il backup solo se è
+effettuato attraverso strumenti esterni</value>
+              </title>
+              <title>
+                <key>de</key>
+                <value>Es wird empfohlen, die Sicherung nur
+dann zu deaktivieren, wenn sie von Dritten durchgeführt wird.</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CreateBackupAutomaticallyContextMenu</name>
+              <id>406</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+          </items>
+          <items xsi:type="form:FormGroup">
+            <name>SelectAutomaticBackupOption</name>
+            <id>47</id>
+            <items xsi:type="form:Decoration">
+              <name>Decoration1</name>
+              <id>410</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>Decoration1ExtendedTooltip</name>
+                <id>412</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>Decoration1ContextMenu</name>
+                <id>411</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>Label</type>
+              <width>1</width>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormGroup">
+              <name>Group1</name>
+              <id>424</id>
+              <items xsi:type="form:FormGroup">
+                <name>Group3</name>
+                <id>432</id>
+                <items xsi:type="form:FormField">
+                  <name>ScheduleOption</name>
+                  <id>421</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>Object.ExecutionOption</segments>
+                  </dataPath>
+                  <titleLocation>None</titleLocation>
+                  <handlers>
+                    <event>OnChange</event>
+                    <name>BackupOptionOnChange</name>
+                  </handlers>
+                  <extendedTooltip>
+                    <name>ScheduleOptionExtendedTooltip</name>
+                    <id>423</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>ScheduleOptionContexMenu</name>
+                    <id>422</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>RadioButtonField</type>
+                  <editMode>Enter</editMode>
+                  <showInHeader>true</showInHeader>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+                    <columnsCount>1</columnsCount>
+                    <choiceList>
+                      <presentation>
+                        <key>ru</key>
+                        <value>Регулярно по расписанию:</value>
+                      </presentation>
+                      <presentation>
+                        <key>en</key>
+                        <value>Regularly on schedule:</value>
+                      </presentation>
+                      <presentation>
+                        <key>pl</key>
+                        <value>Regularnie zgodnie z harmonogramem:</value>
+                      </presentation>
+                      <presentation>
+                        <key>es_ES</key>
+                        <value>Frecuentemente a tiempo:</value>
+                      </presentation>
+                      <presentation>
+                        <key>es_CO</key>
+                        <value>Frecuentemente a tiempo:</value>
+                      </presentation>
+                      <presentation>
+                        <key>tr</key>
+                        <value>Düzenli olarak zamanlamada:</value>
+                      </presentation>
+                      <presentation>
+                        <key>it</key>
+                        <value>Regolarmente in programma:</value>
+                      </presentation>
+                      <presentation>
+                        <key>de</key>
+                        <value>Regelmäßig im Zeitplan:</value>
+                      </presentation>
+                      <value xsi:type="core:StringValue">
+                        <value>Schedule</value>
+                      </value>
+                    </choiceList>
+                  </extInfo>
+                </items>
+                <items xsi:type="form:Button">
+                  <name>EditSchedule</name>
+                  <id>238</id>
+                  <title>
+                    <key>ru</key>
+                    <value>Не задано</value>
+                  </title>
+                  <title>
+                    <key>en</key>
+                    <value>Not set</value>
+                  </title>
+                  <title>
+                    <key>pl</key>
+                    <value>Nieustawiony</value>
+                  </title>
+                  <title>
+                    <key>es_ES</key>
+                    <value>No definido</value>
+                  </title>
+                  <title>
+                    <key>es_CO</key>
+                    <value>No definido</value>
+                  </title>
+                  <title>
+                    <key>tr</key>
+                    <value>Belirlenmedi</value>
+                  </title>
+                  <title>
+                    <key>it</key>
+                    <value>Non impostato</value>
+                  </title>
+                  <title>
+                    <key>de</key>
+                    <value>Nicht installierte</value>
+                  </title>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <extendedTooltip>
+                    <name>ChangeScheduleExtendedTooltip</name>
+                    <id>289</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <type>Hyperlink</type>
+                  <commandName>Form.Command.EditSchedule</commandName>
+                  <representation>Auto</representation>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <placementArea>UserCmds</placementArea>
+                  <representationInContextMenu>Auto</representationInContextMenu>
+                </items>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <extendedTooltip>
+                  <name>Group3ExtendedTooltip</name>
+                  <id>433</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <type>UsualGroup</type>
+                <extInfo xsi:type="form:UsualGroupExtInfo">
+                  <group>HorizontalIfPossible</group>
+                  <showLeftMargin>true</showLeftMargin>
+                  <united>true</united>
+                  <throughAlign>Auto</throughAlign>
+                  <currentRowUse>Auto</currentRowUse>
+                </extInfo>
+              </items>
+              <items xsi:type="form:Decoration">
+                <name>ScheduleOptionDecoration</name>
+                <id>426</id>
+                <title>
+                  <key>ru</key>
+                  <value>При составлении расписания необходимо учитывать, что если к моменту запуска резервного
+копирования программа не будет работать, то резервное копирование не выполнится. При выполнении
+резервного копирования работа всех пользователей в программе будет завершена.</value>
+                </title>
+                <title>
+                  <key>en</key>
+                  <value>When creating the schedule, keep in mind that if the application does not operate on starting the backup, 
+the backup fails. When backing up data, all user sessions are terminated.
+</value>
+                </title>
+                <title>
+                  <key>pl</key>
+                  <value>Podczas sporządzania harmonogramu należy mieć na uwadze, że jeśli do chwili uruchomienia
+kopiowania zapasowego program nie będzie działać, to kopia zapasowa nie zostanie wykonana. Podczas wykonywania
+kopiowania zapasowego praca wszystkich użytkowników w programie zostanie zakończona.</value>
+                </title>
+                <title>
+                  <key>es_ES</key>
+                  <value>Al generar el horario es necesario tomar en cuenta que si en el momento de lanzar la copia 
+de respaldo el programa no funcionará, la copia de respaldo no será realizada. Al realizar
+la copia de respaldo el trabajo de todos los usuarios en el programa será terminado.</value>
+                </title>
+                <title>
+                  <key>es_CO</key>
+                  <value>Al generar el horario es necesario tomar en cuenta que si en el momento de lanzar la copia 
+de respaldo el programa no funcionará, la copia de respaldo no será realizada. Al realizar
+la copia de respaldo el trabajo de todos los usuarios en el programa será terminado.</value>
+                </title>
+                <title>
+                  <key>tr</key>
+                  <value>Bir zaman çizelgesi oluştururken, yedekleme işlemi başlatılıncaya kadar program çalışmıyorsa, 
+yedeklemenin başarısız olacağını unutmayın. Yedekleme 
+işlemi gerçekleştirdiğinizde, programdaki tüm kullanıcıların çalışmaları kapatılacaktır.</value>
+                </title>
+                <title>
+                  <key>it</key>
+                  <value>Durante la creazione della pianificazione, tenete a mente che se l'applicazione non funziona all'avvio del backup,
+il backup non è effettuato. Quando viene fatto il backup dei dati, tutte le sessioni utente sono terminate.
+</value>
+                </title>
+                <title>
+                  <key>de</key>
+                  <value>Bei der Planung ist zu berücksichtigen, dass, wenn die Anwendung bis zum Start
+der Sicherung nicht funktioniert, die Sicherung nicht ausgeführt wird. Wenn
+die Sicherung ausgeführt wird, wird die Arbeit aller Benutzer in der Anwendung abgeschlossen.</value>
+                </title>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <extendedTooltip>
+                  <name>ScheduleOptionDecorationExtendedTooltip</name>
+                  <id>428</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>ScheduleOptionDecorationContextMenu</name>
+                  <id>427</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <type>Label</type>
+                <autoMaxHeight>true</autoMaxHeight>
+                <textColor xsi:type="core:ColorRef">
+                  <color>Style.NoteText</color>
+                </textColor>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                  <titleHeight>3</titleHeight>
+                </extInfo>
+              </items>
+              <items xsi:type="form:FormField">
+                <name>OnExitOption</name>
+                <id>245</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <dataPath xsi:type="form:DataPath">
+                  <segments>Object.ExecutionOption</segments>
+                </dataPath>
+                <titleLocation>None</titleLocation>
+                <handlers>
+                  <event>OnChange</event>
+                  <name>BackupOptionOnChange</name>
+                </handlers>
+                <extendedTooltip>
+                  <name>OnExitOptionExtendedTooltip</name>
+                  <id>285</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>OnExitOptionContextMenu</name>
+                  <id>246</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <type>RadioButtonField</type>
+                <editMode>Enter</editMode>
+                <showInHeader>true</showInHeader>
+                <headerHorizontalAlign>Left</headerHorizontalAlign>
+                <showInFooter>true</showInFooter>
+                <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+                  <columnsCount>1</columnsCount>
+                  <choiceList>
+                    <presentation>
+                      <key>ru</key>
+                      <value>При завершении работы</value>
+                    </presentation>
+                    <presentation>
+                      <key>en</key>
+                      <value>On exiting the application</value>
+                    </presentation>
+                    <presentation>
+                      <key>pl</key>
+                      <value>Przy zakończeniu pracy</value>
+                    </presentation>
+                    <presentation>
+                      <key>es_ES</key>
+                      <value>Al salir de la aplicación</value>
+                    </presentation>
+                    <presentation>
+                      <key>es_CO</key>
+                      <value>Al salir de la aplicación</value>
+                    </presentation>
+                    <presentation>
+                      <key>tr</key>
+                      <value>Uygulamadan çıkarken</value>
+                    </presentation>
+                    <presentation>
+                      <key>it</key>
+                      <value>All'uscita dell'applicazione</value>
+                    </presentation>
+                    <presentation>
+                      <key>de</key>
+                      <value>Beim Beenden der Anwendung</value>
+                    </presentation>
+                    <value xsi:type="core:StringValue">
+                      <value>OnExit</value>
+                    </value>
+                  </choiceList>
+                </extInfo>
+              </items>
+              <items xsi:type="form:Decoration">
+                <name>OnExitOptionDecoration</name>
+                <id>429</id>
+                <title>
+                  <key>ru</key>
+                  <value>При каждом выходе из программы администратору предлагается выполнить резервное копирование. При выполнении резервного копирования работа всех пользователей в программе будет завершена.</value>
+                </title>
+                <title>
+                  <key>en</key>
+                  <value>On exiting the application, administrator is prompted to back up data. When backing up the data, all user sessions are terminated.</value>
+                </title>
+                <title>
+                  <key>pl</key>
+                  <value>Przy każdym wyjściu z programu administratorowi proponowane jest wykonanie kopii zapasowej. Podczas wykonywania kopiowania zapasowego praca wszystkich użytkowników w programie zostanie zakończona.</value>
+                </title>
+                <title>
+                  <key>es_ES</key>
+                  <value>Al salir cada vez del programa al administrador le ofrece realizar la copia de respaldo. Al realizar la copia de respaldo el trabajo de todos los usuarios en el programa será terminado.</value>
+                </title>
+                <title>
+                  <key>es_CO</key>
+                  <value>Al salir cada vez del programa al administrador le ofrece realizar la copia de respaldo. Al realizar la copia de respaldo el trabajo de todos los usuarios en el programa será terminado.</value>
+                </title>
+                <title>
+                  <key>tr</key>
+                  <value>Yönetici, programdan her çıktığınızda yedeklemeyi önerir. Yedeklemeyi gerçekleştirdiğinizde, programdaki tüm kullanıcıların çalışması kapatılacaktır.</value>
+                </title>
+                <title>
+                  <key>it</key>
+                  <value>All'uscita dall'applicazione, l'amministratore è trasferito al backup dati. Durante il backup dei dati, tutte le sessioni sono terminate.</value>
+                </title>
+                <title>
+                  <key>de</key>
+                  <value>Bei jedem Beenden der Anwendung wird der Administrator aufgefordert, eine Sicherung durchzuführen. Bei der Durchführung der Sicherung werden alle Benutzer in der Anwendung beendet.</value>
+                </title>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <extendedTooltip>
+                  <name>OnExitOptionDecorationExtendedTooltip</name>
+                  <id>431</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>OnExitOptionDecorationContextMenu</name>
+                  <id>430</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <type>Label</type>
+                <autoMaxHeight>true</autoMaxHeight>
+                <textColor xsi:type="core:ColorRef">
+                  <color>Style.NoteText</color>
+                </textColor>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                  <titleHeight>2</titleHeight>
+                </extInfo>
+              </items>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>Group1ExtendedTooltip</name>
+                <id>425</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <type>UsualGroup</type>
+              <extInfo xsi:type="form:UsualGroupExtInfo">
+                <group>Vertical</group>
+                <showLeftMargin>true</showLeftMargin>
+                <united>true</united>
+                <throughAlign>Auto</throughAlign>
+                <currentRowUse>Auto</currentRowUse>
+              </extInfo>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Выбор варианта автоматического резервного копирования</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Select automatic backup option</value>
+            </title>
+            <title>
+              <key>pl</key>
+              <value>Wybór wariantu automatycznego kopiowania zapasowego</value>
+            </title>
+            <title>
+              <key>es_ES</key>
+              <value>Selección de la variante de la copia de respaldo automática</value>
+            </title>
+            <title>
+              <key>es_CO</key>
+              <value>Selección de la variante de la copia de respaldo automática</value>
+            </title>
+            <title>
+              <key>tr</key>
+              <value>Otomatik yedekleme seçeneklerini filtrele</value>
+            </title>
+            <title>
+              <key>it</key>
+              <value>Selezionare opzione di backup automatico</value>
+            </title>
+            <title>
+              <key>de</key>
+              <value>Auswahl der Option für die automatische Sicherung</value>
+            </title>
+            <extendedTooltip>
+              <name>SelectAutomaticBackupOptionExtendedTooltip</name>
+              <id>284</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>UsualGroup</type>
+            <extInfo xsi:type="form:UsualGroupExtInfo">
+              <group>HorizontalIfPossible</group>
+              <showLeftMargin>true</showLeftMargin>
+              <united>true</united>
+              <throughAlign>Auto</throughAlign>
+              <currentRowUse>Auto</currentRowUse>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Обычный</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Regular</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Zwykły</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Principal</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Principal</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Normal</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Regolare</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Gewöhnlich</value>
+          </title>
+          <extendedTooltip>
+            <name>RegularExtendedTooltip</name>
+            <id>437</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Page</type>
+          <extInfo xsi:type="form:PageGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>Basic</name>
+          <id>438</id>
+          <items xsi:type="form:FormField">
+            <name>CreateBackupAutomatically1</name>
+            <id>440</id>
+            <title>
+              <key>ru</key>
+              <value>Предлагать резервное копирование при завершении работы</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Suggest backup on exiting the application</value>
+            </title>
+            <title>
+              <key>pl</key>
+              <value>Proponuj kopiowanie zapasowe przy zakończeniu pracy</value>
+            </title>
+            <title>
+              <key>es_ES</key>
+              <value>Ofrecer crear una copia de respaldo de los datos al terminar el trabajo</value>
+            </title>
+            <title>
+              <key>es_CO</key>
+              <value>Ofrecer crear una copia de respaldo de los datos al terminar el trabajo</value>
+            </title>
+            <title>
+              <key>tr</key>
+              <value>Çalışma tamamlandığında yedeklemeyi öner</value>
+            </title>
+            <title>
+              <key>it</key>
+              <value>Consiglia il backup all'uscita dall'applicazione</value>
+            </title>
+            <title>
+              <key>de</key>
+              <value>Bieten Sie beim Herunterfahren Sicherungen an</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Object.RunAutomaticBackup</segments>
+            </dataPath>
+            <titleLocation>Right</titleLocation>
+            <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+            <handlers>
+              <event>OnChange</event>
+              <name>RunAutomaticBackupOnChange</name>
+            </handlers>
+            <extendedTooltip>
+              <name>CreateBackupAutomatically1ExtendedTooltip</name>
+              <id>442</id>
+              <title>
+                <key>ru</key>
+                <value>Рекомендуется отключать выполнение резервного копирования только
+в том случае, если оно выполняется сторонними средствами.</value>
+              </title>
+              <title>
+                <key>en</key>
+                <value>It is recommended that you disable backup only if it is performed 
+by external tools.</value>
+              </title>
+              <title>
+                <key>pl</key>
+                <value>Zalecane jest wyłączanie wykonania kopii zapasowej tylko
+w tym przypadku, jeśli jest ono wykonywane z pomocą narzędzi zewnętrznych.</value>
+              </title>
+              <title>
+                <key>es_ES</key>
+                <value>Usted necesita desactivar la ejecución de la copia de respaldo solo
+si se ha realizado con otras herramientas.</value>
+              </title>
+              <title>
+                <key>es_CO</key>
+                <value>Usted necesita desactivar la ejecución de la copia de respaldo solo
+si se ha realizado con otras herramientas.</value>
+              </title>
+              <title>
+                <key>tr</key>
+                <value>Sadece başka araçlar tarafından gerçekleştiriliyorsa 
+ yedeklemesini devre dışı bırakılması önerilir.</value>
+              </title>
+              <title>
+                <key>it</key>
+                <value>E' raccomandato di disabilitare il backup solo se è
+effettuato attraverso strumenti esterni</value>
+              </title>
+              <title>
+                <key>de</key>
+                <value>Es wird empfohlen, die Sicherung nur
+dann zu deaktivieren, wenn sie von Dritten durchgeführt wird.</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>CreateBackupAutomatically1ContextMenu</name>
+              <id>441</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Базовый</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Basic</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Podstawowe</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Simple</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Simple</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Basit</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Di base</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Einfach</value>
+          </title>
+          <extendedTooltip>
+            <name>BasicExtendedTooltip</name>
+            <id>439</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Page</type>
+          <extInfo xsi:type="form:PageGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Режимы работы</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Operation modes</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Tryby pracy</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Modo de trabajo</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Modo de trabajo</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Çalışma modları</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Modalità operative</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Betriebsarten</value>
+        </title>
+        <extendedTooltip>
+          <name>ModesExtendedTooltip</name>
+          <id>435</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Pages</type>
+        <extInfo xsi:type="form:PagesGroupExtInfo">
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ParametersGroup</name>
+        <id>377</id>
+        <items xsi:type="form:FormGroup">
+          <name>BackupDirectoryGroup</name>
+          <id>52</id>
+          <items xsi:type="form:FormField">
+            <name>BackupDirectory</name>
+            <id>55</id>
+            <title>
+              <key>ru</key>
+              <value>Каталог для сохранения резервных копий</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Directory to store backups</value>
+            </title>
+            <title>
+              <key>pl</key>
+              <value>Katalog do zapisywania kopii zapasowych</value>
+            </title>
+            <title>
+              <key>es_ES</key>
+              <value>Directorio para guardar la copia de respaldo</value>
+            </title>
+            <title>
+              <key>es_CO</key>
+              <value>Directorio para guardar la copia de respaldo</value>
+            </title>
+            <title>
+              <key>tr</key>
+              <value>Yedeklerin kaydedileceği dizin</value>
+            </title>
+            <title>
+              <key>it</key>
+              <value>Directory per salvare i backup</value>
+            </title>
+            <title>
+              <key>de</key>
+              <value>Verzeichnis zum Speichern des Backup</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Object.BackupDirectory</segments>
+            </dataPath>
+            <titleLocation>Top</titleLocation>
+            <toolTipRepresentation>Button</toolTipRepresentation>
+            <extendedTooltip>
+              <name>BackupDirectoryExtendedTooltip</name>
+              <id>292</id>
+              <title>
+                <key>ru</key>
+                <value>Рекомендуется выполнять резервное копирование
+на другой компьютер или внешний носитель.</value>
+              </title>
+              <title>
+                <key>en</key>
+                <value>It is recommended that you back up to another computer 
+or an external storage media.</value>
+              </title>
+              <title>
+                <key>pl</key>
+                <value>Zaleca się wykonywać kopiowanie zapasowe
+na inny komputer lub nośnik zewnętrzny.</value>
+              </title>
+              <title>
+                <key>es_ES</key>
+                <value>Es recomendable hacer copias de respaldo 
+en otro ordenador o en los medios de almacenamiento externos.</value>
+              </title>
+              <title>
+                <key>es_CO</key>
+                <value>Es recomendable hacer copias de respaldo 
+en otro ordenador o en los medios de almacenamiento externos.</value>
+              </title>
+              <title>
+                <key>tr</key>
+                <value>Başka bir 
+bilgisayara veya harici bir depolama ortamına yedeklemeniz önerilir.</value>
+              </title>
+              <title>
+                <key>it</key>
+                <value>Si raccomanda di fare backup su un altro computer
+o su un archivio esterno.</value>
+              </title>
+              <title>
+                <key>de</key>
+                <value>Es wird empfohlen, eine Sicherung
+auf einem anderen Computer oder einem externen Medium durchzuführen.</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>BackupDirectoryContextMenu</name>
+              <id>56</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <horizontalAlign>Left</horizontalAlign>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <handlers>
+                <event>StartChoice</event>
+                <name>PathToArchiveDirectoryStartChoice</name>
+              </handlers>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <choiceButton>true</choiceButton>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Шаг 1. Выбор каталога</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Step 1. Select directory</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Krok 1. Wybierz folder</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Paso 1. Seleccionar la carpeta</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Paso 1. Seleccionar la carpeta</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Adım 1. Dizin seçin</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Passo 1. Seleziona directory</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Schritt 1. Wählen Sie einen Ordner</value>
+          </title>
+          <extendedTooltip>
+            <name>BackupDirectoryGroupExtendedTooltip</name>
+            <id>290</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>Vertical</group>
+            <representation>NormalSeparation</representation>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>AuthorizationGroup</name>
+          <id>254</id>
+          <items xsi:type="form:FormField">
+            <name>IBAdministrator1</name>
+            <id>255</id>
+            <visible>true</visible>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>IBAdministrator</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>IBAdministrator1ExtendedTooltip</name>
+              <id>295</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>IBAdministrator1ContextMenu</name>
+              <id>256</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <horizontalStretch>false</horizontalStretch>
+              <wrap>true</wrap>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormGroup">
+            <name>Group2</name>
+            <id>396</id>
+            <items xsi:type="form:FormField">
+              <name>IBAdministratorPassword1</name>
+              <id>257</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>IBAdministratorPassword</segments>
+              </dataPath>
+              <extendedTooltip>
+                <name>IBAdministratorPassword1ExtendedTooltip</name>
+                <id>296</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>IBAdministratorPassword1ContextMenu</name>
+                <id>258</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>InputField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:InputFieldExtInfo">
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <horizontalStretch>false</horizontalStretch>
+                <wrap>true</wrap>
+                <passwordMode>true</passwordMode>
+                <chooseType>true</chooseType>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
+              </extInfo>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>Group2ExtendedTooltip</name>
+              <id>397</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>UsualGroup</type>
+            <extInfo xsi:type="form:UsualGroupExtInfo">
+              <group>HorizontalIfPossible</group>
+              <showLeftMargin>true</showLeftMargin>
+              <united>true</united>
+              <throughAlign>Auto</throughAlign>
+              <currentRowUse>Auto</currentRowUse>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Авторизации</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Authorization</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Autoryzacja</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Autorización</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Autorización</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Yetki</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Autorizzazione</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Genehmigung</value>
+          </title>
+          <extendedTooltip>
+            <name>AuthorizationGroupExtendedTooltip</name>
+            <id>294</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>Vertical</group>
+            <representation>NormalSeparation</representation>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>SelectOldFilesDeletionModeGroup</name>
+          <id>62</id>
+          <items xsi:type="form:Decoration">
+            <name>Decoration3</name>
+            <id>418</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>Decoration3ExtendedTooltip</name>
+              <id>420</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>Decoration3ContextMenu</name>
+              <id>419</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>Label</type>
+            <width>1</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormGroup">
+            <name>Group5</name>
+            <id>416</id>
+            <items xsi:type="form:FormField">
+              <name>BackupDirectoryRestrictionType</name>
+              <id>66</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Object.RestrictionType</segments>
+              </dataPath>
+              <titleLocation>None</titleLocation>
+              <handlers>
+                <event>OnChange</event>
+                <name>BackupDirectoryRestrictionTypeOnChange</name>
+              </handlers>
+              <extendedTooltip>
+                <name>BackupDirectoryRestrictionTypeExtendedTooltip</name>
+                <id>300</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>BackupDirectoryRestrictionTypeContextMenu</name>
+                <id>67</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>RadioButtonField</type>
+              <verticalAlign>Top</verticalAlign>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+                <columnsCount>1</columnsCount>
+                <choiceList>
+                  <presentation>
+                    <key>ru</key>
+                    <value>Все</value>
+                  </presentation>
+                  <presentation>
+                    <key>en</key>
+                    <value>All</value>
+                  </presentation>
+                  <presentation>
+                    <key>pl</key>
+                    <value>Wszystkie</value>
+                  </presentation>
+                  <presentation>
+                    <key>es_ES</key>
+                    <value>Todo</value>
+                  </presentation>
+                  <presentation>
+                    <key>es_CO</key>
+                    <value>Todo</value>
+                  </presentation>
+                  <presentation>
+                    <key>tr</key>
+                    <value>Tümü</value>
+                  </presentation>
+                  <presentation>
+                    <key>it</key>
+                    <value>Tutti</value>
+                  </presentation>
+                  <presentation>
+                    <key>de</key>
+                    <value>Alle</value>
+                  </presentation>
+                  <value xsi:type="core:StringValue">
+                    <value>StoreAll</value>
+                  </value>
+                </choiceList>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormGroup">
+              <name>Group6</name>
+              <id>448</id>
+              <items xsi:type="form:FormField">
+                <name>BackupDirectoryRestrictionType1</name>
+                <id>443</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <dataPath xsi:type="form:DataPath">
+                  <segments>Object.RestrictionType</segments>
+                </dataPath>
+                <titleLocation>None</titleLocation>
+                <handlers>
+                  <event>OnChange</event>
+                  <name>BackupDirectoryRestrictionTypeOnChange</name>
+                </handlers>
+                <extendedTooltip>
+                  <name>BackupDirectoryRestrictionType1ExtendedTooltip</name>
+                  <id>445</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>BackupDirectoryRestrictionType1ContextMenu</name>
+                  <id>444</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <type>RadioButtonField</type>
+                <verticalAlign>Top</verticalAlign>
+                <editMode>Enter</editMode>
+                <showInHeader>true</showInHeader>
+                <headerHorizontalAlign>Left</headerHorizontalAlign>
+                <showInFooter>true</showInFooter>
+                <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+                  <columnsCount>1</columnsCount>
+                  <choiceList>
+                    <presentation>
+                      <key>ru</key>
+                      <value>За последние</value>
+                    </presentation>
+                    <presentation>
+                      <key>en</key>
+                      <value>Over the last</value>
+                    </presentation>
+                    <presentation>
+                      <key>pl</key>
+                      <value>W ciągu ostatnich</value>
+                    </presentation>
+                    <presentation>
+                      <key>es_ES</key>
+                      <value>Sobre el último</value>
+                    </presentation>
+                    <presentation>
+                      <key>es_CO</key>
+                      <value>Sobre el último</value>
+                    </presentation>
+                    <presentation>
+                      <key>tr</key>
+                      <value>Son şu süre boyunca</value>
+                    </presentation>
+                    <presentation>
+                      <key>it</key>
+                      <value>Per ultimo</value>
+                    </presentation>
+                    <presentation>
+                      <key>de</key>
+                      <value>Über den letzten</value>
+                    </presentation>
+                    <value xsi:type="core:StringValue">
+                      <value>ByPeriod</value>
+                    </value>
+                  </choiceList>
+                </extInfo>
+              </items>
+              <items xsi:type="form:FormGroup">
+                <name>GroupStoreLastBackupsForPeriod</name>
+                <id>69</id>
+                <items xsi:type="form:FormField">
+                  <name>LastRelevantArchiveDate</name>
+                  <id>70</id>
+                  <title>
+                    <key>ru</key>
+                    <value>Хранить резервные копии за последние</value>
+                  </title>
+                  <title>
+                    <key>en</key>
+                    <value>Store backups for the last</value>
+                  </title>
+                  <title>
+                    <key>pl</key>
+                    <value>Zachowywać rezerwowe kopie za ostatnie</value>
+                  </title>
+                  <title>
+                    <key>es_ES</key>
+                    <value>Almacenar las copias de respaldo para el último</value>
+                  </title>
+                  <title>
+                    <key>es_CO</key>
+                    <value>Almacenar las copias de respaldo para el último</value>
+                  </title>
+                  <title>
+                    <key>tr</key>
+                    <value>Son</value>
+                  </title>
+                  <title>
+                    <key>it</key>
+                    <value>Conservare i backup per l'ultimo</value>
+                  </title>
+                  <title>
+                    <key>de</key>
+                    <value>Speichern Sie Backups für die letzten</value>
+                  </title>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>Object.ValueInUOMs</segments>
+                  </dataPath>
+                  <titleLocation>None</titleLocation>
+                  <extendedTooltip>
+                    <name>LastRelevantArchiveDateExtendedTooltip</name>
+                    <id>303</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>LastRelevantArchiveDateContextMenu</name>
+                    <id>71</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>InputField</type>
+                  <editMode>Enter</editMode>
+                  <showInHeader>true</showInHeader>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:InputFieldExtInfo">
+                    <width>6</width>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <wrap>true</wrap>
+                    <spinButton>true</spinButton>
+                    <chooseType>true</chooseType>
+                    <typeDomainEnabled>true</typeDomainEnabled>
+                    <textEdit>true</textEdit>
+                    <minValue xsi:type="core:NumberValue">
+                      <value>1</value>
+                    </minValue>
+                  </extInfo>
+                </items>
+                <items xsi:type="form:FormField">
+                  <name>BackupRetentionPeriodUnitOfMeasurement</name>
+                  <id>72</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>Object.PeriodUOM</segments>
+                  </dataPath>
+                  <titleLocation>None</titleLocation>
+                  <extendedTooltip>
+                    <name>BackupRetentionPeriodUnitOfMeasurementExtendedTooltip</name>
+                    <id>304</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>BackupRetentionPeriodUnitOfMeasurementContextMenu</name>
+                    <id>73</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>InputField</type>
+                  <editMode>Enter</editMode>
+                  <showInHeader>true</showInHeader>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:InputFieldExtInfo">
+                    <handlers>
+                      <event>Clearing</event>
+                      <name>BackupStoragePeriodUOMClear</name>
+                    </handlers>
+                    <width>7</width>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <wrap>true</wrap>
+                    <extendedEdit>false</extendedEdit>
+                    <listChoiceMode>true</listChoiceMode>
+                    <typeDomainEnabled>true</typeDomainEnabled>
+                    <choiceList>
+                      <presentation>
+                        <key>ru</key>
+                        <value>дней</value>
+                      </presentation>
+                      <presentation>
+                        <key>en</key>
+                        <value>days</value>
+                      </presentation>
+                      <presentation>
+                        <key>pl</key>
+                        <value>dni</value>
+                      </presentation>
+                      <presentation>
+                        <key>es_ES</key>
+                        <value>días</value>
+                      </presentation>
+                      <presentation>
+                        <key>es_CO</key>
+                        <value>días</value>
+                      </presentation>
+                      <presentation>
+                        <key>tr</key>
+                        <value>günler</value>
+                      </presentation>
+                      <presentation>
+                        <key>it</key>
+                        <value>giorni</value>
+                      </presentation>
+                      <presentation>
+                        <key>de</key>
+                        <value>Tage</value>
+                      </presentation>
+                      <value xsi:type="core:StringValue">
+                        <value>Day</value>
+                      </value>
+                    </choiceList>
+                    <choiceList>
+                      <presentation>
+                        <key>ru</key>
+                        <value>нед.</value>
+                      </presentation>
+                      <presentation>
+                        <key>en</key>
+                        <value>weeks</value>
+                      </presentation>
+                      <presentation>
+                        <key>pl</key>
+                        <value>tygodnie</value>
+                      </presentation>
+                      <presentation>
+                        <key>es_ES</key>
+                        <value>semanas</value>
+                      </presentation>
+                      <presentation>
+                        <key>es_CO</key>
+                        <value>semanas</value>
+                      </presentation>
+                      <presentation>
+                        <key>tr</key>
+                        <value>haftalar</value>
+                      </presentation>
+                      <presentation>
+                        <key>it</key>
+                        <value>settimane</value>
+                      </presentation>
+                      <presentation>
+                        <key>de</key>
+                        <value>Wochen</value>
+                      </presentation>
+                      <value xsi:type="core:StringValue">
+                        <value>Week</value>
+                      </value>
+                    </choiceList>
+                    <choiceList>
+                      <presentation>
+                        <key>ru</key>
+                        <value>месяцы</value>
+                      </presentation>
+                      <presentation>
+                        <key>en</key>
+                        <value>months</value>
+                      </presentation>
+                      <presentation>
+                        <key>pl</key>
+                        <value>miesięcy</value>
+                      </presentation>
+                      <presentation>
+                        <key>es_ES</key>
+                        <value>meses</value>
+                      </presentation>
+                      <presentation>
+                        <key>es_CO</key>
+                        <value>meses</value>
+                      </presentation>
+                      <presentation>
+                        <key>tr</key>
+                        <value>aylar</value>
+                      </presentation>
+                      <presentation>
+                        <key>it</key>
+                        <value>mesi</value>
+                      </presentation>
+                      <presentation>
+                        <key>de</key>
+                        <value>Monate</value>
+                      </presentation>
+                      <value xsi:type="core:StringValue">
+                        <value>Month</value>
+                      </value>
+                    </choiceList>
+                    <choiceList>
+                      <presentation>
+                        <key>ru</key>
+                        <value>лет</value>
+                      </presentation>
+                      <presentation>
+                        <key>en</key>
+                        <value>years</value>
+                      </presentation>
+                      <presentation>
+                        <key>pl</key>
+                        <value>lat</value>
+                      </presentation>
+                      <presentation>
+                        <key>es_ES</key>
+                        <value>años</value>
+                      </presentation>
+                      <presentation>
+                        <key>es_CO</key>
+                        <value>años</value>
+                      </presentation>
+                      <presentation>
+                        <key>tr</key>
+                        <value>yıl için yedekleri depola.</value>
+                      </presentation>
+                      <presentation>
+                        <key>it</key>
+                        <value>anni</value>
+                      </presentation>
+                      <presentation>
+                        <key>de</key>
+                        <value>Jahre</value>
+                      </presentation>
+                      <value xsi:type="core:StringValue">
+                        <value>Year</value>
+                      </value>
+                    </choiceList>
+                    <dropListWidth>7</dropListWidth>
+                  </extInfo>
+                </items>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <title>
+                  <key>ru</key>
+                  <value>Хранить последние за период</value>
+                </title>
+                <title>
+                  <key>en</key>
+                  <value>Store last for the period</value>
+                </title>
+                <title>
+                  <key>pl</key>
+                  <value>Przechowuj ostatnie za okres</value>
+                </title>
+                <title>
+                  <key>es_ES</key>
+                  <value>Guardar los últimos del período</value>
+                </title>
+                <title>
+                  <key>es_CO</key>
+                  <value>Guardar los últimos del período</value>
+                </title>
+                <title>
+                  <key>tr</key>
+                  <value>Dönemin son yedeklerini sakla</value>
+                </title>
+                <title>
+                  <key>it</key>
+                  <value>Archivia ultimo per periodo</value>
+                </title>
+                <title>
+                  <key>de</key>
+                  <value>Speichern Sie den letzten davon in einem Zeitraum</value>
+                </title>
+                <extendedTooltip>
+                  <name>GroupStoreLastBackupsForPeriodExtendedTooltip</name>
+                  <id>302</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <type>UsualGroup</type>
+                <extInfo xsi:type="form:UsualGroupExtInfo">
+                  <group>HorizontalIfPossible</group>
+                  <showLeftMargin>true</showLeftMargin>
+                  <united>true</united>
+                  <throughAlign>Auto</throughAlign>
+                  <currentRowUse>Auto</currentRowUse>
+                </extInfo>
+              </items>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>Group6ExtendedTooltip</name>
+                <id>449</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <type>UsualGroup</type>
+              <extInfo xsi:type="form:UsualGroupExtInfo">
+                <group>HorizontalIfPossible</group>
+                <showLeftMargin>true</showLeftMargin>
+                <throughAlign>Auto</throughAlign>
+                <currentRowUse>Auto</currentRowUse>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormGroup">
+              <name>Group7</name>
+              <id>450</id>
+              <items xsi:type="form:FormField">
+                <name>BackupDirectoryRestrictionType2</name>
+                <id>452</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <dataPath xsi:type="form:DataPath">
+                  <segments>Object.RestrictionType</segments>
+                </dataPath>
+                <titleLocation>None</titleLocation>
+                <handlers>
+                  <event>OnChange</event>
+                  <name>BackupDirectoryRestrictionTypeOnChange</name>
+                </handlers>
+                <extendedTooltip>
+                  <name>BackupDirectoryRestrictionType2ExtendedTooltip</name>
+                  <id>454</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>BackupDirectoryRestrictionType2ContextMenu</name>
+                  <id>453</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <type>RadioButtonField</type>
+                <verticalAlign>Top</verticalAlign>
+                <editMode>Enter</editMode>
+                <showInHeader>true</showInHeader>
+                <headerHorizontalAlign>Left</headerHorizontalAlign>
+                <showInFooter>true</showInFooter>
+                <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+                  <columnsCount>1</columnsCount>
+                  <choiceList>
+                    <presentation>
+                      <key>ru</key>
+                      <value>Последние</value>
+                    </presentation>
+                    <presentation>
+                      <key>en</key>
+                      <value>Last</value>
+                    </presentation>
+                    <presentation>
+                      <key>pl</key>
+                      <value>Ostatni</value>
+                    </presentation>
+                    <presentation>
+                      <key>es_ES</key>
+                      <value>Último</value>
+                    </presentation>
+                    <presentation>
+                      <key>es_CO</key>
+                      <value>Último</value>
+                    </presentation>
+                    <presentation>
+                      <key>tr</key>
+                      <value>En son</value>
+                    </presentation>
+                    <presentation>
+                      <key>it</key>
+                      <value>Ultimo</value>
+                    </presentation>
+                    <presentation>
+                      <key>de</key>
+                      <value>Letzter</value>
+                    </presentation>
+                    <value xsi:type="core:StringValue">
+                      <value>ByCount</value>
+                    </value>
+                  </choiceList>
+                </extInfo>
+              </items>
+              <items xsi:type="form:FormGroup">
+                <name>BackupsCountInDirectoryGroup</name>
+                <id>356</id>
+                <items xsi:type="form:FormField">
+                  <name>BackupsCountInDirectory</name>
+                  <id>74</id>
+                  <title>
+                    <key>ru</key>
+                    <value>Максимальное количество копий (шт.)</value>
+                  </title>
+                  <title>
+                    <key>en</key>
+                    <value>Max number of copies (items)</value>
+                  </title>
+                  <title>
+                    <key>pl</key>
+                    <value>Maksymalna ilość kopii (szt.)</value>
+                  </title>
+                  <title>
+                    <key>es_ES</key>
+                    <value>Número máximo de copias (artículos)</value>
+                  </title>
+                  <title>
+                    <key>es_CO</key>
+                    <value>Número máximo de copias (artículos)</value>
+                  </title>
+                  <title>
+                    <key>tr</key>
+                    <value>Maksimum kopya (öğe) sayısı</value>
+                  </title>
+                  <title>
+                    <key>it</key>
+                    <value>Numero massimo di copie (elementi)</value>
+                  </title>
+                  <title>
+                    <key>de</key>
+                    <value>Maximale Anzahl der Kopien (Artikel)</value>
+                  </title>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>Object.BackupsCount</segments>
+                  </dataPath>
+                  <titleLocation>None</titleLocation>
+                  <extendedTooltip>
+                    <name>BackupsCountInDirectoryExtendedTooltip</name>
+                    <id>305</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>BackupsCountInDirectoryContextMenu</name>
+                    <id>75</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>InputField</type>
+                  <editMode>Enter</editMode>
+                  <showInHeader>true</showInHeader>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:InputFieldExtInfo">
+                    <width>6</width>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <wrap>true</wrap>
+                    <spinButton>true</spinButton>
+                    <chooseType>true</chooseType>
+                    <typeDomainEnabled>true</typeDomainEnabled>
+                    <textEdit>true</textEdit>
+                    <minValue xsi:type="core:NumberValue">
+                      <value>2</value>
+                    </minValue>
+                  </extInfo>
+                </items>
+                <items xsi:type="form:Decoration">
+                  <name>PiecesDecoration</name>
+                  <id>353</id>
+                  <title>
+                    <key>ru</key>
+                    <value>шт.</value>
+                  </title>
+                  <title>
+                    <key>en</key>
+                    <value>pcs.</value>
+                  </title>
+                  <title>
+                    <key>pl</key>
+                    <value>szt.</value>
+                  </title>
+                  <title>
+                    <key>es_ES</key>
+                    <value>piezas.</value>
+                  </title>
+                  <title>
+                    <key>es_CO</key>
+                    <value>piezas.</value>
+                  </title>
+                  <title>
+                    <key>tr</key>
+                    <value>parça</value>
+                  </title>
+                  <title>
+                    <key>it</key>
+                    <value>pz.</value>
+                  </title>
+                  <title>
+                    <key>de</key>
+                    <value>Stück</value>
+                  </title>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <extendedTooltip>
+                    <name>PiecesDecorationExtendedTooltip</name>
+                    <id>355</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>PiecesDecorationContextMenu</name>
+                    <id>354</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>Label</type>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </items>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <title>
+                  <key>ru</key>
+                  <value>Количество копий в каталоге</value>
+                </title>
+                <title>
+                  <key>en</key>
+                  <value>Number of copies in the catalog</value>
+                </title>
+                <title>
+                  <key>pl</key>
+                  <value>Ilość kopii w katalogu</value>
+                </title>
+                <title>
+                  <key>es_ES</key>
+                  <value>Cantidad de copias en el catálogo</value>
+                </title>
+                <title>
+                  <key>es_CO</key>
+                  <value>Cantidad de copias en el catálogo</value>
+                </title>
+                <title>
+                  <key>tr</key>
+                  <value>Dizinde kopya sayısı</value>
+                </title>
+                <title>
+                  <key>it</key>
+                  <value>Numero di copie nel catalogo</value>
+                </title>
+                <title>
+                  <key>de</key>
+                  <value>Anzahl der Exemplare im Katalog</value>
+                </title>
+                <extendedTooltip>
+                  <name>BackupsCountInDirectoryGroupExtendedTooltip</name>
+                  <id>357</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <type>UsualGroup</type>
+                <extInfo xsi:type="form:UsualGroupExtInfo">
+                  <group>HorizontalIfPossible</group>
+                  <showLeftMargin>true</showLeftMargin>
+                  <united>true</united>
+                  <throughAlign>Auto</throughAlign>
+                  <currentRowUse>Auto</currentRowUse>
+                </extInfo>
+              </items>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>Group7ExtendedTooltip</name>
+                <id>451</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <type>UsualGroup</type>
+              <extInfo xsi:type="form:UsualGroupExtInfo">
+                <group>HorizontalIfPossible</group>
+                <showLeftMargin>true</showLeftMargin>
+                <throughAlign>Auto</throughAlign>
+                <currentRowUse>Auto</currentRowUse>
+              </extInfo>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>Group5ExtendedTooltip</name>
+              <id>417</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>UsualGroup</type>
+            <extInfo xsi:type="form:UsualGroupExtInfo">
+              <group>Vertical</group>
+              <showLeftMargin>true</showLeftMargin>
+              <united>true</united>
+              <throughAlign>Auto</throughAlign>
+              <currentRowUse>Auto</currentRowUse>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Хранить резервные копии:</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Store backups:</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Przechowuj kopie zapasowe:</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Guardar las copias de respaldo:</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Guardar las copias de respaldo:</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Yedeklemeleri şurada depola:</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Salvare backup:</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Backup speichern:</value>
+          </title>
+          <extendedTooltip>
+            <name>SelectOldFilesDeletionModeGroupExtendedTooltip</name>
+            <id>297</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>HorizontalIfPossible</group>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <showTitle>true</showTitle>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Параметры</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Parameters</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Parametry</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Parámetros</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Parámetros</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Parametreler</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Parametri</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Parameter</value>
+        </title>
+        <extendedTooltip>
+          <name>ParametersGroupExtendedTooltip</name>
+          <id>378</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Страница настройки параметров резервного копирования</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Backup parameters setup page</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Strona konfiguracji parametrów kopii zapasowych</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Página de configuración de los parámetros de respaldo</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Página de configuración de los parámetros de respaldo</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Yedekleme parametreleri ayarı sayfası</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Pagina di configurazione di parametri di backup</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Backup Parameter Einstellungsseite</value>
+      </title>
+      <extendedTooltip>
+        <name>BackupParametersSetupPageExtendedTooltip</name>
+        <id>283</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>AdditionalSettings</name>
+      <id>204</id>
+      <items xsi:type="form:FormGroup">
+        <name>ConnectionErrorHorizontalGroup</name>
+        <id>207</id>
+        <items xsi:type="form:Decoration">
+          <name>Picture12</name>
+          <id>208</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>Picture12ExtendedTooltip</name>
+            <id>333</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>Picture12ContextMenu</name>
+            <id>209</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <skipOnInput>false</skipOnInput>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Warning32</picture>
+            </picture>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ErrorsGroup</name>
+          <id>259</id>
+          <items xsi:type="form:FormField">
+            <name>ConnectionErrorFound</name>
+            <id>210</id>
+            <title>
+              <key>ru</key>
+              <value>Ошибка проверки подключения</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>An error occurred while checking connection</value>
+            </title>
+            <title>
+              <key>pl</key>
+              <value>Wystąpił błąd podczas sprawdzania połączenia</value>
+            </title>
+            <title>
+              <key>es_ES</key>
+              <value>Error ocurrido al revisar la conexión</value>
+            </title>
+            <title>
+              <key>es_CO</key>
+              <value>Error ocurrido al revisar la conexión</value>
+            </title>
+            <title>
+              <key>tr</key>
+              <value>Bağlantı kontrol edilirken hata oluştu</value>
+            </title>
+            <title>
+              <key>it</key>
+              <value>Si è registrato un errore durante il controllo della connessione</value>
+            </title>
+            <title>
+              <key>de</key>
+              <value>Beim Überprüfen der Verbindung ist ein Fehler aufgetreten</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>ConnectionErrorFound</segments>
+            </dataPath>
+            <titleLocation>None</titleLocation>
+            <extendedTooltip>
+              <name>ConnectionErrorFoundExtendedTooltip</name>
+              <id>335</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ConnectionErrorFoundContextMenu</name>
+              <id>211</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <readOnly>true</readOnly>
+            <verticalAlign>Center</verticalAlign>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <width>30</width>
+              <autoMaxWidth>true</autoMaxWidth>
+              <height>5</height>
+              <autoMaxHeight>true</autoMaxHeight>
+              <verticalStretch>false</verticalStretch>
+              <wrap>true</wrap>
+              <multiLine>true</multiLine>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+              <borderColor xsi:type="core:ColorRef">
+                <color>Style.FormBackColor</color>
+              </borderColor>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>GoToEventLogLabel</name>
+            <id>234</id>
+            <title>
+              <key>ru</key>
+              <value>Техническая информация об ошибке</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Technical error details</value>
+            </title>
+            <title>
+              <key>pl</key>
+              <value>Techniczna informacja o błędzie</value>
+            </title>
+            <title>
+              <key>es_ES</key>
+              <value>Información técnica sobre el error</value>
+            </title>
+            <title>
+              <key>es_CO</key>
+              <value>Información técnica sobre el error</value>
+            </title>
+            <title>
+              <key>tr</key>
+              <value>Hatanın teknik bilgisi</value>
+            </title>
+            <title>
+              <key>it</key>
+              <value>Dettagli errore tecnico</value>
+            </title>
+            <title>
+              <key>de</key>
+              <value>Technische Informationen zum Fehler</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>GoToEventLogLabelExtendedTooltip</name>
+              <id>336</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>GoToEventLogLabelConextMenu</name>
+              <id>235</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>Label</type>
+            <autoMaxHeight>true</autoMaxHeight>
+            <skipOnInput>false</skipOnInput>
+            <textColor xsi:type="core:ColorDef">
+              <red>128</red>
+              <green>128</green>
+              <blue>128</blue>
+            </textColor>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <handlers>
+                <event>Click</event>
+                <name>LabelGoToEventLogClick</name>
+              </handlers>
+              <hyperlink>true</hyperlink>
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Ошибок</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Errors</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Błędy</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Errores</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Errores</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Hatalar</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Errori</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Fehler</value>
+          </title>
+          <extendedTooltip>
+            <name>ErrorsGroupExtendedTooltip</name>
+            <id>334</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>Vertical</group>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Горизонтальная группа ошибка подключения</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Horizontal group connection error</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Pozioma grupa błąd połączenia</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Grupo horizontal error de conectar</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Grupo horizontal error de conectar</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Yatay grup bağlantı hatası</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Errore connessione gruppo orizzontale</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Horizontale Gruppe Verbindungsfehler</value>
+        </title>
+        <extendedTooltip>
+          <name>ConnectionErrorHorizontalGroupExtendedTooltip</name>
+          <id>332</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>HorizontalIfPossible</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>InfobaseAdministratorAuthorization</name>
+        <id>249</id>
+        <items xsi:type="form:FormField">
+          <name>IBAdministrator</name>
+          <id>250</id>
+          <title>
+            <key>ru</key>
+            <value>Имя</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Name</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Nazwa</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Nombre</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Nombre</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Ad</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Nome</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Name</value>
+          </title>
+          <visible>true</visible>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>IBAdministrator</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>IBAdministratorExtendedTooltip</name>
+            <id>338</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>IBAdministratorContextMenu</name>
+            <id>251</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <horizontalStretch>false</horizontalStretch>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>IBAdministratorPassword</name>
+          <id>252</id>
+          <title>
+            <key>ru</key>
+            <value>Пароль</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Password</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Hasło</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Contraseña</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Contraseña</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Parola</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Password</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Passwort</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>IBAdministratorPassword</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>IBAdministratorPasswordExtendedTooltip</name>
+            <id>339</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>IBAdministratorPasswordContextMenu</name>
+            <id>253</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <horizontalStretch>false</horizontalStretch>
+            <wrap>true</wrap>
+            <passwordMode>true</passwordMode>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Если задан неправильный пароль администратора, введите его еще раз</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>If a wrong administrator password is set, enter it again</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Jeśli ustawione jest nieprawidłowe hasło administratora, wpisz jego ponownie</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Si una contraseña errónea del administrador se ha configurado, introducirla de nuevo</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Si una contraseña errónea del administrador se ha configurado, introducirla de nuevo</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Yanlış yönetici parolası ayarlandıysa bunu tekrar girin</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Se la password dell'amministratore non è corretta, inseriscila di nuovo</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Wenn das Administrator-Passwort falsch ist, geben Sie es erneut ein</value>
+        </title>
+        <extendedTooltip>
+          <name>InfobaseAdministratorAuthorizationExtendedTooltip</name>
+          <id>337</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <representation>NormalSeparation</representation>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <showTitle>true</showTitle>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Дополнительные настройки</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Additional settings</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Dodatkowe ustawienia</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Configuraciones adicionales</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Configuraciones adicionales</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Ek ayarlar</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Impostazioni aggiuntive</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Zusatzeinstelllungen auf dem Postserver bearbeiten</value>
+      </title>
+      <extendedTooltip>
+        <name>AdditionalSettingsExtendedTooltip</name>
+        <id>330</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Страницы помощника</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Wizard pages</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Strony pomocnika</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Asistente páginas</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Asistente páginas</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Sihirbaz sayfaları</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Pagine della assistenza guidata</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Wizard Seiten</value>
+    </title>
+    <extendedTooltip>
+      <name>WizardPagesExtendedTooltip</name>
+      <id>268</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>Pages</type>
+    <extInfo xsi:type="form:PagesGroupExtInfo">
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>CommandBar</name>
+    <id>370</id>
+    <items xsi:type="form:Button">
+      <name>Next</name>
+      <id>1</id>
+      <title>
+        <key>ru</key>
+        <value>Готово</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Finish</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Gotowe</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Finalizar</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Finalizar</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Bitiş</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Termina</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Abschluss</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>NextExtendedTooltip</name>
+        <id>266</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.Finish</commandName>
+      <representation>Auto</representation>
+      <defaultButton>true</defaultButton>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>Help</name>
+      <id>375</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>HelpExtendedTooltip</name>
+        <id>376</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.StandardCommand.Help</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>Cancel</name>
+      <id>403</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>CancelExtendedTooltip</name>
+        <id>404</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.StandardCommand.Cancel</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Командная панель</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Command bar</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Pasek poleceń</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Barra de comandos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Barra de comandos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Komut çubuğu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Barra dei comandi</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Befehlsleiste</value>
+    </title>
+    <extendedTooltip>
+      <name>CommandBarExtendedTooltip</name>
+      <id>371</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>CommandBar</type>
+    <extInfo xsi:type="form:CommandBarExtInfo">
+      <horizontalAlign>Right</horizontalAlign>
+    </extInfo>
+  </items>
+  <commandBarLocation>Bottom</commandBarLocation>
+  <autoCommandBar>
+    <name>CommandBarForm</name>
+    <id>-1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Right</horizontalAlign>
+  </autoCommandBar>
+  <handlers>
+    <event>OnOpen</event>
+    <name>OnOpen</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <handlers>
+    <event>OnClose</event>
+    <name>OnClose</name>
+  </handlers>
+  <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
+  <autoSaveDataInSettings>Use</autoSaveDataInSettings>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Object</name>
+    <id>1</id>
+    <valueType>
+      <types>DataProcessorObject.IBBackupSetup</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <main>true</main>
+  </attributes>
+  <attributes>
+    <name>IBAdministrator</name>
+    <title>
+      <key>ru</key>
+      <value>Имя администратора</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Administrator name</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Nazwa administratora</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Nombre del administrador</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Nombre del administrador</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Yönetici adı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Nome amministratore</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Administratorname</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ConnectionErrorFound</name>
+    <title>
+      <key>ru</key>
+      <value>Обнаруженная ошибка подключения</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Encountered connection error</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Znaleziono błąd połączenia</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Error de conexión encontrado</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Error de conexión encontrado</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Bağlantı hatası bulundu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Registrate errore di connessione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Verbindungsfehler gefunden</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>IBAdministratorPassword</name>
+    <title>
+      <key>ru</key>
+      <value>Пароль</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Password</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Hasło</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Contraseña</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Contraseña</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Parola</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Password</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Passwort</value>
+    </title>
+    <id>4</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes>
+    <name>PasswordRequired</name>
+    <title>
+      <key>ru</key>
+      <value>Требуется ввод пароля</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Password required</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wymagane hasło</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Contraseña requerida</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Contraseña requerida</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Parola gerekli</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Password richiesta</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Passwort erforderlich</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>Schedule</name>
+    <title>
+      <key>ru</key>
+      <value>Расписание</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Schedule</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Harmonogram</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Horario</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Horario</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Program</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Pianificazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Zeitplan</value>
+    </title>
+    <id>6</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>Finish</name>
+    <title>
+      <key>ru</key>
+      <value>Готово</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Finish</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Gotowe</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Finalizar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Finalizar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Bitiş</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Termina</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Abschluss</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Далее</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Next</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Dalej</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Siguiente</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Siguiente</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>İleri</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Avanti</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Weiter</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Finish</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>EditSchedule</name>
+    <title>
+      <key>ru</key>
+      <value>Изменить</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Change</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zmień</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Cambiar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Cambiar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Değiştir</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Modifica</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Ändern</value>
+    </title>
+    <id>5</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>EditSchedule</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+  <extInfo xsi:type="form:ObjectFormExtInfo"/>
+</form:Form>

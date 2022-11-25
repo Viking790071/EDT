@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4a2278c0-67e5-4259-b8fb-49e96d5ff92c">
+  <producedTypes>
+    <selectionType typeId="b4c7ccb0-92e5-4da0-ba12-e1d59ef70011" valueTypeId="9743818f-f06a-47fc-8fec-3f7883f4365c"/>
+    <listType typeId="6d1a2119-ae5f-44a5-a774-a01f7ec8c630" valueTypeId="acac2c50-8efb-4273-ba4c-96b4a6ecf6d0"/>
+    <managerType typeId="9c5049a4-58d4-4f46-91b3-3006974f21e9" valueTypeId="3e214fd2-1fd5-48ff-a80b-83ab4bf035d1"/>
+    <recordSetType typeId="eacbb056-44c1-4730-9c70-9beebe7e6932" valueTypeId="addc8157-79de-4121-b06f-5d3ec48d5078"/>
+    <recordKeyType typeId="97a38bbd-7474-42bc-9307-ea332b5b35ae" valueTypeId="4936f6ca-65e7-4c05-916a-2a47ddfea828"/>
+    <recordType typeId="2b13f6d0-2b87-4f6c-b347-a17a73dea11f" valueTypeId="e8b0c8c7-0299-4d06-8400-4fcae7793b5a"/>
+    <recordManagerType typeId="6f1532af-c3a3-4d95-93c9-6cb115786c45" valueTypeId="4d4f7ba4-28e1-4d46-80c4-04a4bc5ca3c8"/>
+  </producedTypes>
+  <name>EmailLog</name>
+  <synonym>
+    <key>en</key>
+    <value>Email log</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Журнал электронной почты</value>
+  </synonym>
+  <synonym>
+    <key>pl</key>
+    <value>Dziennik wiadomości e-mail</value>
+  </synonym>
+  <synonym>
+    <key>es_ES</key>
+    <value>Registro de correo electrónico</value>
+  </synonym>
+  <synonym>
+    <key>es_CO</key>
+    <value>Registro de correo electrónico</value>
+  </synonym>
+  <synonym>
+    <key>tr</key>
+    <value>E-posta kaydı</value>
+  </synonym>
+  <synonym>
+    <key>it</key>
+    <value>Email log</value>
+  </synonym>
+  <synonym>
+    <key>de</key>
+    <value>E-Mail-Log</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f5f90d6a-103b-4867-ad35-e8da2319a0e9">
+    <name>MailStatus</name>
+    <synonym>
+      <key>en</key>
+      <value>Mail status</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние отправки</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Status wiadomości</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Estado de correo</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Estado de correo</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Mail durumu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Stato di invio del messaggio</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Mail-Status</value>
+    </synonym>
+    <type>
+      <types>EnumRef.MailStatus</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="a5138971-39b3-4b9a-92f7-a46c6e885c4a">
+    <name>Recipients</name>
+    <synonym>
+      <key>en</key>
+      <value>Recipients</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Получатели</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Odbiorcy</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Destinatarios</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Destinatarios</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Alıcılar</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Destinatari</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Empfänger</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="336b45ef-f842-49f3-ae85-24d06d4ba6be">
+    <name>Company</name>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Firma</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Empresa</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Empresa</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İş yeri</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Azienda</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Firma</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Companies</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="67890376-f0e8-4f89-bdd7-07257a053759">
+    <name>Counterparty</name>
+    <synonym>
+      <key>en</key>
+      <value>Counterparty</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Kontrahent</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Contraparte</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Contraparte</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Cari hesap</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Controparte</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Geschäftspartner</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Counterparties</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="4bf4cceb-8909-464a-9edd-5ee54e885390">
+    <name>ContactPerson</name>
+    <synonym>
+      <key>en</key>
+      <value>Contact person</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Контактное лицо</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Osoba kontaktowa</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Persona de contacto</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Persona de contacto</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İlgili kişi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Persona di contatto</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Ansprechpartner</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ContactPersons</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7d08c82c-86d5-49ea-9c58-88e2774c5eb9">
+    <name>Email</name>
+    <synonym>
+      <key>en</key>
+      <value>Email</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Электронный адрес</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Adres e-mail</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Dirección de correo electrónico</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Dirección de correo electrónico</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>E-posta</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Email</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>E-Mail</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c556a4d8-7ad5-4d4d-86b9-c598620e2673">
+    <name>Document</name>
+    <synonym>
+      <key>en</key>
+      <value>Document</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Dokument</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Documento</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Documento</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Belge</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Documento</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Dokument</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.SalesInvoice</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

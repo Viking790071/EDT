@@ -1,0 +1,1421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c484078a-9897-409b-a92a-bdefe0a3928e">
+  <producedTypes>
+    <objectType typeId="c02b02b9-c49c-42e2-a666-6c5c8f60f4bc" valueTypeId="97fb0eea-4372-4bf6-82da-768270674400"/>
+    <managerType typeId="4a526612-b05b-44d6-aa84-ed9ed6ea8a85" valueTypeId="299f8f36-a180-430c-ab18-819a47a92b19"/>
+  </producedTypes>
+  <name>OrdersClosing</name>
+  <synonym>
+    <key>en</key>
+    <value>Orders closing</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Закрытие заказов</value>
+  </synonym>
+  <synonym>
+    <key>pl</key>
+    <value>Zamknięcie zleceń/zamówień</value>
+  </synonym>
+  <synonym>
+    <key>es_ES</key>
+    <value>Cierre de órdenes</value>
+  </synonym>
+  <synonym>
+    <key>es_CO</key>
+    <value>Cierre de órdenes</value>
+  </synonym>
+  <synonym>
+    <key>tr</key>
+    <value>Siparişler kapanıyor</value>
+  </synonym>
+  <synonym>
+    <key>it</key>
+    <value>Chiusura ordini</value>
+  </synonym>
+  <synonym>
+    <key>de</key>
+    <value>Schließen von Aufträgen</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.OrdersClosing.Form.Form</defaultForm>
+  <tabularSections uuid="5d909856-4a7e-4e45-8249-3d34e51914e0">
+    <producedTypes>
+      <objectType typeId="ac04c0d4-bc3e-4ae2-8ad4-b1f45977f3dd" valueTypeId="1d151296-203a-4f15-945c-a7af9cd5b5a1"/>
+      <rowType typeId="89afa477-ea58-404d-931e-ab0317dcc628" valueTypeId="811f1da8-87d6-4dcf-a137-6b9c16b80d8f"/>
+    </producedTypes>
+    <name>SalesOrders</name>
+    <synonym>
+      <key>en</key>
+      <value>Sales orders</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Заказы покупателей</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Zamówienia sprzedaży</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Órdenes de ventas</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Órdenes de ventas</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Satış siparişleri</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Ordini Cliente</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Kundenaufträge</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="40d957fd-2232-4799-8f9f-c2d1225ccd30">
+      <name>Mark</name>
+      <synonym>
+        <key>en</key>
+        <value>Mark</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Пометка</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Zaznaczenie</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Marca</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Marca</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>İşaretle</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Contrassegno</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Markierung</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="cf4eecc2-ecb2-4422-ba6e-03df3e118417">
+      <name>Order</name>
+      <synonym>
+        <key>en</key>
+        <value>Order</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Заказ</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Zamówienie</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Orden</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Orden</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Sipariş</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Ordine</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Auftrag</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.SalesOrder</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="6fea5391-5c06-4850-b351-cf459d3196b3">
+      <name>Completed</name>
+      <synonym>
+        <key>en</key>
+        <value>Completed</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Завершен</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Zakończono</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Finalizado</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Finalizado</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Tamamlandı</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Completato</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Abgeschlossen</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="307170bf-55f6-46a3-abed-d42034539c78">
+    <producedTypes>
+      <objectType typeId="898bb418-3af4-46a1-8e83-ff839ee1be62" valueTypeId="539e3614-ab86-47da-b835-7c4f477dc12c"/>
+      <rowType typeId="e5ac86c3-dae5-4003-aba8-1d215e70a9d3" valueTypeId="665df514-f259-4451-a247-890978b5ec15"/>
+    </producedTypes>
+    <name>PurchaseOrders</name>
+    <synonym>
+      <key>en</key>
+      <value>Purchase orders</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Заказы поставщикам</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Zamówienia zakupu</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Órdenes de compra</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Órdenes de compra</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Satın alma siparişleri</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Ordini di acquisto</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Bestellungen an Lieferanten</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="e7f83b58-242b-4b9f-87db-9cbce1c490fc">
+      <name>Mark</name>
+      <synonym>
+        <key>en</key>
+        <value>Mark</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Пометка</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Zaznaczenie</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Marca</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Marca</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>İşaretle</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Contrassegno</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Markierung</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="6a2367ce-c5d6-4574-9dfb-b242021985bc">
+      <name>Order</name>
+      <synonym>
+        <key>en</key>
+        <value>Order</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Заказ</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Zamówienie</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Orden</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Orden</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Sipariş</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Ordine</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Bestellung</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.PurchaseOrder</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="083a1f6f-6ff5-4067-8570-183dbb1fbc27">
+      <name>Completed</name>
+      <synonym>
+        <key>en</key>
+        <value>Completed</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Завершен</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Zakończono</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Finalizado</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Finalizado</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Tamamlandı</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Completato</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Abgeschlossen</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="07711b2b-eae3-47b8-9370-64645233d4e0">
+    <producedTypes>
+      <objectType typeId="d0e49080-1ff5-4ba2-a623-88e1babd1ee6" valueTypeId="6800a5b4-fc49-4e6e-aaf4-cdd47f6e11a3"/>
+      <rowType typeId="ef37cb2a-e86f-4a34-99af-02ff21b14393" valueTypeId="4f120278-1a48-4e91-ac85-0a29da50a312"/>
+    </producedTypes>
+    <name>ProductionOrders</name>
+    <synonym>
+      <key>en</key>
+      <value>Production orders</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Заказы на производство</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Zlecenia produkcyjne</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Órdenes de producción</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Órdenes de fabricación</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Üretim emirleri</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Ordini di produzione</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Produktionsaufträge</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="f2015cea-dc50-4198-aef8-d344f79f7749">
+      <name>Mark</name>
+      <synonym>
+        <key>en</key>
+        <value>Mark</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Пометка</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Zaznaczenie</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Marca</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Marca</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>İşaretle</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Contrassegno</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Markierung</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="1ea4ceb5-edd8-4f43-86a5-bcdb645c07be">
+      <name>Order</name>
+      <synonym>
+        <key>en</key>
+        <value>Order</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Заказ</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Zamówienie</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Orden</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Orden</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Sipariş</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Ordine</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Bestellung</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.ProductionOrder</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="692b37a4-db3c-4050-a414-49d397022ccc">
+      <name>Completed</name>
+      <synonym>
+        <key>en</key>
+        <value>Completed</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Завершен</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Zakończono</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Finalizado</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Finalizado</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Tamamlandı</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Completato</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Abgeschlossen</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="24a05c68-07bf-4a27-84bd-d2475541fd0d">
+    <producedTypes>
+      <objectType typeId="beec0b1f-c69f-424e-8996-acc755530632" valueTypeId="5fea0928-ae06-484f-9781-052c46909244"/>
+      <rowType typeId="44194c4d-430f-4eb1-8001-ef4c083fe99a" valueTypeId="5fde1397-6366-4a3d-9480-d439f9f4f7f9"/>
+    </producedTypes>
+    <name>WorkOrders</name>
+    <synonym>
+      <key>en</key>
+      <value>Work orders</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Заказы-наряды</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Zlecenia pracy</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Órdenes de trabajo</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Órdenes de trabajo</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İş emirleri</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Commesse</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Arbeitsaufträge</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="e49653c9-6e32-4504-96e4-fc26acb3d412">
+      <name>Mark</name>
+      <synonym>
+        <key>en</key>
+        <value>Mark</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Пометка</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Zaznaczenie</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Marca</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Marca</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>İşaretle</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Contrassegno</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Markierung</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="093e45a1-d2cc-4782-b6ea-5990b1b8b8d4">
+      <name>Order</name>
+      <synonym>
+        <key>en</key>
+        <value>Order</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Заказ</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Zamówienie</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Orden</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Orden</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Sipariş</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Ordine</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Bestellung</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.WorkOrder</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="f2c9ef1d-af4d-4bad-8b6d-c2c9f5341551">
+      <name>Completed</name>
+      <synonym>
+        <key>en</key>
+        <value>Completed</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Завершен</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Zakończono</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Finalizado</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Finalizado</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Tamamlandı</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Completato</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Abgeschlossen</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="61a1bfc7-a647-4dba-9265-a9b57211534f">
+    <producedTypes>
+      <objectType typeId="f3ea544f-88c8-4598-b632-917cccd6508d" valueTypeId="7df408d1-97db-4bba-8962-451bcd7a78d2"/>
+      <rowType typeId="1a79a914-46d7-408a-86ed-7360b256b8fc" valueTypeId="c53dd02f-34c6-4d26-b7f3-43a2fa55fc0b"/>
+    </producedTypes>
+    <name>SubcontractorOrdersIssued</name>
+    <synonym>
+      <key>en</key>
+      <value>Subcontractor orders issued</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Выданные заказы на переработку</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Wydane zamówienia wykonawcy</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Órdenes emitidas del subcontratista</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Órdenes emitidas del subcontratista</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Düzenlenen alt yüklenici siparişleri</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Ordini di subappalto emessi</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Subunternehmeraufträge ausgestellt</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="a38cd4a6-169d-4916-9d3c-28b05c3133d8">
+      <name>Mark</name>
+      <synonym>
+        <key>en</key>
+        <value>Mark</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Пометка</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Zaznaczenie</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Marca</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Marca</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>İşaret</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Contrassegno</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Markierung</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ec1f73ee-ed02-413e-a514-baad0de70e77">
+      <name>Order</name>
+      <synonym>
+        <key>en</key>
+        <value>Order</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Заказ</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Zamówienie</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Orden</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Orden</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Sipariş</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Ordine</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Auftrag</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.SubcontractorOrderIssued</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="0d68e266-ff59-44f7-ae02-6ccd563348b8">
+      <name>Completed</name>
+      <synonym>
+        <key>en</key>
+        <value>Completed</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Завершен</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Zakończono</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Finalizado</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Finalizado</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Tamamlanan</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Completato</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Abgeschlossen</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="17cda6ac-0bc6-458d-acc5-09574bd9c562">
+    <producedTypes>
+      <objectType typeId="4be84df2-789a-4260-a641-25ac348aeb8d" valueTypeId="cd1bc7bb-f68e-479d-a312-2579c1ab3cbd"/>
+      <rowType typeId="52b0864a-1a33-4d5c-8b10-76f58aee9349" valueTypeId="440f6fa3-3388-43d3-85c0-99539f1b93c6"/>
+    </producedTypes>
+    <name>SubcontractorOrdersReceived</name>
+    <synonym>
+      <key>en</key>
+      <value>Subcontractor orders received</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Полученные заказы на переработку</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Otrzymane zamówienia podwykonawcy</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Órdenes recibidas del Subcontratista</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Órdenes recibidas del Subcontratista</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Alınan alt yüklenici siparişleri</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Ordini subappaltatore ricevuti</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Subunternehmeraufträge erhalten</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="615452a2-1924-473a-9162-8aa561cdbcd2">
+      <name>Mark</name>
+      <synonym>
+        <key>en</key>
+        <value>Mark</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Пометка</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Zaznaczenie</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Marca</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Marca</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>İşaretle</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Contrassegno</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Markierung</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="55672473-d8ac-40ba-9717-d7def349752b">
+      <name>Order</name>
+      <synonym>
+        <key>en</key>
+        <value>Order</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Заказ</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Zamówienie</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Orden</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Orden</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Sipariş</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Ordine</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Auftrag</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.SubcontractorOrderReceived</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="e56e3080-be48-4432-8625-5104ea45adfa">
+      <name>Completed</name>
+      <synonym>
+        <key>en</key>
+        <value>Completed</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Завершен</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Zakończono</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Finalizado</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Finalizado</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Tamamlandı</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Completato</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Abgeschlossen</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="68c380da-afef-4ca6-8f1f-83f2f67f9610">
+    <producedTypes>
+      <objectType typeId="2c3a16f1-5dfc-4e84-9f0d-bc67f6921170" valueTypeId="a99cfc46-3eba-46c4-934d-6446c584c5ef"/>
+      <rowType typeId="3450a713-a0ec-40c2-a985-0ac19781f748" valueTypeId="2205c550-9291-428b-b15e-337255c0b167"/>
+    </producedTypes>
+    <name>KitOrders</name>
+    <synonym>
+      <key>en</key>
+      <value>Kit orders</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Заказы на комплектацию</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Zamówienia zestawów</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Pedidos del Kit</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Pedidos del Kit</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Set siparişleri</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Ordini kit</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Kit-Aufträge</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="289adf51-8448-4ddd-99fe-9a871b5de984">
+      <name>Mark</name>
+      <synonym>
+        <key>en</key>
+        <value>Mark</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Пометка</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Zaznaczenie</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Marca</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Marca</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>İşaret</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Contrassegno</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Markierung</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="e8d1ad10-0308-4c3e-b847-9e5843032d7b">
+      <name>Order</name>
+      <synonym>
+        <key>en</key>
+        <value>Order</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Заказ</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Zamówienie</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Orden</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Orden</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Sipariş</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Ordine</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Auftrag</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.KitOrder</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="660a2d3f-b439-4322-aea0-76d19e398b9b">
+      <name>Completed</name>
+      <synonym>
+        <key>en</key>
+        <value>Completed</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Завершен</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Zakończone</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Finalizado</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Finalizado</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Tamamlandı</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Completato</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Abgeschlossen</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="21b7e6de-59f4-4751-a98c-2ac5bee8bedd">
+    <name>Form</name>
+    <synonym>
+      <key>en</key>
+      <value>Form</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Formularz</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Formulario</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Formulario</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Form</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Modulo</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Formular</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="e8410267-cff2-4f06-b968-6fd77b4fcef4">
+    <name>OrdersClosingSales</name>
+    <synonym>
+      <key>en</key>
+      <value>Orders closing</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Закрытие заказов</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Zamykanie zleceń</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Cierre de órdenes</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Cierre de órdenes</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Satış siparişlerinin kapatılması</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Chiusura ordini</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Bestellungen werden geschlossen</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="d0c4e178-4f93-4877-9829-0ee1730511a5">
+    <name>OrdersClosingPurchase</name>
+    <synonym>
+      <key>en</key>
+      <value>Orders closing</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Закрытие заказов</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Zamykanie zamówień/zleceń</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Cierre de órdenes</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Cierre de órdenes</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Satın alma siparişlerinin kapatılması</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Chiusura ordini</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Bestellungen werden geschlossen</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="e035d21e-3905-4974-8ad7-92bf1a075bb1">
+    <name>OrdersClosingProduction</name>
+    <synonym>
+      <key>en</key>
+      <value>Orders closing</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Закрытие заказов</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Zamykanie zleceń</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Cierre de órdenes</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Cierre de órdenes</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Üretim emirlerinin kapatılması</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Chiusura ordini</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Bestellungen werden geschlossen</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="1b959472-6498-4f9a-a2dd-9572b1acf9da">
+    <name>OrdersClosingWarehouse</name>
+    <synonym>
+      <key>en</key>
+      <value>Orders closing</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Закрытие заказов</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Zamknięcie zamówień</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Cierre de órdenes</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Cierre de órdenes</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Emirlerin kapatılması</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Chiusura ordini</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Schließen von Aufträgen</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

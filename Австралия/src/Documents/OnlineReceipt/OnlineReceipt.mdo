@@ -1,0 +1,2481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9d2fc08f-85ec-466e-97bf-6a48279310bd">
+  <producedTypes>
+    <objectType typeId="39937411-15fb-4943-ac49-bd2e341f056a" valueTypeId="cbed81bc-6f00-46b3-8130-62119c817fb6"/>
+    <refType typeId="b6bf8d5f-d3aa-435a-b961-ee3daee60500" valueTypeId="18c9d03c-77fa-4b35-8855-845c79ede8a4"/>
+    <selectionType typeId="cdec1b44-d60b-4ef2-984a-91ef80d16d5a" valueTypeId="7a334d61-94cb-4d63-a03b-35b55f75c133"/>
+    <listType typeId="5cace101-1ceb-4315-9528-363ed15b4053" valueTypeId="d68b0d7c-1cfa-4517-84a2-38f936f900fa"/>
+    <managerType typeId="49e56416-8b16-48ba-be10-f63ca41cc43e" valueTypeId="ada984c0-d3f2-47aa-a373-68bf6f523571"/>
+  </producedTypes>
+  <name>OnlineReceipt</name>
+  <synonym>
+    <key>en</key>
+    <value>Online receipt</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Онлайн-чек</value>
+  </synonym>
+  <synonym>
+    <key>pl</key>
+    <value>Paragon online</value>
+  </synonym>
+  <synonym>
+    <key>es_ES</key>
+    <value>Recibo en línea</value>
+  </synonym>
+  <synonym>
+    <key>es_CO</key>
+    <value>Recibo en línea</value>
+  </synonym>
+  <synonym>
+    <key>tr</key>
+    <value>Çevrimiçi tahsilat</value>
+  </synonym>
+  <synonym>
+    <key>it</key>
+    <value>Ricevuta online</value>
+  </synonym>
+  <synonym>
+    <key>de</key>
+    <value>Onlinebeleg</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.OnlineReceipt.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <basedOn>Document.SalesOrder</basedOn>
+  <basedOn>Document.SalesInvoice</basedOn>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>en</key>
+    <value>Online receipts</value>
+  </listPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Онлайн-чеки</value>
+  </listPresentation>
+  <listPresentation>
+    <key>pl</key>
+    <value>Paragony online</value>
+  </listPresentation>
+  <listPresentation>
+    <key>es_ES</key>
+    <value>Recibos en línea</value>
+  </listPresentation>
+  <listPresentation>
+    <key>es_CO</key>
+    <value>Recibos en línea</value>
+  </listPresentation>
+  <listPresentation>
+    <key>tr</key>
+    <value>Çevrimiçi tahsilatlar</value>
+  </listPresentation>
+  <listPresentation>
+    <key>it</key>
+    <value>Ricevute online</value>
+  </listPresentation>
+  <listPresentation>
+    <key>de</key>
+    <value>Onlinebelege</value>
+  </listPresentation>
+  <numerator>DocumentNumerator.CustomizableNumbering</numerator>
+  <numberType>String</numberType>
+  <numberLength>20</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.OnlineReceipt.Form.DocumentForm</defaultObjectForm>
+  <defaultListForm>Document.OnlineReceipt.Form.ListForm</defaultListForm>
+  <defaultChoiceForm>Document.OnlineReceipt.Form.ListForm</defaultChoiceForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>AccumulationRegister.VATOutput</registerRecords>
+  <registerRecords>AccumulationRegister.InvoicesAndOrdersPayment</registerRecords>
+  <registerRecords>InformationRegister.AccountingEntriesData</registerRecords>
+  <registerRecords>AccountingRegister.AccountingJournalEntriesSimple</registerRecords>
+  <registerRecords>AccumulationRegister.PaymentCalendar</registerRecords>
+  <registerRecords>AccumulationRegister.FundsTransfersBeingProcessed</registerRecords>
+  <registerRecords>AccountingRegister.AccountingJournalEntries</registerRecords>
+  <registerRecords>AccumulationRegister.AccountsReceivable</registerRecords>
+  <registerRecords>InformationRegister.DocumentAccountingEntriesStatuses</registerRecords>
+  <registerRecords>AccumulationRegister.IncomeAndExpenses</registerRecords>
+  <registerRecords>AccountingRegister.AccountingJournalEntriesCompound</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="a451b23c-5acc-4cba-b63b-6ed23de8e717">
+    <name>Company</name>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Firma</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Empresa</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Empresa</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İş yeri</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Azienda</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Firma</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Companies</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Companies.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3d1fe20e-4153-49f9-9343-80c34489e6ca">
+    <name>CompanyVATNumber</name>
+    <synonym>
+      <key>en</key>
+      <value>VAT ID</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Номер плательщика НДС</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Numer VAT</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Identificador del IVA</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Identificador de IVA</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>KDV kodu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>P. IVA</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>USt.- IdNr.</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d5d3bea8-2785-42f1-aa22-f7e3f91b4409">
+    <name>Comment</name>
+    <synonym>
+      <key>en</key>
+      <value>Comment</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Uwagi</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Comentario</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Comentario</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Yorum</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Commento</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Kommentar</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a0a258f5-124e-4565-9e4f-a2d7ca69bb39">
+    <name>Counterparty</name>
+    <synonym>
+      <key>en</key>
+      <value>Counterparty</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Kontrahent</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Contrapartida</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Contrapartida</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Cari hesap</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Controparte</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Geschäftspartner</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Counterparties</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Counterparties.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d386ce7f-23e0-46d8-932d-3bbc6a89ff21">
+    <name>BasisDocument</name>
+    <synonym>
+      <key>en</key>
+      <value>Base document</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Документ-основание</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Dokument źródłowy</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Documento base</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Documento base</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Temel belge</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Documento di base</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Basisbeleg</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.SalesInvoice</types>
+      <types>DocumentRef.SalesOrder</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Filter.Company</name>
+      <field>Document.OnlineReceipt.Attribute.Company</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Filter.Counterparty</name>
+      <field>Document.OnlineReceipt.Attribute.Counterparty</field>
+    </choiceParameterLinks>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4c798057-36a4-40ec-a86c-59bb754a9f75">
+    <name>OperationKind</name>
+    <synonym>
+      <key>en</key>
+      <value>Operation</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Операция</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Operacja</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Operación</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Operación</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İşlem</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Operazione</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Operation</value>
+    </synonym>
+    <type>
+      <types>EnumRef.OperationTypesOnlineReceipt</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.OperationTypesOnlineReceipt.EnumValue.FromCustomer</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="18d9e369-c586-444c-acb1-4155eb54814b">
+    <name>POSTerminal</name>
+    <synonym>
+      <key>en</key>
+      <value>POS terminal</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Эквайринговый терминал</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Terminal POS</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Terminal TPV</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Terminal TPV</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>POS terminali</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Terminale POS</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>POS-Terminal</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.POSTerminals</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Filter.Company</name>
+      <field>Document.OnlineReceipt.Attribute.Company</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>Filter.TypeOfPOS</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.TypesOfPOS.EnumValue.OnlinePayments</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ef13a405-3ee5-42f8-8092-413f7d782c77">
+    <name>CashCurrency</name>
+    <synonym>
+      <key>en</key>
+      <value>Currency</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Waluta</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Moneda</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Moneda</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Para birimi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Valuta</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Währung</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Currencies</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <quickChoice>DontUse</quickChoice>
+    <createOnInput>Use</createOnInput>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Currencies.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="775d3679-15a3-4806-88b5-fceeedf76be9">
+    <name>DocumentAmount</name>
+    <synonym>
+      <key>en</key>
+      <value>Amount</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Wartość</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Importe</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Importe</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Tutar</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Importo</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Betrag</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <quickChoice>DontUse</quickChoice>
+    <createOnInput>Use</createOnInput>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bf0a76f8-8f41-4a35-a4cb-82f8bb4488f8">
+    <name>ChargeCardKind</name>
+    <synonym>
+      <key>en</key>
+      <value>Card type</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Тип карты</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Rodzaj karty</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Tipo de tarjeta</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Tipo de tarjeta</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Kart türü</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Tipo di carta</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Kartentyp</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.PaymentCardTypes</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="208373bb-ff6c-4a7c-bd62-1619fa327568">
+    <name>ChargeCardNo</name>
+    <synonym>
+      <key>en</key>
+      <value>Payment card number</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Номер платежной карты</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Numer karty płatniczej</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Número de la tarjeta de pago</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Número de la tarjeta de pago</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ödeme kartı numarası</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Numero carta di pagamento</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Zahlungskartennummer</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>24</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4037e93e-516d-4bd5-bb6c-8d532aa5ef1a">
+    <name>PaymentStatus</name>
+    <synonym>
+      <key>en</key>
+      <value>Payment status</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Статус платежа</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Status płatności</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Estado del pago</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Estado del pago</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ödeme durumu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Stato pagamento</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Zahlungsstatus</value>
+    </synonym>
+    <type>
+      <types>EnumRef.PaymentStatuses</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.PaymentStatuses.EnumValue.Succeeded</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0d06d172-4767-4fb4-b5c8-40e320c5bfe7">
+    <name>FeePercent</name>
+    <synonym>
+      <key>en</key>
+      <value>Fee (%)</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Комиссия (%)</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Prowizja (%)</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Tasa (%)</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Tasa (%)</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ücret (%)</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Commissione (%)</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Gebühr (%)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d55e475c-7989-406d-a1c6-6b891b76ce25">
+    <name>FeeAmount</name>
+    <synonym>
+      <key>en</key>
+      <value>Fee amount</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма комиссии</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Kwota prowizji</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Importe de la tasa</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Importe de la tasa</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ücret tutarı</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Importo commissione</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Gebührenbetrag</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="83be913a-8460-443d-a4e7-28afbd05e4d4">
+    <name>FeeFixedPart</name>
+    <synonym>
+      <key>en</key>
+      <value>Fee (fixed)</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Комиссия (фикс.)</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Prowizja (stała)</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Tasa (fijo)</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Tasa (fijo)</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ücret (sabit)</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Commissione (fissa)</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Gebühr (Fest)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0c906b33-b8b5-462a-a520-8603fccf9bb8">
+    <name>FeeTotal</name>
+    <synonym>
+      <key>en</key>
+      <value>Fee (total)</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Комиссия (всего)</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Prowizja (razem)</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Tasa (total)</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Tasa (total)</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ücret (toplam)</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Commissione (totale)</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Gebühr (gesamt)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="86ed6753-bcb4-48a5-af8b-e7ed052e2ff8">
+    <name>Author</name>
+    <synonym>
+      <key>en</key>
+      <value>Author</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Autor</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Autor</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Autor</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Yazar</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Autore</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Autor</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Users</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cb3628ff-d95f-458e-9a70-1d4f24b2249c">
+    <name>VATTaxation</name>
+    <synonym>
+      <key>en</key>
+      <value>Tax category</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Налогообложение</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Rodzaj opodatkowania VAT</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Categoría de impuestos</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Categoría de impuestos</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Vergi kategorisi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Categoria di imposta</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Steuerkategorie</value>
+    </synonym>
+    <type>
+      <types>EnumRef.VATTaxationTypes</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.VATTaxationTypes.EnumValue.NotSubjectToVAT</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fbab573a-2472-4eb5-b172-099c1ea6886a">
+    <name>ForOpeningBalancesOnly</name>
+    <synonym>
+      <key>en</key>
+      <value>For opening balances only</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Только для начальных остатков</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Tylko dla salda początkowego</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Sólo para saldos iniciales</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Sólo para saldos iniciales</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Sadece açılış bakiyeleri için</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Solo per i saldi iniziali</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Nur für Anfangssalden</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a86bb307-33ce-44aa-a844-3087338332c8">
+    <name>PaymentPurpose</name>
+    <synonym>
+      <key>en</key>
+      <value>Payment purpose</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Назначение платежа</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Tytuł płatności</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Propósito del pago</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Propósito del pago</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ödemenin amacı</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Motivo del pagamento</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Verwendungszweck</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <quickChoice>DontUse</quickChoice>
+    <createOnInput>Use</createOnInput>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="daf23e50-209f-4753-93c2-5d2436b67147">
+    <name>ExpenseItem</name>
+    <synonym>
+      <key>en</key>
+      <value>Expense item</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Статья расходов</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Pozycja rozchodów</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Artículo de gastos</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Artículo de gastos</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Gider kalemi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Voce di uscita</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Position von Ausgaben</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.IncomeAndExpenseItems</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Filter.IsExpense</name>
+      <value xsi:type="core:BooleanValue">
+        <value>true</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="13c1affd-931b-4f33-b764-d1aad2c0c1a5">
+    <name>DocumentForm</name>
+    <synonym>
+      <key>en</key>
+      <value>Document form</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Formularz dokumentu</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Formulario del documento</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Formulario del documento</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Belge formu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Modulo del documento</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Dokumentenformular</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ab7a1ac0-5027-4756-a84e-8ffb80d03384">
+    <name>ListForm</name>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Formularz listy</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Formulario de la lista</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Formulario de la lista</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Liste formu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Modulo elenco</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Listenformular</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="a28d04af-5f66-4b36-ab7b-e2c685bfd24d">
+    <producedTypes>
+      <objectType typeId="0478ec17-451d-4204-abaf-9d1f84a7976d" valueTypeId="a9df2357-5837-4b66-ae12-4e1a287ab9d6"/>
+      <rowType typeId="6ea9bf55-1004-4cfc-950f-9b5da7d85d69" valueTypeId="e75ed2fc-98ec-4b96-ad04-79071152bd0c"/>
+    </producedTypes>
+    <name>PaymentDetails</name>
+    <synonym>
+      <key>en</key>
+      <value>Payment details</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка платежа</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Szczegóły płatności</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Detalles de pago</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Detalles de pago</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ödeme bilgileri</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Dettagli del pagamento</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Zahlungsdetails</value>
+    </synonym>
+    <fillChecking>ShowError</fillChecking>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="b5443e0a-4200-430a-bb05-79f3b2490c68">
+      <name>Contract</name>
+      <synonym>
+        <key>en</key>
+        <value>Contract</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Договор</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Kontrakt</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Contrato</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Contrato</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Sözleşme</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Contratto</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Vertrag</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.CounterpartyContracts</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameterLinks>
+        <name>Filter.Company</name>
+        <field>Document.OnlineReceipt.Attribute.Company</field>
+      </choiceParameterLinks>
+      <choiceParameterLinks>
+        <name>Filter.Owner</name>
+        <field>Document.OnlineReceipt.Attribute.Counterparty</field>
+      </choiceParameterLinks>
+      <quickChoice>DontUse</quickChoice>
+      <createOnInput>Use</createOnInput>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="dea8559b-24f1-4357-a12c-ab568c3008d7">
+      <name>AdvanceFlag</name>
+      <synonym>
+        <key>en</key>
+        <value>Advance payment</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Авансовый платеж</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Zaliczka</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Pago adelantado</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Pago adelantado</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Avans ödeme</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Pagamento anticipato</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Vorauszahlung</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b9045646-d5b6-4cd1-9d55-bf994580ccff">
+      <name>Document</name>
+      <synonym>
+        <key>en</key>
+        <value>Document</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Документ</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Dokument</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Documento</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Documento</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Belge</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Documento</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Dokument</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.SalesInvoice</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Filter.Counterparty</name>
+        <field>Document.OnlineReceipt.Attribute.Counterparty</field>
+      </choiceParameterLinks>
+      <choiceParameterLinks>
+        <name>Filter.Contract</name>
+        <field>Document.OnlineReceipt.TabularSection.PaymentDetails.Attribute.Contract</field>
+      </choiceParameterLinks>
+      <createOnInput>DontUse</createOnInput>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="cfe63dce-8cb7-45cd-b9d1-a8cafd81cbbf">
+      <name>SettlementsAmount</name>
+      <synonym>
+        <key>en</key>
+        <value>Settlement amount</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма расчетов</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Kwota rozliczeń</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Importe de liquidación</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Importe de liquidación</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Kapanış tutarı</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Importo regolamento</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Abrechnungsbetrag</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>The payment amount in the settlement currency specified in the contract.</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма платежа в валюте расчетов по договору.</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Suma płatności w walucie rozliczeniowej podanej w kontrakcie.</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>El importe de pago en la moneda de liquidación especificada en el contrato.</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>El importe de pago en la moneda de liquidación especificada en el contrato.</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Sözleşmede belirtilen uzlaşma para biriminde ödeme tutarı.</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Importo del pagamento nella valuta di regolamento indicata nel contratto.</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Der Zahlungsbetrag in der im Vertrag angegebenen Abrechnungswährung.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <quickChoice>DontUse</quickChoice>
+      <createOnInput>Use</createOnInput>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5f7e259a-de0d-417f-94e0-30cfc5367077">
+      <name>ExchangeRate</name>
+      <synonym>
+        <key>en</key>
+        <value>Exchange rate</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Курс валюты</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Kurs waluty</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Tipo de cambio</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Tipo de cambio</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Döviz kuru</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Tasso di cambio</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Wechselkurs</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>4</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <quickChoice>DontUse</quickChoice>
+      <createOnInput>Use</createOnInput>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="3efdb8ab-9343-4353-8e2e-05716a0d99c9">
+      <name>Multiplicity</name>
+      <synonym>
+        <key>en</key>
+        <value>Multiplier</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Множитель</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Mnożnik</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Multiplicador</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Multiplicador</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Çarpan</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Moltiplicatore</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Multiplikator</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <quickChoice>DontUse</quickChoice>
+      <createOnInput>Use</createOnInput>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="bbd9b1fb-44b9-4658-94f3-325e4f3bd9b2">
+      <name>PaymentAmount</name>
+      <synonym>
+        <key>en</key>
+        <value>Payment amount</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма платежа</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Kwota płatności</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Importe de pago</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Importe de pago</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Ödeme tutarı</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Importo del pagamento</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Zahlungsbetrag</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <quickChoice>DontUse</quickChoice>
+      <createOnInput>Use</createOnInput>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c19f4c1e-b789-4fa7-b72c-d589faa7f9a0">
+      <name>VATRate</name>
+      <synonym>
+        <key>en</key>
+        <value>Tax %</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>% налога</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Stawka VAT %</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Impuesto %</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Impuesto %</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Vergi %</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Imposta %</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Steuer %</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.VATRates</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <quickChoice>DontUse</quickChoice>
+      <createOnInput>Use</createOnInput>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c76d0aa4-aeca-46ff-bb72-664994c8d912">
+      <name>VATAmount</name>
+      <synonym>
+        <key>en</key>
+        <value>Tax</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Налог</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>VAT</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Impuesto</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Impuesto</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Vergi</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Imposta</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Steuer</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <quickChoice>DontUse</quickChoice>
+      <createOnInput>Use</createOnInput>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1143c6fa-e139-4c89-96c8-26c577b5939e">
+      <name>Order</name>
+      <synonym>
+        <key>en</key>
+        <value>Order</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Заказ</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Zamówienie</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Orden</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Orden</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Sipariş</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Ordine</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Auftrag</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.SalesOrder</types>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Specified if payment is received against a specific sales order</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Указывается, если платеж получен по определенному заказу покупателя</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Określone, jeśli płatność została otrzymana w odniesieniu do konkretnego zamówienia sprzedaży</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Especificado si el pago se ha recibido contra un pedido de cliente específico</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Especificado si el pago se ha recibido contra un pedido de cliente específico</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Belirli bir Satış siparişine karşılık ödeme alınırsa belirtilir</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Specificato se il pagamento viene ricevuto a fronte di un ordine cliente specifico</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Angegeben beim Eingang einer Zahlung auf einen bestimmten Kundenauftrag</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Filter.Counterparty</name>
+        <field>Document.OnlineReceipt.Attribute.Counterparty</field>
+      </choiceParameterLinks>
+      <choiceParameterLinks>
+        <name>Filter.Contract</name>
+        <field>Document.OnlineReceipt.TabularSection.PaymentDetails.Attribute.Contract</field>
+      </choiceParameterLinks>
+      <createOnInput>Use</createOnInput>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="aaf41b51-b419-4b76-b466-f36116e2dcc0">
+      <name>ExistsEPD</name>
+      <synonym>
+        <key>en</key>
+        <value>Valid for EPD</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Возможно применение скидки за досрочную оплату.</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Możliwe stosowanie skonta</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Válido para EPD</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Válido para EPD</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Erken ödeme indirimi için geçerli</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Valido per lo sconto per pagamento anticipato</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Gültig für Skonto</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b826ed6c-2466-4a28-9f09-a47ee936edbb">
+      <name>EPDAmount</name>
+      <synonym>
+        <key>en</key>
+        <value>EPD</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Скидка за досрочную оплату</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Skonto</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>EPD</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>EPD</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Erken ödeme indirimi</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Sconto pagamento anticipato</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Skonto</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c2e730b3-d107-43de-9132-0d58ecbadddb">
+      <name>SettlementsEPDAmount</name>
+      <synonym>
+        <key>en</key>
+        <value>EPD (contract ccy)</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Скидка за досрочную оплату (вал. договора)</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Skonto (waluta kontraktu)</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>EPD (monedo de contrato)</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>EPD (monedo de contrato)</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Erken ödeme indirimi (sözleşme para birimi)</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Sconto pagamento anticipato (valuta contratto)</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Skonto (Vertragswährung)</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4f9e62ed-7565-488e-aa77-4ba34eaac880">
+      <name>Item</name>
+      <synonym>
+        <key>en</key>
+        <value>Cash flow item</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Статья движения денежных средств</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Pozycja przepływów pieniężnych</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Elemento del flujo de caja</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Elemento del flujo de caja</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Nakit akışı öğesi</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Voce del flusso di cassa</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Cashflow-Posten</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.CashFlowItems</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e2d29671-fb02-479a-9ad7-838b7ddc1d1b">
+      <name>AccountsReceivableGLAccount</name>
+      <synonym>
+        <key>en</key>
+        <value>Accounts receivable GL account</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Счет учета дебиторской задолженности</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Konto księgowe należności</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Cuentas por cobrar de la cuenta del libro mayor</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Cuentas por cobrar de la cuenta del libro mayor</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Alacak hesapları muhasebe hesabı</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Crediti conto mastro</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Offene Posten Debitoren Hauptbuch-Konto</value>
+      </synonym>
+      <type>
+        <types>ChartOfAccountsRef.PrimaryChartOfAccounts</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="17640fd1-5f10-4eb4-95eb-8cc331ce26c7">
+      <name>AdvancesReceivedGLAccount</name>
+      <synonym>
+        <key>en</key>
+        <value>Advances received GL account</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Счет учета полученных авансов</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Konto księgowe zobowiązania</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Cuenta del libro mayor del anticipo recibido</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Cuenta del libro mayor del anticipo recibido</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Avans alınan muhasebe hesabı</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Pagamenti anticipati ricevuti conto mastro</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Erhaltene Vorauszahlungen Hauptbuch-Konto</value>
+      </synonym>
+      <type>
+        <types>ChartOfAccountsRef.PrimaryChartOfAccounts</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b51b888e-77d9-4e1c-b5cb-d6a64557b374">
+      <name>DiscountAllowedGLAccount</name>
+      <synonym>
+        <key>en</key>
+        <value>Discount allowed GL account</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Счет учета согласованных скидок</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Konto księgowe dozwolonego rabatu</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Descuento permitido cuenta del libro mayor</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Descuento permitido cuenta del libro mayor</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>İndirim verilen muhasebe hesabı</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Sconto concesso conto mastro</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Rabatt erlaubt Hauptbuch-Konto</value>
+      </synonym>
+      <type>
+        <types>ChartOfAccountsRef.PrimaryChartOfAccounts</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c66acd1e-36a6-4dae-9a15-471c0e85911d">
+      <name>VATOutputGLAccount</name>
+      <synonym>
+        <key>en</key>
+        <value>VAT output GL account</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Счет учета исходящего НДС</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Konto księgowe VAT należnego</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Cuenta del libro mayor de la salida del IVA</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Cuenta del libro mayor de la salida del IVA</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>KDV çıkışı muhasebe hesabı</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>IVA a valle conto mastro</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>USt.-Ergebnis-Hauptbuch-Konto</value>
+      </synonym>
+      <type>
+        <types>ChartOfAccountsRef.PrimaryChartOfAccounts</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="7d069207-0da0-4dd1-919d-1261adf9f270">
+    <producedTypes>
+      <objectType typeId="a27670ad-12bf-4856-ad1b-9b46df1b56d1" valueTypeId="f9944839-d4cc-47d5-98a0-c2adb990ae46"/>
+      <rowType typeId="4e4bbacc-4828-43e2-ab72-69439dc4bd60" valueTypeId="648b47ee-68c9-48dd-82be-8b01e8413eb6"/>
+    </producedTypes>
+    <name>AdditionalAttributes</name>
+    <synonym>
+      <key>en</key>
+      <value>Additional attributes</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные реквизиты</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Dodatkowe atrybuty</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Atributos adicionales</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Atributos adicionales</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ek öznitelikler</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Attributi aggiuntivi</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Zusätzliche Attribute</value>
+    </synonym>
+    <toolTip>
+      <key>en</key>
+      <value>Additional attributes of inventory batch</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Дополнительные реквизиты партии запасов</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Atrybuty dodatkowe partii zapasów</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Atributos adicionales del lote de inventario</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Atributos adicionales del lote de inventario</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Stok partisinin ek öznitelikleri</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Attributi aggiuntivi del lotto delle scorte</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Zusätzliche Attribute der Bestandscharge</value>
+    </toolTip>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="c3e2985f-86af-455a-a6d5-c7da277b2649">
+      <name>Property</name>
+      <synonym>
+        <key>en</key>
+        <value>Property</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Свойство</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Właściwość</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Propiedad</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Propiedad</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Özellik</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Proprietà</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Eigentum</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.AdditionalAttributesAndInfo</types>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>An additional attribute.</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Дополнительный реквизит.</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Dodatkowy atrybut.</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Un atributo adicional.</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Un atributo adicional.</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Ek öznitelik.</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Un attributo aggiuntivo.</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Ein zusätzliches Attribut.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="642eb6ab-c961-445d-8315-b1ed7bef5ef6">
+      <name>Value</name>
+      <synonym>
+        <key>en</key>
+        <value>Value</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Значение</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Wartość</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Valor</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Valor</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Değer</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Valore</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Wert</value>
+      </synonym>
+      <type>
+        <types>Characteristic.AdditionalAttributesAndInfo</types>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>An additional attribute value.</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Значение дополнительного реквизита.</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Wartość dodatkowego atrybutu.</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Valor del atributo adicional.</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Valor del atributo adicional.</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Ek öznitelik değeri.</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Un valore dell'attributo aggiuntivo.</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Ein zusätzlicher Attributwert.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Filter.Owner</name>
+        <field>Document.OnlineReceipt.TabularSection.AdditionalAttributes.Attribute.Property</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9d3ddc67-bc85-458d-a11c-44717215b895">
+      <name>TextString</name>
+      <synonym>
+        <key>en</key>
+        <value>Text</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Текст</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Tekst</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Texto</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Texto</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Metin</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Testo</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Text</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>The full text of an additional attribute of String type.</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Полный текст строкового дополнительного реквизита.</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Pełny tekst dodatkowego atrybutu typu Wierszowego.</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Texto completo del atributo adicional del tipo de línea.</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Texto completo del atributo adicional del tipo de línea.</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Dize tipinin ek özniteliklerinin tam metni.</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Testo integrale delle attributo aggiuntivo di tipo Stringa.</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Der Volltext eines zusätzlichen Attributs vom Zeichenkettentyp.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

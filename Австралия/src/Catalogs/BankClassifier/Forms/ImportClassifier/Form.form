@@ -1,0 +1,1757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <title>
+    <key>en</key>
+    <value>Import bank classifier</value>
+  </title>
+  <title>
+    <key>ru</key>
+    <value>Загрузить классификатор банков</value>
+  </title>
+  <title>
+    <key>pl</key>
+    <value>Import klasyfikatora banków</value>
+  </title>
+  <title>
+    <key>es_ES</key>
+    <value>Importar el clasificador bancario</value>
+  </title>
+  <title>
+    <key>es_CO</key>
+    <value>Importar el clasificador bancario</value>
+  </title>
+  <title>
+    <key>tr</key>
+    <value>Banka sınıflandırıcıyı içe aktar</value>
+  </title>
+  <title>
+    <key>it</key>
+    <value>Importazione del classificatore bancario</value>
+  </title>
+  <title>
+    <key>de</key>
+    <value>Bankklassifikator importieren</value>
+  </title>
+  <items xsi:type="form:FormGroup">
+    <name>FormPages</name>
+    <id>5</id>
+    <items xsi:type="form:FormGroup">
+      <name>PageSelectSource</name>
+      <id>6</id>
+      <items xsi:type="form:FormField">
+        <name>ImportingOption</name>
+        <id>7</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ImportingOption</segments>
+        </dataPath>
+        <titleLocation>Top</titleLocation>
+        <handlers>
+          <event>OnChange</event>
+          <name>ImportingOptionOnChange</name>
+        </handlers>
+        <extendedTooltip>
+          <name>ImportingOptionExtendedTooltip</name>
+          <id>28</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ImportingOptionContextMenu</name>
+          <id>8</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>RadioButtonField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+          <columnsCount>1</columnsCount>
+          <choiceList>
+            <presentation>
+              <key>en</key>
+              <value>From website</value>
+            </presentation>
+            <presentation>
+              <key>ru</key>
+              <value>С сайта</value>
+            </presentation>
+            <presentation>
+              <key>pl</key>
+              <value>Ze strony www</value>
+            </presentation>
+            <presentation>
+              <key>es_ES</key>
+              <value>Desde la página web</value>
+            </presentation>
+            <presentation>
+              <key>es_CO</key>
+              <value>Desde la página web</value>
+            </presentation>
+            <presentation>
+              <key>tr</key>
+              <value>Web sitesinden</value>
+            </presentation>
+            <presentation>
+              <key>it</key>
+              <value>Dal sito</value>
+            </presentation>
+            <presentation>
+              <key>de</key>
+              <value>Von der Website</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>WEB</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>en</key>
+              <value>From file</value>
+            </presentation>
+            <presentation>
+              <key>ru</key>
+              <value>Из файла</value>
+            </presentation>
+            <presentation>
+              <key>pl</key>
+              <value>Z pliku</value>
+            </presentation>
+            <presentation>
+              <key>es_ES</key>
+              <value>Desde el archivo</value>
+            </presentation>
+            <presentation>
+              <key>es_CO</key>
+              <value>Desde el archivo</value>
+            </presentation>
+            <presentation>
+              <key>tr</key>
+              <value>Dosyadan</value>
+            </presentation>
+            <presentation>
+              <key>it</key>
+              <value>Dal file</value>
+            </presentation>
+            <presentation>
+              <key>de</key>
+              <value>Aus der Datei</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>FILE</value>
+            </value>
+          </choiceList>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>PathToFile</name>
+        <id>20</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>PathToFile</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>PathToFileExtendedTooltip</name>
+          <id>29</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>PathToFileContextMenu</name>
+          <id>21</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <handlers>
+            <event>StartChoice</event>
+            <name>PathToFileStartChoice</name>
+          </handlers>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <choiceButton>true</choiceButton>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>en</key>
+        <value>Page select source</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Страница выбор источника</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Strona wybór źródła</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Fuente de selección de página</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Fuente de selección de página</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Sayfa seçim kaynağı</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Pagina Seleziona origine</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Seite Quelle wählen</value>
+      </title>
+      <toolTip>
+        <key>en</key>
+        <value>Page select source</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Страница выбор источника</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Strona wybór źródła</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Fuente de selección de página</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Fuente de selección de página</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Sayfa seçim kaynağı</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Pagina Seleziona origine</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Seite Quelle wählen</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>PageSelectSourceExtendedTooltip</name>
+        <id>27</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ImportingFromWebsite</name>
+      <id>12</id>
+      <items xsi:type="form:Decoration">
+        <name>WarningAboutImportingSite</name>
+        <id>13</id>
+        <title>
+          <key>en</key>
+          <value>The bank classifier will be loaded from website
+
+Click Import to continue.</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Банковский классификатор будет загружен с сайта
+
+Для продолжения нажмите Загрузить.</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Klasyfikator banku zostanie załadowany ze strony internetowej
+
+Kliknij przycisk Importuj, aby kontynuować.</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>El clasificador bancario se cargará desde la página web
+
+Hacer clic en Importar para continuar.</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>El clasificador bancario se cargará desde la página web
+
+Hacer clic en Importar para continuar.</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Banka sınıflandırıcı web sitesinden yüklenecektir. 
+
+Devam etmek için İçeri Aktar'ı tıklayın.</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Il classificatore banche sarà caricato dal sito internet
+
+Premere Importazione per continuare.</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Der Bankklassifikator wird von der Website geladen
+
+Klicken Sie auf Importieren, um fortzufahren.</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>WarningAboutImportingSiteExtendedTooltip</name>
+          <id>31</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>WarningAboutImportingSiteContextMenu</name>
+          <id>14</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>en</key>
+        <value>Importing from website</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Загрузка с сайта</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Importowanie ze strony www</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Importación desde la página web</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Importación desde la página web</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Web sitesinden içe aktarma</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Importazione dal sito</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Von der Website importieren</value>
+      </title>
+      <toolTip>
+        <key>en</key>
+        <value>Importing from RBK site</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Загрузка с сайта РБК</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Importowanie z witryny RBK</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Importación desde la página web de RBK</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Importación desde la página web de RBK</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>RBK sitesinden içe aktarma</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Importazione da sito RBK</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Aus RBK-Site importieren</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>ImportingFromWebsiteExtendedTooltip</name>
+        <id>30</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ImportingFromFile</name>
+      <id>45</id>
+      <items xsi:type="form:FormField">
+        <name>PathToFile1</name>
+        <id>47</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>PathToFile</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>PathToFile1ExtendedTooltip</name>
+          <id>49</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>PathToFile1ContextMenu</name>
+          <id>48</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <handlers>
+            <event>StartChoice</event>
+            <name>PathToFile1StartChoice</name>
+          </handlers>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <choiceButton>true</choiceButton>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>en</key>
+        <value>Importing from file</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Загрузка из файла</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Importowanie z pliku</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Importación desde el archivo</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Importación desde el archivo</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Dosyadan içe aktarma</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Importazione da file</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Aus Datei importieren</value>
+      </title>
+      <toolTip>
+        <key>en</key>
+        <value>Importing from file</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Загрузка из файла</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Importowanie z pliku</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Importación desde el archivo</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Importación desde el archivo</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Dosyadan içe aktarma</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Importazione da file</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Aus Datei importieren</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>ImportingFromFileExtendedTooltip</name>
+        <id>46</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>HorizontalIfPossible</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ImportingInProgress</name>
+      <id>15</id>
+      <items xsi:type="form:Decoration">
+        <name>PictureImportingInProgress</name>
+        <id>16</id>
+        <title>
+          <key>en</key>
+          <value>Picture loading in progress</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Загружается картинка</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Trwa ładowanie obrazków</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Cargando la imagen en progreso</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Cargando la imagen en progreso</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Resim yükleme sürüyor</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Immagine caricamento in corso</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Bild wird geladen</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>PictureInProgressImportExtendedTooltip</name>
+          <id>33</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>PictureInProgressImportContextMenu</name>
+          <id>17</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <width>7</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <height>3</height>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:PictureDecorationExtInfo">
+          <picture xsi:type="core:PictureRef">
+            <picture>CommonPicture.TimeConsumingOperation48</picture>
+          </picture>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Decoration">
+        <name>MessageImportingInProgress</name>
+        <id>18</id>
+        <title>
+          <key>en</key>
+          <value>The classifier is being loaded...</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Загружается классификатор</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Trwa ładowanie klasyfikatora...</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>El clasificador se está cargando...</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>El clasificador se está cargando...</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Sınıflandırıcı yükleniyor...</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Il classificatore viene caricato ...</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Der Klassifikator wird geladen...</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>LabelIsImportExtendedTooltip</name>
+          <id>34</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>LabelIsImportContextMenu</name>
+          <id>19</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <height>3</height>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>en</key>
+        <value>Importing in progress</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Загружается</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Importowanie w toku</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Importación en progreso</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Importación en progreso</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>İçe aktarma sürüyor</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Importazione in corso</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Importieren läuft</value>
+      </title>
+      <toolTip>
+        <key>en</key>
+        <value>Importing in progress</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Загружается</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Importowanie w toku</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Importación en progreso</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Importación en progreso</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>İçe aktarma sürüyor</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Importazione in corso</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Importieren läuft</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>ImportingInProgressExtendedTooltip</name>
+        <id>32</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ResultPage</name>
+      <id>9</id>
+      <items xsi:type="form:Decoration">
+        <name>ExplanationText</name>
+        <id>10</id>
+        <title>
+          <key>en</key>
+          <value>Bank classifier is loaded successfully.</value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Классификатор банков успешно загружен.</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Klasyfikator bankowy został pomyślnie załadowany.</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Clasificador bancario se ha cargado con éxito.</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Clasificador bancario se ha cargado con éxito.</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Banka sınıflandırıcı başarıyla yüklendi.</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Il Classificatore Banche viene caricato correttamente.</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Der Bank-Klassifikator wurde erfolgreich geladen.</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>InformationTextExtendedTooltip</name>
+          <id>36</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>InformationTextContextMenu</name>
+          <id>11</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <width>5</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <height>5</height>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>true</horizontalStretch>
+        <verticalStretch>true</verticalStretch>
+        <textColor xsi:type="core:ColorRef">
+          <color>Style.FormTextColor</color>
+        </textColor>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>en</key>
+        <value>Result page</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Страница результат</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Strona wyników</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Página de resultados</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Página de resultados</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Sonuç sayfası</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Pagina dei risultati</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Ergebnis-Seite</value>
+      </title>
+      <toolTip>
+        <key>en</key>
+        <value>Result page</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Страница результат</value>
+      </toolTip>
+      <toolTip>
+        <key>pl</key>
+        <value>Strona wyników</value>
+      </toolTip>
+      <toolTip>
+        <key>es_ES</key>
+        <value>Página de resultados</value>
+      </toolTip>
+      <toolTip>
+        <key>es_CO</key>
+        <value>Página de resultados</value>
+      </toolTip>
+      <toolTip>
+        <key>tr</key>
+        <value>Sonuç sayfası</value>
+      </toolTip>
+      <toolTip>
+        <key>it</key>
+        <value>Pagina dei risultati</value>
+      </toolTip>
+      <toolTip>
+        <key>de</key>
+        <value>Ergebnis-Seite</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>PageResultExtendedTooltip</name>
+        <id>35</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>en</key>
+      <value>Form pages</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Страницы формы</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Strony formularzy</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Páginas del formulario</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Páginas del formulario</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Form sayfaları</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Modulo pagine</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Formularseiten</value>
+    </title>
+    <toolTip>
+      <key>en</key>
+      <value>Form pages</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Страницы формы</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Strony formularzy</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Páginas del formulario</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Páginas del formulario</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Form sayfaları</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Modulo pagine</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Formularseiten</value>
+    </toolTip>
+    <extendedTooltip>
+      <name>FormPagesExtendedTooltip</name>
+      <id>26</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>Pages</type>
+    <extInfo xsi:type="form:PagesGroupExtInfo">
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>CommandBar</name>
+    <id>43</id>
+    <items xsi:type="form:FormGroup">
+      <name>ButtonGroupLeft</name>
+      <id>37</id>
+      <items xsi:type="form:Button">
+        <name>FormButtonBack</name>
+        <id>1</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>FormButtonBackExtendedTooltip</name>
+          <id>22</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.Command.Back</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ButtonGroupLeftExtendedTooltip</name>
+        <id>38</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>CommandBar</type>
+      <extInfo xsi:type="form:CommandBarExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ButtonGroupRight</name>
+      <id>39</id>
+      <items xsi:type="form:Button">
+        <name>FormNextButton</name>
+        <id>2</id>
+        <title>
+          <key>en</key>
+          <value>Next ></value>
+        </title>
+        <title>
+          <key>ru</key>
+          <value>Далее ></value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Dalej ></value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Siguiente ></value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Siguiente ></value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Sonraki ></value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Avanti ></value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Weiter ></value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>FormButtonNextStepExtendedTooltip</name>
+          <id>23</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.Command.GoToNext</commandName>
+        <representation>Auto</representation>
+        <defaultButton>true</defaultButton>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <items xsi:type="form:Button">
+        <name>FormCancelButton</name>
+        <id>3</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>FormButtonCancelExtendedTooltip</name>
+          <id>24</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.Command.Cancel</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ButtonGroupRightExtendedTooltip</name>
+        <id>40</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>CommandBar</type>
+      <extInfo xsi:type="form:CommandBarExtInfo">
+        <horizontalAlign>Right</horizontalAlign>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>CommandBarExtendedTooltip</name>
+      <id>44</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <commandBarLocation>Bottom</commandBarLocation>
+  <autoCommandBar>
+    <name>FormCommandBar</name>
+    <id>-1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+  </autoCommandBar>
+  <handlers>
+    <event>OnOpen</event>
+    <name>OnOpen</name>
+  </handlers>
+  <handlers>
+    <event>OnLoadDataFromSettingsAtServer</event>
+    <name>OnLoadDataFromSettingsAtServer</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <width>55</width>
+  <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
+  <autoSaveDataInSettings>Use</autoSaveDataInSettings>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <verticalScroll>UseIfNecessary</verticalScroll>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>ImportingOption</name>
+    <title>
+      <key>en</key>
+      <value>Import option</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Вариант загрузки</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Opcja importu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Opción de importar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Opción de importar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>İçe aktarma seçeneği</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Opzione di importazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Importoption</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>ImportingOption</segments>
+    </settingsSavedData>
+  </attributes>
+  <attributes>
+    <name>StorageAddress</name>
+    <title>
+      <key>en</key>
+      <value>Storage address</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Адрес хранилища</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Adres przechowywania</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Dirección del almacén</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Dirección del almacén</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Depolama adresi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Indirizzo di archiviazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Speicheradresse</value>
+    </title>
+    <id>1</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>JobID</name>
+    <title>
+      <key>en</key>
+      <value>Job ID</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Идентификатор задания</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Identyfikator zadania</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Identificador de la tarea</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Identificador de la tarea</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>İş Kimliği</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>ID attività</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Arbeits-ID</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>UUID</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>NotifyClassifierIsActual</name>
+    <title>
+      <key>en</key>
+      <value>Notify classifier is actual</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Пометить классификатор как актуальный</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Notyfikować aktualność klasyfikatora</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Notificar que el clasificador es real</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Notificar que el clasificador es real</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Sınıflandırıcıyı gerçek olarak bildir</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Comunica classificatore è reale</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Der Benachrichtigungsklassifikator ist aktuell</value>
+    </title>
+    <id>4</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>PathToFile</name>
+    <title>
+      <key>en</key>
+      <value>Path to file</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Путь к файлу</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Ścieżka do pliku</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Ruta al archivo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Ruta al archivo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dosya yolu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Percorso al file</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Pfad zur Datei</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>PathToFile</segments>
+    </settingsSavedData>
+  </attributes>
+  <formCommands>
+    <name>GoToNext</name>
+    <title>
+      <key>en</key>
+      <value>Import</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Загрузить</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Importuj</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Importar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Importar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>İçe aktar</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Importazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Import</value>
+    </title>
+    <id>1</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>GoToNext</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>Back</name>
+    <title>
+      <key>en</key>
+      <value>&lt; Back</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>&lt; Назад</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>&lt; Powrót</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>&lt; Atrás</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>&lt; Atrás</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>&lt; Geri</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>&lt; Indietro </value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>&lt; Zurück</value>
+    </title>
+    <id>2</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Back</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>Cancel</name>
+    <title>
+      <key>en</key>
+      <value>Cancel</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Отмена</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Anuluj</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Cancelar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Cancelar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>İptal et</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Annulla</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Abbrechen</value>
+    </title>
+    <id>3</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Cancel</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

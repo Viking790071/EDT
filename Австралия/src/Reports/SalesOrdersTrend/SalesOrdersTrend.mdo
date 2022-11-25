@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bc097764-d83b-47ac-9300-3cfd7973dbcc">
+  <producedTypes>
+    <objectType typeId="63f858f9-d428-42e5-9552-0b432021d34d" valueTypeId="5ec6672a-1d6d-4e1d-8129-19e0ac63e2f8"/>
+    <managerType typeId="81a541ac-a135-4a97-955e-04f49fb03daa" valueTypeId="416c6d1f-b1e5-49fd-aa27-d02764a8699c"/>
+  </producedTypes>
+  <name>SalesOrdersTrend</name>
+  <synonym>
+    <key>en</key>
+    <value>Sales orders overview</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Сводный анализ заказов покупателей</value>
+  </synonym>
+  <synonym>
+    <key>pl</key>
+    <value>Analiza zamówień sprzedaży</value>
+  </synonym>
+  <synonym>
+    <key>es_ES</key>
+    <value>Resumen de las órdenes de ventas</value>
+  </synonym>
+  <synonym>
+    <key>es_CO</key>
+    <value>Resumen de las órdenes de ventas</value>
+  </synonym>
+  <synonym>
+    <key>tr</key>
+    <value>Satış siparişlerine genel bakış</value>
+  </synonym>
+  <synonym>
+    <key>it</key>
+    <value>Panoramica ordini cliente</value>
+  </synonym>
+  <synonym>
+    <key>de</key>
+    <value>Übersicht von Kundenaufträgen</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.SalesOrdersTrend.Form.ReportForm</defaultForm>
+  <mainDataCompositionSchema>Report.SalesOrdersTrend.Template.MainDataCompositionSchema</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ReportSettingsAuxiliaryForm</defaultSettingsForm>
+  <variantsStorage>SettingsStorage.ReportsVariantsStorage</variantsStorage>
+  <attributes uuid="d2d5cd12-bedb-4449-901a-d1a1545868a4">
+    <name>FilterByShippingState</name>
+    <synonym>
+      <key>en</key>
+      <value>Shipping status</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние отгрузки</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Status wysyłki</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Estado de envío</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Estado de envío</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Nakliye durumu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Stato della spedizione</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Versandstatus</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9d61574e-2b19-4681-b792-9ac9df2534ad">
+    <name>FilterByPaymentState</name>
+    <synonym>
+      <key>en</key>
+      <value>Payment status</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Статус платежа</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Status płatności</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Estado del pago</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Estado del pago</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ödeme durumu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Stato pagamento</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Zahlungsstatus</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="33141f9b-f53f-4315-8294-519651140578">
+    <name>ReportForm</name>
+    <synonym>
+      <key>en</key>
+      <value>Report form</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Formularz sprawozdania</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Formulario de informe</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Formulario de informe</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Rapor formu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Modulo del report</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Berichtsformular</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="39502d6a-0bc1-4745-94c7-89c6cb09692b">
+    <name>MainDataCompositionSchema</name>
+    <synonym>
+      <key>en</key>
+      <value>Main data composition schema</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Podstawowy schemat komponowania danych</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Esquema de la composición de datos principales</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Esquema de la composición de datos principales</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ana veri kompozisyon şeması</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Schema principale di composizione dei dati</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Grundlegende Datengestaltungsart</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,3353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <title>
+    <key>ru</key>
+    <value>Правила для синхронизации с %1</value>
+  </title>
+  <title>
+    <key>en</key>
+    <value>Rules for synchronization with %1</value>
+  </title>
+  <title>
+    <key>pl</key>
+    <value>Reguły synchronizacji z%1</value>
+  </title>
+  <title>
+    <key>es_ES</key>
+    <value>Reglas de sincronización con %1</value>
+  </title>
+  <title>
+    <key>es_CO</key>
+    <value>Reglas de sincronización con %1</value>
+  </title>
+  <title>
+    <key>tr</key>
+    <value>%1'li senkronizasyon kuralları</value>
+  </title>
+  <title>
+    <key>it</key>
+    <value>Regole di sincronizzazione con %1</value>
+  </title>
+  <title>
+    <key>de</key>
+    <value>Synchronisationsregeln mit %1</value>
+  </title>
+  <items xsi:type="form:FormGroup">
+    <name>MainGroup</name>
+    <id>25</id>
+    <items xsi:type="form:FormField">
+      <name>RulesSource</name>
+      <id>29</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>RulesSource</segments>
+      </dataPath>
+      <titleLocation>None</titleLocation>
+      <handlers>
+        <event>OnChange</event>
+        <name>RuleSourceOnChange</name>
+      </handlers>
+      <extendedTooltip>
+        <name>RulesSourceExtendedTooltip</name>
+        <id>56</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>RulesSourceContextMenu</name>
+        <id>30</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>RadioButtonField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+        <columnsCount>1</columnsCount>
+        <choiceList>
+          <presentation>
+            <key>ru</key>
+            <value>Из конфигурации</value>
+          </presentation>
+          <presentation>
+            <key>en</key>
+            <value>Importing rules from configuration</value>
+          </presentation>
+          <presentation>
+            <key>pl</key>
+            <value>Z konfiguracji</value>
+          </presentation>
+          <presentation>
+            <key>es_ES</key>
+            <value>De la configuración</value>
+          </presentation>
+          <presentation>
+            <key>es_CO</key>
+            <value>De la configuración</value>
+          </presentation>
+          <presentation>
+            <key>tr</key>
+            <value>Yapılandırmadan</value>
+          </presentation>
+          <presentation>
+            <key>it</key>
+            <value>Importazione regole dalla configurazione</value>
+          </presentation>
+          <presentation>
+            <key>de</key>
+            <value>Regeln aus der Konfiguration importieren</value>
+          </presentation>
+          <value xsi:type="core:StringValue">
+            <value>StandardRulesFromConfiguration</value>
+          </value>
+        </choiceList>
+        <choiceList>
+          <presentation>
+            <key>ru</key>
+            <value>Из файла на компьютере</value>
+          </presentation>
+          <presentation>
+            <key>en</key>
+            <value>From file on computer</value>
+          </presentation>
+          <presentation>
+            <key>pl</key>
+            <value>Z pliku na komputerze</value>
+          </presentation>
+          <presentation>
+            <key>es_ES</key>
+            <value>Del archivo en ordenador</value>
+          </presentation>
+          <presentation>
+            <key>es_CO</key>
+            <value>Del archivo en ordenador</value>
+          </presentation>
+          <presentation>
+            <key>tr</key>
+            <value>Bilgisayardaki dosyadan</value>
+          </presentation>
+          <presentation>
+            <key>it</key>
+            <value>Da file sul computer</value>
+          </presentation>
+          <presentation>
+            <key>de</key>
+            <value>Aus der Datei auf dem Computer</value>
+          </presentation>
+          <value xsi:type="core:StringValue">
+            <value>RuelsImportedFromFile</value>
+          </value>
+        </choiceList>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>RulesSourceFile</name>
+      <id>17</id>
+      <items xsi:type="form:Button">
+        <name>ImportStandardRules</name>
+        <id>19</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <skipOnInput>true</skipOnInput>
+        <extendedTooltip>
+          <name>ImportStandardRulesExtendedTooltip</name>
+          <id>61</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualButton</type>
+        <commandName>Form.Command.ImportRules</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <height>1</height>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Источник файл</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Source file</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Źródłowy plik</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Fuente archivo</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Fuente archivo</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Kaynak dosya</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>File sorgente</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Quelldatei</value>
+      </title>
+      <groupVerticalAlign>Bottom</groupVerticalAlign>
+      <extendedTooltip>
+        <name>RulesSourceFileExtendedTooltip</name>
+        <id>63</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>HorizontalIfPossible</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Основной</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Main</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Podstawowe</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Principal</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Principal</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Genel</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Principale</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Haupt</value>
+    </title>
+    <extendedTooltip>
+      <name>MainGroupExtendedTooltip</name>
+      <id>55</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>HorizontalIfPossible</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>RulesImportInfoGroup</name>
+    <id>109</id>
+    <items xsi:type="form:Decoration">
+      <name>Decoration2</name>
+      <id>114</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>Decoration2ExtendedTooltip</name>
+        <id>116</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>Decoration2ContextMenu</name>
+        <id>115</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>Label</type>
+      <width>1</width>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </items>
+    <items xsi:type="form:Decoration">
+      <name>Decoration1</name>
+      <id>111</id>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>Decoration1ExtendedTooltip</name>
+        <id>113</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>Decoration1ContextMenu</name>
+        <id>112</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:PictureDecorationExtInfo">
+        <picture xsi:type="core:PictureRef">
+          <picture>CommonPicture.Information</picture>
+        </picture>
+      </extInfo>
+    </items>
+    <items xsi:type="form:Decoration">
+      <name>RulesImportInfoDecoration</name>
+      <id>106</id>
+      <title>
+        <key>ru</key>
+        <value>Информация о правилах</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Rules information</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Informacja o regułach</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Información de la regla</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Información de la regla</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Kural bilgileri</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Informazioni regole</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Regelinformation</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>RulesImportInfoDecorationExtendedTooltip</name>
+        <id>108</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>RulesImportInfoDecorationContextMenu</name>
+        <id>107</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>Label</type>
+      <autoMaxHeight>true</autoMaxHeight>
+      <textColor xsi:type="core:ColorRef">
+        <color>Style.NoteText</color>
+      </textColor>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <handlers>
+          <event>URLProcessing</event>
+          <name>RuleObtainInfoDecorationURLProcessing</name>
+        </handlers>
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Информация о получении правил</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Rule receipt information</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Informacja o pobieraniu reguł</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Información de recibir las reglas</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Información de recibir las reglas</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kural alma bilgileri</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Regola ricezione informazioni</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Informationen über den Erhalt der Regeln</value>
+    </title>
+    <extendedTooltip>
+      <name>RulesImportInfoGroupExtendedTooltip</name>
+      <id>110</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>HorizontalIfPossible</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>RuleSetInfoGroup</name>
+    <id>104</id>
+    <items xsi:type="form:FormField">
+      <name>RulesInformation</name>
+      <id>11</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>CommonRulesInformation</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>RulesInformationExtendedTooltip</name>
+        <id>79</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>RulesInformationContextMenu</name>
+        <id>12</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <readOnly>true</readOnly>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <height>6</height>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <multiLine>true</multiLine>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Информация о комплекте</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Set information</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Informacja o zestawie</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Información del conjunto</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Información del conjunto</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Küme bilgileri</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Imposta informazioni</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Bundle-Informationen</value>
+    </title>
+    <extendedTooltip>
+      <name>RuleSetInfoGroupExtendedTooltip</name>
+      <id>105</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <representation>NormalSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>DebugGroup</name>
+    <id>31</id>
+    <items xsi:type="form:FormField">
+      <name>EnableDebugging</name>
+      <id>88</id>
+      <title>
+        <key>ru</key>
+        <value>Включить режим отладки</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Enable debugging mode</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Włączyć tryb debugowania</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Activar el modo de depuración</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Activar el modo de depuración</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Hata ayıklamayı etkinleştir</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Abilita la modalità di debug</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Aktivieren Sie den Debug-Modus</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>DebugMode</segments>
+      </dataPath>
+      <titleLocation>Right</titleLocation>
+      <handlers>
+        <event>OnChange</event>
+        <name>EnableDebugModeOnChange</name>
+      </handlers>
+      <extendedTooltip>
+        <name>EnableDebuggingExtendedTooltip</name>
+        <id>90</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>EnableDebuggingContextMenu</name>
+        <id>89</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>DebugSettingsGroup</name>
+      <id>102</id>
+      <items xsi:type="form:Decoration">
+        <name>Decoration4</name>
+        <id>122</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>Decoration4ExtendedTooltip</name>
+          <id>124</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>Decoration4ContextMenu</name>
+          <id>123</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <width>1</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ExportImportDebugSettingsGroup</name>
+        <id>120</id>
+        <items xsi:type="form:FormGroup">
+          <name>ExportDebugGroup</name>
+          <id>38</id>
+          <items xsi:type="form:FormField">
+            <name>EnableExportDebug</name>
+            <id>32</id>
+            <title>
+              <key>ru</key>
+              <value>Подключить внешнюю обработку для отладки выгрузки</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Attach external data processor for export debug</value>
+            </title>
+            <title>
+              <key>pl</key>
+              <value>Podłącz przetwarzanie zewnętrzne do debugowania eksportowania</value>
+            </title>
+            <title>
+              <key>es_ES</key>
+              <value>Conectar procesamiento externo para depurar la subida</value>
+            </title>
+            <title>
+              <key>es_CO</key>
+              <value>Conectar procesamiento externo para depurar la subida</value>
+            </title>
+            <title>
+              <key>tr</key>
+              <value>Dışa aktarma ayıklaması için dış işlemeyi bağla</value>
+            </title>
+            <title>
+              <key>it</key>
+              <value>Allegata processore dati esterno per debug esportazione</value>
+            </title>
+            <title>
+              <key>de</key>
+              <value>Aktivieren Sie die externe Bearbeitung zum Debuggen von Uploads</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>ExportDebugMode</segments>
+            </dataPath>
+            <titleLocation>Right</titleLocation>
+            <handlers>
+              <event>OnChange</event>
+              <name>EnableExportDebuggingOnChange</name>
+            </handlers>
+            <extendedTooltip>
+              <name>EnableExportDebugExtendedTooltip</name>
+              <id>70</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>EnableExportDebugContextMenu</name>
+              <id>33</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>ExternalDataProcessorForExportDebug</name>
+            <id>40</id>
+            <visible>true</visible>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>ExportDebuggingDataProcessorFileName</segments>
+            </dataPath>
+            <titleLocation>None</titleLocation>
+            <extendedTooltip>
+              <name>ExternalDataProcessorForExportDebugExtendedTooltip</name>
+              <id>71</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ExternalDataProcessorForExportDebugContextMenu</name>
+              <id>41</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <handlers>
+                <event>StartChoice</event>
+                <name>ExternalDataProcessorForExportDebugStartChoice</name>
+              </handlers>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <choiceButton>true</choiceButton>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Отладки выгрузки</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Export debug</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Debugowania eksportowania</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Depuraciones de subida</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Depuraciones de subida</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Dışa aktarma ayarları</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Debug esportazione</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Debuggen beim Hochladen</value>
+          </title>
+          <extendedTooltip>
+            <name>ExportDebugGroupExtendedTooltip</name>
+            <id>69</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>Vertical</group>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ImportDebugGroup</name>
+          <id>39</id>
+          <items xsi:type="form:FormField">
+            <name>EnableImportDebug</name>
+            <id>34</id>
+            <title>
+              <key>ru</key>
+              <value>Подключить внешнюю обработку для отладки загрузки</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Attach external data processor for import debug</value>
+            </title>
+            <title>
+              <key>pl</key>
+              <value>Podłącz zewnętrzne opracowanie w celu debugowania importu</value>
+            </title>
+            <title>
+              <key>es_ES</key>
+              <value>Conectar el procesador de datos externo para importar la depuración</value>
+            </title>
+            <title>
+              <key>es_CO</key>
+              <value>Conectar el procesador de datos externo para importar la depuración</value>
+            </title>
+            <title>
+              <key>tr</key>
+              <value>İçe aktarma hatalarının ayıklanması için harici veri işlemci bağla</value>
+            </title>
+            <title>
+              <key>it</key>
+              <value>Allega elaboratore dati esterni per debug importazione</value>
+            </title>
+            <title>
+              <key>de</key>
+              <value>Schließen Sie einen externen Datenprozessor für das Import-Debugging an</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>ImportDebugMode</segments>
+            </dataPath>
+            <titleLocation>Right</titleLocation>
+            <handlers>
+              <event>OnChange</event>
+              <name>EnableImportDebuggingOnChange</name>
+            </handlers>
+            <extendedTooltip>
+              <name>EnableImportDebugExtendedTooltip</name>
+              <id>73</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>EnableImportDebugContextMenu</name>
+              <id>35</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>ExternalDataProcessorForImportDebug</name>
+            <id>36</id>
+            <visible>true</visible>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>ImportDebuggingDataProcessorFileName</segments>
+            </dataPath>
+            <titleLocation>None</titleLocation>
+            <extendedTooltip>
+              <name>ExternalDataProcessorForImportDebugExtendedTooltip</name>
+              <id>74</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ExternalDataProcessorForImportDebugContextMenu</name>
+              <id>37</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <handlers>
+                <event>StartChoice</event>
+                <name>ExternalDataProcessorForImportDebugStartChoice</name>
+              </handlers>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <choiceButton>true</choiceButton>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Отладки загрузки</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Import debugging</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Debugowania pobierania</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Depuración de descarga</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Depuración de descarga</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>İçe aktarma ayıklama</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Importazione debugging</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Debug-Downloads</value>
+          </title>
+          <extendedTooltip>
+            <name>ImportDebugGroupExtendedTooltip</name>
+            <id>72</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>Vertical</group>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ProtocolGroup</name>
+          <id>42</id>
+          <items xsi:type="form:FormField">
+            <name>EnableDataExchangeLogging</name>
+            <id>43</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>DataExchangeLoggingMode</segments>
+            </dataPath>
+            <titleLocation>Right</titleLocation>
+            <handlers>
+              <event>OnChange</event>
+              <name>EnableDataExchangeProtocolgingOnChange</name>
+            </handlers>
+            <extendedTooltip>
+              <name>EnableDataExchangeLoggingExtendedTooltip</name>
+              <id>76</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>EnableDataExchangeLoggingContextMenu</name>
+              <id>44</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>ExchangeProtocolFile</name>
+            <id>45</id>
+            <visible>true</visible>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>ExchangeProtocolFileName</segments>
+            </dataPath>
+            <titleLocation>None</titleLocation>
+            <extendedTooltip>
+              <name>ExchangeProtocolFileExtendedTooltip</name>
+              <id>77</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ExchangeProtocolFileContextMenu</name>
+              <id>46</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <handlers>
+                <event>StartChoice</event>
+                <name>ExchangeProtocolFileStartChoice</name>
+              </handlers>
+              <handlers>
+                <event>Opening</event>
+                <name>ExchangeProtocolFileOpening</name>
+              </handlers>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <choiceButton>true</choiceButton>
+              <openButton>true</openButton>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Протокол</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Protocol</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Protokół</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>Protocolo</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>Protocolo</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Protokol</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Protocollo</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Protokoll</value>
+          </title>
+          <extendedTooltip>
+            <name>ProtocolGroupExtendedTooltip</name>
+            <id>75</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>Vertical</group>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>DoNotStopOnError</name>
+          <id>47</id>
+          <title>
+            <key>ru</key>
+            <value>Не останавливать выполнение обмена данными при возникновении ошибки</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Do not stop data exchange execution if errors occurred</value>
+          </title>
+          <title>
+            <key>pl</key>
+            <value>Nie przerywać wymiany danych przy wystąpieniu błędu</value>
+          </title>
+          <title>
+            <key>es_ES</key>
+            <value>No parar el intercambio de datos si ocurre un error</value>
+          </title>
+          <title>
+            <key>es_CO</key>
+            <value>No parar el intercambio de datos si ocurre un error</value>
+          </title>
+          <title>
+            <key>tr</key>
+            <value>Hata meydana veri değişimini gelirse durdurma</value>
+          </title>
+          <title>
+            <key>it</key>
+            <value>Non bloccare l'esecuzione scambio dati se un si registra un errore</value>
+          </title>
+          <title>
+            <key>de</key>
+            <value>Hören Sie nicht auf, Daten auszutauschen, wenn ein Fehler auftritt</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>DoNotStopOnError</segments>
+          </dataPath>
+          <titleLocation>Right</titleLocation>
+          <handlers>
+            <event>OnChange</event>
+            <name>DoNotStopOnErrorOnChange</name>
+          </handlers>
+          <extendedTooltip>
+            <name>DontStopIfErrorOccuresExtendedTooltip</name>
+            <id>78</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>DontStopIfErrorOccuresContextMenu</name>
+            <id>48</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Настройки отладки выгрузки загрузки</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Settings of import export debugging</value>
+        </title>
+        <title>
+          <key>pl</key>
+          <value>Ustawienia debugowania eksportowania pobierania</value>
+        </title>
+        <title>
+          <key>es_ES</key>
+          <value>Ajustes de depuración de subida descarga</value>
+        </title>
+        <title>
+          <key>es_CO</key>
+          <value>Ajustes de depuración de subida descarga</value>
+        </title>
+        <title>
+          <key>tr</key>
+          <value>Dışa aktarma içe aktarma ayıklama ayarları</value>
+        </title>
+        <title>
+          <key>it</key>
+          <value>Impostazioni di debug import export</value>
+        </title>
+        <title>
+          <key>de</key>
+          <value>Debugging-Einstellungen hochladen herunterladen</value>
+        </title>
+        <extendedTooltip>
+          <name>ExportImportDebugSettingsGroupExtendedTooltip</name>
+          <id>121</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Настройки отладки</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Debug settings</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Ustawienia debugowania</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Ajustes de depuración</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Ajustes de depuración</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Ayıklama ayarları</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Impostazioni Debug</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Debug-Einstellungen</value>
+      </title>
+      <extendedTooltip>
+        <name>DebugSettingsGroupExtendedTooltip</name>
+        <id>103</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>HorizontalIfPossible</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Настройка режима отладки</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Debugging mode setup</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Ustawienia trybu debugowania</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Ajuste del modo de depuración</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Ajuste del modo de depuración</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Ayıklama modu ayarları</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Impostazione modalità di debug</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Einstellen des Debug-Modus</value>
+    </title>
+    <extendedTooltip>
+      <name>DebugGroupExtendedTooltip</name>
+      <id>68</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <behavior>Collapsible</behavior>
+      <collapsed>true</collapsed>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>AdvancedGroup</name>
+    <id>18</id>
+    <items xsi:type="form:FormField">
+      <name>UseSelectiveObjectRegistrationFilter</name>
+      <id>13</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>UseSelectiveObjectRegistrationFilter</segments>
+      </dataPath>
+      <titleLocation>Right</titleLocation>
+      <extendedTooltip>
+        <name>UseSelectiveObjectsRegistrationFilterExtendedTooltip</name>
+        <id>81</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>UseSelectiveObjectsRegistrationFilterContextMenu</name>
+        <id>14</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible/>
+    <title>
+      <key>ru</key>
+      <value>Дополнительно</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>More</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Więcej</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Más</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Más</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Daha fazla</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Di Più</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Mehr</value>
+    </title>
+    <extendedTooltip>
+      <name>AdvancedGroupExtendedTooltip</name>
+      <id>80</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>HorizontalIfPossible</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <slaveItemsWidth>LeftWidest</slaveItemsWidth>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <commandBarLocation>Top</commandBarLocation>
+  <autoCommandBar>
+    <name>CommandBarForm</name>
+    <id>-1</id>
+    <items xsi:type="form:Button">
+      <name>FormWriteAndClose</name>
+      <id>82</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormWriteAndCloseExtendedTooltip</name>
+        <id>83</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.WriteAndClose</commandName>
+      <representation>Auto</representation>
+      <defaultButton>true</defaultButton>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>FormWrite</name>
+      <id>84</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormWriteExtendedTooltip</name>
+        <id>85</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>0:fe558fde-99b3-45d0-a060-9fc2905309f6</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>FormRefresh</name>
+      <id>50</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormRefreshExtendedTooltip</name>
+        <id>52</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>0:1f317795-c420-4a30-b594-c492abc55f7a</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+      <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
+    </items>
+    <items xsi:type="form:Button">
+      <name>FormDelete</name>
+      <id>86</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormDeleteExtendedTooltip</name>
+        <id>87</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>0:c32d43de-b820-49d0-bf7a-d70829f48f40</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>SaveRulesToFile</name>
+      <id>20</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <skipOnInput>true</skipOnInput>
+      <extendedTooltip>
+        <name>SaveRulesToFileExtendedTooltip</name>
+        <id>62</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.SaveConversionRulesToFile</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+      <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <handlers>
+    <event>OnOpen</event>
+    <name>OnOpen</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>RegistrationRulesInformation</name>
+    <title>
+      <key>ru</key>
+      <value>Информация о правилах регистрации</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Information about registration rules</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Informacja o regułach rejestracji</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Información sobre las reglas de registro</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Información sobre las reglas de registro</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kayıt kuralları bilgileri</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Informazioni sulle regole di registrazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Informationen zu Registrierungsregeln</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ConversionRuleSource</name>
+    <title>
+      <key>ru</key>
+      <value>Источник правил конвертации</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Conversion rule source</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Źródło reguł konwersji</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Fuente de las reglas de conversión</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Fuente de las reglas de conversión</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dönüşüm kuralları kaynağı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Fonte della regola di conversione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Quelle der Konvertierungsregeln</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>EnumRef.DataExchangeRulesSources</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>DataExchangeRuleImportEventLogEvent</name>
+    <title>
+      <key>ru</key>
+      <value>Событие журнала регистрации загрузка правил для обмена данными</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Event log message text of data exchange rule loading</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wydarzenia w rejestrze import reguł wymiany danych</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Importación de las reglas del intercambio de datos del evento del registro de eventos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Importación de las reglas del intercambio de datos del evento del registro de eventos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Veri değişim kuralı yüklemenin olay günlüğü mesaj metni</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Messaggi di testo del registro eventi del caricamento regole di scambio dati</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Ereignisprotokolldatenaustauschregeln importieren</value>
+    </title>
+    <id>4</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ExchangePlanName</name>
+    <title>
+      <key>ru</key>
+      <value>Имя плана обмена</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Exchange plan name</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Imię planu wymiany</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Nombre del plan de intercambio</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Nombre del plan de intercambio</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Değişim planı adı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Nome del piano di scambio</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Name des Austauschplans</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ConversionRuleTemplateName</name>
+    <title>
+      <key>ru</key>
+      <value>Имя макета правил конвертации</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Conversion rule template name</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Nazwa szablonu reguł konwersji</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Nombre del modelo de las reglas de conversión</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Nombre del modelo de las reglas de conversión</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dönüşüm kuralları şablonu ismi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Regola di conversione nome template</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Name der Vorlage für die Konvertierungsregeln</value>
+    </title>
+    <id>6</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ConversionRuleFileName</name>
+    <title>
+      <key>ru</key>
+      <value>Имя файла правил конвертации</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Conversion rule file name</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Nazwa pliku reguł konwersji</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Nombre del archivo de la regla de conversión</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Nombre del archivo de la regla de conversión</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dönüşüm kuralı dosyasının ismi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Nome file regola di conversione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Name der Konvertierungsregeldatei</value>
+    </title>
+    <id>7</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>DebugMode</name>
+    <title>
+      <key>ru</key>
+      <value>Режим отладки</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Debug mode</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Tryb debugowania</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Modo de depuración</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Modo de depuración</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Hata ayıklama modu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Modalità di debug</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Fehlersuche-Modus</value>
+    </title>
+    <id>8</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>UseSelectiveObjectRegistrationFilter</name>
+    <title>
+      <key>ru</key>
+      <value>Использовать фильтр выборочной регистрации объектов</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Use selective object change record filter</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Użyć filtr wyrywkowej rejestracji obiektów</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Utilizar el filtro de registro del objeto selectivo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Utilizar el filtro de registro del objeto selectivo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Seçmeli nesne değişiklik kayıt filtresini kullan</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Utilizza filtro per modifica selettiva registrazioni oggetto</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Verwenden Sie den selektiven Objektregistrierungsfilter</value>
+    </title>
+    <id>9</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>DoNotStopOnError</name>
+    <title>
+      <key>ru</key>
+      <value>Не останавливать по ошибке</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Do not stop if error occurs</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Nie zatrzymywać przy wystąpieniu błędu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>No parar si ocurre un error</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>No parar si ocurre un error</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Hata meydana gelirse durma</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Non fermarsi, se si verifica un errore</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Stoppen Sie nicht, wenn ein Fehler auftritt</value>
+    </title>
+    <id>10</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>DataExchangeLoggingMode</name>
+    <title>
+      <key>ru</key>
+      <value>Режим протоколирования обмена данными</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Data exchange logging mode</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Tryb rejestrowania wymiany danych</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Modo de inicio de sesión del intercambio de datos</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Modo de inicio de sesión del intercambio de datos</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Veri değişimi kayıt modu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Modalità di registrazione Scambio di dati</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Protokollierungsmodus für den Datenaustausch</value>
+    </title>
+    <id>11</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ImportDebugMode</name>
+    <title>
+      <key>ru</key>
+      <value>Режим отладки загрузки</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Import debugging mode</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Tryb debugowania importu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Importar el modo debug</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Importar el modo debug</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Hata ayıklama modunu içe aktar</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Modalità di debug dell'importazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Importieren Sie den Debugging-Modus</value>
+    </title>
+    <id>12</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ExportDebugMode</name>
+    <title>
+      <key>ru</key>
+      <value>Режим отладки выгрузки</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Export debugging mode</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Tryb debugowanie eksportowania</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Modo de depurar la subida</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Modo de depurar la subida</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dışa aktarma ayıklama modu</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Modalità esportazione debugging</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Debug-Modus herunterladen</value>
+    </title>
+    <id>13</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ExportDebuggingDataProcessorFileName</name>
+    <title>
+      <key>ru</key>
+      <value>Имя файла обработки для отладки выгрузки</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>File name of the external data processor for export debugging</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Dane pliku przetwarzania do debugowania eksportu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Nombre del archivo del procesador de datos para exportar la depuración</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Nombre del archivo del procesador de datos para exportar la depuración</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dışa aktarma hatalarının ayıklanması için veri işlemci dosya adı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Nome file dell'elaboratore dati esterno per il debug esportazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Dateiname des Datenprozessors für das Export-Debugging</value>
+    </title>
+    <id>14</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ImportDebuggingDataProcessorFileName</name>
+    <title>
+      <key>ru</key>
+      <value>Имя файла обработки для отладки загрузки</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>File name of the external data processor for import debugging</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Nazwa pliku przetwarzania do debugowania importu</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Nombre del archivo del procesador de datos para la depuración de la importación</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Nombre del archivo del procesador de datos para la depuración de la importación</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>İçe aktarma hata ayıklaması için veri işlemci dosyası adı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Nome file dell'elaboratore dati esterno per il debug importazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Name der Datenprozessordatei für das Import-Debugging</value>
+    </title>
+    <id>15</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ExchangeProtocolFileName</name>
+    <title>
+      <key>ru</key>
+      <value>Имя файла протокола обмена</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Name of file with exchange log</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Nazwa pliku protokołu wymiany</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Nombre del archivo con el protocolo de intercambio</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Nombre del archivo con el protocolo de intercambio</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Değişim protokollü dosyanın adı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Nome del file con registro di scambio</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Name der Datei mit Austauschprotokoll</value>
+    </title>
+    <id>16</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>RegistrationRuleTemplateName</name>
+    <title>
+      <key>ru</key>
+      <value>Имя макета правил</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Rules template name</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Nazwa szablonu reguł</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Nombre del modelo de la regla</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Nombre del modelo de la regla</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kural şablonu ismi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Regole nome template</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Name der Regelvorlage</value>
+    </title>
+    <id>17</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>RegistrationRuleFileName</name>
+    <title>
+      <key>ru</key>
+      <value>Имя файла правил</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Rule file name</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Nazwa pliku reguł</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Nombre del archivo de la regla</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Nombre del archivo de la regla</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kural dosyası adı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Nome del file delle regole</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Regeldateiname</value>
+    </title>
+    <id>18</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ConversionRulesInformation</name>
+    <title>
+      <key>ru</key>
+      <value>Информация о правилах</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Rules information</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Informacja o regułach</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Información de la regla</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Información de la regla</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kural bilgileri</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Informazioni regole</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Regelinformation</value>
+    </title>
+    <id>19</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>RegistrationRuleSource</name>
+    <title>
+      <key>ru</key>
+      <value>Источник правил</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Rule source</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Źródło reguł</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Fuente de la regla</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Fuente de la regla</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kural kaynağı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Fonte regola</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Regelquelle</value>
+    </title>
+    <id>20</id>
+    <valueType>
+      <types>EnumRef.DataExchangeRulesSources</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>CommonRulesInformation</name>
+    <title>
+      <key>ru</key>
+      <value>Информация о комплекте правил</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Information about rule set</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Informacja o zestawie reguł</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Información sobre el conjunto de reglas</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Información sobre el conjunto de reglas</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Ayarlanan kuralların bilgileri</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Informazioni sul set di regole</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Informationen zu festgelegten Regeln</value>
+    </title>
+    <id>21</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>RulesSource</name>
+    <title>
+      <key>ru</key>
+      <value>Источник правил</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Rule source</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Źródło reguł</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Fuente de la regla</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Fuente de la regla</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kural kaynağı</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Fonte regola</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Regelquelle</value>
+    </title>
+    <id>22</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>CorrespondentRuleTemplateName</name>
+    <title>
+      <key>ru</key>
+      <value>Имя макета правил конвертации</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Conversion rule template name</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Nazwa szablonu reguł konwersji</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Nombre del modelo de las reglas de conversión</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Nombre del modelo de las reglas de conversión</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dönüşüm kuralları şablonu ismi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Regola di conversione nome template</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Name der Vorlage für die Konvertierungsregeln</value>
+    </title>
+    <id>23</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>RulesFileName</name>
+    <title>
+      <key>ru</key>
+      <value>Имя файла правил конвертации</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Conversion rule file name</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Nazwa pliku reguł konwersji</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Nombre del archivo de la regla de conversión</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Nombre del archivo de la regla de conversión</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dönüşüm kuralı dosyasının ismi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Nome file regola di conversione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Name der Konvertierungsregeldatei</value>
+    </title>
+    <id>24</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>RuleSetLocation</name>
+    <title>
+      <key>ru</key>
+      <value>Расположение комплекта правил</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Rule set location</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Lokalizacja zestawu reguł</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Ubicación del conjunto de reglas</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Ubicación del conjunto de reglas</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kuralları seti yeri</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Posizione dell'insieme di regole</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Regelsatz Standort</value>
+    </title>
+    <id>1</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ApplicationName</name>
+    <title>
+      <key>ru</key>
+      <value>Имя программы</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Application name</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Imię aplikacji</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Nombre de aplicación</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Nombre de aplicación</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Uygulama ismi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Nome dell'applicazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Anwendungsname</value>
+    </title>
+    <id>25</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>DebuggingSettingsChanged</name>
+    <title>
+      <key>ru</key>
+      <value>Изменены настройки режима отладки</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Debug mode settings were changed</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zmiany ustawienia trybu debugowania</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Ajustes cambiados del modo de depuración</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Ajustes cambiados del modo de depuración</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Ayıklama modun ayarları değiştirildi</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Le impostazioni della modalità debug sono state modificate</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Einstellungen für den Debug-Modus geändert</value>
+    </title>
+    <id>26</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>ImportRules</name>
+    <title>
+      <key>ru</key>
+      <value>Загрузить</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Import</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Importuj</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Importar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Importar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>İçe aktar</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Importazione</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Herunterladen</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Загрузить правила</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Import rules</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Załaduj regóły</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Importar las reglas</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Importar las reglas</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Kuralları içe aktar</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Importare regole</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Regeln importieren</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.OpenFile</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ImportRules</name>
+      </handler>
+    </action>
+    <representation>TextPicture</representation>
+    <modifiesStoredData>true</modifiesStoredData>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>SaveConversionRulesToFile</name>
+    <title>
+      <key>ru</key>
+      <value>Сохранить правила в файл ...</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Save rules to file ...</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zapisz reguły do pliku...</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Guardar las reglas al archivo...</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Guardar las reglas al archivo...</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Dosyaya kuralları kaydet...</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Salva regole nel file ...</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Speichere Regeln in Datei ...</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Сохранить комплект правил синхронизации данных в файл</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Save data synchronization rule set to file</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zapisz zestaw reguł synchronizacji danych do pliku</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Guardar el conjunto de reglas de la sincronización de datos al archivo</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Guardar el conjunto de reglas de la sincronización de datos al archivo</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Veri senkronizasyonu kurallarını dosyaya kaydet</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Salvare set regole sincronizzazioni dati su file</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Speichern Sie die Datensynchronisierungsregeln in Datei</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>UnloadRules</name>
+      </handler>
+    </action>
+    <representation>TextPicture</representation>
+    <modifiesStoredData>true</modifiesStoredData>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>WriteAndClose</name>
+    <title>
+      <key>ru</key>
+      <value>Записать и закрыть</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Save and close</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zapisz i zamknij</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Guardar y cerrar</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Guardar y cerrar</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Sakla ve kapat</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Salva e chiudi</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Speichern und schließen</value>
+    </title>
+    <id>3</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Записать и закрыть</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Save and close</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Zapisz i zamknij</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Guardar y cerrar</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Guardar y cerrar</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Sakla ve kapat</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Salva e chiudi</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Speichern und schließen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.WriteAndClose</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>WriteAndClose</name>
+      </handler>
+    </action>
+    <representation>Text</representation>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <parameters>
+    <name>ExchangePlanName</name>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+  </parameters>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

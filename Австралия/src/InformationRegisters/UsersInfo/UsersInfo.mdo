@@ -1,0 +1,1178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fc67b510-3fb4-4305-92d2-c252bc718f03">
+  <producedTypes>
+    <selectionType typeId="814db9b6-8d2b-4c91-9b25-b1dbf97282bc" valueTypeId="a912c014-c5e1-4606-a864-1a825de012b1"/>
+    <listType typeId="2716daa6-eb25-4f29-b29a-58bd23dcc68b" valueTypeId="c279c9b1-183d-45de-a288-16fb0e42d482"/>
+    <managerType typeId="ec61c35d-2e53-4567-811a-3c8750b1cabe" valueTypeId="6d02e1f6-cf53-4f51-8250-5bb2dbf60054"/>
+    <recordSetType typeId="6033b3a9-db49-44d7-b3b5-98be26499cde" valueTypeId="d229a9ed-8a1b-4c4f-8004-e1051ff6d84d"/>
+    <recordKeyType typeId="5bfb0f41-01d6-4744-a712-e974e894ffb4" valueTypeId="333d33d4-00a1-4169-930a-3060076a615d"/>
+    <recordType typeId="978d97cd-1540-4703-b404-27f6f302a43f" valueTypeId="3e24aa34-c14c-41dc-8cbf-f81114131c0f"/>
+    <recordManagerType typeId="355e26e5-4200-4559-961e-6f1ca5da5cbf" valueTypeId="f2a14896-6d7a-4e06-ad0b-5fbbd63bee53"/>
+  </producedTypes>
+  <name>UsersInfo</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сведения о пользователях</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>User details</value>
+  </synonym>
+  <synonym>
+    <key>pl</key>
+    <value>Dane użytkownika</value>
+  </synonym>
+  <synonym>
+    <key>es_ES</key>
+    <value>Detalles del usuario</value>
+  </synonym>
+  <synonym>
+    <key>es_CO</key>
+    <value>Detalles del usuario</value>
+  </synonym>
+  <synonym>
+    <key>tr</key>
+    <value>Kullanıcı ayrıntıları</value>
+  </synonym>
+  <synonym>
+    <key>it</key>
+    <value>Dettagli utente</value>
+  </synonym>
+  <synonym>
+    <key>de</key>
+    <value>Benutzerdetails</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.UsersInfo.Form.RecordForm</defaultRecordForm>
+  <defaultListForm>InformationRegister.UsersInfo.Form.ListForm</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="ed98a7b2-ad31-401f-a65e-dfbcc8e5a4a8">
+    <name>UserMustChangePasswordOnAuthorization</name>
+    <synonym>
+      <key>ru</key>
+      <value>Потребовать смену пароля при входе</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Require password change upon authorization</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Wymagaj zmiany hasła po zalogowaniu</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Requerir el cambio de la contraseña al entrar</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Requerir el cambio de la contraseña al entrar</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Oturum açma sırasında şifre değişikliği talep et</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Richiedi la modifica della password dopo l'autorizzazione</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Passwortänderung bei der Anmeldung anfordern</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Потребовать от пользователя
+сменить пароль при входе.
+
+Устанавливается в карточке пользователя.
+Сбрасывается при смене пароля при входе.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>The user must change their password
+when they sign in.
+
+You can change this option in the user profile.
+When the user changes the password, this setting is cleared.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Wymagaj od użytkownika 
+ zmiany hasła przy zalogowaniu. 
+
+ Jest ustawiane w karcie użytkownika. 
+ Jest resetowane przy zmianie hasła przy zalogowaniu.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Requerir del usuario
+que cambie la contraseña al entrar.
+
+Se especifica en la tarjeta de usuario.
+Se restablece al cambiar la contraseña al entrar.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Requerir del usuario
+que cambie la contraseña al entrar.
+
+Se especifica en la tarjeta de usuario.
+Se restablece al cambiar la contraseña al entrar.</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Kullanıcı giriş yaptığında
+şifresini değiştirmelidir.
+
+Bu seçeneği kullanıcı profilinde değiştirebilirsiniz.
+Kullanıcı şifresini değiştirdiğinde bu ayar sıfırlanır.</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>L'utente deve modificare la password
+all'accesso.
+
+Potete modificare questa opzione nel profilo utente.
+Quando l'utente modifica la passoword, questa impostazione è annullata.</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Die Benutzer müssen ihr Passwort
+ändern, wenn sie sich anmelden.
+
+Sie können diese Option im Benutzerprofil ändern.
+Wenn der Benutzer das Passwort ändert, wird diese Einstellung gelöscht.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9a5e3d2c-ab69-4f9d-a56f-20bb5f0be1e2">
+    <name>UnlimitedValidityPeriod</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок действия не ограничен</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Password never expires</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Hasło nigdy nie wygasa</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Fecha de vigencia no limitada</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Fecha de vigencia no limitada</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Parola her zaman geçerli olsun</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>La password non scade mai</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Gültigkeitsdauer unbegrenzt</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Отменяет все ограничения по срокам действия.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Password never expires.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Hasło nigdy nie wygasa</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Cancela todas las restricciones por períodos de validez.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Cancela todas las restricciones por períodos de validez.</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Parola geçerlilik süresi dolmaz.</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>La password non scade mai.</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Hebt alle Beschränkungen der Gültigkeitsdauer auf.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="cf1f7915-94ad-47e7-8676-73271d0cf71e">
+    <name>ValidityPeriod</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок действия</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Expires on</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Termin ważności</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Período de validez</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Período de validez</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Geçerlilik sonu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Scade il</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Gültigkeitsdauer</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Срок, начиная с которого, пользователю
+будет запрещен вход в программу.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>The date user authorization
+will be denied.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Termin, zaczynając z którego użytkownikowi 
+ będzie zakazane wejście do programu.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Período desde el que al usuario
+se le prohibirá la entrada en el programa.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Período desde el que al usuario
+se le prohibirá la entrada en el programa.</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Kullanıcı girişinin
+engelleneceği tarih.</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>La data in cui l'autorizzazione utente
+sarà vietata.</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Der Zeitraum, ab dem dem dem Benutzer
+der Zugang zum Programm verwehrt wird.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="fceb6e4a-bd51-4193-a542-70d2317af669">
+    <name>InactivityPeriodBeforeDenyingAuthorization</name>
+    <synonym>
+      <key>ru</key>
+      <value>Просрочка работы в программе до запрещения входа</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Inactivity period before denying authorization</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Okres bezczynności przed odmową autoryzacji</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Caducidad del uso del programa antes de prohibir la entrada</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Caducidad del uso del programa antes de prohibir la entrada</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Programdan çıkarmadan önce eylemsiz geçen süre</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Periodo di inattività prima di negare l'autorizzazione</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Verzögerte Arbeit im Programm, bevor der Zugang verweigert wird</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Срок относительно последней активности пользователя,
+после которого вход в программу будет запрещен.
+
+Когда указан, используется вместо аналогичного параметра,
+указанного для всех пользователей (внешних пользователей).</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>The period since the latest activity of the user,
+after which the user will be denied authorization.
+
+When it is set, it supersedes the equivalent parameter
+applied to all users (or external users).</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Termin w stosunku do ostatniej aktywności użytkownika 
+ po którym wejście do programu będzie zabronione. 
+
+ Kiedy jest ustawiony, używa się zamiast analogicznego parametru, 
+ ustawionego dla wszystkich użytkowników (zewnętrznych użytkowników).</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Período de la última actividad relativa de usuario
+después del que la entrada en el programa será prohibida.
+
+Cuando está indicado se usa en vez del parámetro analógico
+indicado para todos los usuarios (de los usuarios externos).</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Período de la última actividad relativa de usuario
+después del que la entrada en el programa será prohibida.
+
+Cuando está indicado se usa en vez del parámetro analógico
+indicado para todos los usuarios (de los usuarios externos).</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Kullanıcının son etkinliğinden sonra geçen süre;
+bu süre sonunda kullanıcı programdan çıkarılır.
+
+Bu süre ayarlandığında, tüm kullanıcılara (veya harici kullanıcılara)
+uygulanan eşdeğer parametrenin yerini alır.</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Il termine relativo all'ultima attività dell'utente, 
+ dopo il quale non sarà permesso accedere al programma. 
+
+ quando indicato, sostituisce il parametro analogo, 
+indicato per tutti gli utenti (utenti esterni).</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Der Zeitraum, in dem der Zugriff auf das Programm nach der letzten Aktivität des Benutzers
+verboten wird.
+
+Wenn angegeben, wird er anstelle des gleichen Parameters verwendet,
+der für alle Benutzer (externe Benutzer) angegeben ist.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f9f991a6-ddf3-4953-8a1f-e6c0e1a7f4e9">
+    <name>AuthorizationAllowedDate</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата разрешения входа в программу</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Authorization allowed on</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Data pozwolenia wejścia do programu</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Fecha de permitir la entrada en el programa</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Fecha de permitir la entrada en el programa</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Programa girişin izin verildiği tarih</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Autorizzazione concessa il</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Datum der Berechtigung zum Eintritt in das Programm</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата последней установки флажка
+Вход в программу разрешен.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>The latest date when 
+the &quot;Can sign in&quot; option was set.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Data ostatniego dodania zaznaczenia 
+Wejście do programu jest dozwolone.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Fecha de la última marca de la casilla
+Entrada en el programa permitida.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Fecha de la última marca de la casilla
+Entrada en el programa permitida.</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>&quot;Oturum açabilir&quot; seçeneğinin 
+ayarlandığı en son tarih.</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>L'ultima data in cui
+l'opzione &quot;Può accedere&quot; è stata impostata.</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Das Datum der letzten Installation des Kontrollkästchens
+Login zum Programm ist erlaubt.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="80847d57-1795-46c7-a106-926e1f43ac1e">
+    <name>LastActivityDate</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата последней активности</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Last active on</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Data ostatniej aktywności</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Fecha de la última actividad</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Fecha de la última actividad</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Son etkinlik tarihi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Ultima volta attivo il</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Datum der letzten Aktivität</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата последней активности
+пользователя в программе.
+
+Обновляется при входе и затем каждые 20 минут, если изменилась.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>The date of the latest activity
+of the user in the application.
+
+It is updated when the user signs in, and then every 20 minutes.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Data ostatniej aktywności
+użytkownika w aplikacji.
+
+Jest aktualizowana po zalogowaniu się użytkownika, a następnie co 20 minut.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Fecha de la última actividad
+de usuario en el programa.
+
+Se actualiza al entrar y después cada 20 minutos si se ha cambiado.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Fecha de la última actividad
+de usuario en el programa.
+
+Se actualiza al entrar y después cada 20 minutos si se ha cambiado.</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Kullanıcının uygulamadaki
+son faaliyetinin tarihi.
+
+Kullanıcı oturum açtığında ve ardından her 20 dakikada bir güncellenir.</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Data e orario dell'ultima attività
+dell'utente nel programma.
+
+E' aggiornata quando l'utente accede e dopo ogni 20 minuti.</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Datum der letzten
+Benutzeraktivität in der Anwendung.
+
+Es wird beim Einloggen und dann alle 20 Minuten aktualisiert, wenn es sich geändert hat.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="38685415-dc87-48b4-8cc4-f85b438f2ec2">
+    <name>AutomaticAuthorizationProhibitionDate</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата автоматического запрещения входа</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Authorization automatically denied on</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Data automatycznego zakazu wejścia</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Fecha de la prohibición automática de la entrada</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Fecha de la prohibición automática de la entrada</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Otomatik giriş yasaklama tarihi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Autorizzazione vietata automaticamente il</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Datum der automatischen Verweigerung des Zugangs</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата автоматического запрещения входа в программу пользователю
+в связи с истечением срока действия или отсутствием работы в
+программе более установленного срока.
+
+Устанавливается при запрещении входа.
+Сбрасывается при разрешении входа и при входе.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>The date when authorization was automatically denied
+due to expired password or user inactivity.
+
+It is set when authorization is denied.
+
+It is updated when authorization is allowed, and then when the user signs in.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Data automatycznego zakazu wejścia do programu użytkownikowi 
+ z powodu upływu terminu ważności lub braku pracy w 
+ programie więcej ustalonego okresu. 
+
+ Jest ustawiana przy zakazie wejścia. 
+ Resetuje się przy dozwoleniu wejścia i przy wejściu.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Fecha de la prohibición automática de la entrada en el programa al usuario
+a causa de la expiración del período de vigencia o ausencia del uso 
+del programa más del período establecido.
+
+Se establece al prohibir la entrada.
+Se restablece al permitir la entrada y al entrar.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Fecha de la prohibición automática de la entrada en el programa al usuario
+a causa de la expiración del período de vigencia o ausencia del uso 
+del programa más del período establecido.
+
+Se establece al prohibir la entrada.
+Se restablece al permitir la entrada y al entrar.</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Parola süresinin dolması veya kullanıcının işlem yapmaması nedeniyle
+girişin otomatik olarak reddedildiği tarih.
+
+Giriş reddedildiğinde ayarlanır.
+
+Girişe izin verildiğinde ve ardından kullanıcı oturum açtığında güncellenir.</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Data del divieto di accesso automatico al programma all'utente 
+ a causa della scadenza di validità o mancata attività nel 
+ programma per un periodo più lungo rispetto all'intervallo impostato. 
+
+ Viene impostato al divieto di accesso. 
+ Viene ripristinato all'autorizzazione di accesso e all'accesso.</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Datum der automatischen Verweigerung des Zugangs zum Programm für den Benutzer
+aufgrund von Ablauf oder Abwesenheit von Tätigkeiten im
+Programm für einen längeren Zeitraum.
+
+Sie wird eingestellt, wenn die Eingabe verweigert wird.
+Zurücksetzen, wenn die Zugangsauflösung aktiviert ist und wenn der Zugang aktiviert ist.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="110eff8b-aeec-4ba5-b710-fefc1bd60284">
+    <name>PasswordUsageStartDate</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала использования пароля</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Password activated on</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Data rozpoczęcia użytkowania hasła</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Fecha del inicio del uso de la contraseña</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Fecha del inicio del uso de la contraseña</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Şifre kullanılmaya başladığı tarih</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Password attivata il</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Startdatum der Passwortverwendung</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата, когда пользователь начал использовать новый пароль.
+
+Устанавливается при входе, если пустая.
+Сбрасывается при смене пароля.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>The date when the user first signed in with a new password.
+
+It is set when the user signs in, if blank.
+It is updated when the password is changed.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Data pierwszego zalogowania się użytkownika przy użyciu nowego hasła.
+
+Jest ustawiany, gdy użytkownik loguje się, jeśli jest pusty.
+Jest aktualizowany po zmianie hasła.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Fecha cuando el usuario ha empezado a usar la contraseña nueva.
+
+Se establece al entrar si está vacía.
+Se restablece al cambiar la contraseña.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Fecha cuando el usuario ha empezado a usar la contraseña nueva.
+
+Se establece al entrar si está vacía.
+Se restablece al cambiar la contraseña.</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Kullanıcı yeni bir şifre kullanmaya başladığı tarih. 
+
+Boşsa girişte ayarlanır. 
+Parola değiştirildiğinde sıfırlanır.</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>La data in cui l'utente è entrato con la nuova password.
+
+E' impostato quando l'utente accede, se vuota.
+E' aggiornata quando la password è modificata.</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Das Datum, an dem der Benutzer mit der Verwendung des neuen Passworts begonnen hat.
+
+Sie wird bei der Anmeldung gesetzt, wenn sie leer ist.
+Wird zurückgesetzt, wenn das Passwort geändert wird.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0a8a6bb9-8b6a-43cf-9d46-b18a8a9591d8">
+    <name>PreviousPasswords</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использованные пароли</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Previous passwords</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Używane hasła</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Contraseñas usadas</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Contraseñas usadas</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Önceki parolalar</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Password precedenti</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Verwendete Passwörter</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Хеши паролей, которые пользователь использовал ранее</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Hashes of the user previous passwords.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Mieszanie poprzednich haseł użytkownika.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Haches de las contraseñas que el usuario ha usado anteriormente</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Haches de las contraseñas que el usuario ha usado anteriormente</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Kullanıcının daha önce kullandığı şifrelerin önbellekleri.</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Hashes delle password utenti precedenti.</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Passwort-Hashes, die der Benutzer zuvor verwendet hat</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="75eca481-002b-4046-898d-dfac9357611f">
+    <name>LastUsedClient</name>
+    <synonym>
+      <key>ru</key>
+      <value>Последний используемый клиент</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Last used client</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Ostatni używany klient</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Último cliente usado</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Último cliente usado</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Son kullanılan istemci</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Ultimo client utilizzato</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Zuletzt verwendeter Client</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Программа, которая использовалась пользователем для работы в информационной базе в последнем сеансе работы.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>The application the user was authorized in to access the infobase in the latest session.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Aplikacja, do której użytkownik był uprawniony, aby uzyskać dostęp do bazy informacyjnej w ostatniej sesji.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>El programa que usaba por el usuario para trabajar en la base de información en la última sesión de trabajo.</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>El programa que usaba por el usuario para trabajar en la base de información en la última sesión de trabajo.</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Kullanıcının son oturumda Infobase'e erişmek için giriş yaptığı uygulama.</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>L'applicazione l'utente era autorizzato ad accedere nell'infobase nell'ultima sessione.</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Die Anwendung, mit der der Benutzer in der letzten Arbeitssitzung in der Infobase gearbeitet hat.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="0110decc-d06e-43cf-9d01-30d412edcdd7">
+    <name>User</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>User</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Użytkownik</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Usuario</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Usuario</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Kullanıcı</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Utente</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Benutzer</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ExternalUsers</types>
+      <types>CatalogRef.Users</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь или внешний пользователь</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>A user or an external user.</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Użytkownik lub zewnętrzny użytkownik</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Usuario o usuario externo</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Usuario o usuario externo</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Kullanıcı veya harici kullanıcı.</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Un utente e un utente esterno</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Benutzer oder externer Benutzer</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="3ea32a24-d37b-4fad-937a-9d1357d649a9">
+    <name>RecordForm</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Formularz zapisu</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Formulario de entrada</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Formulario de entrada</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Kayıt formu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Modulo registrazione</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Erfassungsformular</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2856ee9a-0fea-4684-b7b8-4844773eae07">
+    <name>ListForm</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Formularz listy</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Formulario de la lista</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Formulario de lista</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Liste formu</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Modulo elenco</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Listenformular</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

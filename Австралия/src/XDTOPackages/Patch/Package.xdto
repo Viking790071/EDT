@@ -1,0 +1,34 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.v8.1c.ru/ssl/patch">
+	<import namespace="http://v8.1c.ru/8.1/data/core"/>
+	<objectType name="Patches">
+		<property xmlns:d3p1="http://www.v8.1c.ru/ssl/patch" name="Patch" type="d3p1:Patch" upperBound="-1"/>
+	</objectType>
+	<objectType name="PatchesCompability">
+		<property xmlns:d3p1="http://www.v8.1c.ru/ssl/patch" name="Compability" type="d3p1:Compability" upperBound="-1"/>
+	</objectType>
+	<objectType name="PatchesStatus">
+		<property xmlns:d3p1="http://www.v8.1c.ru/ssl/patch" name="PatchStatus" type="d3p1:PatchStatus"/>
+	</objectType>
+	<objectType name="PatchUUIDS">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="UUID" type="d3p1:UUID" upperBound="-1"/>
+	</objectType>
+	<objectType name="Patch" open="true">
+		<property name="Description" type="xs:string"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="UUID" type="d3p1:UUID"/>
+		<property name="ModifiedMetadata" type="xs:string"/>
+		<property xmlns:d3p1="http://www.v8.1c.ru/ssl/patch" name="AppliedFor" type="d3p1:SupportedConfiguration" upperBound="-1" form="Element"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="Data" type="d3p1:ValueStorage" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="SupportedConfiguration">
+		<property name="ConfigurationName" type="xs:string"/>
+		<property name="Versions" type="xs:string"/>
+	</objectType>
+	<objectType name="Compability">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="UUID" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://www.v8.1c.ru/ssl/patch" name="AppliedFor" type="d3p1:SupportedConfiguration" upperBound="-1"/>
+	</objectType>
+	<objectType name="PatchStatus">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="UUID" type="d3p1:UUID"/>
+		<property name="Status" type="xs:string"/>
+	</objectType>
+</package>

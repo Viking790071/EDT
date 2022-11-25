@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="application/hta; charset=UTF-16">
+  <meta http-equiv="x-ua-compatible" content="IE=EmulateIE7">
+  <hta:application id="oHTA" border="none" caption="no" contextmenu="no" selection="no" icon="splash.ico" innerborder="no"
+    navigable="yes" showintaskbar="yes" scroll="no" version="1.0.0.0" />
+  <title>Restore data from backup...</title>
+  <script language="javascript" src="helpers.js"></script>
+  <script language="javascript" src="main.js"></script>
+  <script language="javascript">
+    var windowWidth = 604
+    var windowHeight = 324
+    var windowLeft = 200
+    var windowTop = 100
+    if (window.screen) {
+      windowLeft = (window.screen.availWidth - windowWidth) / 2
+      windowTop = (window.screen.availHeight - windowHeight) / 2
+    }
+    window.moveTo(windowLeft, windowTop)
+    window.resizeTo(windowWidth, windowHeight)
+
+    // State variables
+    var step = 0 // The current step of the backup procedure.
+    var ret = 0 // The return code of the previous step.
+    var finish = false
+    var errStep = 0
+
+    // Display message about data restore progress
+    function setProgress (statusText) {
+      statusText += '...'
+      document.getElementById('progressText').innerHTML = statusText
+      log(statusText)
+    }
+
+    // State machine to perform data restore steps.
+    function doStep (step) {
+      switch (step) {
+        case 0:
+          setProgress('Initializing')
+          break
+        case 1:
+          ret = initialize()
+          break
+        case 2:
+          setProgress('Data restore ')
+          ret = restoreDB()
+          break
+        case 3:
+          setProgress('Awaiting data restore completion')
+          break
+        case 4:
+          ret = WaitUntilFinish()
+          break
+        case 5:
+          setProgress('Allowing new connections')
+          break
+        case 6:
+          ret = allowConnections()
+          break
+        case 7:
+          setProgress('Completing')
+          break
+        case 8:
+
+          // All done.
+          finalize(true)
+          runEnterprise()
+          self.close()
+          ClearTempFiles()
+          finish = true
+          break
+        default:
+      }
+      return ret
+    }
+
+    // Perform data restore procedure
+    function main () {
+      if (finish) {
+        return
+      }
+
+      // If the previous step failed.
+      if (ret !== 0 && ret !== -1) {
+        if (errStep === 0) {
+          log(format('The operation completed with error. Error code: {0}. See details in the previous record.', ret), true)
+          finalize()
+          runEnterprise()
+          self.close()
+          return
+        }
+        finalize()
+        runEnterprise()
+        self.close()
+        ClearTempFiles()
+        finish = true
+        return
+      }
+
+      // Sequential performance of data restore procedure
+      if (ret !== -1) {
+        step++
+      }
+      doStep(step)
+
+      // Transferring control to IE and calling main again in 1 second (enough to close a COM connection).
+      // If some sessions are not closed, ret = -1 and wait for 18 seconds till the next check.
+      if (!finish) {
+        setTimeout("main()", ret !== -1 ? 1000 : 18 * 1000);
+      }
+      // Transferring control to IE and calling main again.
+    }
+
+    function checkClose () {
+      if (!finish) {
+        event.returnValue = format('Warning! Data restore process ended prematurely, infobase is locked.\n' +
+              'To unlock the infobase, use the server cluster console or run 1C:Enterprise.')
+      }
+    }
+
+    function ClearTempFiles () {
+      // Deleting temporary files.
+      try {
+        oFileSystemObject.DeleteFile(thisFileDir + '\\main.js')
+        oFileSystemObject.DeleteFile(thisFileDir + '\\helpers.js')
+        oFileSystemObject.DeleteFile(thisFileDir + '\\splash.png')
+        oFileSystemObject.DeleteFile(thisFileDir + '\\splash.ico')
+        oFileSystemObject.DeleteFile(thisFileDir + '\\progress.gif')
+        oFileSystemObject.DeleteFile(thisFileDir + '\\splash.hta')
+        oFileSystemObject.DeleteFile(TempCatalog + '\\1Cv8.1CD')
+        oFileSystemObject.DeleteFile(thisFileDir + '\\templog.txt')
+      } catch (e) { }
+    }
+  </script>
+</head>
+
+<body onload="window.setTimeout('main()',10);" style="border: 2px; background-image:url(splash.png); background-repeat: no-repeat; background-position: center center; background-attachment: fixed; background-color: #B3B3B3;">
+  <div id="progressIcon" style="position: absolute; left: 10px; top: 65px;">
+    <img src="progress.gif" border="0" />
+  </div>
+  <div id="captionText" style="font-size: 9pt; font-family: verdana,arial; font-weight: bold;
+        color: #606060; position: absolute; left: 80px; top: 70px;">
+    Please wait.
+    <br />Database restore in progress
+    <br />from backup.
+    <br />It is not recommended to stop the process.
+  </div>
+  <div id="progressText" style="font-size: 8pt; font-family: verdana,arial; color: #000000;
+        position: absolute; left: 10px; top: 240px;">
+    &nbsp;
+  </div>
+</body>
+
+</html>

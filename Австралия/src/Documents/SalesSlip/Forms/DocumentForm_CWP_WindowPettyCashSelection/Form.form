@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:Decoration">
+    <name>Decoration1</name>
+    <id>45</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>Decoration1ExtendedTooltip</name>
+      <id>47</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>Decoration1ContextMenu</name>
+      <id>46</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>Label</type>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <extInfo xsi:type="form:LabelDecorationExtInfo">
+      <horizontalAlign>Left</horizontalAlign>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>CashCR</name>
+    <id>4</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>CashCR</segments>
+    </dataPath>
+    <titleLocation>Top</titleLocation>
+    <handlers>
+      <event>OnChange</event>
+      <name>CashCROnChange</name>
+    </handlers>
+    <extendedTooltip>
+      <name>CashCRExtendedTooltip</name>
+      <id>6</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>CashCRContextMenu</name>
+      <id>5</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>EnterOnInput</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <autoMarkIncomplete>true</autoMarkIncomplete>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+      <choiceParameters>
+        <name>Filter.CashCRType</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:ReferenceValue">
+            <value>Enum.CashRegisterTypes.EnumValue.FiscalRegister</value>
+          </value>
+        </value>
+      </choiceParameters>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>POSTerminal</name>
+    <id>42</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>POSTerminal</segments>
+    </dataPath>
+    <titleLocation>Top</titleLocation>
+    <handlers>
+      <event>OnChange</event>
+      <name>POSTerminalOnChange</name>
+    </handlers>
+    <extendedTooltip>
+      <name>POSTerminalExtendedTooltip</name>
+      <id>44</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>POSTerminalContextMenu</name>
+      <id>43</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+      <choiceParameterLinks>
+        <name>Filter.PettyCash</name>
+        <datapath xsi:type="form:DataPath">
+          <segments>CashCR</segments>
+        </datapath>
+      </choiceParameterLinks>
+      <choiceParameters>
+        <name>Filter.TypeOfPOS</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:ReferenceValue">
+            <value>Enum.TypesOfPOS.EnumValue.PhysicalPOS</value>
+          </value>
+        </value>
+      </choiceParameters>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>DontShowOnOpenCashdeskChoiceForm</name>
+    <id>36</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>DontShowOnOpenCashdeskChoiceForm</segments>
+    </dataPath>
+    <extendedTooltip>
+      <name>DontShowOnOpenCashdeskChoiceFormExtendedTooltip</name>
+      <id>38</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>DontShowOnOpenCashdeskChoiceFormContextMenu</name>
+      <id>37</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>CheckBoxField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+  </items>
+  <items xsi:type="form:Decoration">
+    <name>LabelSettingsOpenWindows</name>
+    <id>39</id>
+    <title>
+      <key>en</key>
+      <value>You can re-enable the window display in the cashier workplace by clicking &quot;My cash register&quot;</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Снова включить отображение окна можно в рабочем месте кассира по кнопке &quot;Моя касса&quot;</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Widok okna można powtórnie włączyć na stanowisku kasjera, przyciskiem &quot;Moja kasa fiskalna&quot;</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Usted puede volver a activar la visualización de la ventana en el lugar de trabajo del cajero haciendo clic en &quot;Mi caja registradora&quot;</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Usted puede volver a activar la visualización de la ventana en el lugar de trabajo del cajero haciendo clic en &quot;Mi caja registradora&quot;</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>&quot;Yazar kasam&quot;a tıklayarak kasiyer çalışma alanındaki pencere ekranını yeniden etkinleştirebilirsiniz</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Puoi riattivare la visualizzazione finestra nella postazione di lavoro cassiere premendo &quot;Il mio registratore di cassa&quot;</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Sie können die Fensteranzeige am Arbeitsplatz des Kassierers wieder aktivieren, indem Sie auf &quot;Meine Kasse&quot; klicken.</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>LabelSettingsOpenWindowsExtendedTooltip</name>
+      <id>41</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>LabelThisWindowOpeningSettingsContextMenu</name>
+      <id>40</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>Label</type>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <textColor xsi:type="core:ColorRef">
+      <color>Style.MinorInscriptionText</color>
+    </textColor>
+    <extInfo xsi:type="form:LabelDecorationExtInfo">
+      <horizontalAlign>Left</horizontalAlign>
+      <verticalAlign>Top</verticalAlign>
+    </extInfo>
+  </items>
+  <items xsi:type="form:Decoration">
+    <name>IndentDecoration_1</name>
+    <id>48</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>IndentDecoration_1ExtendedTooltip</name>
+      <id>50</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>IndentDecoration_1ContextMenu</name>
+      <id>49</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>Label</type>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <horizontalStretch>true</horizontalStretch>
+    <extInfo xsi:type="form:LabelDecorationExtInfo">
+      <horizontalAlign>Left</horizontalAlign>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>GroupCWPOpenButton</name>
+    <id>51</id>
+    <items xsi:type="form:Decoration">
+      <name>IndentDecoration_2</name>
+      <id>53</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>IndentDecoration_2ExtendedTooltip</name>
+        <id>55</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>IndentDecoration_2ContextMenu</name>
+        <id>54</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <horizontalStretch>true</horizontalStretch>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </items>
+    <items xsi:type="form:Button">
+      <name>FormOpenWorkplaceCashier</name>
+      <id>34</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormOpenCashierWorkplaceExtendedTooltip</name>
+        <id>35</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualButton</type>
+      <commandName>Form.Command.OpenWorkplaceOfCashier</commandName>
+      <representation>Auto</representation>
+      <defaultButton>true</defaultButton>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Decoration">
+      <name>IndentDecoration_3</name>
+      <id>56</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>IndentDecoration_3ExtendedTooltip</name>
+        <id>58</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>IndentDecoration_3ContextMenu</name>
+        <id>57</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <horizontalStretch>true</horizontalStretch>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>GroupCWPOpenButtonExtendedTooltip</name>
+      <id>52</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:Decoration">
+    <name>IndentDecoration_4</name>
+    <id>59</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>IndentDecoration_4ExtendedTooltip</name>
+      <id>61</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>IndentDecoration_4ContextMenu</name>
+      <id>60</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>Label</type>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <horizontalStretch>true</horizontalStretch>
+    <extInfo xsi:type="form:LabelDecorationExtInfo">
+      <horizontalAlign>Left</horizontalAlign>
+    </extInfo>
+  </items>
+  <commandBarLocation>Bottom</commandBarLocation>
+  <autoCommandBar>
+    <name>FormCommandBar</name>
+    <id>-1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Center</horizontalAlign>
+  </autoCommandBar>
+  <handlers>
+    <event>OnSaveDataInSettingsAtServer</event>
+    <name>OnSaveDataInSettingsAtServer</name>
+  </handlers>
+  <handlers>
+    <event>OnOpen</event>
+    <name>OnOpen</name>
+  </handlers>
+  <handlers>
+    <event>OnLoadDataFromSettingsAtServer</event>
+    <name>OnLoadDataFromSettingsAtServer</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <width>34</width>
+  <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
+  <autoSaveDataInSettings>Use</autoSaveDataInSettings>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <verticalScroll>UseIfNecessary</verticalScroll>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Object</name>
+    <id>1</id>
+    <valueType>
+      <types>DocumentObject.SalesSlip</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>Object.RegisterRecords</segments>
+    </notDefaultUseAlwaysAttributes>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>PostingIsAllowed</name>
+    <title>
+      <key>en</key>
+      <value>Posting is allowed</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Проведение разрешено</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zatwierdzenie dozwolone</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Envío está permitido</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Envío está permitido</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Gönderime izin verilmiştir</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>La pubblicazione è consentita</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Buchung ist gestattet</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>DontShowOnOpenCashdeskChoiceForm</name>
+    <title>
+      <key>en</key>
+      <value>Do not show this window again</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Больше не показывать это окно</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Nie pokazuj ponownie tego okna</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>No mostrar esta ventana de nuevo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>No mostrar esta ventana de nuevo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Bu pencereyi tekrar gösterme</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Non mostrare questa finestra nuovamente</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Dieses Fenster nicht wieder anzeigen</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>CWPSetting</name>
+    <title>
+      <key>en</key>
+      <value>CWP setting</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Настройка РМК</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Ustawienia MPK</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Configuraciones CWP</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Configuraciones CWP</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>CWP (Kasiyer çalışma alanı) ayarları</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Impostazioni Cassiere</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>KAP- Einstellung</value>
+    </title>
+    <id>4</id>
+    <valueType>
+      <types>CatalogRef.CashierWorkplaceSettings</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>CashCR</name>
+    <title>
+      <key>en</key>
+      <value>Cash register</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Касса ККМ</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Kasa fiskalna</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Caja registradora</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Caja registradora</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Yazar kasa</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Registratore di cassa</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Kasse</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>CatalogRef.CashRegisters</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>CashCR</segments>
+    </settingsSavedData>
+  </attributes>
+  <attributes>
+    <name>POSTerminal</name>
+    <title>
+      <key>en</key>
+      <value>POS terminal</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Эквайринговый терминал</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Terminal POS</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>TPV terminal</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>TPV terminal</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>POS terminali</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Terminale POS</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>POS-Terminal</value>
+    </title>
+    <id>6</id>
+    <valueType>
+      <types>CatalogRef.POSTerminals</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>POSTerminal</segments>
+    </settingsSavedData>
+  </attributes>
+  <attributes>
+    <name>CloseFormAfterOpeningCWP</name>
+    <title>
+      <key>en</key>
+      <value>Close form after opening CWP</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Закрываем форму после открытия РМК</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Zamknąć formularz po otwarciu MPK</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Cerrar el formulario después de abrir el lugar de trabajo del cajero</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Cerrar el formulario después de abrir el lugar de trabajo del cajero</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>CWP'yi açtıktan sonra formu kapat</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Chiudere il modulo dopo l'apertura della cassa</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Schließen Sie das Formular nach dem Öffnen von KAP</value>
+    </title>
+    <id>7</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>OpenWorkplaceOfCashier</name>
+    <title>
+      <key>en</key>
+      <value>Open cashier workplace (Ctrl+Enter)</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Открыть рабочее место кассира (Ctrl+Enter)</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Otwórz stanowisko kasjera (Ctrl+Enter)</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Abrir el lugar de trabajo del cajero (Ctrl+Enter)</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Abrir el lugar de trabajo del cajero (Ctrl+Enter)</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Kasiyer çalışma alanını aç (Ctrl+Enter)</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Apri posto di lavoro cassiere (Ctrl+Enter)</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Kassierer Arbeitsplatz (Strg + Enter) öffnen</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>en</key>
+      <value>Open cashier workplace</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Открыть рабочее место кассира</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Otwórz stanowisko kasjera</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Abrir el lugar de trabajo del cajero</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Abrir el lugar de trabajo del cajero</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Kasiyer çalışma alanını aç</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Apri posto di lavoro cassiere</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Kassierer Arbeitsplatz öffnen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>OpenWorkplaceOfCashier</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

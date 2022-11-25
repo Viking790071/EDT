@@ -1,0 +1,1659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bf767f4b-b823-41bf-93d3-23624eb2671c">
+  <producedTypes>
+    <objectType typeId="7b4cd116-c897-472c-80ae-7491710f8a43" valueTypeId="fec39efb-5ba3-4ec7-8491-b3e421b28f84"/>
+    <managerType typeId="cf9735f2-af20-4c97-bfb7-6d9a6bedb82c" valueTypeId="bb675489-c0ea-41e4-b5c1-49d06e0bcf3b"/>
+  </producedTypes>
+  <name>ProductCartForExternalUsers</name>
+  <synonym>
+    <key>en</key>
+    <value>Product cart for external users</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Корзина для внешних пользователей</value>
+  </synonym>
+  <synonym>
+    <key>pl</key>
+    <value>Koszyk produktów dla użytkowników zewnętrznych</value>
+  </synonym>
+  <synonym>
+    <key>es_ES</key>
+    <value>Cesta de productos para usuarios externos</value>
+  </synonym>
+  <synonym>
+    <key>es_CO</key>
+    <value>Cesta de productos para usuarios externos</value>
+  </synonym>
+  <synonym>
+    <key>tr</key>
+    <value>Harici kullanıcılar için ürün sepeti</value>
+  </synonym>
+  <synonym>
+    <key>it</key>
+    <value>Carrello prodotti per utenti esterni</value>
+  </synonym>
+  <synonym>
+    <key>de</key>
+    <value>Warenkorb für externe Benutzer</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ProductCartForExternalUsers.Form.MainForm</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <attributes uuid="af3120b1-e8c6-4ad9-ad93-f496695c88e4">
+    <name>Date</name>
+    <synonym>
+      <key>en</key>
+      <value>Date</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Data</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Fecha</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Fecha</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Tarih</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Data</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Datum</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0aa15010-ecc9-4dce-b10b-873d2b0de574">
+    <name>Company</name>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Firma</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Empresa</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Empresa</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İş yeri</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Azienda</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Firma</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Companies</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4c0f3a55-5d8f-4c26-a402-2dc0d9b9ae64">
+    <name>PriceKind</name>
+    <synonym>
+      <key>en</key>
+      <value>Price type</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Тип цен</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Rodzaj ceny</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Tipo de precios</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Tipo de precios</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Fiyat türü</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Tipo di prezzo</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Preistyp</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.PriceTypes</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ac58dc22-8509-479a-bb24-5ddd6fd453c6">
+    <name>DiscountMarkupKind</name>
+    <synonym>
+      <key>en</key>
+      <value>Discount type</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Тип скидки</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Typ rabatu</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Tipo de descuento</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Tipo de descuento</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İndirim türü</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Tipo di sconto</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Typ des Rabatts</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.DiscountTypes</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="36b3440c-3cc3-4491-a769-783a328fb756">
+    <name>PricePeriod</name>
+    <synonym>
+      <key>en</key>
+      <value>Effective on</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Obowiązuje od</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Efectivo en</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Efectivo en</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Yürürlük tarihi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Effettivo dal</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Wirksam am</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="39e164ec-395b-4f5c-b6ea-818dbb43984e">
+    <name>AmountIncludesVAT</name>
+    <synonym>
+      <key>en</key>
+      <value>Tax inclusive</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>С учетом налогов</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Wartość brutto</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Con impuestos</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Con impuestos</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Vergi dahil</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>IVA inclusa</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Inklusive Steuer</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="651d6c36-1631-4461-ab43-d74c4113e53b">
+    <name>VATTaxation</name>
+    <synonym>
+      <key>en</key>
+      <value>Tax category</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Налогообложение</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Rodzaj opodatkowania VAT</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Categoría de impuestos</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Categoría de impuestos</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Vergi kategorisi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Categoria di imposta</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Steuerkategorie</value>
+    </synonym>
+    <type>
+      <types>EnumRef.VATTaxationTypes</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8f4eb780-2386-46ae-b9ec-22e078848457">
+    <name>DocumentCurrency</name>
+    <synonym>
+      <key>en</key>
+      <value>Currency</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Waluta</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Moneda</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Moneda</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Para birimi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Valuta</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Währung</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Currencies</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c41465b4-9bff-460d-8db4-213899db3eab">
+    <name>PriceKindCurrency</name>
+    <synonym>
+      <key>en</key>
+      <value>Price currency</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта цены</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Waluta ceny</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Moneda de precios</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Moneda de precios</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Fiyatın para birimi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Valuta del prezzo</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Preiswährung</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Currencies</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7fbf3b71-4dec-4184-b668-86708f57a097">
+    <name>ProductsType</name>
+    <synonym>
+      <key>en</key>
+      <value>Product type</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Тип номенклатуры</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Typ produktu</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Tipo de producto</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Tipo de producto</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ürün türü</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Tipo di articolo</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Produkttyp</value>
+    </synonym>
+    <type>
+      <types>ValueList</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f93ebae9-7ee6-4d96-9233-dcf0ef042c31">
+    <name>DynamicPriceKindPercent</name>
+    <synonym>
+      <key>en</key>
+      <value>Markup percentage</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Динамический тип цен (процент)</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Procent marży</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Porcentaje de marcado</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Porcentaje de marcado</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Fiyat artışı yüzdesi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Percentuale di maggiorazione</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Aufschlag Prozentsatz</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7ec01915-f226-436e-9210-6a0302af9bdb">
+    <name>DynamicPriceKindBasic</name>
+    <synonym>
+      <key>en</key>
+      <value>Basic price type</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Базовый тип цен</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Podstawowy rodzaj ceny</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Tipo de precios básicos</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Tipo de precios básicos</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Temel fiyat türü</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Tipologia di prezzo predefinito</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Grundpreistyp</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.PriceTypes</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="010a2e86-a995-461a-b554-4f6f0691f3ff">
+    <name>DiscountCard</name>
+    <synonym>
+      <key>en</key>
+      <value>Discount card</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Дисконтная карта</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Karta rabatowa</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Tarjeta de descuento</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Tarjeta de descuento</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İndirim kartı</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Carta sconto</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Rabattkarte</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.DiscountCards</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Filter.CardOwner</name>
+      <field>DataProcessor.ProductCartForExternalUsers.Attribute.Counterparty</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>Filter.DeletionMark</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+  </attributes>
+  <attributes uuid="405ae65b-fb58-40e1-95a3-1d882b0263ef">
+    <name>DiscountPercentByDiscountCard</name>
+    <synonym>
+      <key>en</key>
+      <value>Discount card discount percent</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Процент скидки по дисконтной карте</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Procent rabatu karty rabatowej</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Tarjeta de descuento por ciento de descuento</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Tarjeta de descuento por ciento de descuento</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İndirim kartı indirim yüzdesi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Percentuale di sconto da carta sconto</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Rabattkartenprozentsatz</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="359151c0-31a6-4f90-b911-aefc7d7c09c1">
+    <name>PriceCalculationMethod</name>
+    <synonym>
+      <key>en</key>
+      <value>Price calculation method</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Метод расчета цены</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Metoda obliczenia ceny</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Método de cálculo del precio</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Método de cálculo del precio</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Fiyat hesaplama yöntemi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Metodo di calcolo del prezzo</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Preisberechnungsmethode</value>
+    </synonym>
+    <type>
+      <types>EnumRef.PriceCalculationMethods</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="83f265f3-12fb-4b12-ba4e-9bb17bfa3ff3">
+    <name>Contract</name>
+    <synonym>
+      <key>en</key>
+      <value>Contract</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Kontrakt</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Contrato</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Contrato</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Sözleşme</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Contratto</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Vertrag</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.CounterpartyContracts</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="809f5182-831f-4401-a2ad-daadf21df4e5">
+    <name>Counterparty</name>
+    <synonym>
+      <key>en</key>
+      <value>Counterparty</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Kontrahent</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Contraparte</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Contraparte</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Cari hesap</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Controparte</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Geschäftspartner</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Counterparties</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="319bda18-7330-43fe-a2f3-b9121b059938">
+    <name>Ref</name>
+    <synonym>
+      <key>en</key>
+      <value>Ref</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Odnośnik</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Referencia</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Referencia</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ref</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Rif</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Referenz</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.SalesOrder</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="68cb1bf2-d406-4186-9717-d6af428dba59">
+    <producedTypes>
+      <objectType typeId="dfe3c379-c29e-499e-89f2-42a3e1b9bed8" valueTypeId="bfae6207-6bed-4407-9574-ae83089fe1e3"/>
+      <rowType typeId="ecec45fb-6f3b-418a-83e6-824a81e42735" valueTypeId="160a6aa4-df4f-49a5-87c5-11bb7d3d7089"/>
+    </producedTypes>
+    <name>ShoppingCart</name>
+    <synonym>
+      <key>en</key>
+      <value>Shopping cart</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Корзина</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Koszyk</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Cesta de compras</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Cesta de compras</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Alışveriş sepeti</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Carrello della spesa</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Warenkorb</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="f1fccef0-1bb7-4322-a598-28ef6395bf5c">
+      <name>Products</name>
+      <synonym>
+        <key>en</key>
+        <value>Product</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Produkt</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Producto</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Producto</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Ürün</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Articolo</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Produkt</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Products</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:ReferenceValue">
+        <value>Catalog.Products.EmptyRef</value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="24d481cb-8e4b-44e4-bbde-1ef797bc9c14">
+      <name>Characteristic</name>
+      <synonym>
+        <key>en</key>
+        <value>Variant</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Вариант</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Wariant</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Variante</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Variante</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Varyant</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Variante</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Variante</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ProductsCharacteristics</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Filter.Owner</name>
+        <field>DataProcessor.ProductCartForExternalUsers.TabularSection.ShoppingCart.Attribute.Products</field>
+      </choiceParameterLinks>
+      <fillValue xsi:type="core:ReferenceValue">
+        <value>Catalog.ProductsCharacteristics.EmptyRef</value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="cb4d5334-226f-41b5-9f70-fafcc96558b8">
+      <name>Batch</name>
+      <synonym>
+        <key>en</key>
+        <value>Batch</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Партия</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Partia</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Lote</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Lote</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Parti</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Lotto</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Charge</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ProductsBatches</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:ReferenceValue">
+        <value>Catalog.ProductsBatches.EmptyRef</value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="42cb1fb3-cc98-470b-a40a-b9c9762ecee7">
+      <name>Quantity</name>
+      <synonym>
+        <key>en</key>
+        <value>Quantity</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Ilość</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Cantidad</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Cantidad</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Miktar</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Quantità</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Menge</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:NumberValue">
+        <value>0</value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="b194b409-946c-465e-954e-6d31394be825">
+      <name>MeasurementUnit</name>
+      <synonym>
+        <key>en</key>
+        <value>Unit of measure</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Ед. изм.</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Jednostka miary</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Unidad de medida</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Unidad de medida</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Ölçü birimi</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Unità di misura</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Maßeinheit</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.UOMClassifier</types>
+        <types>CatalogRef.UOM</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Filter.Owner</name>
+        <field>DataProcessor.ProductCartForExternalUsers.TabularSection.ShoppingCart.Attribute.Products</field>
+      </choiceParameterLinks>
+      <fillValue xsi:type="core:ReferenceValue"/>
+    </attributes>
+    <attributes uuid="0405c485-b8a7-4761-9233-2d00b0cfbaec">
+      <name>Factor</name>
+      <synonym>
+        <key>en</key>
+        <value>Factor</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Коэффициент</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Współczynnik</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Factor</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Factor</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Faktör</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Fattore</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Faktor</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="1645e3a6-8a67-4cde-8033-e883a9192821">
+      <name>Price</name>
+      <synonym>
+        <key>en</key>
+        <value>Price</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Цена</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Cena</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Precio</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Precio</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Fiyat</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Prezzo</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Preis</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:NumberValue">
+        <value>0</value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="65f5295a-590e-42d9-9e60-008901235d68">
+      <name>DiscountMarkupPercent</name>
+      <synonym>
+        <key>en</key>
+        <value>Discount %</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>% скидки</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Rabat %</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Descuento %</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Descuento %</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>İndirim %</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Sconto %</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>% Rabatt</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:StringValue">
+        <value>100</value>
+      </maxValue>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="61a780b9-0182-4f00-8528-7f31438fb516">
+      <name>Amount</name>
+      <synonym>
+        <key>en</key>
+        <value>Amount</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Wartość</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Importe</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Importe</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Tutar</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Importo</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Betrag</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ad6e6dcb-4787-46f7-8386-275b2230ce7c">
+      <name>VATRate</name>
+      <synonym>
+        <key>en</key>
+        <value>Tax</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Налог</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>VAT</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Impuesto</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Impuesto</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Vergi</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Imposta</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Steuer</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.VATRates</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="36c44821-25f7-42cc-afc1-636c30e7880f">
+      <name>VATAmount</name>
+      <synonym>
+        <key>en</key>
+        <value>Tax amount</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма налога</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Kwota VAT</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Importe del impuesto</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Importe del impuesto</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Vergi tutarı</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Ammontare della tassa</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Steuerbetrag</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="9fc1009e-9eb4-4164-8e8c-e0bb74f225ac">
+      <name>Total</name>
+      <synonym>
+        <key>en</key>
+        <value>Total</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Всего</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Razem</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Total</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Total</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Toplam</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Totale</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Summe</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="01ae5c09-48d5-4ca6-9e6d-4e390a9f4edf">
+      <name>IsBundle</name>
+      <synonym>
+        <key>en</key>
+        <value>Is bundle</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Это набор</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Jest zestawem</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Es un paquete</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Es un paquete</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Ürün setidir</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>È un kit di prodotti</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Ist Artikelgruppe</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="6a3af264-7b98-4627-adb8-72d9d3d721e1">
+      <name>Taxable</name>
+      <synonym>
+        <key>en</key>
+        <value>Taxable</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Включает налог</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Podlega opodatkowaniu</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Impositivo</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Impositivo</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Vergilendirilebilir</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Tassabile</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Steuerpflichtig</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="11006b0a-36ac-4000-a413-56182f60871e">
+      <name>StructuralUnit</name>
+      <synonym>
+        <key>en</key>
+        <value>Structural unit</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Структурная единица</value>
+      </synonym>
+      <synonym>
+        <key>pl</key>
+        <value>Jednostka strukturalna</value>
+      </synonym>
+      <synonym>
+        <key>es_ES</key>
+        <value>Unidad estructural</value>
+      </synonym>
+      <synonym>
+        <key>es_CO</key>
+        <value>Unidad estructural</value>
+      </synonym>
+      <synonym>
+        <key>tr</key>
+        <value>Yapısal birim</value>
+      </synonym>
+      <synonym>
+        <key>it</key>
+        <value>Unità strutturale</value>
+      </synonym>
+      <synonym>
+        <key>de</key>
+        <value>Struktureinheit</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.BusinessUnits</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameters>
+        <name>Filter.StructuralUnitType</name>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.BusinessUnitsTypes.EnumValue.Warehouse</value>
+        </value>
+      </choiceParameters>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="875f926d-d293-4990-af77-e352f1f4717c">
+    <name>MainForm</name>
+    <synonym>
+      <key>en</key>
+      <value>Main form</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Основная форма</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Główny formularz</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Formulario principal</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Formulario principal</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ana form</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Modulo principale</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Hauptform</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fe775ab8-01a4-4b4f-82f3-2614a96707de">
+    <name>QuantityAndPrice</name>
+    <synonym>
+      <key>en</key>
+      <value>Quantity and price</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Количество и цена</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Ilość i cena</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Cantidad y precio</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Cantidad y precio</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Miktar ve fiyat</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Quantità e prezzo</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Menge und Preis</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0703fba7-00d5-4bc4-b6b9-017db416dafe">
+    <name>DeliveryInformation</name>
+    <synonym>
+      <key>en</key>
+      <value>Delivery information</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Информация о доставке</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Informacje o dostawie</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Información de entrega</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Información de entrega</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Teslimat bilgileri</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Informazioni sulla consegna</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Lieferinformationen</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="f1c3c600-143e-471e-91a1-90e4ab504b98">
+    <name>Products</name>
+    <synonym>
+      <key>en</key>
+      <value>Products</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Produkty</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Productos</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Productos</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ürünler</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Articoli</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Produkte</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

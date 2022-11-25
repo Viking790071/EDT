@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<items xmlns="http://1c.com/first_launch_1_0" version="1.0">
+
+<!-- Primary chart of accounts and default accounts settings -->
+   <item item_type="sl_data_xml" item_name="default/default_gl_accounts.xml" initial_filling="True"/>
+   <item item_type="sl_data_xml" item_name="default/default_accounts.xml" initial_filling="True"/>
+   <item item_type="sl_data_xml" item_name="default/financial_statements.xml" initial_filling="True"/>
+
+   <item item_type="catalog" item_name="LinesOfBusiness" initial_filling="True">
+      <element>
+         <Description>Main line</Description>
+		 <Predefined>true</Predefined>
+         <PredefinedDataName>MainLine</PredefinedDataName>
+		 <GLAccountRevenueFromSales>4010100</GLAccountRevenueFromSales>
+		 <GLAccountCostOfSales>5010100</GLAccountCostOfSales>
+		 <ProfitGLAccount>3050000</ProfitGLAccount>
+      </element>
+      <element>
+         <Description>Other</Description>
+		 <Predefined>true</Predefined>
+         <PredefinedDataName>Other</PredefinedDataName>
+		 <GLAccountRevenueFromSales>4010100</GLAccountRevenueFromSales>
+		 <GLAccountCostOfSales>5010100</GLAccountCostOfSales>
+		 <ProfitGLAccount>3050000</ProfitGLAccount>
+      </element>
+   </item>
+
+   <item item_type="catalog" item_name="Employees" initial_filling="True">
+      <element>
+         <Description>Administrator</Description>
+		 <SettlementsHumanResourcesGLAccount>2040200</SettlementsHumanResourcesGLAccount>
+		 <AdvanceHoldersGLAccount>1050200</AdvanceHoldersGLAccount>
+		 <OverrunGLAccount>2040300</OverrunGLAccount>
+      </element>
+   </item>
+
+   <item item_type="catalog" item_name="EarningAndDeductionTypes" initial_filling="True">
+	  <element>
+         <Description>Earnings</Description>
+         <Folder>True</Folder>
+      </element>
+	  <element>
+         <Description>Deductions</Description>
+         <Folder>True</Folder>
+      </element>
+      <element>
+         <Description>Payment by jobs</Description>
+		 <Parent>Earnings</Parent>
+		 <Type>Earning</Type>
+		 <Formula>[TariffRate] * [HoursProcessedByJobs]</Formula>
+		 <GLExpenseAccount>6080300</GLExpenseAccount>
+      </element>
+      <element>
+         <Description>Salary by days</Description>
+		 <Parent>Earnings</Parent>
+		 <Type>Earning</Type>
+		 <Formula>[TariffRate] * [DaysWorked] / [NormDays]</Formula>
+		 <GLExpenseAccount>6080300</GLExpenseAccount>
+      </element>
+      <element>
+         <Description>Salary by hours</Description>
+		 <Parent>Earnings</Parent>
+		 <Type>Earning</Type>
+		 <Formula>[TariffRate] * [HoursWorked] / [NormHours]</Formula>
+		 <GLExpenseAccount>6080300</GLExpenseAccount>
+      </element>
+      <element>
+         <Description>Sales fee by responsible</Description>
+		 <Parent>Earnings</Parent>
+		 <Type>Earning</Type>
+		 <Formula>[SalesAmountByResponsible]  /  100 * [TariffRate]</Formula>
+		 <GLExpenseAccount>6080300</GLExpenseAccount>
+      </element>
+      <element>
+         <Description>Interest on loan</Description>
+		 <Predefined>true</Predefined>
+         <PredefinedDataName>InterestOnLoan</PredefinedDataName>
+		 <Parent>Deductions</Parent>
+		 <Type>Deduction</Type>
+		 <GLExpenseAccount>4020200</GLExpenseAccount>
+      </element>
+      <element>
+         <Description>Piece-rate pay</Description>
+		 <Predefined>true</Predefined>
+         <PredefinedDataName>PieceRatePay</PredefinedDataName>
+		 <Parent>Earnings</Parent>
+		 <Type>Earning</Type>
+		 <GLExpenseAccount>6080300</GLExpenseAccount>
+      </element>
+      <element>
+         <Description>Piece-rate pay (fixed amount)</Description>
+		 <Predefined>true</Predefined>
+         <PredefinedDataName>PieceRatePayFixedAmount</PredefinedDataName>
+		 <Parent>Earnings</Parent>
+		 <Type>Earning</Type>
+		 <Formula>[FixedAmount]</Formula>
+		 <GLExpenseAccount>6080300</GLExpenseAccount>
+      </element>
+      <element>
+         <Description>Piece-rate pay (percent)</Description>
+		 <Predefined>true</Predefined>
+         <PredefinedDataName>PieceRatePayPercent</PredefinedDataName>
+		 <Parent>Earnings</Parent>
+		 <Type>Earning</Type>
+		 <GLExpenseAccount>6080300</GLExpenseAccount>
+      </element>
+      <element>
+         <Description>Repayment of loan from salary</Description>
+		 <Predefined>true</Predefined>
+         <PredefinedDataName>RepaymentOfLoanFromSalary</PredefinedDataName>
+		 <Parent>Deductions</Parent>
+		 <Type>Deduction</Type>
+		 <GLExpenseAccount>1050400</GLExpenseAccount>
+      </element>	  
+  </item>
+  
+   <item item_type="catalog" item_name="EarningsCalculationParameters" initial_filling="True">
+      <element>
+         <Description>Sales amount by responsible</Description>
+		 <ID>SalesAmountByResponsible</ID>
+		 <CustomQuery>true</CustomQuery>
+		 <SpecifyValueAtPayrollCalculation>false</SpecifyValueAtPayrollCalculation>
+		 <Query>SELECT ALLOWED
+	SUM(CASE
+			WHEN Companies.ExchangeRateMethod = VALUE(Enum.ExchangeRateMethods.Multiplier)
+				THEN ISNULL(Sales.Amount * &amp;DocumentCurrencyMultiplicity / &amp;DocumentCurrencyRate, 0)
+			ELSE ISNULL(Sales.Amount * &amp;DocumentCurrencyRate / &amp;DocumentCurrencyMultiplicity, 0)
+		END) AS SalesAmount
+FROM
+	AccumulationRegister.Sales AS Sales
+		INNER JOIN Catalog.Companies AS Companies
+		ON Sales.Company = Companies.Ref
+WHERE
+	Sales.Amount >= 0
+	AND Sales.Period BETWEEN BEGINOFPERIOD(&amp;RegistrationPeriod, MONTH) AND ENDOFPERIOD(&amp;RegistrationPeriod, MONTH)
+	AND Sales.Company = &amp;Company
+	AND Sales.Department = &amp;Department
+	AND Sales.Document.Responsible = &amp;Employee
+	AND (Sales.Recorder REFS Document.ShiftClosure
+			OR Sales.Recorder REFS Document.SalesInvoice
+			OR Sales.Recorder REFS Document.SalesSlip)
+
+GROUP BY
+	Sales.Document.Responsible</Query>
+		 <QueryParameters>
+			<TS_row>
+		       <Name>DocumentCurrencyMultiplicity</Name>
+			   <Presentation>DocumentCurrencyMultiplicity</Presentation>
+			</TS_row>
+			<TS_row>
+		       <Name>DocumentCurrencyRate</Name>
+			   <Presentation>DocumentCurrencyRate</Presentation>
+			</TS_row>
+			<TS_row>
+		       <Name>RegistrationPeriod</Name>
+			   <Presentation>RegistrationPeriod</Presentation>
+			</TS_row>
+			<TS_row>
+		       <Name>Company</Name>
+			   <Presentation>Company</Presentation>
+			</TS_row>
+			<TS_row>
+		       <Name>Department</Name>
+			   <Presentation>Department</Presentation>
+			</TS_row>
+			<TS_row>
+		       <Name>Employee</Name>
+			   <Presentation>Employee</Presentation>
+			</TS_row>
+		 </QueryParameters>
+      </element>
+	  <element>
+         <Description>Fixed amount</Description>
+		 <ID>FixedAmount</ID>
+		 <CustomQuery>false</CustomQuery>
+		 <SpecifyValueAtPayrollCalculation>true</SpecifyValueAtPayrollCalculation>
+      </element>
+	  <element>
+         <Description>Norm of days</Description>
+		 <ID>NormDays</ID>
+		 <CustomQuery>true</CustomQuery>
+		 <SpecifyValueAtPayrollCalculation>false</SpecifyValueAtPayrollCalculation>
+		 <Query>SELECT ALLOWED
+	SUM(1) AS NormDays
+FROM
+	InformationRegister.CalendarSchedules AS CalendarSchedules
+		INNER JOIN Catalog.Companies AS Companies
+		ON CalendarSchedules.Calendar = Companies.BusinessCalendar
+			AND (Companies.Ref = &amp;Company)
+WHERE
+	CalendarSchedules.Year = YEAR(&amp;RegistrationPeriod)
+	AND CalendarSchedules.ScheduleDate between BEGINOFPERIOD(&amp;RegistrationPeriod, MONTH) AND ENDOFPERIOD(&amp;RegistrationPeriod, MONTH)
+	AND CalendarSchedules.DayAddedToSchedule</Query>
+		 <QueryParameters>
+			<TS_row>
+		       <Name>RegistrationPeriod</Name>
+			   <Presentation>RegistrationPeriod</Presentation>
+			</TS_row>
+			<TS_row>
+		       <Name>Company</Name>
+			   <Presentation>Company</Presentation>
+			</TS_row>
+		 </QueryParameters>
+      </element>
+	  <element>
+         <Description>Norm of hours</Description>
+		 <ID>NormHours</ID>
+		 <CustomQuery>true</CustomQuery>
+		 <SpecifyValueAtPayrollCalculation>false</SpecifyValueAtPayrollCalculation>
+		 <Query>SELECT ALLOWED
+	SUM(8) AS NormHours
+FROM
+	InformationRegister.CalendarSchedules AS CalendarSchedules
+		INNER JOIN Catalog.Companies AS Companies
+		ON CalendarSchedules.Calendar = Companies.BusinessCalendar
+			AND (Companies.Ref = &amp;Company)
+WHERE
+	CalendarSchedules.Year = YEAR(&amp;RegistrationPeriod)
+	AND CalendarSchedules.ScheduleDate BETWEEN BEGINOFPERIOD(&amp;RegistrationPeriod, MONTH) AND ENDOFPERIOD(&amp;RegistrationPeriod, MONTH)
+	AND CalendarSchedules.DayAddedToSchedule</Query>
+		 <QueryParameters>
+			<TS_row>
+		       <Name>RegistrationPeriod</Name>
+			   <Presentation>RegistrationPeriod</Presentation>
+			</TS_row>
+			<TS_row>
+		       <Name>Company</Name>
+			   <Presentation>Company</Presentation>
+			</TS_row>
+		 </QueryParameters>
+      </element>
+	  <element>
+         <Description>Days worked</Description>
+		 <ID>DaysWorked</ID>
+		 <CustomQuery>false</CustomQuery>
+		 <SpecifyValueAtPayrollCalculation>true</SpecifyValueAtPayrollCalculation>
+      </element>
+	  <element>
+         <Description>Hours worked</Description>
+		 <ID>HoursWorked</ID>
+		 <CustomQuery>false</CustomQuery>
+		 <SpecifyValueAtPayrollCalculation>true</SpecifyValueAtPayrollCalculation>
+      </element>
+	  <element>
+         <Description>Tariff rate</Description>
+		 <ID>TariffRate</ID>
+		 <CustomQuery>false</CustomQuery>
+		 <SpecifyValueAtPayrollCalculation>true</SpecifyValueAtPayrollCalculation>
+      </element>
+	  <element>
+         <Description>Hours worked by jobs</Description>
+		 <ID>HoursWorkedByJobs</ID>
+		 <CustomQuery>true</CustomQuery>
+		 <SpecifyValueAtPayrollCalculation>false</SpecifyValueAtPayrollCalculation>
+		 <Query>SELECT ALLOWED
+	Source.ImportActualTurnover
+FROM
+	AccumulationRegister.EmployeeTasks.Turnovers(&amp;BeginOfPeriod, &amp;EndOfPeriod, Auto, ) AS Source
+WHERE
+	Source.Employee = &amp;Employee
+	AND Source.StructuralUnit = &amp;Department
+	AND Source.Company = &amp;Company</Query>
+		 <QueryParameters>
+		    <TS_row>
+		       <Name>BeginOfPeriod</Name>
+			   <Presentation>Begin of period</Presentation>
+			</TS_row>
+			<TS_row>
+		       <Name>EndOfPeriod</Name>
+			   <Presentation>End of period</Presentation>
+			</TS_row>
+			<TS_row>
+		       <Name>Employee</Name>
+			   <Presentation>Employee</Presentation>
+			</TS_row>
+			<TS_row>
+		       <Name>Company</Name>
+			   <Presentation>Company</Presentation>
+			</TS_row>
+			<TS_row>
+		       <Name>Department</Name>
+			   <Presentation>Department</Presentation>
+			</TS_row>
+		 </QueryParameters>
+      </element>
+   </item>
+    
+   <item item_type="information_register" item_name="CounterpartyIncomeAndExpenseItems" initial_filling="True">
+	<element>
+		<DiscountAllowedItem>Discount allowed</DiscountAllowedItem>
+		<DiscountReceivedItem>Discount received</DiscountReceivedItem>
+	</element>
+   </item>
+   
+   <item item_type="information_register" item_name="ProductIncomeAndExpenseItems" initial_filling="True">
+	<element>
+		<COGSItem>COGS</COGSItem>
+		<CostOfSalesItem>Cost of sales</CostOfSalesItem>
+		<ExpenseItem>Administrative expenses</ExpenseItem>
+		<PurchaseReturnItem>Purchase return income/expenses</PurchaseReturnItem>
+		<RevenueItem>Revenue</RevenueItem>
+		<SalesReturnItem>Sales return income/expenses</SalesReturnItem>
+	</element>
+   </item>
+   
+   <item item_type="catalog" item_name="TaxTypes" initial_filling="True">
+      <element>
+         <Description>VAT</Description>
+		 <Predefined>true</Predefined>
+		 <PredefinedDataName>VAT</PredefinedDataName>
+		 <GLAccount>2040400</GLAccount>
+		 <GLAccountForReimbursement>2040400</GLAccountForReimbursement>
+      </element>
+   </item>
+   
+   <item item_type="catalog" item_name="Users" initial_filling="True">
+      <element>
+         <Description>Administrator</Description>
+      </element>
+   </item>
+   
+<!-- Regional settings  -->   
+   <item item_type="constant" item_name="ForeignExchangeAccounting" value="True" initial_filling="True" />
+   <item item_type="catalog" item_name="Currencies" initial_filling="True" >
+      <element>
+         <Description>EUR</Description>
+         <Code>978</Code>
+         <ImportingFromInternet>false</ImportingFromInternet>
+		 <DescriptionFull>Euro</DescriptionFull>
+		 <Markup>0</Markup>
+		 <InWordsParameters>euro, euro, euro, , cent, cent, cent, , 2 digits</InWordsParameters>
+         <RateSource>DownloadFromInternet</RateSource>
+      </element>
+	  <element>
+         <Description>USD</Description>
+         <Code>840</Code>
+		 <ImportingFromInternet>false</ImportingFromInternet>
+         <DescriptionFull>US Dollar</DescriptionFull>
+         <Markup>0</Markup>
+		 <InWordsParameters>dollar, dollar, dollar, m, cent, cent, cent, m, 2 digits</InWordsParameters>
+         <RateSource>DownloadFromInternet</RateSource>
+      </element>
+   </item>
+   <item item_type="constant" item_name="FunctionalCurrency" value="EUR" initial_filling="True" />
+   <item item_type="constant" item_name="ForeignCurrencyRevaluationPeriodicity" value="OnlyOnPeriodClosure" initial_filling="True" />
+   <item item_type="catalog" item_name="PriceTypes" initial_filling="True">
+      <element>
+         <Description>Wholesale price</Description>
+         <PriceCurrency>EUR</PriceCurrency>
+         <Company>MainCompany</Company>
+         <PriceCalculationMethod>Manual</PriceCalculationMethod>
+		 <Predefined>true</Predefined>
+         <PredefinedDataName>Wholesale</PredefinedDataName>
+      </element>
+      <element>
+         <Description>Accounting price</Description>
+         <PriceCurrency>EUR</PriceCurrency>
+         <Company>MainCompany</Company>
+         <PriceCalculationMethod>Manual</PriceCalculationMethod>
+         <Predefined>true</Predefined>
+         <PredefinedDataName>Accounting</PredefinedDataName>
+      </element>
+   </item>
+   <item item_type="catalog" item_name="LegalForms" initial_filling="True">
+      <element>
+         <Description>Limited Liability Company</Description>
+         <ShortName>LLC</ShortName>
+      </element>
+   </item>
+   <item item_type="catalog" item_name="VATRates" initial_filling="True">
+      <element>
+         <Description>Exempt</Description>
+         <Predefined>true</Predefined>
+         <PredefinedDataName>Exempt</PredefinedDataName>
+         <Rate>0</Rate>
+         <NotTaxable>True</NotTaxable>
+         <Calculated>False</Calculated>
+      </element>
+      <element>
+         <Description>0%</Description>
+         <Predefined>true</Predefined>
+         <PredefinedDataName>ZeroRate</PredefinedDataName>
+         <Rate>0</Rate>
+         <NotTaxable>False</NotTaxable>
+         <Calculated>False</Calculated>
+      </element>
+      <element>
+         <Description>15%</Description>
+         <Rate>15</Rate>
+         <NotTaxable>False</NotTaxable>
+         <Calculated>False</Calculated>
+      </element>
+   </item>
+   <item item_type="catalog" item_name="Counterparties" initial_filling="True">
+      <element>
+         <Description>Retail customer</Description>
+		 <Predefined>true</Predefined>
+		 <PredefinedDataName>RetailCustomer</PredefinedDataName>
+		 <DescriptionFull>Retail customer</DescriptionFull>
+		 <Customer>true</Customer>
+		 <LegalEntityIndividual>Individual</LegalEntityIndividual>
+		 <GLAccountCustomerSettlements>1030100</GLAccountCustomerSettlements>
+		 <CustomerAdvancesGLAccount>2040100</CustomerAdvancesGLAccount>
+		 <GLAccountVendorSettlements>2010100</GLAccountVendorSettlements>
+		 <SettlementsCurrency>EUR</SettlementsCurrency>
+		 <VendorAdvancesGLAccount>1050100</VendorAdvancesGLAccount>
+		 <DoNotShow>true</DoNotShow>
+		 <PaymentMethod>Electronic</PaymentMethod>
+      </element>
+   </item>
+   <item item_type="catalog" item_name="DocumentTypes" initial_filling="True">
+      <element>
+         <Description>Individuals</Description>
+         <Folder>True</Folder>
+      </element>
+      <element>
+         <Description>Identity document</Description>
+         <Parent>Individuals</Parent>
+         <Predefined>true</Predefined>
+         <PredefinedDataName>IdentityDocument</PredefinedDataName>
+      </element>
+   </item>
+   <item item_type="catalog" item_name="WorldCountries" initial_filling="True">
+      <element>
+         <Description>GERMANY</Description>
+         <Code>276</Code>
+         <CodeAlpha2>DE</CodeAlpha2>
+         <CodeAlpha3>DEU</CodeAlpha3>
+         <DescriptionFull>Federal Republic of Germany</DescriptionFull>
+      </element>
+   </item>
+   <item item_type="catalog" item_name="UOMClassifier" initial_filling="True">
+      <element>
+         <Description>pcs</Description>
+		 <DescriptionFull>Pieces</DescriptionFull>
+         <Predefined>true</Predefined>
+         <PredefinedDataName>pcs</PredefinedDataName>
+      </element>
+      <element>
+         <Description>h</Description>
+		 <DescriptionFull>Hour</DescriptionFull>
+         <Predefined>true</Predefined>
+         <PredefinedDataName>h</PredefinedDataName>
+      </element>	
+      <element>
+         <Description>kg</Description>
+		 <DescriptionFull>Kilogram</DescriptionFull>
+      </element>	
+      <element>
+         <Description>m</Description>
+		 <DescriptionFull>Meter</DescriptionFull>
+      </element>	
+      <element>
+         <Description>nmp</Description>
+		 <DescriptionFull>Number of packs</DescriptionFull>
+      </element>	
+      <element>
+         <Description>m2</Description>
+		 <DescriptionFull>Square meter</DescriptionFull>
+      </element>	
+      <element>
+         <Description>l</Description>
+		 <DescriptionFull>Liter</DescriptionFull>
+      </element>	
+      <element>
+         <Description>ml</Description>
+		 <DescriptionFull>Milliliter</DescriptionFull>
+      </element>	
+       <element>
+         <Description>g</Description>
+		 <DescriptionFull>Gram</DescriptionFull>
+      </element>	
+      <element>
+         <Description>t</Description>
+		 <DescriptionFull>Ton</DescriptionFull>
+      </element>	
+      <element>
+         <Description>m3</Description>
+		 <DescriptionFull>Cubic meter</DescriptionFull>
+      </element>	
+  </item>   
+   <item item_type="sl_data_xml" item_name="default/order_statuses.xml" initial_filling="True" />
+   <item item_type="catalog" item_name="PayCodes" initial_filling="True" >
+      <element>
+         <Description>BTP</Description>
+		 <FullDescr>Business travel. Travel with business purpose paid with standard hourly rate.</FullDescr>
+         <Predefined>true</Predefined>
+         <PredefinedDataName>BusinessTrip</PredefinedDataName>
+      </element>
+      <element>
+         <Description>HOL</Description>
+		 <FullDescr>National holiday. Will be automatically added to timesheet due to business calendar days marked as "Holiday".</FullDescr>
+         <Predefined>true</Predefined>
+         <PredefinedDataName>Holidays</PredefinedDataName>
+      </element>
+      <element>
+         <Description>OTM</Description>
+		 <FullDescr>Overtime. Work in excess of standard schedule paid with a higher hourly rate.</FullDescr>
+         <Predefined>true</Predefined>
+         <PredefinedDataName>Overtime</PredefinedDataName>
+      </element>
+      <element>
+         <Description>REG</Description>
+		 <FullDescr>Regular work</FullDescr>
+         <Predefined>true</Predefined>
+         <PredefinedDataName>Work</PredefinedDataName>
+      </element>
+      <element>
+         <Description>SCK</Description>
+		 <FullDescr>Sick leave. Sick hours taken with pay.</FullDescr>
+         <Predefined>true</Predefined>
+         <PredefinedDataName>SickLeave</PredefinedDataName>
+      </element>
+      <element>
+         <Description>ANN</Description>
+		 <FullDescr>Annual leave. Paid time-off granted by employers to employees to be used for whatever the employee wishes.</FullDescr>
+         <Predefined>true</Predefined>
+         <PredefinedDataName>AnnualLeave</PredefinedDataName>
+      </element>
+      <element>
+         <Description>WKD</Description>
+		 <FullDescr>Weekend. Will be automatically added to timesheet due to business calendar days marked as "Weekend".</FullDescr>
+         <Predefined>true</Predefined>
+         <PredefinedDataName>Weekend</PredefinedDataName>
+      </element>
+   </item>   
+   <item item_type="catalog" item_name="Companies" initial_filling="True">
+      <element>
+         <Description>Our company</Description>
+         <Predefined>true</Predefined>
+         <PredefinedDataName>MainCompany</PredefinedDataName>
+         <BusinessCalendar>Five days calendar</BusinessCalendar>
+         <DescriptionFull>Our company</DescriptionFull>
+         <LegalEntityIndividual>LegalEntity</LegalEntityIndividual>
+         <RegistrationCountry>GERMANY</RegistrationCountry>
+         <PresentationCurrency>EUR</PresentationCurrency>
+         <ExchangeRateMethod>Divisor</ExchangeRateMethod>
+         <PricesPrecision>2</PricesPrecision>
+      </element>
+   </item>
+   <item item_type="information_register" item_name="AccountingPolicy" initial_filling="True">
+      <element>
+         <Period>19800101</Period>
+         <Company>Our company</Company>
+         <RegisteredForVAT>False</RegisteredForVAT>
+         <PostVATEntriesBySourceDocuments>True</PostVATEntriesBySourceDocuments>
+         <PostAdvancePaymentsBySourceDocuments>False</PostAdvancePaymentsBySourceDocuments>
+         <DefaultVATRate>15%</DefaultVATRate>
+         <CashMethodOfAccounting>False</CashMethodOfAccounting>
+         <InventoryValuationMethod>WeightedAverage</InventoryValuationMethod>
+         <StockTransactionsMethodology>AngloSaxon</StockTransactionsMethodology>
+         <ManufacturingOverheadsAllocationMethod>PlantwideAllocation</ManufacturingOverheadsAllocationMethod>
+         <InvoiceTotalDue>Use</InvoiceTotalDue>
+         <AccountBalance>DoNotUse</AccountBalance>
+         <Overdue>DoNotUse</Overdue>
+         <VATRoundingRule>PerLineTotal</VATRoundingRule>
+         <InventoryDispatchingStrategy>DispatchOwnInventoryFirst</InventoryDispatchingStrategy>
+      </element>
+   </item>
+   <item item_type="information_register" item_name="ExchangeRate" initial_filling="True">
+      <element>
+         <Period>19800101</Period>
+         <Currency>USD</Currency>
+         <Company>MainCompany</Company>
+         <Rate>1</Rate>
+         <Repetition>1</Repetition>
+      </element>
+	  <element>
+         <Period>19800101</Period>
+         <Company>MainCompany</Company>
+         <Currency>EUR</Currency>
+         <Rate>1</Rate>
+         <Repetition>1</Repetition>
+      </element>
+   </item>
+   <!-- It is needed to trigger 'Main group' to create the corresponding item in additional attributes catalog -->
+   <item item_type="catalog" item_name="ProductsCategories" initial_filling="True">
+    <element>
+     <Description>Main category</Description>
+     <Predefined>true</Predefined>
+     <PredefinedDataName>MainGroup</PredefinedDataName>
+    </element>
+   </item>
+   <item item_type="catalog" item_name="Numerators" initial_filling="True">
+    <element>
+     <Description>Default</Description>
+     <Predefined>True</Predefined>
+     <PredefinedDataName>Default</PredefinedDataName>
+     <NumberFormat>[CompanyPrefix][InfobasePrefix]-[Number]</NumberFormat>
+     <Periodicity>Year</Periodicity>
+     <NumericNumberPartLength>6</NumericNumberPartLength>
+     <IndependentNumberingByDocumentTypes>True</IndependentNumberingByDocumentTypes>
+    </element>
+   </item>
+   <item item_type="catalog" item_name="PaymentMethods" initial_filling="True">
+      <element>
+         <Description>Cash</Description>
+		 <PredefinedDataName>Cash</PredefinedDataName>
+		 <Predefined>true</Predefined>
+         <CashAssetType>Cash</CashAssetType>
+      </element>
+      <element>
+         <Description>Electronic</Description>
+		 <PredefinedDataName>Electronic</PredefinedDataName>
+		 <Predefined>true</Predefined>
+         <CashAssetType>Noncash</CashAssetType>
+      </element>
+      <element>
+         <Description>Direct debit</Description>
+		 <PredefinedDataName>DirectDebit</PredefinedDataName>
+		 <Predefined>true</Predefined>
+         <CashAssetType>DirectDebit</CashAssetType>
+      </element>
+   </item>
+   <item item_type="constant" item_name="CheckStockBalanceWhenIssuingSalesSlips" value="True" initial_filling="True" />
+   <item item_type="constant" item_name="CheckStockBalanceOnPosting" value="True" initial_filling="True" />
+   <item item_type="constant" item_name="CheckContractsOnPosting" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseOneCompany" value="True" initial_filling="True" />
+   <item item_type="constant" item_name="DoNotUseSeparationByDataAreas" value="True" initial_filling="True" />
+   <item item_type="constant" item_name="GeneratePriceListForInStockProductsOnly" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseStorageBins" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseSeveralLinesOfBusiness" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseSeveralDepartments" value="True" initial_filling="True" />
+   <item item_type="constant" item_name="UseSeveralWarehouses" value="True" initial_filling="True" />
+   <item item_type="constant" item_name="UseProjects" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UsePersonalIncomeTaxCalculation" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseFixedAssets" value="True" initial_filling="True" />
+   <item item_type="constant" item_name="UseSeveralUnitsForProduct" value="True" initial_filling="True" />
+   <item item_type="constant" item_name="UseRetail" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseHeadcountBudget" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseInventoryReservation" value="True" initial_filling="True" />
+   <item item_type="constant" item_name="UsePaymentCalendar" value="True" initial_filling="True" />
+   <item item_type="constant" item_name="UseResourcesWorkloadPlanning" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="AcceptConsignedGoods" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseSubcontractingManufacturing" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="SendGoodsOnConsignment" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseSubcontractorManufacturers" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseAutomaticDiscounts" value="True" initial_filling="True" />
+   <item item_type="constant" item_name="UseBankCharges" value="True" initial_filling="True" />
+   <item item_type="constant" item_name="UseBatches" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseBudgeting" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseCharacteristics" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseCounterpartyContractTypes" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseDiscountCards" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseManualDiscounts" value="True" initial_filling="True" />
+   <item item_type="constant" item_name="UseSecondaryEmployment" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UsePeripherals" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UsePayrollSubsystem" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseProductionSubsystem" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseOperationsManagement" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseWorkOrders" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="ListSeparator" value=";" initial_filling="True" />
+   <item item_type="constant" item_name="SetOffAdvancePaymentsAutomatically" value="Yes" initial_filling="True" />
+   <item item_type="constant" item_name="DisplayItemNumberInThePriceList" value="Yes" initial_filling="True" />
+   <item item_type="constant" item_name="DisplayDetailedDescriptionInThePriceList" value="Yes" initial_filling="True" />
+   <item item_type="constant" item_name="GeneratePriceListAccordingToProductsHierarchy" value="True" initial_filling="True" />
+   <item item_type="constant" item_name="AddItemNumberToProductDescriptionOnPrinting" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseSerialNumbersAsInventoryRecordDetails" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="ThereAreAutomaticDiscounts" value="True" initial_filling="True" />
+   <item item_type="constant" item_name="UseCounterpartiesAccessGroups" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseSalesOrderStatuses" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseFullTextSearch" value="True" initial_filling="True" />
+   <item item_type="constant" item_name="UseObjectsVersioning" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseProductionOrderStatuses" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UsePurchaseOrderStatuses" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseTransferOrderStatuses" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseSerialNumbers" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseMultipleBusinessCalendars" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseSeveralCompanies" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseUserGroups" value="False" initial_filling="True" />
+   <item item_type="constant" item_name="UseUserReminders" value="True" initial_filling="True" />
+   <item item_type="constant" item_name="UseWorkOrderStatuses" value="True" initial_filling="False" />
+   <item item_type="constant" item_name="UseAdditionalReportsAndDataProcessors" value="True" initial_filling="True" />
+   <item item_type="constant" item_name="WeightUOM" value="kg" initial_filling="True" />
+   <item item_type="constant" item_name="MaxNumberOfBOMLevels" value="3" initial_filling="True" />
+   <item item_type="constant" item_name="EachGLAccountIsMappedToIncomeAndExpenseItem" value="True" initial_filling="True" />
+   <item item_type="constant" item_name="EachProfitEstimationGLAccountIsMappedToIncomeAndExpenseItem" value="True" initial_filling="True" />
+   <item item_type="constant" item_name="MonitoringCenterServer" value="78.47.173.63" initial_filling="78.47.173.63" />
+   <item item_type="constant" item_name="MonitoringCenterPort" value="443" initial_filling="443" />
+   <item item_type="DefaultLanguage" item_name="English" initial_filling="True" />
+</items>

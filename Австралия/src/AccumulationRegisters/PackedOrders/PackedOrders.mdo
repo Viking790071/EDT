@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0f767781-5dc1-4fbe-98b2-1b96e002bb5a">
+  <producedTypes>
+    <selectionType typeId="e8a799be-b4dd-41c8-8261-a1e1c6c74d3b" valueTypeId="edf4d2a2-d52f-4c22-8fff-cf2b3fd77fce"/>
+    <listType typeId="7e75898a-07fb-4924-9527-8c4fcd9565c1" valueTypeId="720f9efd-6eeb-4e3f-9bb6-d6a8d05d1789"/>
+    <managerType typeId="ce0fe626-61b9-4a22-8458-36af6592bd94" valueTypeId="f53ea82f-0678-4986-83e8-256c01bb1042"/>
+    <recordSetType typeId="76e97c2a-e989-4de9-a093-c5830f42e083" valueTypeId="ab402df1-acb0-4c2a-8a81-acb402f1ec45"/>
+    <recordKeyType typeId="a20a9fcc-1c9a-4ba6-8c85-e9d9be288bf5" valueTypeId="2bee9c7d-c31c-4204-b944-871bc897344c"/>
+    <recordType typeId="789b190b-190d-40aa-90ff-1651ffb89e73" valueTypeId="7b6b5ca3-1773-4558-b4ef-d79bd89a8e46"/>
+  </producedTypes>
+  <name>PackedOrders</name>
+  <synonym>
+    <key>en</key>
+    <value>Packed orders</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Упакованные заказы</value>
+  </synonym>
+  <synonym>
+    <key>pl</key>
+    <value>Zapakowane zamówienia</value>
+  </synonym>
+  <synonym>
+    <key>es_ES</key>
+    <value>Pedidos embalados</value>
+  </synonym>
+  <synonym>
+    <key>es_CO</key>
+    <value>Pedidos embalados</value>
+  </synonym>
+  <synonym>
+    <key>tr</key>
+    <value>Paketlenmiş siparişler</value>
+  </synonym>
+  <synonym>
+    <key>it</key>
+    <value>Ordini imballati</value>
+  </synonym>
+  <synonym>
+    <key>de</key>
+    <value>Gepackte Aufträge</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <explanation>
+    <key>en</key>
+    <value>Stores records on orders already packed and shipped. The records are required for the &quot;Packing slips&quot; report.</value>
+  </explanation>
+  <explanation>
+    <key>ru</key>
+    <value>Stores records on orders already packed and shipped. The records are required for the &quot;Packing slips&quot; report.</value>
+  </explanation>
+  <explanation>
+    <key>pl</key>
+    <value>Stores records on orders already packed and shipped. The records are required for the &quot;Packing slips&quot; report.</value>
+  </explanation>
+  <explanation>
+    <key>es_ES</key>
+    <value>Stores records on orders already packed and shipped. The records are required for the &quot;Packing slips&quot; report.</value>
+  </explanation>
+  <explanation>
+    <key>es_CO</key>
+    <value>Stores records on orders already packed and shipped. The records are required for the &quot;Packing slips&quot; report.</value>
+  </explanation>
+  <explanation>
+    <key>tr</key>
+    <value>Stores records on orders already packed and shipped. The records are required for the &quot;Packing slips&quot; report.</value>
+  </explanation>
+  <explanation>
+    <key>it</key>
+    <value>Stores records on orders already packed and shipped. The records are required for the &quot;Packing slips&quot; report.</value>
+  </explanation>
+  <explanation>
+    <key>de</key>
+    <value>Stores records on orders already packed and shipped. The records are required for the &quot;Packing slips&quot; report.</value>
+  </explanation>
+  <resources uuid="e06f2805-58de-4573-8f95-ef8c07d2317a">
+    <name>Quantity</name>
+    <synonym>
+      <key>en</key>
+      <value>Quantity</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Ilość</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Cantidad</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Cantidad</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Miktar</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Quantità</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Menge</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="4a513d44-5943-4de6-8c64-1fdd1fbd3fb0">
+    <name>Weight</name>
+    <synonym>
+      <key>en</key>
+      <value>Weight</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Вес</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Waga</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Peso</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Peso</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ağırlık</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Peso</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Gewicht</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="4ab97d9c-f082-4d08-9a03-bf18d879b2fd">
+    <name>Products</name>
+    <synonym>
+      <key>en</key>
+      <value>Product</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Produkt</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Producto</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Producto</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Ürün</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Articolo</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Produkt</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Products</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="836c3be1-8f88-41c1-90d7-dccb9731a1fd">
+    <name>Characteristic</name>
+    <synonym>
+      <key>en</key>
+      <value>Variant</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Wariant</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Variante</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Variante</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Varyant</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Variante</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Variante</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ProductsCharacteristics</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="b73ecd7a-5da8-4b26-84c7-e4aa7a5cd5d8">
+    <name>Batch</name>
+    <synonym>
+      <key>en</key>
+      <value>Batch</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Партия</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Partia</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Lote</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Lote</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Parti</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Lotto</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Charge</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ProductsBatches</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="9eed129a-e624-4fab-afbb-557177761479">
+    <name>SalesOrder</name>
+    <synonym>
+      <key>en</key>
+      <value>Sales order</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ покупателя</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Zamówienie sprzedaży</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Orden de ventas</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Orden de ventas</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Satış siparişi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Ordine cliente</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Kundenauftrag</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.SalesOrder</types>
+      <types>DocumentRef.WorkOrder</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="a834b1cb-e645-438c-8b22-d2a42bc585e2">
+    <name>Company</name>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Firma</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Empresa</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Empresa</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İş yeri</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Azienda</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Firma</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Companies</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="d0414040-2e34-4495-a99f-1a3768f5a828">
+    <name>InternalID</name>
+    <synonym>
+      <key>en</key>
+      <value>Internal ID</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Внутренний идентификатор</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Identyfikator wewnętrzny</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Identificador interno</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Identificador interno</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Dahili ID</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>ID interno</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Interne ID</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="3cc2c920-1dc9-4d90-8511-fbb03aa831ec">
+    <name>TrackingNumber</name>
+    <synonym>
+      <key>en</key>
+      <value>Tracking number</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Номер для отслеживания</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Numer przesyłki</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Número de seguimiento</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Número de seguimiento</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Takip numarası</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Numero di tracciamento</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Trackingnummer</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="152a20e1-190b-4a54-a850-de8135947f01">
+    <name>MeasurementUnit</name>
+    <synonym>
+      <key>en</key>
+      <value>Unit</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Ед. изм.</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>J.m.</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Unidad</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Unidad</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Birim</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Unità</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Einheit</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.UOMClassifier</types>
+      <types>CatalogRef.UOM</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="4a2e9a48-17d1-4d8d-83c8-438705b93968">
+    <name>ContainerType</name>
+    <synonym>
+      <key>en</key>
+      <value>Container type</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Тип контейнера</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Rodzaj opakowania</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Tipo de contenedor</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Tipo de contenedor</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Konteynır türü</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Tipo contenitore</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Behältertyp</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ContainerTypes</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

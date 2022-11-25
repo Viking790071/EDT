@@ -1,0 +1,1147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <title>
+    <key>en</key>
+    <value>Variants generator</value>
+  </title>
+  <title>
+    <key>ru</key>
+    <value>Генератор вариантов</value>
+  </title>
+  <title>
+    <key>pl</key>
+    <value>Generator wariantów</value>
+  </title>
+  <title>
+    <key>es_ES</key>
+    <value>Generador de variantes</value>
+  </title>
+  <title>
+    <key>es_CO</key>
+    <value>Generador de variantes</value>
+  </title>
+  <title>
+    <key>tr</key>
+    <value>Varyant oluşturucu</value>
+  </title>
+  <title>
+    <key>it</key>
+    <value>Generatore varianti</value>
+  </title>
+  <title>
+    <key>de</key>
+    <value>Varianten-Generator</value>
+  </title>
+  <items xsi:type="form:Table">
+    <name>List</name>
+    <id>1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>List</segments>
+    </dataPath>
+    <defaultItem>true</defaultItem>
+    <titleLocation>None</titleLocation>
+    <excludedCommands>Add</excludedCommands>
+    <excludedCommands>CancelSearch</excludedCommands>
+    <excludedCommands>Change</excludedCommands>
+    <excludedCommands>Copy</excludedCommands>
+    <excludedCommands>CopyToClipboard</excludedCommands>
+    <excludedCommands>Delete</excludedCommands>
+    <excludedCommands>EndEdit</excludedCommands>
+    <excludedCommands>Find</excludedCommands>
+    <excludedCommands>MoveDown</excludedCommands>
+    <excludedCommands>MoveUp</excludedCommands>
+    <excludedCommands>OutputList</excludedCommands>
+    <excludedCommands>SelectAll</excludedCommands>
+    <excludedCommands>ShowMultipleSelection</excludedCommands>
+    <excludedCommands>ShowRowRearrangement</excludedCommands>
+    <excludedCommands>SortListAsc</excludedCommands>
+    <excludedCommands>SortListDesc</excludedCommands>
+    <autoCommandBar>
+      <name>ListCommandBar</name>
+      <id>3</id>
+      <items xsi:type="form:Button">
+        <name>ListListSelectAll</name>
+        <id>16</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ListListSelectAllExtendedTooltip</name>
+          <id>17</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.Command.ListSelectAll</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+        <locationInCommandBar>InCommandBarAndInAdditionalSubmenu</locationInCommandBar>
+      </items>
+      <items xsi:type="form:Button">
+        <name>ListListClearAll</name>
+        <id>14</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ListListClearAllExtendedTooltip</name>
+          <id>15</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.Command.ListClearAll</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+        <locationInCommandBar>InCommandBarAndInAdditionalSubmenu</locationInCommandBar>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <horizontalAlign>Left</horizontalAlign>
+    </autoCommandBar>
+    <handlers>
+      <event>OnChange</event>
+      <name>ListOnChange</name>
+    </handlers>
+    <searchStringAddition>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <name>ListSearchString</name>
+      <id>5</id>
+      <extendedTooltip>
+        <name>ListSearchStringExtendedTooltip</name>
+        <id>7</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ListSearchStringContextMenu</name>
+        <id>6</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <source>ListSearchString</source>
+      <extInfo xsi:type="form:SearchStringAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+      </extInfo>
+    </searchStringAddition>
+    <viewStatusAddition>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <name>ListViewStatus</name>
+      <id>8</id>
+      <extendedTooltip>
+        <name>ListViewStatusExtendedTooltip</name>
+        <id>10</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ListViewStatusContextMenu</name>
+        <id>9</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>ViewStatusAddition</type>
+      <source>ListViewStatus</source>
+      <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+      </extInfo>
+    </viewStatusAddition>
+    <searchControlAddition>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <name>ListSearchControl</name>
+      <id>11</id>
+      <extendedTooltip>
+        <name>ListSearchControlExtendedTooltip</name>
+        <id>13</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ListSearchControlContextMenu</name>
+        <id>12</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>SearchControlAddition</type>
+      <source>ListSearchControl</source>
+      <extInfo xsi:type="form:SearchControlAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+      </extInfo>
+    </searchControlAddition>
+    <extendedTooltip>
+      <name>ListExtendedTooltip</name>
+      <id>4</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ListContextMenu</name>
+      <id>2</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <representation>Tree</representation>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <autoMaxRowsCount>true</autoMaxRowsCount>
+    <selectionMode>MultiRow</selectionMode>
+    <header>true</header>
+    <headerHeight>1</headerHeight>
+    <footerHeight>1</footerHeight>
+    <horizontalScrollBar>AutoUse</horizontalScrollBar>
+    <verticalScrollBar>AutoUse</verticalScrollBar>
+    <horizontalLines>true</horizontalLines>
+    <verticalLines>true</verticalLines>
+    <autoInsertNewRow>true</autoInsertNewRow>
+    <searchOnInput>Auto</searchOnInput>
+    <initialListView>Auto</initialListView>
+    <horizontalStretch>true</horizontalStretch>
+    <verticalStretch>true</verticalStretch>
+    <fileDragMode>AsFileRef</fileDragMode>
+    <rowFilter xsi:type="core:UndefinedValue"/>
+  </items>
+  <items xsi:type="form:Decoration">
+    <name>DecorationFornUnavailable</name>
+    <id>22</id>
+    <title>
+      <key>en</key>
+      <value>You can generate variants automatically only for categories with at least one additional attribute with additional value type.</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Варианты можно генерировать автоматически только для категорий с хотя бы одним дополнительным реквизитом с дополнительным типом значения.</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Możesz wygenerować warianty automatycznie tylko dla kategorii, które mają co najmniej jeden dodatkowy atrybut z typem dodatkowej wartości.</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Sólo se pueden generar variantes automáticamente para categorías con al menos un atributo adicional con tipo de valor adicional.</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Sólo se pueden generar variantes automáticamente para categorías con al menos un atributo adicional con tipo de valor adicional.</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Yalnızca ek değer türüne sahip en az bir ek özniteliğe sahip kategoriler için otomatik olarak varyantlar oluşturabilirsiniz.</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Potete generare varianti automaticamente solo per categorie che hanno almeno un attributo aggiuntivo con un tipo di valore aggiuntivo.</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Sie können Varianten nur für Kategorien mit mindestens einem zusätzlichen Attribut mit zusätzlicher Wertart automatisch generieren.</value>
+    </title>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>DecorationFornUnavailableExtendedTooltip</name>
+      <id>24</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>DecorationFornUnavailableContextMenu</name>
+      <id>23</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>Label</type>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <textColor xsi:type="core:ColorRef">
+      <color>Style.SpecialTextColor</color>
+    </textColor>
+    <extInfo xsi:type="form:LabelDecorationExtInfo">
+      <horizontalAlign>Left</horizontalAlign>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>FormCommandBar</name>
+    <id>-1</id>
+    <items xsi:type="form:Button">
+      <name>FormGenerate</name>
+      <id>18</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormGenerateExtendedTooltip</name>
+        <id>19</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.Generate</commandName>
+      <representation>Auto</representation>
+      <defaultButton>true</defaultButton>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>FormGenerateBarcodes</name>
+      <id>20</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>FormGenerateBarcodesExtendedTooltip</name>
+        <id>21</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.GenerateBarcodes</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+      <locationInCommandBar>InCommandBarAndInAdditionalSubmenu</locationInCommandBar>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>OnCreateAtServer</name>
+  </handlers>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>List</name>
+    <title>
+      <key>en</key>
+      <value>List</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Список</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Lista</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Lista</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Lista</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Liste</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Elenco</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Liste</value>
+    </title>
+    <id>1</id>
+    <valueType>
+      <types>ValueTable</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ColumnsMap</name>
+    <title>
+      <key>en</key>
+      <value>Columns map</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Сопоставление колонок</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Mapa kolumn</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Mapa de columnas</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Mapa de columnas</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Sütun eşleştirme</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Mappature colonne</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Spalten Zuweisung</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>ValueTable</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <columns>
+      <name>Name</name>
+      <title>
+        <key>en</key>
+        <value>Name</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Имя</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Nazwa</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Nombre</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Nombre</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Ad</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Nome</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Name</value>
+      </title>
+      <id>1</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Value</name>
+      <title>
+        <key>en</key>
+        <value>Value</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Значение</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Wartość</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Valor</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Valor</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Değer</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Valore</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Wert</value>
+      </title>
+      <id>2</id>
+      <valueType/>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+  </attributes>
+  <attributes>
+    <name>RowsMap</name>
+    <id>3</id>
+    <valueType>
+      <types>ValueTable</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <columns>
+      <name>Name</name>
+      <id>1</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Value</name>
+      <id>2</id>
+      <valueType/>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+  </attributes>
+  <attributes>
+    <name>Products</name>
+    <id>4</id>
+    <valueType>
+      <types>CatalogRef.Products</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>RowsCharacteristic</name>
+    <id>5</id>
+    <valueType>
+      <types>ChartOfCharacteristicTypesRef.AdditionalAttributesAndInfo</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ColumnsCharacteristic</name>
+    <title>
+      <key>en</key>
+      <value>Columns characteristic</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Характеристика колонок</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Charakterystyka kolumn</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Característica de las columnas</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Característica de las columnas</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Sütun özellikleri</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Caratteristiche colonne</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Spalten Eigenschaften</value>
+    </title>
+    <id>6</id>
+    <valueType>
+      <types>ChartOfCharacteristicTypesRef.AdditionalAttributesAndInfo</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>CreatedVariants</name>
+    <title>
+      <key>en</key>
+      <value>Created variants</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Созданные варианты</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Utworzone warianty</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Crear las variantes</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Crear las variantes</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Oluşturulan varyantlar</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Varianti create</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Erstellte Varianten</value>
+    </title>
+    <id>7</id>
+    <valueType>
+      <types>ValueTable</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <columns>
+      <name>Characteristic</name>
+      <title>
+        <key>en</key>
+        <value>Variant</value>
+      </title>
+      <title>
+        <key>ru</key>
+        <value>Вариант</value>
+      </title>
+      <title>
+        <key>pl</key>
+        <value>Wariant</value>
+      </title>
+      <title>
+        <key>es_ES</key>
+        <value>Variante</value>
+      </title>
+      <title>
+        <key>es_CO</key>
+        <value>Variante</value>
+      </title>
+      <title>
+        <key>tr</key>
+        <value>Varyant</value>
+      </title>
+      <title>
+        <key>it</key>
+        <value>Variante</value>
+      </title>
+      <title>
+        <key>de</key>
+        <value>Variante</value>
+      </title>
+      <id>1</id>
+      <valueType>
+        <types>CatalogRef.ProductsCharacteristics</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ColumnValue</name>
+      <id>2</id>
+      <valueType/>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>RowValue</name>
+      <id>3</id>
+      <valueType/>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+  </attributes>
+  <formCommands>
+    <name>ListSelectAll</name>
+    <title>
+      <key>en</key>
+      <value>Select all</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Выделить все</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wybierz wszystkie</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Seleccionar todo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Seleccionar todo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Tümünü seç</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Seleziona tutto</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Alles auswählen</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>en</key>
+      <value>Select all</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Выделить все</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Wybierz wszystkie</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Seleccionar todo</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Seleccionar todo</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Tümünü seç</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Seleziona tutto</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Alles auswählen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.CheckAll</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ListSelectAll</name>
+      </handler>
+    </action>
+    <representation>Picture</representation>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ListClearAll</name>
+    <title>
+      <key>en</key>
+      <value>Clear all</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Очистить все</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Odznacz wszystko</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Eliminar todo</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Eliminar todo</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Tümünü temizle</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Cancella tutto</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Alles löschen</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>en</key>
+      <value>Clear all</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Очистить все</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Odznacz wszystko</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Eliminar todo</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Eliminar todo</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Tümünü temizle</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Cancella tutto</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Alles löschen</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.UncheckAll</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ListClearAll</name>
+      </handler>
+    </action>
+    <representation>Picture</representation>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>Generate</name>
+    <title>
+      <key>en</key>
+      <value>Generate variants</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Сгенерировать варианты</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wygeneruj warianty</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Generar las variantes</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Generar las variantes</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Varyant oluştur</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Genera varianti</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Varianten generieren</value>
+    </title>
+    <id>3</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Generate</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>GenerateBarcodes</name>
+    <title>
+      <key>en</key>
+      <value>Generate barcodes</value>
+    </title>
+    <title>
+      <key>ru</key>
+      <value>Сгенерировать штрихкоды</value>
+    </title>
+    <title>
+      <key>pl</key>
+      <value>Wygeneruj kody kreskowe</value>
+    </title>
+    <title>
+      <key>es_ES</key>
+      <value>Generar los códigos de barra</value>
+    </title>
+    <title>
+      <key>es_CO</key>
+      <value>Generar los códigos de barra</value>
+    </title>
+    <title>
+      <key>tr</key>
+      <value>Barkod oluştur</value>
+    </title>
+    <title>
+      <key>it</key>
+      <value>Genera codici a barre</value>
+    </title>
+    <title>
+      <key>de</key>
+      <value>Barcodes generieren</value>
+    </title>
+    <id>4</id>
+    <toolTip>
+      <key>en</key>
+      <value>Generate barcode for every variant without any barcodes</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Сгенерировать штрихкод для каждого варианта без штрихкода</value>
+    </toolTip>
+    <toolTip>
+      <key>pl</key>
+      <value>Wygeneruj kod kreskowy dla każdego wariantu, nie mającego żadnego kodu kreskowego</value>
+    </toolTip>
+    <toolTip>
+      <key>es_ES</key>
+      <value>Generar un código de barras para cada variante sin códigos de barras</value>
+    </toolTip>
+    <toolTip>
+      <key>es_CO</key>
+      <value>Generar un código de barras para cada variante sin códigos de barras</value>
+    </toolTip>
+    <toolTip>
+      <key>tr</key>
+      <value>Barkodsuz her varyant için barkod oluştur</value>
+    </toolTip>
+    <toolTip>
+      <key>it</key>
+      <value>Genera codici a barre per ogni variante senza codice a barre</value>
+    </toolTip>
+    <toolTip>
+      <key>de</key>
+      <value>Barcode für jede Variante ohne jeglichen Barcode generieren</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>GenerateBarcodes</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

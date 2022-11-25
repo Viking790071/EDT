@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html;charset=utf-8" http-equiv="content-type"></meta><link rel="stylesheet" type="text/css" href="v8help://service_book/service_style"></link><meta name="GENERATOR" content="MSHTML 9.00.8112.16421"></meta></head><body>
+<p>This list is used to display the latest information about the map of users and <a href="Catalog.PerformerRoles/Help">roles</a>, and <a href="ChartOfCharacteristicTypes.TaskAddressingObjects/Help">addressing objects</a>. This information is used by the <a href="v8help://1cv8/EnterprWorkingWithBusinessProcesses_StandardInterface">business process</a> logic to assign <a href="Task.PerformerTask/Help">tasks</a> to specific performers.</p>
+<p>Depending on the specifics of business processes, tasks can be addressed to a performer or to a group of performers both personally (personal addressing) and, for some business processes, using business process roles (role addressing). In case of role addressing, assignment is not issued to the performer, but to a certain role of the business process (for example, <strong>Room supervisor</strong>).</p>
+<h3>Peculiarities of interaction with external users</h3>
+<ul><li>
+<div>External users can be performers of some business processes (for example, partners or contact persons of partners).</div>
+</li><li>
+<div>As a rule, external users cannot use the names of specific employees of a company, thus, they can only specify the performer roles assigned to them.</div>
+</li><li>
+<div>To do that, you need to configure a <a href="Catalog.PerformerRoles/Help">list</a> of such roles specifying that they are designed for certain categories of external users.</div></li></ul><h3>Role addressing list examples</h3>
+<p>
+</p><table border="0" cellpadding="8" width="100%"><tbody><tr><td><strong>Assignee role</strong></td>
+<td><strong>User</strong></td>
+<td><strong>Note</strong></td></tr><tr><td><strong>Room supervisor</strong></td>
+<td>S. Smith</td>
+<td>Tasks assigned to the <strong>Room supervisor</strong> role will be added to Smith's personal task list.</td></tr><tr><td><strong>Room supervisor</strong></td>
+<td>J. Johnson</td>
+<td>Tasks assigned to the <strong>Room supervisor</strong> role will be added to Johnson's personal task list.</td></tr><tr><td><strong>Manager</strong></td>
+<td>R. Roberts</td>
+<td>Tasks assigned to the <strong>Manager</strong> role will be added to Roberts' personal task list.</td></tr></tbody></table><p>In certain cases, the <a href="Catalog.PerformerRoles.Form.ItemForm/Help">performer role</a> is not enough to accurately determine the performers. In these cases, you need to explicitly specify the primary and additional addressing objects. Example:</p>
+<p>
+</p><table border="0" cellpadding="8" width="100%"><tbody><tr><td><strong>Assignee role</strong></td>
+<td><strong>Main addressing object<br>(type, value)</strong></td>
+<td><strong>Additional addressing object<br>(type, value)</strong></td>
+<td><strong>User</strong></td>
+<td><strong>Note</strong></td></tr><tr><td><strong>Department manager</strong></td>
+<td>Department, <br>Accounting department</td>
+<td>-</td>
+<td>J. Johnson</td>
+<td>Tasks assigned to the <strong>Department manager</strong> role for <strong>Accounting department</strong> will be added to Johnson's personal task list.</td></tr><tr><td><strong>Project manager</strong></td>
+<td>Project,<br>Accounting system implementation project</td>
+<td>Department, <br>Accounting department</td>
+<td>S. Smith</td>
+<td>Tasks assigned to the <strong>Project manager</strong> role for Accounting system implementation project will be added to Smith's personal task list.</td></tr><tr><td><strong>CEO</strong></td>
+<td>-</td>
+<td>-</td>
+<td>R. Roberts</td>
+<td>Tasks assigned to the <strong>CEO</strong> role will be added to Roberts' personal task list.</td></tr></tbody></table><p>Thus, addressing objects help to clarify to which project managers and in which department the <a href="Task.PerformerTask.Form.BusinessProcessTaskForm/Help">task</a> is assigned. The map of performers to roles and addressing object is set before starting work with business processes and tasks, and it is used by the application for delivering instructions to specific performers.</p>
+<h3>See also:</h3>
+<ul><li><a href="Catalog.PerformerRoles/Help">Performer roles</a> 
+</li><li><a href="v8help://frame/form_common">Working with forms</a></li></ul></body></html>

@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2951b289-c0cc-4df6-9cce-e9b1bd1c3eab">
+  <producedTypes>
+    <selectionType typeId="a4edcfe4-beb6-4c11-8916-3ff9081b1c48" valueTypeId="a9d3bc7f-6baa-4b9c-9d71-a4da2cf9ee51"/>
+    <listType typeId="3ae76ed7-1fec-458a-bc52-54cd2ef50f4e" valueTypeId="8cd2673e-261b-48be-8cb2-c9bc2e463419"/>
+    <managerType typeId="9ad820ab-99ab-4c89-8b20-8f2d9591ba55" valueTypeId="b58b3571-97ce-4454-bd56-f3cb9862e9dc"/>
+    <recordSetType typeId="e0403a41-1ec8-4589-9f41-781bc7334dae" valueTypeId="7826810f-ae0e-4025-b957-5dcded1c76cf"/>
+    <recordKeyType typeId="526a6130-f8f0-490a-a11c-66e917d997d5" valueTypeId="3cf612dc-8096-49ca-ad34-2a7317519243"/>
+    <recordType typeId="96499c77-0cf3-470c-9f02-4242e54f2b33" valueTypeId="a93536a9-b5ff-4469-832b-3f51acf0fbd8"/>
+  </producedTypes>
+  <name>POSSummary</name>
+  <synonym>
+    <key>en</key>
+    <value>Retail value of goods (RIM)</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки  по розничной точке (суммовой учет)</value>
+  </synonym>
+  <synonym>
+    <key>pl</key>
+    <value>Wartość detaliczna towarów (RIM)</value>
+  </synonym>
+  <synonym>
+    <key>es_ES</key>
+    <value>Valor minorista de mercancías (método de inventario de comercio)</value>
+  </synonym>
+  <synonym>
+    <key>es_CO</key>
+    <value>Valor minorista de mercancías (método de inventario de comercio)</value>
+  </synonym>
+  <synonym>
+    <key>tr</key>
+    <value>Malların perakende değeri (RIM)</value>
+  </synonym>
+  <synonym>
+    <key>it</key>
+    <value>Contabilità totale nella vendita al dettaglio</value>
+  </synonym>
+  <synonym>
+    <key>de</key>
+    <value>Handelswert von Waren (RIM)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>RecordType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>en</key>
+      <value>Period</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Okres</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Período</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Período</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Dönem</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Periodo</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Zeitraum</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <explanation>
+    <key>en</key>
+    <value>Stores records on the amounts to be transferred from a warehouse with the RIM type to a company's cash register. The register balance is increased when goods are moved to a warehouse with the RIM type. When the goods are moved to such a warehouse, their value is calculated. The calculation is based on the settings of the target warehouse. The register does not store records on the quantity of goods moved to a warehouse.</value>
+  </explanation>
+  <explanation>
+    <key>ru</key>
+    <value>Stores records on the amounts to be transferred from a warehouse with the RIM type to a company's cash register. The register balance is increased when goods are moved to a warehouse with the RIM type. When the goods are moved to such a warehouse, their value is calculated. The calculation is based on the settings of the target warehouse. The register does not store records on the quantity of goods moved to a warehouse.</value>
+  </explanation>
+  <explanation>
+    <key>pl</key>
+    <value>Stores records on the amounts to be transferred from a warehouse with the RIM type to a company's cash register. The register balance is increased when goods are moved to a warehouse with the RIM type. When the goods are moved to such a warehouse, their value is calculated. The calculation is based on the settings of the target warehouse. The register does not store records on the quantity of goods moved to a warehouse.</value>
+  </explanation>
+  <explanation>
+    <key>es_ES</key>
+    <value>Stores records on the amounts to be transferred from a warehouse with the RIM type to a company's cash register. The register balance is increased when goods are moved to a warehouse with the RIM type. When the goods are moved to such a warehouse, their value is calculated. The calculation is based on the settings of the target warehouse. The register does not store records on the quantity of goods moved to a warehouse.</value>
+  </explanation>
+  <explanation>
+    <key>es_CO</key>
+    <value>Stores records on the amounts to be transferred from a warehouse with the RIM type to a company's cash register. The register balance is increased when goods are moved to a warehouse with the RIM type. When the goods are moved to such a warehouse, their value is calculated. The calculation is based on the settings of the target warehouse. The register does not store records on the quantity of goods moved to a warehouse.</value>
+  </explanation>
+  <explanation>
+    <key>tr</key>
+    <value>Stores records on the amounts to be transferred from a warehouse with the RIM type to a company's cash register. The register balance is increased when goods are moved to a warehouse with the RIM type. When the goods are moved to such a warehouse, their value is calculated. The calculation is based on the settings of the target warehouse. The register does not store records on the quantity of goods moved to a warehouse.</value>
+  </explanation>
+  <explanation>
+    <key>it</key>
+    <value>Stores records on the amounts to be transferred from a warehouse with the RIM type to a company's cash register. The register balance is increased when goods are moved to a warehouse with the RIM type. When the goods are moved to such a warehouse, their value is calculated. The calculation is based on the settings of the target warehouse. The register does not store records on the quantity of goods moved to a warehouse.</value>
+  </explanation>
+  <explanation>
+    <key>de</key>
+    <value>Stores records on the amounts to be transferred from a warehouse with the RIM type to a company's cash register. The register balance is increased when goods are moved to a warehouse with the RIM type. When the goods are moved to such a warehouse, their value is calculated. The calculation is based on the settings of the target warehouse. The register does not store records on the quantity of goods moved to a warehouse.</value>
+  </explanation>
+  <resources uuid="3835021f-4f2d-49ed-a58f-5120262c2357">
+    <name>Amount</name>
+    <synonym>
+      <key>en</key>
+      <value>Amount</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Kwota</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Importe</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Importe</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Tutar</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Importo</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Betrag</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="f376f71c-e1e5-4aee-953a-dd42b0de7a1f">
+    <name>AmountCur</name>
+    <synonym>
+      <key>en</key>
+      <value>Amount (curr.)</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма (вал.)</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Kwota (zysk brutto)</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Importe (moneda)</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Importe (moneda)</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Tutar (para birimi)</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Importo (val.)</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Betrag (Währung)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="a1a063f3-3898-444c-88ed-aba23f4c2c27">
+    <name>Cost</name>
+    <synonym>
+      <key>en</key>
+      <value>Cost</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Себестоимость</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Koszt</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Coste</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Coste</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Maliyet</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Costo</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Kosten</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="833d51fd-4893-4ac6-b748-52bc0b2dc86e">
+    <name>ContentOfAccountingRecord</name>
+    <synonym>
+      <key>en</key>
+      <value>Posting content</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Содержание проводки</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Opis księgowania</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Envío de contenido</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Envío de contenido</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Kayıt içeriği</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Contenuto della pubblicazione</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Buchung Inhalt</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="5f50a3d5-41f5-4b11-8bc5-8dba13af1191">
+    <name>SalesDocument</name>
+    <synonym>
+      <key>en</key>
+      <value>Sales document</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Документ продажи</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Dokument sprzedaży</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Documento de ventas</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Documento de ventas</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Satış belgesi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Documento di vendita</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Verkaufsbeleg</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.CashReceipt</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="f6027829-a018-4b2a-8de5-c91baf4b792a">
+    <name>OfflineRecord</name>
+    <synonym>
+      <key>en</key>
+      <value>Offline record</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Офлайн запись</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Zapis offline</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Registro fuera de línea</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Registro fuera de línea</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Çevrimdışı kayıt</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Registrazione offline</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Offline-Buchung</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="51d244f7-a079-4d73-994f-38807f6bd2dd">
+    <name>Company</name>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Firma</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Empresa</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Empresa</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>İş yeri</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Azienda</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Firma</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Companies</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <quickChoice>DontUse</quickChoice>
+    <createOnInput>Use</createOnInput>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="a3026ec2-8963-4245-9a2f-db8926503125">
+    <name>PresentationCurrency</name>
+    <synonym>
+      <key>en</key>
+      <value>Presentation currency</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта представления отчетности</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Waluta prezentacji</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Moneda de presentación</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Moneda de presentación</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Finansal tablo para birimi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Valuta di presentazione</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Währung für die Berichtserstattung</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Currencies</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="87093059-5b46-4229-b52b-0ec7f5795bba">
+    <name>StructuralUnit</name>
+    <synonym>
+      <key>en</key>
+      <value>Business unit</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Jednostka biznesowa</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Unidad empresarial</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Unidad de negocio</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Departman</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Business unit</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Abteilung</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.BusinessUnits</types>
+      <types>CatalogRef.Counterparties</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="1dc70986-5740-4d4d-af9f-58190954cf04">
+    <name>Currency</name>
+    <synonym>
+      <key>en</key>
+      <value>Currency</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <synonym>
+      <key>pl</key>
+      <value>Waluta</value>
+    </synonym>
+    <synonym>
+      <key>es_ES</key>
+      <value>Moneda</value>
+    </synonym>
+    <synonym>
+      <key>es_CO</key>
+      <value>Moneda</value>
+    </synonym>
+    <synonym>
+      <key>tr</key>
+      <value>Para birimi</value>
+    </synonym>
+    <synonym>
+      <key>it</key>
+      <value>Valuta</value>
+    </synonym>
+    <synonym>
+      <key>de</key>
+      <value>Währung</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Currencies</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>
